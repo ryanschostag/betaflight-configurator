@@ -1659,6 +1659,117 @@
     "dialogCopyProfileText": {
         "message": "Kopiatu hemen uneko profilaren balioak"
     },
+    "dialogCopyProfileTitle": {
+        "message": "Profilaren balioak kopiatu"
+    },
+    "dialogCopyProfileNote": {
+        "message": "Helmuga profilaren balio guztiak ezabatu eta berridatziko dira"
+    },
+    "dialogCopyProfileConfirm": {
+        "message": "Kopiatu"
+    },
+    "dialogCopyProfileClose": {
+        "message": "Ezeztatu"
+    },
+    "pidTuningResetProfile": {
+        "message": "Profilen balio guztiak berrezarri"
+    },
+    "pidTuningProfileReset": {
+        "message": "Profilaren lehenetsi balioak kargatu dira."
+    },
+    "pidTuningReceivedProfile": {
+        "message": "Hegaldi-kontroladorea ezarrita Profila: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningReceivedRateProfile": {
+        "message": "Hegaldi-kontroladorea Tasa Profila: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningLoadedProfile": {
+        "message": "Kargatutako profila: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningLoadedRateProfile": {
+        "message": "Kargatutako tasa profila: <strong class=\"message-positive\">$1</strong>"
+    },
+    "pidTuningDataRefreshed": {
+        "message": "PID datuak <strong>berritu</strong>"
+    },
+    "pidTuningEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gorde</span>"
+    },
+    "receiverThrottleMid": {
+        "message": "Azeleragailu MID"
+    },
+    "receiverThrottleExpo": {
+        "message": "Azeleragailu EXPO"
+    },
+    "receiverStickMin": {
+        "message": "'Stick baxua' atalasea"
+    },
+    "receiverStickCenter": {
+        "message": "Stick Zentroa"
+    },
+    "receiverStickMax": {
+        "message": "'Stick altua' atalasea"
+    },
+    "receiverDeadband": {
+        "message": "RC Deadband"
+    },
+    "receiverYawDeadband": {
+        "message": "Yaw Deadband"
+    },
+    "recevier3dDeadbandThrottle": {
+        "message": "3D Throttle Deadband"
+    },
+    "receiverChannelMap": {
+        "message": "Kanal mapa"
+    },
+    "receiverChannelDefaultOption": {
+        "message": "Lehenetsia"
+    },
+    "receiverChannelMapTitle": {
+        "message": "Laukiaren barruan klik eginez zure kanalaren mapa defini dezakezu"
+    },
+    "receiverRssiChannel": {
+        "message": "RSSI kanala"
+    },
+    "receiverRssiChannelDisabledOption": {
+        "message": "Desgaitua"
+    },
+    "receiverRefreshRateTitle": {
+        "message": "Grafikoa berritzeko tasa"
+    },
+    "receiverButtonSave": {
+        "message": "Gorde"
+    },
+    "receiverButtonRefresh": {
+        "message": "Berritu"
+    },
+    "receiverDataRefreshed": {
+        "message": "RC sintonizatzeko datuak <strong>berritu</strong>"
+    },
+    "receiverEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gorde</span>"
+    },
+    "receiverModelPreview": {
+        "message": "Aurrebista"
+    },
+    "auxiliaryButtonSave": {
+        "message": "Gorde"
+    },
+    "auxiliaryModeLogicAND": {
+        "message": "ETA"
+    },
+    "adjustmentsColumnWhenChannel": {
+        "message": "kanala denean"
+    },
+    "adjustmentsColumnIsInRange": {
+        "message": "barrutian dago"
+    },
+    "adjustmentsColumnThenApplyFunction": {
+        "message": "aplikazioak aplikatu"
+    },
+    "adjustmentsColumnViaChannel": {
+        "message": "kanal bidez"
+    },
     "transponderInformation": {
         "message": "Transponder sistemek lasterketen antolatzaileek zure bueltak kronometratzea ahalbidetzen dute. Transpondorea aireontziari egokituta dago eta aireontziak denbora-atea pasatzen duenean pista-alboko hartzaileak zure kodea erregistratzen du eta buelta denbora grabatzen du. IR oinarritutako transponder bat egokitzean zure hegazkinetik pista-alboko hargailuetara zuzentzen dela ziurtatu behar duzu, eta argi-izpiak zure egitura, bateria-uhalak, kableak, helizeak eta abar ez duela oztopatzen."
     },
