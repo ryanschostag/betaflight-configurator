@@ -1344,6 +1344,22 @@
     "configurationGPSAutoConfig": {
         "message": "자동 설정"
     },
+    "configurationGPSGalileo": {
+        "message": "갈릴레오 사용",
+        "description": "Option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSGalileoHelp": {
+        "message": "활성화되면 QZSS 시스템(일본어)을 제거하고 갈릴레오 시스템(유럽어)으로 대체합니다.",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSHomeOnce": {
+        "message": "홈포인트 한번만 설정",
+        "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHomeOnceHelp": {
+        "message": "활성화되면 배터리를 연결한 후 첫 번째 아밍시에만 홈 포인트로 사용됩니다. 활성화되지 않으면 쿼드가 설정될 때마다 홈 포인트가 업데이트됩니다.",
+        "description": "Help text for the option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
     "configurationGPSHelp": {
         "message": "<strong>노트:</strong> GPS 기능을 사용할 때는 시리얼 포트(포트 탭을 통해)를 설정하는 것을 잊지 마십시오."
     },
@@ -3591,8 +3607,29 @@
     "failsafeGpsRescueItemThrottleHover": {
         "message": "스로틀 호버"
     },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "상승속도 (미터/초)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "하강속도 (미터/초)"
+    },
     "failsafeGpsRescueItemMinSats": {
         "message": "최소위성수"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "고정없이 아밍 허용 - <span class=\"message-negative\">경고: GPS 구조 사용 불가</span>"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "고도 모드"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "최대 고도"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "고정된 고도"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "현재 고도"
     },
     "failsafeGpsRescueItemSanityChecks": {
         "message": "온전성 검사"
