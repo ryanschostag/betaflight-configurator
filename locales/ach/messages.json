@@ -4746,6 +4746,13 @@
     "osdDescStatMinRssiDbm": {
         "message": "crwdns9410:0crwdne9410:0"
     },
+    "osdTextElementRcChannels": {
+        "message": "crwdns9922:0crwdne9922:0",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "crwdns9924:0crwdne9924:0"
+    },
     "osdTextStatUnknown": {
         "message": "crwdns9466:0$1crwdne9466:0",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
