@@ -114,7 +114,7 @@
         "message": "Akcelerometr"
     },
     "sensorStatusAccelShort": {
-        "message": "Accel",
+        "message": "Akcel",
         "description": "Text of the image in the top sensors icons. Please keep it short."
     },
     "sensorStatusMag": {
@@ -185,7 +185,7 @@
         "message": "Wgrywanie oprogramowania"
     },
     "tabLanding": {
-        "message": "Powitalnia"
+        "message": "Witaj"
     },
     "tabChangelog": {
         "message": "Wykaz zmian"
@@ -194,7 +194,7 @@
         "message": "Polityka Prywatności"
     },
     "tabHelp": {
-        "message": "Dokumentacja i pomoc"
+        "message": "Dokumentacja i Pomoc"
     },
     "tabSetup": {
         "message": "Ustawienia"
@@ -242,7 +242,7 @@
         "message": "Silniki"
     },
     "tabLedStrip": {
-        "message": "Pasek LED"
+        "message": "Paski LED/RGB"
     },
     "tabRawSensorData": {
         "message": "Czujniki"
@@ -254,7 +254,7 @@
         "message": "Logowanie powiązane"
     },
     "tabOnboardLogging": {
-        "message": "Blackbox"
+        "message": "Rejestrator lotu"
     },
     "tabAdjustments": {
         "message": "Regulacja"
@@ -507,7 +507,7 @@
         "message": "Obciążenie procesora: $1%"
     },
     "dfu_connect_message": {
-        "message": "Prosimy użyć zakładki \"Wgrywanie oprogramowania\" aby połączyć się z urządzeniami w trybie DFU."
+        "message": "Użyć zakładki \"Wgraj oprogramowanie\" aby połączyć się z urządzeniem w trybie DFU"
     },
     "dfu_erased_kilobytes": {
         "message": "<span class=\"message-positive\">Prawidłowo</span> wyczyszczono $1 kB pamięci FLASH."
@@ -528,16 +528,16 @@
         "message": "Sprzęt"
     },
     "defaultWelcomeText": {
-        "message": "Aplikacja wspiera wszystkie kontrolery lotu które mogą współpracować z Betaflight. Sprawdź kartę \"Wgrywania oprogramowania\" aby zobaczyć listę wszystkich kompatybilnych urządzeń.<br><br><a href=\"https://chrome.google.com/webstore/detail/betaflight-Rejestrator lotów -explo/canpiagfkeefejklcojkhojdijglnghc\" target=\"_blank\"> Pobierz Betaflight Blackbox</a><br /><br />Kody źródłowe oprogramowania dostępne do pobrania <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">tutaj</a>.<br />Najnowsze oprogramowanieFC znajdziesz <a href=\"https://github.com/betaflight/betaflight/releases\" title=\"www.github.com\" target=\"_blank\">tutaj</a><br /><br />Najnowsze <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">sterowniki CP210x</a> można pobrać <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">tutaj</a>.<br />Najnowsze <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">sterowniki STM USB VCP</a> można pobrać <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">tutaj</a>.<br />Najnowszy program <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> do instalacji sterowników USB w Windows można pobrać <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">tutaj</a>.<br />"
+        "message": "Aplikacja wspiera wszystkie kontrolery lotu które mogą współpracować z Betaflight. Sprawdź kartę \"Wgraj oprogramowanie\" aby zobaczyć listę wszystkich kompatybilnych urządzeń.<br><br><a href=\"https://chrome.google.com/webstore/detail/betaflight-Rejestrator lotów -explo/canpiagfkeefejklcojkhojdijglnghc\" target=\"_blank\"> Pobierz Betaflight</a><br /><br />Kody źródłowe oprogramowania dostępne do pobrania <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">tutaj</a>.<br />Najnowsze oprogramowanie FC znajdziesz <a href=\"https://github.com/betaflight/betaflight/releases\" title=\"www.github.com\" target=\"_blank\">tutaj</a><br /><br />Najnowsze <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">sterowniki CP210x</a> można pobrać <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">tutaj</a>.<br />Najnowsze <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">sterowniki STM USB VCP</a> można pobrać <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">tutaj</a>.<br />Najnowszy program <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> do instalacji sterowników USB w Windows można pobrać <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">tutaj</a>.<br />"
     },
     "defaultContributingHead": {
         "message": "Współtworzenie"
     },
     "defaultContributingText": {
-        "message": "Jeżeli chcesz pomóc w rozwoju Betaflight, możesz to zrobić na wiele sposobów, np.:<br /><ul><li>Odpowiadając na pytania innych użytkowników na forach i IRC,</li><li>Współtworząc kod oprogramowania FC i konfiguratora - nowe funkcjonalności, poprawki, ulepszenia,</li><li>Testując <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">nowe funkcjonalności/poprawki</a>.</li><li>Pomagając w <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">problemach (GitHub Issues) i komentując zgłaszane funkcjonalności (feature requests)</a>.</li><li>Współpracując w <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">tłumaczeniu konfiguratora</a> na Twój język.</li><li></li></ul>"
+        "message": "Jeżeli chcesz pomóc w rozwoju Betaflight, możesz to zrobić na wiele sposobów np.:<br /><ul><li>Odpowiadając na pytania innych użytkowników na forach i IRC,</li><li>Współtworząc kod oprogramowania FC i konfiguratora - nowe funkcjonalności, poprawki, ulepszenia,</li><li>Testując <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">nowe funkcjonalności i poprawki</a>.</li><li>Pomagając w <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">problemach i komentując zgłaszane funkcjonalności </a>.</li><li>Pomagając w <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">tłumaczeniu konfiguratora</a> na Twój język.</li><li></li></ul>"
     },
     "defaultFacebookText": {
-        "message": "Mamy również <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Grupa Facebook</a>.<br />Dołącz do nas aby porozmawiać o Betaflight, spytać o konfiguracje lub po prostu spędzić czas z innymi pilotami."
+        "message": "Mamy również <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Grupe na Facebooku</a>.<br />Dołącz do nas aby porozmawiać o Betaflight, spytać o konfiguracje lub po prostu spędzić czas z innymi pilotami."
     },
     "defaultChangelogHead": {
         "message": "Wykaz zmian w konfiguratorze"
@@ -549,10 +549,10 @@
         "message": "Open Source / Informacja o darowiznach"
     },
     "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> to oprogramowaniekontrolera lotu które jest <strong>open source</strong> i jest dostępne bez opłat, <strong>bez gwarancji</strong> dla wszystkich użytkowników.</p><p>Jeśli uważasz Betaflight lub Konfigurator Betaflight za przydatne, proszę rozważ <strong>wsparcie</strong> ich rozwoju przez darowiznę.</p>"
+        "message": "<p><strong>Betaflight</strong> to oprogramowanie kontrolera lotu które jest <strong>open source</strong> i jest dostępne <strong>za darmo</strong> dla wszystkich użytkowników.</p><p>Jeśli używasz Betaflight lub Konfiguratora Betaflight oraz uważasz je za przydatne, proszę rozważ <strong>wsparcie</strong> ich rozwoju poprzez darowiznę.</p>"
     },
     "defaultDonateBottom": {
-        "message": "<p>Jeśli chcesz wnosić wkład finansowy na bieżąco, powinieneś rozważyć możliwość zostania naszym patronem $t(patreonLink.message).</p>"
+        "message": "<p>Jeśli chcesz wspierać nas finansowo na bieżąco, powinieneś rozważyć możliwość zostania naszym sponsorem $t(patreonLink.message)</p>"
     },
     "defaultDonate": {
         "message": "Dotacja"
@@ -561,16 +561,16 @@
         "message": "Sponsorzy"
     },
     "defaultDocumentationHead": {
-        "message": "Dokumentacja / Instrukcja"
+        "message": "Dokumentacja i Instrukcje"
     },
     "defaultDocumentation": {
-        "message": "Dokumentacja Betaflight dostępna jest w notatkach do wydania i wiki.<br /><br />"
+        "message": "Dokumentacja Betaflight dostępna jest w formie do wydania oraz w formie elektronicznej.<br /><br />"
     },
     "defaultDocumentation1": {
-        "message": "Betaflight wiki jest świetnym źródłem informacji i może być znalezione <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">tutaj</a>."
+        "message": "Strona o Betaflight jest świetnym źródłem informacji i możesz ją znaleść <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">tutaj</a>."
     },
     "defaultDocumentation2": {
-        "message": "Notatki do wydania oprogramowania FC mogą być przeczytane na stronie <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">GitHub releases</a>."
+        "message": "Oprogramowanie kontrolerów lotów może być pobrane ze strony<a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">GitHub releases</a>."
     },
     "defaultSupportHead": {
         "message": "Wsparcie"
@@ -579,10 +579,10 @@
         "message": "Źródła wsparcia"
     },
     "defaultSupportSubline2": {
-        "message": "Twórca"
+        "message": "Twórcy"
     },
     "defaultSupport": {
-        "message": "Aby uzyskać pomoc, przeszukaj fora i wiki lub skonnietuj się z twoim dostawcą.<br /><br />"
+        "message": "Aby uzyskać pomoc, przeszukaj fora lub odwiedź stronę internetową<br /><br />"
     },
     "defaultSupport1": {
         "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">Wątek na RC Groups</a>"
@@ -597,7 +597,7 @@
         "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
     },
     "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Developerzy Betaflight na slack'u</a>"
+        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Deweloperzy Betaflight</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Zapis i odtwarzanie konfiguracji jest wyłączone.</span> Posiadasz oprogramowanieFC z API w wersji <span class=\"message-negative\">$1</span>. Zapis i odtwarzanie konfiguracji wymaga wersji<span class=\"message-positive\">$2</span>. Prosimy, zapisz swoją konfigurację za pomocą CLI. Opis procedury znajdziesz w dokumentacji Betaflight."
@@ -651,7 +651,7 @@
         "message": "Resetuj oś Z, położenie: $1 stopni"
     },
     "initialSetupMixerHead": {
-        "message": "Typ mixer'a"
+        "message": "Typ Modelu"
     },
     "initialSetupThrottleHead": {
         "message": "Ustawienia gazu"
@@ -1004,7 +1004,7 @@
         "message": "Opis"
     },
     "configurationMixer": {
-        "message": "Mikser"
+        "message": "Typ Modelu"
     },
     "configurationFeatures": {
         "message": "Pozostałe funkcje"
@@ -1103,7 +1103,7 @@
         "message": "Kierunek silników jest odwrócony"
     },
     "configurationReverseMotorSwitchHelp": {
-        "message": "Ta opcja konfiguruje mikser aby wyczekiwał że kierunek silnika zostanie odwrócony a śmigła odpowiedni założone.<strong>Ostrzeżenie:</strong> Nie zmienia to kierunku silnika. Użyj narzędzia do konfiguracji twoich ESC lub zamień kolejność przewodów silnika aby to osiągnąć. Upewnij się również bez założonych śmigieł czy silniki kręcą się w kierunku jak na diagramie powyżej przed próbą uzbrajania."
+        "message": "Opcja tak jest używana aby kamera podczas lotów FPV nie brudziła się oraz żeby kurz i inne zanieczyszczenia nie były wdmuchiwane na kontroler lotu. Należy zadbać aby kierunek silnikó został odpowiednio odwrócony a śmigła odpowiednio założone.<strong>Ostrzeżenie:</strong> Nie zmienia to kierunku obrotów silnika. Użyj narzędzia do konfiguracji swoich ESC lub zamień kolejność przewodów silnika aby to osiągnąć. Upewnij się również bez założonych śmigieł czy silniki kręcą się w kierunku jak na grafice powyżej przed próbą uzbrajania."
     },
     "configurationAutoDisarmDelay": {
         "message": "Rozbrojenie silników po ustawionym czasie [sekundy] (Wymaga uruchomienia MOTOR_STOP)"
@@ -1284,6 +1284,10 @@
         "message": "Po włączeniu, usuwany jest system nawigacji QZSS (japoński) a zastępuje go system Galileo (europejski).",
         "description": "Help text for the option to use Galileo in the GPS configuration"
     },
+    "configurationGPSHomeOnce": {
+        "message": "Ustaw punkt początkowy",
+        "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
     "configurationGPSHomeOnceHelp": {
         "message": "Po włączeniu tej opcji pierwsze uzbrojenie drona po podłączeniu bateri będzie używane na stałe jako punkt początkowy. Jeśli opcja ta nie zostanie aktywowana to za każdym razem, gdy dron zostanie uzbrojony, punkt początkowy zostanie zaktualizowany.",
         "description": "Help text for the option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
@@ -1380,6 +1384,9 @@
     },
     "portsFunction_RX_SERIAL": {
         "message": "Serial RX"
+    },
+    "portsFunction_BLACKBOX": {
+        "message": "Rejestrator lotów pracuje"
     },
     "portsFunction_TBS_SMARTAUDIO": {
         "message": "VTX (TBS SmartAudio)"
@@ -1522,6 +1529,9 @@
     "receiverRcSmoothingInputManual": {
         "message": "Wybiera, czy częstotliwość odcięcia filtra wejściowego jest automatycznie obliczana (zalecane) czy wybierana ręcznie przez użytkownika. Używanie \"Ręcznego\" nie jest zalecane dla protokołów odbiorników, nieich jak Crossfire które mogą zmieniać się w locie."
     },
+    "receiverRcSmoothingDerivativeManual": {
+        "message": "Wybiera, czy częstotliwość odcięcia pochodnego jest automatycznie obliczana (zalecane) czy wybierana ręcznie przez użytkownika. Używanie \"Ręcznego\" nie jest zalecane dla protokołów odbiorników, nieich jak Crossfire które mogą zmieniać się w locie."
+    },
     "receiverRcSmoothingInputHz": {
         "message": "Wejściowa częstotliwość odcięcia"
     },
@@ -1567,8 +1577,33 @@
     "receiverRcInterpolationInterval": {
         "message": "Interwał interpolacji RC [ms]"
     },
+    "pidTuningFeedforwardTransition": {
+        "message": "Przejście do poprzedniej wersji"
+    },
+    "pidTuningFeedforwardTransitionHelp": {
+        "message": "Za pomocą tego parametru można skrócić termin Feedforward w pobliżu środka drążków, co skutkuje gładszym końcem podczas robienia flipów lub beczek. <br> Wartość reprezentuje punkt ugięcia drążka: 0 - wyśrodkowany drążek, 1 - pełne ugięcie. Kiedy drążek znajduje się powyżej tego punktu, Feedforward jest utrzymywany na stałym poziomie zgodnie ze skonfigurowaną wartością. Gdy drążek znajduje się poniżej tego punktu, Feedforward jest proporcjonalnie zmniejszany, osiągając 0 w środkowej pozycji drążka. <br> Wartość 1 daje maksymalny efekt wygładzenia."
+    },
+    "pidTuningDtermSetpointTransition": {
+        "message": "D przejście do wartości zadanej"
+    },
+    "pidTuningDtermSetpoint": {
+        "message": "D siłą wartości zadanej"
+    },
+    "pidTuningDtermSetpointTransitionHelp": {
+        "message": "Za pomocą tego parametru można zmniejszyć wagę wartości zadanej D w pobliżu środka drążków, co skutkuje gładszym końcem podczas robienia flipów i beczek. <br> Wartość reprezentuje punkt ugięcia drążka: 0 - wyśrodkowany drążek, 1 - pełne ugięcie. Gdy drążek znajduje się powyżej tego punktu, wartość zadana siły jest utrzymywana na stałym poziomie zgodnie ze skonfigurowaną wartością. Gdy drążek jest ustawiony poniżej tego punktu, siła zadana jest proporcjonalnie zmniejszana, osiągając 0 w środkowej pozycji drążka. <br> Wartość 1 daje maksymalny efekt wygładzenia, a wartość 0 utrzymuje stałą wartość zadaną na skonfigurowanej wartości w całym zakresie ruchu drążków."
+    },
+    "pidTuningDtermSetpointHelp": {
+        "message": "Ten parametr określa efekt przyspieszenia drążka w składniku pochodnym. <br> Wartość 0 jest równa starej metodzie pomiaru, w której D śledzi tylko żyroskop, a wartość 1 jest równa starej metodzie błędu o równym żyroskopie i współczynniku śledzenia drążka. <br> Dolna wartość jest równa wolniejszej / płynniejszej reakcji drążka, a wyższa wartość zapewnia większą odpowiedź przyspieszania drążka. <br> Należy pamiętać, że zaleca się włączenie interpolacji RC przy wyższych wartościach, aby zapobiec hałasowaniu uderzeń sterujących."
+    },
+    "pidTuningDtermSetpointTransitionWarning": {
+        "message": "<span class = \"message-negative\"> <strong> $t(warningTitle.message): </strong> Odradza się stosowania wartości zadanej D większej niż 0 i mniejszej niż 0,1. Takie postępowanie może prowadzić do niestabilności i zmniejszenia reakcji drążka, gdy drążki przekroczą punkt środkowy. </span>"
+    },
     "pidTuningProportional": {
         "message": "Proporcjonalny"
+    },
+    "pidTuningProportionalHelp": {
+        "message": "Kontroluje siłę tego, jak ściśle maszyna śledzi drążki (wartość zadana). <br> <br> Wyższa wartość (zyski) zapewnia dokładniejsze śledzenie, ale może powodować przeregulowanie, jeśli jest zbyt wysokie w stosunku do pochodnej (D-term). Pomyśl o P-termie jak o sprężynie w samochodzie.",
+        "description": "Proportional Term helpicon message on PID table titlebar"
     },
     "pidTuningIntegral": {
         "message": "Zintegruj"
@@ -1587,6 +1622,10 @@
     "pidTuningFeedforward": {
         "message": "Feedforward"
     },
+    "pidTuningFeedforwardHelp": {
+        "message": "To dodatkowy termin pchający (sprężynowy) oparty na użyciu drążka. FF pomaga P-termowi popychać model do stosowanych ruchów drążka. <br> <br> P-term pcha w oparciu o różnicę między zadaną wartością zadaną (stopni / sek) a odczytem żyroskopu bieżącej prędkości obrotowej (stopnie/sek.). FF popycha w oparciu o nakazaną zmianę samych drążków. <br> <br> Wyższe wartości (zyski) spowodują ostrzejszą reakcję maszyny na użycie drążka. <br> Zbyt wysokie wartości mogą spowodować pewne problemy, zwiększone wydzielanie ciepła przez (gdy silniki nie są w stanie nadążyć za szybkością zmian). <br> Niższe lub zerowe (0) wartości spowodują wolniejszą i płynniejszą reakcję na użycie drążka.",
+        "description": "Feedforward Term helpicon message on PID table titlebar"
+    },
     "pidTuningRcRate": {
         "message": "RC Rate"
     },
@@ -1601,6 +1640,9 @@
     },
     "pidTuningRatesPreview": {
         "message": "Podgląd Rate"
+    },
+    "pidTuningRatesTuningHelp": {
+        "message": "<b> Rate i Expo</b>: Określ swoje wyczucie drążka na podstawie tych parametrów. Użyj wykresu i modelu 3D na żywo, aby znaleźć swoje ulubione ustawienia."
     },
     "pidTuningRcExpo": {
         "message": "RC Expo"
@@ -2065,6 +2107,9 @@
     "servosAngleAtMax": {
         "message": "Kąt przy max"
     },
+    "servosDirectionAndRate": {
+        "message": "Kierunek i stawka"
+    },
     "servosLiveMode": {
         "message": "Wyłącz tryb podglądu na żywo"
     },
@@ -2270,6 +2315,9 @@
     "sensorsAltitudeTitle": {
         "message": "Wysokośc-metry"
     },
+    "sensorsAltitudeHint": {
+        "message": "Wysokość jest obliczana za pomocą barometru (jeśli jest dostępny) oraz z pomocą GPS (jeśli jest dostępny). Jeśli GPS jest podłączony i jest w zasięgu kilku satelit to wysokość bezwzględna nad poziomem morza zostanie pokazana po rozbrojeniu. Po uzbrojeniu zostanie wyświetlona wysokość względem pozycji podczas uzbrajania."
+    },
     "sensorsSonarTitle": {
         "message": "Sonar - cm"
     },
@@ -2278,6 +2326,9 @@
     },
     "cliInfo": {
         "message": "<strong>Uwaga:</strong> opuszczenie karty wiersza poleceń lub naciśnięcie przycisku Rozłącz spowoduje <strong>automatyczne</strong>  \"<strong>wyjście</strong>\" a następnie <strong>restart</strong> kontrolera lotu. A niezapisane dane zostaną <strong>utracone</strong>.<p><strong><span class=\"message-negative\"> Ostrzeżenie: </span></strong> Niektóre polecenia w interfejsie wiersza CLI mogą powodować wysyłanie sygnałów do silników. Może to spowodować uruchchomienie silników, jeśli podłączony jest akumulator. Dlatego zalecane jest upewnienie się, że <strong>bateria nie jest podłączona przed wprowadzeniem poleceń w CLI </strong>."
+    },
+    "cliInputPlaceholder": {
+        "message": "Napisz tutaj swoje polecenie. Naciśnij zakładkę, aby Autouzupełnić."
     },
     "cliInputPlaceholderBuilding": {
         "message": "Proszę czekać podczas tworzenia pamięci podręcznej autouzupełniania..."
@@ -2389,6 +2440,9 @@
     },
     "dataflashNotPresentNote": {
         "message": "Twój kontroler latu nie ma kompatybilnego chipu na dane."
+    },
+    "dataflashFirmwareUpgradeRequired": {
+        "message": "Aktualizacja wymaga oprogramowania&gt;= 1.8.0."
     },
     "dataflashButtonSaveFile": {
         "message": "Zapisz flash do pliku..."
@@ -2513,6 +2567,9 @@
     "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
         "message": "Wybierz wersję oprogramowania dla swojej płytki."
     },
+    "firmwareFlasherNoRebootDescription": {
+        "message": "Włącz, jeśli twój FC jest w trybie DFU. np. jeśli włączyłeś swój FC za pomocą zwarcia dwóch pinów bootloadera lub przytrzymując przycisk BOOT swojego FC."
+    },
     "firmwareFlasherFlashOnConnect": {
         "message": "Wgraj w momęcie połączenia"
     },
@@ -2536,6 +2593,9 @@
     },
     "firmwareFlasherManualBaud": {
         "message": "Ręczna prędkość transmisji"
+    },
+    "firmwareFlasherManualBaudDescription": {
+        "message": "Ręczny wybór szybkości przesyłania, dla płyt które nie obsługują domyślnej prędkości lub połączenia przez bluetooth.<br /><span class=\"message-negative\">Uwaga:</span> Nie używane podczas połączenia przez DFU USB"
     },
     "firmwareFlasherBaudRate": {
         "message": "Prędkość transmisji"
@@ -2607,7 +2667,7 @@
         "message": "Wiadomość:"
     },
     "firmwareFlasherWarningText": {
-        "message": "Postępuj według wytycznych <span class = \"message-negative\"> nie </span> spróbuj flashować sprzęt <strong> inny niż Betaflight </strong> z pomocą tego oprogramowania. <br /> Do <span class = \"message-negative\" > nie </span> <strong> odłączaj </strong> płytki lub <strong> wyłączaj </strong> komputea podczas flashowania. <br /> <br /> <strong> Uwaga: </strong> bootloader STM32 jest przechowywany w ROM-ie, nie może być blokowany. <br /> <strong> Uwaga: </strong> <span class = \"message-negative\"> Automatyczne połączenie </span> jest zawsze wyłączone, gdy jesteś w trybie wgrywania oprogramowania. <br /> <strong> Uwaga: </strong> upewnij się, że masz kopię zapasową; niektóre aktualizacje mogą usunąć twoją konfigurację. <br /> <strong> Uwaga: </strong> jeśli masz problemy z wyrywaniem oprogramowania<strong> spróbuj odłączyć wszystkie kable od kontrolera lotu </strong> spróbuj ponownie uruchomić komputer, zaktualizuj chrome, uaktualnij sterowniki. <br /> <strong> Uwaga: </strong> Podczas wgrywania oprogramowania do płytek bezpośrednio podłączonych do gniazd USB (większość nowszych płytek) upewnij się, że przeczytałeś sekcję Wgrywanie oprogramowania w instrukcji Betaflight i zainstalowałeś odpowiednie oprogramowaniei sterowniki"
+        "message": "Postępuj według wytycznych <span class = \"message-negative\"> nie </span> spróbuj flashować sprzętu<strong> innego niż Betaflight </strong> za pomocą tego oprogramowania. <br /> Oraz<span class = \"message-negative\" > nie </span> <strong> odłączaj </strong> płytki lub <strong> nie wyłączaj </strong> komputera podczas flashowania. <br /> <br /> <strong> Uwaga: </strong> bootloader STM32 jest przechowywany w ROM-ie dlatego nie może być blokowany. <br /> <strong> Uwaga: </strong> <span class = \"message-negative\"> Automatyczne połączenie </span> jest zawsze wyłączone, gdy jesteś w trybie wgrywania oprogramowania. <br /> <strong> Uwaga: </strong> upewnij się, że masz kopię zapasową; niektóre aktualizacje mogą usunąć twoją konfigurację. <br /> <strong> Uwaga: </strong> jeśli masz problem z wgrywaniem oprogramowania<strong> spróbuj odłączyć wszystkie kable od kontrolera lotu </strong> następnie spróbuj ponownie uruchomić komputer, zaktualizuj chrome, uaktualnij sterowniki. <br /> <strong> Uwaga: </strong> Podczas wgrywania oprogramowania do płytek bezpośrednio podłączonych do gniazd USB (większość nowszych płytek) upewnij się, że przeczytałeś sekcję Wgrywanie oprogramowania w instrukcji Betaflight i zainstalowałeś odpowiednie oprogramowanie i sterowniki"
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Odzyskiwanie / Utracono komunikacje</strong>"
@@ -2622,7 +2682,7 @@
         "message": "Załadowane lokalne oprogramowanie: ($1 bajtów)"
     },
     "firmwareFlasherFirmwareOnlineLoaded": {
-        "message": "Załaduj oprogramowanieze strony online: ($1 bytes)"
+        "message": "Załaduj oprogramowanie ze strony online: ($1 bytes)"
     },
     "firmwareFlasherHexCorrupted": {
         "message": "Plik HEX wydaje się być uszkodzony"
@@ -2832,7 +2892,7 @@
         "description": "One of the modes in Color Mode in Led Strip"
     },
     "ledStripWiring": {
-        "message": "Paski LED/RGB",
+        "message": "LED/RGB",
         "description": "One of the modes in Led Strip"
     },
     "ledStripWiringMode": {
@@ -2995,6 +3055,9 @@
     "pidTuningAltitude": {
         "message": "Barometr/Sonar/Wysokość"
     },
+    "pidTuningMag": {
+        "message": "Magnometr/kurs"
+    },
     "pidTuningGps": {
         "message": "Nawigacja GPS"
     },
@@ -3058,6 +3121,10 @@
         "message": "Włącz suwaki",
         "description": "Button label for enabling sliders"
     },
+    "pidTuningSlidersNonExpertMode": {
+        "message": "<strong> Uwaga: </strong> Zakres suwaków jest ograniczony, ponieważ nie jesteś w trybie eksperta. Ten zakres powinien być odpowiedni dla większości osób początkujących.",
+        "description": "Sliders restricted message"
+    },
     "pidTuningSliderLow": {
         "message": "Niski",
         "description": "Tuning Slider Low header"
@@ -3086,6 +3153,10 @@
         "message": "Wzmocnienie reakcji na drążek:",
         "description": "Response tuning slider label"
     },
+    "pidTuningMasterSliderHelp": {
+        "message": "Zasadniczo większe modele wymagają wyższych wartości PID ze względu na niższy stosunek mocy do masy. <br> <br> Mniejsze modele (mikro) wymagają mniejszych wartości PID ze względu na wyższy stosunek mocy do masy. <br> <br> Wyższe wartości są dla większych modeli. Niższe wartości dotyczą mniejszych modeli.",
+        "description": "Master gain tuning slider helpicon message"
+    },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Żyroskopowe filtry dolnoprzepustowe"
     },
@@ -3094,6 +3165,12 @@
     },
     "pidTuningGyroLowpassType": {
         "message": "Pierwszy rodzaj filtra dolnoprzepustowego"
+    },
+    "pidTuningGyroLowpass2Frequency": {
+        "message": "Częstotliwość odcięcia 2 żyroskopu dolnoprzepustowego [Hz]"
+    },
+    "pidTuningGyroLowpass2Type": {
+        "message": "Żyroskopowy dolnoprzepustowy 2 Rodzaj filtra"
     },
     "pidTuningGyroNotchFiltersGroup": {
         "message": "Pasmowo zaporowy filtr żyroskopu"
@@ -3125,9 +3202,31 @@
     "pidTuningDynamicNotchRangeHelp": {
         "message": "Równanie dynamiczne ma trzy zakresy częstotliwości, w których może działać: NISKIE (80-330hz) dla gorzej odwołujących się quadów na śmigłach 6 cali i eięcej, ŚREDNIE (140-550hz) dla normalnego qada o długości śmigieł 5 cali, WYSOKIE (230-800hz) dla bardzo małych 2-3 calowych quadów. Opcja AUTO wybiera zakres w zależności od wartości maksymalnej częstotliwości dolnoprzepustowego filtra żyroskopu."
     },
+    "pidTuningDynamicNotchWidthPercentHelp": {
+        "message": "Ustawia szerokość między dwoma dynamicznymi filtrami wycinającymi. Ustawienie go na 0 spowoduje wyłączenie drugiego filtra z wycięciem dynamicznym i skróci opóźnienie filtra, jednak może spowodować wzrost temperatury silników."
+    },
+    "pidTuningRpmFilterGroup": {
+        "message": "Żyroskopowy filtr RPM",
+        "description": "Header text for the RPM Filter group"
+    },
+    "pidTuningRpmFilterHelp": {
+        "message": "Filtrowanie RPM to zestaw filtrów wykorzystujący żyroskop, który wykorzystują dane telemetryczne RPM do usuwania szumów silnika z chirurgiczną precyzją. <br> <br> <b> <span class = \"message-Positive\"> WAŻNE </span>: ESC musi obsługiwać dwukierunkowy protokół DShot, a wartość $t(configurationMotorPoles.message) na karcie $t(tabConfiguration.message) musi być poprawna, aby ten filtr działał. </b>",
+        "description": "Header text for the RPM Filter group"
+    },
+    "pidTuningRpmHarmonics": {
+        "message": "Liczba harmoniczna żyroskopowego filtra RPM",
+        "description": "Text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningRpmMinHz": {
+        "message": "Minimalna częstotliwość filtra żyroskopu RPM [Hz]",
+        "description": "Text for one of the parameters of the RPM Filter"
+    },
     "pidTuningRpmMinHzHelp": {
         "message": "Minimalna częstotliwość, która będzie używana przez filtr RPM.",
         "description": "Help text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningFilterSettings": {
+        "message": "Ustawienia filtra zależne od profilu"
     },
     "pidTuningDTermLowpassFiltersGroup": {
         "message": "Filtry D Term dolnoprzepustowe"
@@ -3135,8 +3234,47 @@
     "pidTuningDTermLowpassType": {
         "message": "Typ 1 Filtra dolnoprzepustowego D Term"
     },
+    "pidTuningDTermLowpassFrequency": {
+        "message": "D Term Dolnoprzepustowy 1 Częstotliwość odcięcia [Hz]"
+    },
+    "pidTuningDTermLowpass2Frequency": {
+        "message": "D Term Dolnoprzepustowy 2 Częstotliwość odcięcia [Hz]"
+    },
+    "pidTuningDTermLowpass2Type": {
+        "message": "Typ 2 Filtra dolnoprzepustowego D Term"
+    },
+    "pidTuningDTermLowpassDynType": {
+        "message": "Typ Filtra dolnoprzepustowego D Term"
+    },
+    "pidTuningDTermNotchFiltersGroup": {
+        "message": "Filtr Notch D Term"
+    },
+    "pidTuningDTermNotchFrequency": {
+        "message": "Filtr D term Notch częstotliwość [Hz]"
+    },
+    "pidTuningYawLospassFiltersGroup": {
+        "message": "Filtr dolnoprzepustowy Yaw"
+    },
+    "pidTuningYawLowpassFrequency": {
+        "message": "Częstotliwość odcięcia dolnoprzepustowa Yaw [Hz]"
+    },
     "pidTuningVbatPidCompensation": {
         "message": "Kompensacja PID na podstawie Vbat"
+    },
+    "pidTuningVbatPidCompensationHelp": {
+        "message": "Zwiększa wartości PID, aby zrekompensować spadek Vbat. Zapewni to bardziej stałą charakterystykę podczas całego lotu. Zastosowana rekompensata jest obliczana na podstawie wartości $t(powerBatteryMaximum.message) ustawionej na stronie $t(tabPower.message), więc upewnij się, że jest ustawiona tak jak byś tego chciał."
+    },
+    "pidTuningItermRotation": {
+        "message": "I Term Rotation"
+    },
+    "pidTuningItermRotationHelp": {
+        "message": "Prawidłowo obraca bieżący wektor I Term do innych osi, ponieważ model obraca się podczas ciągłych beczek, flipów oraz innych trików. Bardzo doceniane przez pilotów LOS acro."
+    },
+    "pidTuningSmartFeedforward": {
+        "message": "Smart Feedforward"
+    },
+    "pidTuningItermRelax": {
+        "message": "I Term Relax"
     },
     "pidTuningItermRelaxAxes": {
         "message": "Osie",
@@ -3150,6 +3288,9 @@
     },
     "pidTuningItermRelaxAxesOptionRPInc": {
         "message": "RP (tylko przyrost)"
+    },
+    "pidTuningItermRelaxAxesOptionRPYInc": {
+        "message": "RPY (tylko przyrost)"
     },
     "pidTuningItermRelaxType": {
         "message": "Typ",
@@ -3177,6 +3318,15 @@
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Limit kąta trybu treningowego akrobatycznego"
     },
+    "pidTuningIntegratedYaw": {
+        "message": "Zintegrowane odchylenie Yaw"
+    },
+    "configHelp2": {
+        "message": "Umożliwia dowolny obrót kontrolera lotu w stopniach. Ma to umożliwić montaż kontrolera: bokiem/ do góry nogami / itp. Podczas uruchamiania zewnętrznych czujników, użyj ustawień czujników (Gyro, Akcel, Mag), aby określić położenie czujnika niezależnie od orientacji kontrolera lotów. "
+    },
+    "failsafeFeaturesHelpOld": {
+        "message": "Konfiguracja failsafe nie powiodła się. Użyj Betaflight <strong>v1.12.0+</strong>, aby włączyć ulepszony panel konfiguracyjny."
+    },
     "failsafePaneTitleOld": {
         "message": "Odbiornik Failsafe"
     },
@@ -3195,14 +3345,41 @@
     "failsafeStageTwoSettingsTitle": {
         "message": "Etap 2 - Ustawienia"
     },
+    "failsafeThrottleLowItem": {
+        "message": "Failsafe niskie opóźnienie przepustnicy [1 = 0.1 sec.]"
+    },
+    "failsafeThrottleLowHelp": {
+        "message": "Wystarczy rozbroić model zamiast wykonać wybraną procedurę awaryjną, aby przepustnica była nieaktywna"
+    },
+    "failsafeThrottleItem": {
+        "message": "Wartość przepustnicy użyta podczas lądowania"
+    },
+    "failsafeOffDelayItem": {
+        "message": "Opóźnienie wyłączenia silnika podczas Failsafe [1 = 0,1 sek]"
+    },
+    "failsafeOffDelayHelp": {
+        "message": "Czas pozostawania w trybie lądowania do momentu wyłączenia silników i wyłączenia jednostki"
+    },
     "failsafeSubTitle1": {
         "message": "Etap 2 – Procedura Failsafe"
     },
     "failsafeProcedureItemSelect1": {
         "message": "Ląduj"
     },
+    "failsafeProcedureItemSelect2": {
+        "message": "Upadek"
+    },
+    "failsafeProcedureItemSelect4": {
+        "message": "GPS Ratunek"
+    },
     "failsafeGpsRescueItemAngle": {
         "message": "Angle"
+    },
+    "failsafeGpsRescueItemInitialAltitude": {
+        "message": "Początkowa wysokość(metry)"
+    },
+    "failsafeGpsRescueItemDescentDistance": {
+        "message": "Długość zniżania (metry)"
     },
     "failsafeGpsRescueItemGroundSpeed": {
         "message": "Prędkość na ziemi (metry/sekunde)"
@@ -3213,8 +3390,35 @@
     "failsafeGpsRescueItemThrottleMax": {
         "message": "Przepustnica w pozycji max"
     },
+    "failsafeGpsRescueItemThrottleHover": {
+        "message": "Zawieszenie przepustnicy"
+    },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "Prędkość wznoszenia (metry/sekundę)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "Prędkość opadania (metry/sekundę)"
+    },
     "failsafeGpsRescueItemMinSats": {
         "message": "Minimalna liczba satelitów"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "Pozwól na uzbrojenie bez FIX-a - <span class=\"message-negative\">UWAGA: GPS Rescue będzie NIEDOSTĘPNY</span>"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "Tryb Wysokości"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "Maksymalna wysokość"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "Stała wysokość"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "Aktualna wysokość"
+    },
+    "failsafeGpsRescueItemSanityChecks": {
+        "message": "Sprawdzenie kontrolne"
     },
     "failsafeGpsRescueItemSanityChecksOff": {
         "message": "Wył"
@@ -3237,14 +3441,23 @@
     "failsafeSwitchModeItem": {
         "message": "Przełącznik Failsafe aktywny"
     },
+    "failsafeSwitchModeHelp": {
+        "message": "Ta opcja określa, co się dzieje, gdy Failsafe jest aktywowany przez przełącznik AUX:<br/><strong>Etap 1</strong> aktywuje Etap 1 Failsafe. Jest to przydatne, jeśli chcesz symulować zachowanie bezpiecznej utraty sygnału.<br/><strong>Etap 2</strong> pomija Etap 1 i natychmiast aktywuje procedurę Etap 2<br/><strong>Natychmiast ROZBRAJA</strong> (twoja jednostka spadnie na ziemię)"
+    },
     "failsafeSwitchOptionStage1": {
         "message": "Etap 1"
     },
     "failsafeSwitchOptionStage2": {
         "message": "Etap 2"
     },
+    "failsafeSwitchOptionKill": {
+        "message": "Zabij"
+    },
     "powerButtonSave": {
         "message": "Zapisz"
+    },
+    "powerFirmwareUpgradeRequired": {
+        "message": "<span class=\"message-negative\">Wymagana</span>aktualizacja oprogramowania układowego. Konfiguracja baterii/Amperomierza/Napięcia przy użyciu API &lt; 1.33.0 (wydanie dla Betaflight &lt;= 3.17) nie jest obsługiwane."
     },
     "powerBatteryVoltageMeterSource": {
         "message": "Źródło pomiaru napięcia"
@@ -3294,6 +3507,18 @@
     "powerCalibrationManagerHelp": {
         "message": "Aby skalibrować, użyj multimetru do pomiaru rzeczywistego napięcia / prądu pobieranego przez jednostkę (z podłączoną baterią) i wprowadź poniższe wartości. Następnie, gdy ta sama bateria jest nadal podłączona, kliknij [Calibrate]."
     },
+    "powerCalibrationManagerNote": {
+        "message": "<strong>Uwaga:</strong> Przed kalibracją skali upewnij się, że dzielnik i mnożnik napięcia oraz offset dla amperażu są ustawione prawidłowo.<br>Pozostawienie wartości na 0 nie spowoduje kalibracji.</br><strong>Pamiętaj, aby zdjąć śmigła przed podłączeniem do baterii!</strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class=\"message-negative\">Ostrzeżenie:</span> Bateria <span class=\"message-negative\">nie jest podłączona</span> lub woltomierz albo amperomierz <span class=\"message-negative\">nie są ustawione/ nie działają prawidłowo.</span> Upewnij się, że woltomierz i/lub amperomierz odczytują wartość powyżej 0. W przeciwnym razie nie będziesz w stanie skalibrować tego narzędzia."
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class=\"message-negative\">Ostrzeżenie:</span> Źródło pomiaru napięcia i/lub prądu <strong>zostały zmienione, ale nie zapisane.</strong> Proszę ustawić właściwe źródła i zapisać je przed próbą skalibrowania."
+    },
+    "powerCalibrationManagerConfirmationTitle": {
+        "message": "Potwierdzenie menedżera kalibracji"
+    },
     "powerCalibrationSave": {
         "message": "Kalibracja"
     },
@@ -3302,6 +3527,9 @@
     },
     "powerCalibrationDiscard": {
         "message": "Odrzuć Kalibrację"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "Tutaj pokazane są nowo skalibrowane skale <br>Zastosowanie ich spowoduje ustawienie skal, ale <strong>nie zapisze ich.</strong></br> <br>Po zapisaniu upewnij się, że nowe napięcie i prąd są poprawne.</br>"
     },
     "powerVoltageHead": {
         "message": "Miernik napięcia"
@@ -3389,6 +3617,9 @@
     },
     "powerVoltageScale": {
         "message": "Skala"
+    },
+    "powerVoltageDivider": {
+        "message": "Wartość dzielnika"
     },
     "powerVoltageMultiplier": {
         "message": "Wartość mnożnika"
@@ -3489,11 +3720,30 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupPreviewHelp": {
+        "message": "<strong>Uwaga:</strong> Podgląd OSD nie może pokazywać rzeczywistej czcionki zainstalowanej na kontrolerze lotu. Układ poszczególnych elementów może wyglądać inaczej, gdy używane są starsze wersje oprogramowania układowego - sprawdź wygląd czcionki poprzez okulary lub wyświetlacz przed rozpoczęciem jakiegokolwiek lotu."
+    },
     "osdSetupUnsupportedNote1": {
         "message": "Twój kontroler lotu nie odpowiada na komendy OSD. Prawdopodobnie oznacza to że nie ma zintegrowanego OSD BetaFlight."
     },
+    "osdSetupProfilesTitle": {
+        "message": "Numer profilu OSD",
+        "description": "Description of the header of the OSD elements column associated to each profile"
+    },
     "osdSetupElementsTitle": {
         "message": "Elementy"
+    },
+    "osdSetupPreviewTitle": {
+        "message": "Przeciągnij elementy, aby zmienić ich pozycję",
+        "description": "Indicates in the preview window of the OSD that the user can drag the elements to reorder them"
+    },
+    "osdSetupPreviewSelectProfileTitle": {
+        "message": "Podgląd dla",
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
+    },
+    "osdSetupSelectedProfileTitle": {
+        "message": "Aktywny profil OSD",
+        "description": "Title of the box to select the current active OSD profile"
     },
     "osdSetupSelectedProfileLabel": {
         "message": "Prąd:",
@@ -3628,13 +3878,29 @@
         "message": "Napięcie baterii",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementMainBattVoltage": {
+        "message": "Napięcie baterii (miga gdy jest poniżej ustawionego limitu)"
+    },
     "osdTextElementRssiValue": {
         "message": "Wartość RSSI",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementRssiValue": {
+        "message": "Moc RSSI (miga gdy jest poniżej ustawionego limitu)"
+    },
+    "osdTextElementTimer": {
+        "message": "Zegar",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer": {
+        "message": "Licznik czasu lotu"
+    },
     "osdTextElementThrottlePosition": {
         "message": "Pozycja przepustnicy",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementThrottlePosition": {
+        "message": "Aktualna wartość kanału przepustnicy"
     },
     "osdTextElementCpuLoad": {
         "message": "Obciążenie CPU",
@@ -3661,13 +3927,43 @@
         "message": "Uzbrojony",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementArmed": {
+        "message": "Tekstowa wiadomość uzbrojenia"
+    },
     "osdTextElementDisarmed": {
         "message": "Nieuzbrojony",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementDisarmed": {
+        "message": "Tekstowa wiadomość rozbrojenia"
+    },
+    "osdTextElementCrosshairs": {
+        "message": "Celowniki",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCrosshairs": {
+        "message": "Środek celownika ekranowego"
+    },
+    "osdTextElementArtificialHorizon": {
+        "message": "Sztuczny horyzont",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementArtificialHorizon": {
+        "message": "Graficzny wskaźnik sztucznego horyzontu"
+    },
+    "osdTextElementHorizonSidebars": {
+        "message": "Paski boczne sztucznego horyzontu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementHorizonSidebars": {
+        "message": "Paski boczne wokół wskaźnika sztucznego horyzontu"
+    },
     "osdTextElementCurrentDraw": {
         "message": "Pobór prądu",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCurrentDraw": {
+        "message": "Natychmiastowy pobór prądu z baterii"
     },
     "osdTextElementMahDrawn": {
         "message": "Pobór prądu mAh",
@@ -3680,9 +3976,22 @@
         "message": "Nazwa modelu",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementCraftName": {
+        "message": "Twórz nazwy zgodnie z ustawieniami na karcie Konfiguracja"
+    },
     "osdTextElementAltitude": {
         "message": "Wysokość",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementAltitude": {
+        "message": "Aktualny pułap (miga gdy jest powyżej ustawionego limitu)"
+    },
+    "osdTextElementOnTime": {
+        "message": "Na czas",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementOnTime": {
+        "message": "Całkowity czas pod zasilaniem"
     },
     "osdTextElementFlyTime": {
         "message": "Czas lotu",
@@ -3713,9 +4022,43 @@
         "message": "Długość geograficzna GPS",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementGPSLon": {
+        "message": "Długość geograficzna GPS"
+    },
     "osdTextElementGPSLat": {
         "message": "Długość geograficzna GPS",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementGPSLat": {
+        "message": "Szerokość geograficzna GPS"
+    },
+    "osdTextElementDebug": {
+        "message": "Debug",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDebug": {
+        "message": "Debuguj zmienne"
+    },
+    "osdTextElementPIDRoll": {
+        "message": "PID roll",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPIDRoll": {
+        "message": "Wzmocnienie PID osi przechylenia"
+    },
+    "osdTextElementPIDPitch": {
+        "message": "PID pitch",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPIDPitch": {
+        "message": "Wzmocnienie PID osi pochylenia (pitch)"
+    },
+    "osdTextElementPIDYaw": {
+        "message": "PID yaw",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPIDYaw": {
+        "message": "Wzmocnienie PID osi odchylenia (yaw)"
     },
     "osdTextElementPower": {
         "message": "Włącz",
@@ -3724,6 +4067,17 @@
     "osdDescElementPower": {
         "message": "Natychmiastowe zużycie energii elektrycznej"
     },
+    "osdTextElementPIDRateProfile": {
+        "message": "Profil: PID i współczynników (rate)",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPIDRateProfile": {
+        "message": "Wyświetlanie numeryczne aktywnych profilów PID i współczynników (rates)"
+    },
+    "osdTextElementBatteryWarning": {
+        "message": "Ostrzeżenie o baterii",
+        "description": "One of the elements of the OSD"
+    },
     "osdTextElementAvgCellVoltage": {
         "message": "Średnie napięcie ogniwa baterii",
         "description": "One of the elements of the OSD"
@@ -3731,12 +4085,68 @@
     "osdDescElementAvgCellVoltage": {
         "message": "Średnie napięcie ogniwa (napięcie głównej baterii / liczba ogniw)"
     },
+    "osdTextElementPitchAngle": {
+        "message": "Kąt: pochylenie (pitch)",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPitchAngle": {
+        "message": "Kąt pochylenia (pitch) w stopniach"
+    },
+    "osdTextElementRollAngle": {
+        "message": "Przechylenie roll",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRollAngle": {
+        "message": "Kąt przechylenia (roll) w stopniach"
+    },
     "osdTextElementMainBattUsage": {
         "message": "Zużycie baterii",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementMainBattUsage": {
         "message": "Graficzne przedstawienie obrazujące zużycie baterii"
+    },
+    "osdTextElementArmedTime": {
+        "message": "Licznik: czas uzbrojenia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementArmedTime": {
+        "message": "Czas od ostatniego uzbrojenia"
+    },
+    "osdTextElementHomeDirection": {
+        "message": "Kierunek do domu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementHomeDirection": {
+        "message": "Strzałka pokazująca kierunek do pozycji domowej"
+    },
+    "osdTextElementHomeDistance": {
+        "message": "Odległość do domu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementHomeDistance": {
+        "message": "Odległość do pozycji domowej (w stopach lub metrach w oparciu o ustawienia systemu jednostkowego)"
+    },
+    "osdTextElementNumericalHeading": {
+        "message": "Pozycja numeryczna",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementNumericalHeading": {
+        "message": "Cyfrowy odczyt aktualnego kursu w stopniach"
+    },
+    "osdTextElementNumericalVario": {
+        "message": "Cyfrowy wariometr (prędkość opadania/wznoszenia)",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementNumericalVario": {
+        "message": "Cyfrowy odczyt prędkości pionowej (w stopach lub metrach - zależnie od ustawień globalnych systemu)"
+    },
+    "osdTextElementCompassBar": {
+        "message": "Pasek kompasu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCompassBar": {
+        "message": "Graficzny pasek kompasu pokazujący bieżący kurs"
     },
     "osdTextElementWarnings": {
         "message": "Ostrzeżenie",
@@ -3759,6 +4169,55 @@
     "osdDescElementEscRpm": {
         "message": "RPM zgłaszane za pomocą telemetrii ESC"
     },
+    "osdTextElementRemaningTimeEstimate": {
+        "message": "Licznik: szacowany pozostały czas",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Szacunkowy czas lotu"
+    },
+    "osdTextElementRtcDateTime": {
+        "message": "Data i godzina RTC",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Zegar w czasie rzeczywistym Data/godzina"
+    },
+    "osdTextElementAdjustmentRange": {
+        "message": "Zakres regulacji",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Aktualnie aktywne ustawienie zakresu regulacji i jej wartość"
+    },
+    "osdTextElementTimer1": {
+        "message": "Zegar 1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer1": {
+        "message": "Pokazuje wartość licznika 1"
+    },
+    "osdTextElementTimer2": {
+        "message": "Zegar 2",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer2": {
+        "message": "Licznik 2"
+    },
+    "osdTextElementCoreTemperature": {
+        "message": "Temperatura rdzenia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCoreTemperature": {
+        "message": "Temperatura rdzenia STM32 MCU"
+    },
+    "osdTextAntiGravity": {
+        "message": "Anti Gravity",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescAntiGravity": {
+        "message": "Włącza wskaźnik, gdy anti gravity jest aktywne"
+    },
     "osdTextGForce": {
         "message": "Siła G",
         "description": "One of the elements of the OSD"
@@ -3769,6 +4228,97 @@
     "osdTextElementMotorDiag": {
         "message": "Diagnostyka silnika",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementMotorDiag": {
+        "message": "Pokazuje wykres wyjścia każdego silnika"
+    },
+    "osdTextElementLogStatus": {
+        "message": "Status rejestratora lotów",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLogStatus": {
+        "message": "Numer i ostrzeżenia rejestratora lotu"
+    },
+    "osdTextElementFlipArrow": {
+        "message": "Kierunek możliwego obrotu po zderzeniu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlipArrow": {
+        "message": "Strzałka pokazuje, które silniki mogą być użyte w trybie turtle"
+    },
+    "osdTextElementLinkQuality": {
+        "message": "Jakość połączenia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLinkQuality": {
+        "message": "Alternatywny wskaźnik „jakości połączenia” oparty na ilości utraconych ramkach danych - używaj z ostrożnością"
+    },
+    "osdTextElementFlightDist": {
+        "message": "Odległość lotu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlightDist": {
+        "message": "Pokonana odległość podczas tego lotu."
+    },
+    "osdTextElementStickOverlayLeft": {
+        "message": "Wizualizacja drążka lewego",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayLeft": {
+        "message": "Wizualizacja pozycji drążka lewego."
+    },
+    "osdTextElementStickOverlayRight": {
+        "message": "Wizualizacja drążka prawego",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayRight": {
+        "message": "Wizualizacja pozycji drążka prawego."
+    },
+    "osdTextElementDisplayName": {
+        "message": "Wyświetl nazwę",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDisplayName": {
+        "message": "Wyświetla nazwę którą ustawiono poprzez polecenie \"display_name\" w konsoli cli"
+    },
+    "osdTextElementEscRpmFreq": {
+        "message": "Częstotliwość RPM ESC",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEscRpmFreq": {
+        "message": "Częstotliwość RPM przekazywana za pomocą telemetrii ESC"
+    },
+    "osdTextElementRateProfileName": {
+        "message": "Profil: nazwa profilu rate",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRateProfileName": {
+        "message": "Pokazuje nazwę profilu rate"
+    },
+    "osdTextElementPidProfileName": {
+        "message": "Profil: nazwa profilu PID",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPidProfileName": {
+        "message": "Pokazuje nazwę aktualnego profilu PID"
+    },
+    "osdTextElementOsdProfileName": {
+        "message": "Profil: nazwa profilu OSD",
+        "description": "One of the elements of the OSD"
+    },
+    "osdTextElementRssiDbmValue": {
+        "message": "Wartość RSSI dBm",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRssiDbmValue": {
+        "message": "Wartość w dBm sygnału RSSI, jeżeli jest dostępna"
+    },
+    "osdTextElementUnknown": {
+        "message": "Nieznane $1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementUnknown": {
+        "message": "Nieznany element (szczegóły będą dodane w następnej wersji konfiguratora)"
     },
     "osdTextStatMaxSpeed": {
         "message": "Prędkość maksymalna",
@@ -3781,9 +4331,15 @@
         "message": "Minimalne napięcie baterii",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
+    "osdDescStatMinBattery": {
+        "message": "Minimalne zarejestrowane napięcie baterii"
+    },
     "osdTextStatMinRssi": {
         "message": "RSSI Minimum",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinRssi": {
+        "message": "Minimalny zarejestrowany RSSI"
     },
     "osdTextStatMaxCurrent": {
         "message": "Maksymalny pobór prądu baterii",
@@ -3792,12 +4348,47 @@
     "osdDescStatMaxCurrent": {
         "message": "Maksymalny zarejestrowany pobór prądu"
     },
+    "osdTextStatUsedMah": {
+        "message": "Bateria: wykorzystane mAh",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatUsedMah": {
+        "message": "Bateria: wykorzystana pojemność"
+    },
     "osdTextStatMaxAltitude": {
         "message": "Maksymalna wysokość",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxAltitude": {
         "message": "Maksymalna zarejestrowana wysokość"
+    },
+    "osdTextStatBlackbox": {
+        "message": "Wykorzystanie rejestratora",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatBlackbox": {
+        "message": "Procentowe użycie rejestratora lotów"
+    },
+    "osdTextStatEndBattery": {
+        "message": "Bateria rozładowana",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatEndBattery": {
+        "message": "Napięcie baterii w momencie rozbrojenia"
+    },
+    "osdTextStatFlyTime": {
+        "message": "Całkowity czas lotu",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatFlyTime": {
+        "message": "Całkowity czas uzbrojenia od podłączenia baterii"
+    },
+    "osdTextStatArmedTime": {
+        "message": "Czas lotu w ostatnim uzbrojeniu",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatArmedTime": {
+        "message": "Czas od ostatniego uzbrojenia"
     },
     "osdTextStatMaxDistance": {
         "message": "Maksymalna odległość do domu",
@@ -3806,13 +4397,33 @@
     "osdDescStatMaxDistance": {
         "message": "Maksymalna odległość od domu"
     },
+    "osdTextStatBlackboxLogNumber": {
+        "message": "Numer logu czarnej skrzynki",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatBlackboxLogNumber": {
+        "message": "Numer logu czarnej skrzynki dla tego lotu"
+    },
     "osdTextStatTimer1": {
         "message": "Zegar 1",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
+    "osdDescStatTimer1": {
+        "message": "Wartość licznika 1 w chwili rozbrojenia"
+    },
     "osdTextStatTimer2": {
         "message": "Zegar 2",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTimer2": {
+        "message": "Wartość licznika 2 w chwili rozbrojenia"
+    },
+    "osdTextStatRtcDateTime": {
+        "message": "Data i godzina RTC",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatRtcDateTime": {
+        "message": "Data i czas zegara czasu rzeczywistego"
     },
     "osdTextStatBattery": {
         "message": "Napięcie baterii",
@@ -3846,45 +4457,226 @@
         "message": "Minimalna jakość łączą",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
+    "osdDescStatMinLinkQuality": {
+        "message": "Minimalna wartość alternatywnego wskaźnika \"jakości łącza\" bazującego na ilości straconych ramek danych"
+    },
+    "osdTextStatFlightDistance": {
+        "message": "Odległość lotu",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatFlightDistance": {
+        "message": "Całkowita odległość przebyta podczas lotu"
+    },
     "osdTextStatMaxFFT": {
         "message": "Maksymalne FFT",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMaxFFT": {
+        "message": "Szczytowa (peak) częstotliwość FFT"
+    },
+    "osdTextStatTotalFlights": {
+        "message": "Całkowita liczba lotów",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlights": {
+        "message": "Całkowita liczba lotów"
+    },
+    "osdTextStatTotalFlightTime": {
+        "message": "Całkowity czas lotu",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightTime": {
+        "message": "Całkowity czas spędzony w powietrzu"
+    },
+    "osdTextStatTotalFlightDistance": {
+        "message": "Całkowity dystans lotu",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightDistance": {
+        "message": "Całkowita przebyta odległość"
     },
     "osdTextStatMinRssiDbm": {
         "message": "RSSI dBm minimum",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
+    "osdDescStatMinRssiDbm": {
+        "message": "Minimalna wartość RSSI dBm"
+    },
+    "osdTextStatUnknown": {
+        "message": "Nieznane $1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatUnknown": {
+        "message": "Nieznana statystyka (szczegóły do dodania w przyszłej wersji)"
+    },
+    "osdDescribeFontVersion1": {
+        "message": "Wersja czcionki: 1 (Betaflight 4.0 lub starszy)"
+    },
+    "osdDescribeFontVersion2": {
+        "message": "Wersja czcionki: 2 (Betaflight 4.1 lub nowszy)"
+    },
+    "osdDescribeFontVersionCUSTOM": {
+        "message": "Wersja czcionki: podana przez użytkownika"
+    },
     "osdTimerSource": {
         "message": "Źródło:"
     },
+    "osdTimerSourceOptionOnTime": {
+        "message": "Uruchomiony od",
+        "description": "One of the options for the source timer. This options shows the amount of time has passed since the battery was plugged"
+    },
+    "osdTimerSourceOptionTotalArmedTime": {
+        "message": "Całkowity czas uzbrojenia",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed since the battery was plugged"
+    },
+    "osdTimerSourceOptionLastArmedTime": {
+        "message": "Czas ostatniego uzbrojenia",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed the latest time"
+    },
+    "osdTimerSourceOptionOnArmTime": {
+        "message": "Czas włączonego uzbrojenia",
+        "description": "One of the options for the source timer. This option shows On time when craft is disarmed, and Armed time when armed"
+    },
+    "osdTimerPrecision": {
+        "message": "Dokładność:"
+    },
+    "osdTimerPrecisionTooltip": {
+        "message": "Wybierz dokładność zegara, kontroluje dokładność pokazywanego czasu"
+    },
+    "osdTimerPrecisionOptionSecond": {
+        "message": "Sekundy",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionHundredth": {
+        "message": "Setne",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionTenth": {
+        "message": "Dzięsiętne",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
     "osdTimerAlarm": {
         "message": "Alarm:"
+    },
+    "osdTimerAlarmTooltip": {
+        "message": "Wybierz próg alarmu czasowego w minutach, gdy czas przekroczy tę wartość, element OSD będzie migał, ustawienie na 0 wyłącza alarm"
     },
     "osdTimerAlarmOptionRssi": {
         "message": "RSSI",
         "description": "Text of the RSSI alarm"
     },
+    "osdTimerAlarmOptionCapacity": {
+        "message": "Pojemność",
+        "description": "Text of the capacity alarm"
+    },
+    "osdTimerAlarmOptionAltitude": {
+        "message": "Wysokość",
+        "description": "Text of the altitude alarm"
+    },
+    "osdWarningTextArmingDisabled": {
+        "message": "Uzbrajanie nieaktywne",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningArmingDisabled": {
+        "message": "Pokazuje najpoważniejszy powód blokady uzbrajania"
+    },
+    "osdWarningTextBatteryNotFull": {
+        "message": "Bateria nie jest pełna",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningBatteryNotFull": {
+        "message": "Alarm gdy nowo podłączona bateria nie jest w pełni naładowana"
+    },
     "osdWarningTextBatteryWarning": {
         "message": "Ostrzeżenie o baterii",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningBatteryWarning": {
+        "message": "Alarmy, gdy napięcie baterii spadnie poniżej progu ostrzegawczego"
+    },
+    "osdWarningTextBatteryCritical": {
+        "message": "Krytyczny stan Baterii",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningBatteryCritical": {
         "message": "Alarm gdy napięcie baterii spadnie poniżej minimalnego średniego napięcia na ogniwo"
     },
+    "osdWarningTextVisualBeeper": {
+        "message": "Sygnalizacja wizualna",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningVisualBeeper": {
         "message": "Pokazuje wizualizację sygnału dźwiękowego (jako 4 gwiazdki)"
+    },
+    "osdWarningTextCrashFlipMode": {
+        "message": "Tryb odwrócenia po zderzeniu",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningCrashFlipMode": {
+        "message": "Ostrzega, gdy funkcja przewracania Flip jest aktywna"
     },
     "osdWarningTextEscFail": {
         "message": "Błąd ESC",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
+    "osdWarningEscFail": {
+        "message": "Zlicza listę awarii ESC / silników (gdy obroty lub temperatura przekraczają skonfigurowany próg)"
+    },
+    "osdWarningTextCoreTemperature": {
+        "message": "Temperatura rdzenia",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningCoreTemperature": {
+        "message": "Ostrzega, gdy temperatura rdzenia MCU przekracza skonfigurowany próg"
+    },
+    "osdWarningTextRcSmoothingFailure": {
+        "message": "Błąd wygładzania RC",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRcSmoothingFailure": {
+        "message": "Ostrzega, gdy inicjalizacja wygładzania RC nie powiodła się"
+    },
     "osdWarningTextFailsafe": {
         "message": "Failsafe",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
+    "osdWarningFailsafe": {
+        "message": "Ostrzega, gdy dochodzi do awarii"
+    },
+    "osdWarningTextLaunchControl": {
+        "message": "Odzyskano sterowanie",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLaunchControl": {
+        "message": "Ostrzega, gdy tryb kontroli uruchamiania jest włączony"
+    },
+    "osdWarningTextGpsRescueUnavailable": {
+        "message": "Ratowanie GPS niedostępne",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningGpsRescueUnavailable": {
+        "message": "Ostrzega, gdy funkcja ratowania GPS jest niedostępna i nie można jej aktywować"
+    },
+    "osdWarningTextGpsRescueDisabled": {
+        "message": "Ratowanie GPS wyłączone",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningGpsRescueDisabled": {
+        "message": "Ostrzega gdy funkcja ratowania GPS jest wyłączona"
+    },
     "osdWarningTextRSSI": {
         "message": "RSSI",
         "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRSSI": {
+        "message": "Ostrzega, gdy wartość RSSI jest poniżej ustawień alarmu"
+    },
+    "osdWarningTextLinkQuality": {
+        "message": "Jakość połączenia",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLinkQuality": {
+        "message": "Ostrzega, gdy jakość łącza jest poniżej ustawień alarmu"
     },
     "osdWarningTextRssiDbm": {
         "message": "RSSI dBm",
@@ -3892,6 +4684,12 @@
     },
     "osdWarningRssiDbm": {
         "message": "Ostrzega, gdy wartość RSSI dBm jest poniżej ustawienia alarmu"
+    },
+    "osdWarningTextUnknown": {
+        "message": "Nieznane $1"
+    },
+    "osdWarningUnknown": {
+        "message": "Nieznane ostrzeżenie (szczegóły będą dodane w następnej wersji konfiguratora)"
     },
     "osdSectionHelpElements": {
         "message": "Włącz lub wyłącz elementy OSD."
@@ -3901,6 +4699,12 @@
     },
     "osdSectionHelpUnits": {
         "message": "Ustaw system jednostek dla numerycznych odczytów."
+    },
+    "osdSectionHelpTimers": {
+        "message": "Konfiguracja liczników lotu."
+    },
+    "osdSectionHelpAlarms": {
+        "message": "Ustaw progi używane dla elementów OSD ze stanami alarmowymi."
     },
     "osdSectionHelpStats": {
         "message": "Ustaw wartości wyświetlane na ekranie po zakończonym locie."
@@ -3916,6 +4720,14 @@
     },
     "osdButtonSaved": {
         "message": "Zapisano"
+    },
+    "vtxMessageTableNotConfigured": {
+        "message": "<span class=\"message-negative\">Uwaga:</span> Musisz skonfigurować i zapisać PIERWSZĄ tabelę VTX na dole zanim będziesz mógł korzystać z $t(vtxSelectedMode.message) pól.",
+        "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxFrequencyChannel": {
+        "message": "Wprowadź częstotliwość bezpośrednio",
+        "description": "Text of one of the fields of the VTX tab"
     },
     "vtxSelectedMode": {
         "message": "Wybierz tryb",
@@ -3936,6 +4748,22 @@
     "vtxType_1": {
         "message": "RTC607",
         "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxType_3": {
+        "message": "SmartAudio",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxType_4": {
+        "message": "Tramp",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxType_255": {
+        "message": "Nieznane",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxBand": {
+        "message": "Pasmo",
+        "description": "Text of one of the fields of the VTX tab"
     },
     "vtxBandHelp": {
         "message": "Tutaj możesz wybrać pasmo dla swojego VTX",
@@ -3993,6 +4821,26 @@
         "message": "To jest moc wybrana dla VTX. Można ją modyfikować, jeśli $t(vtxPitMode.message) lub $t(vtxLowPowerDisarm.message) jest włączone",
         "description": "Help text for the power field of the VTX tab"
     },
+    "vtxPitMode": {
+        "message": "Pit Mode",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPitModeHelp": {
+        "message": "Gdy włączone, VTX wchodzi w tryb bardzo niskiej mocy, aby pozwolić na włączenie modelu na stole bez zakłócania innych pilotów. Zwykle zakres tego trybu jest mniejszy niż 5 m.<br><br>UWAGA: Niektóre protokoły, takie jak SmartAudio, nie mogą włączyć trybu Pit za pomocą oprogramowania zaraz po uruchomieniu.",
+        "description": "Help text for the pit mode field of the VTX tab"
+    },
+    "vtxPitModeFrequency": {
+        "message": "Częstotliwość Pit Mode",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPitModeFrequencyHelp": {
+        "message": "Częstotliwość, z jaką zmienia się tryb Pita po włączeniu.",
+        "description": "Help text for the pit mode field of the VTX tab"
+    },
+    "vtxLowPowerDisarm": {
+        "message": "Rozbrojenie przy niskiej mocy",
+        "description": "Text of one of the fields of the VTX tab"
+    },
     "vtxLowPowerDisarmOption_0": {
         "message": "Wyłącz",
         "description": "One of the options for the Low Power Disarm mode of the VTX"
@@ -4001,13 +4849,73 @@
         "message": "Włącz",
         "description": "One of the options for the Low Power Disarm mode of the VTX"
     },
+    "vtxLowPowerDisarmOption_2": {
+        "message": "Włączony do pierwszego ramienia",
+        "description": "One of the options for the Low Power Disarm mode of the VTX"
+    },
+    "vtxTable": {
+        "message": "Tabela VTX",
+        "description": "Text of the header of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevels": {
+        "message": "Liczba poziomów mocy",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsHelp": {
+        "message": "To definiuje liczbę poziomów mocy obsługiwanych przez Twój VTX",
+        "description": "Help for the number of power levels field of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsTableHelp": {
+        "message": "Tabela ta przedstawia różne wartości mocy, które mogą być wykorzystane dla VTX. Zostały podzielone na dwa: <br><b>- $t(vtxTablePowerLevelsValue.message):</b> każdy poziom mocy wymaga wartości zdefiniowanej przez producenta sprzętu. Poproś producenta o poprawną wartość lub sprawdź tabelę VTX na Betaflight wiki. <br><b>- $t(vtxTablePowerLevelsLabel.message):</b> możesz tutaj umieścić etykietę dla każdej wartości poziomu energii. Mogą to być liczby (25, 200, 600, 1.), litery (OFF, MIN, MAX) lub ich mieszanki. <br><br>Musisz skonfigurować <b>tylko</b> poziomy mocy zgodne z prawem w Twoim kraju.",
+        "description": "Help for the table of power levels (value-label) that appears in the VTX tab"
+    },
+    "vtxTablePowerLevelsValue": {
+        "message": "Wartość",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsLabel": {
+        "message": "Etykieta",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBands": {
+        "message": "Liczba pasm",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableChannels": {
+        "message": "Liczba kanałów na pasmo",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandsChannelsHelp": {
+        "message": "Określa liczbę pasm i liczbę kanałów według pasma, które mają być dostępne dla VTX.",
+        "description": "Help for the number of bands and channels field of the VTX Table element in the VTX tab"
+    },
     "vtxTableBandTitleName": {
         "message": "Nazwa",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleLetter": {
+        "message": "Litera",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleFactory": {
+        "message": "Ust. fabr",
         "description": "Text of one of the titles of the VTX Table element in the VTX tab"
     },
     "vtxSavedFileOk": {
         "message": "Plik konfiguracyjny VTX <span class=\"message-positive\">zapisany</span>",
         "description": "Message in the GUI log when the VTX Config file is saved"
+    },
+    "vtxLoadFileOk": {
+        "message": "Plik konfiguracyjny VTX <span class=\"message-positive\">wgrany</span>",
+        "description": "Message in the GUI log when the VTX Config file is loaded"
+    },
+    "vtxLoadClipboardOk": {
+        "message": "Informacje konfiguracyjne VTX <span class=\"message-positive\">wklejone</span> ze schowka",
+        "description": "Message in the GUI log when the VTX Config file is pasted from clipboard"
+    },
+    "vtxLoadClipboardKo": {
+        "message": "<span class=\"message-negative\">Błąd</span> podczas wklejania konfiguracji VTX ze schowka. Sprawdź poprawność kopiowanej zawartości",
+        "description": "Message in the GUI log when the VTX Config file is pasted from clipboard"
     },
     "vtxButtonSaveFile": {
         "message": "Zapisz plik",
@@ -4016,6 +4924,10 @@
     "vtxButtonSaveLua": {
         "message": "Zapisz skrypt Lua",
         "description": "Save Lua script button in the VTX tab"
+    },
+    "vtxLuaFileHelp": {
+        "message": "Przycisk '$t(vtxButtonSaveLua.message)' pozwala zapisać plik zawierający tabelę konfiguracji vtx <i>craftname.lua</i>. Konfiguracja może być użyta w skryptach <i>*.lua</i> Betaflight (więcej informacji <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">tutaj</a>.)",
+        "description": "Tooltip message for the Save Lua script button in the VTX tab"
     },
     "vtxButtonLoadFile": {
         "message": "Wczytaj plik",
@@ -4060,6 +4972,10 @@
     "configurationDshotBidir": {
         "message": "Dwukierunkowy DShot (wymaga aby oprogramowanieESC wspierało tą funkcje)",
         "description": "Feature for the ESC/Motor"
+    },
+    "configurationDshotBidirHelp": {
+        "message": "Po włączeniu pozwala protokołowi DSHOT odbierać informacje bezpośrednio z ESC. Informacje te wymagane są przez filtr RPM i inne funkcje. <br> <br> Wymaga to oprogramowania JESC z jflight.net na BLHELI_S lub najnowszego oprogramowania BLHELI_32.",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Częstotliwość aktualizacji z żyroskopu"
@@ -4120,6 +5036,9 @@
     },
     "configurationCurrentScale": {
         "message": "Skaluj napięcie wyjściowe do miliamperów [1/10 mV / A]"
+    },
+    "configurationCurrentOffset": {
+        "message": "Przesunięcie (offset) w krokach co miliwolt"
     },
     "configurationBatteryMultiwiiCurrent": {
         "message": "Włącz obsługę aktualnego wyjścia Multiwii MSP"
