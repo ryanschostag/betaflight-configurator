@@ -1,12 +1,38 @@
 {
+    "yes": {
+        "message": "Sí",
+        "description": "General Yes message to be used across the application"
+    },
+    "no": {
+        "message": "No",
+        "description": "General No message to be used across the application"
+    },
+    "on": {
+        "message": "Activat"
+    },
+    "off": {
+        "message": "Inactiu"
+    },
+    "auto": {
+        "message": "Automàtic"
+    },
     "error": {
         "message": "Error: {{errorMessage}}"
+    },
+    "errorTitle": {
+        "message": "Error"
     },
     "warningTitle": {
         "message": "Advertència"
     },
     "noticeTitle": {
         "message": "Avís"
+    },
+    "operationNotSupported": {
+        "message": "Aquesta operació no és compatible amb el teu hardware."
+    },
+    "storageDeviceNotReady": {
+        "message": "El dispositiu d'emmagatzematge no està llest. En cas d'una targeta microSD, assegureu-vos de que és correctament reconeguda per la seva controladora del vol."
     },
     "options_title": {
         "message": "Opcions de l'aplicació"
@@ -32,6 +58,9 @@
     "close": {
         "message": "Tanca"
     },
+    "cancel": {
+        "message": "Canceŀlar"
+    },
     "autoConnectEnabled": {
         "message": "Auto-Connectar: Habilitat - El configurador provarà de connectar-se automàticament quan el nou port sigui detectat"
     },
@@ -41,8 +70,30 @@
     "expertMode": {
         "message": "Habilita el mode expert"
     },
+    "expertModeDescription": {
+        "message": "Mostra versions inèdites i potencialment inestables"
+    },
     "permanentExpertMode": {
         "message": "Habilita el mode expert permanentment"
+    },
+    "rememberLastTab": {
+        "message": "Torna a obrir l'última pestanya al conectar"
+    },
+    "analyticsOptOut": {
+        "message": "Desactiveu la col·lecció anònima de dades d’estadístiques"
+    },
+    "language_changed": {
+        "message": "S'ha desat el canvi d'idioma"
+    },
+    "language_choice_message": {
+        "message": "Canvia l'idioma:",
+        "description": "Try and be brief"
+    },
+    "language_default": {
+        "message": "Predeterminat de sistema"
+    },
+    "language_default_pretty": {
+        "message": "Predeterminat del sistema ($t(detectedLanguage))"
     },
     "sensorDataFlashNotFound": {
         "message": "Cap dataflash <br>xip trobat",
@@ -106,6 +157,12 @@
     "deviceRebooting": {
         "message": "Dispositiu - <span class=\"message-negative\">Reiniciant</span>"
     },
+    "deviceRebooting_flashBootloader": {
+        "message": "Dispositiu - <span class=\"message-negative\">Es reinicia el FLASH BOOTLOADER</span>"
+    },
+    "deviceRebooting_romBootloader": {
+        "message": "Dispositiu - <span class=\"message-negative\">Es reinicia el FLASH BOOTLOADER</span>"
+    },
     "deviceReady": {
         "message": "Device - <span class=\"message-positive\">Preparat</span>"
     },
@@ -129,6 +186,12 @@
     },
     "tabLanding": {
         "message": "Benvingut"
+    },
+    "tabChangelog": {
+        "message": "Registre de canvis"
+    },
+    "tabPrivacyPolicy": {
+        "message": "Política de privacitat"
     },
     "tabHelp": {
         "message": "Documentació i suport"
@@ -166,6 +229,9 @@
     "tabOsd": {
         "message": "OSD"
     },
+    "tabVtx": {
+        "message": "Transmissor de vídeo"
+    },
     "tabPower": {
         "message": "Energia i bateria"
     },
@@ -202,6 +268,12 @@
     "logActionShow": {
         "message": "Mostrar Log"
     },
+    "serialErrorFrameError": {
+        "message": "Error de connexió de port sèrie: trames dolentes"
+    },
+    "serialErrorParityError": {
+        "message": "Error de connexió de port sèrie: paritat dolent"
+    },
     "serialPortOpened": {
         "message": "Port sèrie <span class=\"message-positive\">correctament</span> obert amb ID: $1"
     },
@@ -235,6 +307,12 @@
     "stm32UsbDfuNotFound": {
         "message": "USB DFU no trobat"
     },
+    "stm32RebootingToBootloader": {
+        "message": "Iniciant el reinici al bootloader ..."
+    },
+    "stm32RebootingToBootloaderFailed": {
+        "message": "Reinicia el dispositiu al carregador d'arrencada: FALLO"
+    },
     "stm32TimedOut": {
         "message": "STM32 - timeout, la programació: HA FALLAT"
     },
@@ -261,6 +339,9 @@
     },
     "stm32LocalErase": {
         "message": "Executant esborrat local ..."
+    },
+    "stm32InvalidHex": {
+        "message": "Hexadecimal no vàlid"
     },
     "stm32Erase": {
         "message": "Esborrant ..."
@@ -316,9 +397,24 @@
     "firmwareUpgradeRequired": {
         "message": "El firmware d'aquest dispositiu necessita ser actualitzat a una versió superior. Utilitza el CLI per fer una còpia de seguretat abans de flashejar. El procediment està explicat a la documentació.<br />D'altra banda pots descarregar i fer servir una versió antiga del configurador si no estàs preparat per actualitzar."
     },
+    "resetToCustomDefaultsDialog": {
+        "message": "Hi ha disponibles valors per defecte personalitzats per a aquesta controladora. Normalment, la controladora no funcionarà correctament tret que s'apliquin els valors per defecte personalitzats.<br /> Voleu aplicar els valors per defecte personalitzats per aquesta controladora?"
+    },
+    "resetToCustomDefaultsAccept": {
+        "message": "Apliqueu els valors predeterminats personalitzats"
+    },
     "infoVersions": {
         "message": "Corrent - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configurator: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
+    },
+    "buildServerLoaded": {
+        "message": "Versions carregades per $1 des del servidor de versions."
+    },
+    "buildServerLoadFailed": {
+        "message": "<b> La consulta del servidor de creació de llançaments de $1 ha fallat mitjançant la informació de la memòria cau. Motiu: <code>$2</code> </b>"
+    },
+    "buildServerUsingCached": {
+        "message": "Fent servir 'informació des de memòria cau de versions $1."
     },
     "releaseCheckLoaded": {
         "message": "Informació de release carregada de $1 carregada de GitHub."
@@ -431,11 +527,17 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
+    "defaultWelcomeText": {
+        "message": "L’aplicació és compatible amb tot el maquinari que pot executar Betaflight. Comproveu la pestanya Flash per trobar la llista completa del maquinari. <br><br> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Descarregar Betaflight Blackbox Log Viewer</a><br /><br />El codi font del firmware es pot descarregar des de <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_ blank\">aquí</a><br /><br />Últimes <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\" _ blank \">Controladors CP210x</a>es poden descarregar de<a href =\" http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\" _ blank\">aquí</a><br />Últims <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_ blank\">Els controladors STM USB VCP</a>es poden descarregar de <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\" _ blank\">aquí</a><br />Últim<a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\" _ blank\">Zadig</a>per a la instal·lació del controlador de Windows USB es pot descarregar de <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_ blank\">aquí</a><br />"
+    },
     "defaultContributingHead": {
         "message": "Contribuir"
     },
     "defaultContributingText": {
         "message": "Si vols contribuir a fer un Betaflight encara millor pots ajudar de diverses maneres, incloent:<br /><ul><li>Responent a altres usuaris les preguntes als forums i IRC.</li><li>Aportant codi al firmware i configurador - noves caracteristiques, solucions, millores</li><li>Proves <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">noves caracteristiques/solucions</a> i facilitant feedback.</li><li>Ajudar amb <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">problemes i comentar sol·licituds de funcions</a>.</li><li></li></ul>Coŀlabora traduint <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">al teu idioma.</li><li></li></ul>"
+    },
+    "defaultFacebookText": {
+        "message": "També tenim un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Grup de Facebook</a>. <br />Uneix-te a nosaltres per obtenir un lloc on parlar de Betaflight, fer preguntes de configuració o simplement passar una estona amb altres pilots."
     },
     "defaultChangelogHead": {
         "message": "Configurador - Llista de canvis"
@@ -445,6 +547,12 @@
     },
     "defaultDonateHead": {
         "message": "Codi Lliure / Avís de Donació"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight</strong> és un programari per controladors de vol que és <strong>de codi obert</strong> i està disponible de forma gratuïta <strong>sense garantia</strong> per a tots els usuaris.</p><p> Si trobeu útil Betaflight o el configurador Betaflight, considereu <strong>donar</strong> suport al seu desenvolupament donant.</p>"
+    },
+    "defaultDonateBottom": {
+        "message": "<p>Si voleu contribuir econòmicament de forma continuada, haureu de plantejar-vos ser un mecenes per a nosaltres en $t(patreonLink.message).</p>"
     },
     "defaultDonate": {
         "message": "Fes una donació"
@@ -520,6 +628,15 @@
     },
     "initialSetupButtonRestore": {
         "message": "Restaurar"
+    },
+    "initialSetupButtonRebootBootloader": {
+        "message": "Activa el carregador d’arrencada/DFU"
+    },
+    "initialSetupBackupRestoreText": {
+        "message": "Fes una <strong>Còpia de Seguretat</strong> de la teva configuració per si hi ha problemes, la configuració dels ajustos del <strong>CLI</strong> <span class=\"message-negative\">no</span> estan incloses - fes servir la comanda 'diff all' al CLI per aixó."
+    },
+    "initialSetupRebootBootloaderText": {
+        "message": "Torna a iniciar en mode <strong>carregador d'arrencada/DFU</strong>."
     },
     "initialSetupBackupSuccess": {
         "message": "Còpia de seguretat desada <span class=\"message-positive\">correctament</span>"
@@ -611,6 +728,113 @@
     "initialSetupArmingAllowed": {
         "message": "Armat permès"
     },
+    "initialSetupArmingDisableFlagsTooltip": {
+        "message": "Llista de banderes que indiquen perquè actualment no es permet l'armament. Passeu el ratolí per sobre de la bandera o consulteu la wiki (pàgina \"Arming Sequence & Safety\") per a més informació."
+    },
+    "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
+        "message": "No es va detectar cap giroscopi",
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
+        "message": "Failsafe està actiu",
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
+        "message": "No es detecta cap senyal de receptor vàlid",
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
+        "message": "El receptor acaba de recuperar-se d'un Failsafe per falla del receptor, però l’interruptor d'armat està activat",
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
+        "message": "El interruptor de \"FAILSAFE\" s'ha activat",
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
+        "message": "La prevenció de l'enlairament s'ha desencadenat",
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCRASH": {
+        "message": "Desarmat per detecció de accident",
+        "description": "Message that pops up to describe the CRASH arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
+        "message": "El canal accelerador està massa alt",
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipANGLE": {
+        "message": "La aeronau no està anivellada (suficientment)",
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
+        "message": "Arma massa aviat després de l'encesa",
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipNOPREARM": {
+        "message": "L'interruptor de prearmat no està activat o el prearmament no s'ha activat després del desarmament",
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipLOAD": {
+        "message": "La càrrega del sistema és massa elevada per a un vol segur",
+        "description": "Message that pops up to describe the LOAD arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
+        "message": "La calibració del sensor continua en marxa",
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCLI": {
+        "message": "CLI està actiu",
+        "description": "Message that pops up to describe the CLI arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
+        "message": "CMS (menú de configuració) està actiu - a través d’OSD o altra pantalla -",
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
+        "message": "Menú OSD actiu",
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBST": {
+        "message": "Un dispositiu de telemetria de Black Sheep (TBS Core Pro, per exemple) està desarmat i impedeix l'armament",
+        "description": "Message that pops up to describe the BST arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMSP": {
+        "message": "La connexió MSP està activa, probablement amb aquest configurador Betaflight",
+        "description": "Message that pops up to describe the MSP arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipPARALYZE": {
+        "message": "El mode de paralització s'ha activat",
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipGPS": {
+        "message": "El mode de rescat GPS està configurat, però el nombre obligatori de satèl·lits no s'ha corregit",
+        "description": "Message that pops up to describe the GPS arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRESC": {
+        "message": "El interruptor de \"Rescat GPS\" s'ha activat",
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRPMFILTER": {
+        "message": "El filtratge basat en RPM està habilitat, però un o més ESC no subministren telemetria vàlida DSHOT. Comproveu que els sistemes ESC siguin capaços i tinguin instal·lat el programari necessari per suportar la telemetria bidireccional DSHOT.",
+        "description": "Message that pops up to describe the RPMFILTER arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
+        "message": "Un canvi de configuració requereix reiniciar",
+        "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipDSHOT_BBANG": {
+        "message": "El DSHOT bitbanged no funciona correctament i no es poden controlar els motors. Probablement causat per un conflicte de temporitzador amb altres funcions activades al controlador de vol.",
+        "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
+        "message": "L'acceleròmetre no s'ha calibrat i estan habilitades funcions que es basen en ell. Calibrar l’acceleròmetre.",
+        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
+        "message": "Un dels altres desarmar banderes està actiu quan es fa armament",
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
+    },
     "initialSetupGPSHead": {
         "message": "GPS"
     },
@@ -664,6 +888,9 @@
     },
     "featureSERVO_TILT": {
         "message": "Servo gimbal"
+    },
+    "featureSERVO_TILTTip": {
+        "message": "Aquesta característica permet el mode CAMSTAB, que es pot utilitzar per mantenir fins a dos eixos estables mitjançant l'acceleròmetre"
     },
     "featureSOFTSERIAL": {
         "message": "Habilita els ports sèrie mitjançant CPU"
@@ -721,6 +948,9 @@
     },
     "featureRX_SPI": {
         "message": "Suporta SPI RX"
+    },
+    "featureESC_SENSOR": {
+        "message": "Utilitzeu la telemetria KISS / BLHeli_32 ESC <b>sobre un fil separat</b>"
     },
     "featureCHANNEL_FORWARDING": {
         "message": "Enviar canals auxiliars a sortides servo"
@@ -821,6 +1051,27 @@
     "configurationSensorAlignmentGyro": {
         "message": "Alineament GYRO"
     },
+    "configurationSensorGyroToUse": {
+        "message": "GIRO/ACCEL"
+    },
+    "configurationSensorGyroToUseNotFound": {
+        "message": "Advertència: no s'ha trobat cap Giro/Acc"
+    },
+    "configurationSensorGyroToUseFirst": {
+        "message": "Primera"
+    },
+    "configurationSensorGyroToUseSecond": {
+        "message": "Segon"
+    },
+    "configurationSensorGyroToUseBoth": {
+        "message": "Tots dos"
+    },
+    "configurationSensorAlignmentGyro1": {
+        "message": "Primer Giro"
+    },
+    "configurationSensorAlignmentGyro2": {
+        "message": "Segon GIRO"
+    },
     "configurationSensorAlignmentAcc": {
         "message": "Alineament ACCEL"
     },
@@ -851,6 +1102,9 @@
     "configurationReverseMotorSwitch": {
         "message": "La direcció dels motors és inversa"
     },
+    "configurationReverseMotorSwitchHelp": {
+        "message": "Aquesta opció configura el mesclador per a que la direcció de motor estigui revertida i, en conseqüència, les seves hèlix. <strong>Advertència:</strong> això no vol dir que la direcció de motor s'inverteixi. Per aconseguir-ho, cal utilitzar l'eina de configuració per als seus ESCs o canviar l'ordre del cablejat del motor. A més, assegureu-vos de consultar que les direccions dels motors coincideixen amb les del diagrama abans d'armar."
+    },
     "configurationAutoDisarmDelay": {
         "message": "Desarma els motors després de [segons] (Requereix de la característica de MOTOR_STOP)"
     },
@@ -865,6 +1119,18 @@
     },
     "configurationDigitalIdlePercentHelp": {
         "message": "Aquest és el valor \"inactiu\" en percentatge de l'acceleració màxima que s'envia als ESC quan el quad està armat i l'stick de gas es troba en una posició mínima. Augmenteu el valor de percentatge per obtenir més velocitat de ralentí."
+    },
+    "configurationMotorPoles": {
+        "message": "Pols de motor",
+        "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationMotorPolesLong": {
+        "message": "$t(configuracióMotorPoles.message) (nombre d’imants a la campana del motor)",
+        "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationMotorPolesHelp": {
+        "message": "Aquest paràmetre s’utilitza per a algunes funcions com el Filtre RPM.<br><br>Representa el nombre d’imants que es troben a la campana del motor. <b>NO compteu els estators</b>on es troben els bobinatges. Els motors típics de 5 \"tenen 14 imants, els més petits com els de 3\" o menys solen tenir 12 imants.",
+        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Throttle mínim (Valor mínim dels ESC quan està armat)"
@@ -884,8 +1150,14 @@
     "configurationDshotBeeper": {
         "message": "Configuració de Beacon Dshot"
     },
+    "configurationUseDshotBeeper": {
+        "message": "Fes servir el l'alarma Dshot (fes servir els motors per emetre senyals sonores quan el model està desarmat)"
+    },
     "configurationDshotBeaconTone": {
         "message": "To de Beacon"
+    },
+    "configurationDshotBeaconHelp": {
+        "message": "La balisa Dshot utilitza els motors ESC i motors per produir so. Això significa que la balisa Dshot no es pot utilitzar quan els motors giren. A Betaflight 3.4 i més recent, quan s’intenta l’armament mentre la balisa Dshot està activa, es produeix un retard de 2 segons després de l’últim to de la balisa de Dshot abans que l’armament s’armi. Això permet evitar que la funcionalitat de la balisa de Dshot interfereixi amb les ordres de Dshot enviades en l'armament.<br/><strong>Advertència:</strong> Com que la balisa Dshot funciona actualment a través dels motors quan està activa, això pot produir una calor excessiva i produir danys als motors i/o als ESC si la intensitat de la balisa és massa elevada. Utilitzeu BLHeli Configurator o BLHeli Suite per ajustar i provar la intensitat de la balisa."
     },
     "configurationBeeper": {
         "message": "Configuració del Beeper"
@@ -914,6 +1186,12 @@
     "beeperBAT_LOW": {
         "message": "Sona quan la bateria s'està exhaurint (es repeteix)"
     },
+    "beeperGPS_STATUS": {
+        "message": "Indicar el nombre de satèl·lits GPS trobats a través de \"beeps\""
+    },
+    "beeperRX_SET": {
+        "message": "Pita quan el canal auxiliar esta activat"
+    },
     "beeperACC_CALIBRATION": {
         "message": "Confirmació de calibració de l'acceleròmetre completada"
     },
@@ -926,11 +1204,29 @@
     "beeperDISARM_REPEAT": {
         "message": "Sona quan mantens l'stick a la posició de desarmat"
     },
+    "beeperARMED": {
+        "message": "Sona quan la controladora esta armada amb els motors inactius (es repeteix fins que la controladora o l'accelerador s'incrementa)"
+    },
     "beeperSYSTEM_INIT": {
         "message": "Sons d'inicialització quan arrenca la controladora"
     },
+    "beeperUSB": {
+        "message": "Sona quan la placa controladora es conecta per mitjà d'USB. Desactiva-ho si no vols elcoltar el xiulet"
+    },
     "beeperBLACKBOX_ERASE": {
         "message": "Sona quan l'esborrat de blackbox s'hagi completat"
+    },
+    "beeperCRASH_FLIP": {
+        "message": "Pita quan el \"crash flip mode\" esta activat"
+    },
+    "beeperCAM_CONNECTION_OPEN": {
+        "message": "Emet un beep quan introduïu la tecla 5 de control de càmera"
+    },
+    "beeperCAM_CONNECTION_CLOSE": {
+        "message": "Emet un beep quan sortiu la tecla 5 de control de càmera"
+    },
+    "beeperRC_SMOOTHING_INIT_FAIL": {
+        "message": "Emet un beep quan el suavitzat armat i rc no ha inicialitzat filtres"
     },
     "configuration3d": {
         "message": "Característiques 3D ESC/Motor"
@@ -956,6 +1252,9 @@
     "configurationCalculatedCyclesSec": {
         "message": "Cicles/Seg [Hz]"
     },
+    "configurationLoopTimeNo32KhzHelp": {
+        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Nota sobre el mode de mostreig de giroscopis de 32 kHz:</strong>La compatibilitat amb el mode de mostreig de giroscopis de 32 kHz es va afegir a Betaflight com a funció experimental. Durant els anys que va estar disponible, mai no ha demostrat tenir cap avantatge respecte al mode de mostreig de giroscopis de 8 kHz, a causa de la seva susceptibilitat a vibracions i el seu elevat nivell de soroll que requereix un filtratge agressiu, provocant retards en el bucle de control. Per aquest motiu, s'ha descartat el suport<strong>per al mode de mostreig de giroscopis de 32 kHz</strong>a Betaflight 4.0."
+    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -973,6 +1272,22 @@
     },
     "configurationGPSAutoConfig": {
         "message": "Auto Config"
+    },
+    "configurationGPSGalileo": {
+        "message": "Utilitzeu Galileu",
+        "description": "Option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSGalileoHelp": {
+        "message": "Si està activat, aquest elimina el sistema QZSS (japonès) i el substitueix pel sistema Galileu (europeu).",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSHomeOnce": {
+        "message": "Estableix el punt de sortida una vegada",
+        "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHomeOnceHelp": {
+        "message": "Quan estigui habilitat, només s’utilitzarà com a punt inicial el primer armat després de la bateria connectada. Si no està habilitat, cada vegada que el quad sigui armat s’actualitzarà el punt d’inici.",
+        "description": "Help text for the option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
     },
     "configurationGPSHelp": {
         "message": "<strong>Nota:</strong> Recorda configurar el Port Sèrie (pestanya Ports) per a fer servir la funció GPS."
@@ -1009,6 +1324,9 @@
     },
     "portsHelp": {
         "message": "<strong>Avís:</strong> no totes les combinacions són vàlides. Quan la controladora de vol detecti això, la configuració dels ports es resetejarà."
+    },
+    "portsVtxTableNotSet": {
+        "message": "<span class=\"message-negative\">ADVERTENCIA:</span> La taula VTX no s'ha configurat correctament i sense ella el control VTX no serà possible. Configureu la taula VTX a la pestanya $t(tabVtx.message)."
     },
     "portsMSPHelp": {
         "message": "<strong>Nota:</strong> <span class=\"message-negative\">NO</span> deshabilitis MSP al primer port sèrie si no saps per què ho fas. D'altra forma potser has de reflashejar i esborrar la configuració."
@@ -1067,6 +1385,15 @@
     "portsFunction_BLACKBOX": {
         "message": "Enregistrament Blackbox"
     },
+    "portsFunction_TBS_SMARTAUDIO": {
+        "message": "VTX (TBS SmartAudio)"
+    },
+    "portsFunction_IRC_TRAMP": {
+        "message": "VTX (IRC Tramp)"
+    },
+    "portsFunction_RUNCAM_DEVICE_CONTROL": {
+        "message": "Càmera (Protocol RunCam)"
+    },
     "pidTuningProfileOption": {
         "message": "Perfil $1"
     },
@@ -1078,6 +1405,12 @@
     },
     "pidTuningUpgradeFirmwareToChangePidController": {
         "message": "<span class=\"message-negative\">Canviant el controlador PID a deshabilitat - ho pots canviar pel CLI.</span> Tens un firmware amb versió API <span class=\"message-negative\">$1</span>, però aquesta funcionalitat requereix <span class=\"message-positive\">$2</span>."
+    },
+    "pidTuningSubTabPid": {
+        "message": "Configuració del perfil PID"
+    },
+    "pidTuningSubTabRates": {
+        "message": "Configuració dels Rates"
     },
     "pidTuningSubTabFilter": {
         "message": "Configuració de Filtres"
@@ -1091,8 +1424,128 @@
     "pidTuningNonProfilePidSettings": {
         "message": "Ajustament de PIDs independent del perfil"
     },
+    "pidTuningAntiGravity": {
+        "message": "Anti Gravetat"
+    },
+    "pidTuningAntiGravityMode": {
+        "message": "Mode",
+        "description": "Anti Gravity mode selection parameter"
+    },
+    "pidTuningAntiGravityModeOptionSmooth": {
+        "message": "Suau",
+        "description": "One of the modes of anti gravity"
+    },
+    "pidTuningAntiGravityModeOptionStep": {
+        "message": "Pas",
+        "description": "One of the modes of anti gravity"
+    },
+    "pidTuningAntiGravityGain": {
+        "message": "Guany",
+        "description": "Anti Gravity Gain Parameter"
+    },
+    "pidTuningAntiGravityThres": {
+        "message": "Llindar",
+        "description": "Anti Gravity Threshold Parameter"
+    },
+    "pidTuningAntiGravityHelp": {
+        "message": "Anti Gravetat augmenta el terme I quan es detecten canvis ràpids d’acceleració. Valors de guanys més elevats proporcionen estabilitat i millor manteniment de l’actitud quan bombeu el gas."
+    },
+    "pidTuningDMin": {
+        "message": "D Min",
+        "description": "Table header of the D Min feature in the PIDs tab"
+    },
+    "pidTuningDMinDisabledNote": {
+        "message": "<strong>Nota:</strong>La funció D Min està desactivada i els seus paràmetres estan ocults. Per utilitzar D Min, activa-la a $t(pidTuningPidSettings.message)."
+    },
+    "pidTuningDMinGain": {
+        "message": "Guany",
+        "description": "Gain of the D Min feature"
+    },
+    "pidTuningDMinAdvance": {
+        "message": "Avanç",
+        "description": "Advance of the D Min feature"
+    },
+    "pidTuningDMinFeatureHelp": {
+        "message": "D Min proporciona una manera de tenir un nivell de D més baix en el vol normal i un nivell més alt per a les maniobres ràpides que puguin causar sobrepassos, com voltes i rotllos. També aporta D durant el propwash. El guany ajusta la velocitat que D augmenta al seu valor màxim i es basa en el giroscopi per determinar moviments intensos i esdeveniments de propwash. L'avanç fa que D augmenti abans utilitzant el punt de referència en lloc del giroscopi per determinar moviments bruscos.",
+        "description": "D Min feature helpicon message"
+    },
+    "pidTuningDMinHelp": {
+        "message": "Controla la força d’amortiment (terme D) en un vol endavant normal.<br>Amb D_min activat, el guany D D actiu canvia durant el vol. En el vol endavant normal, es troba a les guanys de D_min per sota. Durant un moviment fort o durant el propwash, el guany D actiu augmenta els guanys de la derivada especificats a l’esquerra.<br><br>Els beneficis derivats complets s’obtenen en les entrades del stick, però només s’obtenen parcialment al propwash.<br>Ajustar el guany i avançament D_Min per controlar la sincronització, la sensibilitat i el temps.",
+        "description": "D Min helpicon message on PID table titlebar"
+    },
     "pidTuningPidSettings": {
         "message": "Ajustament del Controlador de PIDs"
+    },
+    "receiverRcSmoothing": {
+        "message": "Suavitzat RC"
+    },
+    "receiverRcSmoothingAuto": {
+        "message": "Automàtic"
+    },
+    "receiverRcSmoothingManual": {
+        "message": "Manual"
+    },
+    "receiverRcSmoothingAutoSmoothness": {
+        "message": "Auto Suavitzat",
+        "description": "Auto Smoothness parameter for RC smoothing"
+    },
+    "receiverRcSmoothingAutoSmoothnessHelp": {
+        "message": "Ajusta el càlcul de suavitzat automàtic, 10 és la relació predeterminada de suavització i retard. L’augment del nombre suavitzarà més les entrades de RC, alhora que afegirà retard. Això pot ser útil per a connexions RC poc fiables o per volar cinematogràfics.<br>Compte amb els números que s’aproximen als 50, el retard d’entrada es farà notori.<br>Utilitzeu la comanda CLI rc_smoothing_info mentre que TX i RX s’alimenten per veure el retalls del suavitzat RC automàticament calculat. ",
+        "description": "Auto Smoothness parameter help message"
+    },
+    "receiverRcDerivativeTypeSelect": {
+        "message": "Tipus de tall derivat"
+    },
+    "receiverRcInputTypeSelect": {
+        "message": "Tipus de tall d’entrada"
+    },
+    "receiverRcSmoothingInterpolation": {
+        "message": "Interpolació"
+    },
+    "receiverRcSmoothingFilter": {
+        "message": "Filtre"
+    },
+    "receiverRcSmoothingTypeHelp": {
+        "message": "Tipus de suavitzat RC utilitzat"
+    },
+    "rcSmoothingInputCutoffHelp": {
+        "message": "La freqüència de tall en Hz utilitzada pel filtre d’entrada. Si utilitzeu valors inferiors, obtindreu entrades més suaus i són més apropiats per a protocols de receptor més lents. La majoria dels usuaris haurien de deixar això al 0 corresponent a \"Auto\"."
+    },
+    "rcSmoothingDerivativeCutoffHelp": {
+        "message": "La freqüència de tall en Hz usada pel filtre derivat de consigna. Si utilitzeu valors inferiors, obtindreu entrades més suaus i són més apropiats per a protocols de receptor més lents. La majoria dels usuaris haurien de deixar això al 0 corresponent a \"Auto\"."
+    },
+    "rcSmoothingChannelsSmoothedHelp": {
+        "message": "El suavitzat de canals s’aplica a"
+    },
+    "rcSmoothingDerivativeTypeHelp": {
+        "message": "El tipus de mètode de filtratge utilitzat per a la derivada de consigna. La majoria dels usuaris han d'utilitzar el valor predeterminat de \"BIQUAD\" ja que proporciona un bon equilibri entre suavitat i retard. \"PT1\" redueix lleugerament el retard però proporciona menys suavitat."
+    },
+    "rcSmoothingInputTypeHelp": {
+        "message": "El tipus de mètode de filtratge utilitzat per l'entrada. La majoria dels usuaris han d'utilitzar el valor predeterminat de \"BIQUAD\" ja que proporciona un bon equilibri entre suavitat i retard. \"PT1\" redueix lleugerament el retard però proporciona menys suavitat."
+    },
+    "receiverRcSmoothingInputManual": {
+        "message": "Selecciona si la freqüència de tall del filtre d’entrada es calcula de forma automàtica (recomanada) o seleccionada manualment per l’usuari. L'ús de \"Manual\" no es recomana per als protocols del receptor com Crossfire, que pot canviar en vol."
+    },
+    "receiverRcSmoothingDerivativeManual": {
+        "message": "Selecciona si la freqüència de tall del ajust de derivada es calcula de forma automàtica (recomanada) o seleccionada manualment per l’usuari. L'ús de \"Manual\" no es recomana per als protocols del receptor com Crossfire, que pot canviar en vol."
+    },
+    "receiverRcSmoothingInputHz": {
+        "message": "Freqüència de tall d'entrada"
+    },
+    "receiverRcSmoothingDerivativeCutoff": {
+        "message": "Freqüència de tall de derivada"
+    },
+    "receiverRcInputType": {
+        "message": "Tipus de filtre d'entrada"
+    },
+    "receiverRcDerivativeType": {
+        "message": "Tipus de filtre derivat"
+    },
+    "receiverRcSmoothingDerivativeTypeOff": {
+        "message": "Inactiu"
+    },
+    "receiverRcSmoothingChannel": {
+        "message": "Canals suavitzats"
     },
     "receiverRcInterpolation": {
         "message": "Interpolació RC"
@@ -1106,6 +1559,9 @@
     "receiverRcInterpolationOff": {
         "message": "Off"
     },
+    "receiverRcSmoothingType": {
+        "message": "Tipus de suavització"
+    },
     "receiverRcInterpolationDefault": {
         "message": "Preset"
     },
@@ -1117,6 +1573,12 @@
     },
     "receiverRcInterpolationInterval": {
         "message": "Interval d'Interpolació RC [ms]"
+    },
+    "pidTuningFeedforwardTransition": {
+        "message": "Transició de canvis"
+    },
+    "pidTuningFeedforwardTransitionHelp": {
+        "message": "Amb aquest paràmetre, els canvis de transició poden ser reduït al centre dels sticks, que resulta en flips i rolls finals més suaus.<br> El valor representa un punt en la deflexió del stick: 0 - stick centrat, 1 - totalment desviat. Quan l'stick està per sobre d'aquest punt, el canvi de transició es manté constant al valor configurat. Quan l'stick està per sota d'aquest punt, el canvi de transició és redueix proporcionalment, arribant a 0 a la posició central de l'stick.<br> El valor 1 dona el màxim efecte de suavitzat, mentre el valor 0 manté el canvi de transició al valor configurat durant tot el recorregut de l'stick."
     },
     "pidTuningDtermSetpointTransition": {
         "message": "D Setpoint transition"
@@ -1130,14 +1592,36 @@
     "pidTuningDtermSetpointHelp": {
         "message": "Aquest paràmetre determina l'efecte d'acceleració de l'stick en el component derivat.<br> El valor de 0 és igual a l'anterior mètode de mesura on D només fa el seguiment del giròscop, mentre que el valor d'1 és igual al mètode antic d'error amb la ràtio de seguiment de gir i stick igual.<br> Valor inferior és igual a una resposta d'stick més lenta/més suau, mentre que un valor més alt proporciona més resposta d'acceleració d'stick.<br> es recomana que la interpolació RC estigui activada amb valors més alts, per evitar que els cops de control facin soroll."
     },
+    "pidTuningDtermSetpointTransitionWarning": {
+        "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message):</strong> Es desaconsella l'ús d'una transició de punt de partida D superior a 0 i inferior a 0,1. Si ho fa, pot generar inestabilitat i una menor capacitat de resposta a mesura que els sticks passen pel punt central.</span>"
+    },
     "pidTuningProportional": {
         "message": "Proporcional"
+    },
+    "pidTuningProportionalHelp": {
+        "message": "Controla la força de la forma en què la màquina segueix els sticks (el punt de referència). <br><br>Un valor més elevat (guany) proporciona un seguiment més ajustat, però pot provocar una sobrealimentació si és massa alta en proporció a la derivada (D Term). Penseu en el P-Term com la molla en un cotxe.",
+        "description": "Proportional Term helpicon message on PID table titlebar"
     },
     "pidTuningIntegral": {
         "message": "Integral"
     },
+    "pidTuningIntegralHelp": {
+        "message": "Controla la força de la forma en què la màquina manté la posició general del punt de referència.<br>Similar a la proporcional, però per a biaixos més llargs en la aeronau, com un centre de gravetat compensat (CoG) o una influència exterior persistent (vent constant).<br><br>Els guanys més elevats ofereixen un seguiment més estricte (per exemple, per voltes escombrants), però poden fer que l’aeronau se senti rígida per les entrades dels sticks comandades.<br>Si és altament proporcional al D Term, pot provocar oscil·lacions lentes.",
+        "description": "Integral Term helpicon message on PID table titlebar"
+    },
     "pidTuningDerivative": {
         "message": "Derivativa"
+    },
+    "pidTuningDerivativeHelp": {
+        "message": "Controla la força d’amortiment a qualsevol moviment de l’aeronau. Per a desplaçaments dels sticks, D Term amortitza la comanda. Per a una influència externa (propwash o ràfega de vent), el D term amortitza la influència.<br><br> Els beneficis més alts proporcionen un major amortiment i redueixen la superació per terme P i FF.<br>No obstant això, el D term és MOLT sensible a les vibracions de alta freqüència de giroscopi (el soroll | es magnifica de 10x a 100x).<br><br> El soroll d’alta freqüència pot causar calor del motor i cremar motors si els guanys en D són massa alts o el soroll no es filtra bé (consulteu la pestanya Filtres).<br><br> Penseu en el D term com a amortidor del cotxe, però amb la propietat inherent negativa d’augmentar el soroll d’alta freqüència del giro.",
+        "description": "Derivative Term helpicon message on PID table titlebar"
+    },
+    "pidTuningFeedforward": {
+        "message": "Transició"
+    },
+    "pidTuningFeedforwardHelp": {
+        "message": "És un terme addicional d’empenta (molla) basat en l’entrada del stick. FF ajuda el P term a empènyer la aeronau per als moviments del sticks.<br><br>El P term empeny basat en la diferència entre el punt de comandat (graus/seg) i la lectura del giroscopi de la velocitat de rotació actual (graus/ sec). L'empenyament de la FF es basa només en el canvi comandat dels sticks.<br><br> Valors més elevats (guanys) produiran una resposta més forta de la aeronau a l'entrada de stick.<br>Un nivell massa elevat de valors pot provocar una sobrealimentació, augment del calor del motor i saturació del motor (quan els motors no poden mantindre la velocitat de canvi desitjada).<br> Els valors inferiors o nuls (0) produiran una resposta més lenta i suau a les entrades del stick.",
+        "description": "Feedforward Term helpicon message on PID table titlebar"
     },
     "pidTuningRcRate": {
         "message": "RC Rate"
@@ -1162,6 +1646,15 @@
     },
     "pidTuningTPABreakPoint": {
         "message": "TPA Breakpoint"
+    },
+    "pidTuningThrottleLimitTypeOff": {
+        "message": "Desactivat"
+    },
+    "pidTuningThrottleLimitTypeScale": {
+        "message": "ESCALA"
+    },
+    "pidTuningThrottleLimitTypeClip": {
+        "message": "CLIP"
     },
     "pidTuningFilter": {
         "message": "Filtre"
@@ -1328,8 +1821,15 @@
     "auxiliaryMax": {
         "message": "Màx"
     },
+    "auxiliaryDisabled": {
+        "message": "(DESACTIVAT)",
+        "descripton": "Text to add to the ARM mode (maybe others in the future) in the MODES TAB when it has been disabled for some external reason"
+    },
     "auxiliaryAddRange": {
         "message": "Afegeix Rang"
+    },
+    "auxiliaryAddLink": {
+        "message": "Afegir enllaç"
     },
     "auxiliaryButtonSave": {
         "message": "Desa"
@@ -1339,6 +1839,27 @@
     },
     "auxiliaryAutoChannelSelect": {
         "message": "AUTO"
+    },
+    "auxiliaryModeLogicOR": {
+        "message": "OR"
+    },
+    "auxiliaryModeLogicAND": {
+        "message": "AND"
+    },
+    "adjustmentsHelp": {
+        "message": "Configureu els interruptors d'ajust. Consulteu la secció \"Ajustaments de vol\" del manual per obtenir-ne més detalls. Els canvis que realitzen les funcions d'ajust no es guarden automàticament. Hi ha 4 ranures (slots). Cada interruptor utilitzat per fer ajustaments simultanis requereix l'ús exclusiu d'una ranura."
+    },
+    "adjustmentSlotsHelp": {
+        "message": "Hi ha 4 ranures. Cada commutador usat per fer ajustaments simultàniament requereix un ús exclusiu d’una ranura."
+    },
+    "adjustmentsExamples": {
+        "message": "Exemples:"
+    },
+    "adjustmentsExample1": {
+        "message": "Utilitza la ranura 1 i un switch de tres posicions a l'AUX1 per seleccionar entre Pitch/Roll P, I i D i un altre switch de tres posicions a l'AUX2 per incrementar o disminuir el valor mantenint amunt o avall."
+    },
+    "adjustmentsExample2": {
+        "message": "Utilitza la ranura 2 i un switch de 3 posicions a l'AUX4 per a habilitat la selecció de perfil de rate al mateix switch de 3 posicions del mateix canal."
     },
     "adjustmentsColumnEnable": {
         "message": "si habilitat"
@@ -1445,11 +1966,32 @@
     "adjustmentsFunction22": {
         "message": "D Setpoint"
     },
+    "adjustmentsFunction22_2": {
+        "message": "Ajustaments Pitch & Roll F"
+    },
     "adjustmentsFunction23": {
         "message": "Transitició D Setpoint"
     },
+    "adjustmentsFunction23_2": {
+        "message": "Transició de canvis"
+    },
     "adjustmentsFunction24": {
         "message": "Ajustament Horizon Strength"
+    },
+    "adjustmentsFunction25": {
+        "message": "Selecció PID-Audio"
+    },
+    "adjustmentsFunction26": {
+        "message": "Ajustament Pitch F"
+    },
+    "adjustmentsFunction27": {
+        "message": "Ajustament Roll F"
+    },
+    "adjustmentsFunction28": {
+        "message": "Ajustament Yaw F"
+    },
+    "adjustmentsFunction29": {
+        "message": "Selecció del perfil de OSD"
     },
     "adjustmentsSave": {
         "message": "Desa"
@@ -1747,6 +2289,9 @@
     },
     "sensorsDebugTitle": {
         "message": "Debug"
+    },
+    "cliInputPlaceholder": {
+        "message": "Escriu el teu comando aquí. Prem Tab per auto completar."
     },
     "cliEnter": {
         "message": "Mode CLI detectat"
@@ -2054,8 +2599,19 @@
     "firmwareFlasherFirmwareLocalLoaded": {
         "message": "Firmware Local Carregat ($1 bytes)"
     },
+    "firmwareFlasherFirmwareOnlineLoaded": {
+        "message": "Programari local carregat ($1 bytes)"
+    },
     "firmwareFlasherHexCorrupted": {
         "message": "L'arxiu HEX sembla corrupte"
+    },
+    "firmwareFlasherConfigCorrupted": {
+        "message": "Sembla que el fitxer de configuració està malmès, s'accepta ASCII (caràcters 0-255)",
+        "description": "shown in the progress bar at the bottom, be brief"
+    },
+    "firmwareFlasherConfigCorruptedLogMessage": {
+        "message": "Sembla que el fitxer de configuració està malmès, s'accepta ASCII (caràcters 0-255), els caràcters fora d'aquest llindar son acceptats com a comentaris",
+        "description": "shown in the log, more wordy"
     },
     "firmwareFlasherRemoteFirmwareLoaded": {
         "message": "<span class=\"message-positive\">Firmware remot carregat, preparat per a flashejar</span>"
@@ -2440,6 +2996,46 @@
     "pidTuningNonProfileFilterSettings": {
         "message": "Ajustament de Filtres independents del perfil"
     },
+    "pidTuningFilterSlidersHelp": {
+        "message": "Els botons lliscants per ajustar el filtratge quad-giro i D-term.<br><br>Més filtrat us proporciona un vol més suau, però també augmenta el retard del senyal de giroscopis (retard de fase) al bucle PID, el que comportarà un comportament de vol agressiu pitjor i un propwash. La resposta del stick si és excessiu pot causar oscil·lacions.<br><br> Menys filtrat redueix el retard del senyal de giroscopi, però pot augmentar la temperatura del motor a causa del terme D que reacciona a les vibracions del motor d’alta freqüència (soroll).<br> A més, si el filtratge és excessivament baix, provocarà una disminució del rendiment del vol (major relació soroll/senyal).",
+        "description": "Overall helpicon message for filter tuning sliders"
+    },
+    "pidTuningSliderLowFiltering": {
+        "message": "Menys filtrat",
+        "description": "Filter tuning slider low header"
+    },
+    "pidTuningSliderDefaultFiltering": {
+        "message": "Filtrat per defecte",
+        "description": "Filter tuning slider default header"
+    },
+    "pidTuningSliderHighFiltering": {
+        "message": "Més filtrat",
+        "description": "Filter tuning slider high header"
+    },
+    "pidTuningGyroFilterSlider": {
+        "message": "Multiplicador del filtre del Giro:",
+        "description": "Gyro filter tuning slider label"
+    },
+    "pidTuningSliderLow": {
+        "message": "Baix",
+        "description": "Tuning Slider Low header"
+    },
+    "pidTuningSliderDefault": {
+        "message": "Per defecte",
+        "description": "Tuning Slider Default header"
+    },
+    "pidTuningSliderHigh": {
+        "message": "Alt",
+        "description": "Tuning Slider High header"
+    },
+    "pidTuningPDGainSlider": {
+        "message": "Guany P i D:",
+        "description": "P and D gain tuning slider label"
+    },
+    "pidTuningResponseSlider": {
+        "message": "Guany de resposta del stick:",
+        "description": "Response tuning slider label"
+    },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtres Passabaixos del Giro"
     },
@@ -2458,11 +3054,56 @@
     "pidTuningGyroNotch2Cutoff": {
         "message": "Giro Filtre Notch 2 Freqüència de Tall [Hz]"
     },
+    "pidTuningRpmFilterGroup": {
+        "message": "Filtre giro RPM",
+        "description": "Header text for the RPM Filter group"
+    },
+    "pidTuningFilterSettings": {
+        "message": "Perfil dependent dels ajustos de filtre"
+    },
+    "pidTuningDTermLowpassFiltersGroup": {
+        "message": "Filtres Passabaixos del D Term"
+    },
+    "pidTuningDTermLowpassType": {
+        "message": "Filtres Passabaixos 1 del D Term"
+    },
     "pidTuningVbatPidCompensation": {
         "message": "Compensació d'Vbat per als PIDs"
     },
     "pidTuningVbatPidCompensationHelp": {
         "message": "Incrementa el valors de PIDs per compensar la caiguda del voltatge de bateria. Aquest donarà característiques de vol constants durant el vol. La quantitat de compensació que s'aplica es calcula per el valor de voltatge màxim de ceŀla definit a la pestanya de configuració, assegura't que és correcte."
+    },
+    "pidTuningItermRelax": {
+        "message": "Relaxació I term"
+    },
+    "pidTuningItermRelaxAxes": {
+        "message": "Eixos",
+        "description": "Iterm Relax Axes selection"
+    },
+    "pidTuningItermRelaxAxesOptionRP": {
+        "message": "RP"
+    },
+    "pidTuningItermRelaxAxesOptionRPY": {
+        "message": "RPY"
+    },
+    "pidTuningItermRelaxAxesOptionRPInc": {
+        "message": "RP (nomès incrementar)"
+    },
+    "pidTuningItermRelaxAxesOptionRPYInc": {
+        "message": "RPY (nomès incrementar)"
+    },
+    "pidTuningItermRelaxType": {
+        "message": "Tipus",
+        "description": "Iterm Relax Type selection"
+    },
+    "pidTuningItermRelaxTypeOptionGyro": {
+        "message": "Giro"
+    },
+    "pidTuningItermRelaxTypeOptionSetpoint": {
+        "message": "D Punt d'ajust"
+    },
+    "pidTuningIntegratedYawHelp": {
+        "message": "El Yaw integrat és una característica que corregeix un problema fonamental amb el control del quad: mentre que el Pitch i el Roll estan controlats pels diferencials de l'empenta, les pales que generen Yaw són diferents. El Yaw integrat ho soluciona integrant la sortida del yaw pid abans d’aplicar-les al barregador. Això normalitza el funcionament dels Pid de Yaw. Ara podeu afinar qualsevol altre eix. Requereix l'ús de control absolut ja que no es necessita I amb el Yaw Integrat."
     },
     "configHelp2": {
         "message": "Rotació arbitrària de la controladora en graus, això ajuda a muntar-la de costat / al revès / etc. Quan fagis servirs sensors externs utilitza l'alineat (Gyro, Acc, Mag) per definir la posició del sensor independent de la controladora."
@@ -2533,6 +3174,66 @@
     "failsafeProcedureItemSelect2": {
         "message": "Deixa caure"
     },
+    "failsafeProcedureItemSelect4": {
+        "message": "Rescat GPS"
+    },
+    "failsafeGpsRescueItemAngle": {
+        "message": "Angle"
+    },
+    "failsafeGpsRescueItemInitialAltitude": {
+        "message": "Altitud inicial (metres)"
+    },
+    "failsafeGpsRescueItemDescentDistance": {
+        "message": "Distància de baixada (metres)"
+    },
+    "failsafeGpsRescueItemGroundSpeed": {
+        "message": "Velocitat del sòl (metres/segon)"
+    },
+    "failsafeGpsRescueItemThrottleMin": {
+        "message": "Throttle mínim"
+    },
+    "failsafeGpsRescueItemThrottleMax": {
+        "message": "Throttle màxim"
+    },
+    "failsafeGpsRescueItemThrottleHover": {
+        "message": "Throttle mitja"
+    },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "Taxa d’ascens (metres/segon)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "Taxa de descens (metres/segon)"
+    },
+    "failsafeGpsRescueItemMinSats": {
+        "message": "Satèl·lits mínims"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "Permet armar sense fixar - <span class=\"message-negative\">ADVERTIMENT: el rescat GPS no estarà disponible</span>"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "Mode altitud"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "Altitud màxima"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "Altitud fixada"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "Altitud actual"
+    },
+    "failsafeGpsRescueItemSanityChecks": {
+        "message": "Controls de sanejament"
+    },
+    "failsafeGpsRescueItemSanityChecksOff": {
+        "message": "Inactiu"
+    },
+    "failsafeGpsRescueItemSanityChecksOn": {
+        "message": "Activat"
+    },
+    "failsafeGpsRescueItemSanityChecksFSOnly": {
+        "message": "Nomès Failsafe"
+    },
     "failsafeKillSwitchItem": {
         "message": "Failsafe Kill Switch (configurar Failsafe a la pestanya Modes)"
     },
@@ -2544,6 +3245,9 @@
     },
     "failsafeSwitchModeItem": {
         "message": "Acció de l'interruptor de Failsafe"
+    },
+    "failsafeSwitchModeHelp": {
+        "message": "Aquesta opció determina el que succeeix quan s'activa Failsafe mitjançant el commutador AUX:<br/><strong>Etapa 1</strong> activa l'etiqueta failsafe 1. Això és útil si voleu simular el comportament fallit de la pèrdua de senyal.<br/><strong>Etapa 2</strong> ometeix l’etapa 1 i activa immediatament el procediment de l’etapa 2<br/><strong>Mata</strong> i desarma a l’instant (el teu equip s’estavella)"
     },
     "failsafeSwitchOptionStage1": {
         "message": "Stage 1"
@@ -2599,11 +3303,35 @@
     "powerBatteryWarning": {
         "message": "Voltatge d'avís de ceŀla"
     },
+    "powerCalibrationManagerButton": {
+        "message": "Calibració"
+    },
+    "powerCalibrationManagerTitle": {
+        "message": "Gestor de calibratge"
+    },
+    "powerCalibrationManagerHelp": {
+        "message": "Per calibrar, utilitzeu un multímetre per mesurar la tensió / corrent real de la aeronau (amb una bateria connectada) i introduïu els valors següents. A continuació, amb la mateixa bateria encara connectada, feu clic a [Calibrate]."
+    },
+    "powerCalibrationSave": {
+        "message": "Calibrar"
+    },
+    "powerCalibrationApply": {
+        "message": "Aplicar calibració"
+    },
+    "powerCalibrationDiscard": {
+        "message": "Descartar calibració"
+    },
     "powerVoltageHead": {
         "message": "Mesurador de Voltatge"
     },
     "powerVoltageValue": {
         "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "Voltatge mesurat"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Escala calibrada de voltatge:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -2746,6 +3474,12 @@
     "powerAmperageOffset": {
         "message": "Offset [mV]"
     },
+    "powerAmperageCalibration": {
+        "message": "Amperatge mesurat"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "Escala calibrada de amperatge:"
+    },
     "powerBatteryHead": {
         "message": "Bateria"
     },
@@ -2776,11 +3510,18 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupPreviewHelp": {
+        "message": "<strong>Nota:</strong> La previsualització de l'OSD pot no mostrar la font instaŀlada a la controladora de vol."
+    },
     "osdSetupUnsupportedNote1": {
         "message": "La teva controladora de vol no respon a les comandes OSD. Això vol dir, probablement, que no està integrada a l'OSD de BetaFlight"
     },
     "osdSetupUnsupportedNote2": {
         "message": "Algunes controladores tenen <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a> que pot ser flashejat i configurat amb <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>, malgrat això MinimOSD no pot ser configurat a aquesta interfície."
+    },
+    "osdSetupProfilesTitle": {
+        "message": "Nombre de perfil OSD",
+        "description": "Description of the header of the OSD elements column associated to each profile"
     },
     "osdSetupElementsTitle": {
         "message": "Elements"
@@ -2788,8 +3529,24 @@
     "osdSetupVideoFormatTitle": {
         "message": "Format de video"
     },
+    "osdSetupVideoFormatOptionPal": {
+        "message": "PAL",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionNtsc": {
+        "message": "NTSC",
+        "description": "Option for the video format in the OSD"
+    },
     "osdSetupUnitsTitle": {
         "message": "Unitats"
+    },
+    "osdSetupUnitsOptionImperial": {
+        "message": "Imperial",
+        "description": "Option for the units system used in the OSD"
+    },
+    "osdSetupUnitsOptionMetric": {
+        "message": "Mètric",
+        "description": "Option for the units system used in the OSD"
     },
     "osdSetupTimersTitle": {
         "message": "Temporitzadors"
@@ -2902,92 +3659,289 @@
     "osdDescElementFlyTime": {
         "message": "Total temps que l'aeronau ha estat armada en aquesta bateria (parpelleja quan estàs per sobre el límit)"
     },
+    "osdTextElementFlyMode": {
+        "message": "Mode de vol",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementFlyMode": {
         "message": "Mode de vol actual"
+    },
+    "osdTextElementGPSSpeed": {
+        "message": "Velocitat GPS",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSSpeed": {
         "message": "Velocitat proveïda per el GPS"
     },
+    "osdTextElementGPSSats": {
+        "message": "Estat GPS",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSSats": {
         "message": "Nombre de satèŀlits GPS que donen localització"
+    },
+    "osdTextElementGPSLon": {
+        "message": "Longitud GPS",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementGPSLon": {
+        "message": "Longitud coordenades GPS"
+    },
+    "osdTextElementGPSLat": {
+        "message": "Latitud GPS",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementGPSLat": {
+        "message": "Latitud coordenades GPS"
+    },
+    "osdTextElementDebug": {
+        "message": "Depuració",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementDebug": {
         "message": "Variables de Debug"
     },
+    "osdTextElementPIDRoll": {
+        "message": "PID Roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRoll": {
         "message": "Guanys de PID a l'eix Roll"
+    },
+    "osdTextElementPIDPitch": {
+        "message": "PID Pitch",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDPitch": {
         "message": "Guanys de PID a l'eix de Pitch"
     },
+    "osdTextElementPIDYaw": {
+        "message": "PID Yaw",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDYaw": {
         "message": "Guanys de PID a l'eix de Yaw"
+    },
+    "osdTextElementPower": {
+        "message": "Alimentació",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPower": {
         "message": "Consum instantani de corrent"
     },
+    "osdTextElementPIDRateProfile": {
+        "message": "Perfil: PID y Rate",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRateProfile": {
         "message": "Mostra el perfil actiu de PIDs i Rates"
+    },
+    "osdTextElementBatteryWarning": {
+        "message": "Avís de bateria",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementBatteryWarning": {
         "message": "Missatge d'avís que apareix quan la bateria cau per sota del límit"
     },
+    "osdTextElementAvgCellVoltage": {
+        "message": "Tensió mitja de la cel·la de la bateria",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementAvgCellVoltage": {
         "message": "Valor mig de voltatge de ceŀla (Voltatge total / nº de ceŀles)"
+    },
+    "osdTextElementPitchAngle": {
+        "message": "Angle: pitch",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPitchAngle": {
         "message": "Angle numèric de pitch en graus"
     },
+    "osdTextElementRollAngle": {
+        "message": "Angle: roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementRollAngle": {
         "message": "Angle numèric de roll en graus"
+    },
+    "osdTextElementMainBattUsage": {
+        "message": "Ús de bateria",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMainBattUsage": {
         "message": "Representació gràfica de l'ús de la bateria"
     },
+    "osdTextElementArmedTime": {
+        "message": "Temporitzador: temps armat",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArmedTime": {
         "message": "Temps des que l'aeronau va ser armada"
+    },
+    "osdTextElementHomeDirection": {
+        "message": "Direcció de inici",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHomeDirection": {
         "message": "Fletxa indicant la direcció de la posició de casa"
     },
+    "osdTextElementHomeDistance": {
+        "message": "Distancia a inici",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementHomeDistance": {
         "message": "Distancia a casa (en peus o metres depenent de la configuració)"
+    },
+    "osdTextElementNumericalHeading": {
+        "message": "Encapçalament numèric",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementNumericalHeading": {
         "message": "Lectura numèrica de la direcció en graus"
     },
+    "osdTextElementNumericalVario": {
+        "message": "Variòmetre numèric",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementNumericalVario": {
         "message": "Lectura numèrica de la velocitat vertical (en peus o en metres depenent de la configuració d'unitats)"
+    },
+    "osdTextElementCompassBar": {
+        "message": "Barra de brúixola",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCompassBar": {
         "message": "Compàs gràfic mostrant la direcció actual"
     },
+    "osdTextElementWarnings": {
+        "message": "Alertes",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementWarnings": {
         "message": "Alertes (p.ex. bateria baixa), avisos (p.ex. raons per les quals no arma) i beeper visual (4 asteriscs parpellejant)."
+    },
+    "osdTextElementEscTemperature": {
+        "message": "Temperatura ESC",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementEscTemperature": {
         "message": "Temperatura reportada per la telemetria d'ESCs"
     },
+    "osdTextElementEscRpm": {
+        "message": "RPM ESC",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementEscRpm": {
         "message": "RPM reportat per la telemetria ESC"
+    },
+    "osdTextElementRemaningTimeEstimate": {
+        "message": "Temporitzador: estimació del temps restant",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRemaningTimeEstimate": {
         "message": "Temps estimat restant de volt"
     },
+    "osdTextElementRtcDateTime": {
+        "message": "RTC dia i hora",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementRtcDateTime": {
         "message": "Hora / data real"
+    },
+    "osdTextElementAdjustmentRange": {
+        "message": "Interval d'ajustament",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementAdjustmentRange": {
         "message": "Ajustament de rang i de valor actiu actualment"
     },
+    "osdTextElementTimer1": {
+        "message": "Temporitzador 1",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementTimer1": {
         "message": "Mostra el valor del timer 1"
+    },
+    "osdTextElementTimer2": {
+        "message": "Temporitzador 2",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementTimer2": {
         "message": "Mostra el valor del timer 2"
     },
+    "osdTextElementCoreTemperature": {
+        "message": "Temperatura nucli",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCoreTemperature": {
         "message": "Temperatura del nucli MCU STM32"
+    },
+    "osdTextAntiGravity": {
+        "message": "Anti Gravetat",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescAntiGravity": {
+        "message": "Activa un indicador quan anti gravetat està activa"
+    },
+    "osdTextGForce": {
+        "message": "Força G",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescGForce": {
+        "message": "Mostra la quantitat de força G de l'aeronau"
+    },
+    "osdTextElementMotorDiag": {
+        "message": "Diagnosi del motor",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementMotorDiag": {
+        "message": "Mostra un gràfic de la sortida de cada motor"
+    },
+    "osdTextElementLogStatus": {
+        "message": "Estat del registre de Blackbox",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLogStatus": {
+        "message": "Número i alertes de la Blackbox"
+    },
+    "osdTextElementFlipArrow": {
+        "message": "Sentit de la fletxa de gir després de l'estavellada",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlipArrow": {
+        "message": "Fletxa que mostra quins motors laterals estan dalt en mode tortuga"
+    },
+    "osdTextElementLinkQuality": {
+        "message": "Qualitat enllaç",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLinkQuality": {
+        "message": "Indicador alternatiu de \"qualitat d'enllaç\" basat en la pèrdua de paquets: fes-ho servir amb cura"
+    },
+    "osdTextElementFlightDist": {
+        "message": "Distància de vol",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlightDist": {
+        "message": "Distància recorreguda durant aquest vol."
+    },
+    "osdTextElementStickOverlayLeft": {
+        "message": "Superposició stick esquerra",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayLeft": {
+        "message": "Superposició per a la posició del stick transmissor esquerre."
+    },
+    "osdTextElementStickOverlayRight": {
+        "message": "Superposició stick dreta",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayRight": {
+        "message": "Superposició per a la posició del pal transmissor dreta."
+    },
+    "osdTextElementDisplayName": {
+        "message": "Mostra el nom",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementUnknown": {
         "message": "Element desconegut (Els detalls s'afegiran a publicacions futures)"
