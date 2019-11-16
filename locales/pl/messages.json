@@ -80,7 +80,7 @@
         "message": "Po wykryciu połączenia otwórz ostatnio używaną kartę"
     },
     "analyticsOptOut": {
-        "message": "Zrezygnuj z anonimowego zbierania danych statystycznych"
+        "message": "Zrezygnuj ze zbierania danych statystycznych"
     },
     "language_changed": {
         "message": "Zapisano zmianę języka"
@@ -181,9 +181,6 @@
     "configMigrationSuccessful": {
         "message": "Import konfiguracji zakończony: $1"
     },
-    "tabFirmwareFlasher": {
-        "message": "Wgrywanie oprogramowania"
-    },
     "tabLanding": {
         "message": "Witaj"
     },
@@ -233,7 +230,7 @@
         "message": "Nadajnik wideo"
     },
     "tabPower": {
-        "message": "Zasilanie i bateria"
+        "message": "Zasilanie i Bateria"
     },
     "tabGPS": {
         "message": "GPS"
@@ -423,7 +420,7 @@
         "message": "<b>Zapytanie do GitHub'a dla wersji $1 nie udało się, używam zapamiętanych wcześniej informacji. Powód: <code>$2</code></b>"
     },
     "releaseCheckCached": {
-        "message": "Użyto wcześniej zapamiętanych informacji dla $1 wersji."
+        "message": "Użyto informacji które zapamiętał $1."
     },
     "releaseCheckNoInfo": {
         "message": "Informacje o wersji $1 są niedostępne."
@@ -522,7 +519,7 @@
         "message": "<span class=\"message-positive\">Zapisano</span> zmiany w EEPROM"
     },
     "defaultWelcomeIntro": {
-        "message": "Witaj w <strong>Betaflight - Configurator</strong>, narzędziu stworzonym by uprościć aktualizację, konfigurację i regulację Twojego kontrolera lotu."
+        "message": "Witaj w <strong>Betaflight - Configurator</strong>, narzędziu stworzonym by uprościć aktualizację i konfigurację Twojego kontrolera lotu."
     },
     "defaultWelcomeHead": {
         "message": "Sprzęt"
@@ -534,7 +531,7 @@
         "message": "Współtworzenie"
     },
     "defaultContributingText": {
-        "message": "Jeżeli chcesz pomóc w rozwoju Betaflight, możesz to zrobić na wiele sposobów np.:<br /><ul><li>Odpowiadając na pytania innych użytkowników na forach i IRC,</li><li>Współtworząc kod oprogramowania FC i konfiguratora - nowe funkcjonalności, poprawki, ulepszenia,</li><li>Testując <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">nowe funkcjonalności i poprawki</a>.</li><li>Pomagając w <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">problemach i komentując zgłaszane funkcjonalności </a>.</li><li>Pomagając w <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">tłumaczeniu konfiguratora</a> na Twój język.</li><li></li></ul>"
+        "message": "Jeżeli chcesz pomóc w rozwoju Betaflight, możesz to zrobić na wiele sposobów np.:<br /><ul><li>Odpowiadając na pytania innych użytkowników na forum IRC,</li><li>Współtworząc kod oprogramowania FC i konfiguratora - nowe funkcjonalności, poprawki, ulepszenia,</li><li>Testując <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">nowe funkcjonalności i poprawki</a>.</li><li>Pomagając w <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">problemach i komentując zgłaszane funkcjonalności </a>.</li><li>Pomagając w <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">tłumaczeniu konfiguratora</a> na Twój język.</li><li></li></ul>"
     },
     "defaultFacebookText": {
         "message": "Mamy również <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Grupe na Facebooku</a>.<br />Dołącz do nas aby porozmawiać o Betaflight, spytać o konfiguracje lub po prostu spędzić czas z innymi pilotami."
@@ -549,7 +546,7 @@
         "message": "Open Source / Informacja o darowiznach"
     },
     "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> to oprogramowanie kontrolera lotu które jest <strong>open source</strong> i jest dostępne <strong>za darmo</strong> dla wszystkich użytkowników.</p><p>Jeśli używasz Betaflight lub Konfiguratora Betaflight oraz uważasz je za przydatne, proszę rozważ <strong>wsparcie</strong> ich rozwoju poprzez darowiznę.</p>"
+        "message": "<p><strong>Betaflight</strong> to oprogramowanie kontrolera lotu które jest <strong>open source</strong> i jest dostępne <strong>za darmo</strong> dla wszystkich użytkowników.</p><p>Jeśli używasz Betaflight lub Konfiguratora Betaflight oraz uważasz je za przydatne, proszę rozważ <strong>wsparcie</strong> i rozwoju poprzez darowiznę.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Jeśli chcesz wspierać nas finansowo na bieżąco, powinieneś rozważyć możliwość zostania naszym sponsorem $t(patreonLink.message)</p>"
@@ -612,7 +609,7 @@
         "message": "Kalibracja magnetometru"
     },
     "initialSetupCalibrateMagText": {
-        "message": "Obróć drona przynajmniej <strong>360</strong> stopni wokół każdej osi obrotu, masz 30 sekund aby wykonać to zadanie."
+        "message": "Obróć model przynajmniej <strong>360</strong> stopni wokół każdej osi obrotu, masz 30 sekund aby wykonać to zadanie"
     },
     "initialSetupButtonCalibratingText": {
         "message": "Kalibracja..."
@@ -729,7 +726,7 @@
         "message": "Uzbrajanie dozwolone"
     },
     "initialSetupArmingDisableFlagsTooltip": {
-        "message": "Lista flag wskazuje dlaczego uzbrojenie jest obecnie niedozwolone. Ustaw kursor myszki na fladze lub odnieś się do Wiki (strona 'Sekwencja uzbrajania & bezpieczeństwo'), aby uzyskać więcej informacji."
+        "message": "Lista flag wskazuje dlaczego uzbrojenie jest obecnie niedozwolone. Ustaw kursor myszki na fladze aby uzyskać więcej informacji. Lub (odwiedź stronę internetową gdźie znajdźiesz informacje na temat sekwencji uzbrajania oraz poznasz podstawowe zasady bezpieczeństwa)."
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "Nie wykryto żyroskopu",
@@ -1025,7 +1022,7 @@
         "message": "Ustawienia ESC/Silników"
     },
     "configurationFeaturesHelp": {
-        "message": "<strong>Uwaga:</strong> Nie wszystkie kombinacje funkcji są poprawne. Jeśli oprogramowaniekontrolera lotu wykryje konflikt funkcji, zostanie ona wyłączona.<br /><strong>Uwaga:</strong> Skonfiguruj port <span class=\"message-negative\">przez</span> włączenie funkcji która będzie go wykorzystywać."
+        "message": "<strong>Uwaga:</strong> Jeśli nie wszystkie ustawienia  są poprawne to oprogramowanie kontrolera lotu wykryje błąd konfiguracji  następnie   wyłączy funkcje  która tworzy błędną konfiguracje.<br /><strong>Uwaga:</strong> Skonfiguruj port <span class=\"message-negative\">poprzez</span> włączenie funkcji która będzie go wykorzystywać."
     },
     "configurationSerialRXHelp": {
         "message": "<strong>Uwaga:</strong> Gdy używasz odbiornika typu RX_SERIAL, pamiętaj o skonfigurowaniu portu (w zakładce Porty) i wybraniu rodzaju sygnału odbiornika."
@@ -1103,7 +1100,7 @@
         "message": "Kierunek silników jest odwrócony"
     },
     "configurationReverseMotorSwitchHelp": {
-        "message": "Opcja tak jest używana aby kamera podczas lotów FPV nie brudziła się oraz żeby kurz i inne zanieczyszczenia nie były wdmuchiwane na kontroler lotu. Należy zadbać aby kierunek silnikó został odpowiednio odwrócony a śmigła odpowiednio założone.<strong>Ostrzeżenie:</strong> Nie zmienia to kierunku obrotów silnika. Użyj narzędzia do konfiguracji swoich ESC lub zamień kolejność przewodów silnika aby to osiągnąć. Upewnij się również bez założonych śmigieł czy silniki kręcą się w kierunku jak na grafice powyżej przed próbą uzbrajania."
+        "message": "Opcja ta jest używana aby kamera podczas lotów FPV nie brudziła się oraz żeby kurz i inne zanieczyszczenia nie były wdmuchiwane na kontroler lotu. Należy zadbać aby kierunek silnikó został odpowiednio odwrócony a śmigła odpowiednio założone.<strong>Ostrzeżenie:</strong> Nie zmienia to kierunku obrotów silnika. Użyj narzędzia do konfiguracji swoich ESC lub zamień kolejność przewodów silnika aby to osiągnąć. Upewnij się również bez założonych śmigieł czy silniki kręcą się w kierunku jak na grafice powyżej przed próbą uzbrajania."
     },
     "configurationAutoDisarmDelay": {
         "message": "Rozbrojenie silników po ustawionym czasie [sekundy] (Wymaga uruchomienia MOTOR_STOP)"
@@ -1129,7 +1126,7 @@
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesHelp": {
-        "message": "To ustawienie jest używane dla niektórych funkcji, nieich jak filtr RPM.<br><br>Przedstawia liczbę magnesów na dzwonku silnika. <b>nie liczy statorów</b>, gdzie znajdują się uzwojenia. Typowe silniki 5\" mają 14 magnesów, mniejsze nieie jak 3\" lub mniej mają zazwyczaj 12 magnesów.",
+        "message": "To ustawienie jest używane dla niektórych funkcji, takich jak filtr RPM.<br><br>Przedstawia liczbę magnesów na dzwonku silnika. <b>nie bierze pod uwage statorów</b>, gdzie znajdują się uzwojenia. Typowe silniki 5\" mają 14 magnesów, mniejsze takie jak 3\" lub mniej mają zazwyczaj 12 magnesów.",
         "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
@@ -1253,10 +1250,10 @@
         "message": "Cykle/Sekundy [Hz]"
     },
     "configurationLoopTimeHelp": {
-        "message": "<strong>Uwaga:</strong> Upewnij się że twój kontroler lotu może działać z nieą prędkością! Sprawdź CPU i stabilność czasu cyklu. Zmiana tego może wymagać ponownego ustawienia PID. Porada: Wyłącz akcelerometr i inne czujniki aby zyskać na wydajności."
+        "message": "<strong>Uwaga:</strong> Upewnij się że twój kontroler lotu może działać z wybraną prędkością! Sprawdź CPU i stabilność czasu cyklu. Zmiana tego parametru może wymagać ponownego ustawienia PID. Porada: Wyłącz akcelerometr i inne czujniki aby zyskać na wydajności."
     },
     "configurationLoopTimeNo32KhzHelp": {
-        "message": "$ t (configurationLoopTimeHelp.message) <br> <strong> Uwaga na temat trybu próbkowania żyroskopu 32 kHz: </strong> Wsparcie dla 32kHz zostało dodane do Betaflight jako eksperymentalną funkcja. Przez lata dostępności nie wykazała żadnej przewagi nad próbkowaniem 8kHz, ze względu podatności na wibracje i wysoki poziom zakłuceń, które wymagały agresywnego filtrowania, powodując opóźnienia w pętli sterowania. Z tego powodu zrezygnowano z obsługi <strong> próbkowania żyroskopu 32 kHz </strong> w Betaflight 4.0."
+        "message": "$t(configurationLoopTimeHelp.message) <br> <strong> Uwaga na temat trybu próbkowania żyroskopu 32 kHz: </strong> Wsparcie dla 32kHz zostało dodane do Betaflight jako eksperymentalną funkcja. Przez lata dostępności nie wykazała żadnej przewagi nad próbkowaniem 8kHz, ze względu podatności na wibracje i wysoki poziom zakłuceń, które wymagały agresywnego filtrowania, powodując opóźnienia w pętli sterowania. Z tego powodu zrezygnowano z obsługi <strong> próbkowania żyroskopu 32 kHz </strong> w Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1323,16 +1320,16 @@
         "message": "Wyjście telemetrii"
     },
     "portsPeripherals": {
-        "message": "Peryferia"
+        "message": "Urządzenia peryferyjne"
     },
     "portsHelp": {
-        "message": "<strong> Uwaga: </strong> nie wszystkie kombinacje są poprawne. Po wykryciu tego przez oprogramowanie kontrolera lotu konfiguracja portu szeregowego zostanie zresetowana."
+        "message": "<strong> Uwaga: </strong> Jeśli nie wszystkie kombinacje są poprawne. Po wykryciu tego przez oprogramowanie kontrolera lotu konfiguracja portu szeregowego zostanie zresetowana."
     },
     "portsVtxTableNotSet": {
         "message": "<span class=\"message-negative\"> OSTRZEŻENIE:</span> Tabela VTX nie została poprawnie skonfigurowana i bez niej sterowanie VTX nie będzie możliwe. Proszę ustawić tabelę VTX w zakładce $t(tabVtx.message)."
     },
     "portsMSPHelp": {
-        "message": "<strong> Uwaga: </strong> Nie włączaj <span class = \"message-negative\"> NIE </span> wyłączaj MSP na pierwszym porcie szeregowym, chyba że wiesz co robisz. W nieim przypadku konieczne może być ponowne flashowanie i przywrócenie poprzednich ustawień."
+        "message": "<strong> Uwaga: </strong> <span class = \"message-negative\"> NIE </span> wyłączaj MSP na pierwszym porcie szeregowym, chyba że wiesz co robisz. Jeśli nie wiesz co robisz może sie okazać że potrzebne jest ponowne wgranie oprogramowania i przywrócenie ustawień."
     },
     "portsFirmwareUpgradeRequired": {
         "message": "Aktualizacja oprogramowania<span class=\"message-negative\">wymagana</span>. Konfiguracja oprogramowania portów szeregowych &lt; 1.8.0 nie jest obsługiwana."
@@ -1341,7 +1338,7 @@
         "message": "Zapisz i zrestartuj"
     },
     "portsTelemetryDisabled": {
-        "message": "Wyłączony"
+        "message": "Wyłączono"
     },
     "portsFunction_MSP": {
         "message": "MSP"
@@ -1483,7 +1480,7 @@
         "message": "Wygładzanie RC"
     },
     "receiverRcSmoothingAuto": {
-        "message": "Automatycznie"
+        "message": "Auto"
     },
     "receiverRcSmoothingManual": {
         "message": "Ręcznie"
@@ -1527,7 +1524,7 @@
         "message": "Rodzaj metody filtrowania zastosowany dla danych wejściowych. Większość użytkowników powinna używać domyślnej wartości „BIQUAD”, ponieważ zapewnia ona równowagę między płynnością a opóźnieniem. „PT1” nieznacznie zmniejsza opóźnienie, ale zapewnia mniej wygładzania."
     },
     "receiverRcSmoothingInputManual": {
-        "message": "Wybiera, czy częstotliwość odcięcia filtra wejściowego jest automatycznie obliczana (zalecane) czy wybierana ręcznie przez użytkownika. Używanie \"Ręcznego\" nie jest zalecane dla protokołów odbiorników, nieich jak Crossfire które mogą zmieniać się w locie."
+        "message": "Wybiera, czy częstotliwość odcięcia filtra wejściowego jest automatycznie obliczana (zalecane) czy wybierana ręcznie przez użytkownika. Używanie \"Ręcznego\" nie jest zalecane dla protokołów odbiorników, takich jak Crossfire które mogą zmieniać się w locie."
     },
     "receiverRcSmoothingDerivativeManual": {
         "message": "Wybiera, czy częstotliwość odcięcia pochodnego jest automatycznie obliczana (zalecane) czy wybierana ręcznie przez użytkownika. Używanie \"Ręcznego\" nie jest zalecane dla protokołów odbiorników, nieich jak Crossfire które mogą zmieniać się w locie."
@@ -1750,7 +1747,7 @@
         "message": "EEPROM <span class=\"message-positive\">zapisano</span>"
     },
     "receiverHelp": {
-        "message": "Proszę przeczytać rozdział dokumentacji dotyczący odbiornika. Skonfiguruj port szeregowy (jeśli jest wymagany), tryb odbiornika (szeregowy / ppm / pwm), dostawcę (dla odbiorników szeregowych), przypisz odbiornik, ustaw kanały, skonfiguruj punkty końcowe / zakres kanału w TX, nie aby wszystkie kanały przechodziły od ~ 1000 do ~ 2000. Ustaw punkt środkowy (domyślnie 1500), skonfiguruj strefę nieczułości drążka, sprawdź zachowanie, gdy TX jest wyłączony lub poza zasięgiem. <br /> <span class = \"message-negative\"> WAŻNE: </span> Przed lotem przeczytaj rozdział dokumentacji dotyczącej bezpieczeństwa i konfiguracji bezpieczeństwa."
+        "message": "Proszę przeczytać rozdział dokumentacji dotyczący odbiornika. Skonfiguruj port szeregowy (jeśli jest wymagany), tryb odbiornika (Szeregowy / PPM / PWM), dostawcę (dla odbiorników szeregowych), oraz przypisz odbiornik następnie  ustaw kanały, skonfiguruj punkty końcowe kanałów w nadajniku RC, tak aby wszystkie kanały przechodziły od ~ 1000 do ~ 2000. Ustaw punkt środkowy (domyślnie 1500), skonfiguruj strefę nieczułości drążka, sprawdź zachowanie, gdy nadajnik RC jest wyłączony lub poza zasięgiem. <br /> <span class = \"message-negative\"> WAŻNE: </span> Przed lotem przeczytaj rozdział dokumentacji dotyczący bezpieczeństwa."
     },
     "receiverThrottleMid": {
         "message": "Przepustnica MID"
@@ -1759,25 +1756,22 @@
         "message": "Przepustnica EXPO"
     },
     "receiverStickMin": {
-        "message": "Drążek w niskiej pozycji"
+        "message": "Minimalna Pozycja Drążka"
     },
     "receiverHelpStickMin": {
-        "message": "Maksymalna wartość drążka (przepustnicy) która ma być rozpoznana jako najnisza (MIN_CHECK)."
+        "message": "Wartość drążka (przepustnicy) która ma być rozpoznana jako najnisza (MIN_CHECK)."
     },
     "receiverStickCenter": {
-        "message": "Drążek po środku"
-    },
-    "receiverStickMax": {
-        "message": "Ogranicz 'Wysokość drążka'"
+        "message": "Neutralna Pozycja Drążka"
     },
     "receiverHelpStickMax": {
-        "message": "Minimalna wartość drążka (przepustnicy) która ma być rozpoznana jako najwysza (MAX_CHECK)."
+        "message": "Wartość drążka (przepustnicy) która ma być rozpoznana jako najwysza (MAX_CHECK)."
     },
     "receiverDeadband": {
-        "message": "Strefa nieczułości RC"
+        "message": "Strefa Nieczułości RC"
     },
     "receiverYawDeadband": {
-        "message": "Strefa nieczułości Yaw"
+        "message": "Strefa Nieczułości Yaw"
     },
     "recevier3dDeadbandThrottle": {
         "message": "Strefa Nieczułości Przepustnicy"
@@ -1825,7 +1819,7 @@
         "message": "Włacz kontrolę"
     },
     "auxiliaryHelp": {
-        "message": "Skonfiguruj tutaj tryby, używając kombinacji zakresów lub łącz ze sobą różne tryby (łączenie trybów obsługiwane w BF 4.0 i nowszych). Użyj <strong>zakresów</strong>, aby zdefiniować przełączniki na nadajniku i odpowiednie przypisanie trybów lotu. Kanał odbiornika, który daje odczyt pomiędzy zakresem min/max, aktywuje tryb. Użyj <strong> łączenia</strong>, aby aktywować tryb, gdy aktywowany jest inny tryb. <strong>Wyjątki: </strong> ARM nie może być łączony z innym trybem. Tryby nie mogą być połączone z innymi trybami skonfigurowanymi za pomocą łączenia trybów (które jest zabezpieczone przed modyfikacją). Do aktywacji dowolnego trybu można użyć wielu zakresów/łączy. Jeśli dla danego trybu zdefiniowano więcej niż jeden zakres/łącze, każdy z nich można ustawić na <strong>I</strong> albo <strong>LUB</strong>. Tryb zostanie aktywowany gdy: <br />-WSZYSTKIE zakresy / linki są aktywne <strong>LUB</strong>gdy <br /> - aktywny jest co najmniej jeden <strong>LUB</strong> zakres / link. <br/><br /> Pamiętaj, aby zapisać ustawienia za pomocą przycisku Zapisz."
+        "message": "Skonfiguruj tutaj tryby lotu, używając kombinacji zakresów lub łącz ze sobą różne tryby (łączenie trybów obsługiwane w BF 4.0 i nowszych). Użyj <strong>zakresów</strong>, aby zdefiniować przełączniki na nadajniku i odpowiednie przypisanie trybów lotu. Kanał odbiornika, który daje odczyt pomiędzy zakresem min/max, aktywuje tryb. Użyj <strong> łączenia</strong>, aby aktywować tryb, gdy aktywowany jest inny tryb. <strong>Wyjątki: </strong> ARM nie może być łączony z innym trybem. Tryby nie mogą być połączone z innymi trybami skonfigurowanymi za pomocą łączenia trybów (które jest zabezpieczone przed modyfikacją). Do aktywacji dowolnego trybu można użyć wielu zakresów/łączy. Jeśli dla danego trybu zdefiniowano więcej niż jeden zakres/łącze, każdy z nich można ustawić na <strong>Oraz</strong> albo <strong>LUB</strong>. Tryb zostanie aktywowany gdy: <br />-WSZYSTKIE zakresy / linki są aktywne <strong></strong> gdy<br /> aktywny jest co najmniej jeden <strong></strong> zakres / link. <br/><br /> Pamiętaj, aby zapisać ustawienia za pomocą przycisku Zapisz."
     },
     "auxiliaryToggleUnused": {
         "message": "Ukryj nieużywane tryby"
@@ -2018,7 +2012,7 @@
         "message": "EEPROM <span class=\"message-positive\">zapisana</span>"
     },
     "transponderNotSupported": {
-        "message": "Firmowe oprogramowaniekontrolera lotu nie obsługuje funkcji transpondera."
+        "message": "Firmowe oprogramowanie kontrolera lotu nie obsługuje funkcji transpondera."
     },
     "transponderInformation": {
         "message": "Systemy transponderów pozwalają organizatorom wyścigu mierzyć czas Twoich okrążeń. Transponder jest zamontowany na twoim modelu, kiedy twój model mija bramkę pomiaru czasu, odbiornik przytorowy rejestruje numer startowy i czas okrążenia. Instalując transponder na podczerwień, należy upewnić się, że wiązka podczerwieni jest skierowana na zewnątrz modelu w kierunku odbiorników przytorowych, oraz że  nie jest zasłonięta przez kadłub, paski akumulatora, kable, śmigła itp."
@@ -2159,7 +2153,7 @@
         "message": "Prędkość:"
     },
     "gpsSats": {
-        "message": "Sats:"
+        "message": "Satelity:"
     },
     "gpsDistToHome": {
         "message": "Dystans do Domu:"
@@ -2490,7 +2484,7 @@
         "message": "Brak włożonej karty"
     },
     "sdcardStatusReboot": {
-        "message": "Krytyczny błąd<br>Zrestartuj aby spróbować ponownie"
+        "message": "Krytyczny błąd<br>Zresetuj aby spróbować ponownie"
     },
     "sdcardStatusReady": {
         "message": "Karta gotowa"
@@ -2608,9 +2602,6 @@
     },
     "firmwareFlasherOptionLoading": {
         "message": "Wczytywanie ..."
-    },
-    "firmwareFlasherOptionLabelBuildTypeRelease": {
-        "message": "Wydanie"
     },
     "firmwareFlasherOptionLabelBuildTypeReleaseCandidate": {
         "message": "Wydania i kandydaci do wydania"
@@ -2856,7 +2847,7 @@
         "description": "Down direction in Color Mode in Led Strip"
     },
     "ledStripModesOrientationTitle": {
-        "message": "Orientacja LED/RGB ('tryby &amp; Orientacja') i kolor",
+        "message": "Orientacja LED/RGB ('tryby &amp; kolor')",
         "description": "One of the modes in Color Mode in Led Strip"
     },
     "ledStripModesSpecialColorsTitle": {
@@ -2963,7 +2954,7 @@
         "message": "jasnoniebieski"
     },
     "colorBlue": {
-        "message": "niebiesk"
+        "message": "niebieski"
     },
     "colorDarkViolet": {
         "message": "ciemny fiolet"
@@ -3166,6 +3157,15 @@
     "pidTuningGyroLowpassType": {
         "message": "Pierwszy rodzaj filtra dolnoprzepustowego"
     },
+    "pidTuningGyroLowpassDynMinFrequency": {
+        "message": "Dynamiczna Min częstotliwość odcięcia [Hz] 1 dolnoprzepustowego żyroskopu"
+    },
+    "pidTuningGyroLowpassDynMaxFrequency": {
+        "message": "Dynamiczna maksymalna częstotliwość odcięcia [Hz] 1 żyroskopu dolnoprzepustowego"
+    },
+    "pidTuningGyroLowpassDynType": {
+        "message": "Dynamiczny dolnoprzepustowy 1 typ filtra żyroskopu"
+    },
     "pidTuningGyroLowpass2Frequency": {
         "message": "Częstotliwość odcięcia 2 żyroskopu dolnoprzepustowego [Hz]"
     },
@@ -3174,6 +3174,12 @@
     },
     "pidTuningGyroNotchFiltersGroup": {
         "message": "Pasmowo zaporowy filtr żyroskopu"
+    },
+    "pidTuningGyroNotch1Frequency": {
+        "message": "Filtr 1 wcięcia żyroskopu środkowa częstotliwość [Hz]"
+    },
+    "pidTuningGyroNotch2Frequency": {
+        "message": "Filtr 2 wcięcia żyroskopu środkowa częstotliwość [Hz]"
     },
     "pidTuningGyroNotch1Cutoff": {
         "message": "Częstotliwość odcięcia (wąskiego) filtru środkowo zaporowego1 [Hz]"
@@ -3490,13 +3496,13 @@
         "message": "Czujnik MSP/OSD Slave"
     },
     "powerBatteryMinimum": {
-        "message": "Minimalne napięcie celi"
+        "message": "Minimalne napięcie Celi"
     },
     "powerBatteryMaximum": {
-        "message": "Maksymalne napięcie celi"
+        "message": "Maksymalne napięcie Celi"
     },
     "powerBatteryWarning": {
-        "message": "Ostrzeżenie o napięciu Celli"
+        "message": "Ostrzeżenie o napięciu Celi"
     },
     "powerCalibrationManagerButton": {
         "message": "Kalibracja"
@@ -3700,7 +3706,7 @@
         "message": "Połączony"
     },
     "powerBatteryConnectedValueYes": {
-        "message": "Tak (Ogniw: $1)"
+        "message": "Tak (Cel: $1)"
     },
     "powerBatteryConnectedValueNo": {
         "message": "Nie"
@@ -3709,7 +3715,7 @@
         "message": "Napięcie"
     },
     "powerBatteryCurrentDrawn": {
-        "message": "zużyte mAh"
+        "message": "Zużyte mAh"
     },
     "powerBatteryAmperage": {
         "message": "Natężenie"
@@ -4306,6 +4312,9 @@
         "message": "Profil: nazwa profilu OSD",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementOsdProfileName": {
+        "message": "Nazwa profilu OSD ustawiona w wierszu poleceń \"osd_profile_1_name\", \"osd_profile_2_name\" i \"osd_profile_3_name\""
+    },
     "osdTextElementRssiDbmValue": {
         "message": "Wartość RSSI dBm",
         "description": "One of the elements of the OSD"
@@ -4502,6 +4511,13 @@
     "osdDescStatMinRssiDbm": {
         "message": "Minimalna wartość RSSI dBm"
     },
+    "osdTextElementRcChannels": {
+        "message": "Kanały RC",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Wyświetl najwyżej 4 wartości kanałów. Kanały muszą być określone zmienną w wierszu poleceń 'osd_rcchannels'"
+    },
     "osdTextStatUnknown": {
         "message": "Nieznane $1",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
@@ -4520,6 +4536,9 @@
     },
     "osdTimerSource": {
         "message": "Źródło:"
+    },
+    "osdTimerSourceTooltip": {
+        "message": "Wybierz źródło zegara, to kontroluje czas trwania zdarzenia które mierzy zegar"
     },
     "osdTimerSourceOptionOnTime": {
         "message": "Uruchomiony od",
@@ -5070,6 +5089,9 @@
     },
     "pidTuningDeltaMeasurement": {
         "message": "Pomiar"
+    },
+    "pidTuningFilterTip": {
+        "message": "<b>Filtr żyroskopowy:</b> Filtr dolnoprzepustowy dla żyroskopu. Użyj niższej wartości dla lepszego filtrowania.<br><b>Filtr terminu:</b> Filtr dolnoprzepustowy Dterm Może wpływać na dostrajanie D. Użyj niższej wartości, aby bardziej filtrować. <br><b>Filtr kątowy Yaw:</b> Filtry odchylenia kątowego. Może to pomóc w konfiguracji z odchylona osią kątową."
     },
     "pidTuningRatesTip": {
         "message": "Zmień parametry i zobacz, jak wpływają one na krzywą kontroli"
