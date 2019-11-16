@@ -891,6 +891,10 @@
         "message": "Le DSHOT Bitbanged ne fonctionne pas correctement. Les moteurs ne peuvent pas être contrôlés, probablement à cause un conflit de timer avec d'autres fonctionnalités activées sur le contrôleur de vol.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
+        "message": "L'accéléromètre n'a pas été calibré, et certaines fonctionnalités actives en ont besoin. Calibrez l'accéléromètre.",
+        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Un des autres drapeaux désarmés est actif lors de l'armement",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
@@ -1335,6 +1339,22 @@
     },
     "configurationGPSAutoConfig": {
         "message": "Config Auto"
+    },
+    "configurationGPSGalileo": {
+        "message": "Utiliser Galileo",
+        "description": "Option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSGalileoHelp": {
+        "message": "Lorsque activé, cela supprime le système QZSS (Japonais) et le remplace par le système Galileo (Européen).",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSHomeOnce": {
+        "message": "Définir le point de départ une seule fois",
+        "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHomeOnceHelp": {
+        "message": "Si activé, le lieu du premier armement après branchement de la batterie sera défini comme point de départ. Si non activé, l'endroit de chaque armement sera défini comme point de départ.",
+        "description": "Help text for the option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
     },
     "configurationGPSHelp": {
         "message": "<strong>Note:</strong> Noubliez pas de configurer un Port Série (via l'onglet Ports) lorsque vous utilisez la fonction GPS."
@@ -2492,6 +2512,9 @@
     "blackboxLoggingSerial": {
         "message": "Port série"
     },
+    "serialLoggingSupportedNote": {
+        "message": "Vous pouvez logger sur un périphérique externe (tel un OpenLager) en utilisant un port série. Configurez le port via l'onglet Ports."
+    },
     "sdcardNote": {
         "message": "Les logs de vol peuvent être enregistrés sur la carte SD du contrôleur de vol."
     },
@@ -3577,8 +3600,29 @@
     "failsafeGpsRescueItemThrottleHover": {
         "message": "Maintien gaz"
     },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "Vitesse de montée (mètres/seconde)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "Vitesse de descente (mètres/seconde)"
+    },
     "failsafeGpsRescueItemMinSats": {
         "message": "Satellites minimum"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "Autoriser l'armement sans fix GPS - <span class=\"message-negative\">ATTENTION: la sauvetage GPS ne fonctionnera pas</span>"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "Mode Altitude"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "Altitude maximum"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "Altitude fixe"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "Altitude actuelle"
     },
     "failsafeGpsRescueItemSanityChecks": {
         "message": "Vérification"
@@ -4681,6 +4725,13 @@
     "osdDescStatMinRssiDbm": {
         "message": "Valeur minimum du RSSI en dBm"
     },
+    "osdTextElementRcChannels": {
+        "message": "Canaux RC",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Affiche les valeurs de 4 canaux. Les canaux doivent être définis à l'aide de la variable CLI 'osd_rcchannels'"
+    },
     "osdTextStatUnknown": {
         "message": "Inconnu $1",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
@@ -4902,6 +4953,10 @@
     },
     "osdButtonSaved": {
         "message": "Enregistré"
+    },
+    "vtxHelp": {
+        "message": "Cet onglet permet de configurer les valeurs de votre émetteur vidéo (VTX). Vous pouvez consulter et modifier les valeurs d'émission, y compris la table VTX, si le contrôleur de vol et le VTX le permettent.<br>Pour configurer le VTX, suivre les étapes suivantes:<br>1. Aller <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight/wiki/VTX-tables\">sur cette page</a>;<br>2. Trouver le fichier de configuration de votre VTX dans votre pays et le télécharger;<br>3. Cliquer sur '$t(vtxButtonLoadFile.message)' dessous, choisir le fichier de configuration téléchargé précédemment et le charger;<br>4. Vérifier que tout est correct;<br>5. Cliquer sur '$t(vtxButtonSave.message)' pour enregistrer les réglages VTX dans le contrôleur de vol.<br>6. Facultatif : cliquer sur '$t(vtxButtonSaveLua.message)' pour sauvegarder un fichier de configuration lua que vous pourrez utiliser avec les scripts lua de betaflight (En savoir plus <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">ici</a>.)",
+        "description": "Introduction message in the VTX tab"
     },
     "vtxMessageNotSupported": {
         "message": "<span class=\"message-negative\">Attention :</span> Votre VTX n'est pas configuré ou non pris en charge. Vous ne pouvez donc pas modifier les valeurs VTX. Cela n'est possible que si le contrôleur de vol communique avec le VTX en utilisant un protocole comme Tramp ou SmartAudio et est correctement configuré dans l'onglet $t(tabPorts.message) si nécessaire.",
@@ -5130,6 +5185,14 @@
     "vtxButtonSaveFile": {
         "message": "Enregistrer sous",
         "description": "Save to file button in the VTX tab"
+    },
+    "vtxButtonSaveLua": {
+        "message": "Sauvegarder Script Lua",
+        "description": "Save Lua script button in the VTX tab"
+    },
+    "vtxLuaFileHelp": {
+        "message": "Le bouton '$t(vtxButtonSaveLua.message)' vous permettra de sauvegarder un fichier <i>craftname</i>.lua contenant la configuration de la table vtx qui pourra être utilisé avec les scripts lua de betaflight. (Voir plus <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">ici</a>.)",
+        "description": "Tooltip message for the Save Lua script button in the VTX tab"
     },
     "vtxButtonLoadFile": {
         "message": "Charger à partir du fichier",
