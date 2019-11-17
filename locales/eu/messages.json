@@ -1659,6 +1659,9 @@
     "dialogCopyProfileText": {
         "message": "Kopiatu hemen uneko profilaren balioak"
     },
+    "dialogCopyRateProfileText": {
+        "message": "Kopiatu egungo tasaren profila"
+    },
     "dialogCopyProfileTitle": {
         "message": "Profilaren balioak kopiatu"
     },
@@ -1704,20 +1707,38 @@
     "receiverStickMin": {
         "message": "'Stick baxua' atalasea"
     },
+    "receiverHelpStickMin": {
+        "message": "Geihenezko balioa (us) stick bat egiteko handiko gisa onartzeko/ezkerreko komandoaren sarrera-(MIN_CHECK) da."
+    },
     "receiverStickCenter": {
         "message": "Stick Zentroa"
+    },
+    "receiverHelpStickCenter": {
+        "message": "Stick bat zentratua dagoen ala ez zehazteko(MID_RC) erabiltzen den balioa (us)."
     },
     "receiverStickMax": {
         "message": "'Stick altua' atalasea"
     },
+    "receiverHelpStickMax": {
+        "message": "Gutxieneko balioa (us) stick bat egiteko handiko gisa onartzeko/eskuineko komandoaren sarrera-(MAX_CHECK) da."
+    },
     "receiverDeadband": {
         "message": "RC Deadband"
+    },
+    "receiverHelpDeadband": {
+        "message": "Balioak dira (us) baliozko RC-ren zenbatekoa izan daitekeen kontuan hartuta. Irteeretan jitter-a duten transmisoreentzat, balio hori handitu egin daiteke rc sarrerek inaktibo mantentzen badira."
     },
     "receiverYawDeadband": {
         "message": "Yaw Deadband"
     },
+    "receiverHelpYawDeadband": {
+        "message": "Balioak dira (us) baliozko RC-ren zenbatekoa izan daitekeen kontuan hartuta. Irteeretan jitter-a duten transmisoreentzat, balio hori handitu egin daiteke rc sarrerek inaktibo mantentzen badira. <strong>Ezarpen hau Yawentzat bakarrik da.</strong>"
+    },
     "recevier3dDeadbandThrottle": {
         "message": "3D Throttle Deadband"
+    },
+    "receiverHelp3dDeadbandThrottle": {
+        "message": "Hauek dira balioak (us). Eremu neutroa zabaltzeko balioa handitu. <strong>Ezarpen hau 3D motordunetarako da.</strong>"
     },
     "receiverChannelMap": {
         "message": "Kanal mapa"
@@ -1761,6 +1782,9 @@
     "receiverMspEnableButton": {
         "message": "Kontrolak gaitu"
     },
+    "auxiliaryHelp": {
+        "message": "Konfiguratu hemen moduak barruti edo / eta beste modu batzuetarako estekak (BF 4.0 edo hurrengoetan onartzen diren estekak) erabiliz. Erabili <strong>barrutiak</strong> transmisorearen etengailuak eta dagozkion moduak esleitzeko. Min/max tartearen arteko irakurketa ematen duen hargailuen kanalak modua aktibatuko du. Erabili <strong>esteka</strong> modua beste modu bat aktibatuta dagoenean aktibatzeko. <strong>Salbuespenak:</strong>ARM ezin da beste modu batera edo beste batekin lotu; moduak ezin dira lotura batekin konfiguratutako beste modu batzuekin lotu (kateatutako estekak). Multzo eta esteka anitz erabil daitezke edozein modua aktibatzeko. Modu baterako zehaztutako barruti / esteka bat baino gehiago badago, horietako bakoitza <strong>ETA</strong> edo <strong>EDO</strong> ezar daiteke. Modu bat aktibatuko da: <br/>-ALL<strong>ETA</strong> barrutiak/estekak aktibo daudenean; EDO<br/> -gutxienez <strong>EDO</strong> barruti/esteka aktibo badago. <br/><br/>Ez ahaztu ezarpenak gorde botoiarekin."
+    },
     "auxiliaryToggleUnused": {
         "message": "Ezkutatu ez erabilitako moduak"
     },
@@ -1799,16 +1823,22 @@
         "message": "Konfiguratu etengailuak zuzenketak egiteko. Informazio gehiago nahi izanez gero, ikusi eskuliburuko \"hegaldiaren ezarpenak\" atala. Egindako zuzenketak ez dira automatikoki gordetzen."
     },
     "adjustmentSlotsHelp": {
-        "message": "4 zirrikitu daude. Zuzenketak egiteko erabiltzen den etengailu bakoitzak zirrikitu baten erabilera esklusiboa eskatzen du."
+        "message": "4 erretenak daude. Zuzenketak egiteko erabiltzen den etengailu bakoitzak zirrikitu baten erabilera esklusiboa eskatzen du."
     },
     "adjustmentsExamples": {
         "message": "Adibideak:"
+    },
+    "adjustmentsExample1": {
+        "message": "Erabili AUX1 hiru posizio etengailua Pitch/Roll P, I eta D artean eta AUX2 beste hiru posizio etengailuen artean hautatzeko, balioa handitzeko edo txikitzeko, gora eta behera mugitzean."
+    },
+    "adjustmentsExample2": {
+        "message": "Erabili AUX4 hiru posizio etengailua, kanal berean hiru posizio etengailuaren bidez, Tasaren Profila gaitzeko."
     },
     "adjustmentsColumnEnable": {
         "message": "Gaituta badago"
     },
     "adjustmentsColumnUsingSlot": {
-        "message": "zirrikitua erabiliz"
+        "message": "erretena erabiliz"
     },
     "adjustmentsColumnWhenChannel": {
         "message": "kanala denean"
@@ -1823,10 +1853,67 @@
         "message": "kanal bidez"
     },
     "adjustmentsSlot0": {
-        "message": "1. zirrikitua"
+        "message": "1. Erretena"
     },
     "adjustmentsSlot1": {
-        "message": "2. zirrikitua"
+        "message": "2. Erretena"
+    },
+    "adjustmentsSlot2": {
+        "message": "3. Erretena"
+    },
+    "adjustmentsSlot3": {
+        "message": "4. Erretena"
+    },
+    "adjustmentsMin": {
+        "message": "Min"
+    },
+    "adjustmentsMax": {
+        "message": "Max"
+    },
+    "adjustmentsFunction0": {
+        "message": "Aldaketarik ez"
+    },
+    "adjustmentsFunction1": {
+        "message": "RC Tasa Egokitzea"
+    },
+    "adjustmentsFunction2": {
+        "message": "RC Expo Egokitzea"
+    },
+    "adjustmentsFunction3": {
+        "message": "Throttle Expo Egokitzea"
+    },
+    "adjustmentsFunction4": {
+        "message": "Pitch eta Roll- tasa egokitzea"
+    },
+    "adjustmentsFunction5": {
+        "message": "Yaw Tasa Egokitzea"
+    },
+    "adjustmentsFunction6": {
+        "message": "Pitch eta Roll P Egokitzea"
+    },
+    "adjustmentsFunction7": {
+        "message": "Pitch eta Roll I Egokitzea"
+    },
+    "adjustmentsFunction8": {
+        "message": "Pitch eta Roll D Egokitzea"
+    },
+    "adjustmentsFunction9": {
+        "message": "Yaw P Egokitzea"
+    },
+    "adjustmentsFunction10": {
+        "message": "Yaw I Egokitzea"
+    },
+    "adjustmentsFunction11": {
+        "message": "Yaw D Egokitzea"
+    },
+    "adjustmentsFunction12": {
+        "message": "Tasa Profilaren Hautapena"
+    },
+    "adjustmentsFunction13": {
+        "message": "Pitch Tasa"
+    },
+    "adjustmentsFunction14": {
+        "message": "Roll Tasa"
     },
     "adjustmentsFunction15": {
         "message": "Pitch P Egokitzea"
@@ -2056,6 +2143,151 @@
     "motorsmAhDrawn": {
         "message": "Intents. kontsumituta:"
     },
+    "motorsVoltageValue": {
+        "message": "$1 V"
+    },
+    "motorsADrawingValue": {
+        "message": "$1 A"
+    },
+    "motorsmAhDrawnValue": {
+        "message": "$1 mAh"
+    },
+    "motorsText": {
+        "message": "Motoreak"
+    },
+    "motorNumber1": {
+        "message": "Motor - 1"
+    },
+    "motorNumber2": {
+        "message": "Motor - 2"
+    },
+    "motorNumber3": {
+        "message": "Motor - 3"
+    },
+    "motorNumber4": {
+        "message": "Motor - 4"
+    },
+    "motorNumber5": {
+        "message": "Motor - 5"
+    },
+    "motorNumber6": {
+        "message": "Motor - 6"
+    },
+    "motorNumber7": {
+        "message": "Motor - 7"
+    },
+    "motorNumber8": {
+        "message": "Motor - 8"
+    },
+    "servosText": {
+        "message": "Serboak"
+    },
+    "servoNumber1": {
+        "message": "Serbo - 1"
+    },
+    "servoNumber2": {
+        "message": "Serbo - 2"
+    },
+    "servoNumber3": {
+        "message": "Serbo - 3"
+    },
+    "servoNumber4": {
+        "message": "Serbo - 4"
+    },
+    "servoNumber5": {
+        "message": "Serbo - 5"
+    },
+    "servoNumber6": {
+        "message": "Serbo - 6"
+    },
+    "servoNumber7": {
+        "message": "Serbo - 7"
+    },
+    "servoNumber8": {
+        "message": "Serbo - 8"
+    },
+    "motorsResetMaximumButton": {
+        "message": "Berrezarri"
+    },
+    "motorsResetMaximum": {
+        "message": "Denboran geihenezko balioa berrezarri"
+    },
+    "motorsSensorGyroSelect": {
+        "message": "giro"
+    },
+    "motorsSensorAccelSelect": {
+        "message": "azel"
+    },
+    "motorsTelemetryHelp": {
+        "message": "Zenbaki hauek eskuragarri dauden ESCko telemetriari buruzko informazioa erakusten dute. Motoreen benetako abiadura (RPM), telemetria- loturaren akats-tasa eta ESCen tenperatura erakuts ditzake.",
+        "description": "Help text for the telemetry values in the motors tab."
+    },
+    "motorsRPM": {
+        "message": "R: {{motorsRpmValue}}",
+        "description": "To put under the motors in the motors tab. KEEP IT SHORT or not translate. Keep the letters as prefix. Shows the RPM of the motor if telemetry is available."
+    },
+    "motorsRPMError": {
+        "message": "E: {{motorsErrorValue}}%",
+        "description": "To put under the motors in the motors tab. KEEP IT SHORT or not translate. Shows the error of motor telemetry if available."
+    },
+    "motorsESCTemperature": {
+        "message": "T: {{motorsESCTempValue}}&deg;C",
+        "description": "To put under the motors in the motors tab. KEEP IT SHORT or not translate. Shows the ESC temperature if available."
+    },
+    "motorsMaster": {
+        "message": "Nagusia"
+    },
+    "motorsEnableControl": {
+        "message": "<strong>Arriskuak ulertzen ditut</strong>, helizeak kendu-motore eta armatzearen kontrolak gaitu eta ihes egitea saihesteko prebentzioa desgaitu."
+    },
+    "sensorsRefresh": {
+        "message": "Berritu:"
+    },
+    "sensorsScale": {
+        "message": "Eskala:"
+    },
+    "sensorsGyroSelect": {
+        "message": "Giroskopoa"
+    },
+    "sensorsAccelSelect": {
+        "message": "Azelerometroa"
+    },
+    "sensorsMagSelect": {
+        "message": "Magnetometroa"
+    },
+    "sensorsAltitudeSelect": {
+        "message": "Altitudea"
+    },
+    "sensorsSonarSelect": {
+        "message": "Sonar"
+    },
+    "sensorsDebugSelect": {
+        "message": "Arazketa"
+    },
+    "sensorsGyroTitle": {
+        "message": "Giroskopoa - grad/s"
+    },
+    "sensorsAccelTitle": {
+        "message": "Azelerometroa - g"
+    },
+    "sensorsMagTitle": {
+        "message": "Magnetometroa - Ga"
+    },
+    "sensorsAltitudeTitle": {
+        "message": "Altitudea - metroak"
+    },
+    "sensorsAltitudeHint": {
+        "message": "Altitudea barometroaren irteera (eskuragarri badago) GPSaren altitudearen irteerarekin (kalkulatuz gero) konbinatuz kalkulatzen da. GPS konektatuta badago eta GPS ezarrita, itsas mailatik altuera absolutua erakutsiko dira desarmatuta badago. Armatuta egonez gero, armatzeak duen posizioaren aldean altitudea agertuko da."
+    },
+    "sensorsSonarTitle": {
+        "message": "Sonar - cm"
+    },
+    "sensorsDebugTitle": {
+        "message": "Arazketa"
+    },
+    "cliInputPlaceholder": {
+        "message": "Idatzi hemen zure komandoa. Tab sakatu fitxa automatikoki osatzeko."
+    },
     "cliInputPlaceholderBuilding": {
         "message": "Mesedez, itxaron automatikoki aurrememoria sortzen den bitartean ..."
     },
@@ -2068,6 +2300,9 @@
     "cliSaveToFileBtn": {
         "message": "Fitxategian gorde"
     },
+    "cliClearOutputHistoryBtn": {
+        "message": "Garbitu irteerako historia"
+    },
     "cliCopyToClipboardBtn": {
         "message": "Arbelean kopiatu"
     },
@@ -2076,6 +2311,27 @@
     },
     "cliLoadFromFileBtn": {
         "message": "Fitxategitik kopiatu"
+    },
+    "cliConfirmSnippetDialogTitle": {
+        "message": "<strong>{{fileName}}</strong> fitxategia kargatuta. Berrikusi kargatutako komandoak"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong>Oharra</strong>: komandoak berrikusi eta editatu ditzakezu exekutatu aurretik."
+    },
+    "cliConfirmSnippetBtn": {
+        "message": "Exekutatu"
+    },
+    "loggingSamplesSaved": {
+        "message": "Laginak gordeta:"
+    },
+    "loggingLogSize": {
+        "message": "Fitxategiaren tamaina:"
+    },
+    "loggingButtonLogFile": {
+        "message": "Erregistro fitxategia aukeratu"
+    },
+    "loggingStart": {
+        "message": "Erregistroa hasi"
     },
     "loggingStop": {
         "message": "Erregistroa gelditu"
@@ -2119,17 +2375,161 @@
     "blackboxLoggingSerial": {
         "message": "Serial ataka"
     },
+    "serialLoggingSupportedNote": {
+        "message": "Erregistratzeko gailu bat sar dezakezu (OpenLager esaterako) serieko ataka bat erabiliz. Konfiguratu ataka ataka fitxan."
+    },
+    "sdcardNote": {
+        "message": "Hegaldien erregistroak zure hegaldi kontroladorearen SD txartelaren graba daitezke."
+    },
     "dataflashUsedSpace": {
         "message": "Erabilitako espazioa"
     },
+    "dataflashFreeSpace": {
+        "message": "Espazio librea"
+    },
     "dataflashUnavSpace": {
         "message": "Erabilgarri espazioa"
+    },
+    "dataflashLogsSpace": {
+        "message": "Espazio libreak erregistroetarako"
     },
     "dataflashNote": {
         "message": "Hegaldien erregistroak, zure hegaldia kontroladorearen flash memoria integratuan gorde daitezke."
     },
     "dataflashNotPresentNote": {
         "message": "Zure hegaldi kontrolatzaileak ez dauka flash integratuta erabilgarri."
+    },
+    "dataflashFirmwareUpgradeRequired": {
+        "message": "Dataflashek &gt;= 1,8,0 firmwarea behar du."
+    },
+    "dataflashButtonSaveFile": {
+        "message": "Flash memoria fitxategira gorde..."
+    },
+    "dataflashButtonSaveFileDeprecated": {
+        "message": "Flash memoria fitzategira gorde...(zaharkituta)"
+    },
+    "dataflashButtonErase": {
+        "message": "Flash garbitu"
+    },
+    "dataflashConfirmEraseTitle": {
+        "message": "Flash memoria garbiketa berretsi"
+    },
+    "dataflashConfirmEraseNote": {
+        "message": "Honek kutxa beltzaren erregistroak edo flashean jasotako beste edozein datu ezabatuko ditu. 20 segundu inguru beharko litzateke, ziur al zaude?"
+    },
+    "dataflashSavingTitle": {
+        "message": "Flash memoria fitxategian gorde"
+    },
+    "dataflashSavingNote": {
+        "message": "Gordeketak zenbait minutu iraun ditzake. Mesedez, itxaron."
+    },
+    "dataflashSavingNoteAfter": {
+        "message": "Gordeketa amaitu da! Jarraitzeko \"Ados\" sakatu."
+    },
+    "dataflashButtonSaveCancel": {
+        "message": "Utzi"
+    },
+    "dataflashButtonSaveDismiss": {
+        "message": "Ados"
+    },
+    "dataflashButtonEraseConfirm": {
+        "message": "Bai, flash memoria ezabatu"
+    },
+    "dataflashButtonEraseCancel": {
+        "message": "Utzi"
+    },
+    "dataflashFileWriteFailed": {
+        "message": "Aukeratutako fitxategian idaztean errorea agertu da, karpetaren baimenak zuzenak dira?"
+    },
+    "sdcardStatusNoCard": {
+        "message": "Ez da Sd-txartelik sartu"
+    },
+    "sdcardStatusReboot": {
+        "message": "Errore fatalak<br>Berrabiarazi berriro saiatzeko"
+    },
+    "sdcardStatusReady": {
+        "message": "SD-txartela prest dago"
+    },
+    "sdcardStatusStarting": {
+        "message": "SD txartela prestatzen ari da ..."
+    },
+    "sdcardStatusFileSystem": {
+        "message": "Sistemaren fitxategia prestatzen ari da ..."
+    },
+    "sdcardStatusUnknown": {
+        "message": "Egoera ezezaguna $1"
+    },
+    "firmwareFlasherReleaseSummaryHead": {
+        "message": "Bertsioari buruzko informazioa"
+    },
+    "firmwareFlasherReleaseManufacturer": {
+        "message": "Fabrikatzaileak:"
+    },
+    "firmwareFlasherReleaseVersion": {
+        "message": "Bertsioa:"
+    },
+    "firmwareFlasherReleaseVersionUrl": {
+        "message": "Bertsioaren orria bisitatu."
+    },
+    "firmwareFlasherReleaseNotes": {
+        "message": "Bertsioaren oharrak:"
+    },
+    "firmwareFlasherManualPort": {
+        "message": "Ataka"
+    },
+    "firmwareFlasherManualBaud": {
+        "message": "Transmisio abiadura"
+    },
+    "firmwareFlasherBaudRate": {
+        "message": "Baud tasa"
+    },
+    "firmwareFlasherShowDevelopmentReleases": {
+        "message": "Ezegonkor bertsioak erakutsi"
+    },
+    "firmwareFlasherShowDevelopmentReleasesDescription": {
+        "message": "Erakutsi hautagai bertsioak, egonkor bertsioak gain"
+    },
+    "firmwareFlasherOptionLoading": {
+        "message": "Lanean ..."
+    },
+    "firmwareFlasherOptionLabelBuildTypeRelease": {
+        "message": "Egonkor bertsioa"
+    },
+    "firmwareFlasherOptionLabelBuildTypeDevelopment": {
+        "message": "Garapena"
+    },
+    "firmwareFlasherOptionLabelBuildTypeAKK3_3": {
+        "message": "3.3 AKK & RDQ VTX Patch"
+    },
+    "firmwareFlasherOptionLabelBuildTypeAKK3_4": {
+        "message": "3.4 AKK & RDQ VTX Patch"
+    },
+    "firmwareFlasherOptionLabelSelectFirmware": {
+        "message": "Firmware/hegaldi-kontroladorea aukeratu"
+    },
+    "firmwareFlasherOptionLabelSelectBoard": {
+        "message": "Hegaldi-kontroladore bat aukeratu"
+    },
+    "firmwareFlasherOptionLabelSelectFirmwareVersion": {
+        "message": "Firmware bertsioa aukeratu"
+    },
+    "firmwareFlasherOptionLabelSelectFirmwareVersionFor": {
+        "message": "Firmware bertsioa aukeratu"
+    },
+    "firmwareFlasherButtonLoadLocal": {
+        "message": "Firmwarea kargatu [Local]"
+    },
+    "firmwareFlasherButtonLoadOnline": {
+        "message": "Firmwarea kargatu [Online]"
+    },
+    "firmwareFlasherButtonDownloading": {
+        "message": "Deskargatzen..."
+    },
+    "firmwareFlasherFlashFirmware": {
+        "message": "Firmwarea instalatu"
+    },
+    "firmwareFlasherGithubInfoHead": {
+        "message": "Firmware-ren informazioa GitHub-en"
     },
     "osdTextStatBlackbox": {
         "message": "Kutxabeltza: erabilitako espazioa",
