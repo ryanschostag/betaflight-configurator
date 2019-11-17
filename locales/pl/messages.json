@@ -275,7 +275,7 @@
         "message": "Port <span class=\"message-positive\">został otwarty</span> z ID: $1"
     },
     "serialPortOpenFail": {
-        "message": "<span class=\"message-negative\">Nie udało się</span> otworzyć portu."
+        "message": "<span class=\"message-negative\">Nie udało się</span> połączyć"
     },
     "serialPortClosedOk": {
         "message": "Port został <span class=\"message-positive\">prawidłowo</span> zamknięty."
@@ -875,7 +875,7 @@
         "message": "Monitorowanie napięcia baterii"
     },
     "featureINFLIGHT_ACC_CAL": {
-        "message": "Kalibracja poziomu w locie"
+        "message": "Kalibracja akcelerometru w czasie lotu"
     },
     "featureRX_SERIAL": {
         "message": "Odbiorniki używające SerialPort (SPEKSAT, SBUS, SUMD)"
@@ -1762,7 +1762,7 @@
         "message": "Wartość drążka (przepustnicy) która ma być rozpoznana jako najnisza (MIN_CHECK)."
     },
     "receiverStickCenter": {
-        "message": "Neutralna Pozycja Drążka"
+        "message": "Środkowa Pozycja Drążka"
     },
     "receiverHelpStickMax": {
         "message": "Wartość drążka (przepustnicy) która ma być rozpoznana jako najwysza (MAX_CHECK)."
@@ -1838,7 +1838,7 @@
         "message": "Dodaj zakres"
     },
     "auxiliaryAddLink": {
-        "message": "Dodaj link"
+        "message": "Dodaj Tryb"
     },
     "auxiliaryButtonSave": {
         "message": "Zapisz"
@@ -2529,7 +2529,7 @@
         "message": "Pobierz ręcznie."
     },
     "firmwareFlasherTargetWarning": {
-        "message": "<span class=\"message-negative\">WAŻNE</span>: Upewni się że flash'ujesz odpowiedni plik dla twojego target'u. Flash'owanie nieodpowiedniego pliku może spowodować <span class=\"message-negative\">"
+        "message": "<span class=\"message-negative\">WAŻNE</span>: Upewnij się że wgrywasz odpowiedni plik dla twojego kontrolera lotu. Wgrywanie nieodpowiedniego pliku może spowodować nieodwracalne uszkodzenie twojego kontrolera <span class=\"message-negative\"></span>."
     },
     "firmwareFlasherPath": {
         "message": "Ścieżka:"
@@ -2550,7 +2550,7 @@
         "message": "Załaduj plik docelowy, należy załadować plik oprogramowania firmware"
     },
     "firmwareFlasherNoReboot": {
-        "message": "Bez restartu"
+        "message": "Nie restartuj"
     },
     "firmwareFlasherOnlineSelectBuildType": {
         "message": "Wybierz typ build'u żeby zobaczyć dostępne płytki."
@@ -2571,7 +2571,7 @@
         "message": "Próba automatycznego flashowania płytki (uruchamiana przez nowo wykryty port szeregowy)."
     },
     "firmwareFlasherFullChipErase": {
-        "message": "Odłącz Płytkę"
+        "message": "Wyczyść pamięć"
     },
     "firmwareFlasherFullChipEraseDescription": {
         "message": "Usuwa wszystkie dane konfiguracyjne aktualnie przechowywane w pamięci kontrolera."
@@ -2658,10 +2658,13 @@
         "message": "Wiadomość:"
     },
     "firmwareFlasherWarningText": {
-        "message": "Postępuj według wytycznych <span class = \"message-negative\"> nie </span> spróbuj flashować sprzętu<strong> innego niż Betaflight </strong> za pomocą tego oprogramowania. <br /> Oraz<span class = \"message-negative\" > nie </span> <strong> odłączaj </strong> płytki lub <strong> nie wyłączaj </strong> komputera podczas flashowania. <br /> <br /> <strong> Uwaga: </strong> bootloader STM32 jest przechowywany w ROM-ie dlatego nie może być blokowany. <br /> <strong> Uwaga: </strong> <span class = \"message-negative\"> Automatyczne połączenie </span> jest zawsze wyłączone, gdy jesteś w trybie wgrywania oprogramowania. <br /> <strong> Uwaga: </strong> upewnij się, że masz kopię zapasową; niektóre aktualizacje mogą usunąć twoją konfigurację. <br /> <strong> Uwaga: </strong> jeśli masz problem z wgrywaniem oprogramowania<strong> spróbuj odłączyć wszystkie kable od kontrolera lotu </strong> następnie spróbuj ponownie uruchomić komputer, zaktualizuj chrome, uaktualnij sterowniki. <br /> <strong> Uwaga: </strong> Podczas wgrywania oprogramowania do płytek bezpośrednio podłączonych do gniazd USB (większość nowszych płytek) upewnij się, że przeczytałeś sekcję Wgrywanie oprogramowania w instrukcji Betaflight i zainstalowałeś odpowiednie oprogramowanie i sterowniki"
+        "message": "Postępuj według wytycznych <span class = \"message-negative\"> nie </span> próbuj wgrywać oprogramowania<strong> innego niż Betaflight </strong> za pomocą tego oprogramowania. <br /> Oraz<span class = \"message-negative\" > nie </span> <strong> odłączaj </strong> płytki lub <strong> nie wyłączaj </strong> komputera podczas flashowania. <br /> <br /> <strong> Uwaga: </strong> bootloader STM32 jest przechowywany w ROM-ie dlatego nie może być blokowany. <br /> <strong> Uwaga: </strong> <span class = \"message-negative\"> Automatyczne połączenie </span> jest zawsze wyłączone, gdy jesteś w trybie wgrywania oprogramowania. <br /> <strong> Uwaga: </strong> upewnij się, że masz kopię zapasową; niektóre aktualizacje mogą usunąć twoją konfigurację. <br /> <strong> Uwaga: </strong> jeśli masz problem z wgrywaniem oprogramowania<strong> spróbuj odłączyć wszystkie kable od kontrolera lotu </strong> następnie spróbuj ponownie uruchomić komputer, zaktualizuj chrome, uaktualnij sterowniki. <br /> <strong> Uwaga: </strong> Podczas wgrywania oprogramowania do płytek bezpośrednio podłączonych do gniazd USB (większość nowszych płytek) upewnij się, że przeczytałeś sekcję Wgrywanie oprogramowania w instrukcji Betaflight i zainstalowałeś odpowiednie oprogramowanie i sterowniki"
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Odzyskiwanie / Utracono komunikacje</strong>"
+    },
+    "firmwareFlasherRecoveryText": {
+        "message": "Jeśli straciłeś możliwość łączenia się z kontrolerem lotu, zastosuj te kroki:<ul><li>Odłącz zasilanie</li><li>Zaznacz 'Nie restartuj', oraz 'Wyczyść pamięć'.</li><li>Zewrzyj piny BOOT lub trzymaj wciśnięty przycisk BOOT na kontrolerze lotu.</li><li>Podłącz zasilanie(dioda LED nie powinna migać gdy poprawnie wykonasz tą czynność).</li><li>Zainstaluj sterowniki STM32 i Zadig jeśli są potrzebne (zobacz <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB Flashing</a> w dokumentacji Betaflight).</li><li>Zamknij Konfigurator i całą przeglądarkę Chrome, Włącz na nowo konfigurator.</li><li>Załaduj aktualną wersję oprogramowania użyj ręcznej prędkości transmisji - sprawdź w dokumentacji twojego kontrolera.</li><li>Odłącz zasilanie.</li><li>Zdejmij zworkę ze zwartych pinów BOOT (jeśli nie jest to przycisk).</li><li>Włącz zasilanie (LED powinien migać).</li><li>Podłącz się z konfiguratorem w trybie normanym.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Urzyj opcji wgrywania oprogramowania"
@@ -2887,7 +2890,7 @@
         "description": "One of the modes in Led Strip"
     },
     "ledStripWiringMode": {
-        "message": "Okablowanie w trybie sortowania",
+        "message": "Typ Okablowania",
         "description": "One of the wiring modes in Led Strip"
     },
     "ledStripWiringClearControl": {
@@ -2918,7 +2921,7 @@
         "message": "Nakładka"
     },
     "ledStripWarningsOverlay": {
-        "message": "Ostrzeżenie"
+        "message": "Ostrzeżenia"
     },
     "ledStripIndecatorOverlay": {
         "message": "Wskaźnik (wykorzystuje pozycję na matrycy)"
