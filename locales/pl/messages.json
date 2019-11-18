@@ -181,6 +181,9 @@
     "configMigrationSuccessful": {
         "message": "Import konfiguracji zakończony: $1"
     },
+    "tabFirmwareFlasher": {
+        "message": "Wgraj oprogramowanie"
+    },
     "tabLanding": {
         "message": "Witaj"
     },
@@ -1749,6 +1752,16 @@
     "receiverHelp": {
         "message": "Proszę przeczytać rozdział dokumentacji dotyczący odbiornika. Skonfiguruj port szeregowy (jeśli jest wymagany), tryb odbiornika (Szeregowy / PPM / PWM), dostawcę (dla odbiorników szeregowych), oraz przypisz odbiornik następnie  ustaw kanały, skonfiguruj punkty końcowe kanałów w nadajniku RC, tak aby wszystkie kanały przechodziły od ~ 1000 do ~ 2000. Ustaw punkt środkowy (domyślnie 1500), skonfiguruj strefę nieczułości drążka, sprawdź zachowanie, gdy nadajnik RC jest wyłączony lub poza zasięgiem. <br /> <span class = \"message-negative\"> WAŻNE: </span> Przed lotem przeczytaj rozdział dokumentacji dotyczący bezpieczeństwa."
     },
+    "tuningHelp": {
+        "message": "<b>Wskazówki</b><br /><span class=\"message-negative\">WAŻNE:</span> Ważne jest sprawdzanie temperatury silnika podczas pierwszych lotów. Im wyższa wartość filtra, tym lepiej(płynniej) może się latać, ale jednocześnie sygnał serujący silnikami będzie bardziej agresywny aby wynikowo maszyna była bardziej stabilizowana (silnik będzie się grzał ponieważ wirnik z śmigłem ma swoją masę i pęd - szybkie zmiany obrotów potrzebują dostarczenia dużej ilości energii aby zmienić pęd). <br>Domyślna wartość 100 Hz jest optymalna, ale dla platformy z drganiami (z śmigła/ z silnika) można spróbować obniżyć ustawienie filtru Dterm do 50Hz, a być może również ustawienie filtru żyroskopowego."
+    },
+    "tuningHelpSliders": {
+        "message": "<span class=\"message-negative\">WAŻNE:</span> Zalecamy używanie suwaków do zmiany ustawień filtra. Poruszaj oba suwaki razem.<br>Najlepiej dokonywać stosunkowo małych zmian i testować wyniki latając po każdej zmianie. Przed wprowadzeniem dalszych zmian należy dokładnie sprawdzić temperaturę silnika (czy nie jest cieplejszy niż zazwyczaj podczas takiego samego typu lotu).<br>Mniej filtrowania (suwaki w prawo, wyższe wartości odcięcia) poprawi płynnośc, ale potrzebuje bardziej agresywnego wysterowania silnika, co sprawi, że są one gorące, być może wystarczająco gorące, aby się spalić. Mniejsze filtrowanie jest możliwe w większości wyważonych platform (bez większych wibracji) i jeśli filtrowanie rpm jest włączone.<br>Nietypowo wysokie lub niskie ustawienia filtra mogą powodować nieoczekiwane zachowanie po uzbrojeniu (nawet wysterowania silników na max - testuj uważnie i z dala od ludzi/zwierząt). Domyślne ustawienia są bezpieczne dla typowych maszyn 5\".<br><strong>Uwaga:</strong> Zmiana profili zmieni tylko ustawienia filtra D-term. Ustawienia filtra żyroskopowego są takie same dla wszystkich profili.",
+        "description": "Filter tuning subtab note"
+    },
+    "filterWarning": {
+        "message": "<span class=\"message-negative\"><b>Uwaga:</b></span> Aktualne ustawienia filtrowania są niebezpiecznie niskie. Latenie maszyną będzie ciężkie, zachowanie maszyny może być nieprzewidywalnie niebezpieczne (flayaways). Jest wysoko zalecane aby <b>Włączyć przynajmniej jeden filter: Dynamiczny lub pierwszy (1) filter dolnoprzepustowy żyroskopu i przynajmniej jeden \"D-term\" Dynamiczny lub pierwszy (1) filtr dolnoprzepustowy</b>."
+    },
     "receiverThrottleMid": {
         "message": "Przepustnica MID"
     },
@@ -1764,17 +1777,32 @@
     "receiverStickCenter": {
         "message": "Środkowa Pozycja Drążka"
     },
+    "receiverHelpStickCenter": {
+        "message": "Wartość drążka (przepustnicy) która ma być używana do ustalenia, czy drążek jest w pozycji środkowej (MID_RC)."
+    },
+    "receiverStickMax": {
+        "message": "Maksymalna Pozycja Drążka"
+    },
     "receiverHelpStickMax": {
         "message": "Wartość drążka (przepustnicy) która ma być rozpoznana jako najwysza (MAX_CHECK)."
     },
     "receiverDeadband": {
         "message": "Strefa Nieczułości RC"
     },
+    "receiverHelpDeadband": {
+        "message": "Są to wartości maksymalnego odchyłu sygnału wejściowego RC podawane w mikro sekundach(us), które są akceptowane jako sygnał poprawny. W przypadku nadajników posiadających duży jitter w sygnale, wartość tą można zwiększyć (aby kontroler uznał go za poprawny)."
+    },
     "receiverYawDeadband": {
         "message": "Strefa Nieczułości Yaw"
     },
+    "receiverHelpYawDeadband": {
+        "message": "Są to wartości maksymalnego odchyłu sygnału wejściowego RC podawane w mikro sekundach(us), które są akceptowane jako sygnał poprawny. W przypadku nadajników posiadających duży jitter w sygnale, wartość tą można zwiększyć (aby kontroler uznał go za poprawny). <strong>Nastawa ta dotyczy tylko ustawień dla odchylenia \"Yaw\"</strong>"
+    },
     "recevier3dDeadbandThrottle": {
         "message": "Strefa Nieczułości Przepustnicy"
+    },
+    "receiverHelp3dDeadbandThrottle": {
+        "message": "Są to wartości podawane w mikro sekundach(us). Aby zwiększyć zakres martwy drążka gazu, zwiększ tą wartość.<strong>Ustawienia tylko dla Gazu w trybie 3D.</strong>"
     },
     "receiverChannelMap": {
         "message": "Mapa kanałów"
@@ -2273,6 +2301,15 @@
     "motorsMaster": {
         "message": "Główny"
     },
+    "motorsNotice": {
+        "message": "<strong> Tryb testu silników / Uwaga dotycząca uzbrojenia: </strong> <br /> Przesunięcie suwaków do góry lub uzbrojenie jednostki z nadajnika RC spowoduje, że silniki będą się obracać <strong> </strong>. <br /> W celu zapobiegnięcia obrażeniom <strong class = \"message-negative\"> USUŃ WSZYSTKIE ŚMIGŁA </strong> przed użyciem tej funkcji. <br /> Włączenie trybu testu silnika spowoduje również tymczasowe wyłączenie funkcji Zapobiegania niekontrolowanemu startowi, aby uniemożliwić rozbrojenie jednostki podczas testowania na stanowisku badawczym. <br />"
+    },
+    "motorsEnableControl": {
+        "message": "<strong> Rozumiem zagrożenia </strong>."
+    },
+    "sensorsInfo": {
+        "message": "Pamiętaj, że używanie częstej aktualizacji i rysowanie wielu wykresów w tym samym czasie wymaga mocy obliczeniowej - co może zwiększyć użycie baterii laptopa.<br />Zalecamy włączenie rysowania wykresów tylko dla czujników, których potrzebujesz najwięcej i wybrania możliwie niskich częstotliwości aktualizacji danych."
+    },
     "sensorsRefresh": {
         "message": "Odśwież:"
     },
@@ -2356,6 +2393,9 @@
     },
     "cliConfirmSnippetBtn": {
         "message": "Wykonaj"
+    },
+    "loggingNote": {
+        "message": "Dane będą zbierane <span class=\"message-negative\">wyłącznie w tym oknie</span>, opuszczenie tego okna <span class=\"message-negative\">zatrzyma</span> zbieranie danych, a program przejdzie w <strong>tryb standardowej pracy</strong>.<br />Możesz zmieniać globalne ustawienia aktualizacji, dane będą zapisywane do pliku co <strong>1</strong> sekundę."
     },
     "loggingSamplesSaved": {
         "message": "Zapisane próbki:"
@@ -2602,6 +2642,9 @@
     },
     "firmwareFlasherOptionLoading": {
         "message": "Wczytywanie ..."
+    },
+    "firmwareFlasherOptionLabelBuildTypeRelease": {
+        "message": "Wydanie"
     },
     "firmwareFlasherOptionLabelBuildTypeReleaseCandidate": {
         "message": "Wydania i kandydaci do wydania"
@@ -3107,6 +3150,10 @@
         "message": "Mnożnik członu D filtra:",
         "description": "D Term filter tuning slider label"
     },
+    "pidTuningSliderWarning": {
+        "message": "<span class=\"message-negative\">UWAGA</span>: Aktualne ustawienia suwaków może powodować zniszczenie silnika lub niebezpieczne zachowanie platformy. Proszę postępować ostrożnie.",
+        "description": "Warning shown when tuning slider are above safe limits"
+    },
     "pidTuningSlidersDisabled": {
         "message": "<strong> uwaga: </strong> suwaki są wyłączone, ponieważ wartości zostały zmienione ręcznie. Kliknięcie przycisku '$t(pidTuningSliderEnableButton.message)” spowoduje ich ponowną aktywację. Spowoduje to zresetowanie wartości i wszelkie niezapisane zmiany zostaną utracone.",
         "description": "Tuning sliders disabled note when manual changes are detected"
@@ -3330,6 +3377,9 @@
     "pidTuningIntegratedYaw": {
         "message": "Zintegrowane odchylenie Yaw"
     },
+    "pidTuningIntegratedYawCaution": {
+        "message": "<span class=\"message-negative\">UWAGA</span>: jeśli włączysz tę funkcję, musisz odpowiednio dostosować PID YAW. Więcej informacji <a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\">tutaj</a>"
+    },
     "configHelp2": {
         "message": "Umożliwia dowolny obrót kontrolera lotu w stopniach. Ma to umożliwić montaż kontrolera: bokiem/ do góry nogami / itp. Podczas uruchamiania zewnętrznych czujników, użyj ustawień czujników (Gyro, Akcel, Mag), aby określić położenie czujnika niezależnie od orientacji kontrolera lotów. "
     },
@@ -3353,6 +3403,12 @@
     },
     "failsafeStageTwoSettingsTitle": {
         "message": "Etap 2 - Ustawienia"
+    },
+    "failsafeDelayItem": {
+        "message": "Czas zwłoki pomiędzy wykryciem zaniku sygnału a aktywacją etapu 2. [1 = 0.1 sek]"
+    },
+    "failsafeDelayHelp": {
+        "message": "Czas oczekiwania zanim przejdzie z etapu 1 do trybu ratunkowego \"recovery\""
     },
     "failsafeThrottleLowItem": {
         "message": "Failsafe niskie opóźnienie przepustnicy [1 = 0.1 sec.]"
@@ -3735,6 +3791,9 @@
     "osdSetupUnsupportedNote1": {
         "message": "Twój kontroler lotu nie odpowiada na komendy OSD. Prawdopodobnie oznacza to że nie ma zintegrowanego OSD BetaFlight."
     },
+    "osdSetupUnsupportedNote2": {
+        "message": "Zauważ, że niektóre kontrolery lotu mają na pokładzie <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a>, który można programować i konfigurować w <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>, jednakże przez ten interfejs nie można skonfigurować MinimOSD."
+    },
     "osdSetupProfilesTitle": {
         "message": "Numer profilu OSD",
         "description": "Description of the header of the OSD elements column associated to each profile"
@@ -4086,6 +4145,9 @@
     "osdTextElementBatteryWarning": {
         "message": "Ostrzeżenie o baterii",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementBatteryWarning": {
+        "message": "Tekst ostrzeżenia, który pojawia się, gdy napięcie baterii spadnie poniżej progu ostrzegawczego"
     },
     "osdTextElementAvgCellVoltage": {
         "message": "Średnie napięcie ogniwa baterii",
@@ -4743,6 +4805,10 @@
     "osdButtonSaved": {
         "message": "Zapisano"
     },
+    "vtxMessageNotSupported": {
+        "message": "<span class = \"message-negative\"> Uwaga: </span> Twój VTX nie jest skonfigurowany lub nie jest obsługiwany. Nie możesz stąd modyfikować wartości VTX. Będzie to możliwe tylko wtedy, gdy kontroler lotu jest podłączony do VTX przy użyciu protokołu, takiego jak Tramp lub SmartAudio i jest poprawnie skonfigurowany w zakładce $t(tabPorts.message) w razie potrzeby.",
+        "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
     "vtxMessageTableNotConfigured": {
         "message": "<span class=\"message-negative\">Uwaga:</span> Musisz skonfigurować i zapisać PIERWSZĄ tabelę VTX na dole zanim będziesz mógł korzystać z $t(vtxSelectedMode.message) pól.",
         "description": "Message to show when the VTX is not supported in the VTX tab"
@@ -4863,6 +4929,10 @@
         "message": "Rozbrojenie przy niskiej mocy",
         "description": "Text of one of the fields of the VTX tab"
     },
+    "vtxLowPowerDisarmHelp": {
+        "message": "Gdy włączone, VTX automatycznie ustawia najmniejszą możliwą moc nadawania po przejściu w tryb nieuzbrojony \"DISARM\". ( Wyjątek: moc nadawania nie zostanie zmniejszona w przypadku trybu awaryjnego \"failsafe\").",
+        "description": "Help text for the low power disarm field of the VTX tab"
+    },
     "vtxLowPowerDisarmOption_0": {
         "message": "Wyłącz",
         "description": "One of the options for the Low Power Disarm mode of the VTX"
@@ -4927,8 +4997,16 @@
         "message": "Plik konfiguracyjny VTX <span class=\"message-positive\">zapisany</span>",
         "description": "Message in the GUI log when the VTX Config file is saved"
     },
+    "vtxSavedFileKo": {
+        "message": "<span class=\"message-negative\">Błąd</span> podczas zapisywania pliku ustawień VTX",
+        "description": "Message in the GUI log when the VTX Config file is saved"
+    },
     "vtxLoadFileOk": {
         "message": "Plik konfiguracyjny VTX <span class=\"message-positive\">wgrany</span>",
+        "description": "Message in the GUI log when the VTX Config file is loaded"
+    },
+    "vtxLoadFileKo": {
+        "message": "<span class=\"message-negative\">Błąd</span> podczas wczytywania pliku ustawień VTX",
         "description": "Message in the GUI log when the VTX Config file is loaded"
     },
     "vtxLoadClipboardOk": {
@@ -5092,6 +5170,12 @@
     },
     "pidTuningDeltaMeasurement": {
         "message": "Pomiar"
+    },
+    "pidTuningDeltaTip": {
+        "message": "<b>Pochodna liczona na podstawie Błędu</b> zapewnia bardziej bezpośrednią odpowiedź na drążki i jest przeważnie preferowana do stylu wyścigowego (agresywnego).<br><br><b>Pochodna na podstawie Pomiaru</b> zapewnia bardziej płynną odpowiedź na drążki, co jest bardziej przydatne dla osób ceniących styl mniej agresywny \"freestyle\""
+    },
+    "pidTuningPidControllerTip": {
+        "message": "<b>Stara \"Legacy(integer)\" kontra nowa wersja Betaflight (float):</b> Ustawienia i silnik PID są dokładnie takie same. Nie jest konieczne ponowne strojenie kontrolera PID. \"Legacy\" to stary silnik PID który jest podstawowym kontrolerem PID, został zmodernizowany i jest oparty na arytmetyce całkowitoliczbowej(integer). Natomiast kontroler PID Betaflight wykorzystuje matematykę zmiennoprzecinkową i posiada wiele nowych funkcji zaprojektowanych specjalnie dla aplikacji wielofunkcyjnych <br> <b>zmiennoprzecinkowy \"Float\" vs całkowitoliczbowy\"Integer\":</b> skalowanie PID i logika PID są dokładnie takie same. mikrokontrolery serii F1 (czyli też płytki mające w nazwie F1) nie mają sprzętowego FPU. Arytmetyka zmiennoprzecinkowa zwiększa obciążenie procesora dlatego zastosowano całkowitoliczbowe obliczenia aby odciążyć CPU i przyspieszyć proces liczenia PID.\nJednakże obliczenia przeprowadzane w arytmetyce zmiennoprzecinkowej (w czym pomaga koprocesor FPU(floating point unit)) oferują dużo lepszą dokładność uzyskanego wyniku."
     },
     "pidTuningFilterTip": {
         "message": "<b>Filtr żyroskopowy:</b> Filtr dolnoprzepustowy dla żyroskopu. Użyj niższej wartości dla lepszego filtrowania.<br><b>Filtr terminu:</b> Filtr dolnoprzepustowy Dterm Może wpływać na dostrajanie D. Użyj niższej wartości, aby bardziej filtrować. <br><b>Filtr kątowy Yaw:</b> Filtry odchylenia kątowego. Może to pomóc w konfiguracji z odchylona osią kątową."
