@@ -2408,6 +2408,9 @@
     "dataflashButtonSaveFileDeprecated": {
         "message": "Flash memoria fitzategira gorde...(zaharkituta)"
     },
+    "dataflashSaveFileDepreciationHint": {
+        "message": "Konfiguratzailearen bidez KutxaBeltza erregistroak gordeketa motela da eta erroreak jasotzeko joera du. Gomendagarria da <b>$t(onboardLoggingRebootMscText.message)</b> '(behean) Biltegiratzeko Modua aktibatzeko, eta zure hegaldi kontroladorera sar zaitez biltegiratze gailu gisa erregistro fitxategiak deskargatzeko."
+    },
     "dataflashButtonErase": {
         "message": "Flash garbitu"
     },
@@ -2474,6 +2477,54 @@
     "firmwareFlasherReleaseNotes": {
         "message": "Bertsioaren oharrak:"
     },
+    "firmwareFlasherReleaseDate": {
+        "message": "Data:"
+    },
+    "firmwareFlasherReleaseTarget": {
+        "message": "Target:"
+    },
+    "firmwareFlasherReleaseFile": {
+        "message": "Bitarra:"
+    },
+    "firmwareFlasherReleaseStatusReleaseCandidate": {
+        "message": "<span class=\"message-negative\">GARRANTZITSUA: firmware bertsio hau bertsio hautagai bezala markatuta dago. Mesedez, jakinarazi arazo guztiak berehala.</span>"
+    },
+    "firmwareFlasherReleaseFileUrl": {
+        "message": "Eskuz deskargatu."
+    },
+    "firmwareFlasherPath": {
+        "message": "Bide-izena:"
+    },
+    "firmwareFlasherSize": {
+        "message": "Tamaina:"
+    },
+    "firmwareFlasherStatus": {
+        "message": "Egoera:"
+    },
+    "firmwareFlasherProgress": {
+        "message": "Aurrerapena:"
+    },
+    "firmwareFlasherLoadFirmwareFile": {
+        "message": "Mesedez kargatu firmware fitxategia"
+    },
+    "firmwareFlasherLoadedConfig": {
+        "message": "Target kargatuta. Kargatu firmware fitxategia"
+    },
+    "firmwareFlasherNoReboot": {
+        "message": "Ez berrabiarazi"
+    },
+    "firmwareFlasherFlashOnConnect": {
+        "message": "Konektatzean instalatu"
+    },
+    "firmwareFlasherFullChipErase": {
+        "message": "Txip osoa ezabatzea"
+    },
+    "firmwareFlasherFullChipEraseDescription": {
+        "message": "Kontroladorean gordeta dauden konfigurazio datu guztiak ezabatzen ditu."
+    },
+    "firmwareFlasherFlashDevelopmentFirmware": {
+        "message": "Garapen Firmwarea Erabili"
+    },
     "firmwareFlasherManualPort": {
         "message": "Ataka"
     },
@@ -2494,6 +2545,9 @@
     },
     "firmwareFlasherOptionLabelBuildTypeRelease": {
         "message": "Egonkor bertsioa"
+    },
+    "firmwareFlasherOptionLabelBuildTypeReleaseCandidate": {
+        "message": "Egonkor bertsioak eta hautagai bertsioak"
     },
     "firmwareFlasherOptionLabelBuildTypeDevelopment": {
         "message": "Garapena"
@@ -2530,6 +2584,211 @@
     },
     "firmwareFlasherGithubInfoHead": {
         "message": "Firmware-ren informazioa GitHub-en"
+    },
+    "firmwareFlasherDate": {
+        "message": "Data:"
+    },
+    "firmwareFlasherHash": {
+        "message": "Hash:"
+    },
+    "firmwareFlasherMessage": {
+        "message": "Mezua:"
+    },
+    "firmwareFlasherRecoveryHead": {
+        "message": "<strong>Berreskuratutako/Galdutako komunikazioa</strong>"
+    },
+    "firmwareFlasherButtonLeave": {
+        "message": "Firmware Flasheatzailea Utzi"
+    },
+    "firmwareFlasherFirmwareNotLoaded": {
+        "message": "Firmwarea ez da kargatu"
+    },
+    "firmwareFlasherHexCorrupted": {
+        "message": "HEX fitxategia hondatuta dagoela badirudi"
+    },
+    "firmwareFlasherConfigCorrupted": {
+        "message": "Konfigurazio fitxategia hondatuta dagoela dirudi, ASCII onartu da (0-255 karaktereak)",
+        "description": "shown in the progress bar at the bottom, be brief"
+    },
+    "firmwareFlasherConfigCorruptedLogMessage": {
+        "message": "Konfigurazio fitxategia hondatuta dagoela dirudi, ASCII onartu da (0-255 karaktereak), tarte honetatik kanpo dauden karaktereak iruzkin gisa onartzen dira",
+        "description": "shown in the log, more wordy"
+    },
+    "firmwareFlasherRemoteFirmwareLoaded": {
+        "message": "<span class=\"message-positive\">Urruneko firmwareak kargatuta, flashseatzeko prest</span>"
+    },
+    "firmwareFlasherFailedToLoadOnlineFirmware": {
+        "message": "Ezin izan da urruneko firmwarea kargatu"
+    },
+    "firmwareFlasherFailedToLoadUnifiedConfig": {
+        "message": "Ezin izan da urruneko konfigurazioa {{remote_file}} kargatu"
+    },
+    "firmwareFlasherLegacyLabel": {
+        "message": "{{target}} (Zaharkituta)",
+        "description": "If we have a Unified target and a old style target available, we are labeling the older one"
+    },
+    "firmwareFlasherNoFirmwareSelected": {
+        "message": "<b>Ez da kargatzeko firmwarerik hautatu</b>"
+    },
+    "firmwareFlasherNoValidPort": {
+        "message": "<span class=\"message-negative\">Mesedez, baliozko serial ataka hautatu</span>"
+    },
+    "firmwareFlasherWritePermissions": {
+        "message": "Ez duzu <span class=\"message-negative\">idazteko baimenik</span> fitxategi honetarako"
+    },
+    "ledStripButtonSave": {
+        "message": "Gorde"
+    },
+    "ledStripColorSetupTitle": {
+        "message": "Kolorearen konfigurazioa",
+        "description": "Color setup title of the led strip"
+    },
+    "ledStripH": {
+        "message": "H",
+        "description": "Abbreviation of Hue in HSV (Hue, Saturation, Brightness) color model"
+    },
+    "ledStripS": {
+        "message": "S",
+        "description": "Abbreviation of Saturation in HSV  (Hue, Saturation, Brightness) color model"
+    },
+    "ledStripV": {
+        "message": "V",
+        "description": "Abbreviation of Brightness in HSV  (Hue, Saturation, Brightness) color model"
+    },
+    "ledStripRemainingText": {
+        "message": "Geratzen dena",
+        "description": "In the LED STRIP, text next the counter of leds remaining"
+    },
+    "ledStripClearSelectedButton": {
+        "message": "Hautatutakoa ezabatu",
+        "description": "In the LED STRIP, clear selected leds"
+    },
+    "ledStripClearAllButton": {
+        "message": "GUZTIA Garbitu",
+        "description": "In the LED STRIP, clear all leds"
+    },
+    "ledStripEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">gorde</span>"
+    },
+    "ledStripFunctionSection": {
+        "message": "LED funtzioak"
+    },
+    "ledStripFunctionTitle": {
+        "message": "Funtzioa"
+    },
+    "ledStripFunctionNoneOption": {
+        "message": "Bat ere ez",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionColorOption": {
+        "message": "Kolorea",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionArmOption": {
+        "message": "Armatutaren egoera",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionBatteryOption": {
+        "message": "Bateria",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionRSSIOption": {
+        "message": "RSSI",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionGPSOption": {
+        "message": "GPSa",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionRingOption": {
+        "message": "Eraztun",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripColorModifierTitle": {
+        "message": "Kolore aldatzailea"
+    },
+    "ledStripModeColorsTitle": {
+        "message": "Moduaren koloreak"
+    },
+    "ledStripModeColorsModeOrientation": {
+        "message": "Orientazioa",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeHeadfree": {
+        "message": "Headfree",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeHorizon": {
+        "message": "Horizon",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeAngle": {
+        "message": "Angle",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeMag": {
+        "message": "Mag",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeBaro": {
+        "message": "Baro",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripDirN": {
+        "message": "N",
+        "description": "North direction in Color Mode in Led Strip"
+    },
+    "ledStripDirE": {
+        "message": "E",
+        "description": "East direction in Color Mode in Led Strip"
+    },
+    "ledStripDirS": {
+        "message": "S",
+        "description": "South direction in Color Mode in Led Strip"
+    },
+    "ledStripDirW": {
+        "message": "W",
+        "description": "West direction in Color Mode in Led Strip"
+    },
+    "ledStripDirU": {
+        "message": "U",
+        "description": "Up direction in Color Mode in Led Strip"
+    },
+    "ledStripDirD": {
+        "message": "D",
+        "description": "Down direction in Color Mode in Led Strip"
+    },
+    "ledStripModesOrientationTitle": {
+        "message": "LED Orientazioa ('Moduak &amp; Orientazioa') eta Kolorea",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModesSpecialColorsTitle": {
+        "message": "Kolore bereziak",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeDisarmed": {
+        "message": "Desarmatuta",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeArmed": {
+        "message": "Armatuta",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeAnimation": {
+        "message": "Animazioa",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripWiringMode": {
+        "message": "Kableak ordenatzeko modua",
+        "description": "One of the wiring modes in Led Strip"
+    },
+    "ledStripWiringClearControl": {
+        "message": "Hautatutakoa ezabatu",
+        "description": "Control button in the wiring modes in Led Strip"
+    },
+    "ledStripWiringClearAllControl": {
+        "message": "Garbitu Kableatu GUZTIA",
+        "description": "Control button in the wiring modes in Led Strip"
     },
     "osdTextStatBlackbox": {
         "message": "Kutxabeltza: erabilitako espazioa",
