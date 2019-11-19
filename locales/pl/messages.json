@@ -2598,6 +2598,9 @@
     "firmwareFlasherOnlineSelectBoardDescription": {
         "message": "Wybierz swój kontroler lotu, aby zobaczyć dostępne wersje oprogramowania online. Wybierz odpowiednie oprogramowaniedla twojego kontrolera lotu."
     },
+    "firmwareFlasherOnlineSelectBoardHint": {
+        "message": "Od wersji Betaflight 4.1, wprowadzono wsparcie dla <strong>Ujednoliconego definiowania sprzętu\"Unified Targets\"</strong>. Koncepcja ta polega na tym, że jest wykorzystywane to samo oprogramowanie układowe (.hex) dla rodziny mikrokontrolerów M4, M7. Aby umożliwić pracę na różnym sprzęcie, wprowadzony został dodatkowy plik konfiguracyjny(dla każdej platformy inny) który sąsiaduje z oprogramowaniem w pamięci flash i jest ładowany podczas wgrywania oprogramowania(w tle).\n<br> Ta wersja konfiguratora Betaflight wspiera to nowe podejście definiowania sprzętu, a programowanie odbywa się w jednym cyklu(firmware + konfiguracja). Różne typy oprogramowania dostępnego na platformy sprzętowo przedstawiono poniżej:<br><br><strong>&lt;board name&gt;</strong> lub <br><strong>&lt;board name&gt; (Stare)</strong>:<br> Nie ujednolicone platformy, lub wersje oprogramowania przed 4.1 dla sprzętu wspierającego \"ujednolicenie\".<br><br><strong>&lt;board name&gt; (&lt;manufacturer id&gt;)</strong>:<br>(4 znaki ID producenta)<br>Ujednolicone platformy.<br><br><strong>Proszę stosować nowe podejście jeśli tylko to możliwe.</strong> Jeśli będziesz mieć problemy używając oprogramowania z ujednoliconą konfiguracją, proszę wypełnij zgłoszenie: <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">issue</a> i używaj wersji starszej, zanim problem nie zostanie rozwiązany."
+    },
     "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
         "message": "Wybierz wersję oprogramowania dla swojej płytki."
     },
@@ -3150,6 +3153,10 @@
         "message": "Mnożnik członu D filtra:",
         "description": "D Term filter tuning slider label"
     },
+    "pidTuningDTermFilterSliderHelp": {
+        "message": "Proporcjonalne zwiększanie lub zmniejszanie wszystkich domyślnych ustawień filtru dolnoprzepustowego D-term.<br> Filtrowanie następuje za pętlą PID, tylko dla D-term. Ponieważ jest to parametr najbardziej wrażliwy na szumy, może zwiększać wysokie składowe szumu od 10 do 100 krotnie.<br><br>Generalnie chcesz ustawić suwak regulacji filtru dolnoprzepustowego D-term w górę używając jednocześnie też suwaka mnożnika filtru żyroskopowego. Potrzebujesz uzyskać częstotliwość odcięcia poniżej pasma szumowego silników. Dla mocniejszego filtrowania ustawienie to dotyczy całego sygnału żyroskopu uwzględniając mnożnik suwaka filtru żyroskopu. <br>Ta zalecana różnica jest wbudowana w algorytm skalowania mnożników.",
+        "description": "D Term filtering tuning slider helpicon message"
+    },
     "pidTuningSliderWarning": {
         "message": "<span class=\"message-negative\">UWAGA</span>: Aktualne ustawienia suwaków może powodować zniszczenie silnika lub niebezpieczne zachowanie platformy. Proszę postępować ostrożnie.",
         "description": "Warning shown when tuning slider are above safe limits"
@@ -3243,6 +3250,9 @@
     "pidTuningDynamicNotchFilterHelp": {
         "message": "Dynamiczny filtr środkowo zaporowy śledzi szpilki częstotliwości szumu silnikowego i umieszcza w ich ogniskach jeden lub dwa filtry środkowo zaporowe."
     },
+    "pidTuningDynamicNotchFilterDisabledWarning": {
+        "message": "<strong>Uwaga:</strong> Filtr dynamiczny pasmowo zaporowy \"notch\" jest wyłączony. Aby go skonfigurować i użyć, włącz funkcję 'DYNAMICZNY FILTR ŻYROSKOPU' w '$t(configurationFeatures.message)' karcie ''$t(tabConfiguration.message)'."
+    },
     "pidTuningDynamicNotchRange": {
         "message": "Zakres dynamicznego filtra wycinającego"
     },
@@ -3261,6 +3271,9 @@
     "pidTuningDynamicNotchWidthPercentHelp": {
         "message": "Ustawia szerokość między dwoma dynamicznymi filtrami wycinającymi. Ustawienie go na 0 spowoduje wyłączenie drugiego filtra z wycięciem dynamicznym i skróci opóźnienie filtra, jednak może spowodować wzrost temperatury silników."
     },
+    "pidTuningDynamicNotchMinHzHelp": {
+        "message": "Określa najniższą środkową częstotliwość dynamicznego filtra pasmowo zaporowego \"notch\", poniżej której filtr dynamiczny nie zejdzie."
+    },
     "pidTuningRpmFilterGroup": {
         "message": "Żyroskopowy filtr RPM",
         "description": "Header text for the RPM Filter group"
@@ -3272,6 +3285,10 @@
     "pidTuningRpmHarmonics": {
         "message": "Liczba harmoniczna żyroskopowego filtra RPM",
         "description": "Text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningRpmHarmonicsHelp": {
+        "message": "Liczba harmonicznych przypadająca na silnik. Wartość 3 (jest zalecana dla większości maszyn) wygeneruje 3 filtry pasmowo zaporowe \"notch\" na silnik, dla każdej osi. Łącznie 36 filtrów. Jeden dla bazowej częstotliwości silnika, i pozostałe dwa w następnych harmonicznych.",
+        "description": "Help text for one of the parameters of the RPM Filter"
     },
     "pidTuningRpmMinHz": {
         "message": "Minimalna częstotliwość filtra żyroskopu RPM [Hz]",
@@ -3307,6 +3324,9 @@
     },
     "pidTuningDTermNotchFrequency": {
         "message": "Filtr D term Notch częstotliwość [Hz]"
+    },
+    "pidTuningDTermNotchCutoff": {
+        "message": "Częstotliwość [Hz] odcięcia filtra pasmowo-zaporowego \"notch\" dla D Term"
     },
     "pidTuningYawLospassFiltersGroup": {
         "message": "Filtr dolnoprzepustowy Yaw"
