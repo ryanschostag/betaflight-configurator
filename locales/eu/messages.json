@@ -2513,8 +2513,23 @@
     "firmwareFlasherNoReboot": {
         "message": "Ez berrabiarazi"
     },
+    "firmwareFlasherOnlineSelectBuildType": {
+        "message": "Kontroladore eskuragarriak ikusteko, bertsio mota bat aukeratu."
+    },
+    "firmwareFlasherOnlineSelectBoardDescription": {
+        "message": "Hautatu zure kontroladorea lineako firmware erabilgarriak ikusteko. Hautatu zure kontroladorearako firmware egokia."
+    },
+    "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
+        "message": "Zure kontroladorearen firmware bertsioa aukeratu."
+    },
+    "firmwareFlasherNoRebootDescription": {
+        "message": "Gaitu zure FC boot moduan badago. Adibidez, FC FCri dagokion kargatzailearen abiapuntua konektatu edo FC 's BOOT botoia eusten bitartean."
+    },
     "firmwareFlasherFlashOnConnect": {
         "message": "Konektatzean instalatu"
+    },
+    "firmwareFlasherFlashOnConnectDescription": {
+        "message": "Saiatu firmwarea automatikoki instalatzen (serie ataka berria hautematen du)."
     },
     "firmwareFlasherFullChipErase": {
         "message": "Txip osoa ezabatzea"
@@ -2524,6 +2539,9 @@
     },
     "firmwareFlasherFlashDevelopmentFirmware": {
         "message": "Garapen Firmwarea Erabili"
+    },
+    "firmwareFlasherFlashDevelopmentFirmwareDescription": {
+        "message": "Flash berriena (probatu gabekoa) garapen firmwarea."
     },
     "firmwareFlasherManualPort": {
         "message": "Ataka"
@@ -2603,6 +2621,12 @@
     "firmwareFlasherFirmwareNotLoaded": {
         "message": "Firmwarea ez da kargatu"
     },
+    "firmwareFlasherFirmwareLocalLoaded": {
+        "message": "Firmware Lokala Kargatuta: ($1 bytes)"
+    },
+    "firmwareFlasherFirmwareOnlineLoaded": {
+        "message": "Interneteko Firmwarea Kargatuta: ($1 bytes)"
+    },
     "firmwareFlasherHexCorrupted": {
         "message": "HEX fitxategia hondatuta dagoela badirudi"
     },
@@ -2635,6 +2659,15 @@
     },
     "firmwareFlasherWritePermissions": {
         "message": "Ez duzu <span class=\"message-negative\">idazteko baimenik</span> fitxategi honetarako"
+    },
+    "firmwareFlasherFlashTrigger": {
+        "message": "<strong>$1</strong> Detektatuta - Konektatzean instalatu exekutatzen ari da"
+    },
+    "firmwareFlasherPreviousDevice": {
+        "message": "<strong>$1</strong> - aurreko gailua instalazioan dago. Mesedez berriro konektatu berriro saiatzeko"
+    },
+    "ledStripHelp": {
+        "message": "Hegaldi-kontroladoreak banda bateko LED banakako koloreak eta efektuak kontrolatu ditzake.<br/> Konfiguratu saretako LEDak, kableatu ordena konfiguratu eta ondoren itsatsi LED hegazkinaren saretako posizioen arabera. Ez dira alanbreak ordenatzen dituzten LEDak gordeko.<br/> Egin klik bikoitza kolorean HSVren balioak editatzeko."
     },
     "ledStripButtonSave": {
         "message": "Gorde"
@@ -2670,6 +2703,9 @@
     "ledStripEepromSaved": {
         "message": "EEPROM <span class=\"message-positive\">gorde</span>"
     },
+    "ledStripVtxOverlay": {
+        "message": "VTX (vtx maiztasuna erabiltzen du kolorea esleitzeko)"
+    },
     "ledStripFunctionSection": {
         "message": "LED funtzioak"
     },
@@ -2682,6 +2718,10 @@
     },
     "ledStripFunctionColorOption": {
         "message": "Kolorea",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionModesOption": {
+        "message": "Moduak &amp; Orientazioa",
         "description": "One of the modes of the Led Strip"
     },
     "ledStripFunctionArmOption": {
@@ -2778,6 +2818,26 @@
         "message": "Animazioa",
         "description": "One of the modes in Color Mode in Led Strip"
     },
+    "ledStripModeColorsModeBlinkBg": {
+        "message": "Atzeko plano distira",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeGPSNoSats": {
+        "message": "GPSa: satsik ez",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeGPSNoLock": {
+        "message": "GPSa: ez da lokalizatu",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeGPSLocked": {
+        "message": "GPSa: blokeatuta",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripWiring": {
+        "message": "LED marra kablea",
+        "description": "One of the modes in Led Strip"
+    },
     "ledStripWiringMode": {
         "message": "Kableak ordenatzeko modua",
         "description": "One of the wiring modes in Led Strip"
@@ -2789,6 +2849,593 @@
     "ledStripWiringClearAllControl": {
         "message": "Garbitu Kableatu GUZTIA",
         "description": "Control button in the wiring modes in Led Strip"
+    },
+    "ledStripWiringMessage": {
+        "message": "Ez dira kablean zenbakirik gabeko LEDak gordeko.",
+        "description": "Message in the wiring modes in Led Strip"
+    },
+    "ledStripVtxFunction": {
+        "message": "Larson eskanerra"
+    },
+    "ledStripBlinkTitle": {
+        "message": "Kliskatu"
+    },
+    "ledStripBlinkAlwaysOverlay": {
+        "message": "Beti kliskatu"
+    },
+    "ledStripBlinkLandingOverlay": {
+        "message": "Lurreratzean kliskatu"
+    },
+    "ledStripOverlayTitle": {
+        "message": "Gainjarri"
+    },
+    "ledStripWarningsOverlay": {
+        "message": "Abisuak"
+    },
+    "ledStripIndecatorOverlay": {
+        "message": "Adierazlea (posizioa matrizean erabiltzen du)"
+    },
+    "colorBlack": {
+        "message": "beltza"
+    },
+    "colorWhite": {
+        "message": "zuria"
+    },
+    "colorRed": {
+        "message": "gorria"
+    },
+    "colorOrange": {
+        "message": "laranja"
+    },
+    "colorYellow": {
+        "message": "horia"
+    },
+    "colorLimeGreen": {
+        "message": "berde lima"
+    },
+    "colorGreen": {
+        "message": "berdea"
+    },
+    "colorMintGreen": {
+        "message": "menta berdea"
+    },
+    "colorCyan": {
+        "message": "zian"
+    },
+    "colorLightBlue": {
+        "message": "urdin argia"
+    },
+    "colorBlue": {
+        "message": "urdina"
+    },
+    "colorDarkViolet": {
+        "message": "morea iluna"
+    },
+    "colorMagenta": {
+        "message": "magenta"
+    },
+    "colorDeepPink": {
+        "message": "arrosa sakona"
+    },
+    "controlAxisRoll": {
+        "message": "Roll [A]"
+    },
+    "controlAxisPitch": {
+        "message": "Pitch [E]"
+    },
+    "controlAxisYaw": {
+        "message": "Yaw [R]"
+    },
+    "controlAxisThrottle": {
+        "message": "Throttle [T]"
+    },
+    "controlAxisAux1": {
+        "message": "1. AUX"
+    },
+    "controlAxisAux2": {
+        "message": "2. AUX"
+    },
+    "controlAxisAux3": {
+        "message": "3. AUX"
+    },
+    "controlAxisAux4": {
+        "message": "4. AUX"
+    },
+    "controlAxisAux5": {
+        "message": "5. AUX"
+    },
+    "controlAxisAux6": {
+        "message": "6. AUX"
+    },
+    "controlAxisAux7": {
+        "message": "7. AUX"
+    },
+    "controlAxisAux8": {
+        "message": "8. AUX"
+    },
+    "controlAxisAux9": {
+        "message": "9. AUX"
+    },
+    "controlAxisAux10": {
+        "message": "10. AUX"
+    },
+    "controlAxisAux11": {
+        "message": "11. AUX"
+    },
+    "controlAxisAux12": {
+        "message": "12. AUX"
+    },
+    "controlAxisAux13": {
+        "message": "13. AUX"
+    },
+    "controlAxisAux14": {
+        "message": "14. AUX"
+    },
+    "controlAxisAux15": {
+        "message": "15. AUX"
+    },
+    "controlAxisAux16": {
+        "message": "16. AUX"
+    },
+    "pidTuningBasic": {
+        "message": "Oinarrizko/Acro"
+    },
+    "pidTuningYawJumpPrevention": {
+        "message": "Yaw Saltoen Prebentzioa"
+    },
+    "pidTuningRcExpoPower": {
+        "message": "RC Expo potentzia"
+    },
+    "pidTuningRcExpoPowerHelp": {
+        "message": "RC Expo kalkulatzeko erabiltzen den esponentea. 3.0 bertsio aurreko Betaflight bertsioetan, balioa 3an finkatzen da."
+    },
+    "pidTuningLevel": {
+        "message": "Angle/Horizon"
+    },
+    "pidTuningAltitude": {
+        "message": "Barometroa eta Sonar/Altitudea"
+    },
+    "pidTuningMag": {
+        "message": "Magnetometroa/Direkzioa"
+    },
+    "pidTuningGps": {
+        "message": "GPS Nabigazioa"
+    },
+    "pidTuningStrength": {
+        "message": "Indarra"
+    },
+    "pidTuningTransition": {
+        "message": "Trantsizioa"
+    },
+    "pidTuningHorizon": {
+        "message": "Horizon"
+    },
+    "pidTuningAngle": {
+        "message": "Angle"
+    },
+    "pidTuningLevelAngleLimit": {
+        "message": "Angle muga"
+    },
+    "pidTuningLevelSensitivity": {
+        "message": "Sentibera"
+    },
+    "pidTuningLevelHelp": {
+        "message": "Beheko balioek ANGLE eta HORIZON hegaldi moduen portaera aldatzen dute. PID kontrolagailu desberdinak, balio ezberdinean kudeatzen dituzte. Mesedez, dokumentazioa kontsultatu."
+    },
+    "pidTuningNonProfileFilterSettings": {
+        "message": "Profileko iragazki-ezarpen independenteak"
+    },
+    "pidTuningSliderLowFiltering": {
+        "message": "Iragazketa Gutxiago",
+        "description": "Filter tuning slider low header"
+    },
+    "pidTuningSliderDefaultFiltering": {
+        "message": "Lehenetsi Iragazketa",
+        "description": "Filter tuning slider default header"
+    },
+    "pidTuningSliderHighFiltering": {
+        "message": "Iragazketa Gehiago",
+        "description": "Filter tuning slider high header"
+    },
+    "pidTuningGyroFilterSlider": {
+        "message": "Giro Iragazkien Biderkatzailea:",
+        "description": "Gyro filter tuning slider label"
+    },
+    "pidTuningDTermFilterSlider": {
+        "message": "D Term Iragazki Biderkatzailea:",
+        "description": "D Term filter tuning slider label"
+    },
+    "pidTuningSliderEnableButton": {
+        "message": "Graduatzaileak Gaitu",
+        "description": "Button label for enabling sliders"
+    },
+    "pidTuningSlidersNonExpertMode": {
+        "message": "<strong>Oharra:</strong> Graduatzaileen barrutia mugatuta dago aditu moduan ez zaudelako. Barruti hau egokia izan daiteke eraikuntza eta hasiberri gehienentzat.",
+        "description": "Sliders restricted message"
+    },
+    "pidTuningSliderLow": {
+        "message": "Gutxikoa",
+        "description": "Tuning Slider Low header"
+    },
+    "pidTuningSliderDefault": {
+        "message": "Lehenetsia",
+        "description": "Tuning Slider Default header"
+    },
+    "pidTuningSliderHigh": {
+        "message": "Handikoa",
+        "description": "Tuning Slider High header"
+    },
+    "pidTuningMasterSlider": {
+        "message": "Nagusi Biderkatzailea:",
+        "description": "Master tuning slider label"
+    },
+    "pidTuningPDGainSlider": {
+        "message": "P eta D Irabazia:",
+        "description": "P and D gain tuning slider label"
+    },
+    "pidTuningGyroLowpassFiltersGroup": {
+        "message": "Giro Behe-paseko Iragazkiak"
+    },
+    "pidTuningGyroLowpassFrequency": {
+        "message": "1. Giro Behe-paseko Ebakidura Frekuentzia [Hz]"
+    },
+    "pidTuningGyroLowpassType": {
+        "message": "1. Giro Behe-paseko Iragazki Mota"
+    },
+    "pidTuningGyroLowpassDynMinFrequency": {
+        "message": "1. Giro Behe-paseko Iragazki Dinamikoa Ebakidura Min Frekuentzia [Hz]"
+    },
+    "pidTuningGyroLowpassDynMaxFrequency": {
+        "message": "1. Giro Behe-paseko Iragazki Dinamikoa Ebakidura Max Frekuentzia [Hz]"
+    },
+    "pidTuningGyroLowpassDynType": {
+        "message": "1. Giro Behe-paseko Iragazki Dinamikoa Mota"
+    },
+    "pidTuningGyroLowpass2Frequency": {
+        "message": "2. Giro Behe-paseko Iragazki Ebakidura Frekuentzia [Hz]"
+    },
+    "pidTuningGyroLowpass2Type": {
+        "message": "2. Giro Behe-paseko Iragazki Mota"
+    },
+    "pidTuningGyroNotchFiltersGroup": {
+        "message": "Giro Notch Iragazkiak"
+    },
+    "pidTuningGyroNotch1Frequency": {
+        "message": "1. Giro Notch Iragazkiaren Zentro Frekuentzia [Hz]"
+    },
+    "pidTuningGyroNotch2Frequency": {
+        "message": "2. Giro Notch Iragazkiaren Zentro Frekuentzia [Hz]"
+    },
+    "pidTuningGyroNotch1Cutoff": {
+        "message": "1. Giro Notch Iragazkiaren Ebakidura Frekuentzia [Hz]"
+    },
+    "pidTuningGyroNotch2Cutoff": {
+        "message": "2. Giro Notch Iragazkiaren Ebakidura Frekuentzia [Hz]"
+    },
+    "pidTuningDynamicNotchFilterGroup": {
+        "message": "Notch Iragazki Dinamikoa"
+    },
+    "pidTuningDynamicNotchRange": {
+        "message": "Notch Dinamikoa Iragazkiaren Barrutia"
+    },
+    "pidTuningDynamicNotchWidthPercent": {
+        "message": "Notch Dinamikoa Zabaleraren Ehunekoa"
+    },
+    "pidTuningDynamicNotchQ": {
+        "message": "Q Notch Dinamikoa"
+    },
+    "pidTuningDynamicNotchMinHz": {
+        "message": "Notch Dinamikoa Min Hz"
+    },
+    "pidTuningRpmFilterGroup": {
+        "message": "Giro RPM Iragazkia",
+        "description": "Header text for the RPM Filter group"
+    },
+    "pidTuningRpmHarmonics": {
+        "message": "Giro RPM Iragazkiaren Armoniko Zenbakia",
+        "description": "Text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningRpmMinHz": {
+        "message": "Giro RPM Iragazkiaren Min [Hz] Frekuentzia",
+        "description": "Text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningRpmMinHzHelp": {
+        "message": "RPM iragazkiak erabiliko duen gutxieneko frekuentzia.",
+        "description": "Help text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningFilterSettings": {
+        "message": "Profileko iragazki-ezarpen independenteak"
+    },
+    "pidTuningDTermLowpassFiltersGroup": {
+        "message": "D Term Behe-paseko Iragazkiak"
+    },
+    "pidTuningDTermLowpassType": {
+        "message": "1. D Term Behe-paseko Iragazki Mota"
+    },
+    "pidTuningDTermLowpassFrequency": {
+        "message": "1. D Term Behe-paseko Iragazki Ebakidura Frekuentzia [Hz]"
+    },
+    "pidTuningDTermLowpass2Frequency": {
+        "message": "2. D Term Behe-paseko Iragazki Ebakidura Frekuentzia [Hz]"
+    },
+    "pidTuningDTermLowpass2Type": {
+        "message": "2. D Term Behe-paseko Iragazki Mota"
+    },
+    "pidTuningDTermLowpassDynMinFrequency": {
+        "message": "1. D Term Behe-paseko Iragazki Dinamikoa Ebakidura Min Frekuentzia [Hz]"
+    },
+    "pidTuningDTermLowpassDynMaxFrequency": {
+        "message": "1. D Term Behe-paseko Iragazki Dinamikoa Ebakidura Max Frekuentzia [Hz]"
+    },
+    "pidTuningDTermLowpassDynType": {
+        "message": "1. D Term Behe-paseko Iragazkiko Iragazki Dinamikoa Mota"
+    },
+    "pidTuningDTermNotchFiltersGroup": {
+        "message": "D Tem Notch Iragazkiak"
+    },
+    "pidTuningDTermNotchFrequency": {
+        "message": "D Term Notch Iragazkiaren Zentro Frekuentzia [Hz]"
+    },
+    "pidTuningDTermNotchCutoff": {
+        "message": "D Term Notch Iragazkiaren Ebakidura Frekuentzia [Hz]"
+    },
+    "pidTuningYawLospassFiltersGroup": {
+        "message": "Yaw Behe-paseko Iragazkiak"
+    },
+    "pidTuningYawLowpassFrequency": {
+        "message": "Yaw Behe-paseko Ebakitzeko Frekuentzia [Hz]"
+    },
+    "pidTuningVbatPidCompensation": {
+        "message": "Vbat PID Konpentsazioa"
+    },
+    "pidTuningItermRotation": {
+        "message": "I Term Biraketa"
+    },
+    "pidTuningSmartFeedforward": {
+        "message": "Adimendun Feed-forward"
+    },
+    "pidTuningItermRelax": {
+        "message": "I Term Erlaxatu"
+    },
+    "pidTuningItermRelaxAxes": {
+        "message": "Ardatzak",
+        "description": "Iterm Relax Axes selection"
+    },
+    "pidTuningItermRelaxAxesOptionRP": {
+        "message": "RP"
+    },
+    "pidTuningItermRelaxAxesOptionRPY": {
+        "message": "RPY"
+    },
+    "pidTuningItermRelaxAxesOptionRPInc": {
+        "message": "RP (gehikuntza bakarrik)"
+    },
+    "pidTuningItermRelaxAxesOptionRPYInc": {
+        "message": "RPY (gehikuntza bakarrik)"
+    },
+    "pidTuningItermRelaxType": {
+        "message": "Mota",
+        "description": "Iterm Relax Type selection"
+    },
+    "pidTuningItermRelaxTypeOptionGyro": {
+        "message": "Giro"
+    },
+    "pidTuningItermRelaxTypeOptionSetpoint": {
+        "message": "Setpoint"
+    },
+    "pidTuningItermRelaxCutoff": {
+        "message": "Cutoff",
+        "description": "Cutoff value of the I Term Relax"
+    },
+    "pidTuningAbsoluteControlGain": {
+        "message": "Kontrol absolutua"
+    },
+    "pidTuningAcroTrainerAngleLimit": {
+        "message": "Acro Trainerren Angle Muga"
+    },
+    "pidTuningIntegratedYaw": {
+        "message": "Yaw Integratua"
+    },
+    "failsafePaneTitleOld": {
+        "message": "Hartzaileak huts egin du"
+    },
+    "failsafePulsrangeTitle": {
+        "message": "Baliozko Pultsu Barrutiaren Ezarpenak"
+    },
+    "failsafeRxMinUsecItem": {
+        "message": "Gutxieneko luzera"
+    },
+    "failsafeRxMaxUsecItem": {
+        "message": "Gehienezko luzera"
+    },
+    "failsafeStageTwoSettingsTitle": {
+        "message": "2. Etapa - Ezarpenak"
+    },
+    "failsafeGpsRescueItemAngle": {
+        "message": "Angle"
+    },
+    "failsafeGpsRescueItemThrottleMin": {
+        "message": "Azeleragailua minimoa"
+    },
+    "failsafeGpsRescueItemThrottleMax": {
+        "message": "Azekeragailua maximoa"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "Altitude modua"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "Altitude maximoa"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "Altitude minimoa"
+    },
+    "failsafeGpsRescueItemSanityChecksOff": {
+        "message": "Off"
+    },
+    "failsafeGpsRescueItemSanityChecksOn": {
+        "message": "On"
+    },
+    "failsafeGpsRescueItemSanityChecksFSOnly": {
+        "message": "Failsafe bakarrik"
+    },
+    "failsafeKillSwitchItem": {
+        "message": "Failsafe Kill Switch ( Failsafe konfigurazio moduak fitxan)"
+    },
+    "failsafeSwitchTitle": {
+        "message": "Failsafe Switch"
+    },
+    "failsafeSwitchOptionStage1": {
+        "message": "1. Etapa"
+    },
+    "failsafeSwitchOptionStage2": {
+        "message": "2. Etapa"
+    },
+    "failsafeSwitchOptionKill": {
+        "message": "Hilketa"
+    },
+    "powerButtonSave": {
+        "message": "Gorde"
+    },
+    "powerBatteryVoltageMeterTypeNone": {
+        "message": "Bat ere ez"
+    },
+    "powerBatteryVoltageMeterTypeAdc": {
+        "message": "ADC integratua"
+    },
+    "powerBatteryVoltageMeterTypeEsc": {
+        "message": "ESC Sentsorea"
+    },
+    "powerBatteryCurrentMeterTypeNone": {
+        "message": "Bat ere ez"
+    },
+    "powerBatteryCurrentMeterTypeAdc": {
+        "message": "ADC integratua"
+    },
+    "powerBatteryCurrentMeterTypeVirtual": {
+        "message": "Birtuala"
+    },
+    "powerBatteryCurrentMeterTypeEsc": {
+        "message": "ESC Sentsorea"
+    },
+    "powerBatteryCurrentMeterTypeMsp": {
+        "message": "MSP Sentsorea/OSD Slave"
+    },
+    "powerBatteryMinimum": {
+        "message": "Zeldaren gutxieneko tentsioa"
+    },
+    "powerBatteryMaximum": {
+        "message": "Zeldaren gehieneko tentsioa"
+    },
+    "powerBatteryWarning": {
+        "message": "Zelda tentsio abisua"
+    },
+    "powerCalibrationManagerButton": {
+        "message": "Kalibrazioa"
+    },
+    "powerCalibrationSave": {
+        "message": "Kalibratu"
+    },
+    "powerCalibrationApply": {
+        "message": "Kalibrazioa aplikatu"
+    },
+    "powerCalibrationDiscard": {
+        "message": "Kalibrazioa Baztertu"
+    },
+    "powerVoltageHead": {
+        "message": "Tentsio neurgailua"
+    },
+    "powerVoltageValue": {
+        "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "Neurtutako tentsioa"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Kalibratutako Tentsio Eskala:"
+    },
+    "powerAmperageValue": {
+        "message": "$1 A"
+    },
+    "powerVoltageId10": {
+        "message": "Bateria"
+    },
+    "powerVoltageId20": {
+        "message": "5V"
+    },
+    "powerVoltageId30": {
+        "message": "9V"
+    },
+    "powerVoltageId40": {
+        "message": "12V"
+    },
+    "powerVoltageId50": {
+        "message": "ESC Konbinatua"
+    },
+    "powerVoltageId60": {
+        "message": "ESC 1. Motorea"
+    },
+    "powerVoltageId61": {
+        "message": "ESC 2. Motorea"
+    },
+    "powerVoltageId62": {
+        "message": "ESC 3. Motorea"
+    },
+    "powerVoltageId63": {
+        "message": "ESC 4. Motorea"
+    },
+    "powerVoltageId64": {
+        "message": "ESC 5. Motorea"
+    },
+    "powerVoltageId65": {
+        "message": "ESC 6. Motorea"
+    },
+    "powerVoltageId66": {
+        "message": "ESC 7. Motorea"
+    },
+    "powerVoltageId67": {
+        "message": "ESC 8. Motorea"
+    },
+    "powerVoltageId68": {
+        "message": "ESC 9. Motorea"
+    },
+    "powerVoltageId69": {
+        "message": "ESC 10. Motorea"
+    },
+    "powerVoltageId70": {
+        "message": "ESC 11. Motorea"
+    },
+    "powerVoltageId71": {
+        "message": "ESC 12. Motorea"
+    },
+    "powerVoltageId80": {
+        "message": "1. Zelda"
+    },
+    "powerVoltageId81": {
+        "message": "2. Zelda"
+    },
+    "powerVoltageId82": {
+        "message": "3. Zelda"
+    },
+    "powerVoltageId83": {
+        "message": "4. Zelda"
+    },
+    "powerVoltageId84": {
+        "message": "5. Zelda"
+    },
+    "powerVoltageId85": {
+        "message": "6. Zelda"
+    },
+    "powerVoltageScale": {
+        "message": "Eskala"
+    },
+    "powerVoltageMultiplier": {
+        "message": "Biderkatzailearen Balioa"
+    },
+    "powerAmperageOffset": {
+        "message": "Offset [mA]"
+    },
+    "powerAmperageCalibration": {
+        "message": "Neurritako Anpergoa"
     },
     "osdTextStatBlackbox": {
         "message": "Kutxabeltza: erabilitako espazioa",
