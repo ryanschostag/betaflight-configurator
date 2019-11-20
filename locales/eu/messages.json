@@ -1032,7 +1032,7 @@
         "message": "ESC/Motorren ezaugarriak"
     },
     "configurationFeaturesHelp": {
-        "message": "<strong>Oharra:</strong> Funtzioen konbinazio guztiak ez dira baliozkoak. Hegaldien kontrolatzaileen firmwareak funtzio baliogabeen konbinazio baliogabeak hautematendituenean, desgaitu egingo dira. <br/><strong>Oharra:</strong>  Serial atakak konfiguratu <span class=\"message-negative\">lehenik eta behin</span> atakak behan duen funtzioa gaitzeko."
+        "message": "<strong>Oharra:</strong> Funtzioen konbinazio guztiak ez dira baliozkoak. Hegaldi kontroladoreen firmwareak funtzio baliogabeen konbinazio baliogabeak hautematen dituenean, desgaitu egingo dira. <br/><strong>Oharra:</strong>  Serial atakak konfiguratu <span class=\"message-negative\">lehenik eta behin</span> atakak behan duen funtzioa gaitzeko."
     },
     "configurationSerialRXHelp": {
         "message": "<strong>Oharra:</strong> Gogoratu Ataka Serial bat konfiguratu behar duzula (ataka fitxen bidez) eta aukeratu Serial Hartzaile hornitzailea RX_SERIAL funtzioa erabiltzen duzunean."
@@ -1107,7 +1107,7 @@
         "message": "Magnetometroaren deklinabidea [deg]"
     },
     "configurationReverseMotorSwitch": {
-        "message": "Motorren norabidea alderantzizkoa da"
+        "message": "Motorren norabidea alderantzizkoa"
     },
     "configurationReverseMotorSwitchHelp": {
         "message": "Aukera honek nahasgailua motorraren norabidea alderantzikatu eta haizeak horren arabera egon dadin konfiguratzen du. <strong>Oharra:</strong> Horrek ez du motorraren norabidea alderantzikatzen. Erabili zure ESCetarako konfigurazio-tresna edo aldatu ESC - motorren kableatua hori lortzeko. Era berean, ziurtatu zure motorrak goiko diagraman agertzen diren norabideetan biratzen ari direla egiaztatzen armatzen saiatu aurretik."
@@ -1262,6 +1262,9 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Oharra:</strong> Ziurtatu zure FC abiadura horietan funtzionatzeko gai dela! Egiaztatu CPU eta Ziklo denboraren egonkortasuna. Aldatzean, beharrezkoa izango da PID berrezartzea. OHARRA: Errendimendu gehiago lortzeko, desgaitu azelerometroa eta bestelako sentsoreak."
     },
+    "configurationLoopTimeNo32KhzHelp": {
+        "message": "$t(configurationLoopTimeHelp.message)<br><strong>32 kHz moduko oharra:</strong> 32 kHz giro laginketa egiteko aukera gehitu zen Betaflight-en funtzionalitate esperimental gisa. Eskuragarri egon den urteetan, inoiz ez da inolako abantailarik erakutsi 8 kHz-ko giro-laginketa moduarekin, bibrazioekiko suszeptibotasunagatik eta iragazketa oldarkorra behar duen zarata maila handiagatik. Hori dela eta, <strong>32 kHz-eko giro-laginketarako laguntza kendu da</strong> Betaflight 4.0-n."
+    },
     "configurationGPS": {
         "message": "GPSa"
     },
@@ -1335,6 +1338,9 @@
     "portsVtxTableNotSet": {
         "message": "<span class=\"message-negative\">KONTUZ:</span> VTX taula ez da behar bezala konfiguratu eta hori gabe VTX kontrola ezin da erabili. Mesedez VTX taula konfiguratu $t(tabVtx.message) fitxan."
     },
+    "portsMSPHelp": {
+        "message": "<strong>Oharra:</strong> Ez egin <span class=\"message-negative\">EZ</span> desgaitu MSP lehen serieko atakan, zer egiten ari zaren jakin ezean. Zure konfigurazioa berriro bihurritu eta ezabatu behar izatea baliteke."
+    },
     "portsFirmwareUpgradeRequired": {
         "message": "Firmware-aren bertsioa berritzea <span class=\"message-negative\">beharrezkoa</span> da. &lt; 1.8.0 Firmwarearean Serial ataka konfigurazioak  ez  dira onartzen."
     },
@@ -1406,6 +1412,9 @@
     },
     "portsFunction_LIDAR_TF": {
         "message": "LIDAR Benewake"
+    },
+    "pidTuningUpgradeFirmwareToChangePidController": {
+        "message": "<span class=\"message-negative\">PID kontroladorearen aldaketa desgaituta dago - CLI bidez aldatu dezakezu.</span> API bertsioarekin Firmwarea duzu <span class=\"message-negative\">$1</span>, baina Funtzionalitate honek <span class=\"message-positive\">$2</span> behar du."
     },
     "pidTuningSubTabPid": {
         "message": "PID profilaren ezarpenak"
@@ -2376,7 +2385,7 @@
         "message": "Serial ataka"
     },
     "serialLoggingSupportedNote": {
-        "message": "Erregistratzeko gailu bat sar dezakezu (OpenLager esaterako) serieko ataka bat erabiliz. Konfiguratu ataka ataka fitxan."
+        "message": "Erregistratzeko gailu bat sar dezakezu (OpenLager esaterako) serieko ataka bat erabiliz. Ataka konfiguratu Ataka fitxaren bidez."
     },
     "sdcardNote": {
         "message": "Hegaldien erregistroak zure hegaldi kontroladorearen SD txartelaren graba daitezke."
@@ -3069,9 +3078,25 @@
         "message": "Nagusi Biderkatzailea:",
         "description": "Master tuning slider label"
     },
+    "pidTuningPDRatioSlider": {
+        "message": "PD Balantzea:",
+        "description": "PD balance tuning slider label"
+    },
     "pidTuningPDGainSlider": {
         "message": "P eta D Irabazia:",
         "description": "P and D gain tuning slider label"
+    },
+    "pidTuningResponseSlider": {
+        "message": "Stick-en Erantzun Irabazia:",
+        "description": "Response tuning slider label"
+    },
+    "pidTuningMasterSliderHelp": {
+        "message": "Oro har, Quad handiagoek PID irabazi handiagoak behar dituzte, potentzia eta pisu erlazio txikiagoa izateagatik.<br><br>Quad txikiagoek (microak) normalean PID irabazi txikiagoak behar dituzte, potentzia eta pisu erlazio handiagoa direla eta.<br><br>Balio handiek aginte txikiagoko quadak dira. Balio baxuagoak aginte altuen quadetarako dira.",
+        "description": "Master gain tuning slider helpicon message"
+    },
+    "pidTuningPDRatioSliderHelp": {
+        "message": "PD balantze baxuagoa erantzun orokorra txikiagotuko du, baina errebote azkarren aukera ere murriztuko du flip edo roll baten ondoren.<br><br>PD balantze altuagoak erantzun azkarragoa eta propwash-a hobetuko dute. Dena den, zure PD balantzea oso altua bada, dardarrak jasoko dituzu flip edo roll baten ondoren etapropwash-aren bitartean oszilazioak izando dituzu.",
+        "description": "PD balance tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Giro Behe-paseko Iragazkiak"
@@ -3135,6 +3160,10 @@
         "message": "Giro RPM Iragazkiaren Armoniko Zenbakia",
         "description": "Text for one of the parameters of the RPM Filter"
     },
+    "pidTuningRpmHarmonicsHelp": {
+        "message": "Motor bakoitzeko harmoniko kopurua. 3-ko balioak (quad gehienentzat gomendatua) 3 notch iragazkiak sortuko dira, ardatz bakoitzeko motor bakoitzean, guztira 36 notch. Bata motorren frekuentzirako eta bi harmoniko frekuentzi horren multiploetan.",
+        "description": "Help text for one of the parameters of the RPM Filter"
+    },
     "pidTuningRpmMinHz": {
         "message": "Giro RPM Iragazkiaren Min [Hz] Frekuentzia",
         "description": "Text for one of the parameters of the RPM Filter"
@@ -3188,8 +3217,14 @@
     "pidTuningVbatPidCompensation": {
         "message": "Vbat PID Konpentsazioa"
     },
+    "pidTuningVbatPidCompensationHelp": {
+        "message": "PID balioak handitzen ditu Vbat jaisten denean konpentsatzeko. Horrek hegaldi ezaugarri konstanteagoak emango ditu hegaldi osoan. Aplikatzen den kalte-ordaina zenbatekoa kalkulatuko da $t(powerBatteryMaximum.message) aren arabera $t(tabPower.message) horrian konfiguraturik, beraz, ziurtatu egokia dela."
+    },
     "pidTuningItermRotation": {
         "message": "I Term Biraketa"
+    },
+    "pidTuningItermRotationHelp": {
+        "message": "Momentuko I Term bektorea behar bezala biratzen du bezte ardatzerantz, quad biraka etengabe Yaw-arekin jaurtitzen direnean roll eta beste zenbait trikimailu egitean. LOS acro pilotuengatik oso estimatua."
     },
     "pidTuningSmartFeedforward": {
         "message": "Adimendun Feed-forward"
@@ -3230,6 +3265,9 @@
     "pidTuningAbsoluteControlGain": {
         "message": "Kontrol absolutua"
     },
+    "pidTuningThrottleBoost": {
+        "message": "Throttlearen Bultzada"
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Acro Trainerren Angle Muga"
     },
@@ -3251,14 +3289,47 @@
     "failsafeStageTwoSettingsTitle": {
         "message": "2. Etapa - Ezarpenak"
     },
+    "failsafeProcedureItemSelect1": {
+        "message": "Lurrartu"
+    },
+    "failsafeProcedureItemSelect2": {
+        "message": "Bota"
+    },
+    "failsafeProcedureItemSelect4": {
+        "message": "GPS-ez Berrezkuratu"
+    },
     "failsafeGpsRescueItemAngle": {
         "message": "Angle"
+    },
+    "failsafeGpsRescueItemInitialAltitude": {
+        "message": "Hasierako altitudea (metrotan)"
+    },
+    "failsafeGpsRescueItemDescentDistance": {
+        "message": "Jaitsieraren distantzia (metrotan)"
+    },
+    "failsafeGpsRescueItemGroundSpeed": {
+        "message": "Lurreko abiadura (metro / segunduko)"
     },
     "failsafeGpsRescueItemThrottleMin": {
         "message": "Azeleragailua minimoa"
     },
     "failsafeGpsRescueItemThrottleMax": {
         "message": "Azekeragailua maximoa"
+    },
+    "failsafeGpsRescueItemThrottleHover": {
+        "message": "Throttle-z hover-a egin"
+    },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "Igoera tasa (metro / segunduko)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "Jaitsiera tasa (metro / segunduko)"
+    },
+    "failsafeGpsRescueItemMinSats": {
+        "message": "Gutxieneko Satelite Kopurua"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "Baimendu gabe armatzea kompondu - <span class=\"message-negative\">KONTUZ: GPS Berrezkuratzea ez da erabilgarri egongo</span>"
     },
     "failsafeGpsRescueItemAltitudeMode": {
         "message": "Altitude modua"
@@ -3268,6 +3339,12 @@
     },
     "failsafeGpsRescueItemAltitudeModeFixedAlt": {
         "message": "Altitude minimoa"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "Momentuko altitudea"
+    },
+    "failsafeGpsRescueItemSanityChecks": {
+        "message": "Segurtazun kontrolak"
     },
     "failsafeGpsRescueItemSanityChecksOff": {
         "message": "Off"
@@ -3280,6 +3357,9 @@
     },
     "failsafeKillSwitchItem": {
         "message": "Failsafe Kill Switch ( Failsafe konfigurazio moduak fitxan)"
+    },
+    "failsafeKillSwitchHelp": {
+        "message": "Ezarri aukera hau failsafe-ko etengailuan (Modu Aukeran) itzaltze zuzeneko etena izan dadin, hautatutako hutsegiteen prozedura saihestuz. <strong>Oharra:</strong> Armatzea blokeatuta dago failsafe-aren itzaltze etengailua dagoenean"
     },
     "failsafeSwitchTitle": {
         "message": "Failsafe Switch"
@@ -3440,5 +3520,63 @@
     "osdTextStatBlackbox": {
         "message": "Kutxabeltza: erabilitako espazioa",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "configurationBatteryMinimum": {
+        "message": "Zeldako gutxienezko tentsioa"
+    },
+    "configurationBatteryMaximum": {
+        "message": "Zeldaren gehieneko tentsioa"
+    },
+    "configurationBatteryWarning": {
+        "message": "Zelda tentsio abisua"
+    },
+    "configurationBatteryScale": {
+        "message": "Boltai eskala"
+    },
+    "configurationCurrentMeterType": {
+        "message": "Korrente Neurgailu Mota"
+    },
+    "configurationCurrent": {
+        "message": "Korrente Sensorea"
+    },
+    "configurationCurrentScale": {
+        "message": "Eskalatu irteerako tentsioa milimetrotara [1/10 mV/A]"
+    },
+    "configurationCurrentOffset": {
+        "message": "Milibolt pausoetan konpentsazioa"
+    },
+    "configurationBatteryMultiwiiCurrent": {
+        "message": "Multiwii MSP Zaharrerako korrente irteerarako bateragarritasuna piztu"
+    },
+    "pidTuningProfile": {
+        "message": "Profila"
+    },
+    "pidTuningProfileTip": {
+        "message": "Gehienez 3 (2 kontroladore batzuentzako) PID profil desberdinak gorde daitezke hegaldi kontroladorean. PID profilak, PID, d-ren balioa eta angle / horizon-en cofigurazioa ditu barne fitxa honetan. Behin ipinita, Stik batez erraz (ikus on-line argibideak) erabil daitezke profilen artean aldatzeko."
+    },
+    "pidTuningRateProfile": {
+        "message": "Rateprofilea"
+    },
+    "pidTuningRateProfileTip": {
+        "message": "Gehienez 3 tasa profil, profil bakoitzeko gorde daitezke hegaldi kontroladorean. Rateprofilak 'RC Rate', 'Rate', 'RC Expo', 'Throttle', eta 'TPA' valioak ditu barne. Hegaldian aldatu daitezke rateprofilak, 3 posizioko etengailuan ipinita 'Rate Profileko Atala'-n ''Egokitze' fitxan."
+    },
+    "pidTuningRateSetup": {
+        "message": "Oinarrizko/Acro Rate-etan"
+    },
+    "pidTuningRateSetupHelp": {
+        "message": "Egokitu balio horiek zure rateak ezartzeko. RC Rate-ak erabili gehineko rate orokorra igotzeko, Erabili Super Rate-a stik-en bukaeran Raterik altuenak izateko, erabili RC Expo stiken erdialdea suabeagoa izateko.",
+        "description": "Rate table helpicon message"
+    },
+    "pidTuningDelta": {
+        "message": "Deribazio Metodoa"
+    },
+    "pidTuningDeltaError": {
+        "message": "Errore"
+    },
+    "pidTuningDeltaMeasurement": {
+        "message": "Neurketa"
+    },
+    "pidTuningDeltaTip": {
+        "message": "<b>Akats Deribazioa</b>k stick-ak erantzun azkaragoa hemango dizu eta laisterketarakoa nahiagokoa izaten da.<br><br><b>Akats Neurtua</b>k stick-ak erantzun suabeagoa hemango dizu eta frestailean nahiagokoa izaten da"
     }
 }
