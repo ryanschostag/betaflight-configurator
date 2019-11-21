@@ -1475,6 +1475,14 @@
         "message": "Aurreratua",
         "description": "Advance of the D Min feature"
     },
+    "pidTuningDMinFeatureHelp": {
+        "message": "Gutxieneko D-ak hegaldi normaletan D maila baxuagoa ezkeintzen du eta maila handiagoa, Flip eta Roll-ak bezelako gainbiraketak sor ditzaketen maniobra azkarrak egiteko. Bita ere D-a igotzen du Propwhash-a egiten duenean. D-aren irabaziak ezkeintzen du zeinen azkar heldu daiteken D-k bere gehienezkora gyro-an eta Propwash-ak gertatzen direnean hoinarriturik. Advance-k D-a lehenago igotzen du abiapuntuak erabiliz gyro mugimenduak zorrotzagoak zehazteko.",
+        "description": "D Min feature helpicon message"
+    },
+    "pidTuningDMinHelp": {
+        "message": "Aurrerako hegaldi normaletan moteltze-indarra (D-term) kontrolatzen du.<br>D_min piztuta, D-gain hegaldian aldatzen da. Aurrerako hegaldi normaletan lehengo D_min irabazian dago. Mugimendu zorrotz edo propwhash-ean, D-gain Actiboak eratorritako irabaziak zortzen ditu, batez ere ezkerreruntz.<br><br>Alde guztietatik eratorritako irabaziak Sharp etengailuarekin berdintzen dira, baina aldezka bakarrik gertatzen dira propwhash-ean.<br>Egokitu D_Min irabazia eta Advance-k, bultzadaren sentsibilitatea eta erritmoa kontrolatzeko.",
+        "description": "D Min helpicon message on PID table titlebar"
+    },
     "pidTuningPidSettings": {
         "message": "PID kontroladorearen ezarpenak"
     },
@@ -1490,6 +1498,10 @@
     "receiverRcSmoothingAutoSmoothness": {
         "message": "Leuntze automatikoa",
         "description": "Auto Smoothness parameter for RC smoothing"
+    },
+    "receiverRcSmoothingAutoSmoothnessHelp": {
+        "message": "Smooth automatikoaren kalkulua doitzen du, 10 da aurreipiñitako smoothing-añer atzerapen erlazioaren. Kopurua handituz mugimenduak lehundu, baina atzerapena gehiagotu ere egingo da. Hau erabilgarria izan daiteke Quad konexio fidagarriak eta hegaldi zinematikoetarako.<br>Kontuz 50 zenbakira hurbiltzen diren zenbakiekin, agintean atzerapena nabarituko bait da.<br>Erabili rc_smoothing_info CLI Agintean TX-a eta RX-a pizturik daudela automatikoki RC Smoothing moztuera kalkulatzeko. ",
+        "description": "Auto Smoothness parameter help message"
     },
     "receiverRcDerivativeTypeSelect": {
         "message": "Deribatuaren ebaki mota"
@@ -1578,11 +1590,23 @@
     "pidTuningIntegral": {
         "message": "Integrala (I)"
     },
+    "pidTuningIntegralHelp": {
+        "message": "Makinak ezarpenaren posizio orokorra duen indarra kontrolatzen du.<br>Proportzionalaren antzekoa, baina Quad-aren birtualitate luzeagoak lortzeko, hala nola, grabitate zentro konpentsatuz (CoG) edo kanpoko eragin iraunkorraz (haize etengabea).<br><br>Irabazi altuagokoenak jarraipen estuagoa ematen du (adibidez: txandaka), baina gogorragoa nabari daiteke aginteak Quad-ari bidaltzerakoan.<br>D-term-aren proportzioan oso handia bada, oszilazio txikiak sor ditzazke.",
+        "description": "Integral Term helpicon message on PID table titlebar"
+    },
     "pidTuningDerivative": {
         "message": "Deribatiboa (D)"
     },
+    "pidTuningDerivativeHelp": {
+        "message": "Nabarmentzen den indarra kontrolatzen ditu Quad-ak.  Agintearen etenguen mobimenduak, D-term-en aginteak arintzen ditu. Kampoko eraginak (propwash-a edo haize boladak) D-term-ak bere eragina arintzen du.<br><br>Irabazi altuagoak amortizazio handiagoa ematen du eta P-term-a eta FF-a overshoot-iña murrizten dute.<br>Hala ere, D-term-a oso sensiblea da giroetako maiztasun handiko bibrazioekin (zarata haundiagotu egiten du 10-tik 100-ra).<br><br>Frekuentzi handiko zaratak motorraren berotzea edota motorrak erretzea eragin dezake D-gain-s handiegiak badira edo giroaren zarata ez badira iragazten (ikusi Iragazkiñak fitxa).<br><br>Pentsa ezazu D-term-ek zure autoaren kuxina dela, baina frekuentzi handiko girotze-zarata handitzeak duen berezko efektu negatiboarekin.",
+        "description": "Derivative Term helpicon message on PID table titlebar"
+    },
     "pidTuningFeedforward": {
         "message": "Prealimentazioa (F)"
+    },
+    "pidTuningFeedforwardHelp": {
+        "message": "Agintearen sarreran (malgukak) oinarriturik bultzada gehigarria da. FF-k laguntzen du P-term-ek Quad-a bultzen duela aginteak mugitzerakoan.<br><br>P-term-aren bultzada aginteen eta abiapuntua-an ohinarriturik (deg/sec) eta giro irakurritakoaren (deg/sec) ezberdintazunean. FF-k sakatzen du aginteen aldaketetan bakarrik..<br><br>Balio altuagoak (irabaziak) Quad-en aginteen sarrera zorroztuko dute.<br>Balio altuegiak gainbegiratze bat, motorren beroa eta motorren saturazioa sor dezakete(motoreek nahi duzun aldaketa-tasarekin ezin dutenean eutsi).<br>Gutxieneko edo zero (0) balioak sarreran motelagoa eta leuna emango die.",
+        "description": "Feedforward Term helpicon message on PID table titlebar"
     },
     "pidTuningRcRate": {
         "message": "RC Tasa"
@@ -2293,6 +2317,9 @@
     },
     "sensorsDebugTitle": {
         "message": "Arazketa"
+    },
+    "cliInfo": {
+        "message": "<strong>Oharra:</strong> CLI fitxa utzita edo Deskonektatu sakatuz <strong>automatikoki</strong>ezabatuko da. Bidali \"<strong>exit</strong>\" agintean terminalean utzi ahurretik.  Azken firmwarearekin, kontroladorea <strong>itzali eta berriro piztuko da</strong> gordegabeko aldaketa guztiak <strong>ezabatuz</strong>.<p><strong><span class=\"message-negative\">Oharra:</span></strong> CLI-ko aginte batzuk motorraren irteera-ko pinetan autazko seinaleak bidal ditzakete. Honek bateria ipintzerakoa motorrak zentzurik gabe bueltaka aztea eragin dezake. Orregatik guztiz komenigarria da <strong>CLI-an aginteak sartu aurretik bateria kenduta dagoela zihurtatzea</strong>."
     },
     "cliInputPlaceholder": {
         "message": "Idatzi hemen zure komandoa. Tab sakatu fitxa automatikoki osatzeko."
@@ -3517,9 +3544,53 @@
     "powerAmperageCalibration": {
         "message": "Neurritako Anpergoa"
     },
+    "osdSetupUnsupportedNote1": {
+        "message": "Hegaldi kontrolatzaileak ez du OSD aginteei erantzuten. Horrek ziur asko esan nahi du ez duela BetaFlight OSD integratua."
+    },
+    "osdDescElementPIDRateProfile": {
+        "message": "PID aktiboen eta tasa profilaren zenbakizko bistaratzea"
+    },
+    "osdTextElementDisplayName": {
+        "message": "Pantailako izena",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDisplayName": {
+        "message": "Erakuzteko izena \"Pantailako izena\" cli agindeak ezartzen du"
+    },
     "osdTextStatBlackbox": {
         "message": "Kutxabeltza: erabilitako espazioa",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Bistaratu gehienez 4 kanalen balioak. Kanalak \"osd_rcchannels\" CLI aldagaiarekin zehaztu behar dira"
+    },
+    "vtxSavedFileKo": {
+        "message": "<span class=\"message-negative\">Akatsa</span> VTX-aren konfigurazioa gordetzerakoan",
+        "description": "Message in the GUI log when the VTX Config file is saved"
+    },
+    "vtxButtonSaveFile": {
+        "message": "Gorde fitxategian",
+        "description": "Save to file button in the VTX tab"
+    },
+    "vtxButtonSaveLua": {
+        "message": "Lua Script-a gorde",
+        "description": "Save Lua script button in the VTX tab"
+    },
+    "vtxButtonLoadFile": {
+        "message": "Fitxategitik kargatu",
+        "description": "Load to file button in the VTX tab"
+    },
+    "vtxButtonLoadClipboard": {
+        "message": "Arbeletik kargatu",
+        "description": "Paste from clipboard button in the VTX tab"
+    },
+    "vtxButtonSave": {
+        "message": "Gorde",
+        "description": "Save button in the VTX tab"
+    },
+    "vtxButtonSaved": {
+        "message": "Gordeta",
+        "description": "Saved action button in the VTX tab"
     },
     "configurationBatteryMinimum": {
         "message": "Zeldako gutxienezko tentsioa"
@@ -3578,5 +3649,62 @@
     },
     "pidTuningDeltaTip": {
         "message": "<b>Akats Deribazioa</b>k stick-ak erantzun azkaragoa hemango dizu eta laisterketarakoa nahiagokoa izaten da.<br><br><b>Akats Neurtua</b>k stick-ak erantzun suabeagoa hemango dizu eta frestailean nahiagokoa izaten da"
+    },
+    "configurationCamera": {
+        "message": "Kamera"
+    },
+    "configurationFpvCamAngleDegrees": {
+        "message": "FPV Kamaren Angelua [degrees]"
+    },
+    "onboardLoggingBlackbox": {
+        "message": "Kutxa Beltza erregiztratze gailua"
+    },
+    "onboardLoggingRateOfLogging": {
+        "message": "Kutxa Beltza erregiztratze eremua"
+    },
+    "onboardLoggingDebugMode": {
+        "message": "Kutxa Beltza zuzentze modua"
+    },
+    "onboardLoggingDebugModeUnknown": {
+        "message": "EZEZAGUNA"
+    },
+    "onboardLoggingSerialLogger": {
+        "message": "Kampozko serieko txarte erregistro gailua"
+    },
+    "onboardLoggingRebootMscText": {
+        "message": "Biltegiratze Gailuaren Modua Piztu"
+    },
+    "onboardLoggingMscNotReady": {
+        "message": "Biltegiratzeko modua ezin da piztu biltegiratze-gailua prest ez dagoelako."
+    },
+    "dialogConfirmResetTitle": {
+        "message": "Baieztatu"
+    },
+    "dialogConfirmResetNote": {
+        "message": "KONTUZ: Ziur al zaude ezarpen GUZTIAK lehenetsi nahi dituzula?"
+    },
+    "dialogConfirmResetConfirm": {
+        "message": "Leheneratu"
+    },
+    "dialogConfirmResetClose": {
+        "message": "Ezeztatu"
+    },
+    "modeCameraWifi": {
+        "message": "CAMERA WI-FI BOTOIA"
+    },
+    "modeCameraPower": {
+        "message": "CAMERA PIZTEKO BOTOIA"
+    },
+    "modeCameraChangeMode": {
+        "message": "CAMERA ALDATZEKO MODUA"
+    },
+    "flashTab": {
+        "message": "Eguneratu firmwarea"
+    },
+    "cliAutoComplete": {
+        "message": "Advanced CLI AutoBetetzailea"
+    },
+    "darkTheme": {
+        "message": "Gai iluna piztu"
     }
 }
