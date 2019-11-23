@@ -228,7 +228,7 @@
         "message": "Serboak"
     },
     "tabFailsafe": {
-        "message": "Salbuztea"
+        "message": "Segurtasun Modua"
     },
     "tabTransponder": {
         "message": "Laizterketarako Transpondedorea"
@@ -670,7 +670,7 @@
         "message": "Maximoa:"
     },
     "initialSetupFailsafe": {
-        "message": "Failsafe:"
+        "message": "Segurtasun modua:"
     },
     "initialSetupMinCommand": {
         "message": "MinCommand:"
@@ -743,7 +743,7 @@
         "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
-        "message": "Failsafe aktibatua",
+        "message": "Segurtasun modua aktibatua",
         "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
@@ -755,7 +755,7 @@
         "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
-        "message": "'FAILSAFE' botoia aktibatuta zegoen",
+        "message": "'SEGURTASUN MODUA' botoia aktibatuta zegoen",
         "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
@@ -990,16 +990,16 @@
         "message": "Giro iragazketa dinamikoa"
     },
     "featureFAILSAFE": {
-        "message": "Gaitu Failsafe 2garren maila"
+        "message": "Gaitu Segurtasun modua 2garren etapa"
     },
     "featureFAILSAFEOld": {
-        "message": "Failsafe gaitu"
+        "message": "Segurtasun modua gaitu"
     },
     "featureFAILSAFETip": {
         "message": "<strong>Oharra:</strong> 2. fasea desgaituta dagoenean, <strong>Auto</strong> sintonizazio ezarpena erabiliko da erabiltzailearen ezarpenen ordez kanal guztietan (Roll, Pitch, Yaw eta Throttle)."
     },
     "featureFAILSAFEOldTip": {
-        "message": "Failsafe ezarpenak aplikatu RX seinalea galtzean"
+        "message": "Segurtasun ezarpenak aplikatu RX seinalea galtzean"
     },
     "configurationFeatureEnabled": {
         "message": "Gaituta"
@@ -1587,6 +1587,9 @@
     "pidTuningFeedforwardTransition": {
         "message": "Feed-forward trantsizioa"
     },
+    "pidTuningFeedforwardTransitionHelp": {
+        "message": "Parametro honen bidez, palanka zentrotik gertu daudenean, Feedforward murriztu egin daiteke palankak eta biribilak leuntzeko.<br> 0-palanka zentratua, 1-erabat lekuz aldatuta. Palanka puntu horren gainetik dagoenean, elikadura aurrekoa etengabe mantentzen da ezarritako balioan. Palanka puntu horren azpitik dagoenean, FeedFordward proportzionalki murrizten da, palankaren posizio zentralean 0 izatera. <br> 1-ren balioa leuntzeko gehienezko efektua ematen du; 0-ren balioa, berriz, FeedFordward finkatuta mantentzen da palanka-barruti osoan."
+    },
     "pidTuningDtermSetpointTransition": {
         "message": "D setpoint trantsizioa"
     },
@@ -1601,6 +1604,10 @@
     },
     "pidTuningProportional": {
         "message": "Proportzionala (P)"
+    },
+    "pidTuningProportionalHelp": {
+        "message": "Makinak kontrolarekin jarraitzen duen indarra kontrolatzen du (Setpoint). <br> <br> Balio altuagoak jarraipen zurruna eskaintzen du, baina biraketa eragin dezake Deribatiboaren proportzio handiegia bada (D epea). Pentsa P epea autoan dagoen kaia bezala dela.",
+        "description": "Proportional Term helpicon message on PID table titlebar"
     },
     "pidTuningIntegral": {
         "message": "Integrala (I)"
@@ -2579,6 +2586,9 @@
     "firmwareFlasherOnlineSelectBoardDescription": {
         "message": "Hautatu zure kontroladorea lineako firmware erabilgarriak ikusteko. Hautatu zure kontroladorearako firmware egokia."
     },
+    "firmwareFlasherOnlineSelectBoardHint": {
+        "message": "Betaflight 4.1 bertsioan hasita, <strong>Target Bateratua</strong> ren laguntza sartu da. Target bateratuaren kontzeptuak .hex fitxategiko firmware bera MCU bera erabiltzen duten kontroladore guztietan (F4, F7) erabil daiteke. Target desberdinak firmware berdinekin lan egin ahal izateko, konfigurazio fitxategi espezifikoa ematen da Target Bateratua instalatuta dagoenean. <br>Betaflight Konfiguratzailea-ren bertsio honek Target Bateratua instalatzea onartzen du, dagozkien plaken beraren konfigurazioaren ondoan. Besterik ez da gertatu. Taula bakoitzerako eskuragarri dagoen firmware mota desberdinak honela agertzen dira pantailan: <br><br><strong>&lt;board name&gt;</strong> edo<br><strong>&lt;board name&gt; (Zaharkituta)</strong>:<br>Target Bateratua gabeko, edo Target Bateratua Firmwarearen pre-4.1 bertsioak.<br><br><strong>&lt;board name&gt; (&lt;manufacturer id&gt;)</strong>:<br>(4 karaktere Fabrikatzailearen ID)<br>Target Bateratua.<br><br><strong>Mesedez, erabili Target Bateratua ahal denean.</strong> Target Bateratu bat erabiliza arazoak izanez gero, ireki<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">arazoa</a> eta gero Bateratu gabeko Target erabili, arazoa ebatzi arte."
+    },
     "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
         "message": "Zure kontroladorearen firmware bertsioa aukeratu."
     },
@@ -2672,11 +2682,20 @@
     "firmwareFlasherHash": {
         "message": "Hash:"
     },
+    "firmwareFlasherUrl": {
+        "message": "GitHubera joan aldaketa hau berrikusteko..."
+    },
     "firmwareFlasherMessage": {
         "message": "Mezua:"
     },
+    "firmwareFlasherWarningText": {
+        "message": "Mesedez, <span class=\"message-negative\">ez</span> saiatu <strong>ez-Betaflight</strong> hardwarea lantzen Firmware-Flasheatzaile honekin.<br/> <span class=\"message-negative\">Ez</span> <strong>deskonektatu</strong> kontroladorea edo <strong>itzali</strong> ordenagailua flasheatzen ari zaren bitartean.<br/><br/><strong>Oharra:</strong> STM32 abiarazlea ROMan gordetzen da, ezin da brickeatu.</strong>Oharra:</strong> <span class=\"message-negative\">Konektatu automatikoki</span> beti desgaituta dago firmware flasheatzailean zaudenean.<br/><strong>Oharra:</strong> Segurtasun kopia duzula ziurtatu; bertsio berritzaile/bertsio batzuek zure konfigurazioa ezabatu egingo dute.<br/><strong>Oharra:</strong> flasheatzen arazoa badaukazu <strong>saiatu kontroladorearen kableak deskonektatzen</strong> lehen, saiatu berrabiarazten, Chrome berritzen, gidariak berritzen.<br/><strong>Oharra:</strong>Zuzeneko konexioak dituzten USB entxufeak (kontroladore berrienak) zuzentzen direnean, ziurtatu Betaflight eskuliburuko USB Flashing atala irakurri duzula eta software eta Target egokiak instalatuta dituzula"
+    },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Berreskuratutako/Galdutako komunikazioa</strong>"
+    },
+    "firmwareFlasherRecoveryText": {
+        "message": "Kontroladorearekin komunikazioa galdu baduzu, jarraitu urrats hauek komunikazioa berreskuratzeko: <ul><li>Desgaitua</li><li> 'Berrabiarazi gabeko sekuentzia' gaitu, 'Txip osoa ezabatzea' gaitu.</li><li>BOOT pinak lotu edo BOOT botoia mantendu.</li><li>Piztu (jarduera LED EZ da keinuka izango behar bezala egiten bada).</li><li>STM32 kontrolatzaile guztiak instalatu eta Zadig behar izanez gero (ikus <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\"> USB flasheatzea</a> Betaflight eskuliburuaren atala). </li> <li>Konfiguratzailea itxi, Chrome apps guztiak itxi eta Konfiguratzailea berriarazi</li><li>Askatu BOOT botoia zure FC- k badu.</li><li>Flash firmware egokiarekin (eskuzko baud tasa erabiliz zure FCen eskuliburuan zehazten bada).</li><li>itzali.</li><li>Kendu BOOT jumper.</li><li>Piztu (jardueraren LEDak keinu egin behar du).</li><li>Lotu normalean.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Firmware Flasheatzailea Utzi"
@@ -3046,6 +3065,9 @@
     "pidTuningYawJumpPrevention": {
         "message": "Yaw Saltoen Prebentzioa"
     },
+    "pidTuningYawJumpPreventionHelp": {
+        "message": "Gailua Yaw-en amaieran salto egitea eragozten du. Zenbaki altuagoak kalte handiagoa ematen du okertze mugimenduen amaieran (aurreko yaw D bezalakoa da, hau da, ez zen benetako D beste ardatzetan bezala)"
+    },
     "pidTuningRcExpoPower": {
         "message": "RC Expo potentzia"
     },
@@ -3088,6 +3110,10 @@
     "pidTuningNonProfileFilterSettings": {
         "message": "Profileko iragazki-ezarpen independenteak"
     },
+    "pidTuningFilterSlidersHelp": {
+        "message": "Graduatzaileak quad giroaren eta D epearen iragazketa egokitzeko. <br><br>Iragazketa gehiago hegaldi leunagoa ematen dizu, baina giroaren seinalearen atzerapena (Fase Atzerapena) handitzen du PID begian. Honek hegaldi-errendimendu oldarkorragoa, prop garbiketa manipulatzea, stickaren erantzuna eta oszilazio gehiegizkoak sor ditzake. <br><br>Iragazketa gutxiago giroaren seinalearen atzerapena murrizten du baina motorren tenperaturak igo ditzake frekuentzia altuko motor bibrazioekiko (zarata) erreakzionatzeagatik. <br>Gainera, iragazkia gehiegizkoa bada, hegaldiaren errendimendua gutxitzea eragingo du (zarata handiagoa seinaleen arteko erlazioa).",
+        "description": "Overall helpicon message for filter tuning sliders"
+    },
     "pidTuningSliderLowFiltering": {
         "message": "Iragazketa Gutxiago",
         "description": "Filter tuning slider low header"
@@ -3104,9 +3130,25 @@
         "message": "Giro Iragazkien Biderkatzailea:",
         "description": "Gyro filter tuning slider label"
     },
+    "pidTuningGyroFilterSliderHelp": {
+        "message": "Giro Behe-paseko iragazkiak lehenetsi egiten ditu bata bestearen arabera. Giro iragazkia PID zikloaren aurretik aplikatzen da.<br>Orokorrean, motor klasearen zarata kuadrila bakoitzeko:<br><br> - 6 \"+ quads: normalean 100Hz eta 330Hz artean<br>5 \"Quads: normalean 220Hz eta 500Hz artekoak<br>Whopp 3\" quads: normalean 300Hz eta 850Hz artekoak. aurreko barrutia.<br>Hala ere, hegaldi leunetarako iragazki geihago erabil ezazu. Iragazketa ezarpen erasokorrago bat lortzeko, Iragazki gutxiago erabili. <br>Oharra markoaren erresonantzia arazoak, errodamendu txarrak eta akatsak mozteko moduak iragazki gehiago behar izatea eragin dezake.",
+        "description": "Gyro filtering tuning slider helpicon message"
+    },
     "pidTuningDTermFilterSlider": {
         "message": "D Term Iragazki Biderkatzailea:",
         "description": "D Term filter tuning slider label"
+    },
+    "pidTuningPidSlidersHelp": {
+        "message": "Graduatzaileak quad hegaldiaren ezaugarriak egokitzeko (PID irabaziak)<br><br>Nagusi Biderkatzailea: PID irabazi guztiak igo edo mozten ditu (gainetik) irabazien arteko proportzio diferentzia mantenduz <br><br> PD saldoa: P eta D terminoen ('udaberria' [p-term]) eta \"shock amortizer\" [d-term] arteko oreka (ratioa\\proportzionala den aldea) doitzen du.<br><br>PD irabazia: P&D irabaziak batera igotzen ditu edo bien arteko erlazioa (oreka) mantenduz-PID kontrol agintari gehiago (edo gutxiago) lortzeko.<br><br>Stick Erantzun Irabaziak: FeedFordwarden irabaziak handitu edo gutxitu stickaren erantzuna kontrolatzeko.",
+        "description": "Overall helpicon message for PID tuning sliders"
+    },
+    "pidTuningSliderWarning": {
+        "message": "<span class=\"message-negative\">KONTUZ</span>: Uneko graduatzaileen posizioek, bolantea, motore kalteak edo portaera ziurra sor ditzakete. Kontuz jarraitu.",
+        "description": "Warning shown when tuning slider are above safe limits"
+    },
+    "pidTuningSlidersDisabled": {
+        "message": "<strong>Oharra:</strong> Graduatzaileak desgaituta daude balioak eskuz aldatu direlako. '$t(pidTuningSliderEnableButton.message)' botoia sakatzen, balioak berrezarriko dira eta gorde gabeko aldaketa guztiak galduko dira.",
+        "description": "Tuning sliders disabled note when manual changes are detected"
     },
     "pidTuningSliderEnableButton": {
         "message": "Graduatzaileak Gaitu",
@@ -3152,6 +3194,14 @@
         "message": "PD balantze baxuagoa erantzun orokorra txikiagotuko du, baina errebote azkarren aukera ere murriztuko du flip edo roll baten ondoren.<br><br>PD balantze altuagoak erantzun azkarragoa eta propwash-a hobetuko dute. Dena den, zure PD balantzea oso altua bada, dardarrak jasoko dituzu flip edo roll baten ondoren etapropwash-aren bitartean oszilazioak izando dituzu.",
         "description": "PD balance tuning slider helpicon message"
     },
+    "pidTuningPDGainSliderHelp": {
+        "message": "P eta D balio baxuak motor freskoagoak sortzen dituzte, baina turbulentzia oszilazio gehiago ere bai. Balio oso baxuak quad ezegonkorra izan dezake.<br><br>P eta D elkarrekin lan egiten dute turbulentzia murrizteko.<br><br>Balio altuek motorren tenperatura igoko dute eta hegaldi zuzen leunetan oszilazioak sor ditzakete. D epearen balioak oso altuak direla eta.",
+        "description": "P and D gain tuning slider helpicon message"
+    },
+    "pidTuningResponseSliderHelp": {
+        "message": "Balio baxuek kontrolaren erantzuna okertzen dute eta itzulketa motelak sor ditzakete iraulketa edo iraulketa amaieran (I Epearen amaiera).<br><br>Balio altuek erantzun hobea ematen dute mugimendu erasokorrei. Balio handiegiak buelta eta errebote azkarrak sor ditzakete irauli edo jaurti baten amaieran.",
+        "description": "Stick response gain tuning slider helpicon message"
+    },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Giro Behe-paseko Iragazkiak"
     },
@@ -3176,6 +3226,9 @@
     "pidTuningGyroLowpass2Type": {
         "message": "2. Giro Behe-paseko Iragazki Mota"
     },
+    "pidTuningLowpassFilterHelp": {
+        "message": "Behe-paseko iragazkiek bi aldaera izan ditzakete: estatikoa eta dinamikoa. Zehaztutako pasagune iragazki zenbaki bakarra aldi berean (estatikoa edo dinamikoa) gaitu daiteke. Estatiko iragazkia nolabait definitzen duen ebaki bat besterik ez du. Dinamikoak min eta max balioak definitzen ditu, hau da, ebakidura kokatzen den eremua. Ebaketa hau minimoaren eta maximoaren artean mugitzen dagasaren palanka mugitzen duzun bitartean."
+    },
     "pidTuningGyroNotchFiltersGroup": {
         "message": "Giro Notch Iragazkiak"
     },
@@ -3194,6 +3247,9 @@
     "pidTuningDynamicNotchFilterGroup": {
         "message": "Notch Iragazki Dinamikoa"
     },
+    "pidTuningDynamicNotchFilterDisabledWarning": {
+        "message": "<strong>Oharra:</strong> Notch iragazki dinamikoa desgaituta dago. Konfiguratu eta erabili ahal izateko, 'DYNAMIC_FILTER' funtzioa aktibatu'$t(configurationFeatures.message)' ataleko '$t(tabConfiguration.message)' atalean."
+    },
     "pidTuningDynamicNotchRange": {
         "message": "Notch Dinamikoa Iragazkiaren Barrutia"
     },
@@ -3206,8 +3262,15 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "Notch Dinamikoa Min Hz"
     },
+    "pidTuningDynamicNotchWidthPercentHelp": {
+        "message": "Honek bi iragazki dinamikoen arteko zabalera ezartzen du. 0 balio batek bigarren notch iragazki dinamikoa desaktibatuko du eta iragazkiaren atzerapena murriztuko da, baina motorren tenperatura altuagoa izan daiteke."
+    },
     "pidTuningRpmFilterGroup": {
         "message": "Giro RPM Iragazkia",
+        "description": "Header text for the RPM Filter group"
+    },
+    "pidTuningRpmFilterHelp": {
+        "message": "RPM iragazketa giro-ko iragazkien banku bat da, eta RPM telemetriaren datuak erabiltzen dituzte motorren zarata doitasun kirurgikoarekin kentzeko..<br><br><b><span class=\"message-positive\">GARRANTZITSUA</span>:ESC-k Bidirectional Dshot protokoloa onartu behar du eta$t(configurationMotorPoles.message) balioa$t(tabConfiguration.message) fitxan zuzena izan behar da iragazki hau funtzionatzeko.</b>",
         "description": "Header text for the RPM Filter group"
     },
     "pidTuningRpmHarmonics": {
@@ -3346,6 +3409,9 @@
     "failsafeStageTwoSettingsTitle": {
         "message": "2. Etapa - Ezarpenak"
     },
+    "failsafeSubTitle1": {
+        "message": "2. Etapa - Segurtasun Prozedura"
+    },
     "failsafeProcedureItemSelect1": {
         "message": "Lurrartu"
     },
@@ -3410,16 +3476,19 @@
         "message": "On"
     },
     "failsafeGpsRescueItemSanityChecksFSOnly": {
-        "message": "Failsafe bakarrik"
+        "message": "Segurtasun modua bakarrik"
     },
     "failsafeKillSwitchItem": {
-        "message": "Failsafe Kill Switch ( Failsafe konfigurazio moduak fitxan)"
+        "message": "Failsafe Kill Switch ( Segurtasun modua konfiguratu moduen fitxan)"
     },
     "failsafeKillSwitchHelp": {
-        "message": "Ezarri aukera hau failsafe-ko etengailuan (Modu Aukeran) itzaltze zuzeneko etena izan dadin, hautatutako hutsegiteen prozedura saihestuz. <strong>Oharra:</strong> Armatzea blokeatuta dago failsafe-aren itzaltze etengailua dagoenean"
+        "message": "Ezarri aukera hau segurtasun moduarako etengailuan (Modu Aukeran) itzaltze zuzeneko etena izan dadin, hautatutako hutsegiteen prozedura saihestuz. <strong>Oharra:</strong> Armatzea blokeatuta dago failsafe-aren itzaltze etengailua dagoenean"
     },
     "failsafeSwitchTitle": {
-        "message": "Failsafe Switch"
+        "message": "Segurtasun moduaren palanka"
+    },
+    "failsafeSwitchModeItem": {
+        "message": "Segurtasun modua etengailuaren ekintza"
     },
     "failsafeSwitchOptionStage1": {
         "message": "1. Etapa"
@@ -3433,6 +3502,9 @@
     "powerButtonSave": {
         "message": "Gorde"
     },
+    "powerBatteryVoltageMeterSource": {
+        "message": "Tentsio Sentsorearen Iturburua"
+    },
     "powerBatteryVoltageMeterTypeNone": {
         "message": "Bat ere ez"
     },
@@ -3441,6 +3513,9 @@
     },
     "powerBatteryVoltageMeterTypeEsc": {
         "message": "ESC Sentsorea"
+    },
+    "powerBatteryCurrentMeterSource": {
+        "message": "Korronte Sentsorearen Iturburua"
     },
     "powerBatteryCurrentMeterTypeNone": {
         "message": "Bat ere ez"
@@ -3468,6 +3543,9 @@
     },
     "powerCalibrationManagerButton": {
         "message": "Kalibrazioa"
+    },
+    "powerCalibrationManagerTitle": {
+        "message": "Kalibratzeko Laguntzailea"
     },
     "powerCalibrationSave": {
         "message": "Kalibratu"
@@ -3565,17 +3643,214 @@
     "powerVoltageScale": {
         "message": "Eskala"
     },
+    "powerVoltageDivider": {
+        "message": "Zatiketaren balioa"
+    },
     "powerVoltageMultiplier": {
         "message": "Biderkatzailearen Balioa"
+    },
+    "powerAmperageHead": {
+        "message": "Intentsitate neurgailua"
+    },
+    "powerAmperageId10": {
+        "message": "Bateria"
+    },
+    "powerAmperageId50": {
+        "message": "ESC Konbinatua"
+    },
+    "powerAmperageId60": {
+        "message": "ESC 1. Motorea"
+    },
+    "powerAmperageId61": {
+        "message": "ESC 2. Motorea"
+    },
+    "powerAmperageId62": {
+        "message": "ESC 3. Motorea"
+    },
+    "powerAmperageId63": {
+        "message": "ESC 4. Motorea"
+    },
+    "powerAmperageId64": {
+        "message": "ESC 5. Motorea"
+    },
+    "powerAmperageId65": {
+        "message": "ESC 6. Motorea"
+    },
+    "powerAmperageId66": {
+        "message": "ESC 7. Motorea"
+    },
+    "powerAmperageId67": {
+        "message": "ESC 8. Motorea"
+    },
+    "powerAmperageId68": {
+        "message": "ESC 9. Motorea"
+    },
+    "powerAmperageId69": {
+        "message": "ESC 10. Motorea"
+    },
+    "powerAmperageId70": {
+        "message": "ESC 11. Motorea"
+    },
+    "powerAmperageId71": {
+        "message": "ESC 12. Motorea"
+    },
+    "powerAmperageId80": {
+        "message": "Birtuala"
+    },
+    "powerAmperageId90": {
+        "message": "MSP"
+    },
+    "powerMahValue": {
+        "message": "$1 mAh"
+    },
+    "powerAmperageScale": {
+        "message": "Eskala [1/10mV/A]"
     },
     "powerAmperageOffset": {
         "message": "Offset [mA]"
     },
     "powerAmperageCalibration": {
-        "message": "Neurritako Anpergoa"
+        "message": "Neurritako Intentsitatea"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "Intentsitate Eskala Kalibratu:"
+    },
+    "powerBatteryHead": {
+        "message": "Bateria"
+    },
+    "powerStateHead": {
+        "message": "Energiaren egoera"
+    },
+    "powerBatteryConnected": {
+        "message": "Konektatuta"
+    },
+    "powerBatteryConnectedValueYes": {
+        "message": "Bai (Zeldak: $1)"
+    },
+    "powerBatteryConnectedValueNo": {
+        "message": "Ez"
+    },
+    "powerBatteryVoltage": {
+        "message": "Tentsioa"
+    },
+    "powerBatteryCurrentDrawn": {
+        "message": "Erabilitako mAh"
+    },
+    "powerBatteryAmperage": {
+        "message": "Intentsitatea"
+    },
+    "powerBatteryCapacity": {
+        "message": "Ahalmena (mAh)"
+    },
+    "osdSetupTitle": {
+        "message": "OSD"
     },
     "osdSetupUnsupportedNote1": {
         "message": "Hegaldi kontrolatzaileak ez du OSD aginteei erantzuten. Horrek ziur asko esan nahi du ez duela BetaFlight OSD integratua."
+    },
+    "osdSetupSelectedProfileLabel": {
+        "message": "Unekoa:",
+        "description": "Label for the selection of the curren active OSD profile"
+    },
+    "osdSetupPreviewSelectProfileElement": {
+        "message": "OSD Profila {{profileNumber}}",
+        "description": "Content of the selector for the OSD Profile in the preview"
+    },
+    "osdSetupPreviewSelectFontElement": {
+        "message": "Letra-mota {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
+    },
+    "osdSetupVideoFormatTitle": {
+        "message": "Bideo formatua"
+    },
+    "osdSetupVideoFormatOptionAuto": {
+        "message": "Auto",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionPal": {
+        "message": "PAL",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionNtsc": {
+        "message": "NTSC",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupUnitsTitle": {
+        "message": "Unidadeak"
+    },
+    "osdSetupUnitsOptionImperial": {
+        "message": "Inperiala",
+        "description": "Option for the units system used in the OSD"
+    },
+    "osdSetupUnitsOptionMetric": {
+        "message": "Metrikoa",
+        "description": "Option for the units system used in the OSD"
+    },
+    "osdSetupTimersTitle": {
+        "message": "Tenporizadoreak"
+    },
+    "osdSetupAlarmsTitle": {
+        "message": "Alarmak"
+    },
+    "osdSetupStatsTitle": {
+        "message": "Post-hegaldien estatistikak"
+    },
+    "osdSetupVtxTitle": {
+        "message": "VTX Ezarpenak"
+    },
+    "osdSetupCraftNameTitle": {
+        "message": "Gailuaren Izena"
+    },
+    "osdSetupWarningsTitle": {
+        "message": "Abisuak"
+    },
+    "osdSetupFontPresets": {
+        "message": "Letra-mota aurrezarpenak:"
+    },
+    "osdSetupFontPresetsSelector": {
+        "message": "Aukeratu Letra-moten aurrezarpenak:"
+    },
+    "osdSetupFontPresetsSelectorCustomOption": {
+        "message": "Erabiltzaileak emandako letra motak",
+        "description": "Option to show as selected when the user selects a custom local font"
+    },
+    "osdSetupFontPresetsSelectorOr": {
+        "message": "edo"
+    },
+    "osdSetupCustomLogoInfoTitle": {
+        "message": "Irudi Pertsonalizatua:"
+    },
+    "osdSetupCustomLogoInfoImageSize": {
+        "message": "Neurriak $t(logoWidthPx)×$t(logoHeightPx) pixel izan behar du"
+    },
+    "osdSetupCustomLogoInfoColorMap": {
+        "message": "Pixel berde beltz eta zuriak eduki behar ditu"
+    },
+    "osdSetupSave": {
+        "message": "Gorde"
+    },
+    "osdSetupFontManager": {
+        "message": "Letra-mota Kargatzailea"
+    },
+    "osdSetupUncheckAll": {
+        "message": "Dena desautatu"
+    },
+    "osdSetupHead": {
+        "message": "Info"
+    },
+    "osdSetupVideoMode": {
+        "message": "Bideo Modua"
+    },
+    "osdSetupCameraConnected": {
+        "message": "Kamera konektatuta"
+    },
+    "osdTextElementCraftName": {
+        "message": "Gailuaren izena",
+        "description": "One of the elements of the OSD"
+    },
+    "osdTextElementAltitude": {
+        "message": "Altitudea",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDRateProfile": {
         "message": "PID aktiboen eta tasa profilaren zenbakizko bistaratzea"
@@ -3684,10 +3959,10 @@
         "message": "Kamera"
     },
     "craftName": {
-        "message": "Quad-aren izena"
+        "message": "Gailuaren izena"
     },
     "configurationFpvCamAngleDegrees": {
-        "message": "FPV Kamaren Angelua [degrees]"
+        "message": "FPV Kameraren Angelua [degrees]"
     },
     "onboardLoggingBlackbox": {
         "message": "Kutxa Beltza erregiztratze gailua"
@@ -3729,13 +4004,13 @@
         "message": "Ezeztatu"
     },
     "modeCameraWifi": {
-        "message": "CAMERA WI-FI BOTOIA"
+        "message": "KAMERA WI-FI BOTOIA"
     },
     "modeCameraPower": {
-        "message": "CAMERA PIZTEKO BOTOIA"
+        "message": "KAMERA PIZTEKO BOTOIA"
     },
     "modeCameraChangeMode": {
-        "message": "CAMERA ALDATZEKO MODUA"
+        "message": "KAMERA ALDATZEKO MODUA"
     },
     "flashTab": {
         "message": "Eguneratu firmwarea"
