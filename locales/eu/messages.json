@@ -1759,6 +1759,10 @@
     "tuningHelp": {
         "message": "<b>Eguneratzeko aholkuak</b><br/><span class=\"message-negative\">GARRANTZITSUA:</span> Garrantzitsua da lehen hegaldietan motorren tenperatura egiaztatzea. Iragazkiaren balioa zenbat eta handiagoa izan, orduan eta handiagoa izango da hegan egiteko, baina zarata gehiago lortuko duzu motorretan. <br>100Hz-ko balio lehenetsia ezin hobea da, baina zaratagarrien konfigurazioetarako Dterm iragazkia 50Hz-era jaistea probatu dezakezu eta, agian, giro iragazkia ere."
     },
+    "tuningHelpSliders": {
+        "message": "<span class=\"message-negative\">GARRANTZITSUA:</span> Graduatzaile ezarpenak aldatzeko erabili gomendatzen dugu. Mugitu bi graduatzaileak batera,<br>hobe da aldaketa txikiak egitea eta aldaketa bakoitzaren ondoren hegaldia probatzea. Begiratu arretaz motoreen tenperatura aldaketa gehiago egin aurretik.<br>Iragazketa gutxiagok (graduatzaileak eskuinaldean, ebakidura handiagoko balioak) turbulentzia portaera hobetzen du, baina zarata gehiago uzten du motorretan, eta horiek berotu egiten dira, baita horiek erretzeraino ere. Eraikuntza garbi gehienetan iragazki gutxiago dago eta rpm iragaztea gaituta badago.<br>Iragazki balio altuek edo baxuek ezusteak eragin ditzakete armatzerakoan. Lehenespideak seguruak dira 5 \"koadro tipikoetarako.<br><strong>Oharra:</strong> Profilak aldatzeak D terminoaren iragazkiaren ezarpenak soilik aldatuko ditu. Giro iragazkiaren ezarpenak berdinak dira profil guztientzat.",
+        "description": "Filter tuning subtab note"
+    },
     "filterWarning": {
         "message": "<span class=\"message-negative\"><b>Kontuz:</b></span> Erabiltzen ari zaren iragazte kantitatea oso arriskutsua da. Horrek litekeena da aireontzia kontrolatzea gogorra izatea eta hegan joan daiteke. Gomendagarria da <b>gutxienez Gyro behe-pase dinamikoa edo 1. Gyro behepase eta gutxienez D Term Behe-pase Dinamikoa edo 1. D Term Behe-pase aktibatzea</b>."
     },
@@ -2304,6 +2308,9 @@
     "motorsEnableControl": {
         "message": "<strong>Arriskuak ulertzen ditut</strong>, helizeak kendu-motore eta armatzearen kontrolak gaitu eta ihes egitea saihesteko prebentzioa desgaitu."
     },
+    "sensorsInfo": {
+        "message": "Gogoan izan bizkor eguneratzeko aldiak eta grafiko anitzak aldi berean erabiltzeak baliabide ugari kontsumitzen dituela eta bateria azkarrago xahutuko duzula ordenagailu eramangarria erabiltzen baduzu.<br/> Interesatzen zaizuen sentsoreen grafikoak soilik marraztea gomendatzen dugu eta zentzuzko eguneratze denborak erabili."
+    },
     "sensorsRefresh": {
         "message": "Berritu:"
     },
@@ -2558,6 +2565,9 @@
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Eskuz deskargatu."
+    },
+    "firmwareFlasherTargetWarning": {
+        "message": "<span class = \"message-negative\"> GARRANTZITSUA </span>: Ziurtatu  fitxategi egokia flasheatzen duzula. Fitxategi okerra erabiltzean, zerbait  <span class= \"message-negative\">txarrak</span> gerta daitezke."
     },
     "firmwareFlasherPath": {
         "message": "Bide-izena:"
@@ -3138,6 +3148,10 @@
         "message": "D Term Iragazki Biderkatzailea:",
         "description": "D Term filter tuning slider label"
     },
+    "pidTuningDTermFilterSliderHelp": {
+        "message": "D Epearen iragazki baxua handitu edo txikitu haien arteko proportzioa mantenduz.<br>D epea iragazkiaren PID zikloaren ondoren aplikatzen da, BAKARRIK D terminoaren gainean, zaratarekiko sentikorrena den terminoa delako eta frekuentzia handiko zaratak 10x eta 100x gehi gehiago anplifika ditzakeelako.<br><br>Orokorrean D terminoaren iragazki labaina mugitu nahi duzu Giro Iragazketa graduatzailearekin. D epea iragazkien ebakidura motorraren zarataren barrutiaren azpitik egon nahi duzu D epea iragazketa gogorragoak izateko, orduan giroko seinale osoan aplikatzen den Giro Iragazketa biderkatzailearekin.<br>Gomendatutako diferentziala lehenetsitako eta graduatzailearen eskalan integratzen da.",
+        "description": "D Term filtering tuning slider helpicon message"
+    },
     "pidTuningPidSlidersHelp": {
         "message": "Graduatzaileak quad hegaldiaren ezaugarriak egokitzeko (PID irabaziak)<br><br>Nagusi Biderkatzailea: PID irabazi guztiak igo edo mozten ditu (gainetik) irabazien arteko proportzio diferentzia mantenduz <br><br> PD saldoa: P eta D terminoen ('udaberria' [p-term]) eta \"shock amortizer\" [d-term] arteko oreka (ratioa\\proportzionala den aldea) doitzen du.<br><br>PD irabazia: P&D irabaziak batera igotzen ditu edo bien arteko erlazioa (oreka) mantenduz-PID kontrol agintari gehiago (edo gutxiago) lortzeko.<br><br>Stick Erantzun Irabaziak: FeedFordwarden irabaziak handitu edo gutxitu stickaren erantzuna kontrolatzeko.",
         "description": "Overall helpicon message for PID tuning sliders"
@@ -3244,8 +3258,14 @@
     "pidTuningGyroNotch2Cutoff": {
         "message": "2. Giro Notch Iragazkiaren Ebakidura Frekuentzia [Hz]"
     },
+    "pidTuningNotchFilterHelp": {
+        "message": "Notch iragazkiak zentro bat eta ebaki bat ditu. Iragazkia simetrikoa da. Frekuentzia zentrala iragazkiaren erdigunea da eta Ebaketa frekuentzia Notch iragazkia hasten den lekua da. Adibidez, 160 ebakidura-frekuentziarekin eta 260 frekuentzia zentralarekin, erdigunean duen itxaropenik handiena duena 160-360Hz-ko tartea da"
+    },
     "pidTuningDynamicNotchFilterGroup": {
         "message": "Notch Iragazki Dinamikoa"
+    },
+    "pidTuningDynamicNotchFilterHelp": {
+        "message": "Notch Iragazki Dinamikoak motorrek sortutako zarata frekuentzia kokatzen du eta Notch iragazki bat edo bi jartzen ditu frekuentzia horren gainetik."
     },
     "pidTuningDynamicNotchFilterDisabledWarning": {
         "message": "<strong>Oharra:</strong> Notch iragazki dinamikoa desgaituta dago. Konfiguratu eta erabili ahal izateko, 'DYNAMIC_FILTER' funtzioa aktibatu'$t(configurationFeatures.message)' ataleko '$t(tabConfiguration.message)' atalean."
@@ -3264,6 +3284,12 @@
     },
     "pidTuningDynamicNotchWidthPercentHelp": {
         "message": "Honek bi iragazki dinamikoen arteko zabalera ezartzen du. 0 balio batek bigarren notch iragazki dinamikoa desaktibatuko du eta iragazkiaren atzerapena murriztuko da, baina motorren tenperatura altuagoa izan daiteke."
+    },
+    "pidTuningDynamicNotchQHelp": {
+        "message": "Q faktorea Notch Iragazki Dinamikoak estu edo zabal egokitzeko erabiltzen da. Balio altuagoak estuagoak eta zehatzagoak dira eta balio baxuagoak zabalagoak eta zabalagoak egiten ditu. Benetan balio txikia izateak asko handituko du iragazkien atzerapena."
+    },
+    "pidTuningDynamicNotchMinHzHelp": {
+        "message": "Notch Iragazki Dinamikoa zentroaren azpian dagoen gutxieneko frekuentzia definitzen du."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Giro RPM Iragazkia",
@@ -3346,8 +3372,14 @@
     "pidTuningSmartFeedforward": {
         "message": "Adimendun Feed-forward"
     },
+    "pidTuningSmartFeedforwardHelp": {
+        "message": "F terminoak PIDen eragina murrizten du. P terminoa eta F terminoa aldi berean aktiboak direnean, bakarrik bietako handienak erabiltzen du, gainezka egiteak D igo beharrik izan gabe, baina F terminoak sortutako erantzun efektua murrizten du ere P gehitzen denean."
+    },
     "pidTuningItermRelax": {
         "message": "I Term Erlaxatu"
+    },
+    "pidTuningItermRelaxHelp": {
+        "message": "Mugimendu azkarrak gertatzen direnean I Epearen metaketa mugatzen du. Honek batez ere erreboteak murrizten laguntzen du erroiluak eta beste mugimendu azkarrak amaitzean. Hau aktibo dauden ardatzak aukeratu ditzakezu eta mugimendu azkarra hautematen bada Giro edo Setpoint (stick) erabiliz."
     },
     "pidTuningItermRelaxAxes": {
         "message": "Ardatzak",
@@ -3382,17 +3414,38 @@
     "pidTuningAbsoluteControlGain": {
         "message": "Kontrol absolutua"
     },
+    "pidTuningAbsoluteControlGainHelp": {
+        "message": "Ezaugarri honek $t(pidTuningItermRotation.message)azpiko arazo batzuk konpontzen ditu eta beste punturen batekin ordeztu beharko luke. Ezaugarri honek giroko errore absolutua koordenatu koadroetan metatzen du eta zuzenketa proportzionala nahasten du puntu-puntuan. ($t(pidTuningItermRelaxAxesOptionRP.message)) Lan egiteko, AirMode eta $t(pidTuningItermRelax.message) gaitu behar dituzu. Ezaugarri hauek batera konbinatzen badituzu $t(pidTuningIntegratedYaw.message) ezarri ahal izango duzu $t(pidTuningItermRelax.message) gaituta $t(pidTuningItermRelaxAxesOptionRPY.message)-rako."
+    },
     "pidTuningThrottleBoost": {
         "message": "Throttlearen Bultzada"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Acro Trainerren Angle Muga"
     },
+    "pidTuningAcroTrainerAngleLimitHelp": {
+        "message": "Angelu mugatzeko modu berri bat gehitzen du hegan ikasten ari diren pilotuentzat. Barruti baliozkoa 10-80 da eta $t(tabAuxiliary.message) fitxan etengailu batekin aktibatu behar da."
+    },
     "pidTuningIntegratedYaw": {
         "message": "Yaw Integratua"
     },
+    "pidTuningIntegratedYawCaution": {
+        "message": "<span class=\"message-negative\">ABISUA</span>: Ezaugarri hau gaitzen baduzu, YAW PID horren arabera egokitu behar duzu. Informazio gehiago <a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\"target=\"_blank\">hemen</a>"
+    },
+    "pidTuningIntegratedYawHelp": {
+        "message": "Yaw barneratua quad kontrolarekin arazoa konpontzen duen ezaugarria da: pich eta roll-ardatza bultzada diferentzialen bidez kontrolatzen diren bitartean, helizeek Yaw desberdinak sortzen dituzte. Yaw barneratua konpondu egiten du yaw pid irteera nahasgailuan aplikatu aurretik. Honek Pid funtzionamendua normalizatzen du. Orain beste edozein ardatzetara sintoniza dezakezu. Yaw barneratuan I ez dagoenez kontrol absolutua erabiltzea eskatzen du."
+    },
+    "configHelp2": {
+        "message": "Hegaldi kontroladorea edozein angeluan biratu(zutik, atzeraka, biraketa...). Kanpoko sentsoreak erabiltzen dituzunean, sentsoreen lerrokatzea erabili sentsoreen posizioak definitzeko, hegaldi kontroladorearen orientazioa edozein dela ere. "
+    },
+    "failsafeFeaturesHelpOld": {
+        "message": "Segurtasun moduaren konfigurazioa asko aldatu da. Erabili Betaflight <strong>v1.12.0+</strong> konfigurazio panela hobetzeko."
+    },
     "failsafePaneTitleOld": {
         "message": "Hartzaileak huts egin du"
+    },
+    "failsafeFeaturesHelpNew": {
+        "message": "Segurtasun moduak bi fase ditu. <strong>1. Etapa</strong> hegaldi-kanal baliogabe pultsu luzera daukanean sartzen da, hartzaileak Segurtasun Modua jakinarazten duenean edo hartzailearen seinalerik ez dagoenean, segurtasun-ezarpenak <span class=\"message-negative\">kanal guztiak</span> eta denbora pixka bat ematen da egoera berreskuratzeko <strong>2. Etapa</strong> exekutatzen da gailuak akats egoera konfiguratutako guardia denbora baino gehiago irauten duenean <span class=\"message-negative\">armatuta</span> dagoen bitartean, kanal guztiak mantentzen dira segurtasun ezarpena arauak aukeratutako prozeduran aldatu ezean.<br/><strong>Oharra:</strong> 1. Etapan sartu aurretik, kanalaren atzerapen ezarpenak ere aplikatzen dira baliogabeak dituzten pultsuak dituzten AUX kanaletan."
     },
     "failsafePulsrangeTitle": {
         "message": "Baliozko Pultsu Barrutiaren Ezarpenak"
@@ -3406,8 +3459,20 @@
     "failsafeChannelFallbackSettingsTitle": {
         "message": "Kanalaren Segurtasun Ezarpenak"
     },
+    "failsafeChannelFallbackSettingsHelp": {
+        "message": "Ezarpen hauek AUX kanal baliogabeak edo kanal guztiei aplikatzen zaizkie 1. Etapa sartzen denean. <strong>Oharra:</strong> Balioak 25usec urratsetan gordetzen dira, beraz aldaketa txikiak desagertzen dira"
+    },
+    "failsafeChannelFallbackSettingsAuto": {
+        "message": "<strong>Auto</strong> Roll, Pitch eta Yaw erdialdean eta Throttle baxuan kokatzeko esan nahi du. <strong>Eutsi</strong> jasotako azken balio ona mantentzea esan nahi du"
+    },
+    "failsafeChannelFallbackSettingsHold": {
+        "message": "<strong>Eutsi</strong> jasotako azken balio ona mantentzea esan nahi du. <strong>Ezarri</strong> hemen emandako balioa erabiliko du"
+    },
     "failsafeStageTwoSettingsTitle": {
         "message": "2. Etapa - Ezarpenak"
+    },
+    "failsafeDelayHelp": {
+        "message": "1. Etapa berreskuratzeko denbora"
     },
     "failsafeSubTitle1": {
         "message": "2. Etapa - Segurtasun Prozedura"
