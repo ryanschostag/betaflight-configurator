@@ -573,7 +573,7 @@
         "message": "Oprogramowanie kontrolerów lotów może być pobrane ze strony<a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">GitHub releases</a>."
     },
     "defaultSupportHead": {
-        "message": "Wsparcie"
+        "message": "Pomoc"
     },
     "defaultSupportSubline1": {
         "message": "Źródła wsparcia"
@@ -926,7 +926,7 @@
         "message": "Analogowe wejście RSSI"
     },
     "featureLED_STRIP": {
-        "message": "Wsparcie paska RGB LED"
+        "message": "Obsługa paska RGB LED"
     },
     "featureDISPLAY": {
         "message": "Wyświetlacz OLED"
@@ -2838,7 +2838,7 @@
         "description": "One of the modes of the Led Strip"
     },
     "ledStripFunctionRingOption": {
-        "message": "Okręg",
+        "message": "Okrąg",
         "description": "One of the modes of the Led Strip"
     },
     "ledStripColorModifierTitle": {
@@ -2916,7 +2916,7 @@
         "description": "One of the modes in Color Mode in Led Strip"
     },
     "ledStripModeColorsModeBlinkBg": {
-        "message": "Mrugające tło",
+        "message": "Migające tło",
         "description": "One of the modes in Color Mode in Led Strip"
     },
     "ledStripModeColorsModeGPSNoSats": {
@@ -3006,13 +3006,13 @@
         "message": "niebieski"
     },
     "colorDarkViolet": {
-        "message": "ciemny fiolet"
+        "message": "indygowy"
     },
     "colorMagenta": {
-        "message": "kolor magenta"
+        "message": "magentowy"
     },
     "colorDeepPink": {
-        "message": "kolor mocno różowy"
+        "message": "fuksjowy"
     },
     "controlAxisRoll": {
         "message": "Roll [A]"
