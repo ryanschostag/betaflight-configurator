@@ -2305,6 +2305,9 @@
     "motorsMaster": {
         "message": "Nagusia"
     },
+    "motorsNotice": {
+        "message": "<strong>Motorea probatzeko modua/armatua oharra:</strong><br/> Labainketak edo zure artisautza transmisorearekin batera armatzeak motorrak <strong>biraketa</strong> eragingo du.<br/> Lesioa ekiditeko<strong class=\"message-negative\">kendu helize GUZTIAK</strong> eginbide hau erabili aurretik.<br/> Motorearen proba modua gaituz gero, aldi baterako, desagerrarazteko aukera ere izango da, baina artisautza probatu gabe.<br/>"
+    },
     "motorsEnableControl": {
         "message": "<strong>Arriskuak ulertzen ditut</strong>, helizeak kendu-motore eta armatzearen kontrolak gaitu eta ihes egitea saihesteko prebentzioa desgaitu."
     },
@@ -3282,6 +3285,9 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "Notch Dinamikoa Min Hz"
     },
+    "pidTuningDynamicNotchRangeHelp": {
+        "message": "Notch dinamikoak hiru frekuentzian funtziona dezake: BAXUA (80-330hz) 6+ hazbeteko bezalako birakatze txikiagoetarako, ERDIA (140-550hz) 5 hazbeteko quad normal, ALTUA (230-800hz) oso altuerako 2,5-3 hazbeteko quad-ak berpiztea AUTO aukerak barrutia hautatzen du 1. Giro Behe-paseko Dinamiko Iragazkiaren ebakidura frekuentzia maximoaren balioaren arabera."
+    },
     "pidTuningDynamicNotchWidthPercentHelp": {
         "message": "Honek bi iragazki dinamikoen arteko zabalera ezartzen du. 0 balio batek bigarren notch iragazki dinamikoa desaktibatuko du eta iragazkiaren atzerapena murriztuko da, baina motorren tenperatura altuagoa izan daiteke."
     },
@@ -3420,6 +3426,9 @@
     "pidTuningThrottleBoost": {
         "message": "Throttlearen Bultzada"
     },
+    "pidTuningThrottleBoostHelp": {
+        "message": "Funtzionalitate honek aldi baterako bultzadari azeleragailua ematen dio komandoaren aldaketa bizkorretan eta horrek motorraren azelerazioan momentua handitzen du eta bizkortze-erantzun askoz azkarragoa ematen du."
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Acro Trainerren Angle Muga"
     },
@@ -3471,8 +3480,23 @@
     "failsafeStageTwoSettingsTitle": {
         "message": "2. Etapa - Ezarpenak"
     },
+    "failsafeDelayItem": {
+        "message": "Zaintzen den denbora 2. Epea aktibatzeko denbora galdu ondoren [1 = 0.1 seg.]"
+    },
     "failsafeDelayHelp": {
         "message": "1. Etapa berreskuratzeko denbora"
+    },
+    "failsafeThrottleLowHelp": {
+        "message": "Besterik gabe, desarmatu artisautza hautatutako segurtasun prozedura exekutatu beharrean, azeleragailua denbora horretan gutxienez dagoenean"
+    },
+    "failsafeThrottleItem": {
+        "message": "Lurreratzerakoan erabilitako azeleragailu balioa"
+    },
+    "failsafeOffDelayItem": {
+        "message": "Motorrak itzaltzeko atzerapena [1=0.1seg.]"
+    },
+    "failsafeOffDelayHelp": {
+        "message": "Denbora lurreratze moduan, motorrak itzali eta desarmatu egin arte"
     },
     "failsafeSubTitle1": {
         "message": "2. Etapa - Segurtasun Prozedura"
@@ -3555,6 +3579,9 @@
     "failsafeSwitchModeItem": {
         "message": "Segurtasun modua etengailuaren ekintza"
     },
+    "failsafeSwitchModeHelp": {
+        "message": "Aukera honek zehazten du zer gertatzen den Segurtasun modua AUX etengailu baten bidez aktibatzen da:<br/><strong>1. Etapa</strong> segurtasun modua aktibatzen du. 1. Etapa erabilgarria da Seinale-galera portaera simulatu nahi baduzu.<br/><strong>2. Etapa</strong> 1. Fasea saltatzen du eta 2. Etapa prozedura aktibatzen du berehala<br/><strong>Hiltzea</strong> berehala desarmatzen du(gailua huts egingo du berehala)"
+    },
     "failsafeSwitchOptionStage1": {
         "message": "1. Etapa"
     },
@@ -3566,6 +3593,9 @@
     },
     "powerButtonSave": {
         "message": "Gorde"
+    },
+    "powerFirmwareUpgradeRequired": {
+        "message": "Firmwarea eguneratzea<span class=\"message-negative\">beharrezkoa da</span>. Bateria/Intentsitate/Tentsio konfigurazioak API &lt; 1.33.0 (Betaflight release &lt;= 3.17) es du onartzen."
     },
     "powerBatteryVoltageMeterSource": {
         "message": "Tentsio Sentsorearen Iturburua"
@@ -3612,6 +3642,21 @@
     "powerCalibrationManagerTitle": {
         "message": "Kalibratzeko Laguntzailea"
     },
+    "powerCalibrationManagerHelp": {
+        "message": "Kalibratzeko, erabili multimetro bat zure gailuaren benetako tentsioa/korrontea neurtzeko (bateria sartuta) eta sartu ondorengo balioak. Ondoren, bateria bera oraindik konektaturik dagoela, [Calibrate] klik egin."
+    },
+    "powerCalibrationManagerNote": {
+        "message": "<strong>Oharra:</strong> Eskala kalibratu aurretik, ziurtatu tentsiorako eta desplazamenduarentzako zatitzailea eta desplazamendua egokitzea ondo egokitzen dela.<br>0 -ko balioak uztean ez da kalibrazioa aplikatuko.</br><strong> Gogoratu bateriak sartu aurretik helizeak kendu behar dituzula!</strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class=\"message-negative\">Kontuz:</span> Bateria<span class=\"message-negative\"> ez dago konektaturik</span> edo tentsio eta zabalera neurgailuaren iturburua <span class=\"message-\"negative\"> ez da behar bezala ezarri.</span> Ziurtatu tentsioa eta/edo anplifikazioa 0. balioa baino gehiago irakurtzen ari direla. Bestela, ezin izango duzu tresna hau kalibratzeko erabili."
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class=\"message-negative\">Abisua:</span> Tentsio eta/edo amperage neurgailuen iturburuak <strong>aldatu dira, baina ez dira gorde.</strong> Mesedez, zehaztu neurgailu iturburu zuzenak eta gorde itzazu kalibratzen saiatu aurretik."
+    },
+    "powerCalibrationManagerConfirmationTitle": {
+        "message": "Kalibrazio Laguntzailearen Konfirmazioa"
+    },
     "powerCalibrationSave": {
         "message": "Kalibratu"
     },
@@ -3620,6 +3665,9 @@
     },
     "powerCalibrationDiscard": {
         "message": "Kalibrazioa Baztertu"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "Kalibratutako eskala berriak hemen erakusten dira.<br>Hauek aplikatzeak baremoak ezarriko ditu, baina <strong>ez ditu gordeko.</strong></br> <br>Ziurtatu tentsio berria eta korrontea zuzenak direla gorde ondoren.</br>"
     },
     "powerVoltageHead": {
         "message": "Tentsio neurgailua"
@@ -3810,8 +3858,30 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupPreviewHelp": {
+        "message": "<strong>Oharra:</strong> OSD aurrebistak, ezin da hegaldi kontroladorean instalatutako letra-motak erakutsi. Elementu indibidualen diseinua itxura desberdinak izan daitezke firmwarearen bertsio zaharrakerabiltzen direnean. Mesedez, begiratu betaurrekoen bidez itxura hegan egin aurretik."
+    },
     "osdSetupUnsupportedNote1": {
         "message": "Hegaldi kontrolatzaileak ez du OSD aginteei erantzuten. Horrek ziur asko esan nahi du ez duela BetaFlight OSD integratua."
+    },
+    "osdSetupProfilesTitle": {
+        "message": "OSD Profilaren Zenbakia",
+        "description": "Description of the header of the OSD elements column associated to each profile"
+    },
+    "osdSetupElementsTitle": {
+        "message": "Elementuak"
+    },
+    "osdSetupPreviewTitle": {
+        "message": "Posizioa aldatzeko elementoak arrastatu",
+        "description": "Indicates in the preview window of the OSD that the user can drag the elements to reorder them"
+    },
+    "osdSetupPreviewSelectProfileTitle": {
+        "message": "Aurreikusi",
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
+    },
+    "osdSetupPreviewForTitle": {
+        "message": "Hemen profila edo letra-tipoak aldatzeak EZ du profila edo letra-tipoak aldatuko, aurrebistaren leihoan bakarrik aldatuko da. Aldatu nahi baduzu, '$t(osdSetupSelectedProfileTitle.message)' aukera edo '$t(osdSetupFontManager.message)' botoia erabili behar duzu hurrenez hurren.",
+        "description": "Help content for the OSD profile and font PREVIEW"
     },
     "osdSetupSelectedProfileLabel": {
         "message": "Unekoa:",
