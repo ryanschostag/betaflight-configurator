@@ -3987,6 +3987,10 @@
         "message": "Altitudea",
         "description": "One of the elements of the OSD"
     },
+    "osdTextElementFlyTime": {
+        "message": "Hegaldiaren denbora",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRateProfile": {
         "message": "PID aktiboen eta tasa profilaren zenbakizko bistaratzea"
     },
