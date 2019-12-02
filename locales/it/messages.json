@@ -1474,9 +1474,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "La regolarizzazione dei canali si applica a"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "Il tipo di metodo di filtraggio usato per setpoint derivative. La maggior parte degli utenti dovrebbero usare il valore di default \"BIQUAD\" poichè esso è un buon compromesso tra XXX e ritardo. \"PT1\" riduce leggermento il ritardo ma offre meno XXX."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "Il tipo di metodo di filtraggio usato per l'input. La maggior parte degli utenti dovrebbero usare il valore di default \"BIQUAD\" poichè esso è un buon compromesso tra XXX e ritardo. \"PT1\" riduce leggermento il ritardo ma offre meno XXX."
     },
