@@ -1521,7 +1521,7 @@
         "message": "Los canales sobre los que se aplica el suavizado"
     },
     "rcSmoothingDerivativeTypeHelp": {
-        "message": "El tipo de filtro utilizado para el derivativo del valor objetivo. La mayoría de usuarios deberían dejar el valor por defecto \"BIQUAD\" ya que proporciona un buen balance entre suavidad y retardo. \"PT1\" reduce ligeramente el retraso pero proporciona menos suavizado."
+        "message": "El tipo de filtro utilizado para el derivativo del valor objetivo. Empezando en 4.2 se recomienda el valor por defecto de \"Auto\". Para 4.1 y anterior la mayoría de usuarios deberían dejar el valor por defecto \"BIQUAD\" ya que proporciona un buen balance entre suavidad y retardo. \"PT1\" reduce ligeramente el retraso pero proporciona menos suavizado."
     },
     "rcSmoothingInputTypeHelp": {
         "message": "El tipo de filtro utilizado para el derivativo para la entrada. La mayoría de usuarios deberían dejar el valor por defecto \"BIQUAD\" ya que proporciona un buen balance entre suavidad y retardo. \"PT1\" reduce ligeramente el retraso pero proporciona menos suavizado."
@@ -1546,6 +1546,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Apagado"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Auto"
     },
     "receiverRcSmoothingChannel": {
         "message": "Canales Suavizados"
