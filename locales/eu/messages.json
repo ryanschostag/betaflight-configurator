@@ -1527,9 +1527,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Leuntzea aplikatzeko kanalak"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "Ezarpen-metodoaren deribaziorako erabiltzen den iragazketa-metodoa. Erabiltzaile gehienek \"BIQUAD\" balio lehenetsia erabili behar dute leuntasunaren eta atzerapenaren arteko oreka ona ematen duelako. \"PT1\" atzerapen apur bat murrizten du baina leuntze gutxiago ematen du."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "Sarrerarako erabiltzen den iragazketa metodoa. Erabiltzaile gehienek \"BIQUAD\" balioa erabili behar dute, leuntasunaren eta atzerapenaren arteko oreka ona ematen duelako. \"PT1\" atzerapena apur bat murrizten du baina leuntze gutxiago ematen du."
     },
