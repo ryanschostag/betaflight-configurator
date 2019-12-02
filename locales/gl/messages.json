@@ -1599,9 +1599,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "A suavización de canles aplícase a"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "O tipo de método de filtrado empregado para a derivada de consigna. A maioría dos usuarios deben usar o valor \"BIQUAD\" predeterminado xa que proporciona un bo equilibrio entre a suavidade e o atraso. \"PT1\" reduce o atraso lixeiramente pero proporciona menos suavización."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "O tipo de método de filtrado empregado para a entrada. A maioría dos usuarios deben usar o valor \"BIQUAD\" predeterminado xa que proporciona un bo equilibrio entre a suavidade e o atraso. \"PT1\" reduce o atraso lixeiramente pero proporciona menos suavización."
     },
