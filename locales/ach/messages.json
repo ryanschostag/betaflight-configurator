@@ -1603,7 +1603,7 @@
         "message": "crwdns8843:0crwdne8843:0"
     },
     "rcSmoothingDerivativeTypeHelp": {
-        "message": "crwdns8844:0crwdne8844:0"
+        "message": "crwdns9925:0crwdne9925:0"
     },
     "rcSmoothingInputTypeHelp": {
         "message": "crwdns8845:0crwdne8845:0"
@@ -1628,6 +1628,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "crwdns8852:0crwdne8852:0"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "crwdns9927:0crwdne9927:0"
     },
     "receiverRcSmoothingChannel": {
         "message": "crwdns8853:0crwdne8853:0"
