@@ -272,13 +272,13 @@
         "message": "Error de connexió de port sèrie: trames dolentes"
     },
     "serialErrorParityError": {
-        "message": "Error de connexió de port sèrie: trames dolentes"
+        "message": "Error de connexió de port sèrie: paritat dolenta"
     },
     "serialPortOpened": {
         "message": "Port sèrie <span class=\"message-positive\">correctament</span> obert amb ID: $1"
     },
     "serialPortOpenFail": {
-        "message": "<span class=\"message-negative\">Ha fallat</span> obrir el port de sèrie"
+        "message": "<span class=\"message-negative\">Ha fallat</span> al obrir el port sèrie"
     },
     "serialPortClosedOk": {
         "message": "Port sèrie <span class=\"message-positive\">correctament</span> tancat"
@@ -317,7 +317,7 @@
         "message": "STM32 - timeout, la programació: HA FALLAT"
     },
     "stm32WrongResponse": {
-        "message": "La comunicació STM32 ha fallat resposta errònia, s'esperava: $1 (0$ x2) rebut: $3 (0 x$ 4)"
+        "message": "La comunicació STM32 ha fallat resposta errònia, s'esperava: $1 (0$x2) rebut: $3 (0x$4)"
     },
     "stm32ContactingBootloader": {
         "message": "Contactant bootloader..."
@@ -420,13 +420,13 @@
         "message": "Informació de release carregada de $1 carregada de GitHub."
     },
     "releaseCheckFailed": {
-        "message": "<b>La consulta a GitHubper les releases de $1 ha fallat. Fent servir informació catxejada. Raó: <code>$2</code></b>"
+        "message": "<b>La consulta a GitHub per les versions de $1 ha fallat. Fent servir informació cau. Raó: <code>$2</code></b>"
     },
     "releaseCheckCached": {
-        "message": "Fens servir informació catxejada per a les release de $1."
+        "message": "Fent servir informació cau per les versions de $1."
     },
     "releaseCheckNoInfo": {
-        "message": "No hi ha informació de la release per a $1."
+        "message": "No hi ha informació disponible de la versió per a $1."
     },
     "tabSwitchConnectionRequired": {
         "message": "Has de <strong>connectar</strong> abans de poder veure les altres pestanyes."
@@ -525,10 +525,10 @@
         "message": "Benvingut a <strong>Betaflight - Configurator</strong>, una aplicació dissenyada per a simplificar l'actualització, configuració i posada a punt de la teva controladora de vol."
     },
     "defaultWelcomeHead": {
-        "message": "Hardware"
+        "message": "Maquinari"
     },
     "defaultWelcomeText": {
-        "message": "L’aplicació és compatible amb tot el maquinari que pot executar Betaflight. Comproveu la pestanya Flash per trobar la llista completa del maquinari. <br><br> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Descarregar Betaflight Blackbox Log Viewer</a><br /><br />El codi font del firmware es pot descarregar des de <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_ blank\">aquí</a><br /><br />Últimes <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\" _ blank \">Controladors CP210x</a>es poden descarregar de<a href =\" http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\" _ blank\">aquí</a><br />Últims <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_ blank\">Els controladors STM USB VCP</a>es poden descarregar de <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\" _ blank\">aquí</a><br />Últim<a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\" _ blank\">Zadig</a>per a la instal·lació del controlador de Windows USB es pot descarregar de <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_ blank\">aquí</a><br />"
+        "message": "L’aplicació és compatible amb tot el maquinari que pot executar Betaflight. Comproveu la pestanya Flaixejador de firmware per trobar la llista completa del maquinari. <br><br> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Descarregar Betaflight Blackbox Log Viewer</a><br /><br />El codi font del programari es pot descarregar des de <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_ blank\">aquí</a><br /><br />Últimes <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\" _ blank \"> Controladors CP210x</a> es poden descarregar de <a href =\" http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\" _ blank\">aquí</a><br />Últims <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_ blank\">Els controladors STM USB VCP</a> es poden descarregar de <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\" _ blank\">aquí</a><br />Últim <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\" _ blank\">Zadig</a> per a la instal·lació del controlador de Windows USB es pot descarregar de <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_ blank\">aquí</a><br />"
     },
     "defaultContributingHead": {
         "message": "Contribuir"
@@ -1125,7 +1125,7 @@
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesLong": {
-        "message": "$t(configuracióMotorPoles.message) (nombre d’imants a la campana del motor)",
+        "message": "$t(configurationMotorPoles.message) (nombre d’imants a la campana del motor)",
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesHelp": {
@@ -1253,7 +1253,7 @@
         "message": "Cicles/Seg [Hz]"
     },
     "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Nota sobre el mode de mostreig de giroscopis de 32 kHz:</strong>La compatibilitat amb el mode de mostreig de giroscopis de 32 kHz es va afegir a Betaflight com a funció experimental. Durant els anys que va estar disponible, mai no ha demostrat tenir cap avantatge respecte al mode de mostreig de giroscopis de 8 kHz, a causa de la seva susceptibilitat a vibracions i el seu elevat nivell de soroll que requereix un filtratge agressiu, provocant retards en el bucle de control. Per aquest motiu, s'ha descartat el suport<strong>per al mode de mostreig de giroscopis de 32 kHz</strong>a Betaflight 4.0."
+        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Nota sobre el mode de mostreig de giroscopis de 32 kHz:</strong> La compatibilitat amb el mode de mostreig de giroscopis de 32 kHz es va afegir a Betaflight com a funció experimental. Durant els anys que va estar disponible, mai no ha demostrat tenir cap avantatge respecte al mode de mostreig de giroscopis de 8 kHz, a causa de la seva susceptibilitat a vibracions i el seu elevat nivell de soroll que requereix un filtratge agressiu, provocant retards en el bucle de control. Per aquest motiu, s'ha descartat el suport<strong> per al mode de mostreig de giroscopis de 32 kHz</strong> a Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1518,7 +1518,7 @@
         "message": "El suavitzat de canals s’aplica a"
     },
     "rcSmoothingDerivativeTypeHelp": {
-        "message": "El tipus de mètode de filtratge utilitzat per a la derivada de consigna. La majoria dels usuaris han d'utilitzar el valor predeterminat de \"BIQUAD\" ja que proporciona un bon equilibri entre suavitat i retard. \"PT1\" redueix lleugerament el retard però proporciona menys suavitat."
+        "message": "El tipus de mètode de filtratge utilitzat per l'entrada derivada. A partir del 4.2 es recomana el valor predeterminat de \"Auto\". Per a 4.1 i versions anteriors, la majoria d'usuaris han d'utilitzar el valor predeterminat de \"BIQUAD\", ja que proporciona un bon equilibri entre suavitat i retard. \"PT1\" redueix lleugerament el retard però proporciona menys suavitat."
     },
     "rcSmoothingInputTypeHelp": {
         "message": "El tipus de mètode de filtratge utilitzat per l'entrada. La majoria dels usuaris han d'utilitzar el valor predeterminat de \"BIQUAD\" ja que proporciona un bon equilibri entre suavitat i retard. \"PT1\" redueix lleugerament el retard però proporciona menys suavitat."
@@ -1543,6 +1543,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Inactiu"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Auto"
     },
     "receiverRcSmoothingChannel": {
         "message": "Canals suavitzats"
@@ -1784,19 +1787,19 @@
         "message": "El valor mínim (en ms) per un stick per a ser reconegut com a high/right (MAX_CHECK)."
     },
     "receiverDeadband": {
-        "message": "RC Deadband"
+        "message": "Banda morta RC"
     },
     "receiverHelpDeadband": {
         "message": "Aquests són valors (en ms) de quant pot canviar un input RC abans que sigui considerat vàlid. Pot ser incrementat per transmissors amb variacions  a les sortides quan no es toca."
     },
     "receiverYawDeadband": {
-        "message": "Yaw Deadband"
+        "message": "Banda morta Yaw"
     },
     "receiverHelpYawDeadband": {
         "message": "Aquests són valors (en ms) de quant pot canviar un input RC abans que sigui considerat vàlid. Pot ser incrementat per transmissors amb variacions  a les sortides quan no es toca. <strong>Només per el YAW.</strong>"
     },
     "recevier3dDeadbandThrottle": {
-        "message": "3D Throttle Deadband"
+        "message": "Banda morta 3D"
     },
     "receiverHelp3dDeadbandThrottle": {
         "message": "Aquests valors (en ms) són per ampliar la zona neutral. <strong>Aquest ajustament és només per al throttle 3D.</strong>"
@@ -1844,7 +1847,7 @@
         "message": "Habilita els controls"
     },
     "auxiliaryHelp": {
-        "message": "Configura els modes aquí mitjançant una combinació de rangs i/o enllaços a altres modes (enllaços compatibles amb BF 4.0 i posteriors). Utilitzeu <strong>rangs</strong> per definir els interruptors del transmissor i les assignacions de mode corresponents. Un canal receptor que dóna una lectura entre un interval min/max activarà el mode. Feu servir un <strong>enllaç </strong> per activar un mode quan s’activi un altre mode.<strong>Excepcions:</strong> ARM no es pot enllaçar amb o des d'un altre mode, els modes no es poden enllaçar a altres modes configurats amb un enllaç (enllaços encadenats). Podeu utilitzar diversos intervals/enllaços per activar qualsevol mode. Si hi ha més d’un interval/enllaç definit per a un mode, es pot definir cadascun d’ells <strong>AND</strong> o a <strong>OR</strong>. S’activarà un mode quan: <br /> - ALL <strong>AND</strong> els intervals/enllaços estiguin actius; OR<br /> - almenys un rang/enllaç <strong>OR</strong> està actiu.<br /><br />Recordeu guardar la configuració mitjançant el botó Desa."
+        "message": "Configura els modes aquí mitjançant una combinació de rangs i/o enllaços a altres modes (enllaços compatibles amb BF 4.0 i posteriors). Utilitzeu <strong>rangs</strong> per definir els interruptors del transmissor i les assignacions de mode corresponents. Un canal receptor que dóna una lectura entre un interval min/max activarà el mode. Feu servir un <strong>enllaç </strong> per activar un mode quan s’activi un altre mode.<strong>Excepcions:</strong> ARM no es pot enllaçar amb o des d'un altre mode, els modes no es poden enllaçar a altres modes configurats amb un enllaç (enllaços encadenats). Podeu utilitzar diversos intervals/enllaços per activar qualsevol mode. Si hi ha més d’un interval/enllaç definit per a un mode, es pot definir cadascun d’ells <strong>AND</strong> o a <strong>OR</strong>. S’activarà un mode quan: <br /> - Tots <strong>AND</strong> els intervals/enllaços estiguin actius; OR<br /> - Almenys un rang/enllaç <strong>OR</strong> està actiu.<br /><br />Recordeu guardar la configuració mitjançant el botó Desa."
     },
     "auxiliaryToggleUnused": {
         "message": "Amagueu els modes no utilitzats"
@@ -2536,7 +2539,7 @@
         "message": "Estat desconegut $1"
     },
     "firmwareFlasherReleaseSummaryHead": {
-        "message": "Info del llançament"
+        "message": "Informació de la publicació"
     },
     "firmwareFlasherReleaseManufacturer": {
         "message": "Fabricant:"
@@ -2554,7 +2557,7 @@
         "message": "Data:"
     },
     "firmwareFlasherReleaseTarget": {
-        "message": "Target:"
+        "message": "Model:"
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binari:"
@@ -2587,7 +2590,7 @@
         "message": "S'ha carregat el objecte, carregueu el fitxer del programari"
     },
     "firmwareFlasherNoReboot": {
-        "message": "Sense reboot sequence"
+        "message": "Sense seqüència de reinici"
     },
     "firmwareFlasherOnlineSelectBuildType": {
         "message": "Seleccioneu tipus de versió per veure les controladores disponibles."
@@ -2611,10 +2614,10 @@
         "message": "Provant de flashejar la controladora automàticament (llençat per la detecció d'un nou port de sèrie)"
     },
     "firmwareFlasherFullChipErase": {
-        "message": "Full chip erase"
+        "message": "Esborrat total del xip"
     },
     "firmwareFlasherFullChipEraseDescription": {
-        "message": "Esborra tota la configuració desada a la controladora"
+        "message": "Esborra tota la configuració actual desada a la controladora."
     },
     "firmwareFlasherFlashDevelopmentFirmware": {
         "message": "Fes servir firmware en desenvolupament"
@@ -2671,16 +2674,16 @@
         "message": "Escull una versió de firmware"
     },
     "firmwareFlasherButtonLoadLocal": {
-        "message": "Carrega Firmware [Local]"
+        "message": "Carrega Programari [Local]"
     },
     "firmwareFlasherButtonLoadOnline": {
-        "message": "Carrega Firmware [Online]"
+        "message": "Carrega Programari [Internet]"
     },
     "firmwareFlasherButtonDownloading": {
         "message": "Descarregant..."
     },
     "firmwareFlasherFlashFirmware": {
-        "message": "Flashejar Firmware"
+        "message": "Actualizar Programari"
     },
     "firmwareFlasherGithubInfoHead": {
         "message": "Informació de Firmware a GitHub"
@@ -2701,13 +2704,13 @@
         "message": "Missatge:"
     },
     "firmwareFlasherWarningText": {
-        "message": "Si us plau, <span class=\"message-negative\">no</span> intenteu flashejar el maquinari <strong>no-Betaflight</strong> amb aquest firmware flasher.<br /><span class=\"message-negative\">No</span> <strong>desconnecteu</strong> la FC o <strong>desactiveu</strong> l'ordinador mentre flasheja.<br /><br /><strong>Nota: </strong>STM32 bootloader s'emmagatzema en ROM, no es pot brickejar. <br /><strong>Nota: </strong><span class=\"message-negative\">Connectar automàticament</span> sempre està desactivat mentre es troba dins del firmware flasher.<br /><strong>Nota: </strong>Assegureu-vos que teniu una còpia de seguretat; les actualitzacions / downgrades esborraran la teva configuració.<br /><strong>Nota:</strong> si teniu problemes per flashejar <strong>proveu de desconnectar tots els cables del FC</strong> intenteu reiniciar, actualitzeu Chrome, actualitzeu controladors.<br /> <strong>Nota:</strong> Quan flashejis les cpmtrpñadpres que connecten directament als ports USB (la majoria de les controladores més noves), assegureu-vos de llegir la secció USB Flashing del manual Betaflight i instal·lar el programari i controladors correctes"
+        "message": "Si us plau, <span class=\"message-negative\">no</span> intenteu flashejar el maquinari <strong>no-Betaflight</strong> amb aquest firmware flasher.<br /><span class=\"message-negative\">No</span> <strong>desconnecteu</strong> la FC o <strong>desactiveu</strong> l'ordinador mentre flasheja.<br /><br /><strong>Nota: </strong>STM32 bootloader s'emmagatzema en ROM, no es pot malmetre. <br /><strong>Nota: </strong><span class=\"message-negative\">Connectar automàticament</span> sempre està desactivat mentre es troba dins del firmware flasher.<br /><strong>Nota: </strong>Assegureu-vos que teniu una còpia de seguretat; les actualitzacions / downgrades esborraran la teva configuració.<br /><strong>Nota:</strong> si teniu problemes per flashejar <strong>proveu de desconnectar tots els cables del FC</strong> intenteu reiniciar, actualitzeu Chrome, actualitzeu controladors.<br /> <strong>Nota:</strong> Quan flashejis les controladores que connecten directament als ports USB (la majoria de les controladores més noves), assegureu-vos de llegir la secció USB Flashing del manual Betaflight i instal·lar el programari i controladors correctes"
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Recuperació / Comunicació perduda</strong>"
     },
     "firmwareFlasherRecoveryText": {
-        "message": "Si has perdut comunicació amb la teva controladora segueix aquests passos: <ul><li>Apaga</li><li>Habilita \"No seqüència de reinici\", habilita \"Full chip erase\"</li><li>Creua els pins de boot o prem el botó.</li><li>Engega (El led d'activitat no ha de parpellejar si ho has fet correctament).</li><li>Instaŀla els drivers STM32 i Zadig si es requereix (mira a la secció de <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">flasheig USB</a> del manual).</li><li>Tanca el configurador, Tanca totes les apps de Chrome, Reinicia el configurador.</li><li>Deixa anar el botó de Boot si en tens.</li><li>Flasheja el firmware correcte (Amb velocitat de bauds manual si així ho necessites).</li><li>Apaga.</li><li>Treu el boot dels pins.</li><li>Engega (El led d'activitat ha de parpellejar).</li><li>Connecta amb normalitat.</li></ul>"
+        "message": "Si has perdut comunicació amb la teva controladora segueix aquests passos: <ul><li>Apaga</li><li>Habilita \"Sense seqüència de reinici\", habilita \"Esborrat total del xip\"</li><li>Creua els pins de boot o prem el botó.</li><li>Engega (El led d'activitat no ha de parpellejar si ho has fet correctament).</li><li>Instaŀla els drivers STM32 i Zadig si es requereix (mira a la secció de <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">flasheig USB</a> del manual).</li><li>Tanca el configurador, Tanca totes les apps de Chrome, Reinicia el configurador.</li><li>Deixa anar el botó de Boot si en tens.</li><li>Flasheja el firmware correcte (Amb velocitat de bauds manual si així ho necessites).</li><li>Apaga.</li><li>Treu el boot dels pins.</li><li>Engega (El led d'activitat ha de parpellejar).</li><li>Connecta amb normalitat.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Surt del flashejador de Firmware"
@@ -3167,7 +3170,7 @@
         "description": "Tuning sliders disabled note when manual changes are detected"
     },
     "pidTuningSliderEnableButton": {
-        "message": "Activeu lliscants",
+        "message": "Activeu controls lliscants",
         "description": "Button label for enabling sliders"
     },
     "pidTuningSlidersNonExpertMode": {
@@ -3456,7 +3459,7 @@
         "message": "El failsafe te 2 etapes. <strong>Stage 1</strong> entra quan un canal de vol te un pols invàlid, el receptor reporta el mode failsafe o no hi ha cap senyal del receptor. S'aplica a <span class=\"message-negative\">tots els canals</span> i te un petit temps per a permetre recuperar. <strong>Stage 2</strong> s'aplica quen la condició d'error triga més que el temps de guarda especifical mentre l'aeronau està <span class=\"message-negative\">armada</span>, tots els canals romandran al fallback excepte que es sobrescriguin per el procediment escollit. <br /><strong>Nota:</strong> Abans d'entrar a l'stage 1, el fallback de canals s'aplica individualment als canals AUX que tenen pulsos invàlids."
     },
     "failsafePulsrangeTitle": {
-        "message": "Ajustaments de Valid Pulse Range"
+        "message": "Ajustos de Rang vàlid de Pulses"
     },
     "failsafePulsrangeHelp": {
         "message": "Pulsos més curts que el mínim o més llargs que el màxim són invàlids i llençaran els fallbacks de cada canal AUX o entraràn a l'stage 1 per als canals de vol"
@@ -3468,7 +3471,7 @@
         "message": "Mida màxima"
     },
     "failsafeChannelFallbackSettingsTitle": {
-        "message": "Ajustaments de Channel Fallback"
+        "message": "Ajustos de Channel Fallback"
     },
     "failsafeChannelFallbackSettingsHelp": {
         "message": "Aquests ajustaments apliquen a canals AUX individuals i invàlids quan s'entra a l'stage 1.  <strong>Nota:</strong> aquests valors es desen en passos de 25usec així desapareixen els petits canvis"
@@ -3480,7 +3483,7 @@
         "message": "<strong>Hold</strong> vol dir mantenir l'últim valor correcte rebut. <strong>Set</strong> vol dir que el valor que proporcionis serà l'utilitzat"
     },
     "failsafeStageTwoSettingsTitle": {
-        "message": "Stage 2 - Ajustaments"
+        "message": "Stage 2 - Ajustos"
     },
     "failsafeDelayItem": {
         "message": "Temps de guarda per activar l'stage 2 després de perdre la senyal [1 = 0.1 sec.]"
@@ -3489,7 +3492,7 @@
         "message": "Temps d'espera de l'stage 1 per a recuperació"
     },
     "failsafeThrottleLowItem": {
-        "message": "Retard de Failsafe Throttle Low [1 = 0.1 seg.]"
+        "message": "Retard de Failsafe Throttle baix [1 = 0.1 seg.]"
     },
     "failsafeThrottleLowHelp": {
         "message": "Només desarma l'aeronau en comptes d'executar el failsafe si el throttle està baix per un cert temps"
@@ -3603,7 +3606,7 @@
         "message": "Actualització de firmware <span class=\"message-negative\">requerida</span>. La configuració de Batería/Amperatge/Voltatge fa servir l'API &lt; 1.33.0 (Versió de Betaflight &lt;= 3.17) no està suportada."
     },
     "powerBatteryVoltageMeterSource": {
-        "message": "Font del Mesurador de Voltatge"
+        "message": "Origen de l'mesurador de Voltatge"
     },
     "powerBatteryVoltageMeterTypeNone": {
         "message": "Cap"
@@ -3615,7 +3618,7 @@
         "message": "Sensor d'ESC"
     },
     "powerBatteryCurrentMeterSource": {
-        "message": "Font del Mesurador de Corrent"
+        "message": "Origen de l'mesurador de Amperatge"
     },
     "powerBatteryCurrentMeterTypeNone": {
         "message": "Cap"
@@ -4892,7 +4895,7 @@
         "description": "Message to show when the VTX Table has been loaded from a external source"
     },
     "vtxFrequencyChannel": {
-        "message": "Entra freqüència directament",
+        "message": "Entrar freqüència directament",
         "description": "Text of one of the fields of the VTX tab"
     },
     "vtxFrequencyChannelHelp": {
@@ -4984,7 +4987,7 @@
         "description": "Text of one of the fields of the VTX tab"
     },
     "vtxPower": {
-        "message": "Alimentació",
+        "message": "Potència",
         "description": "Text of one of the fields of the VTX tab"
     },
     "vtxPowerHelp": {
@@ -5008,7 +5011,7 @@
         "description": "Help text for the pit mode field of the VTX tab"
     },
     "vtxLowPowerDisarm": {
-        "message": "Desarmat baixa potencia",
+        "message": "Desarmat a baixa potència",
         "description": "Text of one of the fields of the VTX tab"
     },
     "vtxLowPowerDisarmHelp": {
@@ -5032,7 +5035,7 @@
         "description": "Text of the header of the VTX Table element in the VTX tab"
     },
     "vtxTablePowerLevels": {
-        "message": "Nombre de nivells de potencia",
+        "message": "Nombre de nivells de potència",
         "description": "Text of one of the fields of the VTX Table element in the VTX tab"
     },
     "vtxTablePowerLevelsHelp": {
@@ -5108,7 +5111,7 @@
         "description": "Save to file button in the VTX tab"
     },
     "vtxButtonSaveLua": {
-        "message": "Desa Script Lua",
+        "message": "Desar Script Lua",
         "description": "Save Lua script button in the VTX tab"
     },
     "vtxLuaFileHelp": {
@@ -5318,7 +5321,7 @@
         "message": "MODE DE CANVI DE CÀMERA"
     },
     "flashTab": {
-        "message": "Actualitza el programari"
+        "message": "Actualitzar Programari"
     },
     "cliAutoComplete": {
         "message": "Auto completat avançat del CLI"
