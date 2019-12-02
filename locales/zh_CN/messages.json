@@ -1568,9 +1568,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "适用平滑的通道"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "用于设定点导数信号的滤波方法的类型。大多数用户应该使用默认的 \"BIQUAD\" ，因为它在平滑和延迟之间提供了良好的平衡。\"PT1\" 稍微减少了延迟，但提供的平滑程度也较低。"
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "用于输入信号的滤波方法的类型。大多数用户应该使用默认的 \"BIQUAD\" ，因为它在平滑和延迟之间提供了良好的平衡。\"PT1\" 稍微减少了延迟，但提供的平滑程度也较低。"
     },
