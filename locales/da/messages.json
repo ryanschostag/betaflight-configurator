@@ -1224,9 +1224,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Kanaludjævningen gælder for"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "Filtreringsmetoden, der benyttes til det afledte setpoint. De fleste brugere bør bruge standardværdien \"BIQUAD\", da den giver en god balance mellem jævnhed og forsinkelse. \"PT1\" reducerer forsinkelsen lidt, men giver mindre udjævning."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "Filtreringsmetoden, der benyttes til indput. De fleste brugere bør bruge standardværdien \"BIQUAD\", da den giver en god balance mellem jævnhed og forsinkelse. \"PT1\" reducerer forsinkelsen lidt, men giver mindre udjævning."
     },
