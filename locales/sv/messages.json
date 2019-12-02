@@ -1512,9 +1512,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Kanalutjämningen gäller"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "Typen av filtreringsmetod som används för setpoint-derivativen. De flesta användare bör använda standardvärdet \"BIQUAD\" eftersom det ger en bra balans mellan utjämning och fördröjning. \"PT1\" minskar fördröjningen något men ger mindre utjämning."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "Typen av filtreringsmetod som används för inputen. De flesta användare bör använda standardvärdet \"BIQUAD\" eftersom det ger en bra balans mellan utjämning och fördröjning. \"PT1\" minskar fördröjningen något men ger mindre utjämning."
     },
