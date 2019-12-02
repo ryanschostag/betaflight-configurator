@@ -1213,9 +1213,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Channel smoothing diterapkan pada"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "Metoda filter yang digunakan untuk derivatif setpoint. Pengguna umumnya menggunakan nilai default \"BIQUAD\" karena seimbang antara smoothness dan delay. \"PT1\" mengurangi delay sekaligus mengurangi efek smoothing."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "Metoda filter yang digunakan untuk input. Pengguna umumnya menggunakan nilai default \"BIQUAD\" karena seimbang antara smoothness dan delay. \"PT1\" mengurangi delay sekaligus mengurangi efek smoothing."
     },
