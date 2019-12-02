@@ -1443,9 +1443,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Poravnavanje kanale se primjenjuje na"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "Vrsta metode filtriranje korištena za setpont D filter. Većina korisnike bi trebala koristiti zadanu \"BIQUAD\" opciju jer ona daje odličnu ravnotežu između poravnatosti i kašnjenja. \"PT1\" smanjuje kašnjenje, ali i poravnanja."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "Vrsta metode filtriranje korištena za ulazne kontrole. Većina korisnike bi trebala koristiti zadanu \"BIQUAD\" opciju jer ona daje odličnu ravnotežu između poravnatosti i kašnjenja. \"PT1\" smanjuje kašnjenje, ali i poravnanja."
     },
