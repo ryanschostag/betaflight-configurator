@@ -1589,7 +1589,7 @@
         "message": "채널 스무딩은 다음에 적용됩니다"
     },
     "rcSmoothingDerivativeTypeHelp": {
-        "message": "설정점 미분에 사용되는 필터링 방법의 형식입니다. 대부분의 사용자는 부드러움과 지연 간의 적절한 균형을 제공하는 기본 \"BIQUAD\" 값을 사용해야합니다. \"PT1\"은 약간 지연을 줄이지만 덜 부드럽게 만듭니다."
+        "message": "설정점 미분에 사용되는 필터링 방법의 형식입니다. 4.2로 시작하는 사용자는 기본 \"자동\"을 추천합니다. 4.1과 그 이전의 대부분의 사용자는 부드러움과 지연 간의 적절한 균형을 제공하는 기본 \"BIQUAD\" 값을 사용해야합니다. \"PT1\"은 약간 지연을 줄이지만 덜 부드럽게 만듭니다."
     },
     "rcSmoothingInputTypeHelp": {
         "message": "입력에 사용되는 필터링 방법의 형식입니다. 대부분의 사용자는 부드러움과 지연 간의 적절한 균형을 제공하는 기본 \"BIQUAD\" 값을 사용해야합니다. \"PT1\"은 약간 지연을 줄이지만 덜 부드럽게 만듭니다."
@@ -1614,6 +1614,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "끄기"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "자동"
     },
     "receiverRcSmoothingChannel": {
         "message": "채널 평활화"
