@@ -1426,9 +1426,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Kanāli uz kuriem pielieto izlīdzināšanu"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "Filtrēšanas metodes tips, ko pielieto iestatījuma derivative. Vairums lietotāju vajadzētu izmantot noklusēto vērtību \"BIQUAD\", jo tas nodrošina pieņemamu līdzsvaru starp gludumu un aizturi. \"PT1\" nedaudz samazina aizturi, bet dod mazāku izlīdzināšanu."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "Filtrēšanas metodes tips, ko pielieto ievadei. Vairums lietotāju vajadzētu izmantot noklusēto vērtību \"BIQUAD\", jo tas nodrošina pieņemamu līdzsvaru starp gludumu un aizturi. \"PT1\" nedaudz samazina aizturi, bet dod mazāku izlīdzināšanu."
     },
