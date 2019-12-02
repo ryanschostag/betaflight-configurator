@@ -1520,9 +1520,6 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Kanały do których odnosi się wygładzanie"
     },
-    "rcSmoothingDerivativeTypeHelp": {
-        "message": "Rodzaj metody filtrowania stosowanej do dopochodnych filtra wartości zadanej. Większość użytkowników powinna używać domyślnej wartości „BIQUAD”, ponieważ zapewnia ona równowagę między płynnością a opóźnieniem. „PT1” nieznacznie zmniejsza opóźnienie, ale zapewnia mniej wygładzania."
-    },
     "rcSmoothingInputTypeHelp": {
         "message": "Rodzaj metody filtrowania zastosowany dla danych wejściowych. Większość użytkowników powinna używać domyślnej wartości „BIQUAD”, ponieważ zapewnia ona równowagę między płynnością a opóźnieniem. „PT1” nieznacznie zmniejsza opóźnienie, ale zapewnia mniej wygładzania."
     },
