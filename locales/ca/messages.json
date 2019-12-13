@@ -648,7 +648,7 @@
         "message": "Resetejar eix Z, offset: 0 graus"
     },
     "initialSetupButtonResetZaxisValue": {
-        "message": "Resetejar eix Z, offset: $1 graus"
+        "message": "Restableix l'eix Z, offset: $1 graus"
     },
     "initialSetupMixerHead": {
         "message": "Tipus de Mixer"
@@ -848,7 +848,7 @@
         "message": "Model: $1"
     },
     "initialSetupAttitude": {
-        "message": "$1 grau/s"
+        "message": "$1 graus/s"
     },
     "initialSetupAccelCalibStarted": {
         "message": "Calibració de l'acceleròmetre iniciada"
