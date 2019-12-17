@@ -1544,6 +1544,9 @@
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "OFF"
     },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "自動"
+    },
     "receiverRcSmoothingChannel": {
         "message": "スムージングチャンネル"
     },
