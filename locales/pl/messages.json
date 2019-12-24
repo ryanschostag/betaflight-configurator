@@ -1544,6 +1544,9 @@
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Wył"
     },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Automatyczne"
+    },
     "receiverRcSmoothingChannel": {
         "message": "Kanały wygładzone"
     },
@@ -3202,6 +3205,14 @@
         "message": "Zasadniczo większe modele wymagają wyższych wartości PID ze względu na niższy stosunek mocy do masy. <br> <br> Mniejsze modele (mikro) wymagają mniejszych wartości PID ze względu na wyższy stosunek mocy do masy. <br> <br> Wyższe wartości są dla większych modeli. Niższe wartości dotyczą mniejszych modeli.",
         "description": "Master gain tuning slider helpicon message"
     },
+    "pidTuningPDGainSliderHelp": {
+        "message": "Niskie wzmocnienie członów P i D może powodować większe oscylacje typu \"propwash\" w silnikach. Zbyt niska wartość wzmocnień tych parametrów może powodować niestabilność maszyny. <br><br> Parametry P i D działają w parze w w celu minimalizacji oscylacji \"propwash\".<br><br> Wysokie wartości tych parametrów mogą powodować grzanie się silników poprzez duże oscylacje wysterowania silnika które mogą wystąpić podczas płynnego lotu na wprost. Co jest powodowane wysokim parametrem D.",
+        "description": "P and D gain tuning slider helpicon message"
+    },
+    "pidTuningResponseSliderHelp": {
+        "message": "Niższe wartości pogorszą reakcję na wychylenia drążków i mogą powodować powolne odbicie pod koniec przewrotów \"flip\" lub przekręcania się \"roll\" (I- term windup).<br><br>Wyższa wartość będzie miała lepszą odpowiedź na ostre ruchy drążków. Zbyt wysokie wartości mogą jednak spowodować przekroczenie i szybkie odbicie pod koniec przewrotów lub przekręceń.",
+        "description": "Stick response gain tuning slider helpicon message"
+    },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Żyroskopowe filtry dolnoprzepustowe"
     },
@@ -3241,6 +3252,9 @@
     "pidTuningGyroNotch2Cutoff": {
         "message": "Częstotliwość odcięcia (wąskiego) filtru środkowo zaporowego2 [Hz]"
     },
+    "pidTuningNotchFilterHelp": {
+        "message": "Filtr pasmowo-zaporowy o częstotliwości środkowej oraz odcięcia. Częstotliwość środkowa jest środkiem całego zakresu filtra, a częstotliwość odcięcia jest miejscem w paśmie gdzie filtrowanie się zaczyna. Dla przykładu: częstotliwość odcięcia 160 i środkowa 260 oznacza zakres pracy filtra 160-360 Hz, przy największym tłumieniu w środku tego zakresu"
+    },
     "pidTuningDynamicNotchFilterGroup": {
         "message": "Dynamiczny Filtr środkowo zaporowy"
     },
@@ -3267,6 +3281,9 @@
     },
     "pidTuningDynamicNotchWidthPercentHelp": {
         "message": "Ustawia szerokość między dwoma dynamicznymi filtrami wycinającymi. Ustawienie go na 0 spowoduje wyłączenie drugiego filtra z wycięciem dynamicznym i skróci opóźnienie filtra, jednak może spowodować wzrost temperatury silników."
+    },
+    "pidTuningDynamicNotchQHelp": {
+        "message": "Współczynnik Q dostosowuje szerokość charakterystyki filtra dynamicznego. Wyższa wartość sprawia, że pasmo aktywne filtra jest wąskie i dokładniejsze, a niższa wartość daje szerszą strefę aktywną. Używanie naprawdę niskiej wartości znacznie zwiększy opóźnienie filtra (więcej obliczeń)."
     },
     "pidTuningDynamicNotchMinHzHelp": {
         "message": "Określa najniższą środkową częstotliwość dynamicznego filtra pasmowo zaporowego \"notch\", poniżej której filtr dynamiczny nie zejdzie."
@@ -3313,6 +3330,12 @@
     "pidTuningDTermLowpass2Type": {
         "message": "Typ 2 Filtra dolnoprzepustowego D Term"
     },
+    "pidTuningDTermLowpassDynMinFrequency": {
+        "message": "Minimalna częstotliwość odcięcia dynamicznego filtru dolnoprzepustowego 1 dla członu D [Hz]"
+    },
+    "pidTuningDTermLowpassDynMaxFrequency": {
+        "message": "Maksymalna częstotliwość odcięcia dynamicznego filtru dolnoprzepustowego 1 dla członu D [Hz]"
+    },
     "pidTuningDTermLowpassDynType": {
         "message": "Typ Filtra dolnoprzepustowego D Term"
     },
@@ -3349,6 +3372,9 @@
     "pidTuningItermRelax": {
         "message": "I Term Relax"
     },
+    "pidTuningItermRelaxHelp": {
+        "message": "Ogranicza nawarstwianie się członu I, gdy dochodzi do szybkich ruchów. Pomaga to w szczególności zmniejszyć odbicie pod koniec zwrotów i innych szybkich ruchów. Możesz wybrać osie, w których to jest aktywne, i czy szybki ruch zostanie wykryty za pomocą żyroskopu lub Ustawienia (drążka)."
+    },
     "pidTuningItermRelaxAxes": {
         "message": "Osie",
         "description": "Iterm Relax Axes selection"
@@ -3382,6 +3408,9 @@
     "pidTuningAbsoluteControlGain": {
         "message": "Kontrola całkowita"
     },
+    "pidTuningAbsoluteControlGainHelp": {
+        "message": "Ta funkcja rozwiązuje niektóre podstawowe problemy z $t(pidTuningItermRotation.message) i powinna w pewnym momencie być zmieniona. Ta funkcja gromadzi bezwzględny błąd żyroskopowy we współrzędnych maszyny i dodaje poprawkę do wyniku. Aby to działało, musisz włączyć AirMode i $t(pidTuningItermRelax.message) (dla $t(pidTuningItermRelaxAxesOptionRP.message)). Jeśli łączysz tę funkcję z $t(pidTuningIntegratedYaw.message), możesz ustawić $t(pidTuningItermRelax.message) włączone dla $t(pidTuningItermRelaxAxesOptionRPY.message)."
+    },
     "pidTuningThrottleBoost": {
         "message": "Wzmocnienie przepustnicy"
     },
@@ -3390,6 +3419,9 @@
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Limit kąta trybu treningowego akrobatycznego"
+    },
+    "pidTuningAcroTrainerAngleLimitHelp": {
+        "message": "Dodaje nowy tryb ograniczania kąta dla pilotów, którzy uczą się latać w trybie akrobatycznym \"acro\". Prawidłowy zakres wynosi 10-80 i musi być aktywowany przy użyciu przełącznika w karcie $t(tabAuxiliary.message)."
     },
     "pidTuningIntegratedYaw": {
         "message": "Zintegrowane odchylenie Yaw"
@@ -3409,6 +3441,9 @@
     "failsafePulsrangeTitle": {
         "message": "Ustawienia akceptowalnego zakresu impulsu"
     },
+    "failsafePulsrangeHelp": {
+        "message": "Impulsy krótsze od minimum lub dłuższe od maksimum są nieprawidłowe i będą wyzwalały zastosowanie indywidualnych ustawień awaryjnych kanału dla kanałów AUX lub zastosowanie 1 etapu trybu awaryjnego \"failsafe\" dla kanałów lotów"
+    },
     "failsafeRxMinUsecItem": {
         "message": "Minimalna długość"
     },
@@ -3417,6 +3452,15 @@
     },
     "failsafeChannelFallbackSettingsTitle": {
         "message": "Zastępcze ustawienia kanału"
+    },
+    "failsafeChannelFallbackSettingsHelp": {
+        "message": "Te ustawienia są stosowane do błędnych kanałów AUX lub do wszystkich kanałów gdy jest aktywny etap 1. <strong>Uwaga:</strong> wartości są zapisywane w krokach 25 usec, więc małe zmiany znikają"
+    },
+    "failsafeChannelFallbackSettingsAuto": {
+        "message": "<strong>Auto</strong> ustawia poziomy Odchylenia \"Roll\", Pochylenia \"Pitch\", Przechylenia \"Yaw\" wyśrodkowane, a Gazu \"Throttle\" na poziomie minimalnym. <strong>Przytrzymaj \"Hold\"</strong> oznacza utrzymanie takiej wartości jaką ostatnio odebrano - ostatnia wartość bez błędów"
+    },
+    "failsafeChannelFallbackSettingsHold": {
+        "message": "<strong>Przytrzymaj \"Hold\"</strong> oznacza utrzymanie ostatniej otrzymanej dobrej wartości. <strong>Ustaw \"Set\"</strong> oznacza, że podana tutaj wartość zostanie użyta"
     },
     "failsafeStageTwoSettingsTitle": {
         "message": "Etap 2 - Ustawienia"
@@ -3826,6 +3870,10 @@
         "message": "Podgląd dla",
         "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
     },
+    "osdSetupPreviewForTitle": {
+        "message": "Zmiana profilu lub czcionki w tym oknie NIE zmieni profilu lub czcionki w kontrolerze lotu, zmiana ma wpływ tylko na okno podglądu. Jeśli chcesz zmienić te ustawienia w kontrolerze, musisz użyć opcji$t(osdSetupSelectedProfileTitle.message)' lub przycisku '$t(osdSetupFontManager.message)'.",
+        "description": "Help content for the OSD profile and font PREVIEW"
+    },
     "osdSetupSelectedProfileTitle": {
         "message": "Aktywny profil OSD",
         "description": "Title of the box to select the current active OSD profile"
@@ -4081,6 +4129,9 @@
     "osdTextElementFlyTime": {
         "message": "Czas lotu",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlyTime": {
+        "message": "Całkowity czas uzbrojenia maszyny w czasie pracy w tym cyklu zasilania(na tej baterii) - miga gdy przekroczy poziom alarmowy"
     },
     "osdTextElementFlyMode": {
         "message": "Tryb lotu",
@@ -4822,6 +4873,10 @@
     "osdButtonSaved": {
         "message": "Zapisano"
     },
+    "vtxHelp": {
+        "message": "Tutaj możesz skonfigurować wartości dla transmisji wideo (VTX). Możesz przeglądać i zmieniać wartości transmisji, w tym tabele VTX, jeśli obsługuje je kontroler lotu i VTX.<br>Aby skonfigurować VTX użyj następujących kroków:<br>1. Przejdź do <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight/wiki/VTX-tables\">tej strony</a>;<br>2. Znajdź odpowiedni plik konfiguracyjny VTX dla swojego kraju i Twojego modelu VTX i pobierz go.<br>3. Kliknij '$t(vtxButtonLoadFile.message)' poniżej, wybierz plik konfiguracyjny VTX, załaduj go,<br>4. Sprawdź, czy ustawienia są poprawne;<br>5. Kliknij '$t(vtxButtonSave.message)' aby przechowywać ustawienia VTX w kontrolerze lotu.<br>6. Opcjonalnie kliknij '$t(vtxButtonSaveLua.message)' aby zapisać plik konfiguracyjny lua, którego możesz użyć ze skryptami betaflight lua (zobacz więcej <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">tutaj</a>.)",
+        "description": "Introduction message in the VTX tab"
+    },
     "vtxMessageNotSupported": {
         "message": "<span class = \"message-negative\"> Uwaga: </span> Twój VTX nie jest skonfigurowany lub nie jest obsługiwany. Nie możesz stąd modyfikować wartości VTX. Będzie to możliwe tylko wtedy, gdy kontroler lotu jest podłączony do VTX przy użyciu protokołu, takiego jak Tramp lub SmartAudio i jest poprawnie skonfigurowany w zakładce $t(tabPorts.message) w razie potrzeby.",
         "description": "Message to show when the VTX is not supported in the VTX tab"
@@ -4830,9 +4885,17 @@
         "message": "<span class=\"message-negative\">Uwaga:</span> Musisz skonfigurować i zapisać PIERWSZĄ tabelę VTX na dole zanim będziesz mógł korzystać z $t(vtxSelectedMode.message) pól.",
         "description": "Message to show when the VTX is not supported in the VTX tab"
     },
+    "vtxMessageVerifyTable": {
+        "message": "<span class=\"message-negative\">Uwaga:</span> Wartości tabeli VTX zostały załadowane, ale nie są jeszcze zapisane w kontrolerze lotu. Musisz zweryfikować i zmodyfikować wartości jeśli potrzeba, aby mieć pewność, że są one prawidłowe i legalne w Twoim kraju, a następnie nacisnąć $t(vtxButtonSave.message) przycisk do zapisania ich w kontrolerze lotu.",
+        "description": "Message to show when the VTX Table has been loaded from a external source"
+    },
     "vtxFrequencyChannel": {
         "message": "Wprowadź częstotliwość bezpośrednio",
         "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxFrequencyChannelHelp": {
+        "message": "Jeśli włączysz tę opcję, konfigurator pozwoli Ci wybrać częstotliwość zamiast (standardowo) pasma/kanału. Twój VTX musi mieć mieć taką funkcję aby zadziałało poprawnie.",
+        "description": "Help text for the frequency or channel select field of the VTX tab"
     },
     "vtxSelectedMode": {
         "message": "Wybierz tryb",
@@ -5009,6 +5072,10 @@
     "vtxTableBandTitleFactory": {
         "message": "Ust. fabr",
         "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandsChannelsTableHelp": {
+        "message": "Ta tabela przedstawia wszystkie częstotliwości, które mogą być użyte dla Twojego VTX. Możesz mieć kilka pasm i dla każdego pasma musisz skonfigurować:<br><b>- $t(vtxTableBandTitleName.message):</b> Nazwę, którą chcesz przypisać do tego zakresu, jak BOSCAM_A, FATSHARK lub RACEBAND.<br><b>- $t(vtxTableBandTitleLetter.message):</b> Skrócona litera, która odnosi się do zakresu.<br><b>- $t(vtxTableBandTitleFactory.message):</b> Wskazuje, czy jest to pasmo fabryczne. Jeśli włączono, Betaflight wysyła do VTX pasmo i numer kanału. VTX użyje następnie wbudowanej tabeli częstotliwości, a częstotliwości skonfigurowane tutaj pokazują tylko wartość w OSD i innych miejscach. Jeśli nie jest włączone, Betaflight wyśle do VTX prawdziwą częstotliwość skonfigurowaną tutaj.<br><b>- Częstotliwości:</b> Częstości dla tego pasma.<br><br>Pamiętaj, że nie wszystkie częstotliwości są legalne w Twoim kraju. Musisz wpisać wartość <b>zero</b> dla każdego indeksu częstotliwości, którego nie możesz użyć, aby go wyłączyć.",
+        "description": "Help for the table of bands-channels that appears in the VTX tab"
     },
     "vtxSavedFileOk": {
         "message": "Plik konfiguracyjny VTX <span class=\"message-positive\">zapisany</span>",
