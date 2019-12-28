@@ -446,9 +446,6 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
-    "defaultWelcomeText": {
-        "message": "Tato aplikace podporuje jakýkoli hardware, na kterém běží Betaflight. Podívejte se do záložky Aktualizace firmware pro zobrazení podporovaného HW.<br><br><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Stáhnout Betaflight Blackbox Viewer</a><br /><br />Firmware můžete stáhnout <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">zde</a><br /><br />Aktuální <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\"> ovladače CP210x</a> stáhnete <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">zde</a><br />Aktuální <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">ovladače STM USB VCP</a> stáhnete <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">zde</a><br />Aktuální <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> pro instalaci ovladačů USB stáhnete <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">zde</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Spolupráce"
     },
