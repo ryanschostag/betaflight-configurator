@@ -534,9 +534,6 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
-    "defaultWelcomeText": {
-        "message": "Aplikazioa Betafligth exekutatu ahal duen Hardware guztia jasatzen du. Begiratu Firmware Instalaketa Atala, Hardware guztiaren zerrenda eukiteko.<br><br><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Beherakargatu Betafligth BlackBox Log Viewer</a><br /><br />Firmwarearen Iturri-kodea <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">Hemendik </a> Beherakargatu ahal da.<br /><br />Azkenengo <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">CP210x Driver-ak</a> <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">Hemendik </a>Beherakargatu ahal dira. Azkenengo <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\"title=\"http://www.st.com\" target=\"_blank\"> STM USB VCP Driver-ak </a><a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">Hemendik </a> Beherakargatu ahal dira. Azkenengo <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig </a> USB Driver instalazioa Windowserako <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Hemendik </a>beherakargatu ahal dira"
-    },
     "defaultContributingHead": {
         "message": "Hartu parte"
     },
