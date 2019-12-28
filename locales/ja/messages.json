@@ -527,9 +527,6 @@
     "defaultWelcomeHead": {
         "message": "ハードウェア"
     },
-    "defaultWelcomeText": {
-        "message": "このアプリケーションは、Betaflightを実行できるすべてのハードウェアをサポートしています。対応するハードウェアの完全なリストについては、[ファームフラッシャー] タブを確認してください。<br><br><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">Betaflight Blackbox Log Viewerをダウンロード</a><br/><br/>ファームウェアのソースコードのダウンロード先は<a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">こちら</a><br/><br/>最新の<a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">CP210xドライバ</a>のダウンロード先は<a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">こちら</a><br/>最新の<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">STM USB VCPドライバ</a>のダウンロード先は<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">こちら</a><br/>最新のWindows用<a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a>USBドライバ インストーラのダウンロード先は<a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">こちら</a><br/>"
-    },
     "defaultContributingHead": {
         "message": "開発への協力・貢献"
     },
