@@ -461,9 +461,6 @@
     "defaultWelcomeHead": {
         "message": "Perangkat Keras"
     },
-    "defaultWelcomeText": {
-        "message": "Aplikasi ini mendukung semua perangkat keras yang dapat menjalankan Betaflight. Buka tab flash untuk daftar seluruh perangkat keras.<br><br> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Unduh Betaflight Blackbox Log Viewer</a><br /><br />Source code firmware dapat diunduh dari <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">sini</a><br /><br /> <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">Driver CP210x</a> terbaru dapat diunduh dari <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">sini</a><br /> <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">Driver STM USB VCP</a> terbaru dapat diunduh dari <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">sini</a><br /> <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> terbaru untuk installasi Driver USB Windows dapat diunduh dari <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">sini</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Berkontribusi"
     },
