@@ -573,9 +573,6 @@
     "defaultWelcomeHead": {
         "message": "Hårdvara"
     },
-    "defaultWelcomeText": {
-        "message": "Detta program stödjer all hårdvara som kan köra Betaflight. Se fullständig lista över hårdvara som stöds under flash-fliken.<br><br> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Ladda ner Betaflight Blackbox Log Viewer</a><br /><br />Firmware-källkoden kan laddas ner <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">här</a><br /><br />De senaste <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">CP210x-drivrutinerna</a> kan laddas ner <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">här</a><br />De senaste <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">STM USB VCP-drivrutinerna</a> kan laddas ner <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">här</a><br />Den senaste <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> för Windows USB drivrutinsinstallationen kan laddas ner <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">här</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Medverka"
     },
