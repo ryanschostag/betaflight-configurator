@@ -527,9 +527,6 @@
     "defaultWelcomeHead": {
         "message": "Железо"
     },
-    "defaultWelcomeText": {
-        "message": "Это приложение поддерживает все устройства, которые могут запускаться в Betaflight конфигураторе. Вы также можете посмотреть весь список поддерживаемых устройств во вкладке \"Программатор\".<br><br><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Скачать Betaflight Blackbox Log Viewer</a><br /><br />Исходный код прошивки можно скачать <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">здесь</a><br /><br />Последнюю версию <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">CP210x драйвера</a> можно скачать <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">здесь</a><br />Последнюю версию <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">STM USB VCP драйвера</a> можно скачать <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">здесь</a><br />Последнюю версию <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> для установки USB драйвера под Windows можно скачать <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">здесь</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Содействие"
     },
