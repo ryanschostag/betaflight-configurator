@@ -591,9 +591,6 @@
     "defaultWelcomeHead": {
         "message": "Matériel"
     },
-    "defaultWelcomeText": {
-        "message": "L'application est compatible avec toutes les cartes fonctionnant sous Betaflight. Consultez la liste dans l'onglet flash.<br>\n<br>\n<a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Télécharger Betaflight Blackbox Log Viewer</a><br />\n<br />\nLe code source du firmware est à télécharger <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">ici</a><br />\n<br />\nLe dernier <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">pilote CP210x</a> se trouve <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">ici</a><br />\nLe dernier <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">pilote STM USB VCP </a> est disponible <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">ici</a><br />\nLa dernière version de <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> utilitaire pour les pilotes USB Windows est à télécharger <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">ici</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Participation"
     },
