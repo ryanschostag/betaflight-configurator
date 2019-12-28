@@ -527,9 +527,6 @@
     "defaultWelcomeHead": {
         "message": "Sprzęt"
     },
-    "defaultWelcomeText": {
-        "message": "Aplikacja wspiera wszystkie kontrolery lotu które mogą współpracować z Betaflight. Sprawdź kartę \"Wgraj oprogramowanie\" aby zobaczyć listę wszystkich kompatybilnych urządzeń.<br><br><a href=\"https://chrome.google.com/webstore/detail/betaflight-Rejestrator lotów -explo/canpiagfkeefejklcojkhojdijglnghc\" target=\"_blank\"> Pobierz Betaflight</a><br /><br />Kody źródłowe oprogramowania dostępne do pobrania <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">tutaj</a>.<br />Najnowsze oprogramowanie FC znajdziesz <a href=\"https://github.com/betaflight/betaflight/releases\" title=\"www.github.com\" target=\"_blank\">tutaj</a><br /><br />Najnowsze <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">sterowniki CP210x</a> można pobrać <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">tutaj</a>.<br />Najnowsze <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">sterowniki STM USB VCP</a> można pobrać <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">tutaj</a>.<br />Najnowszy program <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> do instalacji sterowników USB w Windows można pobrać <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">tutaj</a>.<br />"
-    },
     "defaultContributingHead": {
         "message": "Współtworzenie"
     },
