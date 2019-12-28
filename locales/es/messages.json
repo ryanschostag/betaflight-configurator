@@ -527,9 +527,6 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
-    "defaultWelcomeText": {
-        "message": "La aplicación soporta todo el hardware que puede ejecutar Betaflight. Mira el apartado Instalar Firmware para una lista completa del hardware.<br><br> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Descargar Betaflight Blackbox Log Viewer</a><br /><br />El código fuente del firmware puede descargarse desde <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">aquí</a><br /><br />Los últimos <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">Drivers CP210x</a> pueden descargarse desde <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">aquí</a><br />Los últimos <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">Drivers STM USB VCP</a> pueden descargarse desde <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">aquí</a><br />Ultimo driver <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> para instalación del driver USB de Windows puede descargarse desde <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">aquí</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Contribuir"
     },
