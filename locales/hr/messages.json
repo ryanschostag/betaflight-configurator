@@ -509,9 +509,6 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
-    "defaultWelcomeText": {
-        "message": "Ova aplikacija podržava sav hardware koji može pokrenuti Betaflight. Provjerite alat za ažuriranje firmwarea za cijeli popis hardwarea.<br><br> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Preuzmite Betaflight Blackbox Log Viewer</a><br /><br />Izvorni kod firmwarea može se preuzeti<a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\"> ovdje</a><br /><br />Posljednji <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">CP210x Driveri</a> mogu se preuzeti<a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\"> ovdje</a><br />Posljednji <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">STM USB VCP Driveri</a> mogu se preuzeti<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\"> ovdje</a><br />Posljednji <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a> za Windows USB driver instalaciju može se preuzeti<a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\"> ovdje</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Pridonošenje"
     },
