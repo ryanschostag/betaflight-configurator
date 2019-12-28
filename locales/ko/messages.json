@@ -591,9 +591,6 @@
     "defaultWelcomeHead": {
         "message": "하드웨어"
     },
-    "defaultWelcomeText": {
-        "message": "이 어플리케이션은 베타플라이트를 실행할 수 있는 모든 하드웨어를 지원합니다. 전체 하드웨어 목록은 플래시 탭을 확인하십시오.<br><br> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> 베타플라이트 블랙박스 로그 뷰어 다운로드</a><br /><br />펌웨어 소스 코드는 <a href=\"https://github.com/betaflight/betaflight\" title=\"www.github.com\" target=\"_blank\">여기서</a> 다운받으실 수 있습니다.<br /><br />최신 <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">CP210x 드라이버</a>는 <a href=\"http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx\" title=\"http://www.silabs.com\" target=\"_blank\">여기서</a> 다운받으실 수 있습니다.<br />최신 <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">STM USB VCP 드라이버</a>는 <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" title=\"http://www.st.com\" target=\"_blank\">여기서</a> 다운받으실 수 있습니다.<br />최신 윈도우 USB 드라이버 설치를 위한 <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">Zadig</a>는 <a href=\"http://zadig.akeo.ie/\" title=\"http://zadig.akeo.ie\" target=\"_blank\">여기서</a> 다운받으실 수 있습니다.<br />"
-    },
     "defaultContributingHead": {
         "message": "기여하기"
     },
