@@ -1269,6 +1269,22 @@
     "configurationGPSAutoConfig": {
         "message": "Автонастройка"
     },
+    "configurationGPSGalileo": {
+        "message": "Использовать Галилео",
+        "description": "Option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSGalileoHelp": {
+        "message": "При включении, это заменяет QZSS систему (Япония) на Galileo (Европа).",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSHomeOnce": {
+        "message": "Установить точку \"Дом\" один раз",
+        "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHomeOnceHelp": {
+        "message": "При включении, только первый арм после подключения батареи будет использоваться как домашняя точка. Если выключено - домашняя точка будет обновляться при каждом арме.",
+        "description": "Help text for the option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
     "configurationGPSHelp": {
         "message": "<strong>Примечание:</strong> Не забудьте настроить GPS-порт (во вкладке \"Порты\") перед тем, как пользоваться настройками GPS."
     },
@@ -1508,6 +1524,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Выкл."
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Авто"
     },
     "receiverRcSmoothingChannel": {
         "message": "Сглаженные каналы"
@@ -2386,6 +2405,9 @@
     },
     "blackboxLoggingSerial": {
         "message": "Последовательный порт"
+    },
+    "serialLoggingSupportedNote": {
+        "message": "Вы можете логировать работу на внешнее устройство (такое как OpenLager) используя последовательный порт. Сконфигурируйте порт во вкладке Порты."
     },
     "sdcardNote": {
         "message": "Полетные логи могут быть записаны в ваш полетный контроллер оборудованный слотом SD карты."
