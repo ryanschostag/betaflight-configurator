@@ -534,6 +534,9 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
+    "defaultWelcomeText": {
+        "message": "Aplikazioak Betaflight exekutatu dezakeen hardware guztia onartzen du. Begiratu flash fitxa, hardware zerrenda osoa lortzeko.<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">Betaflight Blackbox Log Viewer Deskargatu</a><br /><br />firmware iturri kodea deskargatu daiteke <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\">hemen</a><br /><br />Berrien <b>STM USB VCP Drivers</b> hemen deskargatu daiteke<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\">hemen</a><br />CP210x USB bidez serieko txip bidez erabiltzeko ondarearen hardwarerako:<br />Berrien <b>CP210x Drivers</b> deskargatu ahal dira <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\">hemen</a><br />Azken<b>Zadig</b> Windows-erako USB kontrolatzaileen instalazioa <a href=\"http://zadig.akeo.ie/\" target=\"_blank\">hemen</a><br /> deskargatu daiteke"
+    },
     "defaultContributingHead": {
         "message": "Hartu parte"
     },
@@ -1524,6 +1527,9 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Leuntzea aplikatzeko kanalak"
     },
+    "rcSmoothingDerivativeTypeHelp": {
+        "message": "Ezarpen-metodoaren deribaziorako erabiltzen den iragazketa-metodoa. 4.2-tik hasita \"Auto\" -ren balio lehenetsia gomendatzen da. 4.1 eta lehenago erabiltzaile gehienek \"BIQUAD\" balio lehenetsia erabili beharko lukete, leuntasunaren eta atzerapenaren arteko oreka ona ematen duelako. \"PT1\" atzerapen apur bat murrizten du baina leuntze gutxiago ematen du."
+    },
     "rcSmoothingInputTypeHelp": {
         "message": "Sarrerarako erabiltzen den iragazketa metodoa. Erabiltzaile gehienek \"BIQUAD\" balioa erabili behar dute, leuntasunaren eta atzerapenaren arteko oreka ona ematen duelako. \"PT1\" atzerapena apur bat murrizten du baina leuntze gutxiago ematen du."
     },
@@ -1547,6 +1553,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Itzalita"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Auto"
     },
     "receiverRcSmoothingChannel": {
         "message": "Kanalak leundu egin dira"
@@ -1592,6 +1601,9 @@
     },
     "pidTuningDtermSetpointTransitionHelp": {
         "message": "Parametro honen bidez, D Setpoint doikuntza-puntua murriztu daiteke stick-ak zentrotik gertu daudenean, honek txirbilen eta biribilen amaiera leunagoa egiten du. <br>Balioak stickaren desflexio puntu bat adierazten du: 0 - stick zentratuta, 1 - desbideratze osoa. Stick puntu horren gainetik dagoenean, Ezarpen- pisua konstante mantentzen da konfiguratutako balioan. Stick puntu horren azpitik kokatuta dagoenean, Ezarpenen Pisua proportzionalki murrizten da, eta 0 mailara iristen da. <br> 1-ko balioak leuntze-efektua ematen du; 0-ren balioa, aldiz, Ezarpen- Pisua bere konfiguratutako balioari eusten dio stick-sorta osoan."
+    },
+    "pidTuningDtermSetpointHelp": {
+        "message": "Parametro honek palanka azelerazioaren eragina deribatuen osagaiaren barruan zehazten du. <br> 0 balioa Neurketa metodo zaharraren berdina da, D txanda bakarrik jarraitzen duen bitartean; 1, berriz, erro metodo zaharraren jarraipena birarekin berdina da eta palanka erradioan. <br> Balio txikiagoa palanka erantzun motelagoa eta leunaren berdina da, balore altuek palankaren erantzunean azelerazio handiagoa ematen dute. <br> Oharra izan aktibatzea gomendatzen dela RC interpolazioa balio altuekin kontrolean kolpeak eragindako zarata ekiditeko."
     },
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message): </strong>Ezda gomendagarria 0 Setpoint-en trantsizioa 0 eta 0.1 baino txikiagoa. Hori egitean, ezegonkortasuna eta makilen erantzuna murriztea eragin dezakete, makilek erdiko puntua zeharkatzen duten bitartean.</span>"
@@ -2392,6 +2404,9 @@
     "cliConfirmSnippetBtn": {
         "message": "Exekutatu"
     },
+    "loggingNote": {
+        "message": "Fitxa honetan <span class=\"message-negative\">bakarrik erregistratuko da</span>, eta fitxan <span class=\"message-negative\">bertan behera utziko du</span> erregistroa eta aplikazioa bere ohiko egoerara itzuliko da<strong>\"konfiguratzailea\"</strong> egoera.<br /> Eguneratze-aldi globala aukeratzeko askatasuna duzu. Datuak erregistroko fitxategian idatziko dira <strong> 1 </strong> segundo guztietan errendimendu arrazoiengatik."
+    },
     "loggingSamplesSaved": {
         "message": "Laginak gordeta:"
     },
@@ -2625,6 +2640,9 @@
     },
     "firmwareFlasherManualBaud": {
         "message": "Transmisio abiadura"
+    },
+    "firmwareFlasherManualBaudDescription": {
+        "message": "Eskuzko aukeraketa baud -tasa ez duten abiadura lehenetsia onartzen kontroladorentzat edo bluetooth bidez. <br/><span class=\"message-negative\">Oharra:</span> Ez da erabiltzen USB DFU bidez egitean"
     },
     "firmwareFlasherBaudRate": {
         "message": "Baud tasa"
@@ -3453,6 +3471,9 @@
     "failsafePulsrangeTitle": {
         "message": "Baliozko Pultsu Barrutiaren Ezarpenak"
     },
+    "failsafePulsrangeHelp": {
+        "message": "Minimoak baino luzeagoa edo maximoa baino luzeagoak diren pultsuak baliogabeak dira eta segurtasun-ezarpen indibidualen aplikazioa AUX kanaletara edo 1. faseko hegaldietarako kanaletarako sarrera aktibatuko dute"
+    },
     "failsafeRxMinUsecItem": {
         "message": "Gutxieneko luzera"
     },
@@ -3479,6 +3500,9 @@
     },
     "failsafeDelayHelp": {
         "message": "1. Etapa berreskuratzeko denbora"
+    },
+    "failsafeThrottleLowItem": {
+        "message": "Throttle Atzerapena Segurtasun moduan [1 = 0.1 sec.]"
     },
     "failsafeThrottleLowHelp": {
         "message": "Besterik gabe, desarmatu artisautza hautatutako segurtasun prozedura exekutatu beharrean, azeleragailua denbora horretan gutxienez dagoenean"
@@ -3858,6 +3882,9 @@
     "osdSetupUnsupportedNote1": {
         "message": "Hegaldi kontrolatzaileak ez du OSD aginteei erantzuten. Horrek ziur asko esan nahi du ez duela BetaFlight OSD integratua."
     },
+    "osdSetupUnsupportedNote2": {
+        "message": "Kontuan izan hegaldi kontrolatzaile batzuek <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a> onboard bat duela eta konfigura daiteke <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>, hala ere, MinimOSD ezin da interfaze honen bidez konfiguratu."
+    },
     "osdSetupProfilesTitle": {
         "message": "OSD Profilaren Zenbakia",
         "description": "Description of the header of the OSD elements column associated to each profile"
@@ -3876,6 +3903,10 @@
     "osdSetupPreviewForTitle": {
         "message": "Hemen profila edo letra-tipoak aldatzeak EZ du profila edo letra-tipoak aldatuko, aurrebistaren leihoan bakarrik aldatuko da. Aldatu nahi baduzu, '$t(osdSetupSelectedProfileTitle.message)' aukera edo '$t(osdSetupFontManager.message)' botoia erabili behar duzu hurrenez hurren.",
         "description": "Help content for the OSD profile and font PREVIEW"
+    },
+    "osdSetupSelectedProfileTitle": {
+        "message": "OSD profila aktiboa",
+        "description": "Title of the box to select the current active OSD profile"
     },
     "osdSetupSelectedProfileLabel": {
         "message": "Unekoa:",
@@ -3946,6 +3977,15 @@
     "osdSetupFontPresetsSelectorOr": {
         "message": "edo"
     },
+    "osdSetupOpenFont": {
+        "message": "Letra-motaren fitxategia ireki"
+    },
+    "osdSetupCustomLogoTitle": {
+        "message": "Hasierako logotipoa:"
+    },
+    "osdSetupCustomLogoOpenImageButton": {
+        "message": "Irudi pertsonalizatua aukeratu &hellip;"
+    },
     "osdSetupCustomLogoInfoTitle": {
         "message": "Irudi Pertsonalizatua:"
     },
@@ -3954,6 +3994,24 @@
     },
     "osdSetupCustomLogoInfoColorMap": {
         "message": "Pixel berde beltz eta zuriak eduki behar ditu"
+    },
+    "osdSetupCustomLogoInfoUploadHint": {
+        "message": "Sakatu <b>$t(osdSetupUploadFont.message)</b> logo pertsonalizatua mantentzeko"
+    },
+    "osdSetupCustomLogoImageSizeError": {
+        "message": "Irudi tamaina baliogabea: {{width}}×{{height}} (expected $t(logoWidthPx)×$t(logoHeightPx))"
+    },
+    "osdSetupCustomLogoColorMapError": {
+        "message": "Irudiak pixel baliogabea dauka: rgb({{valueR}}, {{valueG}}, {{valueB}}) koordenatuetan {{posX}}×{{posY}}"
+    },
+    "osdSetupUploadFont": {
+        "message": "Letra-mota Kargatu"
+    },
+    "osdSetupUploadingFont": {
+        "message": "Igotzen..."
+    },
+    "osdSetupUploadingFontEnd": {
+        "message": "Kargatu {{length}} karaktere guztiak OSD-ra"
     },
     "osdSetupSave": {
         "message": "Gorde"
@@ -3973,20 +4031,365 @@
     "osdSetupCameraConnected": {
         "message": "Kamera konektatuta"
     },
+    "osdSetupResetText": {
+        "message": "OSD Lehenetsietara Berrezarri"
+    },
+    "osdSetupButtonReset": {
+        "message": "Ezarpenak berrezarri"
+    },
+    "osdTextElementMainBattVoltage": {
+        "message": "Bateriaren tentsioa",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementMainBattVoltage": {
+        "message": "Bat-bateko bateriaren tentsio nagusia (alarmaren atalasearen azpitik dagoenean)"
+    },
+    "osdTextElementRssiValue": {
+        "message": "RSSI balioa",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRssiValue": {
+        "message": "Berehalako RSSI balioa (alarmaren atalasearen azpitik agertzen da)"
+    },
+    "osdTextElementTimer": {
+        "message": "Tenporizadorea",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer": {
+        "message": "Hegaldi-kontagailua"
+    },
+    "osdTextElementThrottlePosition": {
+        "message": "Throttle posizioa",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementThrottlePosition": {
+        "message": "Throttle kanalaren balioa"
+    },
+    "osdTextElementCpuLoad": {
+        "message": "CPU karga",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCpuLoad": {
+        "message": "Oraingo CPU karga"
+    },
+    "osdTextElementVtxChannel": {
+        "message": "VTX kanala",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVtxChannel": {
+        "message": "VTX kanala eta potentzia"
+    },
+    "osdTextElementVoltageWarning": {
+        "message": "Bateriaren tentsio abisua",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVoltageWarning": {
+        "message": "Abisua bistaratzen du tentsioa alarmaren azpitik dagoenean"
+    },
+    "osdTextElementArmed": {
+        "message": "Armatua",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementArmed": {
+        "message": "Testu mezua armatzerakoan"
+    },
+    "osdTextElementDisarmed": {
+        "message": "Desarmaturik",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDisarmed": {
+        "message": "Testu mezua desarmatzean"
+    },
+    "osdTextElementCrosshairs": {
+        "message": "Horizonte artifiziala: fokua",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCrosshairs": {
+        "message": "Pantailaren gurutzeen erdigunea"
+    },
+    "osdTextElementArtificialHorizon": {
+        "message": "Horizonte artifiziala",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementArtificialHorizon": {
+        "message": "Horizonte artifizialaren adierazle grafikoa"
+    },
+    "osdTextElementHorizonSidebars": {
+        "message": "Horizonte artifizialaren alboko barrak",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementHorizonSidebars": {
+        "message": "Horizonte artifizialaren adierazlearen alboetako barrak"
+    },
+    "osdTextElementCurrentDraw": {
+        "message": "Bateria: uneko korrontea",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCurrentDraw": {
+        "message": "Berehalako kontsumoa"
+    },
+    "osdTextElementMahDrawn": {
+        "message": "Bateria: korronte kontsumitutako mAh",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementMahDrawn": {
+        "message": "Erabilitako bateriaren ahalmena"
+    },
     "osdTextElementCraftName": {
         "message": "Gailuaren izena",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCraftName": {
+        "message": "Gailuaren izena Konfigurazio atalean dagoen moduan"
     },
     "osdTextElementAltitude": {
         "message": "Altitudea",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementAltitude": {
+        "message": "Uneko altitudea (alarmaren atalasearen gainetik)"
+    },
+    "osdTextElementOnTime": {
+        "message": "Denbora piztuta",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementOnTime": {
+        "message": "Aireontzia piztuta igaro den denbora"
+    },
     "osdTextElementFlyTime": {
         "message": "Hegaldiaren denbora",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementFlyTime": {
+        "message": "Aireontzia uneko energia zikloan armatu den denbora osoa (alarmaren atalasearen gainetik dago)"
+    },
+    "osdTextElementFlyMode": {
+        "message": "Hegaldi modua",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlyMode": {
+        "message": "Uneko Hegaldi Modua"
+    },
+    "osdTextElementGPSSpeed": {
+        "message": "GPS Abiadura",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementGPSSpeed": {
+        "message": "GPSak emandako abiadura"
+    },
+    "osdTextElementGPSSats": {
+        "message": "GPS sateliteak",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementGPSSats": {
+        "message": "Aipatutako GPS sateliteen kopurua"
+    },
+    "osdTextElementGPSLon": {
+        "message": "GPS longitudea",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementGPSLon": {
+        "message": "GPS longitudeko koordenatuak"
+    },
+    "osdTextElementGPSLat": {
+        "message": "GPS latitudea",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementGPSLat": {
+        "message": "GPS latitudearen koordenatuak"
+    },
+    "osdTextElementDebug": {
+        "message": "Arazketa",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDebug": {
+        "message": "Arazketa aldagaiak"
+    },
+    "osdTextElementPIDRoll": {
+        "message": "PID Roll",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPIDRoll": {
+        "message": "Roll ardatzaren PID irabaziak"
+    },
+    "osdTextElementPIDPitch": {
+        "message": "PID Pitch",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPIDPitch": {
+        "message": "Pitch ardatzaren PID irabaziak"
+    },
+    "osdTextElementPIDYaw": {
+        "message": "PID yaw",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPIDYaw": {
+        "message": "Yaw ardatzaren PID irabaziak"
+    },
+    "osdTextElementPower": {
+        "message": "Bateria: potentzia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPower": {
+        "message": "Berehalako energia elektrikoaren kontsumoa"
+    },
+    "osdTextElementPIDRateProfile": {
+        "message": "Profila: PID eta Tasa",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRateProfile": {
         "message": "PID aktiboen eta tasa profilaren zenbakizko bistaratzea"
+    },
+    "osdTextElementBatteryWarning": {
+        "message": "Bateriaren abisua",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementBatteryWarning": {
+        "message": "Bateriaren tentsioa alarmaren atalasearen azpitik jaisten denean agertzen den abisu-testua"
+    },
+    "osdTextElementAvgCellVoltage": {
+        "message": "Bateriaren batez besteko zelda-tentsioa",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementAvgCellVoltage": {
+        "message": "Bateriaren batez besteko tentsioa (bateriaren tentsio nagusia / gelaxka kopurua)"
+    },
+    "osdTextElementPitchAngle": {
+        "message": "Angelua: Pitch",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPitchAngle": {
+        "message": "Pitch angelu zenbakia graduetan"
+    },
+    "osdTextElementRollAngle": {
+        "message": "Angelua: Roll",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRollAngle": {
+        "message": "Roll angelu zenbakia graduetan"
+    },
+    "osdTextElementMainBattUsage": {
+        "message": "Bateriaren erabilera",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementMainBattUsage": {
+        "message": "Bateriaren ahalmena erabileraren irudikapen grafikoa"
+    },
+    "osdTextElementArmedTime": {
+        "message": "Tenporizadorea: Denbora armatua",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementArmedTime": {
+        "message": "Aireontzia azken aldiz armatu zenetik denbora"
+    },
+    "osdTextElementHomeDirection": {
+        "message": "Etxearen norabidea",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementHomeDirection": {
+        "message": "Gezia etxeko posizioaren norabidea erakusten"
+    },
+    "osdTextElementHomeDistance": {
+        "message": "Etxerako distantzia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementHomeDistance": {
+        "message": "Etxearen kokapenarekiko distantzia (oinak edo metroetan sistema unitatearen ezarpenean oinarrituta)"
+    },
+    "osdTextElementNumericalHeading": {
+        "message": "Zenbakizko izenburua",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementNumericalHeading": {
+        "message": "Hegaldiaren norabidearen gradu kopurua"
+    },
+    "osdTextElementNumericalVario": {
+        "message": "Abiadura-neurgailu digitala",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementNumericalVario": {
+        "message": "Abiadura bertikalaren zenbakizko irakurketa (oinak edo metroetan sistema unitateen ezarpenean oinarrituta)"
+    },
+    "osdTextElementCompassBar": {
+        "message": "Konpasa barra",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCompassBar": {
+        "message": "Oraingo norabidea erakusten duen iparrorratza grafikoa"
+    },
+    "osdTextElementWarnings": {
+        "message": "Abisuak",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementWarnings": {
+        "message": "Alertak (adibidez, bateria baxua), abisuak (adibidez, ez armatzeko arrazoiak, bateria kritiko baxua) eta bip soinu bisuala (4 asteriskak keinuka)."
+    },
+    "osdTextElementEscTemperature": {
+        "message": "ESC tenperatura",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEscTemperature": {
+        "message": "Tenperatura ESCren telemetriaren arabera"
+    },
+    "osdTextElementEscRpm": {
+        "message": "ESC RPM",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEscRpm": {
+        "message": "RPM ESCren telemetriaren bidez jakinarazi da"
+    },
+    "osdTextElementRemaningTimeEstimate": {
+        "message": "Tenporizadorea: zenbat denbora geratzen den",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Geratzen den hegaldiaren denbora"
+    },
+    "osdTextElementRtcDateTime": {
+        "message": "RTC data eta ordua",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Data/Ordua denbora errealean"
+    },
+    "osdTextElementAdjustmentRange": {
+        "message": "Barrutia egokitu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Barruti eta uneko balio aktiboa egokitzea"
+    },
+    "osdTextElementTimer1": {
+        "message": "1. Tenporizadorea",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer1": {
+        "message": "1. Tenporizadorearen balioa erakusten du"
+    },
+    "osdTextElementTimer2": {
+        "message": "2. Tenporizadorea",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer2": {
+        "message": "2. Tenporizadorearen balioa erakusten du"
+    },
+    "osdTextElementCoreTemperature": {
+        "message": "Prozesadorearen tenperatura",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCoreTemperature": {
+        "message": "STM32 MCU nukleoaren tenperatura"
+    },
+    "osdTextAntiGravity": {
+        "message": "Anti-Gravity",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescAntiGravity": {
+        "message": "Anti Gravity aurkako jarrera aktiboa denean adierazlea aktibatzen du"
+    },
+    "osdTextGForce": {
+        "message": "G indarra",
+        "description": "One of the elements of the OSD"
     },
     "osdTextElementDisplayName": {
         "message": "Pantailako izena",
