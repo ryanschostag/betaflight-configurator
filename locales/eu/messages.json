@@ -4391,6 +4391,58 @@
         "message": "G indarra",
         "description": "One of the elements of the OSD"
     },
+    "osdDescGForce": {
+        "message": "Aireontzia G-Indarraren zenbatekoa den erakusten du"
+    },
+    "osdTextElementMotorDiag": {
+        "message": "Motorren diagnostikoak",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementMotorDiag": {
+        "message": "Motor bakoitzaren irteeraren grafikoa erakusten du"
+    },
+    "osdTextElementLogStatus": {
+        "message": "Kutxa beltza: egoera",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLogStatus": {
+        "message": "Kutxa beltzaren zenbakia eta oharrak"
+    },
+    "osdTextElementFlipArrow": {
+        "message": "Aurrez aurre behera erori ondoren: gezia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlipArrow": {
+        "message": "Gezia, alboko motorrak zein diren dortoka moduan"
+    },
+    "osdTextElementLinkQuality": {
+        "message": "Loturaren kalitatea",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLinkQuality": {
+        "message": "Markoaren galera oinarritutako 'lotura kalitatearen' adierazle alternatiboa. Kontuz erabili"
+    },
+    "osdTextElementFlightDist": {
+        "message": "Hegaldiaren distantzia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlightDist": {
+        "message": "Hegaldi honetan hegaldutako distantzia."
+    },
+    "osdTextElementStickOverlayLeft": {
+        "message": "Joystick: ezkerreko gainjarria",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayLeft": {
+        "message": "Igorgailuaren ezkerreko kontrolaren posizioa."
+    },
+    "osdTextElementStickOverlayRight": {
+        "message": "Joystick: eskuineko gainjarria",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayRight": {
+        "message": "Igorgailuaren eskuineko kontrolaren posizioa."
+    },
     "osdTextElementDisplayName": {
         "message": "Pantailako izena",
         "description": "One of the elements of the OSD"
@@ -4398,16 +4450,579 @@
     "osdDescElementDisplayName": {
         "message": "Erakuzteko izena \"Pantailako izena\" cli agindeak ezartzen du"
     },
+    "osdTextElementEscRpmFreq": {
+        "message": "ESC RPM maiztasuna",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEscRpmFreq": {
+        "message": "RPM maiztasuna ESCko telemetriaren arabera"
+    },
+    "osdTextElementRateProfileName": {
+        "message": "Profila: profilaren izena baloratu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRateProfileName": {
+        "message": "Uneko tasa profilaren izena erakusten du"
+    },
+    "osdTextElementPidProfileName": {
+        "message": "Profila: PID profilaren izena",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPidProfileName": {
+        "message": "Uneko PID profilaren izena erakusten du"
+    },
+    "osdTextElementOsdProfileName": {
+        "message": "Profila: OSD profilaren izena",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementOsdProfileName": {
+        "message": "OSD profilaren izena \"osd_profile_1_name\", \"osd_profile_2_name\" eta \"osd_profile_3_name\" CLI aldagaietan konfiguratuta dago"
+    },
+    "osdTextElementRssiDbmValue": {
+        "message": "RSSI dBm balioa",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRssiDbmValue": {
+        "message": "RSSI seinalearen dBm-ko balioa erabilgarri badago"
+    },
+    "osdTextElementUnknown": {
+        "message": "Ezezaguna $1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementUnknown": {
+        "message": "Elementu ezezaguna (xehetasunak etorkizunean kaleratuko dira)"
+    },
+    "osdTextStatMaxSpeed": {
+        "message": "Gehienezko abiadura",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMaxSpeed": {
+        "message": "Grabatutako gehieneko abiadura"
+    },
+    "osdTextStatMinBattery": {
+        "message": "Bateriaren gutxieneko tentsioa",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinBattery": {
+        "message": "Bateriaren gutxieneko tentsioa grabatuta"
+    },
+    "osdTextStatMinRssi": {
+        "message": "RSSI: gutxienekoa",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinRssi": {
+        "message": "Gutxieneko RSSI erregistratua"
+    },
+    "osdTextStatMaxCurrent": {
+        "message": "Gehienezko bateriaren korrontea",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMaxCurrent": {
+        "message": "Erabilitako gehieneko kontsumoa grabatuta"
+    },
+    "osdTextStatUsedMah": {
+        "message": "Bateria: mAh kontsumituak",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatUsedMah": {
+        "message": "Erabilitako bateriaren ahalmena"
+    },
+    "osdTextStatMaxAltitude": {
+        "message": "Gehieneko altitudea",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMaxAltitude": {
+        "message": "Grabatutako gehieneko altitudea"
+    },
     "osdTextStatBlackbox": {
         "message": "Kutxabeltza: erabilitako espazioa",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatBlackbox": {
+        "message": "Kutxa beltzaren erabilera osoaren ehunekoa"
+    },
+    "osdTextStatEndBattery": {
+        "message": "Bateriaren azken tentsioa",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatEndBattery": {
+        "message": "Bateriaren tentsioa desarmatzeko unean"
+    },
+    "osdTextStatFlyTime": {
+        "message": "Hegaldiaren denbora guztira",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatFlyTime": {
+        "message": "Aireontzia egungo energia zikloan armatu den denbora osoa"
+    },
+    "osdTextStatArmedTime": {
+        "message": "Azken hegaldiaren denbora armatu zenetik",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatArmedTime": {
+        "message": "Gailua azken aldiz armatu zenetik denbora"
+    },
+    "osdTextStatMaxDistance": {
+        "message": "Etxea: gehieneko distantzia",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMaxDistance": {
+        "message": "Etxearen kokapenetik gehieneko distantzia"
+    },
+    "osdTextStatBlackboxLogNumber": {
+        "message": "Kutxa beltzaren zenbakia",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatBlackboxLogNumber": {
+        "message": "Kutxa beltzaren erregistro fitxategiaren zenbakia"
+    },
+    "osdTextStatTimer1": {
+        "message": "1. Tenporizadorea",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTimer1": {
+        "message": "1. Tenporizadorearen balioa desarmatzeko unean"
+    },
+    "osdTextStatTimer2": {
+        "message": "2. Tenporizadorea",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTimer2": {
+        "message": "2. Tenporizadorearen balioa desarmatzeko unean"
+    },
+    "osdTextStatRtcDateTime": {
+        "message": "RTC data eta ordua",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatRtcDateTime": {
+        "message": "Data eta ordua denbora errealeko erlojutik"
+    },
+    "osdTextStatBattery": {
+        "message": "Bateriaren tentsioa",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatBattery": {
+        "message": "Bateriaren tentsioa denbora errealean"
+    },
+    "osdTextStatGForce": {
+        "message": "Gehienezko G indarra",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatGForce": {
+        "message": "Aireontziak bizi duen gehienezko G indarra"
+    },
+    "osdTextStatEscTemperature": {
+        "message": "ESC gehienezko tenperatura",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatEscTemperature": {
+        "message": "Max ESC tenperatura"
+    },
+    "osdTextStatEscRpm": {
+        "message": "ESC: gehienez RPM",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatEscRpm": {
+        "message": "Max. RPM ESC"
+    },
+    "osdTextStatMinLinkQuality": {
+        "message": "Loturaren gutxieneko kalitatea",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinLinkQuality": {
+        "message": "Markoaren galerak oinarritutako gutxieneko \"lotura kalitatearen\" adierazle alternatiboaren"
+    },
+    "osdTextStatFlightDistance": {
+        "message": "Hegaldiaren distantzia",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatFlightDistance": {
+        "message": "Hegaldian zehar bidaiatutako distantzia osoa"
+    },
+    "osdTextStatMaxFFT": {
+        "message": "FFT maximoa",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMaxFFT": {
+        "message": "FFT maiztasunaren gailurra"
+    },
+    "osdTextStatTotalFlights": {
+        "message": "Hegaldi-kontagailua, guztira",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlights": {
+        "message": "Hegaldi kopurua"
+    },
+    "osdTextStatTotalFlightTime": {
+        "message": "Hegaldiaren denbora guztira",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightTime": {
+        "message": "Hegan igarotako denbora osoa"
+    },
+    "osdTextStatTotalFlightDistance": {
+        "message": "Hegaldiaren distantzia osoa",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightDistance": {
+        "message": "Egindako distantzia osoa"
+    },
+    "osdTextStatMinRssiDbm": {
+        "message": "RSSI gutxieneko dBm",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinRssiDbm": {
+        "message": "RSSI dBm gutxieneko balioa"
+    },
+    "osdTextElementRcChannels": {
+        "message": "RC kanalak",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescElementRcChannels": {
         "message": "Bistaratu gehienez 4 kanalen balioak. Kanalak \"osd_rcchannels\" CLI aldagaiarekin zehaztu behar dira"
     },
+    "osdTextStatUnknown": {
+        "message": "Ezezaguna $1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatUnknown": {
+        "message": "Estatistika ezezagunak (xehetasunak etorkizuneko bertsioan gehituko dira)"
+    },
+    "osdDescribeFontVersion1": {
+        "message": "Letra-motaren bertsioa: 1 (Betaflight 4.0 edo berriagoa)"
+    },
+    "osdDescribeFontVersion2": {
+        "message": "Letra-motaren bertsioa: 2 (Betaflight 4.1 edo berriagoa)"
+    },
+    "osdDescribeFontVersionCUSTOM": {
+        "message": "Letra-motaren bertsioa: erabiltzaileak emana"
+    },
+    "osdTimerSource": {
+        "message": "Jatorria:"
+    },
+    "osdTimerSourceTooltip": {
+        "message": "Aukeratu tenporizadorearen jatorria, kontrolatzaile honek neurtzen duen iraupena/gertaera kontrolatzen du"
+    },
+    "osdTimerSourceOptionOnTime": {
+        "message": "Denbora piztuta",
+        "description": "One of the options for the source timer. This options shows the amount of time has passed since the battery was plugged"
+    },
+    "osdTimerSourceOptionTotalArmedTime": {
+        "message": "Denbora Armatua",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed since the battery was plugged"
+    },
+    "osdTimerSourceOptionLastArmedTime": {
+        "message": "Azken armatuaren denbora",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed the latest time"
+    },
+    "osdTimerSourceOptionOnArmTime": {
+        "message": "On/Armatuta denbora",
+        "description": "One of the options for the source timer. This option shows On time when craft is disarmed, and Armed time when armed"
+    },
+    "osdTimerPrecision": {
+        "message": "Zehaztasuna:"
+    },
+    "osdTimerPrecisionTooltip": {
+        "message": "Aukeratu tenporizadorearen zehaztasuna. Honek denboraren berri ematen duen zehaztasuna kontrolatzen du"
+    },
+    "osdTimerPrecisionOptionSecond": {
+        "message": "Bigarrena",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionHundredth": {
+        "message": "Ehungarren",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionTenth": {
+        "message": "Hamargarren",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerAlarm": {
+        "message": "Alarma:"
+    },
+    "osdTimerAlarmTooltip": {
+        "message": "Aukeratu tenporizadorearen alarmaren atalasea minututan, denbora hori gainditzen duenean OSD elementua keinu egingo da, 0 alarma desaktibatuta dagoela adieraziz"
+    },
+    "osdTimerAlarmOptionRssi": {
+        "message": "RSSI",
+        "description": "Text of the RSSI alarm"
+    },
+    "osdTimerAlarmOptionCapacity": {
+        "message": "Ahalmena",
+        "description": "Text of the capacity alarm"
+    },
+    "osdTimerAlarmOptionAltitude": {
+        "message": "Altitudea",
+        "description": "Text of the altitude alarm"
+    },
+    "osdWarningTextArmingDisabled": {
+        "message": "Armatzea ezgaitua",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningArmingDisabled": {
+        "message": "Armatu ez izateko arrazoirik larriena salatzen du"
+    },
+    "osdWarningTextBatteryNotFull": {
+        "message": "Bateria ez dago beteta",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningBatteryNotFull": {
+        "message": "Alerta bateria konektatuta dagoenean eta erabat kargatuta ez dagoenean"
+    },
+    "osdWarningTextBatteryWarning": {
+        "message": "Bateriaren abisua",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningBatteryWarning": {
+        "message": "Alerta Lipo tentsioa ezarritako mugaren azpitik erortzen denean"
+    },
+    "osdWarningTextBatteryCritical": {
+        "message": "Bateria kritikoa",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningBatteryCritical": {
+        "message": "Alerta bateriaren tentsioa batez besteko zelda bakoitzeko tentsioaren azpitik jaisten denean"
+    },
+    "osdWarningTextVisualBeeper": {
+        "message": "Beeper bisuala",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningVisualBeeper": {
+        "message": "Bip soinua bistaratzen du (4 asteriskak bezala erakusten du)"
+    },
+    "osdWarningTextCrashFlipMode": {
+        "message": "Crash flip modua",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningTextEscFail": {
+        "message": "ESC errorea",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningTextCoreTemperature": {
+        "message": "Prozesadorearen tenperatura",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningCoreTemperature": {
+        "message": "Ohartarazten du MCUren oinarrizko tenperaturak konfiguratutako atalasea gainditzen duenean"
+    },
+    "osdWarningTextRcSmoothingFailure": {
+        "message": "RC leuntzeak huts egin du",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRcSmoothingFailure": {
+        "message": "RC Smoothing inizializazioak huts egin duenean ohartarazten du"
+    },
+    "osdWarningTextFailsafe": {
+        "message": "Segurtasun modua",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningFailsafe": {
+        "message": "Hutsegiteak gertatzen direnean ohartarazten du"
+    },
+    "osdWarningTextLaunchControl": {
+        "message": "Abiarazteko kontrola",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLaunchControl": {
+        "message": "Abiarazteko kontrol modua aktibatuta dagoela ohartarazten du"
+    },
+    "osdWarningTextGpsRescueUnavailable": {
+        "message": "GPS Salbamendua ez dago erabilgarri",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningGpsRescueUnavailable": {
+        "message": "Abisatu GPS Salbamendua ez dagoenean eta aktibatu ezin denean"
+    },
+    "osdWarningTextGpsRescueDisabled": {
+        "message": "GPS Salbamendua desgaituta dago",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningGpsRescueDisabled": {
+        "message": "GPS Salbamendua desgaituta dagoenean ohartarazten du"
+    },
+    "osdWarningTextRSSI": {
+        "message": "RSSI",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRSSI": {
+        "message": "Abisatu RSSI konfiguratutako alarmaren azpitik dagoenean"
+    },
+    "osdWarningTextLinkQuality": {
+        "message": "Loturaren kalitatea",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLinkQuality": {
+        "message": "Abisatu lotura kalitatea alarmaren ezarpenaren azpitik dagoenean"
+    },
+    "osdWarningTextRssiDbm": {
+        "message": "RSSI dBm",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRssiDbm": {
+        "message": "RSSI dBm alarma ezarpenen azpitik dagoenean jakinarazi"
+    },
+    "osdWarningTextUnknown": {
+        "message": "Ezezaguna $1"
+    },
+    "vtxBand_X": {
+        "message": "Banda{{bandName}}",
+        "description": "Text of one of the options for the band field of the VTX tab"
+    },
+    "vtxChannel_0": {
+        "message": "Bat ere ez",
+        "description": "Text of one of the options for the channel field of the VTX tab"
+    },
+    "vtxChannel_X": {
+        "message": "Kanala{{channelName}}",
+        "description": "Text of one of the options for the channel field of the VTX tab"
+    },
+    "vtxPower_0": {
+        "message": "Bat ere ez",
+        "description": "Text of one of the options for the power field of the VTX tab"
+    },
+    "vtxPower_X": {
+        "message": "{{powerLevel}} maila",
+        "description": "Text of one of the options for the power field of the VTX tab"
+    },
+    "vtxChannel": {
+        "message": "Kanala",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxChannelHelp": {
+        "message": "Hemen aukeratu dezakezu zure VTX kanala",
+        "description": "Help text for the channel field of the VTX tab"
+    },
+    "vtxFrequency": {
+        "message": "Frekuentzia",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxFrequencyHelp": {
+        "message": "Hemen zure VTX-aren frekuentzia hauta dezakezu",
+        "description": "Help text for the frequency field of the VTX tab"
+    },
+    "vtxDeviceReady": {
+        "message": "Gailua prest",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPower": {
+        "message": "Potentzia",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPowerHelp": {
+        "message": "Hau da VTX aukeratutako potentzia. $t(vtxPitMode.message) edo $t(vtxLowPowerDisarm.message) gaituta badaude aldatu daitezke",
+        "description": "Help text for the power field of the VTX tab"
+    },
+    "vtxPitMode": {
+        "message": "Pit modua",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPitModeHelp": {
+        "message": "Aktibatuta dagoenean, VTX oso potentzia txikiko moduan sartzen da, quad proban egon dadin beste pilotuek trabarik egin gabe. Modu honetan, tartea 5 m baino txikiagoa da. <br> <br> OHARRA: Protokolo batzuek, adibidez SmartAudio, ezin dute Pit modua aktibatu software bidez piztu ondoren.",
+        "description": "Help text for the pit mode field of the VTX tab"
+    },
+    "vtxPitModeFrequency": {
+        "message": "Pit Moduaren frekuentzia",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPitModeFrequencyHelp": {
+        "message": "Pit modua aktibatzen denean aldatzen den frekuentzia.",
+        "description": "Help text for the pit mode field of the VTX tab"
+    },
+    "vtxLowPowerDisarm": {
+        "message": "Potentzia txikia desarmatuta dagoenean",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxLowPowerDisarmHelp": {
+        "message": "Aktibatuta dagoenean, VTX erabilgarri dagoen ahalmen txikiena erabiltzen du desarmatuta badago (Segurtasun Modua gauzatu bada izan ezik).",
+        "description": "Help text for the low power disarm field of the VTX tab"
+    },
+    "vtxLowPowerDisarmOption_0": {
+        "message": "Desgaitua",
+        "description": "One of the options for the Low Power Disarm mode of the VTX"
+    },
+    "vtxLowPowerDisarmOption_1": {
+        "message": "Piztuta",
+        "description": "One of the options for the Low Power Disarm mode of the VTX"
+    },
+    "vtxLowPowerDisarmOption_2": {
+        "message": "Lehen armatu arte",
+        "description": "One of the options for the Low Power Disarm mode of the VTX"
+    },
+    "vtxTable": {
+        "message": "VTX Taula",
+        "description": "Text of the header of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevels": {
+        "message": "Potentzia maila kopurua",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsHelp": {
+        "message": "Honek zure VTX-k onartzen dituen potentzia-maila definitzen du",
+        "description": "Help for the number of power levels field of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsTableHelp": {
+        "message": "Taula honek VTXerako erabil daitezkeen potentzia-balio desberdinak adierazten ditu. Bitan banatzen dira: <br><b>- $t(vtxTablePowerLevelsValue.message):</b> potentzia maila bakoitzak fabrikatzaileak zehaztutako balioa eskatzen du. Eskatu zure fabrikatzaileari balio zuzena edo kontsultatu VTX tauletako Betaflight wiki laginak hartzeko. <br><b>- $t(vtxTablePowerLevelsLabel.message):</b> Hemen jarri dezakezu potentzia maila bakoitzerako nahi duzun etiketa. Zenbakiak (25, 200, 600, 1.2), letrak (OFF, MIN, MAX) edo horien nahasketa izan daitezke. <br> Erabili behar duzu <br><b>bakarrik</b> zure herrialdean legezko potentzia mailak.",
+        "description": "Help for the table of power levels (value-label) that appears in the VTX tab"
+    },
+    "vtxTablePowerLevelsValue": {
+        "message": "Balioa",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsLabel": {
+        "message": "Etiketa",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBands": {
+        "message": "Banda kopurua",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableChannels": {
+        "message": "Banda bakoitzeko kanal kopurua",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandsChannelsHelp": {
+        "message": "Honek zure VTXrako nahi duzun bandaren eta kanalen kopurua definitzen du.",
+        "description": "Help for the number of bands and channels field of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleName": {
+        "message": "Izena",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleLetter": {
+        "message": "Letra",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleFactory": {
+        "message": "Fabrika",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandsChannelsTableHelp": {
+        "message": "Taula honek zure VTXak erabil ditzakeen frekuentzia guztiak adierazten ditu. Banda desberdinak izan ditzakezu eta banda bakoitzerako konfiguratu behar duzu:<br><b>- $t(vtxTableBandTitleName.message):</b> Banda horri esleitu nahi diozun izena, esaterako, BOSCAM_A, FATSHARK edo RACEBAND.<br><b>- $t(vtxTableBandTitleLetter.message):</b> Banda aipatzen duen letra laburra.<br><b>- $t(vtxTableBandTitleFactory.message):</b> Honek fabrikako banda dela adierazten du. Betaflight aktibatuta badago, banda bakarra eta kanal zenbaki bat bidaliko zaizkio VTX-ri. VTX-ek aurrez konfiguratutako frekuentzia taula erabiliko du eta hemen konfiguratutako maiztasunak balioa OSD eta beste leku batzuetan bistaratzeko bakarrik erabiliko dira. Aktibatuta ez badago, Betaflight-ek hemen ezarritako benetako maiztasuna VTXra bidaliko du. <br><b>Frekuentziak:</b> Banda horren frekuentziak.<br><br>Gogoratu frekuentzia guztiak ez direla legezkoak zure herrialdean. <b>Zero</b> balioa jarri behar duzu desaktibatzeko baimenik ez duzun frekuentzia-indize bakoitzean.",
+        "description": "Help for the table of bands-channels that appears in the VTX tab"
+    },
+    "vtxSavedFileOk": {
+        "message": "VTX Konfigurazio fitxategia <span class=\"message-positive\">gordeta</span>",
+        "description": "Message in the GUI log when the VTX Config file is saved"
+    },
     "vtxSavedFileKo": {
         "message": "<span class=\"message-negative\">Akatsa</span> VTX-aren konfigurazioa gordetzerakoan",
         "description": "Message in the GUI log when the VTX Config file is saved"
+    },
+    "vtxLoadFileOk": {
+        "message": "VTX Konfigurazio fitxategia <span class=\"message-positive\">kargatuta</span>",
+        "description": "Message in the GUI log when the VTX Config file is loaded"
+    },
+    "vtxLoadFileKo": {
+        "message": "<span class=\"message-negative\">Errorea</span> VTX Konfigurazio fitxategia kargatzean",
+        "description": "Message in the GUI log when the VTX Config file is loaded"
+    },
+    "vtxLoadClipboardOk": {
+        "message": "VTX konfigurazioaren informazioa arbeletik <span class=\"message-positive\">kargatuta</span>",
+        "description": "Message in the GUI log when the VTX Config file is pasted from clipboard"
+    },
+    "vtxLoadClipboardKo": {
+        "message": "<span class=\"message-negative\">Errorea</span> arbeletik VTX konfigurazio informazioa kargatzean. Baliteke edukia zuzena ez izatea",
+        "description": "Message in the GUI log when the VTX Config file is pasted from clipboard"
     },
     "vtxButtonSaveFile": {
         "message": "Gorde fitxategian",
@@ -4432,6 +5047,18 @@
     "vtxButtonSaved": {
         "message": "Gordeta",
         "description": "Saved action button in the VTX tab"
+    },
+    "mainHelpArmed": {
+        "message": "Motorea armatua"
+    },
+    "mainHelpFailsafe": {
+        "message": "Segurtasun modua"
+    },
+    "mainHelpLink": {
+        "message": "Serial Loturaren Egoera"
+    },
+    "configurationEscProtocol": {
+        "message": "ESC/Motor protokoloa"
     },
     "configurationBatteryMinimum": {
         "message": "Zeldako gutxienezko tentsioa"
