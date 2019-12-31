@@ -415,7 +415,7 @@
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
     },
     "buildServerLoaded": {
-        "message": "Kargatutako bertsioaren informazioa $1 -rentzat bertsio zerbidoreetatik."
+        "message": "Bertsioaren informazioa $1 -rentzat bertsio zerbidoreetatik kargatuta."
     },
     "buildServerLoadFailed": {
         "message": "<b>$1 bertsioen zerbitzariaren kontsultak huts egin du, cachean oinarritutako informazioa erabiliz. Arrazoia: <code>$2</code></b>"
@@ -541,7 +541,7 @@
         "message": "Hartu parte"
     },
     "defaultContributingText": {
-        "message": "Betafligth hobetzen lagundu nahi baduzu, era desberdinetan lagundu dezakezu.<br /><ul><li>beste erabiltzaile batzuen galdereei erantzuten gure Foruetan eta IRC-an</li><li>Gure Firmware eta configurator kodearekin laguntzen - Ezaugarri berriak, konponketak, hobespenak </li><li> Testeatzen <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\"> Ezaugarri berriak/konponketak </a> eta zure iritzia emoten.</li><li>Arazoak eta ezaugarrien eskakizunak</a> komentatzen. </li><li>Kolaboratu<a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\"> Itzultzen Configurator aplikazioa</a> zure Hizkuntzara.</li></ul>"
+        "message": "Betafligth hobetzen lagundu nahi baduzu, era desberdinetan lagundu dezakezu.<br /><ul><li>Beste erabiltzaile batzuen galdereei erantzuten gure Foruetan eta IRC-an</li><li>Gure Firmware eta configurator kodearekin laguntzen - Ezaugarri berriak, konponketak, hobespenak </li><li> Testeatzen <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\"> Ezaugarri berriak/konponketak </a> eta zure iritzia emoten.</li><li>Arazoak eta ezaugarrien eskakizunak <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">komentatzen</a></li><li>Kolaboratu<a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\"> Itzultzen Configurator aplikazioa</a> zure Hizkuntzara.</li><li></li></ul>"
     },
     "defaultFacebookText": {
         "message": "<a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Facebook Talde</a> bat badaukagu.<br />Egin zaitez jarraitzaile Betafligth-i buruz hitz egiteko leku bat eukitzeko, konfigurazio galderak egiteko edota beste pilotuekin hitz egiteko."
@@ -1032,7 +1032,7 @@
         "message": "ESC/Motorren ezaugarriak"
     },
     "configurationFeaturesHelp": {
-        "message": "<strong>Oharra:</strong> Funtzioen konbinazio guztiak ez dira baliozkoak. Hegaldi kontroladoreen firmwareak funtzio baliogabeen konbinazio baliogabeak hautematen dituenean, desgaitu egingo dira. <br/><strong>Oharra:</strong>  Serial atakak konfiguratu <span class=\"message-negative\">lehenik eta behin</span> atakak behan duen funtzioa gaitzeko."
+        "message": "<strong>Oharra:</strong> Funtzioen konbinazio guztiak ez dira baliozkoak. Hegaldi kontroladoreen firmwareak funtzio baliogabeen konbinazio baliogabeak hautematen dituenean, desgaitu egingo dira. <br/><strong>Oharra:</strong>  Serial atakak konfiguratu <span class=\"message-negative\">lehenik eta behin</span> atakak behar duten funtzioak gaitzeko."
     },
     "configurationSerialRXHelp": {
         "message": "<strong>Oharra:</strong> Gogoratu Ataka Serial bat konfiguratu behar duzula (ataka fitxen bidez) eta aukeratu Serial Hartzaile hornitzailea RX_SERIAL funtzioa erabiltzen duzunean."
@@ -1146,7 +1146,7 @@
         "message": "Aireontzia armatuta eta throttle gutxieneko egoeran dagoenean ESCra bidaltzen duten balio 'inaktiboa' da. Handitu balioa abiadura gehiago lortzeko. Handitu balioa desinkronizazio kasuan ere!"
     },
     "configurationThrottleMaximum": {
-        "message": "Throttle maximoa (ESC gehienezko balioa armatuta)"
+        "message": "Throttle maximoa (ESC gehienezko balioa armatuta dagoenean)"
     },
     "configurationThrottleMinimumCommand": {
         "message": "Gutxieneko komandoa (ESC balioa desarmatzen denean)"
@@ -1558,7 +1558,7 @@
         "message": "Auto"
     },
     "receiverRcSmoothingChannel": {
-        "message": "Kanalak leundu egin dira"
+        "message": "Kanalak leundu"
     },
     "receiverRcInterpolation": {
         "message": "RC Interpolazioa"
@@ -3520,7 +3520,7 @@
         "message": "2. Etapa - Segurtasun Prozedura"
     },
     "failsafeProcedureItemSelect1": {
-        "message": "Lurrartu"
+        "message": "Lurreratu"
     },
     "failsafeProcedureItemSelect2": {
         "message": "Bota"
@@ -3936,7 +3936,7 @@
         "description": "Option for the video format in the OSD"
     },
     "osdSetupUnitsTitle": {
-        "message": "Unidadeak"
+        "message": "Unitateak"
     },
     "osdSetupUnitsOptionImperial": {
         "message": "Inperiala",
@@ -4794,9 +4794,15 @@
         "message": "Crash flip modua",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
+    "osdWarningCrashFlipMode": {
+        "message": "Istripuaren ondoren aurrez aurre egiteko modua aktibatuta dagoenean ohartarazten du"
+    },
     "osdWarningTextEscFail": {
         "message": "ESC errorea",
         "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningEscFail": {
+        "message": "Zerrendatu huts egiten duten ESC/Motorren zerrenda (RPM edo tenperatura konfiguratutako atalasetik kanpo dago)"
     },
     "osdWarningTextCoreTemperature": {
         "message": "Prozesadorearen tenperatura",
@@ -4863,6 +4869,107 @@
     },
     "osdWarningTextUnknown": {
         "message": "Ezezaguna $1"
+    },
+    "osdWarningUnknown": {
+        "message": "Ohar ezezaguna (azalpenak etorkizun bertsioetan kaleratuko dira)"
+    },
+    "osdSectionHelpElements": {
+        "message": "Gaitu edo desgaitu OSD elementuak."
+    },
+    "osdSectionHelpVideoMode": {
+        "message": "Egokitu kameraren espero den bideo modua (normalean AUTO konfiguratu daiteke; arazorik baduzu, balioa aldatu zure kameraren irteeran)."
+    },
+    "osdSectionHelpUnits": {
+        "message": "Zenbakizko irakurketetarako erabiltzen den unitate sistema ezartzen du."
+    },
+    "osdSectionHelpTimers": {
+        "message": "Hegaldiaren kontagailua konfiguratu."
+    },
+    "osdSectionHelpAlarms": {
+        "message": "OSD alarmaren atalasea ezarri."
+    },
+    "osdSectionHelpStats": {
+        "message": "Post-hegaldien estatistiken pantailan baleratutako balioak ezarri."
+    },
+    "osdSectionHelpWarnings": {
+        "message": "OHARRAK elementuan agertzen diren mezuak aktibatu edo desaktibatu."
+    },
+    "osdSettingsSaved": {
+        "message": "OSD ezarpenak gorde dira"
+    },
+    "osdWritePermissions": {
+        "message": "Ez duzu fitxategi honetan <span class=\"message-negative\">idazteko baimenik</span>"
+    },
+    "osdButtonSaved": {
+        "message": "Gordeta"
+    },
+    "vtxHelp": {
+        "message": "Hemen zure Bideo Argailuaren (VTX) balioak konfigura ditzakezu. Transmisioaren balioak ikusi eta alda ditzakezu, VTX taulak barne, hegaldi-kontroladoreak eta VTX onartzen badituzte.<br>Urrats hauek egin zure VTX konfiguratzeko:<br>1. Ireki <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight/wiki/VTX-tables\"> </a>orria;<br>2. Bilatu zure herrialderako VTX konfigurazio fitxategi egokia eta deskargatu;<br>3. Egin klik '$t(vtxButtonLoadFile.message)' botoian, hautatu VTX konfigurazio fitxategia, kargatu,<br>4. Egiaztatu ezarpenak zuzenak direla;<br>5. Sakatu '$t(vtxButtonSave.message)' VTX balioak hegaldi kontroladorean gordetzeko.<br>6. Aukeran klik '$t(vtxButtonSaveLua.message)' lua konfigurazio-fitxategia betaflight lua gidoiak batera erabili ahal izango dituzu (Ikusi gehiago <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">hemen</a>.)",
+        "description": "Introduction message in the VTX tab"
+    },
+    "vtxMessageNotSupported": {
+        "message": "<span class=\"message-negative\">Abisua:</span> Zure VTX ez dago konfiguratuta edo ez da onartzen. Horretaz, ezin dituzu VTX balioak hemendik aldatu. Hau bakarrik izango litzateke hegaldi-kontroladorea VTX-rekin konektatuta badago, hala nola Tramp edo SmartAudio bezalako protokolo motaren bat erabiliz eta $t(tabPorts.message) fitxan behar bezala konfiguratuta badago.",
+        "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageTableNotConfigured": {
+        "message": "<span class=\"message-negative\">Abisua:</span> Lehenik eta behin beheko VTX taula konfiguratu eta gorde behar duzu $t(vtxSelectedMode.message) eremuak erabili ahal izateko.",
+        "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageVerifyTable": {
+        "message": "<span class=\"message-negative\">Abisua:</span> VTX taulako balioak kargatu dira, baina oraindik ez dira hegaldi kontroladorean gorde. Balioak egiaztatu eta aldatu behar dituzu zure herrialdean baliozkoak eta legezkoak direla ziurtatzeko, eta ondoren $t(vtxButtonSave.message) botoia sakatu hegaldi kontroladorean gordetzeko.",
+        "description": "Message to show when the VTX Table has been loaded from a external source"
+    },
+    "vtxFrequencyChannel": {
+        "message": "Frekuentzia sartu",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxFrequencyChannelHelp": {
+        "message": "Hau gaitzen baduzu, konfiguratzaileak ohiko banda/kanalaren frekuentzia hautatzeko aukera emango dio. Horretarako, zure VTX funtzio hau onartu behar du.",
+        "description": "Help text for the frequency or channel select field of the VTX tab"
+    },
+    "vtxSelectedMode": {
+        "message": "Aukeratutako modua",
+        "description": "Title for the actual mode header of the VTX"
+    },
+    "vtxActualState": {
+        "message": "Uneko balioak",
+        "description": "Title for the actual values header of the VTX"
+    },
+    "vtxType": {
+        "message": "VTX Mota",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxType_0": {
+        "message": "Ez da onartzen",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxType_1": {
+        "message": "RTC607",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxType_3": {
+        "message": "SmartAudio",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxType_4": {
+        "message": "Tramp",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxType_255": {
+        "message": "Ezezaguna",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxBand": {
+        "message": "Banda",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxBandHelp": {
+        "message": "Hemen zure VTX Banda aukeratu dezakezu",
+        "description": "Help text for the band field of the VTX tab"
+    },
+    "vtxBand_0": {
+        "message": "Bat ere ez",
+        "description": "Text of one of the options for the band field of the VTX tab"
     },
     "vtxBand_X": {
         "message": "Banda{{bandName}}",
@@ -5032,6 +5139,10 @@
         "message": "Lua Script-a gorde",
         "description": "Save Lua script button in the VTX tab"
     },
+    "vtxLuaFileHelp": {
+        "message": "'$t(vtxButtonSaveLua.message)' botoiak <i>Gailuaren-izena</i>.lua fitxategi bat gordetzeko aukera ematen du, vtx taula konfigurazioa Betaflight Lua scriptekin erabil daitekeen (informazio gehiago <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">hemen</a>.)",
+        "description": "Tooltip message for the Save Lua script button in the VTX tab"
+    },
     "vtxButtonLoadFile": {
         "message": "Fitxategitik kargatu",
         "description": "Load to file button in the VTX tab"
@@ -5059,6 +5170,65 @@
     },
     "configurationEscProtocol": {
         "message": "ESC/Motor protokoloa"
+    },
+    "configurationEscProtocolHelp": {
+        "message": "Aukeratu motorraren protokoloa. <br>Ziurtatu zure ESCren zein protokolo onartzen dituen ezaugarriak egiaztatzen.<br><b>Kontuz DSHOT900 edo DSHOT1200 hautatzen baduzu, ESC gehienek ez dutelako onartzen!</b>"
+    },
+    "configurationEscProtocolHelpNoDSHOT1200": {
+        "message": "Aukeratu zure motor protokoloa. <br>Egiaztatu zure protokoloa zure ESCrekin bateragarria dela, informazio hori fabrikatzailearen webgunean aurki daiteke."
+    },
+    "configurationunsyndePwm": {
+        "message": "PWM motorren abiadura PID abiadurarekiko independentea da"
+    },
+    "configurationUnsyncedPWMFreq": {
+        "message": "Motor PWM frekuentzia"
+    },
+    "configurationDshotBidir": {
+        "message": "Dshot Bidirekzionala (ESC Firmware onartuta behar du)",
+        "description": "Feature for the ESC/Motor"
+    },
+    "configurationDshotBidirHelp": {
+        "message": "Aktibatuta dagoenean, DSHOT protokoloari ESCko informazioa zuzenean jasotzeko aukera ematen dio, RPM iragazkiarentzako eta bestelako funtzionaltasunetarako beharrezkoa dena.<br><br>JESC firmware-a jflight.net-etik BLHELI_S-rako edo BLHELI_32-ren azken firmwarerako beharrezkoa da.",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
+    },
+    "configurationGyroSyncDenom": {
+        "message": "Giroa eguneratzeko frekuentzia"
+    },
+    "configurationPidProcessDenom": {
+        "message": "PID, zikloaren frekuentzia"
+    },
+    "configurationPidProcessDenomHelp": {
+        "message": "PID zikloaren gehienezko frekuentzia eguneratzeak bidal daitezkeen gehieneko frekuentziarekin mugatuta dago, aukeratutako ESC/Motor protokoloaren arabera."
+    },
+    "configurationGyroUse32kHz": {
+        "message": "32kHz giro laginketa modua gaitu"
+    },
+    "configurationGyroUse32kHzHelp": {
+        "message": "32 kHz-ko eguneratze frekuentzia txanda txipa onartzen duenean bakarrik posible da (gaur egun MPU6500, MPU9259 eta ICM20xxx SPI bidez konektatuta badaude). Zalantzarik baduzu, egiaztatu zure hegaldi kontroladorearen plakaren zehaztapena."
+    },
+    "configurationAccHardware": {
+        "message": "Azelerometroa"
+    },
+    "configurationBaroHardware": {
+        "message": "Barometroa (onartzen bada)"
+    },
+    "configurationMagHardware": {
+        "message": "Magnetometroa (onartzen bada)"
+    },
+    "configurationSmallAngle": {
+        "message": "Gehieneko ARM Angelua [degrees]"
+    },
+    "configurationSmallAngleHelp": {
+        "message": "Aireontziak ez du armatuko zehaztutako gradu kopurua baino gehiago okertzen bada. Azelerometroa aktibatuta badago bakarrik aplikatzen da. Ezarpena 180ra ezgaitzen du kontrol hau"
+    },
+    "configurationBatteryVoltage": {
+        "message": "Bateriaren Tentsioa"
+    },
+    "configurationBatteryCurrent": {
+        "message": "Bateriaren Korrontea"
+    },
+    "configurationBatteryMeterType": {
+        "message": "Bateriaren Neurgailu Mota"
     },
     "configurationBatteryMinimum": {
         "message": "Zeldako gutxienezko tentsioa"
@@ -5118,8 +5288,20 @@
     "pidTuningDeltaTip": {
         "message": "<b>Akats Deribazioa</b>k stick-ak erantzun azkaragoa hemango dizu eta laisterketarakoa nahiagokoa izaten da.<br><br><b>Akats Neurtua</b>k stick-ak erantzun suabeagoa hemango dizu eta frestailean nahiagokoa izaten da"
     },
+    "pidTuningPidControllerTip": {
+        "message": "<b>Legacy vs Betaflight (flotatzen):</b> PIDaren eskala eta logika berdinak dira. Ez da beharrezkoa berriro egokitzea. Legatua Betaflight eboluzionatu berria da rewrite erabiliz. Oinarrizko matematikaren oinarritutako PID kontroladorea da. Betaflight PID kontroladoreek kontrol flotagarria duten matematika erabiltzen du eta funtzio anitzeko aplikazioetarako bereziki diseinatutako ezaugarri berriak ditu. <br><b>Flotatzen vs Osoa:</b> PIDaren eskala eta logika berdinak dira. Ez da beharrezkoa berriro egokitzea. F1 taulek ez dute FPU integratua eta puntu mugikorreko kalkuluak CPUaren karga handitzen du eta matematika osoak errendimendua hobetuko luke, baina puntu flotagarriek matematikako zehaztasun gehiago eman dezakete."
+    },
+    "pidTuningFilterTip": {
+        "message": "<b>Giro Soft iragazkia:</b> Giroren Behe-paseko Iragazkia. Erabili iragazki gehiagorako balio txikiagoa. <br><b>D Epe iragazkia:</b> Dterm Behe-paseko Iragazkia. D sintonizazioak eragin dezake. Erabili iragazki gehiagorako balio txikiagoa. <br><b>Yaw Iragazkia:</b> Yaw irteera iragazten du. Yaw ardatz zaratatsua duten konfigurazioetan lagun dezake."
+    },
+    "pidTuningRatesTip": {
+        "message": "Tasekin jokatu eta ikusi nola eragiten duten sticks kurban"
+    },
     "configurationCamera": {
         "message": "Kamera"
+    },
+    "configurationPersonalization": {
+        "message": "Pertsonalizazioa"
     },
     "craftName": {
         "message": "Gailuaren izena"
@@ -5140,16 +5322,25 @@
         "message": "EZEZAGUNA"
     },
     "onboardLoggingSerialLogger": {
-        "message": "Kampozko serieko txarte erregistro gailua"
+        "message": "Kanpoko serieko txarte erregistro gailua"
+    },
+    "onboardLoggingFlashLogger": {
+        "message": "Flash Memoria Integratua"
+    },
+    "onboardLoggingEraseInProgress": {
+        "message": "Ezabatzen, itxaron mesedez..."
     },
     "onboardLoggingOnboardSDCard": {
         "message": "Kontrolatzaileko SD Txartela"
     },
     "onboardLoggingMsc": {
-        "message": "Kampoco Memoria Modua"
+        "message": "Biltegiratze Masiboa Modua"
+    },
+    "onboardLoggingMscNote": {
+        "message": "Berrabiarazi <strong>Biltegiratze Masibo Gailua(MSC)</strong> moduan. Behin aktibatuta, zure hegaldi kontroladorearen memoria edo SD txartel integratua ordenagailuak biltegiratze gailu gisa aitortuko du eta zure fitxategiak deskargatzeko aukera emango dizu. Eperatu eta itzali eta berriro piztu zure hegaldi kontroladorea Kanpoko Memoria Modua uzteko."
     },
     "onboardLoggingRebootMscText": {
-        "message": "Biltegiratze Gailuaren Modua Piztu"
+        "message": "Biltegiratze Masibo Gailu Modua Piztu"
     },
     "onboardLoggingMscNotReady": {
         "message": "Biltegiratzeko modua ezin da piztu biltegiratze-gailua prest ez dagoelako."
@@ -5176,10 +5367,10 @@
         "message": "KAMERA ALDATZEKO MODUA"
     },
     "flashTab": {
-        "message": "Eguneratu firmwarea"
+        "message": "Firmwarea Eguneratu"
     },
     "cliAutoComplete": {
-        "message": "Advanced CLI AutoBetetzailea"
+        "message": "CLI AutoBetetzaile Aurreratua"
     },
     "darkTheme": {
         "message": "Gai iluna piztu"
