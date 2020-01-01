@@ -1581,6 +1581,9 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Le lissage des canaux s'applique à"
     },
+    "rcSmoothingDerivativeTypeHelp": {
+        "message": "Le type de méthode de filtrage utilisée pour la dérivée setpoint. À compter de la version 4.2, la valeur par défaut \"Auto\" est recommandée. Concernant les versions 4.1 et antérieures, la plupart des utilisateurs devraient utiliser le « BIQUAD » par défaut car il offre un bon équilibre entre souplesse et latence. « PT1 » réduit légèrement la latence mais offre moins de lissage."
+    },
     "rcSmoothingInputTypeHelp": {
         "message": "Le type de filtre utilisé pour l'entrée. La plupart des utilisateurs devraient utiliser le « BIQUAD » par défaut car il offre un bon équilibre entre souplesse et latence. « PT1 » réduit légèrement la latence mais offre moins de lissage."
     },
@@ -1604,6 +1607,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Désactivé"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Auto"
     },
     "receiverRcSmoothingChannel": {
         "message": "Canaux lissés"
