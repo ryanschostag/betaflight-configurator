@@ -4476,7 +4476,7 @@
         "message": "显示当前 Rate 配置名称"
     },
     "osdTextElementPidProfileName": {
-        "message": "配置文件: Rate 配置名称",
+        "message": "配置文件：PID 配置名称",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementPidProfileName": {
