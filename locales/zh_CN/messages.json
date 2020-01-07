@@ -231,16 +231,16 @@
         "message": "飞控 - <span class=\"message-positive\">就绪</span>"
     },
     "backupFileIncompatible": {
-        "message": "上一版本地面站生成的备份文件和当前版本的地面站不兼容"
+        "message": "上一版本配置器生成的备份文件和当前版本的配置器不兼容"
     },
     "backupFileUnmigratable": {
-        "message": "上一版本地面站生成的备份文件不能移植到当前版本的地面站"
+        "message": "上一版本配置器生成的备份文件无法移植到当前版本的配置器"
     },
     "configMigrationFrom": {
         "message": "正在迁移配置器生成的配置文件: $1"
     },
     "configMigratedTo": {
-        "message": "地面站设置文件 $1 已移植"
+        "message": "配置器设置文件 $1 已移植"
     },
     "configMigrationSuccessful": {
         "message": "设置文件移植完成，使用设置文件 $1。"
@@ -1443,10 +1443,10 @@
         "message": "摄像头(RunCam协议)"
     },
     "pidTuningProfileOption": {
-        "message": "设置 $1"
+        "message": "配置文件 $1"
     },
     "pidTuningRateProfileOption": {
-        "message": "速度设置 $1"
+        "message": "Rate 配置文件 $1"
     },
     "portsFunction_LIDAR_TF": {
         "message": "Benewake LIDAR"
@@ -1470,7 +1470,7 @@
         "message": "隐藏未使用的PID"
     },
     "pidTuningNonProfilePidSettings": {
-        "message": "独立于配置文件的PID控制器设置"
+        "message": "独立于配置文件的 PID 控制器设置"
     },
     "pidTuningAntiGravity": {
         "message": "反重力"
@@ -1726,7 +1726,7 @@
         "message": "频率"
     },
     "pidTuningRatesCurve": {
-        "message": "Rate预览"
+        "message": "Rates 预览"
     },
     "throttle": {
         "message": "油门曲线"
@@ -1750,10 +1750,10 @@
         "message": "复制 Rate 配置文件"
     },
     "dialogCopyProfileText": {
-        "message": "将当前设置值复制到"
+        "message": "将当前配置文件复制到"
     },
     "dialogCopyRateProfileText": {
-        "message": "将当前速率设定复制到"
+        "message": "将当前 Rate 配置文件复制到"
     },
     "dialogCopyProfileTitle": {
         "message": "复制配置文件值"
@@ -1777,13 +1777,13 @@
         "message": "当前飞控配置文件: <strong class=\"message-positive\">$1</strong>"
     },
     "pidTuningReceivedRateProfile": {
-        "message": "当前飞控rate配置文件：<strong class=\"message-positive\">$1</strong>"
+        "message": "当前飞控 Rate 配置文件：<strong class=\"message-positive\">$1</strong>"
     },
     "pidTuningLoadedProfile": {
         "message": "加载配置: <strong class=\"message-positive\">$1</strong>"
     },
     "pidTuningLoadedRateProfile": {
-        "message": "加载rate配置文件: <strong class=\"message-positive\">$1</strong>"
+        "message": "加载 Rate 配置文件: <strong class=\"message-positive\">$1</strong>"
     },
     "pidTuningDataRefreshed": {
         "message": "PID 数据<strong>已刷新</strong>"
@@ -1938,7 +1938,7 @@
         "message": "使用AUX1通道上的三段开关在Pitch/Roll的 P, I 和 D 之间选择，使用AUX2通道的三段开关来上下增大和减小数值（拨高，或拨低）。"
     },
     "adjustmentsExample2": {
-        "message": "使用AUX4通道上的三段开关来选择 Rate 配置文件"
+        "message": "使用 AUX4 通道上的三段开关来选择 Rate 配置文件"
     },
     "adjustmentsColumnEnable": {
         "message": "如果激活"
@@ -1992,7 +1992,7 @@
         "message": "俯仰 和 横滚 Rate 调整"
     },
     "adjustmentsFunction5": {
-        "message": "方向Rate调整"
+        "message": "偏航 Rate 调整"
     },
     "adjustmentsFunction6": {
         "message": "俯仰 和 横滚 P 调整"
@@ -2013,13 +2013,13 @@
         "message": "方向 D 调整"
     },
     "adjustmentsFunction12": {
-        "message": "Rate配置文件选择"
+        "message": "Rate 配置文件选择"
     },
     "adjustmentsFunction13": {
-        "message": "俯仰Rate"
+        "message": "俯仰 Rate"
     },
     "adjustmentsFunction14": {
-        "message": "横滚Rate"
+        "message": "横滚 Rate"
     },
     "adjustmentsFunction15": {
         "message": "俯仰 P 调整"
@@ -2040,7 +2040,7 @@
         "message": "横滚 D 调整"
     },
     "adjustmentsFunction21": {
-        "message": "遥控方向Rate"
+        "message": "遥控偏航 Rate"
     },
     "adjustmentsFunction22": {
         "message": "D 设定点"
@@ -2070,10 +2070,10 @@
         "message": "方向 F 调整"
     },
     "adjustmentsFunction29": {
-        "message": "选择OSD配置文件"
+        "message": "选择 OSD 配置文件"
     },
     "adjustmentsFunction30": {
-        "message": "选择LED配置文件"
+        "message": "选择 LED 配置文件"
     },
     "adjustmentsSave": {
         "message": "保存"
@@ -2172,7 +2172,7 @@
         "message": "最大角度"
     },
     "servosDirectionAndRate": {
-        "message": "方向和rate"
+        "message": "方向和 Rate"
     },
     "servosLiveMode": {
         "message": "激活实时模式"
@@ -3916,7 +3916,7 @@
         "description": "Help content for the OSD profile and font PREVIEW"
     },
     "osdSetupSelectedProfileTitle": {
-        "message": "激活OSD配置文件",
+        "message": "激活OSD 配置文件",
         "description": "Title of the box to select the current active OSD profile"
     },
     "osdSetupSelectedProfileLabel": {
@@ -3924,7 +3924,7 @@
         "description": "Label for the selection of the curren active OSD profile"
     },
     "osdSetupPreviewSelectProfileElement": {
-        "message": "OSD配置文件 {{profileNumber}}",
+        "message": "OSD 配置文件 {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
     },
     "osdSetupPreviewSelectFontElement": {
@@ -4245,11 +4245,11 @@
         "message": "实时功率消耗"
     },
     "osdTextElementPIDRateProfile": {
-        "message": "配置文件: PID 和 rate",
+        "message": "配置文件: PID 和 Rate",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDRateProfile": {
-        "message": "当前 PID 和 rate 配置文件的数字编号"
+        "message": "当前 PID 和 Rate 配置文件的数字编号"
     },
     "osdTextElementBatteryWarning": {
         "message": "电池警告",
@@ -4730,7 +4730,7 @@
         "message": "选择计时器精度"
     },
     "osdTimerPrecisionOptionSecond": {
-        "message": "第二",
+        "message": "秒",
         "description": "Selectable option for the precision of the timer in the OSD"
     },
     "osdTimerPrecisionOptionHundredth": {
@@ -5264,7 +5264,7 @@
         "message": "飞控可以保存最多3个（有的只能2个）PID配置文件。PID 配置文件包括：PID值， D 设置点，angle/horizon 模式选择设置。配置文件可以通过遥控摇杆命令来回切换(具体操作参阅网上教程)。"
     },
     "pidTuningRateProfile": {
-        "message": "Rate配置文件"
+        "message": "Rate 配置文件"
     },
     "pidTuningRateProfileTip": {
         "message": "飞控可以保存3个不同的Rate配置文件。 Rate配置文件包括：RC rate， Rate，RC expo，油门和TPA。 配置文件可以通过遥控摇杆命令来回切换（具体操作参阅网上教程）。也可以通过一个3段的开关来选择不同的配置文件。"
@@ -5295,7 +5295,7 @@
         "message": "<b>陀螺仪软件滤波器：</b> 陀螺仪的低通滤波。更低的数字会提供更多的过滤效果。<br><b>D Term 滤波器：</b>Dterm 低通滤波器。会影响D值的调参，更低的数字会提供更多的过滤效果。 <br><b>方向滤波器：</b> 对方向输出进行滤波。对方向轴震动或者噪声很严重的情况会有帮助。"
     },
     "pidTuningRatesTip": {
-        "message": "尝试不同的rates并观察它如何影响摇杆曲线"
+        "message": "尝试不同的 Rates 并观察它如何影响摇杆曲线"
     },
     "configurationCamera": {
         "message": "摄像头"
