@@ -456,10 +456,10 @@
         "message": "<strong>Permitido Armar</strong>"
     },
     "runawayTakeoffPreventionDisabled": {
-        "message": "<strong>Prevenção contra voo acidental temporariamente desativado</strong>"
+        "message": "<strong>Prevenção contra descolagem acidental temporariamente desativado</strong>"
     },
     "runawayTakeoffPreventionEnabled": {
-        "message": "<strong>Prevenção contra voo acidental ativado</strong>"
+        "message": "<strong>Prevenção contra descolagem acidental ativado</strong>"
     },
     "boardInfoReceived": {
         "message": "Placa: <strong>$1</strong>, versão: <strong>$2</strong>"
@@ -526,6 +526,9 @@
     },
     "defaultWelcomeHead": {
         "message": "Hardware"
+    },
+    "defaultWelcomeText": {
+        "message": "O aplicativo suporta todo o hardware que pode executar o Betaflight. Verifique a guia flash para obter a lista completa de hardware. <br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">Faça o download do Betaflight Blackbox Log Visualizador </a><br /><br /> O código-fonte do firmware pode ser baixado em <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\"> aqui </a>< br /><br /> Os mais recentes <b> Drivers STM USB VCP </b> podem ser baixados do <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\"> aqui </a><br /> Para hardware herdado usando um chip USB para serial CP210x: <br /> Os <b> Drivers CP210x mais recentes </b> podem ser baixados em <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\"> aqui </a><br /> O último <b> Zadig </b> para instalação do driver USB do Windows pode ser baixado em <a href=\"http://zadig.akeo.ie/\" target=\"_blank\"> aqui </a><br />"
     },
     "defaultContributingHead": {
         "message": "Contribuir"
@@ -749,7 +752,7 @@
         "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
-        "message": "A prevenção contra voo acidental foi acionada",
+        "message": "A prevenção contra descolagem acidental foi acionada",
         "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCRASH": {
@@ -819,6 +822,10 @@
     "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
         "message": "Uma das alterações de configuração requer uma reinicialização",
         "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
+        "message": "O acelerômetro não foi calibrado e os recursos habilitados dependem dele. Calibre o acelerômetro.",
+        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "O Switch de armar não está em uma posição segura",
@@ -1265,6 +1272,14 @@
     "configurationGPSAutoConfig": {
         "message": "Configuração Automática"
     },
+    "configurationGPSGalileo": {
+        "message": "Usar o Galileo",
+        "description": "Option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSGalileoHelp": {
+        "message": "Quando habilitado, isto elimina o sistema QZSS (japonês) e substitui-o para o sistema Galileo (europeu).",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
     "configurationGPSHelp": {
         "message": "<strong>Nota:</strong> Lembre-se de configurar uma porta serial (via aba de Portas) ao utilizar a funcionalidade de GPS."
     },
@@ -1516,6 +1531,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Desligado"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Auto"
     },
     "receiverRcSmoothingChannel": {
         "message": "Canais suavizados"
@@ -2272,10 +2290,10 @@
         "message": "Mestre"
     },
     "motorsNotice": {
-        "message": "<strong>Aviso sobre o modo de Teste de Motor / Armar:</strong><br />Mover os sliders ou armar a sua aeronave com o transmissor irá fazer com que os motores <strong>girem</strong>.<br />Para evitar ferimentos, <strong class=\"message-negative\">remova TODAS as hélices</strong> antes de usar esta função.<br />Habilitar o modo de Teste de Motor também irá temporariamente desabilitar a Prevenção contra voo acidental, afim de evitar o desarme da aeronave enquanto estiver testando na sua bancada, sem as hélices.<br />"
+        "message": "<strong>Aviso sobre o modo de Teste de Motor / Armar:</strong><br />Mover os sliders ou armar a sua aeronave com o transmissor irá fazer com que os motores <strong>girem</strong>.<br />Para evitar ferimentos, <strong class=\"message-negative\">remova TODAS as hélices</strong> antes de usar esta função.<br />Habilitar o modo de Teste de Motor também irá temporariamente desabilitar a Prevenção contra descolagem acidental, afim de evitar o desarme da aeronave enquanto estiver testando na sua bancada, sem as hélices.<br />"
     },
     "motorsEnableControl": {
-        "message": "<strong>Eu entendo os riscos</strong>, as hélices foram removidas - habilitar o controle do motor, armar e desativar a Prevenção contra voo acidental."
+        "message": "<strong>Eu entendo os riscos</strong>, as hélices foram removidas - habilitar o controle do motor, armar e desativar a Prevenção contra descolagem acidental."
     },
     "sensorsInfo": {
         "message": "Tenha em mente que ao usar um período de atualização rápido e visualizar vários gráficos simultaneamente utiliza muitos recursos do computador e pode usar sua bateria rapidamente se estiver em um notebook. Recomendamos que somente exiba os gráficos dos sensores em que estiver interessado e que utilize períodos de atualização razoáveis."
@@ -3506,8 +3524,26 @@
     "failsafeGpsRescueItemThrottleHover": {
         "message": "Acelerador para flutuar"
     },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "Taxa ascendente (metros / segundo)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "Taxa descendente (metros/segundo)"
+    },
     "failsafeGpsRescueItemMinSats": {
         "message": "Quantidade mínima satélites"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "Modo de altitude"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "Altitude Máxima"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "Altitude fixa"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "Altitude atual"
     },
     "failsafeGpsRescueItemSanityChecks": {
         "message": "Verificações de sanidade"
@@ -4610,6 +4646,10 @@
     "osdDescStatMinRssiDbm": {
         "message": "Valor dBm mínimo do RSSI"
     },
+    "osdTextElementRcChannels": {
+        "message": "Canais RC",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdTextStatUnknown": {
         "message": "$1 desconhecido",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
@@ -4948,6 +4988,10 @@
         "message": "Modo Pit",
         "description": "Text of one of the fields of the VTX tab"
     },
+    "vtxPitModeHelp": {
+        "message": "Quando ativado, o VTX entra em um modo de energia muito baixa para permitir que o quad esteja no banco sem incomodar outros pilotos. Normalmente, o alcance desse modo é inferior a 5m. <br><br> NOTA: Alguns protocolos, como o SmartAudio, não podem ativar o Modo Pit através do software após a inicialização.",
+        "description": "Help text for the pit mode field of the VTX tab"
+    },
     "vtxPitModeFrequency": {
         "message": "Frequência do modo Pit",
         "description": "Text of one of the fields of the VTX tab"
@@ -5008,6 +5052,10 @@
         "message": "Quantidade de canais por banda",
         "description": "Text of one of the fields of the VTX Table element in the VTX tab"
     },
+    "vtxTableBandsChannelsHelp": {
+        "message": "Isso define o número de bandas e o número de canais por banda que você deseja para o seu VTX.",
+        "description": "Help for the number of bands and channels field of the VTX Table element in the VTX tab"
+    },
     "vtxTableBandTitleName": {
         "message": "Nome",
         "description": "Text of one of the titles of the VTX Table element in the VTX tab"
@@ -5051,6 +5099,10 @@
     "vtxButtonSaveFile": {
         "message": "Salvar em um arquivo",
         "description": "Save to file button in the VTX tab"
+    },
+    "vtxButtonSaveLua": {
+        "message": "Salvar o script Lua",
+        "description": "Save Lua script button in the VTX tab"
     },
     "vtxButtonLoadFile": {
         "message": "Carregar do arquivo",
