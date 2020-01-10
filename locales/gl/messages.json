@@ -602,6 +602,9 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
+    "defaultWelcomeText": {
+        "message": "A aplicación admite todo o hardware que pode executar Betaflight. Comprobe a pestana flash para ver unha lista completa de hardware.<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Descargar Betaflight Blackbox Log Visualizador </a><br /><br /> O código fonte do firmware pódese descargar de <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\"> aquí </a><br /><br /> Os últimos <b> controladores STM USB VCP </b> pódense descargar de <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\"> aquí </a><br /> Para o hardware antiguo empregando un USB CP210x ao chip serie: <br /> Os últimos <b> controladores CP210x </b> pódense descargar de <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\"> aquí </a><br /> O último <b> Zadig </b> Para a instalación do controlador USB de Windows pódese descargar de <a href=\"http://zadig.akeo.ie/\" target=\"_blank\">target=\"_blank\"> aquí </a><br />"
+    },
     "defaultContributingHead": {
         "message": "Contribuir"
     },
@@ -1596,6 +1599,9 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "A suavización de canles aplícase a"
     },
+    "rcSmoothingDerivativeTypeHelp": {
+        "message": "O tipo de método de filtrado usado para a derivada de referencia. A partir do 4.2 recoméndase o valor predeterminado de \"Auto\". Para 4.1 e versións anteriores, a maioría dos usuarios deberían usar o valor predeterminado \"BIQUAD\" xa que proporciona un bo equilibrio entre suavidade e atraso. \"PT1\" reduce lixeiramente o atraso pero proporciona menos suavización."
+    },
     "rcSmoothingInputTypeHelp": {
         "message": "O tipo de método de filtrado empregado para a entrada. A maioría dos usuarios deben usar o valor \"BIQUAD\" predeterminado xa que proporciona un bo equilibrio entre a suavidade e o atraso. \"PT1\" reduce o atraso lixeiramente pero proporciona menos suavización."
     },
@@ -1619,6 +1625,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Apagado"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Auto"
     },
     "receiverRcSmoothingChannel": {
         "message": "Canles suavizados"
@@ -3612,8 +3621,29 @@
     "failsafeGpsRescueItemThrottleHover": {
         "message": "Acelerador planear"
     },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "Velocidade de ascenso (metros/segundo)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "Velocidade de descenso (metros/segundo)"
+    },
     "failsafeGpsRescueItemMinSats": {
         "message": "Satélites mínimos"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "Permitir armar sen fixar - <span class=\"message-negative\"> ADVERTENCIA: o GPS Rescue non estará dispoñible </span>"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "Modo Altitude"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "Altitude máxima"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "Altitude fixada"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "Altitude actual"
     },
     "failsafeGpsRescueItemSanityChecks": {
         "message": "Controis de corrección"
@@ -4715,6 +4745,13 @@
     },
     "osdDescStatMinRssiDbm": {
         "message": "Valor mínimo dBm RSSI"
+    },
+    "osdTextElementRcChannels": {
+        "message": "Canles RC",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Amosa como máximo 4 valores de canles. As canles deben ser especificadas coa variable CLI \"osd_rcchannels\""
     },
     "osdTextStatUnknown": {
         "message": "Descoñecido $1",
