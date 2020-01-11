@@ -1443,7 +1443,7 @@
         "message": "摄像头(RunCam协议)"
     },
     "pidTuningProfileOption": {
-        "message": "配置文件 $1"
+        "message": "PID 配置文件 $1"
     },
     "pidTuningRateProfileOption": {
         "message": "Rate 配置文件 $1"
@@ -1470,7 +1470,7 @@
         "message": "隐藏未使用的PID"
     },
     "pidTuningNonProfilePidSettings": {
-        "message": "独立于配置文件的 PID 控制器设置"
+        "message": "独立于 PID 配置文件的 PID 控制器设置"
     },
     "pidTuningAntiGravity": {
         "message": "反重力"
@@ -1560,7 +1560,7 @@
         "message": "输入滤波器使用的以 Hz 为单位的截止频率。使用较低的值将得到更平滑的输入，更适合于较慢的接收器协议。大多数用户应该把它留在0，对应“自动”。"
     },
     "rcSmoothingDerivativeCutoffHelp": {
-        "message": "定点导数滤波器使用的以 Hz 为单位的截止频率。使用较低的值将得到更平滑的输入，更适合于较慢的接收器协议。大多数用户应该把它留在0，对应“自动”。"
+        "message": "设定点导数滤波器使用的以 Hz 为单位的截止频率。使用较低的值将得到更平滑的输入信号，更适合于较慢的接收器协议。大多数用户应该把它留在0，对应“自动”。"
     },
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "适用平滑的通道"
@@ -1738,7 +1738,7 @@
         "message": "刷新"
     },
     "pidTuningProfileHead": {
-        "message": "配置文件"
+        "message": "PID 配置文件"
     },
     "pidTuningControllerHead": {
         "message": "PID 控制器"
@@ -1750,13 +1750,13 @@
         "message": "复制 Rate 配置文件"
     },
     "dialogCopyProfileText": {
-        "message": "将当前配置文件复制到"
+        "message": "将当前 PID 配置文件复制到"
     },
     "dialogCopyRateProfileText": {
         "message": "将当前 Rate 配置文件复制到"
     },
     "dialogCopyProfileTitle": {
-        "message": "复制配置文件值"
+        "message": "复制 PID 配置文件"
     },
     "dialogCopyProfileNote": {
         "message": "所有目标配置文件的数值将会被擦除和覆盖"
@@ -1768,19 +1768,19 @@
         "message": "取消"
     },
     "pidTuningResetProfile": {
-        "message": "重置所有配置文件"
+        "message": "重置所有 PID 配置文件"
     },
     "pidTuningProfileReset": {
-        "message": "加载默认配置文件"
+        "message": "加载默认 PID 配置文件"
     },
     "pidTuningReceivedProfile": {
-        "message": "当前飞控配置文件: <strong class=\"message-positive\">$1</strong>"
+        "message": "当前飞控 PID 配置文件: <strong class=\"message-positive\">$1</strong>"
     },
     "pidTuningReceivedRateProfile": {
         "message": "当前飞控 Rate 配置文件：<strong class=\"message-positive\">$1</strong>"
     },
     "pidTuningLoadedProfile": {
-        "message": "加载配置: <strong class=\"message-positive\">$1</strong>"
+        "message": "加载 PID 配置文件: <strong class=\"message-positive\">$1</strong>"
     },
     "pidTuningLoadedRateProfile": {
         "message": "加载 Rate 配置文件: <strong class=\"message-positive\">$1</strong>"
@@ -3165,7 +3165,7 @@
         "message": "以下值会改变 ANGLE 模式和 HORIZON 模式下的行为表现。不同的PID控制器对该值的要求数值会不一样。具体请参阅文档。"
     },
     "pidTuningNonProfileFilterSettings": {
-        "message": "独立于配置文件的滤波器设置"
+        "message": "独立于 PID 配置文件的滤波器设置"
     },
     "pidTuningFilterSlidersHelp": {
         "message": "调整飞机陀螺仪和 D 值滤波的滑块。<br><br>更多的滤波提供更平滑的飞行，但同时也增加陀螺仪信号到达 PID 循环的延迟（相位延迟），降低洗桨处理能力和摇杆的响应手感，甚至导致飞机抖动。<br><br>更少的滤波降低陀螺仪信号延迟，但会因为 D 值响应更高频的电机震动而增加电机发热。<br>另外，如果滤波太少，会损害飞行性能表现（更差的信噪比）。",
