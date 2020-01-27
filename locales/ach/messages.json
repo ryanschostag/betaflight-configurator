@@ -2771,6 +2771,9 @@
     "firmwareFlasherButtonDownloading": {
         "message": "crwdns5994:0crwdne5994:0"
     },
+    "firmwareFlasherExitDfu": {
+        "message": "crwdns9933:0crwdne9933:0"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "crwdns5995:0crwdne5995:0"
     },
