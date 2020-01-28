@@ -2682,6 +2682,9 @@
     "firmwareFlasherButtonDownloading": {
         "message": "Descarregant..."
     },
+    "firmwareFlasherExitDfu": {
+        "message": "Sortir mode DFUDebug"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "Actualizar Programari"
     },
