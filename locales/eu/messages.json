@@ -2692,6 +2692,9 @@
     "firmwareFlasherButtonDownloading": {
         "message": "Deskargatzen..."
     },
+    "firmwareFlasherExitDfu": {
+        "message": "Irten DFU Modutik"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "Firmwarea instalatu"
     },
