@@ -2685,6 +2685,9 @@
     "firmwareFlasherButtonDownloading": {
         "message": "ダウンロード中..."
     },
+    "firmwareFlasherExitDfu": {
+        "message": "DFUモードを終了"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "ファームウェアの更新"
     },
