@@ -2753,6 +2753,9 @@
     "firmwareFlasherButtonDownloading": {
         "message": "다운로드 중..."
     },
+    "firmwareFlasherExitDfu": {
+        "message": "DFU 모드 나가기"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "펌웨어 플래시"
     },
