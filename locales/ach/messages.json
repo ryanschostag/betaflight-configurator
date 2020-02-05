@@ -1338,6 +1338,18 @@
     "configurationCalculatedCyclesSec": {
         "message": "crwdns5637:0[Hz]crwdne5637:0"
     },
+    "configurationSpeedGyroNoGyro": {
+        "message": "crwdns9935:0crwdne9935:0",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
+    "configurationSpeedPidNoGyro": {
+        "message": "crwdns9937:0{{value}}crwdne9937:0",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "crwdns9939:0{{value}}crwdne9939:0",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
     "configurationLoopTimeHelp": {
         "message": "crwdns5638:0crwdne5638:0"
     },
