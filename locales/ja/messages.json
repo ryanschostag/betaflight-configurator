@@ -1163,7 +1163,7 @@
         "message": "ビープ音 設定"
     },
     "beeperGYRO_CALIBRATED": {
-        "message": "Gyroキャリブレーションしたときのビープ音"
+        "message": "ジャイロキャリブレーションしたときのビープ音"
     },
     "beeperRX_LOST": {
         "message": "送信機がオフ、または信号消失時のビープ音 (正常になるまでリピート)"
@@ -1251,6 +1251,18 @@
     },
     "configurationCalculatedCyclesSec": {
         "message": "サイクル / 秒 [Hz]"
+    },
+    "configurationSpeedGyroNoGyro": {
+        "message": "Gyroなし",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
+    "configurationSpeedPidNoGyro": {
+        "message": "Gyro / {{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
     },
     "configurationLoopTimeHelp": {
         "message": "<strong>注意:</strong> FCがこの速度で動作するか確認してください！CPUとサイクル時間の安定度を確認してください。この変更はPIDの再調整を必要とするかもしれません。TIP: パフォーマンスを上げるためには加速度センサや他センサを無効にします。"
