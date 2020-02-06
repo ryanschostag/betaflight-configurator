@@ -1252,6 +1252,18 @@
     "configurationCalculatedCyclesSec": {
         "message": "Ciclos/Seg [Hz]"
     },
+    "configurationSpeedGyroNoGyro": {
+        "message": "No giro",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
+    "configurationSpeedPidNoGyro": {
+        "message": "Giro / {{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
     "configurationLoopTimeHelp": {
         "message": "<strong>Nota:</strong> ¡Asegúrate de que tu FC es capaz de operar a estas velocidades! Comprueba la CPU y la estabilidad del tiempo por ciclo. Al cambiarlo puede ser necesario reajustar el PID. CONSEJO: Deshabilita el Acelerómetro y otros sensores para obtener más rendimiento."
     },
