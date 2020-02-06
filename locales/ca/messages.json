@@ -1252,6 +1252,18 @@
     "configurationCalculatedCyclesSec": {
         "message": "Cicles/Seg [Hz]"
     },
+    "configurationSpeedGyroNoGyro": {
+        "message": "No giro",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
+    "configurationSpeedPidNoGyro": {
+        "message": "Giro / {{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
     "configurationLoopTimeNo32KhzHelp": {
         "message": "$t(configurationLoopTimeHelp.message)<br><strong>Nota sobre el mode de mostreig de giroscopis de 32 kHz:</strong> La compatibilitat amb el mode de mostreig de giroscopis de 32 kHz es va afegir a Betaflight com a funció experimental. Durant els anys que va estar disponible, mai no ha demostrat tenir cap avantatge respecte al mode de mostreig de giroscopis de 8 kHz, a causa de la seva susceptibilitat a vibracions i el seu elevat nivell de soroll que requereix un filtratge agressiu, provocant retards en el bucle de control. Per aquest motiu, s'ha descartat el suport<strong> per al mode de mostreig de giroscopis de 32 kHz</strong> a Betaflight 4.0."
     },
