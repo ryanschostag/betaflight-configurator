@@ -1252,6 +1252,18 @@
     "configurationCalculatedCyclesSec": {
         "message": "Ciclos/Seg [Hz]"
     },
+    "configurationSpeedGyroNoGyro": {
+        "message": "Sem gyro",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
+    "configurationSpeedPidNoGyro": {
+        "message": "Gyro / {{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
     "configurationLoopTimeHelp": {
         "message": "<strong>Nota:</strong> Tenha a certeza de que o controlador é capaz de operar na velocidade selecionada! Verifique a estabilidade do CPU e o tempo de ciclo. Alterar este valor pode requerer uma nova afinação do PID. DICA: Desative o acelerômetro e outros sensores para ganhar mais performance."
     },
@@ -2684,6 +2696,9 @@
     },
     "firmwareFlasherButtonDownloading": {
         "message": "Baixando..."
+    },
+    "firmwareFlasherExitDfu": {
+        "message": "Sair do modo DFU"
     },
     "firmwareFlasherFlashFirmware": {
         "message": "Atualizar Firmware"
