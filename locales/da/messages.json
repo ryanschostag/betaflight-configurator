@@ -1022,9 +1022,6 @@
     "configurationLoopTime": {
         "message": "Flight Controller Loop-tid"
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Note til 32 kHz gyro samplingtilstand:</strong> Understøttelse af 32 kHz gyro samplingtilstand blev tilføjet Betaflight som en eksperimentel funktion. I de år den var tilgængelig, har den aldrig vist sig at have nogen fordel ift. 8 kHz gyro samplingtilstanden grundet dens vibrationsfølsomhed og høje støjniveau, som kræver aggressiv filtrering med forsinkelser i kontrolløkken til følge. Af denne grund er <strong>understøttelse af 32 kHz gyro samplingtilstand droppet</strong> i Betaflight 4.0."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
