@@ -1251,9 +1251,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Nota:</strong> Tenha a certeza de que o controlador é capaz de operar na velocidade selecionada! Verifique a estabilidade do CPU e o tempo de ciclo. Alterar este valor pode requerer uma nova afinação do PID. DICA: Desative o acelerômetro e outros sensores para ganhar mais performance."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Nota sobre a frequência de atualização do Gyro a 32 kHz:</strong> O Modo 32kHz foi adicionado no Betaflight de forma experimental. Durante o tempo em que esteve disponível, nunca foi possível observar qualquer vantagem sobre o modo de 8kHz, por ser susceptível a vibrações e seu alto nível de ruído, que requer uma filtragem agressiva, causando atrasos no loop de controle. Por este motivo, no Betaflight 4.0, <strong>não há mais suporte para a frequência de atualização do Gyro a 32 kHz</strong>."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -3280,9 +3277,6 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Fator Q ajusta quão curto ou amplo são os filtros Notch Dinâmicos. Valores maiores fazem com que fiquem mais curtos e mais precisos e valores menores fazem com que fiquem mais largos e amplos. Utilizar um valor muito baixo irá aumentar o atraso do filtro consideravelmente."
-    },
-    "pidTuningDynamicNotchMinHzHelp": {
-        "message": "Define a frequência de centro mínima do filtro notch dinâmico, o filtro não irá abaixo do que este valor."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Filtro do Gyro por RPM",
