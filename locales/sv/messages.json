@@ -1278,9 +1278,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Observera:</strong> Säkerställ att din flygkontroller klarar dessa hastigheter! Kontrollera CPU och cykeltidsstabiliteten. Ändringar här kan kräva ändringar av PID-inställningar. TIPS: Avaktivera accelerometer och andra sensorer för att få bättre prestanda."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Notering om 32 kHz samplingsmode för gyro:</strong> Stöd för 32kHz samplingsmode för gyro lades till i Betaflight som en experimentell funktion. Under de år den funnits tillgänglig har den aldrig visat sig ha några fördelar gentemot 8 kHz samplingsmode för gyro, på grund av känsligheten för vibrationer och den höga brusnivån som kräver aggressiv filtrering, som i sin tur leder till fördröjningar i styrloopen. Av detta skäl har <strong>stödet för 32kHz samplingsmode för gyro tagits bort</strong> i Betaflight 4.0."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -3175,9 +3172,6 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Q-faktorn justerar hur snäva eller breda de dynamiska bandspärrfiltren är. Ett högre värde gör dem snävare och mer precisa, och ett lägre värde gör dem bredare. Ett riktigt lågt värde kommer att öka filterfördröjningen märkbart."
-    },
-    "pidTuningDynamicNotchMinHzHelp": {
-        "message": "Definierar den lägsta dynamiska bandspärrscentrumfrekvensen som den dynamiska bandspärren inte kan understiga."
     },
     "pidTuningFilterSettings": {
         "message": "Profilberoende filterinställningar"
