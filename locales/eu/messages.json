@@ -1274,9 +1274,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Oharra:</strong> Ziurtatu zure FC abiadura horietan funtzionatzeko gai dela! Egiaztatu CPU eta Ziklo denboraren egonkortasuna. Aldatzean, beharrezkoa izango da PID berrezartzea. OHARRA: Errendimendu gehiago lortzeko, desgaitu azelerometroa eta bestelako sentsoreak."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>32 kHz moduko oharra:</strong> 32 kHz giro laginketa egiteko aukera gehitu zen Betaflight-en funtzionalitate esperimental gisa. Eskuragarri egon den urteetan, inoiz ez da inolako abantailarik erakutsi 8 kHz-ko giro-laginketa moduarekin, bibrazioekiko suszeptibotasunagatik eta iragazketa oldarkorra behar duen zarata maila handiagatik. Hori dela eta, <strong>32 kHz-eko giro-laginketarako laguntza kendu da</strong> Betaflight 4.0-n."
-    },
     "configurationGPS": {
         "message": "GPSa"
     },
@@ -3312,6 +3309,9 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "Notch Dinamikoa Min Hz"
     },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "Notch Dinamikoa Max Hz"
+    },
     "pidTuningDynamicNotchRangeHelp": {
         "message": "Notch dinamikoak hiru frekuentzian funtziona dezake: BAXUA (80-330hz) 6+ hazbeteko bezalako birakatze txikiagoetarako, ERDIA (140-550hz) 5 hazbeteko quad normal, ALTUA (230-800hz) oso altuerako 2,5-3 hazbeteko quad-ak berpiztea AUTO aukerak barrutia hautatzen du 1. Giro Behe-paseko Dinamiko Iragazkiaren ebakidura frekuentzia maximoaren balioaren arabera."
     },
@@ -3322,7 +3322,10 @@
         "message": "Q faktorea Notch Iragazki Dinamikoak estu edo zabal egokitzeko erabiltzen da. Balio altuagoak estuagoak eta zehatzagoak dira eta balio baxuagoak zabalagoak eta zabalagoak egiten ditu. Benetan balio txikia izateak asko handituko du iragazkien atzerapena."
     },
     "pidTuningDynamicNotchMinHzHelp": {
-        "message": "Notch Iragazki Dinamikoa zentroaren azpian dagoen gutxieneko frekuentzia definitzen du."
+        "message": "Notch dinamikoa kontrolatu behar duen zarata maiztasun txikienean ezarri."
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "Notch dinamikoa kontrolatu behar duen zarata maiztasun handiagoan ezarri."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Giro RPM Iragazkia",
