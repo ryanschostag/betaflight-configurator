@@ -1267,9 +1267,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>注意:</strong> FCがこの速度で動作するか確認してください！CPUとサイクル時間の安定度を確認してください。この変更はPIDの再調整を必要とするかもしれません。TIP: パフォーマンスを上げるためには加速度センサや他センサを無効にします。"
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>32 kHz ジャイロサンプリングモードにおける注意事項:</strong> 実験的な機能の一つとして、32 kHzジャイロサンプリングモードがBetaflightに実装されました。利用可能になった当初、機体の振動に敏感であること、および積極的なフィルタリングを必要としノイズが多く発生するため、ループ制御の遅延を引き起こしてしまい8 kHzジャイロサンプリングモードを超えるような利点を見出すことができませんでした。そのためBetaflight 4.0では、<strong>32 kHzジャイロサンプリングモードのサポートを終了</strong>致します。"
-    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -3313,9 +3310,6 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Q係数は動的ノッチフィルターの幅を調整します。値を大きくすると幅が狭くなり、より正確となり、値を低くすると幅が広くなります。本当に低い値を設定すると、フィルター遅延が大幅に増加します。"
-    },
-    "pidTuningDynamicNotchMinHzHelp": {
-        "message": "その値以下でダイナミックノッチが遷移しない最低ダイナミックノッチ中心周波数を定義します。"
     },
     "pidTuningRpmFilterGroup": {
         "message": "ジャイロRPMフィルター",
