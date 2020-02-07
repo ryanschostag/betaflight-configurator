@@ -1316,9 +1316,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>注意：</strong>确保你的飞控有能力运行在这些频率上！检查CPU循环时间是否稳定。改变频率可能需要重新调校PID。提示：关闭加速度计和其他传感器可以节省运算资源以获得更高性能。"
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>关于32k陀螺仪采样模式的说明：</strong> Betaflight 曾以实验特性的形式提供了对 32kHz 陀螺仪采样模式的支持。在它可用的时间里，因其对震动的敏感性，且其较高的噪声水平所需要的更激进的滤波对控制环路造成的延迟，相较于 8kHz 陀螺仪采样模式它并未体现出任何优势。基于以上原因，在 Betaflight 4.0 中<strong>对 32kHz 陀螺仪采样模式的支持已被废弃 </strong>。"
-    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -3337,9 +3334,6 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Q调整了动态陷波滤波器的宽度。更高的值将使其变得更窄、更精准，较低的值将使其变得更宽、更宽泛。将Q调到很低将会带来很大的滤波器延迟。"
-    },
-    "pidTuningDynamicNotchMinHzHelp": {
-        "message": "定义动态陷波滤波器最低中心频率，动态陷波滤波器不会低于此值运行。"
     },
     "pidTuningRpmFilterGroup": {
         "message": "陀螺仪 RPM 滤波器",
