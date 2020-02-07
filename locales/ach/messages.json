@@ -1353,9 +1353,6 @@
     "configurationLoopTimeHelp": {
         "message": "crwdns5638:0crwdne5638:0"
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "crwdns9132:0$t(configurationLoopTimeHelp.message)crwdne9132:0"
-    },
     "configurationGPS": {
         "message": "crwdns5639:0crwdne5639:0"
     },
@@ -3391,6 +3388,9 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "crwdns9540:0crwdne9540:0"
     },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "crwdns9941:0crwdne9941:0"
+    },
     "pidTuningDynamicNotchRangeHelp": {
         "message": "crwdns9542:0crwdne9542:0"
     },
@@ -3401,7 +3401,10 @@
         "message": "crwdns9546:0crwdne9546:0"
     },
     "pidTuningDynamicNotchMinHzHelp": {
-        "message": "crwdns9548:0crwdne9548:0"
+        "message": "crwdns9943:0crwdne9943:0"
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "crwdns9945:0crwdne9945:0"
     },
     "pidTuningRpmFilterGroup": {
         "message": "crwdns9814:0crwdne9814:0",
