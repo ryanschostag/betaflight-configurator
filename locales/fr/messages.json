@@ -1319,9 +1319,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Note:</strong> Assurez vous que votre FC peut fonctionner à ces vitesses ! Vérifiez le CPU. Cela peut demander de re-tuner ses PID. TIP: Désactivez l'accéléromètre  et les autres capteurs pour gagner en performance."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>À propos de la boucle gyro à 32kHz:</strong> La boucle gyro à 32 kHz avait été ajoutée à Betaflight en tant que fonctionnalité expérimentale. Il n'a jamais été démontré qu'il y avait un avantage réel par rapport à une boucle cadencée à 8kHz, notamment à cause de sa sensibilité aux vibrations et un niveau de bruit élevés, exigeant un filtrage fort qui induit de la latence dans la boucle. Pour cette raison, <strong>le support de la boucle gyro à 32 kHz à été abandonné</strong> à partir de la version Betaflight 4.0."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -3359,9 +3356,6 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Q ajuste la largeur de plage du filtre Notch Dynamique. Une valeur élevée rétrécie la plage et le rend plus précis, une valeur élevée élargit la plage. Une valeur vraiment basse augmente significativement la latence liée au filtrage."
-    },
-    "pidTuningDynamicNotchMinHzHelp": {
-        "message": "Définit la fréquence minimum du centre du Notch Dynamique, valeur en dessous de laquelle le Notch Dynamique n'interviendra pas."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Filtre Gyro RPM",
