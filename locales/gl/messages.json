@@ -1334,9 +1334,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Nota:</strong> Asegúrese de que a súa FC poida funcionar a estas velocidades. Comprobe a estabilidade da CPU e do ciclo. Cambiar isto pode requirir a reordenación de PID. SUXERENCIA: desactivar o acelerómetro e outros sensores para obter máis rendemento."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message) <br> <strong> Nota sobre o modo de mostraxe xiratorio de 32 kHz: </strong> o soporte para o modo de mostraxe de xiro de 32 kHz engadiuse a Betaflight como unha característica experimental. Nos anos nos que estivo dispoñible, nunca mostrou que ten ningunha vantaxe sobre o modo de mostraxe xiratorio de 8 kHz, debido á súa susceptibilidade ás vibracións e ao seu alto nivel de ruído que require un filtrado agresivo, provocando atrasos no circuíto de control. Por esa razón, o <strong> soporte para o modo de mostraxe xiratorio de 32 kHz foi descartado </strong> en Betaflight 4.0."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -3377,9 +3374,6 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "O factor Q axusta como de estreito ou amplo é o filtro notch dinámico. Un valor maior faino máis estreito e preciso e un valor máis baixo fai que sexa máis amplo. Ter un valor realmente baixo aumentará considerablemente o atraso do filtro."
-    },
-    "pidTuningDynamicNotchMinHzHelp": {
-        "message": "Define a frecuencia de centro notch dinámica máis baixa por debaixo da cal non pasará a notch dinámico."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Filtro Gyro RPM",
