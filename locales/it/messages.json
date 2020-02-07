@@ -1237,9 +1237,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Nota:</strong>  Assicurati che il FC sia in grado di operare a queste velocità! controlla la stabilità della CPU e del cycletime. La modifica potrebbe richiedere una nuova messa a punto dei PID. SUGGERIMENTO: disabilita l'accelerometro e gli altri sensori per avere maggiori prestazioni."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message) <br> <strong> Nota sulla modalità di campionamento giroscopico a 32 kHz: </strong> il supporto per la modalità di campionamento del giroscopico a 32 kHz è stato aggiunto a Betaflight come funzionalità sperimentale. Negli anni in cui era disponibile, non ha mai dimostrato di avere alcun vantaggio sulla modalità di campionamento del giroscopio a 8 kHz, a causa della sua suscettibilità alle vibrazioni e del suo elevato livello di rumore che richiede un filtraggio aggressivo, causando ritardi nel circuito di controllo. Per questo motivo, il <strong> supporto per la modalità di campionamento giroscopico a 32 kHz è stato eliminato </strong> in Betaflight 4.0."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
