@@ -1249,11 +1249,16 @@
     "configurationCalculatedCyclesSec": {
         "message": "Cykle/Sekundy [Hz]"
     },
+    "configurationSpeedPidNoGyro": {
+        "message": "Żyro / {{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
     "configurationLoopTimeHelp": {
         "message": "<strong>Uwaga:</strong> Upewnij się że twój kontroler lotu może działać z wybraną prędkością! Sprawdź CPU i stabilność czasu cyklu. Zmiana tego parametru może wymagać ponownego ustawienia PID. Porada: Wyłącz akcelerometr i inne czujniki aby zyskać na wydajności."
-    },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message) <br> <strong> Uwaga na temat trybu próbkowania żyroskopu 32 kHz: </strong> Wsparcie dla 32kHz zostało dodane do Betaflight jako eksperymentalną funkcja. Przez lata dostępności nie wykazała żadnej przewagi nad próbkowaniem 8kHz, ze względu podatności na wibracje i wysoki poziom zakłuceń, które wymagały agresywnego filtrowania, powodując opóźnienia w pętli sterowania. Z tego powodu zrezygnowano z obsługi <strong> próbkowania żyroskopu 32 kHz </strong> w Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1516,6 +1521,9 @@
     },
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Kanały do których odnosi się wygładzanie"
+    },
+    "rcSmoothingDerivativeTypeHelp": {
+        "message": "Rodzaj metody filtrowania stosowanej do pochodnej wartości zadanej. Począwszy od Betaflight 4.2 zalecana jest domyślna wartość „Auto”. W wersji 4.1 i wcześniejszych większość użytkowników powinna używać domyślnej wartości „BIQUAD”, ponieważ zapewnia ona dobrą równowagę między płynnością a opóźnieniem. „PT1” nieznacznie zmniejsza opóźnienie, ale zapewnia mniej wygładzania."
     },
     "rcSmoothingInputTypeHelp": {
         "message": "Rodzaj metody filtrowania zastosowany dla danych wejściowych. Większość użytkowników powinna używać domyślnej wartości „BIQUAD”, ponieważ zapewnia ona równowagę między płynnością a opóźnieniem. „PT1” nieznacznie zmniejsza opóźnienie, ale zapewnia mniej wygładzania."
@@ -3281,9 +3289,6 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Współczynnik Q dostosowuje szerokość charakterystyki filtra dynamicznego. Wyższa wartość sprawia, że pasmo aktywne filtra jest wąskie i dokładniejsze, a niższa wartość daje szerszą strefę aktywną. Używanie naprawdę niskiej wartości znacznie zwiększy opóźnienie filtra (więcej obliczeń)."
-    },
-    "pidTuningDynamicNotchMinHzHelp": {
-        "message": "Określa najniższą środkową częstotliwość dynamicznego filtra pasmowo zaporowego \"notch\", poniżej której filtr dynamiczny nie zejdzie."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Żyroskopowy filtr RPM",
