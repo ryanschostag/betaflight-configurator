@@ -980,7 +980,7 @@
         "message": "Increment temporal del valor I en grans canvis d'acceleració"
     },
     "featureDYNAMIC_FILTER": {
-        "message": "Filtratge notch dinamic de gyro"
+        "message": "Filtratge Notch dinamic de giro"
     },
     "featureFAILSAFE": {
         "message": "Activa Failsafe Stage 2"
@@ -1263,9 +1263,6 @@
     "configurationKHzUnitLabel": {
         "message": "{{value}} kHz",
         "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
-    },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Nota sobre el mode de mostreig de giroscopis de 32 kHz:</strong> La compatibilitat amb el mode de mostreig de giroscopis de 32 kHz es va afegir a Betaflight com a funció experimental. Durant els anys que va estar disponible, mai no ha demostrat tenir cap avantatge respecte al mode de mostreig de giroscopis de 8 kHz, a causa de la seva susceptibilitat a vibracions i el seu elevat nivell de soroll que requereix un filtratge agressiu, provocant retards en el bucle de control. Per aquest motiu, s'ha descartat el suport<strong> per al mode de mostreig de giroscopis de 32 kHz</strong> a Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -3264,7 +3261,7 @@
         "message": "Els filtres de pas baix poden tenir dues variants: estàtica i dinàmica. Per a un número de filtre determinat de pas baix només es pot habilitar un (estàtic o dinàmic) alhora. L'estàtic només té un tall que és un valor que defineix d'alguna manera on s'inicia el filtre. La dinàmica defineix valors mínims i màxims, és a dir, el rang on es posa el punt de tall. Aquest tall de distància es mou de mínim a màxim alhora que es mou l’stick del Throttle."
     },
     "pidTuningGyroNotchFiltersGroup": {
-        "message": "Filtres Notch del Giro"
+        "message": "Filtres Notch (banda eliminada) del Giro"
     },
     "pidTuningGyroNotch1Frequency": {
         "message": "Giro Filtre Notch 1 Freqüència Central [Hz]"
@@ -3279,47 +3276,53 @@
         "message": "Giro Filtre Notch 2 Freqüència de Tall [Hz]"
     },
     "pidTuningNotchFilterHelp": {
-        "message": "El filtre de banda eliminada té un centre i un tall. El filtre és simètric. La freqüència central és el centre del filtre i la freqüència de tall és on s’inicia el filtre de banda eliminada. Per exemple, amb un tall de banda eliminada de 160 i centre de banda eliminada de 260, significa que l’interval és de 160-360Hz amb més atenuació al voltant del centre"
+        "message": "El filtre Notch (banda eliminada) té un centre i un tall. El filtre és simètric. La freqüència central és el centre del filtre i la freqüència de tall és on s’inicia el filtre de banda eliminada (Notch). Per exemple, amb un tall Notch de 160 i centre Notch de 260, significa que l’interval és de 160-360Hz amb més atenuació al voltant del centre"
     },
     "pidTuningDynamicNotchFilterGroup": {
-        "message": "Filtre dinàmic de banda eliminada"
+        "message": "Filtre Notch (banda eliminada) dinàmic"
     },
     "pidTuningDynamicNotchFilterHelp": {
-        "message": "El filtre de banda eliminada dinàmic rastreja la freqüència màxima del soroll dels motors i col·loca un o dos filtres de banda eliminada amb el seu centre a aquesta freqüència."
+        "message": "El filtre Notch (banda eliminada) dinàmic rastreja la freqüència màxima del soroll dels motors i col·loca un o dos filtres Notch amb el seu centre a aquesta freqüència."
     },
     "pidTuningDynamicNotchFilterDisabledWarning": {
-        "message": "<strong> Avís:</strong> El filtre de banda eliminada dinàmic està desactivat. Per configurar-lo i utilitzar-lo, activa la funció 'FILTRE DINÀMIC' a la secció '$t(configurationFeatures.message)' de la pestanya '$t(tabConfiguration.message)'."
+        "message": "<strong> Avís:</strong> El filtre Notch dinàmic està desactivat. Per configurar-lo i utilitzar-lo, activa la funció 'FILTRE DINÀMIC' a la secció '$t(configurationFeatures.message)' de la pestanya '$t(tabConfiguration.message)'."
     },
     "pidTuningDynamicNotchRange": {
-        "message": "Rang del filtre dinàmic de banda eliminada"
+        "message": "Rang del filtre dinàmic de banda eliminada (Notch)"
     },
     "pidTuningDynamicNotchWidthPercent": {
-        "message": "Percentatge de l'amplada del filtre de banda eliminada"
+        "message": "Percentatge de l'amplada del filtre Notch (banda eliminada) dinàmic"
     },
     "pidTuningDynamicNotchQ": {
-        "message": "Q dinàmic de banda eliminada"
+        "message": "Q dinàmic de banda eliminada (Notch)"
     },
     "pidTuningDynamicNotchMinHz": {
-        "message": "Minin Hz de la banda eliminada dinàmica"
+        "message": "Mìnin Hz del Notch dinàmic"
+    },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "Màxims Hz del Notch dinàmic"
     },
     "pidTuningDynamicNotchRangeHelp": {
-        "message": "La banda dinàmica eliminada té tres rangs de freqüència en els quals pot funcionar: BAIX (80-330hz) per a quads revolucionats de 6 o més polzades, MITJA (140-550hz) per a un quad normal de 5 polzades, ALT (230-800Hz) per quads molt revolucionats de 2,5-3 polzades. L'opció AUTO selecciona l'abast en funció del valor de la freqüència màxima de tall del filtre dinàmic passa-baixos de Giro 1."
+        "message": "El Notch (banda eliminada) dinàmic té tres rangs de freqüència en els quals pot funcionar: BAIX (80-330hz) per a quads revolucionats de 6 o més polzades, MITJA (140-550hz) per a un quad normal de 5 polzades, ALT (230-800Hz) per quads molt revolucionats de 2,5-3 polzades. L'opció AUTO selecciona l'abast en funció del valor de la freqüència màxima de tall del filtre dinàmic passa-baixos de Giro 1."
     },
     "pidTuningDynamicNotchWidthPercentHelp": {
-        "message": "Estableix l'amplada entre dos filtres de mida dinàmica de banda eliminada. Si es situa a 0, es desactivarà el segon filtre de banda eliminada dinàmica i es reduirà el retard del filtre, però pot augmentar la temperatura del motor."
+        "message": "Estableix l'amplada entre dos filtres de banda eliminada (Notch) dinàmics. Si es situa a 0, es desactivarà el segon filtre Notch i es reduirà el retard del filtre, però pot augmentar la temperatura del motor."
     },
     "pidTuningDynamicNotchQHelp": {
-        "message": "El factor Q ajusta quan ample o estret es son els filtres dinàmics de banda eliminada. Valors elevats els fan més estrets i acurats, valors baixos els fa més amples y alts. Tenir un valor molt baix augmentarà considerablement el retard del filtre."
+        "message": "El factor Q ajusta quan ample o estret es son els filtres dinàmics Notch. Valors elevats els fan més estrets i acurats, valors baixos els fa més amples y alts. Tenir un valor molt baix augmentarà considerablement el retard del filtre."
     },
     "pidTuningDynamicNotchMinHzHelp": {
-        "message": "Defineix la freqüència de centre de banda eliminada dinàmica més baixa per sota de la qual no la banda eliminada dinàmica no funcionarà."
+        "message": "Configureu-lo a la freqüència de soroll entrant més baixa que fa falta per ser controlat pel Notch dinàmic."
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "Configureu-lo a la freqüència de soroll entrant més alta que fa falta per ser controlat pel Notch dinàmic."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Filtre giro RPM",
         "description": "Header text for the RPM Filter group"
     },
     "pidTuningRpmFilterHelp": {
-        "message": "El filtratge RPM és un banc de filtres de banda eliminada al Giro que utilitzen les dades de telemetria RPM per eliminar el soroll del motor amb precisió quirúrgica.<br><br><b><span class=\"message-positive\">IMPORTANT</span>: El ESC ha de ser compatible amb el protocol DShot bidireccional i el valor del $t(configurationMotorPoles.message) a la pestanya $t(tabConfiguration.message) ha de ser correcte perquè aquest filtre funcioni.</b>",
+        "message": "El filtratge RPM és un banc de filtres Notch (de banda eliminada) al Giro que utilitzen les dades de telemetria RPM per eliminar el soroll del motor amb precisió quirúrgica.<br><br><b><span class=\"message-positive\">IMPORTANT</span>: El ESC ha de ser compatible amb el protocol DShot bidireccional i el valor del $t(configurationMotorPoles.message) a la pestanya $t(tabConfiguration.message) ha de ser correcte perquè aquest filtre funcioni.</b>",
         "description": "Header text for the RPM Filter group"
     },
     "pidTuningRpmHarmonics": {
@@ -3327,7 +3330,7 @@
         "description": "Text for one of the parameters of the RPM Filter"
     },
     "pidTuningRpmHarmonicsHelp": {
-        "message": "Nombre de harmònics per motor. Un valor de 3 (recomanat per la majoria de quads) generarà 3 filtres de banda eliminada, pero motor i per eix, totalitzant 36 bandes eliminades. Una a la freqüència fonamental del motor i dos harmònics a múltiples de la freqüència fonamental.",
+        "message": "Nombre de harmònics per motor. Un valor de 3 (recomanat per la majoria de quads) generarà 3 filtres de banda eliminada (Notch), per motor i per eix, totalitzant 36 bandes eliminades (Notch). Una a la freqüència fonamental del motor i dos harmònics a múltiples de la freqüència fonamental.",
         "description": "Help text for one of the parameters of the RPM Filter"
     },
     "pidTuningRpmMinHz": {
@@ -3366,13 +3369,13 @@
         "message": "Tipus filtre Passa-baixos dinàmic 1 del D Term"
     },
     "pidTuningDTermNotchFiltersGroup": {
-        "message": "Filtres Bandes eliminades D Term"
+        "message": "Filtres Notch D Term"
     },
     "pidTuningDTermNotchFrequency": {
-        "message": "Freqüència central del filtre de banda eliminada D Term [Hz]"
+        "message": "Freqüència central del filtre Notch D Term [Hz]"
     },
     "pidTuningDTermNotchCutoff": {
-        "message": "Freqüència de tall del filtre de banda eliminada D Term [Hz]"
+        "message": "Freqüència de tall del filtre Notch D Term [Hz]"
     },
     "pidTuningYawLospassFiltersGroup": {
         "message": "Filtres Passa-baixos del Yaw"
