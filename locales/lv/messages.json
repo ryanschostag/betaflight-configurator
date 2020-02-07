@@ -1202,9 +1202,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Piezīme:</strong> Pārliecināties, ka jūsu kontrolieris ir spējīgs darboties šādos ātrumos! Pārbaudiet CPU un cikla laika stabilitāti. Mainot šo iespējams būs nepieciešams pārregulēt PID. IETEIKUMS: Atslēdziet Akselerometru un citus sensorus lai ietaupītu CPU resursus."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Piezīme par žiroskopa 32kHz mērījuma ātruma režīmā:</strong> Žiroskopa 32kHz mērījuma ātruma režīma atbalsts Betaflight tika pievienots kā eksperimentāla iespēja. Šos gadus kamēr tā bija pieejama, tā neuzrādīja nekādas priekšrocības attiecībā pret 8 kHz mērījuma ātruma režīmu, dēļ tās īpašās jūtības uz vibrācijām, un augsto trokšņu līmeni, kam nepieciešama agresīva filtrēšana, kas savukārt radīja aiztures vadības cilpās. Dēļ šī iemesla, <strong>žiroskopa 32kHz mērījuma ātruma režīma atbalsts ir pārtraukts</strong> iekš Betaflight 4.0."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
