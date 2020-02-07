@@ -1212,9 +1212,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Napomena:</strong> Provjerite da vaš kontroler leta može raditi na odabranim brzinama! Provjerite CPU opterećenje i stabilnost vremena ciklusa. Mjenjanje ovih postavki će možda utjecati na postavke PID kontrolera. SAVJET: Onemogućite akcelerometa i ostale senzore koje ne koristite kako bi oslobodili procesor."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Napomena o korištenju 32kHz frekvencije uzorkovanja stanja žiroskopa</strong>Podrška za 32kHz je dodana u Betaflight kao eksperimentalna mogućnost. Dosad nikad nije dokazano da postoji prednost nad 8 kHz uzorkovanjem, zbog podložnosti vibracijama koje zahtjevaju dodatno filtriranje, stvarajući kašnjenja u kontrolnoj petlji. Stoga, <strong> podrška za 32kHz uzorkovanje je ukinuta</strong> u Betaflight verziji 4.0."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
