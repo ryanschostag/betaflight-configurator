@@ -1335,9 +1335,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>도움말:</strong> FC가 이러한 속도로 동작할 수 있는지 확인하십시오! CPU 및 사이클 시간의 안정성을 점검하십시오. 이를 변경하면 PID 재조정이 필요할 수 있습니다. 팁: 가속도계 및 기타 센서를 비활성화하여 더 많은 성능을 얻으십시오."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>32 kHz 자이로 샘플링 모드에 대한 공지:</strong> 32 kHz 자이로 샘플링 모드에 대한 지원은 베타플라이트에 추가 된 실험적인 기능입니다. 수 년 동안 그것을 사용할 수 있었으나, 그것은 진동에 대한 민감성 및 제어 루프의 지연을 야기하는 공격적인 필터링을 필요로 하는 높은 노이즈 수준 때문에, 결코 그것이 8 kHz 자이로 샘플링 모드 이상의 이점을 가진다고 보여지지 않았습니다. 이러한 이유로, 베타플라이트 4.0에는 <strong>32 kHz 자이로 샘플링 모드에 대한 지원이 중단되었습니다.</strong>"
-    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -3381,9 +3378,6 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Q 인자는 다이나믹 노치 필터를 얼마나 좁게 또는 넓게 조절하는 것을 의미합니다. 높은 값일수록 필터는 좁아지며 더 정밀합니다. 낮은 값일수록 필터는 넓어지며 커집니다. 매우 낮은 값은 필터 지연을 상당히 증가시킵니다."
-    },
-    "pidTuningDynamicNotchMinHzHelp": {
-        "message": "다이나믹 노치가 내려가지 않는 가장 낮은 다이나믹 노치 중심 주파수를 정의합니다."
     },
     "pidTuningRpmFilterGroup": {
         "message": "자이로 RPM 필터",
