@@ -1267,9 +1267,6 @@
     "configurationLoopTimeHelp": {
         "message": "<strong>Nota:</strong> ¡Asegúrate de que tu FC es capaz de operar a estas velocidades! Comprueba la CPU y la estabilidad del tiempo por ciclo. Al cambiarlo puede ser necesario reajustar el PID. CONSEJO: Deshabilita el Acelerómetro y otros sensores para obtener más rendimiento."
     },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Nota sobre el modo de muestreo de 32 kHz:</strong> La posibilidad de muestreo de giro de 32 kHz se añadió en Betaflight como una funcionalidad experimental. En los años en los que ha estado disponible, nunca ha mostrado ninguna ventaja sobre el modo de muestreo de giro de 8 kHz, debido a su susceptibilidad a vibraciones, y a su alto nivel de ruido que requiere un filtrado agresivo, causando retardos en el bucle de control. Por esta razón, <strong>el soporte de muestreo de giro de 32 kHz ha sido eliminado</strong> en Betaflight 4.0."
-    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -3305,6 +3302,9 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "Giro Filtro Notch Dinámico Min [Hz]"
     },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "Giro Filtro Notch Dinámico Max [Hz]"
+    },
     "pidTuningDynamicNotchRangeHelp": {
         "message": "El Filtro Notch Dinámico tiene tres rangos de frecuencias en las que puede operar: LOW (80-300Hz) para quads con pocas revoluciones como 6\" o más, MEDIUM (140-550Hz) para un quad normal de 5\", HIGH (230-800Hz) para quads de altas revoluciones como por ejemplo 2,5\"-3\". La opción AUTO selecciona el rango dependiendo del valor de la frecuencia de corte máxima del filtro Giro Paso Bajo 1 Dinámico."
     },
@@ -3315,7 +3315,10 @@
         "message": "El factor Q ajusta como de estrechos o anchos son los Filtros Notch Dinámicos. Valores más altos lo hacen estrecho y más preciso y valores más bajos lo hacen más ancho y extenso. Un valor muy bajo aumenta considerablemente el retraso producido por el filtro."
     },
     "pidTuningDynamicNotchMinHzHelp": {
-        "message": "Define la mínima frecuencia para el centro del Filtro Notch Dinámico por debajo de la cual el filtro no entrará."
+        "message": "Ajusta esto a la frecuencia mínima que necesita ser controlada por el filtro notch dinámico."
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "Ajusta esto a la frecuencia máxima que necesita ser controlada por el filtro notch dinámico."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Giro Filtro RPM",
