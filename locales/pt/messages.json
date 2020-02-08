@@ -823,10 +823,6 @@
         "message": "Uma das alterações de configuração requer uma reinicialização",
         "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
-        "message": "O acelerômetro não foi calibrado e os recursos habilitados dependem dele. Calibre o acelerômetro.",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
-    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "O Switch de armar não está em uma posição segura",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
