@@ -891,10 +891,6 @@
         "message": "Le DSHOT Bitbanged ne fonctionne pas correctement. Les moteurs ne peuvent pas être contrôlés, probablement à cause un conflit de timer avec d'autres fonctionnalités activées sur le contrôleur de vol.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
-        "message": "L'accéléromètre n'a pas été calibré, et certaines fonctionnalités actives en ont besoin. Calibrez l'accéléromètre.",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
-    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Un des autres drapeaux désarmés est actif lors de l'armement",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
