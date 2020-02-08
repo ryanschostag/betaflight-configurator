@@ -824,10 +824,6 @@
         "message": "Komunikacja DSHOT nie działa poprawnie i nie można kontrolować silników. Prawdopodobnie jest to spowodowane przez konflikt z innymi funkcjami włączonymi w kontrolerze lotu.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
-        "message": "Akcelerometr nie został skalibrowany, a funkcje które na nim polegają są włączone. Skalibruj Akcelerometr.",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
-    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Jedna z pozostałych flag rozbrojenia jest aktywna podczas uzbrajania",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
