@@ -820,10 +820,6 @@
         "message": "Изменения в конфигурации требуют перезагрузки",
         "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
-        "message": "Акселерометр не откалиброван и включены функции, которые зависят от него. Откалибровуйте акселерометр.",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
-    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Один из других флагов дизарм активен при арминге",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
