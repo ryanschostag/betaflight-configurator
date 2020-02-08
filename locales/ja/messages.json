@@ -827,10 +827,6 @@
         "message": "Bitbanged DSHOTが正常に動作せず、モーターを制御できません。おそらくフライトコントローラで有効になっている他機能とタイマーとの競合が原因かと思われます。",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
-        "message": "加速度センサーはキャリブレーションされていませんが、依存する機能が有効になっています。 加速度センサーをキャリブレーションしてください。",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
-    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "他のフラグの1つはアーム時にフラグを解除します",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
