@@ -827,9 +827,9 @@
         "message": "Bitbanging DSHOT no está funcionando correctamente y los motores no pueden ser controlados. Probablemente causado por algún conflicto en un timer con otras funcionalidades activadas del controlador de vuelo.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
-        "message": "El acelerómetro no ha sido calibrado y hay características habilitadas que dependen de él. Calibra el acelerómetro.",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
+    "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
+        "message": "El acelerómetro no ha sido calibrado y hay funcionalidades que lo necesitan. Calibra el acelerómetro.",
+        "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Una de las otras banderas de desarmado estaba activa al armar",
