@@ -910,9 +910,9 @@
         "message": "crwdns9882:0crwdne9882:0",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
-        "message": "crwdns9890:0crwdne9890:0",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
+    "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
+        "message": "crwdns9947:0crwdne9947:0",
+        "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "crwdns8986:0crwdne8986:0",
@@ -1925,6 +1925,12 @@
     },
     "receiverButtonRefresh": {
         "message": "crwdns5756:0crwdne5756:0"
+    },
+    "receiverButtonBind": {
+        "message": "crwdns9949:0crwdne9949:0"
+    },
+    "receiverButtonBindMessage": {
+        "message": "crwdns9951:0crwdne9951:0"
     },
     "receiverButtonSticks": {
         "message": "crwdns5757:0crwdne5757:0"
