@@ -821,10 +821,6 @@
         "message": "Bitbanged DSHOT funktioniert nicht richtig und die Motoren können nicht gesteuert werden. Wahrscheinlich wird das durch einen Timer-Konflikt mit anderen Funktionen, die auf dem Flugcontroller aktiviert sind, verursacht.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
-        "message": "Der Beschleunigungssensor wurde nicht kalibriert und es sind Funktionen aktiviert, die darauf basieren. Kalibrieren Sie den Beschleunigungssensor.",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
-    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Einer der anderen 'Disarm-Flags' ist aktiv während des Armings",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
