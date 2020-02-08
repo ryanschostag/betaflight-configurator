@@ -895,9 +895,9 @@
         "message": "비트뱅(Bitbang)된 DSHOT이 제대로 작동하지 않아 모터를 제어할 수 없습니다. 비행 컨트롤러에서 활성화된 다른 기능과의 타이머 충돌로 인해 발생할 수 있습니다.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipACC_CALIB": {
+    "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
         "message": "가속도계가 교정되지 않았으며 그에 의존하는 기능들이 활성화되어 있습니다. 가속도계를 교정하십시오.",
-        "description": "Message that pops up to describe the ACC_CALIB arming disable flag"
+        "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "다른 디스암 플래그 중 하나가 아밍시 활성화 중입니다",
@@ -1907,6 +1907,12 @@
     },
     "receiverButtonRefresh": {
         "message": "새로고침"
+    },
+    "receiverButtonBind": {
+        "message": "수신기 바인드"
+    },
+    "receiverButtonBindMessage": {
+        "message": "비행 컨트롤러에 바인드 요청을 보냅니다."
     },
     "receiverButtonSticks": {
         "message": "제어 스틱"
@@ -3370,6 +3376,9 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "다이나믹 노치 최소 Hz"
     },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "다이나믹 노치 최대 Hz"
+    },
     "pidTuningDynamicNotchRangeHelp": {
         "message": "다이나믹 노치는 작동할수 있는 세 개의 주파수 범위를 가집니다: 6+인치처럼 낮은 모터속도를 가진 쿼드는 LOW(80-330Hz), 일반적인 5인치 쿼드는 MEDIUM(140-550Hz), 매우 높은 모터속도를 가진 2.5-3인치는 HIGH(230-800Hz). AUTO 옵션은 자이로 다이나믹 저역통과 1 필터의 최대 컷오프 주파수의 값에 따라 범위를 선택합니다."
     },
@@ -3378,6 +3387,12 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Q 인자는 다이나믹 노치 필터를 얼마나 좁게 또는 넓게 조절하는 것을 의미합니다. 높은 값일수록 필터는 좁아지며 더 정밀합니다. 낮은 값일수록 필터는 넓어지며 커집니다. 매우 낮은 값은 필터 지연을 상당히 증가시킵니다."
+    },
+    "pidTuningDynamicNotchMinHzHelp": {
+        "message": "다이나믹 노치로 제어하는데 필요한 최저 유입 노이즈 주파수로 설정하세요."
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "다이나믹 노치로 제어하는데 필요한 최대 유입 노이즈 주파수로 설정하세요."
     },
     "pidTuningRpmFilterGroup": {
         "message": "자이로 RPM 필터",
