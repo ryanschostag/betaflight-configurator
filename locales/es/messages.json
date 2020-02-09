@@ -1840,6 +1840,12 @@
     "receiverButtonRefresh": {
         "message": "Refrescar"
     },
+    "receiverButtonBind": {
+        "message": "Enlazar Receptor"
+    },
+    "receiverButtonBindMessage": {
+        "message": "Petición de enlace enviada al controlador de vuelo."
+    },
     "receiverButtonSticks": {
         "message": "Palancas de control"
     },
