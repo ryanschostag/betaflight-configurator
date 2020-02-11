@@ -834,6 +834,10 @@
         "message": "DSHOT bitbanged ez da behar bezala funtzionatzen eta motorrak ezin dira kontrolatu. Litekeena da hegaldiaren kontroladorean gaitutako beste funtzio batzuekin tenporizadore baten gatazka.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
+        "message": "Azelerometroa ez da kalibratu eta hori behar duten ezaugarriak dituzu. Azelerometroa kalibratu.",
+        "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Desarmatzeko beste banderietako bat gaituta zegoen armatzerakoan",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
@@ -1842,6 +1846,12 @@
     },
     "receiverButtonRefresh": {
         "message": "Berritu"
+    },
+    "receiverButtonBind": {
+        "message": "Hartzailea Lotu"
+    },
+    "receiverButtonBindMessage": {
+        "message": "Lotu eskaera hegaldi-kontroladoreari bidalita."
     },
     "receiverButtonSticks": {
         "message": "Kontrol palankak"
