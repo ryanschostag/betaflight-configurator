@@ -827,6 +827,10 @@
         "message": "Bitbanged DSHOTが正常に動作せず、モーターを制御できません。おそらくフライトコントローラで有効になっている他機能とタイマーとの競合が原因かと思われます。",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
+        "message": "加速度センサーはキャリブレーションされていませんが、依存する機能が有効になっています。加速度センサーをキャリブレーションしてください。",
+        "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "他のフラグの1つはアーム時にフラグを解除します",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
@@ -1835,6 +1839,12 @@
     },
     "receiverButtonRefresh": {
         "message": "更新"
+    },
+    "receiverButtonBind": {
+        "message": "受信機のバインド"
+    },
+    "receiverButtonBindMessage": {
+        "message": "フライトコントローラにバインド要求を送信します。"
     },
     "receiverButtonSticks": {
         "message": "コントロールスティック"
@@ -3298,6 +3308,9 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "ダイナミックノッチ 最小Hz"
     },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "ダイナミックノッチ 最大Hz"
+    },
     "pidTuningDynamicNotchRangeHelp": {
         "message": "ダイナミックノッチには、設定可能な3つの周波数範囲があります。6インチ以上の低回転型クワッドコプターの場合はLOW(80-330hz)、通常の5インチの場合はMEDIUM(140-550hz)、2.5～3インチのような非常に高回転の場合はHIGH(230-800hz) となります。AUTOオプションは、ジャイロダイナミックローパスフィルター1の最大カットオフ周波数の値に応じて範囲を選択します。"
     },
@@ -3306,6 +3319,12 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Q係数は動的ノッチフィルターの幅を調整します。値を大きくすると幅が狭くなり、より正確となり、値を低くすると幅が広くなります。本当に低い値を設定すると、フィルター遅延が大幅に増加します。"
+    },
+    "pidTuningDynamicNotchMinHzHelp": {
+        "message": "ダイナミックノッチで制御が必要なノイズ周波数の最低値を設定します。"
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "ダイナミックノッチで制御が必要なノイズ周波数の最大値を設定します。"
     },
     "pidTuningRpmFilterGroup": {
         "message": "ジャイロRPMフィルター",
