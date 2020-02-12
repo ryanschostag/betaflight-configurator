@@ -527,6 +527,9 @@
     "defaultWelcomeHead": {
         "message": "Sprzęt"
     },
+    "defaultWelcomeText": {
+        "message": "Aplikacja obsługuje wszystkie urządzenia, które mogą uruchamiać Betaflight. Sprawdź kartę pamięci, aby uzyskać pełną listę sprzętu.<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">Pobierz przeglądarkę dziennika Betaflight Blackbox</a><br /><br />Kod źródłowy można pobrać z <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\">tutaj</a><br /><br />Najnowszy <b>sterownik USB VCP</b> można pobrać z <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\">tutaj</a><br />Dla odziedziczonego sprzętu używającego CP210x USB do chipa szeregowego:<br />Najnowszy <b>sterownik CP210x</b> można pobrać z <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\">tutaj</a><br />Najnowszy <b>Zadig</b> do instalacji sterownika USB Windows można pobrać z <a href=\"http://zadig.akeo.ie/\" target=\"_blank\">tutaj</a><br />"
+    },
     "defaultContributingHead": {
         "message": "Współtworzenie"
     },
@@ -823,6 +826,10 @@
     "initialSetupArmingDisableFlagsTooltipDSHOT_BBANG": {
         "message": "Komunikacja DSHOT nie działa poprawnie i nie można kontrolować silników. Prawdopodobnie jest to spowodowane przez konflikt z innymi funkcjami włączonymi w kontrolerze lotu.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
+        "message": "Akcelerometr nie został skalibrowany i są włączone funkcje, które na nim polegają. Skalibruj akcelerometr.",
+        "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Jedna z pozostałych flag rozbrojenia jest aktywna podczas uzbrajania",
@@ -1244,6 +1251,10 @@
     },
     "configurationCalculatedCyclesSec": {
         "message": "Cykle/Sekundy [Hz]"
+    },
+    "configurationSpeedGyroNoGyro": {
+        "message": "Brak żyroskopu",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
     },
     "configurationSpeedPidNoGyro": {
         "message": "Żyro / {{value}}",
@@ -1828,6 +1839,12 @@
     },
     "receiverButtonRefresh": {
         "message": "Odśwież"
+    },
+    "receiverButtonBind": {
+        "message": "Powiąż odbiornik"
+    },
+    "receiverButtonBindMessage": {
+        "message": "Zapytanie o powiązanie wysłane do kontrolera lotu."
     },
     "receiverButtonSticks": {
         "message": "Kontrola drążkiem"
@@ -2683,6 +2700,9 @@
     "firmwareFlasherButtonDownloading": {
         "message": "Pobieranie..."
     },
+    "firmwareFlasherExitDfu": {
+        "message": "Wyjdź z trybu DFU"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "Wgraj oprogramowanie"
     },
@@ -3158,6 +3178,10 @@
         "message": "Proporcjonalne zwiększanie lub zmniejszanie wszystkich domyślnych ustawień filtru dolnoprzepustowego D-term.<br> Filtrowanie następuje za pętlą PID, tylko dla D-term. Ponieważ jest to parametr najbardziej wrażliwy na szumy, może zwiększać wysokie składowe szumu od 10 do 100 krotnie.<br><br>Generalnie chcesz ustawić suwak regulacji filtru dolnoprzepustowego D-term w górę używając jednocześnie też suwaka mnożnika filtru żyroskopowego. Potrzebujesz uzyskać częstotliwość odcięcia poniżej pasma szumowego silników. Dla mocniejszego filtrowania ustawienie to dotyczy całego sygnału żyroskopu uwzględniając mnożnik suwaka filtru żyroskopu. <br>Ta zalecana różnica jest wbudowana w algorytm skalowania mnożników.",
         "description": "D Term filtering tuning slider helpicon message"
     },
+    "pidTuningPidSlidersHelp": {
+        "message": "Suwaki do dostosowania charakterystyki lotu quada (wzmocnienia PID) <br> <br> Mnożnik główny: Podnosi lub obniża wszystkie wzmocnienia PID (powyżej), zachowując proporcjonalną różnicę między wzmocnieniami. <br> <br> Równowaga PD: Reguluje równowagę (stosunek \\ różnica proporcjonalna) między warunkami P i D („sprężyna” [p-term] i „amortyzator” [d-term]). <br> <br> Zysk PD: Zwiększa lub obniża zyski P&D - utrzymywanie stosunku (równowagi) między nimi - dla więcej (lub mniej) autorytetu kontroli PID. <br> <br> Wzmocnienie odpowiedzi ramienia: Podnosi lub obniża wzmocnienie FeedForward w celu kontrolowania odczucia reakcji ramienia modelu.",
+        "description": "Overall helpicon message for PID tuning sliders"
+    },
     "pidTuningSliderWarning": {
         "message": "<span class=\"message-negative\">UWAGA</span>: Aktualne ustawienia suwaków może powodować zniszczenie silnika lub niebezpieczne zachowanie platformy. Proszę postępować ostrożnie.",
         "description": "Warning shown when tuning slider are above safe limits"
@@ -3238,6 +3262,9 @@
     "pidTuningGyroLowpass2Type": {
         "message": "Żyroskopowy dolnoprzepustowy 2 Rodzaj filtra"
     },
+    "pidTuningLowpassFilterHelp": {
+        "message": "Filtry dolnoprzepustowe mogą mieć dwa warianty: statyczny i dynamiczny. Dla określonego numeru filtra dolnoprzepustowego można jednocześnie włączyć tylko jeden (statyczny lub dynamiczny). Statyczny ma tylko wartość odcięcia, która jest wartością, która w jakiś sposób określa początek filtra. Dynamika określa wartości minimalne i maksymalne, czyli zakres, w którym umieszczana jest wartość odcięcia. Ta wartość graniczna przesuwa się od min. Do max. W tym samym czasie, gdy poruszasz drążkiem przepustnicy."
+    },
     "pidTuningGyroNotchFiltersGroup": {
         "message": "Pasmowo zaporowy filtr żyroskopu"
     },
@@ -3277,6 +3304,9 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "Wycięcie dynamiczne Min Hz"
     },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "Wycięcie dynamiczne Max Hz"
+    },
     "pidTuningDynamicNotchRangeHelp": {
         "message": "Równanie dynamiczne ma trzy zakresy częstotliwości, w których może działać: NISKIE (80-330hz) dla gorzej odwołujących się quadów na śmigłach 6 cali i eięcej, ŚREDNIE (140-550hz) dla normalnego qada o długości śmigieł 5 cali, WYSOKIE (230-800hz) dla bardzo małych 2-3 calowych quadów. Opcja AUTO wybiera zakres w zależności od wartości maksymalnej częstotliwości dolnoprzepustowego filtra żyroskopu."
     },
@@ -3285,6 +3315,12 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Współczynnik Q dostosowuje szerokość charakterystyki filtra dynamicznego. Wyższa wartość sprawia, że pasmo aktywne filtra jest wąskie i dokładniejsze, a niższa wartość daje szerszą strefę aktywną. Używanie naprawdę niskiej wartości znacznie zwiększy opóźnienie filtra (więcej obliczeń)."
+    },
+    "pidTuningDynamicNotchMinHzHelp": {
+        "message": "Ustaw tę wartość na najniższą częstotliwość zakłóceń które muszą być kontrolowane przez wycięcie dynamiczne."
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "Ustaw najwyższą częstotliwość zakłóceń która jest potrzebna do kontrolowania przez wycięcie dynamiczne."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Żyroskopowy filtr RPM",
@@ -3435,6 +3471,9 @@
     },
     "failsafePaneTitleOld": {
         "message": "Odbiornik Failsafe"
+    },
+    "failsafeFeaturesHelpNew": {
+        "message": "Failsafe ma dwa etapy. <strong> Etap 1 </strong> jest wprowadzany, gdy kanał lotniczy ma nieprawidłową długość impulsu, odbiornik zgłasza tryb awaryjny lub w ogóle nie ma sygnału z odbiornika, ustawienia cofania kanału są stosowane do <span class = \"message- negatywne \"> wszystkie kanały </span> oraz krótki czas na odzyskanie danych. <strong> Etap 2 </strong> jest wprowadzany, gdy warunek błędu trwa dłużej niż skonfigurowany czas ochronny, gdy jednostka jest <span class = \"message-negative\"> uzbrojona </span>, wszystkie kanały pozostaną na stosowanym kanale ustawienie rezerwowe, chyba że zostanie anulowane przez wybraną procedurę. <br /> <strong> Uwaga: </strong> Przed wejściem do etapu 1 ustawienia zastępowania kanałów są również stosowane do poszczególnych kanałów AUX, które mają nieprawidłowe impulsy."
     },
     "failsafePulsrangeTitle": {
         "message": "Ustawienia akceptowalnego zakresu impulsu"
