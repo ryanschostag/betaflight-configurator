@@ -1837,6 +1837,12 @@
     "receiverButtonRefresh": {
         "message": "Refresca"
     },
+    "receiverButtonBind": {
+        "message": "Lliga el receptor"
+    },
+    "receiverButtonBindMessage": {
+        "message": "Sol·licitud d’enllaç enviada al controlador de vol."
+    },
     "receiverButtonSticks": {
         "message": "Sticks de control"
     },
@@ -4493,6 +4499,20 @@
     "osdDescElementRssiDbmValue": {
         "message": "Valor en dBm de la senyal RSSI si està disponible"
     },
+    "osdTextElementRcChannels": {
+        "message": "Canals RC",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Mostra com a màxim 4 valors de canals. Els canals s'han d'especificar amb la variable CLI \"osd_rcchannels\""
+    },
+    "osdTextElementCameraFrame": {
+        "message": "Marc de càmera",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCameraFrame": {
+        "message": "Afegeix un element de traç ajustable dissenyat per representar el camp de vista de la càmera HD del pilot per a enquadrament visual.<br><br>Podeu ajustar l'amplada i l'alçada al CLI amb 'osd_camera_frame_width' i 'osd_camera_frame_height'"
+    },
     "osdTextElementUnknown": {
         "message": "Desconegut $1",
         "description": "One of the elements of the OSD"
@@ -4681,13 +4701,6 @@
     },
     "osdDescStatMinRssiDbm": {
         "message": "Valor mínim RSSI dBm"
-    },
-    "osdTextElementRcChannels": {
-        "message": "Canals RC",
-        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
-    },
-    "osdDescElementRcChannels": {
-        "message": "Mostra com a màxim 4 valors de canals. Els canals s'han d'especificar amb la variable CLI \"osd_rcchannels\""
     },
     "osdTextStatUnknown": {
         "message": "Desconegut $1",
