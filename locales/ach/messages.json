@@ -4588,6 +4588,20 @@
     "osdDescElementRssiDbmValue": {
         "message": "crwdns9338:0crwdne9338:0"
     },
+    "osdTextElementRcChannels": {
+        "message": "crwdns9922:0crwdne9922:0",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "crwdns9924:0crwdne9924:0"
+    },
+    "osdTextElementCameraFrame": {
+        "message": "crwdns9953:0crwdne9953:0",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCameraFrame": {
+        "message": "crwdns9955:0crwdne9955:0"
+    },
     "osdTextElementUnknown": {
         "message": "crwdns9334:0$1crwdne9334:0",
         "description": "One of the elements of the OSD"
@@ -4776,13 +4790,6 @@
     },
     "osdDescStatMinRssiDbm": {
         "message": "crwdns9410:0crwdne9410:0"
-    },
-    "osdTextElementRcChannels": {
-        "message": "crwdns9922:0crwdne9922:0",
-        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
-    },
-    "osdDescElementRcChannels": {
-        "message": "crwdns9924:0crwdne9924:0"
     },
     "osdTextStatUnknown": {
         "message": "crwdns9466:0$1crwdne9466:0",
