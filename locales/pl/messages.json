@@ -4492,6 +4492,20 @@
     "osdDescElementRssiDbmValue": {
         "message": "Wartość w dBm sygnału RSSI, jeżeli jest dostępna"
     },
+    "osdTextElementRcChannels": {
+        "message": "Kanały RC",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Wyświetl najwyżej 4 wartości kanałów. Kanały muszą być określone zmienną w wierszu poleceń 'osd_rcchannels'"
+    },
+    "osdTextElementCameraFrame": {
+        "message": "Ramka aparatu",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCameraFrame": {
+        "message": "Dodaje regulowany element obrysowy przeznaczony do reprezentowania pola widzenia kamery HD pilota dla ramy wizualnej.<br><br>Możesz dostosować szerokość i wysokość w wierszu poleceń za pomocą 'osd_camera_frame_width' i 'osd_camera_frame_height'"
+    },
     "osdTextElementUnknown": {
         "message": "Nieznane $1",
         "description": "One of the elements of the OSD"
@@ -4680,13 +4694,6 @@
     },
     "osdDescStatMinRssiDbm": {
         "message": "Minimalna wartość RSSI dBm"
-    },
-    "osdTextElementRcChannels": {
-        "message": "Kanały RC",
-        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
-    },
-    "osdDescElementRcChannels": {
-        "message": "Wyświetl najwyżej 4 wartości kanałów. Kanały muszą być określone zmienną w wierszu poleceń 'osd_rcchannels'"
     },
     "osdTextStatUnknown": {
         "message": "Nieznane $1",
