@@ -4509,6 +4509,13 @@
     "osdDescElementRssiDbmValue": {
         "message": "RSSI seinalearen dBm-ko balioa erabilgarri badago"
     },
+    "osdTextElementRcChannels": {
+        "message": "RC kanalak",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Bistaratu gehienez 4 kanalen balioak. Kanalak \"osd_rcchannels\" CLI aldagaiarekin zehaztu behar dira"
+    },
     "osdTextElementUnknown": {
         "message": "Ezezaguna $1",
         "description": "One of the elements of the OSD"
@@ -4697,13 +4704,6 @@
     },
     "osdDescStatMinRssiDbm": {
         "message": "RSSI dBm gutxieneko balioa"
-    },
-    "osdTextElementRcChannels": {
-        "message": "RC kanalak",
-        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
-    },
-    "osdDescElementRcChannels": {
-        "message": "Bistaratu gehienez 4 kanalen balioak. Kanalak \"osd_rcchannels\" CLI aldagaiarekin zehaztu behar dira"
     },
     "osdTextStatUnknown": {
         "message": "Ezezaguna $1",
