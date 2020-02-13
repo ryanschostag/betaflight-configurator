@@ -4502,6 +4502,13 @@
     "osdDescElementRssiDbmValue": {
         "message": "RSSI信号値(dBm) ※有効な場合"
     },
+    "osdTextElementRcChannels": {
+        "message": "RCチャンネル",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "最大4つのチャンネル値を表示します。チャンネルはCLIにて「osd_rcchannels」変数で指定します。"
+    },
     "osdTextElementUnknown": {
         "message": "不明 $1",
         "description": "One of the elements of the OSD"
@@ -4690,13 +4697,6 @@
     },
     "osdDescStatMinRssiDbm": {
         "message": "最小RSSI値 (dBm)"
-    },
-    "osdTextElementRcChannels": {
-        "message": "RCチャンネル",
-        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
-    },
-    "osdDescElementRcChannels": {
-        "message": "最大4つのチャンネル値を表示します。チャンネルはCLIにて「osd_rcchannels」変数で指定します。"
     },
     "osdTextStatUnknown": {
         "message": "不明 $1",
