@@ -4547,6 +4547,13 @@
     "osdDescElementRssiDbmValue": {
         "message": "Valor en dBm do sinal RSSI se está dispoñible"
     },
+    "osdTextElementRcChannels": {
+        "message": "Canles RC",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Amosa como máximo 4 valores de canles. As canles deben ser especificadas coa variable CLI \"osd_rcchannels\""
+    },
     "osdTextElementUnknown": {
         "message": "Descoñecido $1",
         "description": "One of the elements of the OSD"
@@ -4735,13 +4742,6 @@
     },
     "osdDescStatMinRssiDbm": {
         "message": "Valor mínimo dBm RSSI"
-    },
-    "osdTextElementRcChannels": {
-        "message": "Canles RC",
-        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
-    },
-    "osdDescElementRcChannels": {
-        "message": "Amosa como máximo 4 valores de canles. As canles deben ser especificadas coa variable CLI \"osd_rcchannels\""
     },
     "osdTextStatUnknown": {
         "message": "Descoñecido $1",
