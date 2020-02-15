@@ -4977,6 +4977,13 @@
     "osdWarningRssiDbm": {
         "message": "crwdns9340:0crwdne9340:0"
     },
+    "osdWarningTextOverCap": {
+        "message": "crwdns9957:0crwdne9957:0",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "crwdns9959:0crwdne9959:0"
+    },
     "osdWarningTextUnknown": {
         "message": "crwdns9406:0$1crwdne9406:0"
     },
