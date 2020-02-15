@@ -4959,6 +4959,13 @@
     "osdWarningRssiDbm": {
         "message": "RSSI dBm 수치가 알람 설정값 아래일 때 경고합니다"
     },
+    "osdWarningTextOverCap": {
+        "message": "배터리 용량 초과",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "사용된 mAh가 설정된 용량 제한을 초과할 때 경고"
+    },
     "osdWarningTextUnknown": {
         "message": "알 수 없음 $1"
     },
