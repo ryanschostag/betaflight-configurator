@@ -4509,6 +4509,13 @@
     "osdDescElementRcChannels": {
         "message": "最大4つのチャンネル値を表示します。チャンネルはCLIにて「osd_rcchannels」変数で指定します。"
     },
+    "osdTextElementCameraFrame": {
+        "message": "カメラフレーム",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCameraFrame": {
+        "message": "視覚的フレーミングのためパイロットのHDカメラの視野を表すように設計された、調整可能なアウトラインを追加します。<br> <br>『osd_camera_frame_width』および『osd_camera_frame_height』を使用してCLIで幅と高さを調整できます。"
+    },
     "osdTextElementUnknown": {
         "message": "不明 $1",
         "description": "One of the elements of the OSD"
@@ -4883,6 +4890,13 @@
     },
     "osdWarningRssiDbm": {
         "message": "RSSI値 (dBm) がアラーム設定を下回ったときの警告"
+    },
+    "osdWarningTextOverCap": {
+        "message": "バッテリー容量制限超過",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "消費されたmAhが設定された容量制限を超えると警告"
     },
     "osdWarningTextUnknown": {
         "message": "不明 $1"
