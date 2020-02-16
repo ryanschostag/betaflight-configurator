@@ -4879,6 +4879,13 @@
     "osdWarningRssiDbm": {
         "message": "Avisa quan el RSSI dBm està per sota del ajust d'alarma"
     },
+    "osdWarningTextOverCap": {
+        "message": "Capacitat de Bateria sobrepassada",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "Adverteix quan els mAh consumits superan el límit de capacitat configurat"
+    },
     "osdWarningTextUnknown": {
         "message": "Desconegut $1"
     },
