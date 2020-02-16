@@ -891,6 +891,10 @@
         "message": "Le DSHOT Bitbanged ne fonctionne pas correctement. Les moteurs ne peuvent pas être contrôlés, probablement à cause un conflit de timer avec d'autres fonctionnalités activées sur le contrôleur de vol.",
         "description": "Message that pops up to describe the DSHOT_BBANG arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
+        "message": "L'accéléromètre n'a pas été calibré, et certaines fonctionnalités actives en ont besoin. Calibrez l'accéléromètre.",
+        "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Un des autres drapeaux désarmés est actif lors de l'armement",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
@@ -1311,6 +1315,18 @@
     },
     "configurationCalculatedCyclesSec": {
         "message": "Cycles/Sec [Hz]"
+    },
+    "configurationSpeedGyroNoGyro": {
+        "message": "Pas de gyro",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
+    "configurationSpeedPidNoGyro": {
+        "message": "Gyro / {{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
     },
     "configurationLoopTimeHelp": {
         "message": "<strong>Note:</strong> Assurez vous que votre FC peut fonctionner à ces vitesses ! Vérifiez le CPU. Cela peut demander de re-tuner ses PID. TIP: Désactivez l'accéléromètre  et les autres capteurs pour gagner en performance."
@@ -1884,6 +1900,12 @@
     },
     "receiverButtonRefresh": {
         "message": "Rafraîchir"
+    },
+    "receiverButtonBind": {
+        "message": "Appairer le récepteur"
+    },
+    "receiverButtonBindMessage": {
+        "message": "Demande d'appairage envoyée au contrôleur de vol."
     },
     "receiverButtonSticks": {
         "message": "Contrôle des manches"
@@ -2739,6 +2761,9 @@
     "firmwareFlasherButtonDownloading": {
         "message": "Téléchargement..."
     },
+    "firmwareFlasherExitDfu": {
+        "message": "Exit DFU Mode"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "Flasher le microprogramme"
     },
@@ -3344,6 +3369,9 @@
     "pidTuningDynamicNotchMinHz": {
         "message": "Hz Min Notch Dynamique"
     },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "Hz max Notch Dynamique"
+    },
     "pidTuningDynamicNotchRangeHelp": {
         "message": "Le Notch Dynamique peut fonctionner sur trois plages de fréquences : BAS(80-330hz) pour des quads à vitesse de rotation faible comme les 6 pouces et +, MEDIUM(140-550hz) pour un quad normal de 5 pouces, HIGH(230-800hz) pour des vitesses de rotation élevées comme les 2,5-3 pouces. AUTO choisit la plage selon les valeurs de coupure du filtre Dynamique Gyro Lowpass 1."
     },
@@ -3352,6 +3380,12 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Q ajuste la largeur de plage du filtre Notch Dynamique. Une valeur élevée rétrécie la plage et le rend plus précis, une valeur élevée élargit la plage. Une valeur vraiment basse augmente significativement la latence liée au filtrage."
+    },
+    "pidTuningDynamicNotchMinHzHelp": {
+        "message": "Régler ceci sur la fréquence de bruit entrante la plus basse qui soit nécessaire pour être contrôlée par le Notch Dynamique."
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "Régler ceci sur la fréquence de bruit entrante la plus élevée qui soit nécessaire pour être contrôlée par Notch Dynamique."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Filtre Gyro RPM",
@@ -4536,6 +4570,13 @@
     "osdDescElementRcChannels": {
         "message": "Affiche les valeurs de 4 canaux. Les canaux doivent être définis à l'aide de la variable CLI 'osd_rcchannels'"
     },
+    "osdTextElementCameraFrame": {
+        "message": "Cadre de l'image",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCameraFrame": {
+        "message": "Ajoute un cadre représentant le champs de vision de la caméra HD.<br><br>Vous pouvez régler la largeur et la hauteur en CLI avec 'osd_camera_frame_width' et 'osd_camera_frame_height'"
+    },
     "osdTextElementUnknown": {
         "message": "Inconnu $1",
         "description": "One of the elements of the OSD"
@@ -4910,6 +4951,13 @@
     },
     "osdWarningRssiDbm": {
         "message": "Avertissement lorsque la valeur RSSI en dBm est inférieure au paramètre alarme"
+    },
+    "osdWarningTextOverCap": {
+        "message": "Décharge batterie supérieur à sa capacité",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "Alerte lorsque le mAh consommé dépasse la limite de capacité configurée"
     },
     "osdWarningTextUnknown": {
         "message": "Inconnu $1"
