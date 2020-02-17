@@ -4514,7 +4514,14 @@
         "description": "One of the elements of the OSD"
     },
     "osdDescElementRcChannels": {
-        "message": "Bistaratu gehienez 4 kanalen balioak. Kanalak \"osd_rcchannels\" CLI aldagaiarekin zehaztu behar dira"
+        "message": "Bistaratu gehienez 4 kanalen balioak. Kanalak 'osd_rcchannels' CLI aldagaiarekin zehaztu behar dira"
+    },
+    "osdTextElementCameraFrame": {
+        "message": "Kameraren markoa",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCameraFrame": {
+        "message": "Gehitu ingurune erregulagarri elementua, pilotuaren HD kameraren ikusmen eremua marko bisual batean irudikatzeko.<br><br>Zabalera eta altuera CLIan alda dezakezu 'osd_camera_frame_width' eta 'osd_camera_frame_height' erabiltzen"
     },
     "osdTextElementUnknown": {
         "message": "Ezezaguna $1",
@@ -4890,6 +4897,13 @@
     },
     "osdWarningRssiDbm": {
         "message": "RSSI dBm alarma ezarpenen azpitik dagoenean jakinarazi"
+    },
+    "osdWarningTextOverCap": {
+        "message": "Bateriaren edukiera gainezka",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "Abixua mAh-ak configuraturiko gehienezkoa gainditzen duenean"
     },
     "osdWarningTextUnknown": {
         "message": "Ezezaguna $1"
