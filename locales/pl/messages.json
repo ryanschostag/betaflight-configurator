@@ -435,7 +435,7 @@
         "message": "<span class=\"message-negative\">Nie możesz</span> wykonać tego teraz, zaczekaj aż obecna operacja się zakończy ..."
     },
     "tabSwitchUpgradeRequired": {
-        "message": "Aby zobaczyć zakładkę $1 musisz <strong>zaktualizować</strong> oprogramowaniekontrolera lotu do najnowszej wersji."
+        "message": "Aby zobaczyć zakładkę $1 musisz <strong>zaktualizować</strong> oprogramowanie kontrolera lotu do najnowszej wersji."
     },
     "firmwareVersion": {
         "message": "Wersja oprogramowania FC: <strong>$1</strong>"
@@ -444,7 +444,7 @@
         "message": "Wersja MultiWii API: <strong>$1</strong>"
     },
     "uniqueDeviceIdReceived": {
-        "message": "Unikatowy ID urządzenia: <strong>0x$1</strong>"
+        "message": "Unikatowy numer urządzenia: <strong>0x$1</strong>"
     },
     "craftNameReceived": {
         "message": "Nazwa modelu: <strong>$1</strong>"
@@ -465,7 +465,7 @@
         "message": "Płytka: <strong>$1</strong>, wersja: <strong>$2</strong>"
     },
     "buildInfoReceived": {
-        "message": "Używane oprogramowaniekontrolera lotu z dnia: <strong>$1</strong>"
+        "message": "Używsz oprogramowania kontrolera lotu z dnia: <strong>$1</strong>"
     },
     "fcInfoReceived": {
         "message": "Informacje o kontrolerze lotu - identyfikator: <strong>$1</strong>, wersja: <strong>$2</strong>"
@@ -549,7 +549,7 @@
         "message": "Open Source / Informacja o darowiznach"
     },
     "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> to oprogramowanie kontrolera lotu które jest <strong>open source</strong> i jest dostępne <strong>za darmo</strong> dla wszystkich użytkowników.</p><p>Jeśli używasz Betaflight lub Konfiguratora Betaflight oraz uważasz je za przydatne, proszę rozważ <strong>wsparcie</strong> i rozwoju poprzez darowiznę.</p>"
+        "message": "<p><strong>Betaflight</strong> to oprogramowanie kontrolera lotu jest na licencji <strong>open source</strong> i jest dostępne <strong>za darmo</strong> dla wszystkich użytkowników.</p><p>Jeśli używasz Betaflight lub Konfiguratora Betaflight oraz uważasz je za przydatne, rozważ <strong>wsparcie</strong> i rozwój poprzez darowiznę.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Jeśli chcesz wspierać nas finansowo na bieżąco, powinieneś rozważyć możliwość zostania naszym sponsorem $t(patreonLink.message)</p>"
@@ -570,13 +570,13 @@
         "message": "Strona o Betaflight jest świetnym źródłem informacji i możesz ją znaleść <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">tutaj</a>."
     },
     "defaultDocumentation2": {
-        "message": "Oprogramowanie kontrolerów lotów może być pobrane ze strony<a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">GitHub releases</a>."
+        "message": "Oprogramowanie kontrolerów lotów może być pobrane ze strony <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">GitHub releases</a>."
     },
     "defaultSupportHead": {
         "message": "Pomoc"
     },
     "defaultSupportSubline1": {
-        "message": "Źródła wsparcia"
+        "message": "Pomoc"
     },
     "defaultSupportSubline2": {
         "message": "Twórcy"
@@ -893,7 +893,7 @@
         "message": "Ta funkcja włącza tryb CAMSTAB, którego można użyć do utrzymania maksymalnie dwóch osi za pomocą akcelerometru"
     },
     "featureSOFTSERIAL": {
-        "message": "Uruchom SerialPort'y bazujące na CPU"
+        "message": "Uruchom Serial Porty bazujące na CPU"
     },
     "featureSOFTSERIALTip": {
         "message": "Po uruchomieniu skonfiguruj porty na zakładce Porty."
@@ -3230,6 +3230,10 @@
         "message": "Zasadniczo większe modele wymagają wyższych wartości PID ze względu na niższy stosunek mocy do masy. <br> <br> Mniejsze modele (mikro) wymagają mniejszych wartości PID ze względu na wyższy stosunek mocy do masy. <br> <br> Wyższe wartości są dla większych modeli. Niższe wartości dotyczą mniejszych modeli.",
         "description": "Master gain tuning slider helpicon message"
     },
+    "pidTuningPDRatioSliderHelp": {
+        "message": "Niski poziom czynników PD zmniejszy ogólną dynamikę maszyny, ale za to pozwoli zmniejszyć odbicia(bounceback) po manewrach flip i roll.<br><br>Natomiast wysoki poziom PD daje dużą dynamikę i większą kontrolę maszyny nad wibracjami \"śmigieł\"(propwash). Jednak zbyt wysoki poziom PD może doprowadzić do wibracji w osi roll i wzmocnić wibracje (propwash) zamiast je niwelować.",
+        "description": "PD balance tuning slider helpicon message"
+    },
     "pidTuningPDGainSliderHelp": {
         "message": "Niskie wzmocnienie członów P i D może powodować większe oscylacje typu \"propwash\" w silnikach. Zbyt niska wartość wzmocnień tych parametrów może powodować niestabilność maszyny. <br><br> Parametry P i D działają w parze w w celu minimalizacji oscylacji \"propwash\".<br><br> Wysokie wartości tych parametrów mogą powodować grzanie się silników poprzez duże oscylacje wysterowania silnika które mogą wystąpić podczas płynnego lotu na wprost. Co jest powodowane wysokim parametrem D.",
         "description": "P and D gain tuning slider helpicon message"
@@ -3403,6 +3407,9 @@
     "pidTuningSmartFeedforward": {
         "message": "Smart Feedforward"
     },
+    "pidTuningSmartFeedforwardHelp": {
+        "message": "Zmniejsza działanie parametru F w PID. Gdy parametry P i F są aktywne w tym samym momencie, wykorzystuje on tylko większy z tych dwóch czynników, unikając przesterowań bez konieczności podnoszenia poziomu D, ale także ogranicza szybkość reakcji wywołany przez parametr F w przypadku dodania go do P."
+    },
     "pidTuningItermRelax": {
         "message": "I Term Relax"
     },
@@ -3462,6 +3469,9 @@
     },
     "pidTuningIntegratedYawCaution": {
         "message": "<span class=\"message-negative\">UWAGA</span>: jeśli włączysz tę funkcję, musisz odpowiednio dostosować PID YAW. Więcej informacji <a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\">tutaj</a>"
+    },
+    "pidTuningIntegratedYawHelp": {
+        "message": "Zintegrowany Yaw jest funkcją która koryguje podstawowy błąd w sterowaniu maszyny: gdy osie pitch i roll są sterowane przez różnicowy sygnał z przepustnicy(gazu), śmigła także generują różnicę w osi Yaw. Zintegrowany Yaw poprawia to poprzez dodane wyjścia sygnału pid(Yaw) przed przekierowaniem sygnału do miksera sygnału. To działanie normalizuje pracę Pid-a. Teraz możliwe jest dostrajanie tego czynnika tak jak każdej innej osi. Wymaga to bezwzględnego sterowania, ponieważ nie używa zintegrowanego Yaw."
     },
     "configHelp2": {
         "message": "Umożliwia dowolny obrót kontrolera lotu w stopniach. Ma to umożliwić montaż kontrolera: bokiem/ do góry nogami / itp. Podczas uruchamiania zewnętrznych czujników, użyj ustawień czujników (Gyro, Akcel, Mag), aby określić położenie czujnika niezależnie od orientacji kontrolera lotów. "
@@ -4880,6 +4890,13 @@
     },
     "osdWarningRssiDbm": {
         "message": "Ostrzega, gdy wartość RSSI dBm jest poniżej ustawienia alarmu"
+    },
+    "osdWarningTextOverCap": {
+        "message": "Przekroczona pojemność akumulatora",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "Ostrzega gdy przekroczono(wykorzystano) ustawiony limit pojemności(mAh) akumulatora"
     },
     "osdWarningTextUnknown": {
         "message": "Nieznane $1"
