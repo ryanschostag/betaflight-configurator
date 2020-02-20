@@ -3615,7 +3615,7 @@
         "message": "Przełącznik Failsafe aktywny"
     },
     "failsafeSwitchModeHelp": {
-        "message": "Ta opcja określa, co się dzieje, gdy Failsafe jest aktywowany przez przełącznik AUX:<br/><strong>Etap 1</strong> aktywuje Etap 1 Failsafe. Jest to przydatne, jeśli chcesz symulować zachowanie bezpiecznej utraty sygnału.<br/><strong>Etap 2</strong> pomija Etap 1 i natychmiast aktywuje procedurę Etap 2<br/><strong>Natychmiast ROZBRAJA</strong> (twoja jednostka spadnie na ziemię)"
+        "message": "Ta opcja określa, co się dzieje, gdy tryb Failsafe jest aktywowany przez przełącznik AUX:<br/><strong>Etap 1</strong> aktywuje Etap 1 Failsafe. Jest to przydatne, jeśli chcesz symulować zachowanie bezpiecznej utraty sygnału.<br/><strong>Etap 2</strong> pomija Etap 1 i natychmiast aktywuje procedurę Etap 2<br/><strong>Zabij</strong> rozbraja natychmiast (twoja jednostka spadnie na ziemię)"
     },
     "failsafeSwitchOptionStage1": {
         "message": "Etap 1"
