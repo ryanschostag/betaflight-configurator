@@ -95,6 +95,10 @@
     "language_default_pretty": {
         "message": "Predeterminat del sistema ($t(detectedLanguage))"
     },
+    "language_pl": {
+        "message": "Polski",
+        "description": "Don't translate!!!"
+    },
     "sensorDataFlashNotFound": {
         "message": "Cap dataflash <br>xip trobat",
         "description": "Text of the dataflash image in the header of the page."
@@ -3442,6 +3446,9 @@
     "pidTuningItermRelaxCutoff": {
         "message": "Tall",
         "description": "Cutoff value of the I Term Relax"
+    },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "Els valors més baixos suprimeixen el rebot després de volades en quads de baixa autoritat, els valors més elevats augmenten la precisió de gir de gran velocitat per a curses. <br>Baixa a 30-40 per a curses, 20 per a figures de freestyle responsives, 10 per a quads de freestyle més pesats, 3-5 per a la classe X."
     },
     "pidTuningAbsoluteControlGain": {
         "message": "Control absolut"
