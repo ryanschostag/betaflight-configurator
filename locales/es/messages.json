@@ -3446,6 +3446,9 @@
         "message": "Corte",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "Valores bajos reducen el rebote después de flips en quads de baja autoridad, valores altos incrementan la precisión en los giros con tasas altas para carreras.<br>Ajusta a 30-40 para carreras, 20 para freestyle muy reactivos, 10 para freestyle pesados, 3-5 para clase X."
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "Control Absoluto"
     },
