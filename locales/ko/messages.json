@@ -147,6 +147,10 @@
         "message": "Português",
         "description": "Don't translate!!!"
     },
+    "language_pl": {
+        "message": "polski",
+        "description": "Don't translate!!!"
+    },
     "language_ru": {
         "message": "Русский язык",
         "description": "Don't translate!!!"
@@ -3513,6 +3517,9 @@
     "pidTuningItermRelaxCutoff": {
         "message": "컷오프",
         "description": "Cutoff value of the I Term Relax"
+    },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "낮은 값은 낮은 권위의 쿼드에서 플립 후 바운스백을 억제하며, 높은 값은 레이싱에 대한 고율 턴 정밀도를 높입니다.<br>레이싱은 30-40으로, 반응이 좋은 프리스타일 빌드는 20으로, 무거운 프리스타일 쿼드는 10으로, X-클래스는 3-5로 설정합니다."
     },
     "pidTuningAbsoluteControlGain": {
         "message": "절대 제어"
