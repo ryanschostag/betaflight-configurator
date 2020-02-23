@@ -5039,6 +5039,10 @@
         "message": "crwdns9564:0$t(vtxSelectedMode.message)crwdne9564:0",
         "description": "Message to show when the VTX is not supported in the VTX tab"
     },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "crwdns9964:0$t(vtxButtonSave.message)crwdne9964:0",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
+    },
     "vtxMessageVerifyTable": {
         "message": "crwdns9728:0$t(vtxButtonSave.message)crwdne9728:0",
         "description": "Message to show when the VTX Table has been loaded from a external source"
