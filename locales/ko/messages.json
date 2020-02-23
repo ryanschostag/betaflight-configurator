@@ -5021,6 +5021,10 @@
         "message": "<span class=\"message-negative\">주의:</span> $t(vtxSelectedMode.message) 필드를 사용하려면 먼저 아래쪽에 VTX 테이블을 구성하고 저장하십시오.",
         "description": "Message to show when the VTX is not supported in the VTX tab"
     },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class=\"message-negative\">주의:</span>선택한 VTX 유형은 밴드에 대한 '공장' 설정을 지원하지 않지만, 일부 밴드는 이 설정을 가지고 있다. 이 문제를 해결하려면 '$t(vtxButtonSave.message)'을 클릭하십시오.",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
+    },
     "vtxMessageVerifyTable": {
         "message": "<span class=\"message-negative\">주의:</span> VTX 테이블의 값이 로드되었지만, 아직 비행 컨트롤러에 저장되지 않았습니다. 해당 값이 당신의 국가에서 유효하고 합법적인지 확인하고 수정해야 하며, $t(vtxButtonSave.message) 버튼을 눌러 비행 컨트롤러에 저장해야 합니다.",
         "description": "Message to show when the VTX Table has been loaded from a external source"
