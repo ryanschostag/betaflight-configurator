@@ -4935,6 +4935,10 @@
         "message": "<span class=\"message-negative\">Atenció:</span>Heu de configurar i desar PRIMER la taula VTX a la part inferior per poder fer ús dels camps $t(vtxSelectedMode.message).",
         "description": "Message to show when the VTX is not supported in the VTX tab"
     },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class=\"message-negative\">Atenció:</span> El tipus de VTX seleccionat no admet la configuració \"de fàbrica\" de bandes, però algunes de les vostres bandes tenen aquesta configuració. Feu clic a \"$t(vtxButtonSave.message)\" per solucionar-ho.",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
+    },
     "vtxMessageVerifyTable": {
         "message": "<span class=\"message-negative\">Atenció:</span> Els valors de la taula VTX s'han carregat, però encara no s'han emmagatzemat al controlador de vol. Heu de verificar i modificar els valors per assegurar-vos que són vàlids i legals al vostre país i, a continuació, premeu el botó $t(vtxButtonSave.message) per emmagatzemar-los al controlador de vol.",
         "description": "Message to show when the VTX Table has been loaded from a external source"
