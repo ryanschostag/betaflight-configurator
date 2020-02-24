@@ -3453,6 +3453,9 @@
         "message": "Cutoff",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "Balio baxuek murrizketa murrizten dute flipen ondoren agintari baxuko quads. Balio altuek lasterketetarako abiadura altuko zehaztasuna areagotzen dute.<br> Lasterketetarako 30-tik 40-ra ezarritakoa da; 20 erantzun askarreko freestyle eraikuntzarako, 10 freestyle astun quad-entzat, 3-5 X mailakoentzat."
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "Kontrol absolutua"
     },
@@ -4952,6 +4955,10 @@
     "vtxMessageTableNotConfigured": {
         "message": "<span class=\"message-negative\">Abisua:</span> Lehenik eta behin beheko VTX taula konfiguratu eta gorde behar duzu $t(vtxSelectedMode.message) eremuak erabili ahal izateko.",
         "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class=\"message-negative\">Arreta:</span> Aukeratutako VTX motak ez du banden \"fabrika\" ezarpena onartzen, baina zure banda batzuek ezarpen hau dute. Klik egin '$t(vtxButtonSave.message)' hau konpontzeko.",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
     },
     "vtxMessageVerifyTable": {
         "message": "<span class=\"message-negative\">Abisua:</span> VTX taulako balioak kargatu dira, baina oraindik ez dira hegaldi kontroladorean gorde. Balioak egiaztatu eta aldatu behar dituzu zure herrialdean baliozkoak eta legezkoak direla ziurtatzeko, eta ondoren $t(vtxButtonSave.message) botoia sakatu hegaldi kontroladorean gordetzeko.",
