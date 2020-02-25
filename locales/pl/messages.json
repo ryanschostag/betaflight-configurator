@@ -3446,6 +3446,9 @@
         "message": "Odcięcie",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "Niższe wartości tłumią odbicie zwrotne w quadach a wysokie wartości zwiększają precyzję skrętu przy wysokich prędkościach w wyścigach. <br> Ustaw na 30-40 dla wyścigów, 20 dla lekkich wersji freestyle, 10 dla cięższych quadów freestyle, 3-5 dla klasy X."
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "Kontrola całkowita"
     },
@@ -4945,6 +4948,10 @@
     "vtxMessageTableNotConfigured": {
         "message": "<span class=\"message-negative\">Uwaga:</span> Musisz skonfigurować i zapisać PIERWSZĄ tabelę VTX na dole zanim będziesz mógł korzystać z $t(vtxSelectedMode.message) pól.",
         "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class = \"message-negative\"> Uwaga: </span> Wybrany typ VTX nie obsługuje ustawienia „fabrycznego” dla pasm, ale niektóre z tych pasm mają to ustawienie. Kliknij \"$t(vtxButtonSave.message)”, aby to naprawić.",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
     },
     "vtxMessageVerifyTable": {
         "message": "<span class=\"message-negative\">Uwaga:</span> Wartości tabeli VTX zostały załadowane, ale nie są jeszcze zapisane w kontrolerze lotu. Musisz zweryfikować i zmodyfikować wartości jeśli potrzeba, aby mieć pewność, że są one prawidłowe i legalne w Twoim kraju, a następnie nacisnąć $t(vtxButtonSave.message) przycisk do zapisania ich w kontrolerze lotu.",
