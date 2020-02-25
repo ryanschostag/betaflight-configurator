@@ -3446,6 +3446,9 @@
         "message": "カットオフ",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "低値は、低性能機体でのフリップ後におけるバウンスバックを抑制し、高値は、レースでの高速ターン精度を高めます。<br>レース用機体では30〜40、レスポンスの良いフリースタイル機体では20、重量のあるフリースタイル機体では10、Xクラスでは3〜5に設定します。"
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "アブソリュート コントロール"
     },
@@ -4945,6 +4948,10 @@
     "vtxMessageTableNotConfigured": {
         "message": "<span class=\"message-negative\">注意:</span> $t(vtxSelectedMode.message) フィールドを使用する前に一番下にあるVTXテーブルを設定し保存する必要があります。",
         "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class=\"message-negative\">注意:</span> 選択したVTXタイプは、『工場出荷時』周波数設定をサポートしていませんが、一部のものにはこの設定があります。変更するには『$t(vtxButtonSave.message)』をクリックしてください。",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
     },
     "vtxMessageVerifyTable": {
         "message": "<span class=\"message-negative\">注意:</span> VTXテーブル値はロードされましたが、フライトコントローラにはまだ保存されていません。値を確認および変更し、その地域にて利用周波数が使用可能であることを確認し $t(vtxButtonSave.message) ボタンを押してフライトコントローラに保存する必要があります。",
