@@ -1728,6 +1728,9 @@
         "message": "crwdns9760:0crwdne9760:0",
         "description": "Feedforward Term helpicon message on PID table titlebar"
     },
+    "pidTuningMaxRateWarning": {
+        "message": "crwdns9966:0crwdne9966:0"
+    },
     "pidTuningRcRate": {
         "message": "crwdns5703:0crwdne5703:0"
     },
