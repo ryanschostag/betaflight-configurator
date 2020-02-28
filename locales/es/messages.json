@@ -1638,6 +1638,9 @@
         "message": "Es un término adicional de empuje (muelle) basado en la entrada de los mandos. FF ayuda al Término P a mover la aeronave en la dirección que marcan los mandos.<br><br>El término P empuja basándose en la diferencia entre el punto solicitado (grad/seg) y la lectura actual de la velocidad rotacional del giro (grad/sec). El término FF empuja basándose sólo en la diferencia comandada por los mandos solamente.<br><br>Valores más altos proporcionarán una respuesta más intensa a la entrada de los mandos.<br>Un valor demasiado alto producirá sobre giro, temperaturas del motor más altas, y saturación de los motores (los motores no podrán mantener la tasa de cambio deseada).<br>Un valor bajo o cero producirá como resultado una respuesta lenta y suave a la entrada de los mandos.",
         "description": "Feedforward Term helpicon message on PID table titlebar"
     },
+    "pidTuningMaxRateWarning": {
+        "message": "<span class=\"message-negative\"><b>Atención:</b></span> tasas muy altas pueden causar desincronizaciones en deceleraciones rápidas."
+    },
     "pidTuningRcRate": {
         "message": "Tasa RC"
     },
