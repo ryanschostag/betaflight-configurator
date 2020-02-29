@@ -1725,6 +1725,9 @@
         "message": "É un termo de apertura adicional (resorte) baseado na entrada de stick. FF axuda o termo P a empurrar a aeronave para os movementos de stick.<br><br> O termo P presiona en función da diferenza entre o punto de referencia comandado (deg/seg) e a lectura de xiro da velocidade de rotación actual (deg/sec). A presión FF baseada no cambio de comando só de sticks.<br><br>Valores máis altos (ganancias) producirán unha resposta máis forte da máquina á entrada de sticks <br>Os valores demasiado elevados poden producir un exceso de motor, aumentado calor e saturación de motores (onde os motores non poden seguir a velocidade de cambio desexada).<br>Os valores inferiores ou cero (0) producirán unha resposta máis lenta e suave ás entradas de stick.",
         "description": "Feedforward Term helpicon message on PID table titlebar"
     },
+    "pidTuningMaxRateWarning": {
+        "message": "<span class=\"message-negative\"><b>Aviso:</b></span>Taxas moi altas poden producir desyncs dende desaceleracións rápidas."
+    },
     "pidTuningRcRate": {
         "message": "RC Rate"
     },
@@ -5035,6 +5038,10 @@
     "vtxMessageTableNotConfigured": {
         "message": "<span class=\"message-negative\">Atención:</span> Debe configurar e gardar PRIMEIRO a táboa VTX na parte inferior antes de que poida facer uso dos campos $t(vtxSelectedMode.message).",
         "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class=\"message-negative\">Atención:</span> O tipo de VTX seleccionado non admite a configuración \"de fábrica\" para as bandas, pero algunhas das súas bandas teñen esta configuración. Faga clic en '$t(vtxButtonSave.message)' para solucionar isto.",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
     },
     "vtxMessageVerifyTable": {
         "message": "<span class=\"message-negative\">Atención:</span>Cargáronse os valores da táboa VTX, pero aínda non se almacenaron no controlador de voo. Debe verificar e modificar os valores para asegurarse de que sexan válidos e legais no seu país e logo prema o botón $t(vtxButtonSave.message) para gardalos no controlador de voo.",
