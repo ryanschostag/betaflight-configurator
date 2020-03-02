@@ -3218,6 +3218,21 @@
     "pidTuningLevelHelp": {
         "message": "아래 값은 앵글 및 호리즌 비행 모드의 동작을 변경합니다. 서로 다른 PID 컨트롤러가 값을 다르게 처리합니다. 문서를 확인하십시오."
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "모터 출력 제한"
+    },
+    "pidTuningMotorLimit": {
+        "message": "감쇠 %"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "모터 명령을 설정된 백분율만큼 감쇠합니다. 예를 들어 4S 빌드에서 6S 배터리와 유사한 성능을 위해 66%를 사용해 보십시오; 3S 빌드에서 4S 배터리를 위해 75%를 사용해 보십시오."
+    },
+    "pidTuningCellCount": {
+        "message": "셀 수"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "연결된 배터리와 동일한 셀 수를 가진 첫 번째 프로필을 자동으로 활성화하십시오."
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "프로파일 독립적 필터 설정"
     },
