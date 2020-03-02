@@ -3147,6 +3147,21 @@
     "pidTuningLevelHelp": {
         "message": "Els valors de sota canvien el comportament dels modes ANGLE i HORIZON. Diferents controladors de PIDs gestionen els valors de forma diferent. Revisa la documentació."
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "Límit de sortida del motor"
+    },
+    "pidTuningMotorLimit": {
+        "message": "Atenuació %"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "Atenua les ordres del motor pel percentatge establert. Redueix la calor actual i del motor ESC quan s'utilitzen Bateries de cèl·lules més elevades, per exemple. Per obtenir prestacions similars d'una bateria 6S en una versió 4S, proveu el 66%; Per a una bateria 4S en una versió 3S, proveu el 75%."
+    },
+    "pidTuningCellCount": {
+        "message": "Recompte de cel·les"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "Activa automàticament el primer perfil que té un nombre de cel·les igual a la bateria connectada."
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "Ajustament de Filtres independents del perfil"
     },
