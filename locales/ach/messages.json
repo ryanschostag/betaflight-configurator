@@ -3236,6 +3236,21 @@
     "pidTuningLevelHelp": {
         "message": "crwdns6079:0crwdne6079:0"
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "crwdns9968:0crwdne9968:0"
+    },
+    "pidTuningMotorLimit": {
+        "message": "crwdns9970:0crwdne9970:0"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "crwdns9972:0crwdne9972:0"
+    },
+    "pidTuningCellCount": {
+        "message": "crwdns9974:0crwdne9974:0"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "crwdns9976:0crwdne9976:0"
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "crwdns6080:0crwdne6080:0"
     },
