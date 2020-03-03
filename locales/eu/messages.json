@@ -1645,6 +1645,9 @@
         "message": "Agintearen sarreran (malgukak) oinarriturik bultzada gehigarria da. FF-k laguntzen du P-term-ek Quad-a bultzen duela aginteak mugitzerakoan.<br><br>P-term-aren bultzada aginteen eta abiapuntua-an ohinarriturik (deg/sec) eta giro irakurritakoaren (deg/sec) ezberdintazunean. FF-k sakatzen du aginteen aldaketetan bakarrik..<br><br>Balio altuagoak (irabaziak) Quad-en aginteen sarrera zorroztuko dute.<br>Balio altuegiak gainbegiratze bat, motorren beroa eta motorren saturazioa sor dezakete(motoreek nahi duzun aldaketa-tasarekin ezin dutenean eutsi).<br>Gutxieneko edo zero (0) balioak sarreran motelagoa eta leuna emango die.",
         "description": "Feedforward Term helpicon message on PID table titlebar"
     },
+    "pidTuningMaxRateWarning": {
+        "message": "<span class=\"message-negative\"><b>Kontuz:</b></span>tasa oso altuak deselerazio azkarretan desinkronizazioak sor ditzakete."
+    },
     "pidTuningRcRate": {
         "message": "RC Tasa"
     },
@@ -3150,6 +3153,21 @@
     "pidTuningLevelHelp": {
         "message": "Beheko balioek ANGLE eta HORIZON hegaldi moduen portaera aldatzen dute. PID kontrolagailu desberdinak, balio ezberdinean kudeatzen dituzte. Mesedez, dokumentazioa kontsultatu."
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "Motor Irteeraren Muga"
+    },
+    "pidTuningMotorLimit": {
+        "message": "Atenuazioa %"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "Motorren aginduak ezarritako ehunekoaren arabera murrizten ditu. ESC korrontea murrizten du eta motor beroak lortzen dira zelda kopuru altuagoko bateriak erabiltzen direnean, adibidez, 4S konfiguratzio batean 6S bateria bat antzeko errendimendua lortzeko, 66% proba dezakezu; 3S konfiuratzio baterako 4S bateriak erabiliz, 75% proba dezakezu."
+    },
+    "pidTuningCellCount": {
+        "message": "Zelda Kopurua"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "Automatikoki aktibatzen da konektatutako bateriaren zelda kopuru berdina duen lehen profila."
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "Profileko iragazki-ezarpen independenteak"
     },
@@ -3292,7 +3310,7 @@
         "message": "2. Giro Notch Iragazkiaren Ebakidura Frekuentzia [Hz]"
     },
     "pidTuningNotchFilterHelp": {
-        "message": "Notch iragazkiak zentro bat eta ebaki bat ditu. Iragazkia simetrikoa da. Frekuentzia zentrala iragazkiaren erdigunea da eta Ebaketa frekuentzia Notch iragazkia hasten den lekua da. Adibidez, 160 ebakidura-frekuentziarekin eta 260 frekuentzia zentralarekin, erdigunean duen itxaropenik handiena duena 160-360Hz-ko tartea da"
+        "message": "Notch iragazkiak zentro bat eta ebaki bat ditu. Iragazkia simetrikoa da. Frekuentzia zentrala iragazkiaren erdigunea da eta Ebaketa frekuentzia Notch iragazkia hasten den lekua da. Adibidez, 160 ebakidura-frekuentziarekin eta 260 frekuentzia zentralarekin, erdigunean duen atenuazio handiena duena 160-360Hz-ko tartea da"
     },
     "pidTuningDynamicNotchFilterGroup": {
         "message": "Notch Iragazki Dinamikoa"
@@ -3350,7 +3368,7 @@
         "description": "Help text for one of the parameters of the RPM Filter"
     },
     "pidTuningRpmMinHz": {
-        "message": "Giro RPM Iragazkiaren Min [Hz] Frekuentzia",
+        "message": "Giro RPM Iragazkiaren Min Frekuentzia [Hz]",
         "description": "Text for one of the parameters of the RPM Filter"
     },
     "pidTuningRpmMinHzHelp": {
