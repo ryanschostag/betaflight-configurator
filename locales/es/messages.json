@@ -3146,6 +3146,21 @@
     "pidTuningLevelHelp": {
         "message": "Los siguientes valores cambian el comportamiento de los modos de vuelo ANGLE y HORIZON. Diferentes controladores PID manejan los valores diferentes. Consulta la documentación."
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "Límite de salida del motor"
+    },
+    "pidTuningMotorLimit": {
+        "message": "Atenuación %"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "Atenúa la señal de salida del motor por el porcentaje establecido. Reduce la corriente en los ESC y la temperatura de los motores cuando se usan baterías con mayor número de celdas, por ejemplo, para simular el rendimiento de una batería 4S usando una batería 6S, prueba un 66%; para simular una batería 3S usando una 4S, prueba un 75%."
+    },
+    "pidTuningCellCount": {
+        "message": "Número de celdas"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "Activa automáticamente el primer perfil que tiene un número de celdas igual a la batería conectada."
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "Ajustes de Filtros independientes del Perfil"
     },
@@ -4951,6 +4966,10 @@
     "vtxMessageTableNotConfigured": {
         "message": "<span class=\"message-negative\">Atención:</span> Necesitas configurar y guardar PRIMERO la Tabla VTX de abajo antes de que puedas hacer uso de los campos de $t(vtxSelectedMode.message).",
         "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class=\"message-negative\">Atención:</span> El tipo de VTX seleccionado no es compatible con la configuración de 'fábrica' para las bandas, pero algunas de las bandas tienen esta configuración. Pulsa en '$t(vtxButtonSave.message)' para solucionar esto.",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
     },
     "vtxMessageVerifyTable": {
         "message": "<span class=\"message-negative\">Atención:</span> Los valores de la tabla VTX han sido cargados, pero aún no se han enviado al controlador de vuelo. Debes verificar y modificar los valores para asegurarte de que son válidos y legales en tu país y luego pulsar el botón $t(vtxButtonSave.message) para enviarlos en el controlador de vuelo.",
