@@ -3146,6 +3146,21 @@
     "pidTuningLevelHelp": {
         "message": "以下の値は、アングルとホライゾンの飛行モードの動作を変更します。それぞれのPIDコントローラは異なる値を処理します。 ドキュメントを確認してください。"
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "モーター出力リミット"
+    },
+    "pidTuningMotorLimit": {
+        "message": "減衰 %"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "設定した割合にてモーターへの命令を減衰させます。セル数の多いバッテリーを使用する場合、ESC電流とモーターの熱を減少させます。4S機に対し6Sバッテリーを用いて同様のパフォーマンスを得るには、66％としてお試しください。3S機に対する4Sバッテリー使用の場合、75％をお試しください。"
+    },
+    "pidTuningCellCount": {
+        "message": "セル数"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "接続したバッテリーと同じセル数を持つ最初のプロファイルを自動的に適用します。"
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "Profile毎のPID制御設定"
     },
