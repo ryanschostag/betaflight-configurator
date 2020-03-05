@@ -403,6 +403,15 @@
     "resetToCustomDefaultsAccept": {
         "message": "カスタム初期値を適用"
     },
+    "reportProblemsDialogHeader": {
+        "message": "次の <strong>設定に関する問題</strong> が検出されました:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "<strong>これらの問題を修正してから機体を飛行</strong>させてください。"
+    },
+    "reportProblemsDialogAccCalibrationNeeded": {
+        "message": "<strong>加速度計は有効になっていますがキャリブレーションされていません</strong>。 加速度計を使用する場合は『$t(tabSetup.message)』タブの『$t(initialSetupButtonCalibrateAccel.message)』の指示に従ってください。加速度計を必要とする機能 (オートレベルモード、GPSレスキュー等) が有効になっている場合、加速度計のキャリブレーションが完了するまで機体のアームは有効となりません。加速度計を使用しない場合は『$t(tabConfiguration.message)』タブの『$t(configurationSystem.message)』で無効にすることを推奨致します。"
+    },
     "infoVersions": {
         "message": "実行中 - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configurator: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
