@@ -407,6 +407,15 @@
     "resetToCustomDefaultsAccept": {
         "message": "Apliqueu els valors predeterminats personalitzats"
     },
+    "reportProblemsDialogHeader": {
+        "message": "S'han detectat els següents <strong>problemes amb la vostra configuració</strong>:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "Si us plau <strong>solucioneu aquests problemes abans d’intentar volar el vostre aeronau</strong>."
+    },
+    "reportProblemsDialogAccCalibrationNeeded": {
+        "message": "<strong>l’acceleròmetre està activat, però no està calibrat</strong>. Si voleu utilitzar l’acceleròmetre, seguiu les instruccions per a '$t(initialSetupButtonCalibrateAccel.message)' a la pestanya '$t(tabSetup.message)'. Si està habilitada qualsevol funció que requereixi l’acceleròmetre (modes de nivell automàtic, rescat GPS, ...), es desactivarà l’armament de la aeronau fins que s’hagi calibrat l’acceleròmetre. Si no teniu previst utilitzar l'acceleròmetre, es recomana inhabilitar-lo a \"$t(configurationSystem.message)\" a la pestanya \"$t(tabConfiguration.message)\"."
+    },
     "infoVersions": {
         "message": "Corrent - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configurator: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
