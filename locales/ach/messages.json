@@ -486,6 +486,15 @@
     "resetToCustomDefaultsAccept": {
         "message": "crwdns9852:0crwdne9852:0"
     },
+    "reportProblemsDialogHeader": {
+        "message": "crwdns9978:0crwdne9978:0"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "crwdns9980:0crwdne9980:0"
+    },
+    "reportProblemsDialogAccCalibrationNeeded": {
+        "message": "crwdns9982:0$t(initialSetupButtonCalibrateAccel.message)crwdnd9982:0$t(tabSetup.message)crwdnd9982:0$t(configurationSystem.message)crwdnd9982:0$t(tabConfiguration.message)crwdne9982:0"
+    },
     "infoVersions": {
         "message": "crwdns8710:0{{operatingSystem}}crwdnd8710:0{{chromeVersion}}crwdnd8710:0{{configuratorVersion}}crwdne8710:0",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -3568,6 +3577,12 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "crwdns8861:0crwdne8861:0"
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "crwdns9984:0[rpm]crwdne9984:0"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "crwdns9986:0crwdne9986:0"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "crwdns8805:0crwdne8805:0"
