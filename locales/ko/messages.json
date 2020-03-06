@@ -3551,6 +3551,12 @@
     "pidTuningThrottleBoostHelp": {
         "message": "이 기능을 사용하면 빠른 스틱 움직임에 스로틀을 일시적으로 상승시켜 모터에 대한 가속 토크를 증가시킴으로써 훨씬 더 빠른 스로틀 반응을 제공합니다."
     },
+    "pidTuningIdleMinRpm": {
+        "message": "다이나믹 아이들 값 [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "모터 디싱크 방지 안전망으로 rpm 기반 바닥 값을 제공하려면 이 매개변수를 설정하십시오.<br>레이셔는 매우 좋은 반응과 낮은 레이트를 선호할 수 있습니다. 따라서 낮은 idle_min_rpm과 높은 dshot_idle_value가 유용할 수 있습니다. 프리스타일러와 LOS 조종사들은 아이들 상태에서 매우 낮은 추력을 높이 평가하며 높은 레이트에셔 디싱크를 피하기 위해 약간 더 많은 idle_min_rpm을 사용하면서 낮은 dshot_idle_value를 사용하기를 원할 수 있습니다.<br><br>더 자세한 내용을 보려면 이 <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">위키</a> 항목을 방문하십시오."
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "아크로 트레이너 앵글 제한"
     },
