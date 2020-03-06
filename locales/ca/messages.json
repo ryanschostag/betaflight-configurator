@@ -3489,6 +3489,12 @@
     "pidTuningThrottleBoostHelp": {
         "message": "Aquesta característica permet augmentar temporalment l’acceleració en moviments ràpids del stick, fet que augmenta el parell d’acceleració als motors, proporcionant una resposta de l’acceleració molt més ràpida."
     },
+    "pidTuningIdleMinRpm": {
+        "message": "Valor Dinàmic Idle [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "Definiu aquest paràmetre per proporcionar un valor de base basat en rpm com a xarxa de seguretat contra la desincronització del motor.<br> Un quad racer pot preferir una resposta molt bona i unes taxes baixes, per tant, pot ser útil un idle_min_rpm baix i un dshot_idle_value alt. Els pilots freestylers i LOS apreciaran una empenta molt baixa al ralentí i potser voldrien fer servir menys dshot_idle_value mentre utilitzeu una mica més idle_min_rpm per evitar desincronització a taxes altes.<br><br>Visiteu aquest <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wiki</a> per obtenir més informació."
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Límit d’angle del Acro Trainer"
     },
