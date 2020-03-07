@@ -96,11 +96,11 @@
         "message": "システム初期値 ($t(detectedLanguage))"
     },
     "sensorDataFlashNotFound": {
-        "message": "データ書き込み不可<br>チップを確認しました",
+        "message": "データフラッシュの<br>チップが見つかりません",
         "description": "Text of the dataflash image in the header of the page."
     },
     "sensorDataFlashFreeSpace": {
-        "message": "データ書き込み: 空き領域",
+        "message": "データフラッシュ: 空き領域",
         "description": "Text of the dataflash image in the header of the page."
     },
     "sensorStatusGyro": {
@@ -3488,6 +3488,12 @@
     "pidTuningThrottleBoostHelp": {
         "message": "この機能は素早いスティックの動きで一時的にスロットルをブーストすることができます。これにより、モーターの加速トルクを増加させ、より速いスロットル応答を提供します。"
     },
+    "pidTuningIdleMinRpm": {
+        "message": "ダイナミックアイドル値 [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "このパラメータを設定し、モーターの非同期に対する安全範囲としてrpmベースのフロア値を提供します。<br>レーサーは、非常に高レスポンスと低レートを好む場合があります。したがって、低めのidle_min_rpm値と高めのdshot_idle_value値にて効果を示します。フリースタイラーとLOSパイロットは、アイドル時の推力が非常に弱くなることを好み、dshot_idle_value値を減らし、idle_min_rpm値を少し増やして、高レートでの非同期を回避したい場合があります。<br><br>詳細は<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">Wiki</a>エントリーをご覧ください。"
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "アクロトレーナー 角度制限"
     },
@@ -4302,14 +4308,14 @@
         "message": "セル電圧平均値 (メインバッテリー電圧 / セル数)"
     },
     "osdTextElementPitchAngle": {
-        "message": "Angle: pitch",
+        "message": "Angle: ピッチ",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementPitchAngle": {
         "message": "ピッチ角度値"
     },
     "osdTextElementRollAngle": {
-        "message": "Angle: roll",
+        "message": "Angle: ロール",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementRollAngle": {
@@ -4393,7 +4399,7 @@
         "message": "残り飛行時間の予測"
     },
     "osdTextElementRtcDateTime": {
-        "message": "RTC 日付と時刻",
+        "message": "日付と時刻 (RTC)",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementRtcDateTime": {
@@ -4435,11 +4441,11 @@
         "message": "アンチグラビティ機能がオンの時、インジケーターを有効にします。"
     },
     "osdTextGForce": {
-        "message": "G Force",
+        "message": "Gフォース値",
         "description": "One of the elements of the OSD"
     },
     "osdDescGForce": {
-        "message": "どのくらいのG値(加速度)が機体に負荷をかけているかを示す"
+        "message": "どのくらいのGフォースが機体に負荷をかけているかを示す"
     },
     "osdTextElementMotorDiag": {
         "message": "モーターの診断",
@@ -4670,7 +4676,7 @@
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatGForce": {
-        "message": "機体が記録した最大G値"
+        "message": "機体が記録した最大Gフォース値"
     },
     "osdTextStatEscTemperature": {
         "message": "ESC 最高温度",
