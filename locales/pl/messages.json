@@ -630,13 +630,13 @@
         "message": "Przywróć kopię zapasową."
     },
     "initialSetupButtonRebootBootloader": {
-        "message": "Aktywacja Boot Loader'a / DFU"
+        "message": "Aktywacja Boot Loadera / DFU"
     },
     "initialSetupBackupRestoreText": {
         "message": "<strong>Utwórz kopię zapasową</strong> swojej konfiguracji na wypadek utraty, <strong>Ustawienia CLI</strong> <span class=\"message-negative\">nie są</span> uwzględniane - użyj do tego komendy 'diff all' w CLI."
     },
     "initialSetupRebootBootloaderText": {
-        "message": "Ponowne uruchomienie do <strong>boot loader'a / DFU</strong>."
+        "message": "Uruchomienie <strong>boot loadera / DFU</strong>."
     },
     "initialSetupBackupSuccess": {
         "message": "Kopia zapasowa została <span class=\"message-positive\">zapisana</span>."
@@ -1103,7 +1103,7 @@
         "message": "Kierunek silników jest odwrócony"
     },
     "configurationReverseMotorSwitchHelp": {
-        "message": "Opcja ta jest używana aby kamera podczas lotów FPV nie brudziła się oraz żeby kurz i inne zanieczyszczenia nie były wdmuchiwane na kontroler lotu. Należy zadbać aby kierunek silnikó został odpowiednio odwrócony a śmigła odpowiednio założone.<strong>Ostrzeżenie:</strong> Nie zmienia to kierunku obrotów silnika. Użyj narzędzia do konfiguracji swoich ESC lub zamień kolejność przewodów silnika aby to osiągnąć. Upewnij się również bez założonych śmigieł czy silniki kręcą się w kierunku jak na grafice powyżej przed próbą uzbrajania."
+        "message": "Opcja ta jest używana aby kamera podczas lotów FPV nie brudziła się oraz żeby kurz i inne zanieczyszczenia nie były wdmuchiwane na kontroler lotu. Należy zadbać aby kierunek silników został odpowiednio odwrócony a śmigła odpowiednio założone.<strong>Ostrzeżenie:</strong> Nie zmienia to kierunku obrotów silnika. Użyj narzędzia do konfiguracji swoich ESC lub zamień kolejność przewodów silnika aby to osiągnąć. Upewnij się również bez założonych śmigieł że silniki kręcą się w kierunku jak na grafice powyżej przed próbą uzbrajania."
     },
     "configurationAutoDisarmDelay": {
         "message": "Rozbrojenie silników po ustawionym czasie [sekundy] (Wymaga uruchomienia MOTOR_STOP)"
