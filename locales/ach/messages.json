@@ -5535,5 +5535,41 @@
     },
     "darkTheme": {
         "message": "crwdns9408:0crwdne9408:0"
+    },
+    "pidTuningRatesType": {
+        "message": "crwdns9988:0crwdne9988:0"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "crwdns9990:0crwdne9990:0"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "crwdns9992:0crwdne9992:0"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "crwdns9994:0crwdne9994:0"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "crwdns9996:0crwdne9996:0"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "crwdns9998:0crwdne9998:0"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "crwdns10000:0crwdne10000:0"
+    },
+    "pidTuningRcRateActual": {
+        "message": "crwdns10002:0crwdne10002:0"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "crwdns10004:0crwdne10004:0"
+    },
+    "dialogRatesTypeNote": {
+        "message": "crwdns10006:0crwdne10006:0"
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "crwdns10008:0crwdne10008:0"
+    },
+    "dialogRatesTypeCancel": {
+        "message": "crwdns10010:0crwdne10010:0"
     }
 }
