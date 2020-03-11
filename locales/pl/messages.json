@@ -2181,10 +2181,10 @@
         "message": "Fix 3D:"
     },
     "gpsFixTrue": {
-        "message": "<span class=\"fixtrue\">Prawda</span>"
+        "message": "<span class=\"fixtrue\">Poprawny</span>"
     },
     "gpsFixFalse": {
-        "message": "<span class=\"fixfalse\">Fałsz</span>"
+        "message": "<span class=\"fixfalse\">Błąd</span>"
     },
     "gpsAltitude": {
         "message": "Wysokość:"
