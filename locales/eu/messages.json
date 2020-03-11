@@ -3486,6 +3486,12 @@
     "pidTuningThrottleBoostHelp": {
         "message": "Funtzionalitate honek aldi baterako bultzadari azeleragailua ematen dio komandoaren aldaketa bizkorretan eta horrek motorraren azelerazioan momentua handitzen du eta bizkortze-erantzun askoz azkarragoa ematen du."
     },
+    "pidTuningIdleMinRpm": {
+        "message": "Idle Dinamiko Balioa [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "Egokitu parametro hau rpm oinarritutako solairu balioa emateko, motoreak desinkronizatzearen segurtasun-sare gisa. <br>Lasterketarako erantzun ona eta tasa baxuak nahiago dira. Beraz, Dynamic Idle Balio baxua eta Dshot Idle balio altua erabilgarria izan daitezke. Freestyle eta LOS pilotuek erresistentzia oso baxua estimatuko dute eta baliteke Dshot Idle Balio gutxiago erabili nahi izatea Dynamic Idle balio apur bat gehiago erabiltzen duten bitartean tasa altuekin ez desinkronizatzeko. <br><br>Bisita ezazu <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wik </a> sarrera hau informazio gehiago lortzeko."
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Acro Trainerren Angle Muga"
     },
