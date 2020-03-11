@@ -5445,5 +5445,41 @@
     },
     "darkTheme": {
         "message": "ダークテーマを有効"
+    },
+    "pidTuningRatesType": {
+        "message": "レートタイプ"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "レートタイプを変更すると、レートのカーブと設定方法が変更されます"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "レート"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Expo"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "Acro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "RCカーブ"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "最大レート"
+    },
+    "pidTuningRcRateActual": {
+        "message": "中央値の感度"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "レートタイプ変更"
+    },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>警告: レートタイプを変更します。</b></span>レートはデフォルトのカーブに設定されます。<br><br>まだ保存されてないため、以前のレートタイプを設定することで設定を元に戻すことができます。<br><br>【保存】ボタンをクリックし変更を適用してください。"
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "変更"
+    },
+    "dialogRatesTypeCancel": {
+        "message": "保存した値に戻す"
     }
 }
