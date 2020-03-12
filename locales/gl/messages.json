@@ -486,6 +486,15 @@
     "resetToCustomDefaultsAccept": {
         "message": "Aplicar valores predeterminados personalizados"
     },
+    "reportProblemsDialogHeader": {
+        "message": "Os seguintes <strong> problemas coa súa configuración </strong> foron detectados:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "Porfavor <strong>solucione estes problemas antes de intentar voar a súa aeronave</strong>."
+    },
+    "reportProblemsDialogAccCalibrationNeeded": {
+        "message": "<strong>O acelerómetro está activado, pero non está calibrado</strong>. Se pensa empregar o acelerómetro, siga as instrucións para '$t(initialSetupButtonCalibrateAccel.message)' na pestana '$t(tabSetup.message)'. Se se habilita algunha función que requira o acelerómetro (modos de nivel automático, rescate GPS, ...), o armado da aeronave desactivarase ata que se calibre o acelerómetro. Se non está a usar o acelerómetro, recoméndase deshabilitalo en '$t(configurationSystem.message)' na pestana '$t(tabConfiguration.message)'."
+    },
     "infoVersions": {
         "message": "Executando - OS: <strong> {{operatingSystem}} </strong>, Chrome: <strong>{{chromeVersion}} </strong>, Configurador: <strong> {{configuratorVersion}} </strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -3566,6 +3575,12 @@
     "pidTuningThrottleBoostHelp": {
         "message": "Esta característica permite que o acelerador sexa impulsado temporalmente nos movementos de adherencia rápida, o que aumenta o par de aceleración dos motores, proporcionando unha resposta moito máis rápida."
     },
+    "pidTuningIdleMinRpm": {
+        "message": "Valor Idle dinámico [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "Estableza este parámetro para fornecer un valor de chan baseado en rpm como rede de seguridade fronte ao desincronismo do motor.<br>Un piloto pode preferir unha resposta moi boa e rates baixos, polo que pode ser útil un idle_min_rpm baixo e un dshot_idle_value alto. Os pilotos de freestylers e de LOS apreciarán un empuxe moi baixo en ralentí e poderían querer usar menos dshot_idle_value mentres usen un pouco máis idle_min_rpm para evitar desíncs con rates altos. <br><br>Visite esta <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_ blank\">wiki</a>entrada para máis información."
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Ángulo límite para Entrenador Acro"
     },
@@ -5517,5 +5532,41 @@
     },
     "darkTheme": {
         "message": "Activa o tema escuro"
+    },
+    "pidTuningRatesType": {
+        "message": "Tipo de Rates"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "Cambiando o tipo de rates, cambiará a curva de rates e a forma na que se poden configurar"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "Rate"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Expo"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "Acro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "Curva RC"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "Máximo Rate"
+    },
+    "pidTuningRcRateActual": {
+        "message": "Sensibilidade do centro"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "Cambio tipo de Rates"
+    },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>ADVERTENCIA: está cambiando o tipo de rates.</b></span> Os seus rates estarán fixados nunha curva por defecto.<br><br>Aínda non se garda nada. e pode volver aos seus valores anteriores axustando o tipo de rates anteriores.<br><br>Faga clic no botón Gardar para aplicar os cambios."
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "Cambiar"
+    },
+    "dialogRatesTypeCancel": {
+        "message": "Voltar ós valores gardados"
     }
 }
