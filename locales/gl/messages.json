@@ -5560,13 +5560,7 @@
     "dialogRatesTypeTitle": {
         "message": "Cambio tipo de Rates"
     },
-    "dialogRatesTypeNote": {
-        "message": "<span class=\"message-negative\"><b>ADVERTENCIA: está cambiando o tipo de rates.</b></span> Os seus rates estarán fixados nunha curva por defecto.<br><br>Aínda non se garda nada. e pode volver aos seus valores anteriores axustando o tipo de rates anteriores.<br><br>Faga clic no botón Gardar para aplicar os cambios."
-    },
     "dialogRatesTypeConfirm": {
         "message": "Cambiar"
-    },
-    "dialogRatesTypeCancel": {
-        "message": "Voltar ós valores gardados"
     }
 }
