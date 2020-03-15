@@ -5473,13 +5473,7 @@
     "dialogRatesTypeTitle": {
         "message": "レートタイプ変更"
     },
-    "dialogRatesTypeNote": {
-        "message": "<span class=\"message-negative\"><b>警告: レートタイプを変更します。</b></span>レートはデフォルトのカーブに設定されます。<br><br>まだ保存されてないため、以前のレートタイプを設定することで設定を元に戻すことができます。<br><br>【保存】ボタンをクリックし変更を適用してください。"
-    },
     "dialogRatesTypeConfirm": {
         "message": "変更"
-    },
-    "dialogRatesTypeCancel": {
-        "message": "保存した値に戻す"
     }
 }
