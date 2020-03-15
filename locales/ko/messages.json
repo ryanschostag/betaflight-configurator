@@ -5536,13 +5536,7 @@
     "dialogRatesTypeTitle": {
         "message": "레이트 형식 변경"
     },
-    "dialogRatesTypeNote": {
-        "message": "<span class=\"message-negative\"><b>경고: 당신은 레이트 형식을 변경하고 있습니다.</b></span> 당신의 레이트는 기본 곡선으로 설정될 것입니다.<br><br> 아직 아무것도 저장되지 않았으며, 이전 레이트 형식을 설정함으로써 이전 값으로 돌아갈 수 있습니다.<br><br>저장 버튼을 클릭하여 변경 내용을 적용하세요.\n\n콘텍스트리드"
-    },
     "dialogRatesTypeConfirm": {
         "message": "변경"
-    },
-    "dialogRatesTypeCancel": {
-        "message": "저장된 값으로 돌아가기"
     }
 }
