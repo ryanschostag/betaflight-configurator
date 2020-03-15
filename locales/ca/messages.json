@@ -5438,13 +5438,7 @@
     "dialogRatesTypeTitle": {
         "message": "Canvi de tipus de Rates"
     },
-    "dialogRatesTypeNote": {
-        "message": "<span class=\"message-negative\"><b>ATENCIÓ: estàs canviant el tipus de rates.</b></span>Els teus rates estaran definides com a corba predeterminada.<br><br>Encara no es guarda res i encara podeu tornar als vostres valors anteriorment definint el tipus de rates anteriors.<br><br> Feu clic al botó Desar per aplicar els canvis."
-    },
     "dialogRatesTypeConfirm": {
         "message": "Camviar"
-    },
-    "dialogRatesTypeCancel": {
-        "message": "Retornar als valors desats"
     }
 }
