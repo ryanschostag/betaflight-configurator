@@ -5564,12 +5564,9 @@
         "message": "crwdns10004:0crwdne10004:0"
     },
     "dialogRatesTypeNote": {
-        "message": "crwdns10006:0crwdne10006:0"
+        "message": "crwdns10012:0crwdne10012:0"
     },
     "dialogRatesTypeConfirm": {
         "message": "crwdns10008:0crwdne10008:0"
-    },
-    "dialogRatesTypeCancel": {
-        "message": "crwdns10010:0crwdne10010:0"
     }
 }
