@@ -410,6 +410,15 @@
     "resetToCustomDefaultsAccept": {
         "message": "Aplikatu lehenetsi pertsonalizatua"
     },
+    "reportProblemsDialogHeader": {
+        "message": "Zure konfigurazioarekin <strong>lotutako arazo hauek</strong> atzeman dira:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "Mesedez, <strong> konpondu arazo hauek gailua hegan egiten saiatu aurretik </strong>."
+    },
+    "reportProblemsDialogAccCalibrationNeeded": {
+        "message": "<strong> Azelerometroa gaituta dago, baina ez da kalibratu</strong>. Azelerometroa erabiltzeko asmoa baduzu, jarraitu '$t(initialSetupButtonCalibrateAccel.message)' argibideak '$t(tabSetup.message)' fitxan. Azelerometroa eskatzen duen funtzioren bat (maila automatikoko moduak, GPS erreskatea, ...) aktibatuta badago, gailuaren armagintza desaktibatuko da azelerometroa kalibratu arte. Azelerometroa erabiltzeko asmorik ez baduzu, ' $t(tabConfiguration.message)' fitxan inabilitatzea '$t(configurationSystem.message)' gomendagarria da."
+    },
     "infoVersions": {
         "message": "Sistema Eragilea: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Konfiguratzailea: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -3106,7 +3115,7 @@
         "message": "16. AUX"
     },
     "pidTuningBasic": {
-        "message": "Oinarrizko/Acro"
+        "message": "Oinarrizko/Akro"
     },
     "pidTuningYawJumpPrevention": {
         "message": "Yaw Saltoen Prebentzioa"
@@ -3493,7 +3502,7 @@
         "message": "Egokitu parametro hau rpm oinarritutako solairu balioa emateko, motoreak desinkronizatzearen segurtasun-sare gisa. <br>Lasterketarako erantzun ona eta tasa baxuak nahiago dira. Beraz, Dynamic Idle Balio baxua eta Dshot Idle balio altua erabilgarria izan daitezke. Freestyle eta LOS pilotuek erresistentzia oso baxua estimatuko dute eta baliteke Dshot Idle Balio gutxiago erabili nahi izatea Dynamic Idle balio apur bat gehiago erabiltzen duten bitartean tasa altuekin ez desinkronizatzeko. <br><br>Bisita ezazu <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wik </a> sarrera hau informazio gehiago lortzeko."
     },
     "pidTuningAcroTrainerAngleLimit": {
-        "message": "Acro Trainerren Angle Muga"
+        "message": "Akro Trainerren Angle Muga"
     },
     "pidTuningAcroTrainerAngleLimitHelp": {
         "message": "Angelu mugatzeko modu berri bat gehitzen du hegan ikasten ari diren pilotuentzat. Barruti baliozkoa 10-80 da eta $t(tabAuxiliary.message) fitxan etengailu batekin aktibatu behar da."
@@ -5339,7 +5348,7 @@
         "message": "Gehienez 3 tasa profil, profil bakoitzeko gorde daitezke hegaldi kontroladorean. Rateprofilak 'RC Rate', 'Rate', 'RC Expo', 'Throttle', eta 'TPA' valioak ditu barne. Hegaldian aldatu daitezke rateprofilak, 3 posizioko etengailuan ipinita 'Rate Profileko Atala'-n ''Egokitze' fitxan."
     },
     "pidTuningRateSetup": {
-        "message": "Oinarrizko/Acro Rate-etan"
+        "message": "Oinarrizko/Akro Rate-etan"
     },
     "pidTuningRateSetupHelp": {
         "message": "Egokitu balio horiek zure rateak ezartzeko. RC Rate-ak erabili gehineko rate orokorra igotzeko, Erabili Super Rate-a stik-en bukaeran Raterik altuenak izateko, erabili RC Expo stiken erdialdea suabeagoa izateko.",
@@ -5443,5 +5452,38 @@
     },
     "darkTheme": {
         "message": "Gai iluna piztu"
+    },
+    "pidTuningRatesType": {
+        "message": "Rate Mota"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "Rate mota aldatzeak rateen kurba aldatuko du eta ezartzen duzun modua ere"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "Rate"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Expo"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "Akro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "RC Kurba"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "Rate Max"
+    },
+    "pidTuningRcRateActual": {
+        "message": "Erdiko sentsibilitatea"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "Rate mota aldaketa"
+    },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>KONTUZ: Rate mota aldatzen ari zara.</b></span>Rate mota aldatzen baduzu, zure tasak, kurba lehenetsira berrezarriko dira."
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "Aldaketa"
     }
 }
