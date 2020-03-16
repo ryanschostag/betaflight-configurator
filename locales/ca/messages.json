@@ -5438,6 +5438,9 @@
     "dialogRatesTypeTitle": {
         "message": "Canvi de tipus de Rates"
     },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>ADVERTIMENT: Canvieu el tipus de Rates.</b></span> Si canvieu el tipus de rates, els vostres rates estaran configurades a una corba predeterminada."
+    },
     "dialogRatesTypeConfirm": {
         "message": "Camviar"
     }
