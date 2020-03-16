@@ -5445,5 +5445,38 @@
     },
     "darkTheme": {
         "message": "Activar tema oscuro"
+    },
+    "pidTuningRatesType": {
+        "message": "Tipo de Tasas"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "Cambiar el tipo de tasas cambiará la curva de tasas y la forma en la que puede ser configurada"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "Tasa"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Expo"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "Acro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "Curva RC"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "Tasa Max"
+    },
+    "pidTuningRcRateActual": {
+        "message": "Sensibilidad Central"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "Cambiar tipo de tasas"
+    },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>ATENCIÓN: Estás cambiando el tipo de tasas.</b></span>Si cambias el tipo de tasas tus tasas se resetearán a una curva por defecto."
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "Cambiar"
     }
 }
