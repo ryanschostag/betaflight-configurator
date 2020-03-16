@@ -471,6 +471,15 @@
     "resetToCustomDefaultsAccept": {
         "message": "사용자 정의 기본값 적용"
     },
+    "reportProblemsDialogHeader": {
+        "message": "다음의 <strong>컨피규레이터와 관련된 문제가</strong> 감지됨:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "당신의 <strong>기체를 날리기 전에 이 문제들을 해결하십시오</strong>."
+    },
+    "reportProblemsDialogAccCalibrationNeeded": {
+        "message": "<strong>가속도계가 활성화되었지만 교정되지 않았습니다</strong>. 가속도계를 사용하려는 경우 '$t(tabSetup.message)' 탭에서 '$t(initialSetupButtonCalibrateAccel.message)'에 대한 지침을 따르십시오. 가속도계(자동 레벨 모드, GPS 레스큐 등)가 필요한 기능이 활성화된 경우, 가속도계가 교정될 때까지 기체의 아밍이 비활성화됩니다. 가속도계를 사용할 계획이 없는 경우 '$t(tabConfiguration.message)' 탭의 '$t(configurationSystem.message)'에서 가속도계를 사용하지 않도록 설정하는 것이 좋습니다."
+    },
     "infoVersions": {
         "message": "운영-OS: <strong>{{operatingSystem}}</strong>, 크롬: <strong>{{chromeVersion}}</strong>, 컨피규레이터: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -5535,6 +5544,9 @@
     },
     "dialogRatesTypeTitle": {
         "message": "레이트 형식 변경"
+    },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>경고: 당신은 레이트 형식을 바꾸고 있습니다.</b></span> 레이트 형식을 변경하면 레이트는 기본 곡선으로 설정됩니다."
     },
     "dialogRatesTypeConfirm": {
         "message": "변경"
