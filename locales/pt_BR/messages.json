@@ -1836,6 +1836,12 @@
     "receiverButtonRefresh": {
         "message": "Atualizar"
     },
+    "receiverButtonBind": {
+        "message": "Vincular receptor"
+    },
+    "receiverButtonBindMessage": {
+        "message": "Solicitação de vinculo enviado ao controlador de voo."
+    },
     "receiverButtonSticks": {
         "message": "Controle Virtual"
     },
@@ -3133,6 +3139,18 @@
     "pidTuningLevelHelp": {
         "message": "Os valores abaixo alteram o comportamento dos modos de voo ANGULO e HORIZONTE. Diferentes controladores PID lidam com os valores de formas diferentes. Por favor leia a documentação."
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "Limite de saída para o motor"
+    },
+    "pidTuningMotorLimit": {
+        "message": "Atenuação %"
+    },
+    "pidTuningCellCount": {
+        "message": "Quantidade de células"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "Ativa automaticamente o primeiro perfil que possui a quantidade de células igual à bateria conectada."
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "Configurações de filtros independentes de perfil"
     },
@@ -3296,7 +3314,10 @@
         "message": "Filtro Notch dinâmico - Q"
     },
     "pidTuningDynamicNotchMinHz": {
-        "message": "Filtro Notch dinâmico - Frequência mínima"
+        "message": "Filtro Notch dinâmico - Frequência mínima [Hz]"
+    },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "Filtro Notch dinâmico - Frequência máxima [Hz]"
     },
     "pidTuningDynamicNotchRangeHelp": {
         "message": "O filtro Notch (Rejeita Faixa) dinâmico possui três faixas de frequência em que pode operar: BAIXO (80-330hz) para aeronaves lentas de 6\" ou mais, MÉDIO (140-550hz) para aeronaves convencionais de 5\", ALTO (230-800hz) para aeronaves rápidas de 2.5\" a 3\". a opção AUTO seleciona a faixa de acordo com a frequência de corte máxima do fitro Lowpass 1 Dinâmico do Gyro."
@@ -3306,6 +3327,12 @@
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "Fator Q ajusta quão curto ou amplo são os filtros Notch Dinâmicos. Valores maiores fazem com que fiquem mais curtos e mais precisos e valores menores fazem com que fiquem mais largos e amplos. Utilizar um valor muito baixo irá aumentar o atraso do filtro consideravelmente."
+    },
+    "pidTuningDynamicNotchMinHzHelp": {
+        "message": "Defina este valor com a menor frequência do ruído de entrada que precisa ser controlado pelo filtro notch dinâmico."
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "Defina este valor com a maior frequência do ruído de entrada que precisa ser controlado pelo filtro notch dinâmico."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Filtro do Gyro por RPM",
@@ -3427,6 +3454,9 @@
         "message": "Corte",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "Em aeronaves com pouca autoridade definir valores mais baixos impedem oscilação após um giro rápido, valores mais altos aumentam a precisão em curvas rápidas nas corridas.<br>Configure entre 30 e 40 para corridas, 20 para freestyle, 10 para aeronaves mais pesadas e entre 3 e 5 para aeronaves X-class."
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "Controle Absoluto"
     },
@@ -3438,6 +3468,9 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "Esta funcionalidade permite que o acelerador seja temporáriamente impulsionado em movimentos rápidos do stick, o que aumenta o torque dos motores, resultando em uma resposta muito mais rápida ao acelerador."
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "Valor Ocioso Dinâmico [rpm]"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Angulo máximo do Treinador Acro"
@@ -4490,6 +4523,13 @@
     "osdDescElementRcChannels": {
         "message": "Exibe no máximo 4 canais. Os canais devem ser especificados com o comando CLI: 'osd_rcchannels'"
     },
+    "osdTextElementCameraFrame": {
+        "message": "Enquadramento da Camera",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCameraFrame": {
+        "message": "Adiciona um contorno ajustável que representa o campo de visão da camera do piloto.<br><br>Você pode ajustar a largura e a altura na Linha de Comandos (CLI) com os comandos 'osd_camera_frame_width' e 'osd_camera_frame_height'"
+    },
     "osdTextElementUnknown": {
         "message": "$1 desconhecido",
         "description": "One of the elements of the OSD"
@@ -4864,6 +4904,13 @@
     },
     "osdWarningRssiDbm": {
         "message": "Alerta quando o valor dBm do RSSI está abaixo da configuração do alarme"
+    },
+    "osdWarningTextOverCap": {
+        "message": "Capacidade da bateria excedida",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "Alerta quando a quantidade de mAh consumido da bateria excede o limite configurado"
     },
     "osdWarningTextUnknown": {
         "message": "$1 desconhecido"
@@ -5372,5 +5419,35 @@
     },
     "darkTheme": {
         "message": "Ativar tema escuro"
+    },
+    "pidTuningRatesType": {
+        "message": "Tipos de taxas"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "Alterar o tipo de taxa irá modificar as curvas e a maneira de configurá-las"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "Taxa"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Expo"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "Acro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "Curva RC"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "Taxa máxima"
+    },
+    "pidTuningRcRateActual": {
+        "message": "Sensibilidade"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "Alterar tipo de taxas"
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "Alterar"
     }
 }
