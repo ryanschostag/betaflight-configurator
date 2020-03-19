@@ -4552,6 +4552,13 @@
     "osdDescElementCameraFrame": {
         "message": "Agrega un elemento de contorno ajustable diseñado para representar el campo de visión de la cámara HD del piloto para encuadre visual.<br><br>Puedes ajustar la anchura y la altura en CLI con 'osd_camera_frame_width' y 'osd_camera_frame_height'"
     },
+    "osdTextElementEfficiency": {
+        "message": "Batería: Eficiencia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "Muestra el consumo actual de energía en mAh/distancia"
+    },
     "osdTextElementUnknown": {
         "message": "Desconocido $1",
         "description": "One of the elements of the OSD"
