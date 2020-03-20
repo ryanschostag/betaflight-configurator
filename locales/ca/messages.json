@@ -2794,6 +2794,15 @@
     "firmwareFlasherFlashTrigger": {
         "message": "Detectat: <strong>$1</strong> - llençant flasheig en conectar"
     },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "Estàs a punt de fer una <strong> actualització en desenvolupament del firmware </strong>. Aquestes compilacions són una treball en curs i es pot donar qualsevol dels casos següents:<strong><ul><li>El firmware no funciona en absolut;</li><li>amb el firmware no es pot volar;</li><li>hi ha problemes de seguretat amb el firmware, per exemple flyaways</li><li>el firmware pot fer que el controlador de vol no respongui o es danyi</li></ul></strong>Si continueu amb el flaix d’aquest firmware, <strong>assumiu tota la responsabilitat del risc que passi de qualsevol dels casos anteriors</strong>. A més, reconeix que és necessari dur a terme <strong>proves completes de banc amb els accessoris desactivats</strong> abans de qualsevol intent de volar aquest firmware."
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "He llegit l'anterior i <strong> assumeixo tota la responsabilitat<strong> per actuatltzar el firmware inestable"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "Flash"
+    },
     "firmwareFlasherPreviousDevice": {
         "message": "Detectat: <strong>$1</strong> - el dispositiu anterior encara es flasheja, torna a conectar per reintentar"
     },
@@ -4552,6 +4561,13 @@
     },
     "osdDescElementCameraFrame": {
         "message": "Afegeix un element de traç ajustable dissenyat per representar el camp de vista de la càmera HD del pilot per a enquadrament visual.<br><br>Podeu ajustar l'amplada i l'alçada al CLI amb 'osd_camera_frame_width' i 'osd_camera_frame_height'"
+    },
+    "osdTextElementEfficiency": {
+        "message": "Eficiència",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "Mostra el consum d’energia actual en mAh/distància"
     },
     "osdTextElementUnknown": {
         "message": "Desconegut $1",
