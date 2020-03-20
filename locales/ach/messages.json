@@ -2883,6 +2883,15 @@
     "firmwareFlasherFlashTrigger": {
         "message": "crwdns6013:0$1crwdne6013:0"
     },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "crwdns10018:0crwdne10018:0"
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "crwdns10020:0crwdne10020:0"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "crwdns10022:0crwdne10022:0"
+    },
     "firmwareFlasherPreviousDevice": {
         "message": "crwdns6014:0$1crwdne6014:0"
     },
