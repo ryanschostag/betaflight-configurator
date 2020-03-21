@@ -4652,11 +4652,11 @@
         "message": "crwdns9955:0crwdne9955:0"
     },
     "osdTextElementEfficiency": {
-        "message": "crwdns10014:0crwdne10014:0",
+        "message": "crwdns10024:0crwdne10024:0",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementEfficiency": {
-        "message": "crwdns10016:0crwdne10016:0"
+        "message": "crwdns10026:0crwdne10026:0"
     },
     "osdTextElementUnknown": {
         "message": "crwdns9334:0$1crwdne9334:0",
