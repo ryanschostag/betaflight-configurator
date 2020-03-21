@@ -4563,11 +4563,11 @@
         "message": "Afegeix un element de traç ajustable dissenyat per representar el camp de vista de la càmera HD del pilot per a enquadrament visual.<br><br>Podeu ajustar l'amplada i l'alçada al CLI amb 'osd_camera_frame_width' i 'osd_camera_frame_height'"
     },
     "osdTextElementEfficiency": {
-        "message": "Eficiència",
+        "message": "Eficiència de la bateria",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementEfficiency": {
-        "message": "Mostra el consum d’energia actual en mAh/distància"
+        "message": "Consum instantani de la bateria en mAh/distància. (Requereix correcció GPS vàlida)"
     },
     "osdTextElementUnknown": {
         "message": "Desconegut $1",
