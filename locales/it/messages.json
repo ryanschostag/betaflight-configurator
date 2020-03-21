@@ -32,7 +32,7 @@
         "message": "Questa operazione non è supportata dal tuo hardware."
     },
     "storageDeviceNotReady": {
-        "message": "La memoria di archiviazione non è pronta. In caso di microSD card, assicurati che sia riconosciuta correttamente dal tuo flight controller."
+        "message": "La memoria di archiviazione non è pronta. In caso di scheda SD, assicurati che sia riconosciuta correttamente dal controllore di volo."
     },
     "options_title": {
         "message": "Opzioni applicazione"
@@ -2793,6 +2793,15 @@
     "firmwareFlasherFlashTrigger": {
         "message": "Rilevato: <strong>$1</strong> - attivazione del flash alla connessione"
     },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "Stai per flashare una <strong>build di sviluppo del firmware</strong>. Queste build sono work in progress e potrebbero verificarsi i seguenti casi:<strong><ul><li>il firmware non è funzionante;</li><li>il firmware non è in grado di far volare il modello;</li><li>ci sono problemi di sicurezza con il firmware, per esempio flyaway</li><li>il firmware può far diventare il controllore del volo non rispondente o danneggiarlo</li></ul></strong>Se prosegui con il flash di questo firmware, <strong>ti assumi la piena responsabilità dei rischi di cui sopra</strong>. Inoltre riconosci che è necessario eseguire <strong>test approfonditi sul banco di lavoro con le eliche rimosse</strong> prima di qualsiasi tentativo di volare con questo firmware."
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "Ho letto sopra e <strong>mi assumo tutta la responsabilità<strong> di flashare un firmware instabile"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "Flash"
+    },
     "firmwareFlasherPreviousDevice": {
         "message": "Rilevato: <strong>$1</strong> - è ancora in corso il flashing del dispositivo precedente, ti preghiamo di ricollegarlo per riprovare"
     },
@@ -4552,6 +4561,13 @@
     "osdDescElementCameraFrame": {
         "message": "Aggiunge un contorno regolabile usato per rappresentare il campo visivo della fotocamera del pilota come riferimento visivo.<br><br>È possibile regolare la larghezza e l'altezza nel CLI con 'osd_camera_frame_width' e 'osd_camera_frame_height'"
     },
+    "osdTextElementEfficiency": {
+        "message": "Efficienza batteria",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "Consumo istantaneo della batteria in mAh/distanza. (Richiede un fix GPS valido)"
+    },
     "osdTextElementUnknown": {
         "message": "Sconosciuto $1",
         "description": "One of the elements of the OSD"
@@ -4944,7 +4960,7 @@
         "message": "Abilita o disabilita gli elementi OSD"
     },
     "osdSectionHelpVideoMode": {
-        "message": "Imposta la modalità video della camera (di solito può essere lasciato in AUTO, se hai difficoltà impostalo in modo da coincidere con il formato in uscita della telecamera"
+        "message": "Imposta la modalità video della camera (di solito può essere lasciato in AUTO, se hai difficoltà impostalo in modo da coincidere con il formato in uscita della telecamera)."
     },
     "osdSectionHelpUnits": {
         "message": "Imposta l'unità di misura per le letture numeriche"
@@ -4959,16 +4975,16 @@
         "message": "Imposta i valori visualizzati nella schermata delle statistiche post volo"
     },
     "osdSectionHelpWarnings": {
-        "message": "Abilita o disabilita gli avvisi che vengono mostrati negli elementi di WARNING."
+        "message": "Abilita o disabilita gli avvisi che vengono mostrati negli elementi di AVVISO."
     },
     "osdSettingsSaved": {
         "message": "Impostazioni OSD salvate"
     },
     "osdWritePermissions": {
-        "message": "Non hai <span class=\"message-negative\">permessi di scrittura</span> per questo file"
+        "message": "Non hai i <span class=\"message-negative\">permessi di scrittura</span> per questo file"
     },
     "osdButtonSaved": {
-        "message": "Salvato!"
+        "message": "Salvato"
     },
     "vtxHelp": {
         "message": "Qui è possibile configurare i valori della Trasmittente Video (VTX). È possibile visualizzare e modificare i valori di trasmissione, incluse le tabelle della VTX, se il controller di volo e la VTX lo supportano.<br>Per impostare la VTX utilizza i seguenti passaggi:<br>1. Vai su <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight/wiki/VTX-tables\">questa</a> pagina;<br>2. Trova il file di configurazione VTX appropriato per il tuo paese e il modello VTX e scaricalo;<br>3. Clicca sul pulsante '$t(vtxButtonLoadFile.message)', seleziona il file di configurazione VTX e caricalo;<br>4. Verifica che le impostazioni siano corrette;<br>5. Fare clic su '$t(vtxButtonSave.message)' per salvare le impostazioni della VTX sul controller del volo.<br>6. Se vuoi puoi usare '$t(vtxButtonSaveLua.message)' per salvare un file di configurazione in lua da usare con gli script lua di Betaflight (maggiori informazioni <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">qui</a>.)",
@@ -5039,7 +5055,7 @@
         "description": "Help text for the band field of the VTX tab"
     },
     "vtxBand_0": {
-        "message": "Nessuno",
+        "message": "Nessuna",
         "description": "Text of one of the options for the band field of the VTX tab"
     },
     "vtxBand_X": {
@@ -5055,11 +5071,11 @@
         "description": "Text of one of the options for the channel field of the VTX tab"
     },
     "vtxPower_0": {
-        "message": "Nessuno",
+        "message": "Nessuna",
         "description": "Text of one of the options for the power field of the VTX tab"
     },
     "vtxPower_X": {
-        "message": "Livello {{powerLevel}}",
+        "message": "Potenza {{powerLevel}}",
         "description": "Text of one of the options for the power field of the VTX tab"
     },
     "vtxChannel": {
@@ -5075,7 +5091,7 @@
         "description": "Text of one of the fields of the VTX tab"
     },
     "vtxFrequencyHelp": {
-        "message": "Puoi selezionare qui la frequenza per il tuo VTX se è supportata",
+        "message": "Puoi selezionare qui la frequenza per la tua VTX se è supportata",
         "description": "Help text for the frequency field of the VTX tab"
     },
     "vtxDeviceReady": {
@@ -5087,7 +5103,7 @@
         "description": "Text of one of the fields of the VTX tab"
     },
     "vtxPowerHelp": {
-        "message": "Questa è la potenza selezionata per il VTX. Può essere modificata se il $t(vtxPitMode.message) o il $t(vtxLowPowerDisarm.message) è abilitato",
+        "message": "Questa è la potenza selezionata per la VTX. Può essere modificata se il $t(vtxPitMode.message) o il $t(vtxLowPowerDisarm.message) sono abilitati",
         "description": "Help text for the power field of the VTX tab"
     },
     "vtxPitMode": {
@@ -5115,15 +5131,15 @@
         "description": "Help text for the low power disarm field of the VTX tab"
     },
     "vtxLowPowerDisarmOption_0": {
-        "message": "Spento",
+        "message": "Disattiva",
         "description": "One of the options for the Low Power Disarm mode of the VTX"
     },
     "vtxLowPowerDisarmOption_1": {
-        "message": "Acceso",
+        "message": "Attiva",
         "description": "One of the options for the Low Power Disarm mode of the VTX"
     },
     "vtxLowPowerDisarmOption_2": {
-        "message": "Attivo fino al primo armamento",
+        "message": "Attiva fino al primo armamento",
         "description": "One of the options for the Low Power Disarm mode of the VTX"
     },
     "vtxTable": {
@@ -5234,7 +5250,7 @@
         "message": "Armamento Motori"
     },
     "mainHelpFailsafe": {
-        "message": "Modalità  Failsafe"
+        "message": "Modalità Failsafe"
     },
     "mainHelpLink": {
         "message": "Stato Collegamento Seriale"
@@ -5246,10 +5262,10 @@
         "message": "Seleziona il protocollo per i tuoi motori. <br>Assicurati che il protocollo sia supportato dai tuoi ESC, puoi trovare quest'informazione sul sito web del produttore. <br> <b>Fai attenzione usando DSHOT900 e DSHOT1200, non tutti gli  ESC li supportano!</b>"
     },
     "configurationEscProtocolHelpNoDSHOT1200": {
-        "message": "Seleziona il tuo protocollo per i motori.<br>Assicurati che il protocollo sia supportato dal tuo ESC (dovrebbe essere specificato sul sito del produttore)."
+        "message": "Seleziona il protocollo per i tuoi motori.<br>Assicurati che il protocollo sia supportato dal tuo ESC (dovrebbe essere specificato sul sito del produttore)."
     },
     "configurationunsyndePwm": {
-        "message": "Velocità PWM dei motori separata dalla velocità dei PID"
+        "message": "Velocità PWM dei motori separata dalla velocità del PID"
     },
     "configurationUnsyncedPWMFreq": {
         "message": "Frequenza PWM dei Motori"
@@ -5263,16 +5279,16 @@
         "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
-        "message": "Frequenza aggiornamento giroscopio"
+        "message": "Frequenza aggiornamento gyro"
     },
     "configurationPidProcessDenom": {
         "message": "Frequenza di loop del PID"
     },
     "configurationPidProcessDenomHelp": {
-        "message": "La frequenza massima del PID loop è limitata dalla frequenza massima a cui gli aggiornamenti vengono inviati dal protocollo impostato per gli ESC/motori."
+        "message": "La frequenza massima del loop PID è limitata dalla frequenza massima a cui gli aggiornamenti vengono inviati dal protocollo impostato per gli ESC/motori."
     },
     "configurationGyroUse32kHz": {
-        "message": "Abilita modalità di campionamento del giroscopio a 32kHz"
+        "message": "Abilita campionamento del giroscopio a 32kHz"
     },
     "configurationGyroUse32kHzHelp": {
         "message": "La frequenza di aggiornamento a 32 kHz è possibile solo se il processore del giroscopio la supporta (attualmente MPU6500, MPU9250, e ICM20xxx se connessi tramite SPI). In caso di dubbi consulta le specifiche della tua scheda."
@@ -5287,10 +5303,10 @@
         "message": "Magnetometro (se supportato)"
     },
     "configurationSmallAngle": {
-        "message": "Maximum ARM Angle [gradi]"
+        "message": "Angolo massimo di armamento [gradi]"
     },
     "configurationSmallAngleHelp": {
-        "message": "Il modello non si armerà se inclinato oltre un numero impostato di gradi. Si applica solo se l'accelerometro è abilitato. Impostandolo a 180 il controllo verrà disabilitato."
+        "message": "Il modello non si armerà se inclinato oltre il numero impostato di gradi. Si applica solo se l'accelerometro è abilitato. Impostandolo a 180 il controllo verrà disabilitato"
     },
     "configurationBatteryVoltage": {
         "message": "Tensione Batteria"
@@ -5320,25 +5336,25 @@
         "message": "Sensore di Corrente"
     },
     "configurationCurrentScale": {
-        "message": "Scala la tensione di uscita in milliampere (1/10th mV/A)"
+        "message": "Scala la tensione di uscita in milliAmpere [1/10th mV/A]"
     },
     "configurationCurrentOffset": {
-        "message": "Offset in passi da un millivolt"
+        "message": "Offset in step di un millivolt"
     },
     "configurationBatteryMultiwiiCurrent": {
-        "message": "Abilita il supporto per i vecchi uscite di corrente MSP Multiwii"
+        "message": "Abilita il supporto per le uscite della corrente per i vecchi MSP Multiwii"
     },
     "pidTuningProfile": {
         "message": "Profilo"
     },
     "pidTuningProfileTip": {
-        "message": "Fino a 3 (2 per alcuni controller) profili Pid differenti possono essere salvati nel flight controller. I profili Pid includono Pid, D setpoint e I settaggi angle/horizon di questa tab. Una volta impostati è possibile utilizzare il comando di uno stick per passare da un profilo all'altro (vedi le istruzioni online)."
+        "message": "Fino a 3 (2 per alcune schede) profili PID differenti possono essere salvati nel controllore di volo. I profili PID includono PID, setpoint D e le impostazioni angle/horizon di questa scheda. Una volta impostati è possibile utilizzare semplici comandi degli stick per passare da un profilo all'altro (vedi le istruzioni online)."
     },
     "pidTuningRateProfile": {
         "message": "Profilo Rate"
     },
     "pidTuningRateProfileTip": {
-        "message": "Fino a 3 differenti Profili Rate possono essere salvati sul flight controller. I Profili Rate includono i settaggi per \"RC Rate\", \"Rate\", \"RC Expo\", \"Throttle\", e \"TPA\". Il passaggio da un profilo all'altro è possibile durante il volo, impostando uno switch a 3 posizioni per \"Selezione Profilo Rate\" nella tab \"Regolazioni\"."
+        "message": "Fino a 3 differenti Profili Rate possono essere salvati sul controllore di volo. I Profili Rate includono le impostazioni per \"Rate RC\", \"Rate\", \"Esponenziale\", \"Gas\", e \"TPA\". Il passaggio da un profilo all'altro è possibile durante il volo, impostando uno switch a 3 posizioni per \"Selezione Profilo Rate\" nella tab \"Regolazioni\"."
     },
     "pidTuningRateSetup": {
         "message": "Rates di base/acro"
@@ -5357,16 +5373,16 @@
         "message": "Misurazione"
     },
     "pidTuningDeltaTip": {
-        "message": "<b> Derivata dall'errore </ b> fornisce una risposta diretta più diretta ed è per lo più preferibile per le corse. <br> <br> <b> La derivata dalla misurazione </ b> fornisce una risposta più semplice e più utile per il freestyle"
+        "message": "<b>Derivata dall'errore</b>fornisce una risposta più diretta agli stick ed è per lo più preferibile per le corse.<br><br><b>Derivata dalla misurazione</b> fornisce una risposta più fluida e più utile per il freestyle"
     },
     "pidTuningPidControllerTip": {
-        "message": "<b>Legacy vs Betaflight (float):</b> PID scaling e PID logic sono la stessa cosa. La calibrazione può non essere necessaria. Legacy è la riscrittura del vecchio Betaflight evoluto che è un semplice controller PID basato su numeri Interi. Il controller PID di Betaflight usa calcoli in virgola mobile ed ha molte nuove funzioni disegnate specificamente per i multirotori <br> <b>Float vs Integer:</b> PID scaling e PID logic sono la stessa cosa. Calibrazione non richiesta. Le schede F1 non hanno una FPU integrata, i calcoli in virgola mobile aumentato il carico della CPU. I calcoli in numeri Interi migliorano le performance ma i calcoli in virgola mobile possono far guadagnare un po' di precisione."
+        "message": "<b>Legacy vs Betaflight (float):</b> PID scaling e PID logic sono la stessa cosa. Il retuning può non essere necessario. Legacy è la riscrittura del vecchio Betaflight evoluto che è un semplice controller PID basato su numeri interi. Il controller PID di Betaflight usa calcoli in virgola mobile ed ha molte nuove funzioni disegnate specificamente per i multirotori <br> <b>Float vs Integer:</b> PID scaling e PID logic sono la stessa cosa. Il retuning non è necessario. Le schede F1 non hanno una FPU integrata, i calcoli in virgola mobile aumentato il carico della CPU. I calcoli in numeri interi migliorano le performance ma i calcoli in virgola mobile possono far guadagnare un po' di precisione."
     },
     "pidTuningFilterTip": {
-        "message": "<b>Filtro Leggero per Giroscopio :</b> Filtro Passbasso per giroscopio. Usa valori bassi per un filtraggio maggiore.<br><b>Filtro D Term:</b> Filtro Passabasso per Dterm. Può influire sul tuning di D. Usa valori bassi per un filtraggio maggiore. <br><b>Filtro Yaw:</b> Filtra il comando yaw. Può aiutare nei setup con asse orizzontale rumoroso"
+        "message": "<b>Filtro Leggero del Giroscopio:</b> Filtro Passabasso del giroscopio. Usa valori bassi per un filtraggio maggiore.<br><b>Filtro D Term:</b> Filtro Passabasso per Dterm. Può influire sul tuning di D. Usa valori bassi per un filtraggio maggiore. <br><b>Filtro Yaw:</b> Filtra il comando yaw. Può aiutare nei setup con asse di imbardata rumoroso."
     },
     "pidTuningRatesTip": {
-        "message": "Gioca con i \"rates\" e verifica come influiscono sulla curva dello stick"
+        "message": "Gioca con i rates e verifica come influiscono sulla curva dello stick"
     },
     "configurationCamera": {
         "message": "Camera"
@@ -5378,7 +5394,7 @@
         "message": "Nome Modello"
     },
     "configurationFpvCamAngleDegrees": {
-        "message": "Angolo della videocamera FPV [gradi]"
+        "message": "Angolo della camera FPV [gradi]"
     },
     "onboardLoggingBlackbox": {
         "message": "Dispositivo di registrazione Blackbox"
@@ -5396,13 +5412,13 @@
         "message": "Dispositivo seriale esterno per la registrazione"
     },
     "onboardLoggingFlashLogger": {
-        "message": "Dataflash chip onboard"
+        "message": "Chip dataflash integrato"
     },
     "onboardLoggingEraseInProgress": {
         "message": "Cancellazione in corso, attendere prego..."
     },
     "onboardLoggingOnboardSDCard": {
-        "message": "Scheda SD Onboard"
+        "message": "Scheda SD integrata"
     },
     "onboardLoggingMsc": {
         "message": "Modalità archiviazione di massa"
@@ -5429,13 +5445,13 @@
         "message": "Annulla"
     },
     "modeCameraWifi": {
-        "message": "Pulsante WI-FI CAMERA"
+        "message": "PULSANTE CAMERA WIFI"
     },
     "modeCameraPower": {
         "message": "PULSANTE ACCENSIONE CAMERA"
     },
     "modeCameraChangeMode": {
-        "message": "MODALITA' CAMBIO CAMERA"
+        "message": "MODALITÀ CAMBIO CAMERA"
     },
     "flashTab": {
         "message": "Aggiornamento Firmware"
