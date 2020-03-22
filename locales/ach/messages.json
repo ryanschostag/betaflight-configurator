@@ -4028,6 +4028,9 @@
     "osdSetupTitle": {
         "message": "crwdns6203:0crwdne6203:0"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "crwdns10028:0crwdne10028:0"
+    },
     "osdSetupPreviewHelp": {
         "message": "crwdns9134:0crwdne9134:0"
     },
