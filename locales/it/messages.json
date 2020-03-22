@@ -3938,6 +3938,9 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>ATTENZIONE:</b></span> Nessun chip OSD rilevato. Alcuni controllori di volo non alimentano correttamente il chip OSD a meno che non sia collegata la batteria. Si prega di collegare la batteria prima di collegare l'USB (RIMUOVI LE ELICHE!)."
+    },
     "osdSetupPreviewHelp": {
         "message": "<strong>Nota:</strong> l'anteprima OSD potrebbe non mostrare il carattere effettivo installato sul controllore di volo. Il layout dei singoli elementi potrebbe risultare differente nelle versioni vecchie del firmware - verifica attraverso il tuo monitor/occhialini prima di volare."
     },
