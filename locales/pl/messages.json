@@ -3896,6 +3896,9 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>OSTRZEŻENIE:</b></span> Nie wykryto chipu OSD. Niektóre kontrolery lotu nie będą prawidłowo zasilać chipu OSD, chyba że zostaną podłączone do zasilania baterii. Podłącz baterię przed podłączeniem USB (ze ZDJĘTYMI śmigłami!)."
+    },
     "osdSetupPreviewHelp": {
         "message": "<strong>Uwaga:</strong> Podgląd OSD nie może pokazywać rzeczywistej czcionki zainstalowanej na kontrolerze lotu. Układ poszczególnych elementów może wyglądać inaczej, gdy używane są starsze wersje oprogramowania układowego - sprawdź wygląd czcionki poprzez okulary lub wyświetlacz przed rozpoczęciem jakiegokolwiek lotu."
     },
