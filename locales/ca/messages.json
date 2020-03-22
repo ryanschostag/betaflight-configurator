@@ -3939,6 +3939,9 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>AVIS:</b></span>No s'ha detectat cap xip OSD. Alguns controladors de vol no alimentaran correctament el xip OSD a menys que estiguin connectats a la bateria. Si us plau, connecteu la bateria abans de connectar el USB (HEU RETIRAT LES HÈLIX!)."
+    },
     "osdSetupPreviewHelp": {
         "message": "<strong>Nota:</strong> La previsualització de l'OSD pot no mostrar la font instaŀlada a la controladora de vol."
     },
