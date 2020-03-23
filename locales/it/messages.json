@@ -5497,5 +5497,29 @@
     },
     "dialogRatesTypeConfirm": {
         "message": "Cambia"
+    },
+    "gpsSbasAutoDetect": {
+        "message": "Automatico",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasEuropeanEGNOS": {
+        "message": "EGNOS (Europa)",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNorthAmericanWAAS": {
+        "message": "WAAS (Nord America)",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasJapaneseMSAS": {
+        "message": "MSAS (Giappone)",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasIndianGAGAN": {
+        "message": "GAGAN (India)",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNone": {
+        "message": "Nessuno",
+        "description": "One of the options selectable for the GPS SBAS system"
     }
 }
