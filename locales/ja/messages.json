@@ -2793,6 +2793,15 @@
     "firmwareFlasherFlashTrigger": {
         "message": "検出: <strong>$1</strong> - 接続時フラッシュをトリガーとします"
     },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "<strong>開発ビルド版ファームウェア</strong>をフラッシュしようとしています。これらのビルドは開発作業中のものであり、次のいずれかが当てはまる場合があります:<strong><ul><li>ファームウェアがまったく機能しない場合;</li><li>ファームウェアが飛行不能な場合;</li><li>飛行距離など、ファームウェアに安全性の問題がある場合;</li><li>ファームウェアが原因で、フライトコントローラが応答しなくなったり、破損したりする可能性がある場合</li></ul></strong>このファームウェアのフラッシュを続行する場合は、<strong>上記のいずれかのリスクに対して自己責任を負うこととなります。</strong>さらにこのファームウェアを飛ばす前に、<strong>プロペラを外し徹底的なベンチテストを実行する</strong>必要があることを周知してください。"
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "上記を確認し、<strong>自己責任において<strong>未検証ファームウェアをフラッシュします"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "フラッシュ"
+    },
     "firmwareFlasherPreviousDevice": {
         "message": "検出: <strong>$1</strong> - 以前のデバイスがまだ書き込まれています。再接続してもう一度お試しください。"
     },
@@ -3929,6 +3938,9 @@
     "osdSetupTitle": {
         "message": "OSD設定"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>警告:</b></span> OSDチップセットは検出されませんでした。一部のフライトコントローラは、バッテリーを接続しないとOSDチップセットへ適切に電力を供給できません。USB接続する前にバッテリーを接続してください。 (プロペラは外してください!)"
+    },
     "osdSetupPreviewHelp": {
         "message": "<strong>注:</strong> OSDプレビューでは、フライトコントローラにインストールされている実際のフォントが表示されない場合があります。旧バージョンのファームウェアが使用されている場合、OSD項目の個々のレイアウトが異なる場合があります。そのため、飛行する前にゴーグルを通してOSD表示を確認してください。"
     },
@@ -4551,6 +4563,13 @@
     },
     "osdDescElementCameraFrame": {
         "message": "視覚的フレーミングのためパイロットのHDカメラの視野を表すように設計された、調整可能なアウトラインを追加します。<br> <br>『osd_camera_frame_width』および『osd_camera_frame_height』を使用してCLIで幅と高さを調整できます。"
+    },
+    "osdTextElementEfficiency": {
+        "message": "バッテリー効率",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "mAh/distanceでの瞬間バッテリー消費量。(有効化にはGPS修正が必要)"
     },
     "osdTextElementUnknown": {
         "message": "不明 $1",
