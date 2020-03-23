@@ -524,6 +524,9 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
+    "defaultWelcomeText": {
+        "message": "Von der Applikation wird jede Hardware unterstützt, auf welcher Betaflight lauffähig ist. Klicke auf den Flash-Tab für eine vollständige Liste der unterstützten Hardware..<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\"> Download Betaflight Blackbox Log Viewer</a><br /><br /> Die Firmware kann <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\"> hier </a> heruntergeladen werden.<br /><br /> Der aktuelle <b>STM USB VCP Treiber</b> kann <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\">hier</a>heruntergeladen werden.<br /> Für Hardware mit CP210x USB to serial chip kann der aktuelle <b>CP210x Treiber</b><a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\"> hier</a>heruntergeladen werden. <br />Der aktuelle <b>Zadig</b> Windows USB Treiber kann <a href=\"http://zadig.akeo.ie/\" target=\"_blank\">hier</a> heruntegeladen werden<br />"
+    },
     "defaultContributingHead": {
         "message": "Mitmachen"
     },
@@ -1242,6 +1245,10 @@
     "configurationCalculatedCyclesSec": {
         "message": "Zyklen/Sec (Hz)"
     },
+    "configurationSpeedGyroNoGyro": {
+        "message": "Bei deaktiviertem Gyro erscheint dieser Wert anstelle der Gyro Geschwindigkeit in kHz",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
     "configurationLoopTimeHelp": {
         "message": "<strong>Hinweis:</strong> Stelle sicher, dass dein FC mit dieser Geschwindigkeit arbeiten kann. Prüfe die CPU Auslastung und die Cycletime Stabilität. Änderungen führen möglicherweise dazu, dass die PID's neu eingestellt werden müssen. Tipp: Deaktiviere unbenutzte Sensoren, um mehr Leistung zu haben."
     },
@@ -1262,6 +1269,18 @@
     },
     "configurationGPSAutoConfig": {
         "message": "Auto Konfig"
+    },
+    "configurationGPSGalileo": {
+        "message": "Galileo verwenden",
+        "description": "Option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSGalileoHelp": {
+        "message": "Wenn aktiviert, entfernt dies das QZSS-System (Japanisch) und ersetzt es mit dem Galileo-System (europäisch).",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSHomeOnce": {
+        "message": "Startpunkt einmalig festlegen",
+        "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
     },
     "configurationGPSHelp": {
         "message": "<strong>Hinweis::</strong> Nicht vergessen den seriellen Anschluss zu konfigurieren (Anschlüsse Tab), wenn GPS benutzt wird."
@@ -1490,6 +1509,9 @@
     },
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "Die Kanalglättung gilt für"
+    },
+    "rcSmoothingDerivativeTypeHelp": {
+        "message": "Der Typ der Filtermethode welcher für \"Setpoint Derivative\" verwendet wird. Ab Version 4.2 wird der Standardwert \"Auto\" empfohlen. Die meisten Benutzer sollten den Standardwert \"BIQUAD\" verwenden, da er eine gute Balance zwischen Glättung und Verzögerung bietet. \"PT1\" bietet weniger Glättung aber die Verzögerung ist etwas reduziert."
     },
     "rcSmoothingInputTypeHelp": {
         "message": "Der Typ der Filtermethode welcher für \"Input\" verwendet wird. Die meisten Benutzer sollten den Standardwert \"BIQUAD\" verwenden, da er eine gute Balance zwischen Glättung und Verzögerung bietet. \"PT1\" bietet weniger Glättung aber die Verzögerung ist etwas reduziert."
@@ -3504,8 +3526,29 @@
     "failsafeGpsRescueItemThrottleHover": {
         "message": "Gas schweben"
     },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "Steigrate (Meter/Sekunde)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "Sinkrate (Meter/Sekunde)"
+    },
     "failsafeGpsRescueItemMinSats": {
         "message": "Mindestanzahl Satelliten"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "\"Armen\" ohne GPS-Fix zulassen - <span class=\"message-negative\">WARNUNG: GPS-Rettung wird dann nicht zur Verfügung stehen</span>"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "Höhenmodus"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "Maximale Höhe"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "Feste Höhe"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "Aktuelle Höhe"
     },
     "failsafeGpsRescueItemSanityChecks": {
         "message": "Plausibilitätsprüfungen"
@@ -4419,6 +4462,13 @@
     "osdDescElementRssiDbmValue": {
         "message": "Wert in dBm des RSSI-Signals, falls verfügbar"
     },
+    "osdTextElementRcChannels": {
+        "message": "RC-Kanäle",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Maximal 4 Kanalwerte anzeigen. Die Kanäle müssen mit der CLI-Variable 'osd_rcchannels' angegeben werden"
+    },
     "osdTextElementUnknown": {
         "message": "Unbekannt $1",
         "description": "One of the elements of the OSD"
@@ -4794,6 +4844,13 @@
     "osdWarningRssiDbm": {
         "message": "Warnung, wenn der RSSI dBm Wert unter den der Alarmeinstellung fällt"
     },
+    "osdWarningTextOverCap": {
+        "message": "Batterieüberkapazität",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "Warnt, wenn die verbrauchten mAh das konfigurierte Kapazitätslimit überschreitet"
+    },
     "osdWarningTextUnknown": {
         "message": "Unbekannt $1"
     },
@@ -4829,6 +4886,10 @@
     },
     "osdButtonSaved": {
         "message": "Gespeichert"
+    },
+    "vtxHelp": {
+        "message": "Hier können die Werte des Video Transmitter (VTX) konfiguriert werden. Es können die Übertragungswerte, einschließlich der VTX-Tabelle, angezeigt und geändert werden, wenn der Flugcontroller und der VTX dies unterstützen.<br>Um das VTX einzurichten, folge diesen Schritten:<br>1. Gehe zu <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight/wiki/VTX-tables\">dieser</a> Seite;<br>2. Finde die passende VTX Konfigurationsdatei für das Land in dem die Drohne betrieben wird und das VTX Protokoll und lade sie herunter;<br>3. Klicke unten auf '$t(vtxButtonLoadFile.message)', wähle die VTX Konfigurationsdatei und lade sie;<br>4. Überprüfe, ob die Einstellungen korrekt sind;<br>5. Klicke auf '$t(vtxButtonSave.message)' um die VTX-Einstellungen auf dem Flugcontroller zu speichern.<br>6. Optional klick '$t(vtxButtonSaveLua.message)' um eine Lua Konfiguration-Datei zu speichern, welche mit den Betaflight Lua Scripten benutzt werden kann. (Mehr dazu <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">hier</a>.)",
+        "description": "Introduction message in the VTX tab"
     },
     "vtxMessageNotSupported": {
         "message": "<span class=\"message-negative\">Achtung:</span> Dein VTX ist nicht konfiguriert oder nicht unterstützt. Dadurch kannst du die VTX-Werte von hier aus nicht ändern. Dies ist nur möglich, wenn der Flugcontroller mit einem Protokoll wie Tramp oder SmartAudio verbunden ist und in der Registerkarte $t(tabPorts.message) korrekt konfiguriert ist.",
@@ -5057,6 +5118,14 @@
     "vtxButtonSaveFile": {
         "message": "In Datei speichern",
         "description": "Save to file button in the VTX tab"
+    },
+    "vtxButtonSaveLua": {
+        "message": "Lua Script speichern",
+        "description": "Save Lua script button in the VTX tab"
+    },
+    "vtxLuaFileHelp": {
+        "message": "Der '$t(vtxButtonSaveLua.message)' Knopf erlaubt es eine <i>Modellnamen</i>.lua Datei zu speichern, welche die vtx Tabellenkonfiguration enthält, die mit den betaflight Lua Skripten verwendet werden kann. (Weitere Infos finden SIe <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">hier</a>.)",
+        "description": "Tooltip message for the Save Lua script button in the VTX tab"
     },
     "vtxButtonLoadFile": {
         "message": "Aus Datei laden",
