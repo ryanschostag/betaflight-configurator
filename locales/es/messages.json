@@ -2793,6 +2793,15 @@
     "firmwareFlasherFlashTrigger": {
         "message": "Detectado: <strong>$1</strong> - ejecutando instalar al conectar"
     },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "Estás a punto de instalar una <strong>versión en desarrollo del firmware</strong>. Estas versiones son un trabajo en curso, y puede que suceda cualquiera de estas situaciones:<strong><ul><li>el firmware no funcione en absoluto;</li><li>el firmware no sea volable;</li><li>haya problemas de seguridad con el firmware, por ejemplo que se vaya volando;</li><li>el firmware puede causar que la controladora no responda, o quede dañada;</li></ul></strong>Si decides instalar este firmware, <strong>estás asumiendo toda la responsabilidad por el riesgo de que cualquiera de las situaciones anteriores suceda</strong>. Además reconoces que es necesario realizar <strong>pruebas completas de banco sin hélices</strong> antes de cualquier intento de volar este firmware."
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "He leído lo anterior y <strong>asumo toda la responsabilidad<strong> de instalar firmware inestable"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "Instalar"
+    },
     "firmwareFlasherPreviousDevice": {
         "message": "Detectado: <strong>$1</strong> - dispositivo anterior todavía en instalación, por favor vuelve a conectar para volver a intentarlo"
     },
@@ -3929,6 +3938,9 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>ADVERTENCIA:</b></span> No se detectó ningún chip OSD. Algunos controladores de vuelo no alimentarán correctamente el chip OSD a menos que se conecte a la batería. Por favor, conecta la batería antes de conectar el USB (¡SIN HELICES!)."
+    },
     "osdSetupPreviewHelp": {
         "message": "<strong>Nota:</strong> la vista previa del OSD puede no mostrar la fuente actual que está instalada en el controlador de vuelo. Además la forma de alguno de los elementos puede ser diferente si se utilizan versiones antiguas del firmware - por favor comprueba el aspecto a través de tus gafas antes de volar."
     },
@@ -4551,6 +4563,13 @@
     },
     "osdDescElementCameraFrame": {
         "message": "Agrega un elemento de contorno ajustable diseñado para representar el campo de visión de la cámara HD del piloto para encuadre visual.<br><br>Puedes ajustar la anchura y la altura en CLI con 'osd_camera_frame_width' y 'osd_camera_frame_height'"
+    },
+    "osdTextElementEfficiency": {
+        "message": "Batería: eficiencia",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "Consumo instantáneo de batería en mAh/distancia (requiere GPS fijado)"
     },
     "osdTextElementUnknown": {
         "message": "Desconocido $1",
@@ -5478,5 +5497,29 @@
     },
     "dialogRatesTypeConfirm": {
         "message": "Cambiar"
+    },
+    "gpsSbasAutoDetect": {
+        "message": "Auto-detectar",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasEuropeanEGNOS": {
+        "message": "EGNOS Europeo",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNorthAmericanWAAS": {
+        "message": "WAAS Norte Americano",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasJapaneseMSAS": {
+        "message": "MSAS Japonés",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasIndianGAGAN": {
+        "message": "GAGAN Indio",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNone": {
+        "message": "Ninguno",
+        "description": "One of the options selectable for the GPS SBAS system"
     }
 }
