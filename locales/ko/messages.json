@@ -4633,6 +4633,13 @@
     "osdDescElementCameraFrame": {
         "message": "시각적 프레임을 위해 조종사의 HD 카메라 시야를 나타내도록 설계된 조정 가능한 외곽선 요소를 추가합니다.<br><br>CLI에서 'osd_camera_frame_width' 및 'osd_camera_frame_height'로 너비와 높이를 조정할 수 있습니다."
     },
+    "osdTextElementEfficiency": {
+        "message": "배터리 효율",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "순간 배터리 소비량을 mAh/거리 단위로 표시. (유효한 GPS 고정 필요)"
+    },
     "osdTextElementUnknown": {
         "message": "알 수 없음 $1",
         "description": "One of the elements of the OSD"
@@ -5559,5 +5566,29 @@
     },
     "dialogRatesTypeConfirm": {
         "message": "변경"
+    },
+    "gpsSbasAutoDetect": {
+        "message": "자동 감지",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasEuropeanEGNOS": {
+        "message": "유럽 EGNOS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNorthAmericanWAAS": {
+        "message": "북미 WASS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasJapaneseMSAS": {
+        "message": "일본 MSAS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasIndianGAGAN": {
+        "message": "인도 GAGAN",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNone": {
+        "message": "없음",
+        "description": "One of the options selectable for the GPS SBAS system"
     }
 }
