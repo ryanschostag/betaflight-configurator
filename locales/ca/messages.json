@@ -5462,5 +5462,29 @@
     },
     "dialogRatesTypeConfirm": {
         "message": "Camviar"
+    },
+    "gpsSbasAutoDetect": {
+        "message": "Auto detectar",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasEuropeanEGNOS": {
+        "message": "EGNOS EU",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNorthAmericanWAAS": {
+        "message": "WAAS USA",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasJapaneseMSAS": {
+        "message": "MSAS JAPÓ",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasIndianGAGAN": {
+        "message": "GAGAN INDIA",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNone": {
+        "message": "Cap",
+        "description": "One of the options selectable for the GPS SBAS system"
     }
 }
