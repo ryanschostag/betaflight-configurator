@@ -4010,6 +4010,9 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>경고:</b></span> OSD 칩이 검출되지 않았습니다. 일부 비행 컨트롤러들은 배터리 전원에 연결되지 않는 한 OSD 칩의 전원을 제대로 공급하지 못합니다. USB를 연결하기 전에 (프롭을 제거하고!) 배터리를 연결하십시오."
+    },
     "osdSetupPreviewHelp": {
         "message": "<strong>공지:</strong> OSD 미리보기는 비행 컨트롤러에 설치된 실제 폰트로 보여지지 않을 수도 있습니다. 또한 개별적인 항목의 레이아웃은 오래된 버전의 펌웨어를 사용할 때 다르게 보여질 수 있습니다 - 비행하기 전 당신의 고글로 화면을 점검하세요."
     },
