@@ -69,7 +69,7 @@
         "message": "Ezeztatu"
     },
     "autoConnectEnabled": {
-        "message": "Konexio automatikoa: gaituta - Konfiguratzaileak ataka berria hautematen denean automatikoki konektatzen saiatzen da"
+        "message": "Konexio-Automatikoa: Gaituta - Konfiguratzaileak ataka berria hautematen denean automatikoki konektatzen saiatzen da"
     },
     "autoConnectDisabled": {
         "message": "Konexio automatikoa: desgaituta - Erabiltzaileak serieko portu egokia hautatu behar du eta \"Konektatu\" botoia sakatu behar du"
