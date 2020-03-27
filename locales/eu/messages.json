@@ -1119,7 +1119,7 @@
         "message": "Motorren norabidea alderantzizkoa"
     },
     "configurationReverseMotorSwitchHelp": {
-        "message": "Aukera honek nahasgailua motorraren norabidea alderantzikatu eta haizeak horren arabera egon dadin konfiguratzen du. <strong>Oharra:</strong> Horrek ez du motorraren norabidea alderantzikatzen. Erabili zure ESCetarako konfigurazio-tresna edo aldatu ESC - motorren kableatua hori lortzeko. Era berean, ziurtatu zure motorrak goiko diagraman agertzen diren norabideetan biratzen ari direla egiaztatzen armatzen saiatu aurretik."
+        "message": "Aukera honek nahasgailua motorraren norabidea alderantzikatu eta helizeen arabera egon dadin konfiguratzen du. <strong>Oharra:</strong> Horrek ez du motorraren norabidea alderantzikatzen. Erabili zure ESCetarako konfigurazio-tresna edo aldatu ESC - motorren kableatua hori lortzeko. Era berean, ziurtatu zure motorrak goiko diagraman agertzen diren norabideetan biratzen ari direla egiaztatzen armatzen saiatu aurretik."
     },
     "configurationAutoDisarmDelay": {
         "message": "Desarmatu motorrak ezarritako atzerapenaren ondoren [seconds] (MOTOR_STOP funtzioa behar du)"
@@ -2800,6 +2800,15 @@
     "firmwareFlasherFlashTrigger": {
         "message": "<strong>$1</strong> Detektatuta - Konektatzean instalatu exekutatzen ari da"
     },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "<strong>Firmwaren garapen bertsioa</strong> instalatu egingo duzu. Konpilazio hauek martxan dagoen lanak dira eta kasu hauetan edozer gerta daiteke:<strong><ul><li> Firmwareak ez du osorik funtzionatzen;</li><li>ezin da hegan egin firmware onekin;</li><li> firmwarearekin segurtasun arazoak daude, hegan joan daiteke</li><li>firmwareak hegaldi kontrolatzaileak ez erantzutea edo kalte egin dezake</li></ul></strong>Firmwarea instalatzen jarraitzen baduzu, <strong>erantzukizun osoa hartzen ari zara aurreko egoeretarako batean gerta daitekeen arriskuaz</strong>. Aitortzen duzu<strong> helize gabe aulkian probak egiteko</strong> beharrezkoa dela."
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "Aurrekoa irakurri dut eta <strong>erantzukizun osoa hartzen dut<strong> firmware ezegonkorra instalatzeko"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "Flash"
+    },
     "firmwareFlasherPreviousDevice": {
         "message": "<strong>$1</strong> - aurreko gailua instalazioan dago. Mesedez berriro konektatu berriro saiatzeko"
     },
@@ -3936,6 +3945,9 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>OHARRA:</b></span> Ez da OSD txip aurkitu. Hegaldi kontrolatzaile batzuek ez dute OSD txipa behar bezala pizten bateria konektatu arte. Mesedez, bateria konektatu USB konektatu aurretik (HELIZEAK Kendu!)."
+    },
     "osdSetupPreviewHelp": {
         "message": "<strong>Oharra:</strong> OSD aurrebistak, ezin da hegaldi kontroladorean instalatutako letra-motak erakutsi. Elementu indibidualen diseinua itxura desberdinak izan daitezke firmwarearen bertsio zaharrakerabiltzen direnean. Mesedez, begiratu betaurrekoen bidez itxura hegan egin aurretik."
     },
@@ -4558,6 +4570,13 @@
     },
     "osdDescElementCameraFrame": {
         "message": "Gehitu ingurune erregulagarri elementua, pilotuaren HD kameraren ikusmen eremua marko bisual batean irudikatzeko.<br><br>Zabalera eta altuera CLIan alda dezakezu 'osd_camera_frame_width' eta 'osd_camera_frame_height' erabiltzen"
+    },
+    "osdTextElementEfficiency": {
+        "message": "Bateriaren eraginkortasuna",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "Berehalako bateriaren kontsumoa mAh/distantzian. (Baliozko GPS konponbidea eskatzen du)"
     },
     "osdTextElementUnknown": {
         "message": "Ezezaguna $1",
@@ -5485,5 +5504,29 @@
     },
     "dialogRatesTypeConfirm": {
         "message": "Aldaketa"
+    },
+    "gpsSbasAutoDetect": {
+        "message": "Auto-detektatu",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasEuropeanEGNOS": {
+        "message": "Europako EGNOS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNorthAmericanWAAS": {
+        "message": "Ipar Amerikako WAAS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasJapaneseMSAS": {
+        "message": "Japoniar MSAS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasIndianGAGAN": {
+        "message": "Indiako GAGAN",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNone": {
+        "message": "Bat ere ez",
+        "description": "One of the options selectable for the GPS SBAS system"
     }
 }
