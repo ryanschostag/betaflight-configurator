@@ -467,6 +467,15 @@
     "resetToCustomDefaultsAccept": {
         "message": "Appliquer les réglages par défaut de cette carte"
     },
+    "reportProblemsDialogHeader": {
+        "message": "Les <strong>problèmes suivants avec votre configuration</strong> ont été détectés :"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "Veuillez <strong>résoudre ces problèmes avant d'essayer de faire voler votre engin</strong>."
+    },
+    "reportProblemsDialogAccCalibrationNeeded": {
+        "message": "<strong>l'accéléromètre est activé mais il n'est pas calibré</strong>. Si vous envisagez d'utiliser l'accéléromètre, veuillez suivre les instructions '$t(initialSetupButtonCalibrateAccel.message)' dans l'onglet '$t(tabSetup.message)'. Si une fonction nécessitant l'accéléromètre (auto level modes, sauvetage GPS, . .) est activée, l'armement de l'engin sera désactivé jusqu'à ce que l'accéléromètre ait été calibré. Si vous ne prévoyez pas d'utiliser l'accéléromètre, il est recommandé de le désactiver dans '$t(configurationSystem.message)' dans l'onglet '$t(tabConfiguration.message)'."
+    },
     "infoVersions": {
         "message": "Version - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configurateur: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -1702,6 +1711,9 @@
         "message": "Coup de pouce supplémentaire basé sur la valeur des sticks. FF aide P-term à faire bouger le quad selon les mouvements des sticks. <br><br>P-term se base sur la différence entre le Setpoint demandé (deg/sec) la valeur gyro relevée de rotation actuelle (deg/sec). FF se base sur le changement de valeurs des sticks uniquement.<br><br>Des valeurs élevées (gain) donnent une réponse du quad plus forte.<br>Des valeurs trop élevées peuvent causer de l'overshoot, des moteurs plus chauds, et une saturation moteur (les moteurs ne peuvent plus suivre la cadence).<br>Des valeurs faibles ou zéro (0) entraînent une réactivité plus lente et souple.",
         "description": "Feedforward Term helpicon message on PID table titlebar"
     },
+    "pidTuningMaxRateWarning": {
+        "message": "<span class=\"message-negative\"><b>Avertissement:</b></span> des rates très élevés peuvent entraîner des désynchronisations lors des décélérations rapides."
+    },
     "pidTuningRcRate": {
         "message": "RC Rate"
     },
@@ -2621,7 +2633,7 @@
         "message": "Informations de la version"
     },
     "firmwareFlasherReleaseManufacturer": {
-        "message": "Fabricant :"
+        "message": "ID fabricant :"
     },
     "firmwareFlasherReleaseVersion": {
         "message": "Version :"
@@ -2641,8 +2653,14 @@
     "firmwareFlasherReleaseFile": {
         "message": "Exécutable:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">IMPORTANT: Cette version du microprogramme est une release candidate. Merci de bien vouloir signaler tout problème immédiatement.</span>"
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "Cible unifiée :"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "Afficher la configuration."
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "Date:"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Téléchargement manuel."
@@ -2841,6 +2859,15 @@
     },
     "firmwareFlasherFlashTrigger": {
         "message": "Détecté: <strong>$1</strong> - commencer le flash dès la connexion"
+    },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "Vous êtes sur le point de flasher une version de <strong>développement du firmware</strong>. Ces versions ne sont pas terminées, et peuvent produire les effets suivants :<strong><ul><li>le firmware ne fonctionne pas du tout ;</li><li>l'engin ne vole pas ;</li><li>il y a des problèmes de sécurité avec le firmware, par exemple des flyaways (l'engin s'envole et ne revient plus)</li><li>le firmware peut planter le contrôleur de vol, ou l'endommager</li></ul></strong>Si vous flashez ce firmware, <strong>vous assumez l'entière responsabilité que l'un de ces événements se produise</strong>. En outre, vous avez bien compris qu'il est nécessaire d'effectuer des <strong>tests de banc approfondis avec les hélices retirées des moteurs</strong> avant toute tentative de voler avec ce firmware."
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "J'ai lu ce qui précède et <strong>j'assume l'entière responsabilité<strong> pour le flash du firmware instable"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "Flash"
     },
     "firmwareFlasherPreviousDevice": {
         "message": "Détecté: <strong>$1</strong> - périphérique toujours en cours de flash, merci de rebrancher pour un nouvel essai"
@@ -3204,6 +3231,21 @@
     "pidTuningLevelHelp": {
         "message": "Les valeurs ci-dessous modifient le comportement des modes de vol ANGLE et HORIZON. Les différents contrôleurs PID gèrent les valeurs différemment. Veuillez consulter la documentation."
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "Limite de sortie du moteur"
+    },
+    "pidTuningMotorLimit": {
+        "message": "Atténuation %"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "Atténue le signal de sortie du moteur du pourcentage établi. Il réduit la consommation de courant dans les ESC et la température des moteurs lorsqu'une batterie avec un plus grand nombre de cellules est utilisée. Exemples: Pour des performances similaires en batterie 6S qu'en version 4S, testez 66%; Pour une batterie en 4S similaire à 3S, essayez 75%."
+    },
+    "pidTuningCellCount": {
+        "message": "Nombre de cellules"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "Activez automatiquement le premier profil dont le nombre de cellules est égal à celui de la batterie connectée."
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "Paramètres de filtre indépendants du profil"
     },
@@ -3507,6 +3549,9 @@
         "message": "Coupure",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "Des valeurs basses suppriment le rebond après les flips dans les quads à faible autorité, des valeurs élevées augmentent la précision des virages à vitesse élevée pour la course.<br>Définir sur 30-40 pour la course, 20 pour les configurations freestyle réactives, 10 pour les quads freestyle plus lourds, 3-5 pour X-class."
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "Contrôle absolu"
     },
@@ -3518,6 +3563,12 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "Cette fonctionnalité booste temporairement les gaz sur les mouvement rapides de sticks, accélére la montée de couple, réduit le temps de réponse des gaz."
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "Valeur Idle dynamique [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "Définissez ce paramètre afin de fournir une valeur plancher rpm comme un filet de sécurité contre la désynchronisation moteurs.<br>Un pilote de course préférera une bonne réactivité et des rates bas - donc un faible idle_min_rpm et une valeur dshot_idle_value élevée. Les pilotes Freestyle et LOS apprécieront une poussée à bas régime et dshot_idle_value plus faible tout en poussant un peu plus idle_min_rpm pour éviter de désynchroniser, avec des rates élevés.<br><br>Regardez cette page du <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wiki</a> pour plus d'informations."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Limite d'angle Acro Trainer"
@@ -3953,6 +4004,9 @@
     },
     "osdSetupTitle": {
         "message": "OSD"
+    },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>AVERTISSEMENT :</b></span> Aucune puce OSD n'a été détectée. Certains contrôleurs de vol n'alimentent pas la puce OSD tant qu'ils ne sont pas alimentés par la batterie. Veuillez connecter la batterie avant de connecter l'USB (HÉLICES RETIRÉES !)."
     },
     "osdSetupPreviewHelp": {
         "message": "<strong>Note :</strong> L'aperçu OSD peut ne pas afficher la police de caractère installée sur le contrôleur de vol. La mise en page peut sembler différente avec d'anciennes versions de firmware - veuillez vérifier l'apparence dans vos lunettes avant de voler."
@@ -4577,6 +4631,13 @@
     "osdDescElementCameraFrame": {
         "message": "Ajoute un cadre représentant le champs de vision de la caméra HD.<br><br>Vous pouvez régler la largeur et la hauteur en CLI avec 'osd_camera_frame_width' et 'osd_camera_frame_height'"
     },
+    "osdTextElementEfficiency": {
+        "message": "Efficacité de la batterie",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEfficiency": {
+        "message": "Consommation instantanée de la batterie en mAh/distance. (Nécessite une accroche GPS valide)"
+    },
     "osdTextElementUnknown": {
         "message": "Inconnu $1",
         "description": "One of the elements of the OSD"
@@ -5006,6 +5067,10 @@
     "vtxMessageTableNotConfigured": {
         "message": "<span class=\"message-negative\">Attention :</span> Vous devez configurer et enregistrer la table VTX en bas AVANT de pouvoir utiliser les champs $t(vtxSelectedMode.message).",
         "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class=\"message-negative\">Attention:</span> Le type VTX sélectionné ne prend pas en charge le paramètre \"usine\" pour les bandes, mais certaines de vos bandes ont ce paramètre. Cliquez sur '$t(vtxButtonSave.message)' pour résoudre ce problème.",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
     },
     "vtxMessageVerifyTable": {
         "message": "<span class=\"message-negative\">Attention:</span> Les valeurs de la table VTX ont été chargées, mais pas encore stockées dans le contrôleur de vol. Vous devez vérifier et modifier les valeurs pour être sûr qu'elles sont valides et légales dans votre pays et puis cliquer sur le bouton $t(vtxButtonSave.message) pour les stocker dans le contrôleur de vol.",
@@ -5466,5 +5531,62 @@
     },
     "darkTheme": {
         "message": "Activer le thème sombre"
+    },
+    "pidTuningRatesType": {
+        "message": "Type de rates"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "Changer le type de rates modifiera leur courbe et la façon de les régler"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "Rate"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Expo"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "Acro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "Courbe RC"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "Rate Max"
+    },
+    "pidTuningRcRateActual": {
+        "message": "Sensibilité au centre"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "Changer le type de rates"
+    },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>AVERTISSEMENT : Vous allez changer de type de rates.</b></span> Si vous modifiez le type, vos rates seront réglés sur la courbe par défaut."
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "Change"
+    },
+    "gpsSbasAutoDetect": {
+        "message": "Auto-detect",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasEuropeanEGNOS": {
+        "message": "European EGNOS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNorthAmericanWAAS": {
+        "message": "North American WAAS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasJapaneseMSAS": {
+        "message": "Japanese MSAS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasIndianGAGAN": {
+        "message": "Indian GAGAN",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNone": {
+        "message": "Aucun",
+        "description": "One of the options selectable for the GPS SBAS system"
     }
 }
