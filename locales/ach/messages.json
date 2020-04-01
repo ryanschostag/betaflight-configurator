@@ -2662,7 +2662,7 @@
         "message": "crwdns5955:0crwdne5955:0"
     },
     "firmwareFlasherReleaseManufacturer": {
-        "message": "crwdns9866:0crwdne9866:0"
+        "message": "crwdns10042:0crwdne10042:0"
     },
     "firmwareFlasherReleaseVersion": {
         "message": "crwdns9868:0crwdne9868:0"
@@ -2682,8 +2682,14 @@
     "firmwareFlasherReleaseFile": {
         "message": "crwdns5962:0crwdne5962:0"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "crwdns5963:0crwdne5963:0"
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "crwdns10044:0crwdne10044:0"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "crwdns10046:0crwdne10046:0"
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "crwdns10048:0crwdne10048:0"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "crwdns5964:0crwdne5964:0"
