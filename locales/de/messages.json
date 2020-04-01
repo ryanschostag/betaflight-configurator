@@ -2531,9 +2531,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Update Info"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "Hersteller:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "Version:"
     },
@@ -2551,9 +2548,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binär:"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">WICHTIG: Dieser Firmware-Release ist zur Veröffentlichung vorgesehen.  Bitte melde eventuelle Fehler schnellstmöglich.</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Manuell herunterladen."
