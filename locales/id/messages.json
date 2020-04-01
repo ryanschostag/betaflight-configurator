@@ -2113,9 +2113,6 @@
     "firmwareFlasherReleaseFile": {
         "message": "Biner:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class =\"message-negative\">PENTING: Rilis firmware ini saat ini ditandai sebagai kandidat rilis. Segera laporkan jika bermasalah.</span>"
-    },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Unduh manual."
     },
