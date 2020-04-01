@@ -2644,7 +2644,7 @@
         "message": "릴리즈 정보"
     },
     "firmwareFlasherReleaseManufacturer": {
-        "message": "제조사"
+        "message": "제조사 ID:"
     },
     "firmwareFlasherReleaseVersion": {
         "message": "버전:"
@@ -2664,8 +2664,14 @@
     "firmwareFlasherReleaseFile": {
         "message": "바이너리:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">중요: 이 펌웨어 릴리즈는 현재 릴리즈 후보로 표시됩니다. 문제를 즉시 보고하십시오.</span>"
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "통합 타겟:"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "환경설정 보기."
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "일자:"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "수동으로 다운로드하십시오."
