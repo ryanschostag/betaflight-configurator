@@ -2571,9 +2571,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "リリース情報"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "製造元:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "バージョン:"
     },
@@ -2591,9 +2588,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binary:"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">重要: このファームウェアリリースは現在、リリース候補としてマークされています。問題があれば直ちに報告してください。</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "手動でダウンロードしてください。"
