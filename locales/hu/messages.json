@@ -1797,9 +1797,6 @@
     "firmwareFlasherReleaseFile": {
         "message": "Bináris:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">FONTOS: Ez a egy release candidate firmwareverzió. Kérjük, azonnal jelentsen bármilyen tapasztalt poblémát.</span>"
-    },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Manuális letöltés."
     },
