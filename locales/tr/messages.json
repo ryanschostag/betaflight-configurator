@@ -1241,9 +1241,6 @@
     "firmwareFlasherReleaseTarget": {
         "message": "Hedef:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">ÖNEMLİ: Bu donanım sürümü şuan bir sürüm adayı olarak işaretlenmiştir. Lütfen herhangi bir sorunu hemen bildirin.</span>"
-    },
     "firmwareFlasherReleaseFileUrl": {
         "message": "El ile indir."
     },
