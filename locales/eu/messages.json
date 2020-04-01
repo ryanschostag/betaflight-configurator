@@ -2578,9 +2578,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Bertsioari buruzko informazioa"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "Fabrikatzaileak:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "Bertsioa:"
     },
@@ -2598,9 +2595,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Bitarra:"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">GARRANTZITSUA: firmware bertsio hau bertsio hautagai bezala markatuta dago. Mesedez, jakinarazi arazo guztiak berehala.</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Eskuz deskargatu."
