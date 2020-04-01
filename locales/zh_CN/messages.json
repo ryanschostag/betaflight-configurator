@@ -2576,9 +2576,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "发布信息"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "制造商:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "版本:"
     },
@@ -2596,9 +2593,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "二进制"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">重要：选择的固件是候选的发布版本，如果发现任何问题，请立即反馈给开发者。</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "手动下载"
