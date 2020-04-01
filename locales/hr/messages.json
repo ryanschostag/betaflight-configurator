@@ -2425,9 +2425,6 @@
     "firmwareFlasherReleaseFile": {
         "message": "Binary:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">VAŽNO: Ovo izdanje firmware je označeno kao kandidat za izdavanje. Prijavite bilo kakav problem s \n nijm</span>"
-    },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Ručno preuzimanje."
     },
