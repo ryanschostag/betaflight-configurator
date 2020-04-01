@@ -2555,9 +2555,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Notas de lançamento"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "Fabricante:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "Versão:"
     },
@@ -2575,9 +2572,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binário:"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">IMPORTANTE: Esta versão do firmware está marcada como release candidate. Por favor reporte qualquer problema o mais rápido possível.</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Baixar manualmente."
