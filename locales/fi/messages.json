@@ -1802,9 +1802,6 @@
     "firmwareFlasherReleaseFile": {
         "message": "Binääri:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">TÄRKEÄÄ: Tämä laiteohjelmiston versio on tällä hetkellä merkitty julkaisukandidaatiksi. Ilmoitathan mahdollisista virheistä välittömästi.</span>"
-    },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Lataa käsin."
     },
