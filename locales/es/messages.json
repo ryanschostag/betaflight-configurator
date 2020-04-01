@@ -2571,9 +2571,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Info de la versión"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "Fabricante:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "Versión:"
     },
@@ -2591,9 +2588,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binario:"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">IMPORTANTE: Esta versión de firmware está marcada como versión candidata.  Por favor informe de cualquier problema inmediatamente.</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Descargar manualmente."
