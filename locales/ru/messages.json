@@ -2489,9 +2489,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Информация о выпуске"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "Производитель:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "Версия:"
     },
@@ -2509,9 +2506,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Файл прошивки:"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">ВАЖНО: Это прошивка отмечена как кандидат на релиз. Пожалуйста пишите предложения незамедлительно.</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Скачать самостоятельно."
