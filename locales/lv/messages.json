@@ -2380,9 +2380,6 @@
     "firmwareFlasherReleaseFile": {
         "message": "Binārais:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">SVARĪGI: Šī programmatūra patreiz atzīmēta kā relīzes kandidāts. Lūgums nekavējoties ziņot par jebkādām kļūdām.</span>"
-    },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Lejuplādēt manuāli."
     },
