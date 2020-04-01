@@ -2559,9 +2559,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Informacja o wydaniu"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "Producent:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "Wersja:"
     },
@@ -2579,9 +2576,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binarnie:"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">WAŻNE: Ta wersja oprogramowania jest oznaczona jako kandydat do wydania. Proszę niezwłocznie zgłaszać problemy.</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Pobierz ręcznie."
