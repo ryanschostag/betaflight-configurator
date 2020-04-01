@@ -2497,9 +2497,6 @@
     "firmwareFlasherReleaseFile": {
         "message": "Binärfil:"
     },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\"> VIKTIGT: denna firmware-utgåva är markerad som en utgåve-kandidat.  Vänligen rapportera eventuella problem omedelbart.</span>"
-    },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Ladda ner manuellt."
     },
