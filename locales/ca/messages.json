@@ -2572,9 +2572,6 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Informació de la publicació"
     },
-    "firmwareFlasherReleaseManufacturer": {
-        "message": "Fabricant:"
-    },
     "firmwareFlasherReleaseVersion": {
         "message": "Versió:"
     },
@@ -2592,9 +2589,6 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binari:"
-    },
-    "firmwareFlasherReleaseStatusReleaseCandidate": {
-        "message": "<span class=\"message-negative\">IMPORTANT: Aquesta release de firmware està marcada com a release candidate. Si us plau, reporta errors immediatament.</span>"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Descarrega manualment."
