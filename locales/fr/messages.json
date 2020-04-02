@@ -2633,7 +2633,7 @@
         "message": "Informations de la version"
     },
     "firmwareFlasherReleaseManufacturer": {
-        "message": "ID fabricant :"
+        "message": "ID du fabricant :"
     },
     "firmwareFlasherReleaseVersion": {
         "message": "Version :"
