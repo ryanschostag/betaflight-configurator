@@ -2572,6 +2572,9 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Informació de la publicació"
     },
+    "firmwareFlasherReleaseManufacturer": {
+        "message": "ID Fabricant:"
+    },
     "firmwareFlasherReleaseVersion": {
         "message": "Versió:"
     },
@@ -2589,6 +2592,15 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binari:"
+    },
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "Plataforma Unificada:"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "Mostra config."
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "Data:"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Descarrega manualment."
