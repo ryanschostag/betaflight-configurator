@@ -2223,10 +2223,10 @@
         "message": "Potenza del segnale"
     },
     "gpsSignalSatId": {
-        "message": "ID Satellite"
+        "message": "ID Sat"
     },
     "gpsSignalQty": {
-        "message": "Quantità"
+        "message": "Val"
     },
     "motorsVoltage": {
         "message": "Voltaggio:"
