@@ -2571,6 +2571,9 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Info de la versión"
     },
+    "firmwareFlasherReleaseManufacturer": {
+        "message": "ID del fabricante:"
+    },
     "firmwareFlasherReleaseVersion": {
         "message": "Versión:"
     },
@@ -2588,6 +2591,15 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binario:"
+    },
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "Placa Unificada:"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "Mostrar config."
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "Fecha:"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Descargar manualmente."
