@@ -3579,7 +3579,7 @@
         "description": "Cutoff value of the I Term Relax"
     },
     "pidTuningItermRelaxCutoffHelp": {
-        "message": "crwdns9962:0crwdne9962:0"
+        "message": "crwdns10050:0crwdne10050:0"
     },
     "pidTuningAbsoluteControlGain": {
         "message": "crwdns8801:0crwdne8801:0"
@@ -3597,7 +3597,7 @@
         "message": "crwdns9984:0[rpm]crwdne9984:0"
     },
     "pidTuningIdleMinRpmHelp": {
-        "message": "crwdns9986:0crwdne9986:0"
+        "message": "crwdns10052:0[rpm]crwdnd10052:0[rpm]crwdnd10052:0[rpm]crwdne10052:0"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "crwdns8805:0crwdne8805:0"
