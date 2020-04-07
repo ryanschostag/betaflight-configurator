@@ -3561,7 +3561,7 @@
         "description": "Cutoff value of the I Term Relax"
     },
     "pidTuningItermRelaxCutoffHelp": {
-        "message": "낮은 값은 낮은 권위의 쿼드에서 플립 후 바운스백을 억제하며, 높은 값은 레이싱에 대한 고율 턴 정밀도를 높입니다.<br>레이싱은 30-40으로, 반응이 좋은 프리스타일 빌드는 20으로, 무거운 프리스타일 쿼드는 10으로, X-클래스는 3-5로 설정합니다."
+        "message": "낮은 값은 낮은 권위의 쿼드에서 플립 후 바운스백을 억제하며, 높은 값은 레이싱에서 높은-레이트의 턴 정밀도를 높입니다.<br>레이싱은 30-40으로, 반응이 좋은 프리스타일 빌드는 15으로, 무거운 프리스타일 쿼드는 10으로, X-클래스는 3-5로 설정합니다."
     },
     "pidTuningAbsoluteControlGain": {
         "message": "절대 제어"
@@ -3579,7 +3579,7 @@
         "message": "다이나믹 아이들 값 [rpm]"
     },
     "pidTuningIdleMinRpmHelp": {
-        "message": "모터 디싱크 방지 안전망으로 rpm 기반 바닥 값을 제공하려면 이 매개변수를 설정하십시오.<br>레이셔는 매우 좋은 반응과 낮은 레이트를 선호할 수 있습니다. 따라서 낮은 idle_min_rpm과 높은 dshot_idle_value가 유용할 수 있습니다. 프리스타일러와 LOS 조종사들은 아이들 상태에서 매우 낮은 추력을 높이 평가하며 높은 레이트에셔 디싱크를 피하기 위해 약간 더 많은 idle_min_rpm을 사용하면서 낮은 dshot_idle_value를 사용하기를 원할 수 있습니다.<br><br>더 자세한 내용을 보려면 이 <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">위키</a> 항목을 방문하십시오."
+        "message": "모터 디싱크 방지 안전망으로 rpm 기반의 기저값을 제공하려면 이 매개변수를 설정하십시오.<br>레이셔는 매우 좋은 반응과 낮은 레이트를 선호할 수 있습니다. 따라서 낮은 다이나믹 아이들[rpm]과 높은 디샷 아이들 값이 유용할 수 있습니다. 프리스타일러와 LOS 조종사들은 아이들 상태에서 매우 낮은 추력을 높이 평가하며 높은 레이트에서 디싱크를 피하기 위해 약간 더 많은 다이나믹 아이들[rpm]을 사용하면서 낮은 디샷 아이들 값을 사용하기를 원할 수 있습니다. 다이나믹 아이들[rpm] 값은 항상 디샷 아이들 값보다 낮아야 합니다.<br><br>더 자세한 내용을 보려면 이 <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">위키</a> 항목을 방문하십시오."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "아크로 트레이너 앵글 제한"
