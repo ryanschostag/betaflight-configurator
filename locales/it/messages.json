@@ -1124,7 +1124,7 @@
         "message": "L'armamento dei motori è sempre disabilitato quando lo stick del gas non è abbassato. Fai attenzione in quanto potresti disarmare accidentalmente con un interruttore quando voli con questa opzione attiva."
     },
     "configurationDigitalIdlePercent": {
-        "message": "Valore Regime Motore Minimo [percento]"
+        "message": "Valore Gas Idle Motore [percento]"
     },
     "configurationDigitalIdlePercentHelp": {
         "message": "Questo è il minimo valore in percentuale rispetto al massimo gas inviato agli ESC quando il velivolo è armato e lo stick del gas è al minimo. Aumenta il valore della percentuale per avere maggiore spinta."
@@ -3489,7 +3489,7 @@
         "description": "Cutoff value of the I Term Relax"
     },
     "pidTuningItermRelaxCutoffHelp": {
-        "message": "Valori bassi sopprimono il rimbalzo dopo i flip nei quad a bassa potenza, valori elevati aumentano la precisione delle virate ad alta velocità per le corse.<br>Impostalo a 30-40 per la corsa, 20 per build freestyle, 10 per quad freestyle più pesanti, 3-5 per X-class."
+        "message": "Valori bassi sopprimono il rimbalzo dopo flip nei quad a bassa potenza, valori elevati aumentano la precisione delle virate ad alta velocità per le corse.<br>Impostalo a 30-40 per la corsa, 15 per freestyle, 10 per quad freestyle più pesanti, 3-5 per X-class."
     },
     "pidTuningAbsoluteControlGain": {
         "message": "Controllo assoluto"
@@ -3507,7 +3507,7 @@
         "message": "Valore idle dinamico [rpm]"
     },
     "pidTuningIdleMinRpmHelp": {
-        "message": "Imposta questo parametro per fornire un valore minimo basato sugli RPM come misura di sicurezza contro la desincronizzazione dei motori.<br>Un racer potrebbe preferire una risposta molto buona e rates bassi - quindi un idle_min_rpm basso e un dshot_idle_value alto potrebbero essere utili. I freestylers e i piloti LOS apprezzeranno una spinta minore in idle e potrebbero voler utilizzare meno dshot_idle_value usando un po' più di idle_min_rpm per evitare desincronizzazione a rates alti.<br><br>Visita questa pagina <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wiki</a> per maggiori informazioni."
+        "message": "Imposta questo parametro per fornire un valore minimo basato sugli RPM come misura di sicurezza contro la desincronizzazione dei motori.<br>Un racer potrebbe preferire una risposta molto buona e rates bassi - quindi un Idle Dinamico [rpm] basso e un Idle Dshot alto potrebbero essere utili. I freestylers e i piloti LOS apprezzeranno una spinta minore in idle e potrebbero voler utilizzare meno Idle Dshot usando un po' più di Idle Dinamico [rpm] per evitare desincronizzazione a rates alti.<br><br>Visita questa pagina <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wiki</a> per maggiori informazioni."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Angolo limite per l'Acro Trainer"
