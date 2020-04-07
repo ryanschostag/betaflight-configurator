@@ -3554,9 +3554,6 @@
         "message": "Corte",
         "description": "Cutoff value of the I Term Relax"
     },
-    "pidTuningItermRelaxCutoffHelp": {
-        "message": "Os valores máis baixos suprimen o rebote tralos flips nos quads de baixa autoridade, os valores máis altos aumentan a precisión de xiro para as carreiras.<br>Establecido en 30-40 para carreiras, 20 para freestyle, 10 para quads de freestyle máis pesados, 3-5. para X-class."
-    },
     "pidTuningAbsoluteControlGain": {
         "message": "Control Absoluto"
     },
@@ -3571,9 +3568,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valor Idle dinámico [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Estableza este parámetro para fornecer un valor de chan baseado en rpm como rede de seguridade fronte ao desincronismo do motor.<br>Un piloto pode preferir unha resposta moi boa e rates baixos, polo que pode ser útil un idle_min_rpm baixo e un dshot_idle_value alto. Os pilotos de freestylers e de LOS apreciarán un empuxe moi baixo en ralentí e poderían querer usar menos dshot_idle_value mentres usen un pouco máis idle_min_rpm para evitar desíncs con rates altos. <br><br>Visite esta <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_ blank\">wiki</a>entrada para máis información."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Ángulo límite para Entrenador Acro"
