@@ -3483,9 +3483,6 @@
         "message": "Cutoff",
         "description": "Cutoff value of the I Term Relax"
     },
-    "pidTuningItermRelaxCutoffHelp": {
-        "message": "Balio baxuek murrizketa murrizten dute flipen ondoren agintari baxuko quads. Balio altuek lasterketetarako abiadura altuko zehaztasuna areagotzen dute.<br> Lasterketetarako 30-tik 40-ra ezarritakoa da; 20 erantzun askarreko freestyle eraikuntzarako, 10 freestyle astun quad-entzat, 3-5 X mailakoentzat."
-    },
     "pidTuningAbsoluteControlGain": {
         "message": "Kontrol absolutua"
     },
@@ -3500,9 +3497,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Idle Dinamiko Balioa [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Egokitu parametro hau rpm oinarritutako solairu balioa emateko, motoreak desinkronizatzearen segurtasun-sare gisa. <br>Lasterketarako erantzun ona eta tasa baxuak nahiago dira. Beraz, Dynamic Idle Balio baxua eta Dshot Idle balio altua erabilgarria izan daitezke. Freestyle eta LOS pilotuek erresistentzia oso baxua estimatuko dute eta baliteke Dshot Idle Balio gutxiago erabili nahi izatea Dynamic Idle balio apur bat gehiago erabiltzen duten bitartean tasa altuekin ez desinkronizatzeko. <br><br>Bisita ezazu <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wik </a> sarrera hau informazio gehiago lortzeko."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Akro Trainerren Angle Muga"
