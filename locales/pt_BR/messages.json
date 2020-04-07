@@ -3448,9 +3448,6 @@
         "message": "Corte",
         "description": "Cutoff value of the I Term Relax"
     },
-    "pidTuningItermRelaxCutoffHelp": {
-        "message": "Em aeronaves com pouca autoridade definir valores mais baixos impedem oscilação após um giro rápido, valores mais altos aumentam a precisão em curvas rápidas nas corridas.<br>Configure entre 30 e 40 para corridas, 20 para freestyle, 10 para aeronaves mais pesadas e entre 3 e 5 para aeronaves X-class."
-    },
     "pidTuningAbsoluteControlGain": {
         "message": "Controle Absoluto"
     },
