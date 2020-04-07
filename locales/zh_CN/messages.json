@@ -977,10 +977,10 @@
         "message": "PWM 接收机（每个通道都需要接线）"
     },
     "featureRX_MSP": {
-        "message": "MSP 接收机输入（通过MSP 端口 控制）"
+        "message": "MSP 接收机输入（通过 MSP 端口控制）"
     },
     "featureRSSI_ADC": {
-        "message": "模拟RSSI 输入"
+        "message": "模拟 RSSI 输入"
     },
     "featureLED_STRIP": {
         "message": "彩色 RGB LED灯带"
@@ -1007,7 +1007,7 @@
         "message": "SPI 接收机支持"
     },
     "featureESC_SENSOR": {
-        "message": "使用<b>专线</b>回传KISS/BLHeli_32电调遥测数据"
+        "message": "使用<b>专线</b>回传 KISS/BLHeli_32 电调遥测数据"
     },
     "featureCHANNEL_FORWARDING": {
         "message": "转发 Aux 通道信号到舵机输出"
@@ -1046,7 +1046,7 @@
         "message": "启用失控保护"
     },
     "featureFAILSAFETip": {
-        "message": "<strong>注意:</strong> 当禁用二阶失控保护时, 飞控将在所有通道（横滚、俯仰、方向、油门）都忽略用户预设值，转而使用<strong>自动</strong> 失控保护设置。"
+        "message": "<strong>注意:</strong> 当禁用二阶失控保护时, 飞控将在所有通道（横滚、俯仰、偏航、油门）都忽略用户预设值，转而使用 <strong>自动</strong> 失控保护设置。"
     },
     "featureFAILSAFEOldTip": {
         "message": "当接收机信号丢失启用失控保护"
@@ -1085,13 +1085,13 @@
         "message": "<strong>注意:</strong> 不是所有的功能都能同时被启用。当飞控检测到有冲突时会禁用相应的功能。<br /><strong>注意:</strong>  <span class=\"message-negative\">先</span> 设置串口，再启用需要用到串口的功能。"
     },
     "configurationSerialRXHelp": {
-        "message": "<strong>注意:</strong>开启RX_SERIAL 功能时，请选择串口接收机类型，并在串口页面设置相应的串口。"
+        "message": "<strong>注意:</strong> 使用串行接收机时，请选择串口接收机类型，并在串口页面设置相应的串口。"
     },
     "configurationSpiRxHelp": {
-        "message": "<strong>注意:</strong> SPI 接收机只有通过通过 SPI 总线连接到飞控或板载了相应硬件时才能工作。"
+        "message": "<strong>注意:</strong> SPI 接收机只有通过 SPI 总线连接到飞控或板载了相应硬件时才能工作。"
     },
     "configurationOtherFeaturesHelp": {
-        "message": "<strong>注意:</strong>不是所有飞控都能支持所有的功能。如果你启用了某个功能，但在“保存并控重启”以后，该功能被禁用，则说明你的飞控不支持该功能。"
+        "message": "<strong>注意:</strong> 不是所有飞控都能支持所有的功能。如果你启用了某个功能，但在“保存并重启”以后，该功能被禁用，则说明你的飞控不支持该功能。"
     },
     "configurationBoardAlignment": {
         "message": "飞控和传感器方向"
@@ -1103,7 +1103,7 @@
         "message": "俯仰 度"
     },
     "configurationBoardAlignmentYaw": {
-        "message": "方向 度"
+        "message": "偏航 度"
     },
     "configurationSensorAlignmentGyro": {
         "message": "陀螺仪方向"
@@ -1133,7 +1133,7 @@
         "message": "加速度计方向"
     },
     "configurationSensorAlignmentMag": {
-        "message": "磁场计方向"
+        "message": "磁力计方向"
     },
     "configurationSensorAlignmentDefaultOption": {
         "message": "默认"
@@ -1154,19 +1154,19 @@
         "message": "某些解锁选项可能需要启用加速度计"
     },
     "configurationMagDeclination": {
-        "message": "磁强计衰落 [deg]"
+        "message": "磁力计衰落 [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "反转电机转向"
     },
     "configurationReverseMotorSwitchHelp": {
-        "message": "此选项告知混控程序电机转向已经被反转且螺旋桨也对应安装。<strong>警告：</strong>此选项并不反转电机转向。要反转电机转向，请通过电调配置软件进行设置，或者交换电调 - 电机的线序。同时在尝试解锁前务必确认螺旋桨是按照上面示意图的转向安装的。"
+        "message": "此选项告知混控程序电机转向已经被反转，且螺旋桨也已对应安装。<strong>警告：</strong>此选项并不反转电机实际转向。要反转电机实际转向，请通过电调配置软件进行设置，或者交换电调 - 电机的线序。同时在尝试解锁前务必确认螺旋桨是按照上面示意图的转向安装的。"
     },
     "configurationAutoDisarmDelay": {
         "message": "[seconds] 秒后锁定电机（需要启用 MOTOR_STOP）"
     },
     "configurationDisarmKillSwitch": {
-        "message": "忽略油门位置直接锁定电机（当在模式页里设定为通过 Aux 开关解锁时）"
+        "message": "忽略油门位置直接锁定电机（当在模式页里设定为通过 Aux 开关解锁时生效）"
     },
     "configurationDisarmKillSwitchHelp": {
         "message": "油门未在最低位时禁止解锁电机。注意该选项启动时有可能在飞行中通过开关意外触发上锁。"
@@ -1186,7 +1186,7 @@
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesHelp": {
-        "message": "此选项用于设置一些功能，比如说 RPM 滤波器。<br><br>它表示电机转子上的磁铁数量。<b>不要计算</b>绕组所在的定子数量。典型的5寸机的电机有14个磁铁，较小的飞机比如说3寸或更小的飞机电机通常有12个磁铁。",
+        "message": "此选项用于设置一些功能，例如 RPM 滤波器。<br><br>它表示电机转子上的磁铁数量。<b>不要计算</b>绕组所在的定子数量。典型的5寸机的电机有14个磁铁；较小的飞机，例如3寸或更小的飞机，电机通常有12个磁铁。",
         "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
@@ -1196,10 +1196,10 @@
         "message": "这里的”怠速“值指当飞控解锁并且油门在最低位时，会被发送到电调的数值。增加这个数值可增加怠速时电机的转速。"
     },
     "configurationThrottleMaximum": {
-        "message": "最大油门值（飞控发给电调的最大值）"
+        "message": "最大油门（飞控发给电调的最大值）"
     },
     "configurationThrottleMinimumCommand": {
-        "message": "最小命令电调数值（锁定时飞控发给电调的数值）"
+        "message": "电调命令最小值（锁定时飞控发给电调的数值）"
     },
     "configurationThrottleMinimumCommandHelp": {
         "message": "这个数值是飞控锁定电机时发给电调的数值。将它设定为可以让电机停转的数值。（对大部分电调而言该值是1000）"
@@ -1208,16 +1208,16 @@
         "message": "Dshot 信标配置"
     },
     "configurationUseDshotBeeper": {
-        "message": "使用 Dshot 信标 （处于锁定状态时可以使用电机来发出蜂鸣声）"
+        "message": "使用 Dshot 信标（处于锁定状态时可以使用电机来发出蜂鸣声）"
     },
     "configurationDshotBeaconTone": {
         "message": "信标音调"
     },
     "configurationDshotBeaconHelp": {
-        "message": "Dshot 信标使用电调和电机产生声音。这意味着当电机旋转时，Dshot 信标无法工作。在 Betaflight 3.4 和以后的版本，当在 Dshot 信标状态时尝试解锁操作，飞控会在最后一声信标音后延迟2秒再解锁。这是为了防止 Dshot 信标功能干扰在解锁时发送的 Dshot 命令。<br/><strong>警告：</strong> 由于 Dshot 信标会有电流通过，如果信标鸣叫强度设置得太高，可能会造成电机/电调过热甚至损毁。使用 BLHeli 配置程序或 BLHeli 套件来调整和测试信标的强度。"
+        "message": "Dshot 信标使用电调和电机产生声音。这意味着当电机旋转时，Dshot 信标无法工作。在 Betaflight 3.4 和以后的版本中，若在 Dshot 信标激活时尝试解锁，飞控会在发出最后一声信标音后延迟2秒再解锁。这是为了防止 Dshot 信标功能干扰在解锁时发送的 Dshot 命令。<br/><strong>警告：</strong> 由于 Dshot 信标会有电流通过，如果信标鸣叫强度设置得太高，可能会造成电机/电调过热甚至损毁。建议使用 BLHeli 配置程序或 BLHeliSuite 来调整和测试信标的鸣叫强度。"
     },
     "configurationBeeper": {
-        "message": "蜂鸣器设置"
+        "message": "蜂鸣器配置"
     },
     "beeperGYRO_CALIBRATED": {
         "message": "陀螺仪校准完成后鸣叫"
@@ -1226,7 +1226,7 @@
         "message": "遥控器关闭或信号丢失时持续鸣叫直到信号恢复"
     },
     "beeperRX_LOST_LANDING": {
-        "message": "在解锁状态里遥控器关闭或信号丢失（自动降落/自动锁定）时鸣叫 SOS 信号"
+        "message": "解锁后遥控器关闭或信号丢失（自动降落/自动锁定）时鸣叫 SOS 信号"
     },
     "beeperDISARMING": {
         "message": "锁定飞控时鸣叫"
@@ -1235,7 +1235,7 @@
         "message": "解锁飞控时鸣叫"
     },
     "beeperARMING_GPS_FIX": {
-        "message": "GPS 锁定后解锁飞控时鸣叫特殊音调"
+        "message": "GPS 定位成功后解锁飞控时鸣叫特殊音调"
     },
     "beeperBAT_CRIT_LOW": {
         "message": "当电池电压严重偏低时持续长鸣"
@@ -1256,7 +1256,7 @@
         "message": "加速度计飞行中校准失败"
     },
     "beeperREADY_BEEP": {
-        "message": "当 GPS 锁定卫星且就绪时发出铃声"
+        "message": "当 GPS 定位成功且就绪时发出蜂鸣声"
     },
     "beeperDISARM_REPEAT": {
         "message": "摇杆保持在锁定位置时鸣叫"
@@ -1388,7 +1388,7 @@
         "message": "GPS"
     },
     "portsFunction_TELEMETRY_FRSKY": {
-        "message": "Frsky"
+        "message": "FrSky"
     },
     "portsFunction_TELEMETRY_HOTT": {
         "message": "HoTT"
@@ -1445,7 +1445,7 @@
         "message": "Benewake LIDAR"
     },
     "pidTuningUpgradeFirmwareToChangePidController": {
-        "message": "<span class=\"message-negative\">禁止切换 PID 控制器 -  你可以通过CLI 来调整。</span> 当前固件 API 版本为 <span class=\"message-negative\">$1</span>，而此功能需要版本 <span class=\"message-positive\">$2</span>。"
+        "message": "<span class=\"message-negative\">禁止切换 PID 控制器 - 你可以通过 CLI 来调整。</span>当前固件 API 版本为 <span class=\"message-negative\">$1</span>，而此功能需要版本 <span class=\"message-positive\">$2</span>。"
     },
     "pidTuningSubTabPid": {
         "message": "PID 配置文件设置"
