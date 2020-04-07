@@ -3489,9 +3489,6 @@
         "message": "Tall",
         "description": "Cutoff value of the I Term Relax"
     },
-    "pidTuningItermRelaxCutoffHelp": {
-        "message": "Els valors més baixos suprimeixen el rebot després de volades en quads de baixa autoritat, els valors més elevats augmenten la precisió de gir de gran velocitat per a curses. <br>Baixa a 30-40 per a curses, 20 per a figures de freestyle responsives, 10 per a quads de freestyle més pesats, 3-5 per a la classe X."
-    },
     "pidTuningAbsoluteControlGain": {
         "message": "Control absolut"
     },
@@ -3506,9 +3503,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valor Dinàmic Idle [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Definiu aquest paràmetre per proporcionar un valor de base basat en rpm com a xarxa de seguretat contra la desincronització del motor.<br> Un quad racer pot preferir una resposta molt bona i unes taxes baixes, per tant, pot ser útil un idle_min_rpm baix i un dshot_idle_value alt. Els pilots freestylers i LOS apreciaran una empenta molt baixa al ralentí i potser voldrien fer servir menys dshot_idle_value mentre utilitzeu una mica més idle_min_rpm per evitar desincronització a taxes altes.<br><br>Visiteu aquest <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wiki</a> per obtenir més informació."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Límit d’angle del Acro Trainer"
