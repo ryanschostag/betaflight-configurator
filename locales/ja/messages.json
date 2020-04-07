@@ -3476,9 +3476,6 @@
         "message": "カットオフ",
         "description": "Cutoff value of the I Term Relax"
     },
-    "pidTuningItermRelaxCutoffHelp": {
-        "message": "低値は、低性能機体でのフリップ後におけるバウンスバックを抑制し、高値は、レースでの高速ターン精度を高めます。<br>レース用機体では30〜40、レスポンスの良いフリースタイル機体では20、重量のあるフリースタイル機体では10、Xクラスでは3〜5に設定します。"
-    },
     "pidTuningAbsoluteControlGain": {
         "message": "アブソリュート コントロール"
     },
@@ -3493,9 +3490,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "ダイナミックアイドル値 [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "このパラメータを設定し、モーターの非同期に対する安全範囲としてrpmベースのフロア値を提供します。<br>レーサーは、非常に高レスポンスと低レートを好む場合があります。したがって、低めのidle_min_rpm値と高めのdshot_idle_value値にて効果を示します。フリースタイラーとLOSパイロットは、アイドル時の推力が非常に弱くなることを好み、dshot_idle_value値を減らし、idle_min_rpm値を少し増やして、高レートでの非同期を回避したい場合があります。<br><br>詳細は<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">Wiki</a>エントリーをご覧ください。"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "アクロトレーナー 角度制限"
