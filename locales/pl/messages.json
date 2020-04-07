@@ -3440,9 +3440,6 @@
         "message": "Odcięcie",
         "description": "Cutoff value of the I Term Relax"
     },
-    "pidTuningItermRelaxCutoffHelp": {
-        "message": "Niższe wartości tłumią odbicie zwrotne w quadach a wysokie wartości zwiększają precyzję skrętu przy wysokich prędkościach w wyścigach. <br> Ustaw na 30-40 dla wyścigów, 20 dla lekkich wersji freestyle, 10 dla cięższych quadów freestyle, 3-5 dla klasy X."
-    },
     "pidTuningAbsoluteControlGain": {
         "message": "Kontrola całkowita"
     },
