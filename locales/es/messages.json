@@ -1124,7 +1124,7 @@
         "message": "El armado está siempre desactivado cuando el acelerador no está abajo. Ten cuidado ya que puedes desactivarlo accidentalmente mientras estás volando si esta opción está activada."
     },
     "configurationDigitalIdlePercent": {
-        "message": "Valor Acelerador Motor Inactivo [porcentaje]"
+        "message": "Valor Acelerador Motor Ralentí [porcentaje]"
     },
     "configurationDigitalIdlePercentHelp": {
         "message": "Este es el valor 'inactivo' en porcentaje del máximo acelerador que se envía a los ESCs cuando la aeronave está armada y el acelerador está en la posición de mínimo. Puedes incrementar el porcentaje para obtener más velocidad cuando está inactivo."
@@ -3488,6 +3488,9 @@
         "message": "Corte",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "Valores bajos reducen el rebote después de flips en quads de baja autoridad, valores altos incrementan la precisión en los giros con tasas altas para carreras.<br>Ajusta a 30-40 para carreras, 15 para freestyle muy reactivos, 10 para freestyle pesados, 3-5 para clase X."
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "Control Absoluto"
     },
@@ -3501,7 +3504,10 @@
         "message": "Esta funcionalidad permite dar un impulso temporal al acelerador en cambios rápidos del mando, lo cual incrementa el par de torsión en la aceleración de los motores, proporcionando una respuesta de aceleración mucho más rápida."
     },
     "pidTuningIdleMinRpm": {
-        "message": "Valor Inactivo Dinámico [rpm]"
+        "message": "Valor Ralentí Dinámico [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "Ajusta este parámetro para proporcionar un valor mínimo basado en rpm como red de seguridad ante la desincronización de los motores.<br>Un corredor suele preferir una buena respuesta y tasas bajas - por lo tanto suele ser útil un valor de Ralentí Dinámico[rpm] bajo y un valor de Ralentí Dshot alto. Freestylers y pilotos LOS suelen preferir un empuje muy bajo al ralentí por lo que tal vez prefieran un valor menor en Ralentí Dshot mientras usan un poco más Ralentí Dinámico[rpm] para evitar desincronizaciones a altas tasas. Ten en cuenta que el valor de Ralentí Dinámico[rpm] siempre tiene que ser menor que el valor de Ralentí Dshot<br><br>Visita esta entrada en la <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wiki</a> para más información."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Ángulo Límite para Entrenador Acro"
