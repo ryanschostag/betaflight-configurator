@@ -467,6 +467,12 @@
     "resetToCustomDefaultsAccept": {
         "message": "应用自定义默认设置"
     },
+    "reportProblemsDialogHeader": {
+        "message": "检测到<strong>您的配置存在下列问题</strong>:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "请<strong>在试飞之前解决这些问题</strong>。"
+    },
     "infoVersions": {
         "message": "操作系统: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, 配置程序: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -1309,6 +1315,18 @@
     "configurationCalculatedCyclesSec": {
         "message": "循环/秒[Hz]"
     },
+    "configurationSpeedGyroNoGyro": {
+        "message": "无陀螺仪",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
+    "configurationSpeedPidNoGyro": {
+        "message": "Gyro / {{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
     "configurationLoopTimeHelp": {
         "message": "<strong>注意：</strong>确保你的飞控有能力运行在这些频率上！检查CPU循环时间是否稳定。改变频率可能需要重新调校PID。提示：关闭加速度计和其他传感器可以节省运算资源以获得更高性能。"
     },
@@ -1329,6 +1347,22 @@
     },
     "configurationGPSAutoConfig": {
         "message": "自动设置"
+    },
+    "configurationGPSGalileo": {
+        "message": "使用 Galileo 系统",
+        "description": "Option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSGalileoHelp": {
+        "message": "启用后，将会移除 QZSS 系统(日本) 并将其替换为 Galileo 系统(欧洲) 。",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSHomeOnce": {
+        "message": "设置单次返航点",
+        "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHomeOnceHelp": {
+        "message": "启用后，当接通电池后第一次解锁的地点将被视为返航点。如果未开启，返航点将随每次解锁而更新。",
+        "description": "Help text for the option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
     },
     "configurationGPSHelp": {
         "message": "<strong>注意:</strong>使用 GPS 之前需要先在串口页面设置一个串口。"
@@ -1581,6 +1615,9 @@
     },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "关闭"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "自动"
     },
     "receiverRcSmoothingChannel": {
         "message": "平滑通道"
@@ -1862,6 +1899,12 @@
     },
     "receiverButtonRefresh": {
         "message": "刷新"
+    },
+    "receiverButtonBind": {
+        "message": "接收机对频"
+    },
+    "receiverButtonBindMessage": {
+        "message": "绑定请求已发送到飞行控制器。"
     },
     "receiverButtonSticks": {
         "message": "控制摇杆"
@@ -2576,6 +2619,9 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "发布信息"
     },
+    "firmwareFlasherReleaseManufacturer": {
+        "message": "制造商 ID："
+    },
     "firmwareFlasherReleaseVersion": {
         "message": "版本:"
     },
@@ -2593,6 +2639,12 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "二进制"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "显示配置。"
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "日期："
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "手动下载"
@@ -2711,6 +2763,9 @@
     "firmwareFlasherButtonDownloading": {
         "message": "下载中..."
     },
+    "firmwareFlasherExitDfu": {
+        "message": "退出 DFU 模式"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "烧写固件"
     },
@@ -2788,6 +2843,9 @@
     },
     "firmwareFlasherFlashTrigger": {
         "message": "检测到飞控：<strong>$1</strong> - 正在触发自动烧录"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "刷写"
     },
     "firmwareFlasherPreviousDevice": {
         "message": "检测到：<strong>$1</strong> - 仍在烧录前一个设备，请稍后重新插入再试一次。"
@@ -3151,6 +3209,18 @@
     "pidTuningLevelHelp": {
         "message": "以下值会改变 ANGLE 模式和 HORIZON 模式下的行为表现。不同的PID控制器对该值的要求数值会不一样。具体请参阅文档。"
     },
+    "pidTuningMotorOutputLimit": {
+        "message": "电机输出限制"
+    },
+    "pidTuningMotorLimit": {
+        "message": "衰减 %"
+    },
+    "pidTuningCellCount": {
+        "message": "电芯数"
+    },
+    "pidTuningCellCountHelp": {
+        "message": "自动激活第一个符合当前已连接电池芯数的配置文件。"
+    },
     "pidTuningNonProfileFilterSettings": {
         "message": "独立于 PID 配置文件的滤波器设置"
     },
@@ -3445,6 +3515,9 @@
         "message": "截止频率",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "较低的值可抑制弱动力飞机在翻滚后发生的回弹；较高的值可提高以较高角速率进行转弯时的精度。用以竞速。<br>竞速建议 30-40，高响应性花飞穿越机建议设置为 15，较重的花飞穿越机建议设置为 10，X-class建议设置为 3-5。"
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "绝对控制"
     },
@@ -3456,6 +3529,9 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "此功能通过根据摇杆快速移动量来短暂提高油门变化值以增加电机的加速扭矩，使得油门响应更为迅速。"
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "动态怠速值 [rpm]"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "萌新手动模式角度限制"
@@ -3565,8 +3641,26 @@
     "failsafeGpsRescueItemThrottleHover": {
         "message": "悬停油门"
     },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "上升速率(米/秒)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "下降速率 (米/秒)"
+    },
     "failsafeGpsRescueItemMinSats": {
         "message": "最小卫星数"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "允许在未锁定的情况下解锁 - <span class=\"message-negative\">警告: 这样将无法使用GPS救援</span>"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "最大高度"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "固定高度"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "当前高度"
     },
     "failsafeGpsRescueItemSanityChecks": {
         "message": "可用性检测"
@@ -4479,6 +4573,17 @@
     },
     "osdDescElementRssiDbmValue": {
         "message": "RSSI 信号的 dBm 值 （如果可用）"
+    },
+    "osdTextElementRcChannels": {
+        "message": "RC 通道",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "最多显示4个通道的值。通道须由CLI变量 ‘osd_rcchannels’ 来指定"
+    },
+    "osdTextElementEfficiency": {
+        "message": "电池效率",
+        "description": "One of the elements of the OSD"
     },
     "osdTextElementUnknown": {
         "message": "未知$1",
