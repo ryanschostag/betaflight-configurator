@@ -2640,6 +2640,9 @@
     "firmwareFlasherReleaseFile": {
         "message": "二进制"
     },
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "统一目标："
+    },
     "firmwareFlasherUnifiedTargetFileUrl": {
         "message": "显示配置。"
     },
@@ -5463,5 +5466,62 @@
     },
     "darkTheme": {
         "message": "使用暗色主题"
+    },
+    "pidTuningRatesType": {
+        "message": "Rate 类型"
+    },
+    "pidTuningRatesTypeTip": {
+        "message": "改变 Rate 类型将改变 Rate 曲线及配置方式"
+    },
+    "pidTuningRcRateRaceflight": {
+        "message": "Rate"
+    },
+    "pidTuningRcExpoRaceflight": {
+        "message": "Expo"
+    },
+    "pidTuningRateRaceflight": {
+        "message": "Acro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "RC 曲线"
+    },
+    "pidTuningRateQuickRates": {
+        "message": "最大角速率"
+    },
+    "pidTuningRcRateActual": {
+        "message": "中央灵敏度"
+    },
+    "dialogRatesTypeTitle": {
+        "message": "更改 Rate 类型"
+    },
+    "dialogRatesTypeNote": {
+        "message": "<span class=\"message-negative\"><b>警告：您正在更改 Rate 类型。</b></span>如果您更改 Rate 类型，您的 Rate 曲线将会重置为默认值。"
+    },
+    "dialogRatesTypeConfirm": {
+        "message": "更改"
+    },
+    "gpsSbasAutoDetect": {
+        "message": "自动检测",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasEuropeanEGNOS": {
+        "message": "欧洲 EGNOS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNorthAmericanWAAS": {
+        "message": "北美 WAAS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasJapaneseMSAS": {
+        "message": "日本 MSAS",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasIndianGAGAN": {
+        "message": "印度 GAGAN",
+        "description": "One of the options selectable for the GPS SBAS system"
+    },
+    "gpsSbasNone": {
+        "message": "无",
+        "description": "One of the options selectable for the GPS SBAS system"
     }
 }
