@@ -492,8 +492,11 @@
     "reportProblemsDialogFooter": {
         "message": "crwdns9980:0crwdne9980:0"
     },
-    "reportProblemsDialogAccCalibrationNeeded": {
-        "message": "crwdns9982:0$t(initialSetupButtonCalibrateAccel.message)crwdnd9982:0$t(tabSetup.message)crwdnd9982:0$t(configurationSystem.message)crwdnd9982:0$t(tabConfiguration.message)crwdne9982:0"
+    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
+        "message": "crwdns10054:0$t(initialSetupButtonCalibrateAccel.message)crwdnd10054:0$t(tabSetup.message)crwdnd10054:0$t(configurationSystem.message)crwdnd10054:0$t(tabConfiguration.message)crwdne10054:0"
+    },
+    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
+        "message": "crwdns10056:0$t(configurationEscFeatures.message)crwdnd10056:0$t(tabConfiguration.message)crwdnd10056:0$t(escProtocolDisabledMessage.message)crwdne10056:0"
     },
     "infoVersions": {
         "message": "crwdns8710:0{{operatingSystem}}crwdnd8710:0{{chromeVersion}}crwdnd8710:0{{configuratorVersion}}crwdne8710:0",
@@ -1243,6 +1246,12 @@
     "configurationThrottleMinimumCommandHelp": {
         "message": "crwdns5609:0crwdne5609:0"
     },
+    "configurationEscProtocolDisabled": {
+        "message": "crwdns10058:0$t(escProtocolDisabledMessage.message)crwdne10058:0"
+    },
+    "escProtocolDisabledMessage": {
+        "message": "crwdns10060:0crwdne10060:0"
+    },
     "configurationDshotBeeper": {
         "message": "crwdns8754:0crwdne8754:0"
     },
@@ -1725,6 +1734,9 @@
     },
     "pidTuningDerivative": {
         "message": "crwdns5702:0crwdne5702:0"
+    },
+    "pidTuningDMax": {
+        "message": "crwdns10062:0crwdne10062:0"
     },
     "pidTuningDerivativeHelp": {
         "message": "crwdns9758:0crwdne9758:0",
