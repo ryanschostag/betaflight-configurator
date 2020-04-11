@@ -409,9 +409,6 @@
     "reportProblemsDialogFooter": {
         "message": "Per favore, <strong>risolvi questi problemi prima di far volare il tuo modello</strong>."
     },
-    "reportProblemsDialogAccCalibrationNeeded": {
-        "message": "<strong>L'accelerometro è abilitato ma non è calibrato</strong>. Se hai intenzione di usare l'accelerometro segui le istruzioni e $t(initialSetupButtonCalibrateAccel.message) nella scheda $t(tabSetup.message). Se è attivata una qualsiasi funzione che richiede l'accelerometro (modalità stabilizzata, GPS rescue, ...), l'armamento del modello sarà disattivato fin quando l'accelerometro non verrà calibrato. Se non prevedi di utilizzare l'accelerometro è consigliabile disattivarlo in $t(configurationSystem.message) nella scheda $t(tabConfiguration.message)."
-    },
     "infoVersions": {
         "message": "Sistema operativo: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configuratore: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
