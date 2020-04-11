@@ -413,8 +413,11 @@
     "reportProblemsDialogFooter": {
         "message": "Si us plau <strong>solucioneu aquests problemes abans d’intentar volar el vostre aeronau</strong>."
     },
-    "reportProblemsDialogAccCalibrationNeeded": {
+    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
         "message": "<strong>l’acceleròmetre està activat, però no està calibrat</strong>. Si voleu utilitzar l’acceleròmetre, seguiu les instruccions per a '$t(initialSetupButtonCalibrateAccel.message)' a la pestanya '$t(tabSetup.message)'. Si està habilitada qualsevol funció que requereixi l’acceleròmetre (modes de nivell automàtic, rescat GPS, ...), es desactivarà l’armament de la aeronau fins que s’hagi calibrat l’acceleròmetre. Si no teniu previst utilitzar l'acceleròmetre, es recomana inhabilitar-lo a \"$t(configurationSystem.message)\" a la pestanya \"$t(tabConfiguration.message)\"."
+    },
+    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
+        "message": "<strong>No hi ha cap protocol de sortida del motor seleccionat</strong>. Si us plau, seleccioneu un protocol de sortida del motor adequat per als ESC's \"$t(configurationEscFeatures.message)\" a la pestanya \"$t(tabConfiguration.message)\". $t(escProtocolDisabledMessage.message)"
     },
     "infoVersions": {
         "message": "Corrent - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configurator: <strong>{{configuratorVersion}}</strong>",
@@ -1160,6 +1163,12 @@
     "configurationThrottleMinimumCommandHelp": {
         "message": "Aquest és el valor que s'envia als ESCs quan l'aeronau està desarmada. Posa-ho a un valor que mantingui els motors parats (1000 a la majoria d'ESCs)."
     },
+    "configurationEscProtocolDisabled": {
+        "message": "Seleccioneu el protocol de sortida del motor adequat per als ESC's. $t(escProtocolDisabledMessage.message)"
+    },
+    "escProtocolDisabledMessage": {
+        "message": "<strong>Precaució:</strong> Seleccionar un protocol de sortida del motor que no és compatible amb els ESC's pot provocar que els <strong> ESC funcionin tan aviat com es conecta la bateria</strong>. Per aquest motiu, <strong> assegureu-vos que sempre traieu les hèlixs abans de connectar una bateria per primera vegada després de canviar el protocol de sortida del motor </strong>."
+    },
     "configurationDshotBeeper": {
         "message": "Configuració de Beacon Dshot"
     },
@@ -1636,6 +1645,9 @@
     },
     "pidTuningDerivative": {
         "message": "Derivativa"
+    },
+    "pidTuningDMax": {
+        "message": "D Max"
     },
     "pidTuningDerivativeHelp": {
         "message": "Controla la força d’amortiment a qualsevol moviment de l’aeronau. Per a desplaçaments dels sticks, D Term amortitza la comanda. Per a una influència externa (propwash o ràfega de vent), el D term amortitza la influència.<br><br> Els beneficis més alts proporcionen un major amortiment i redueixen la superació per terme P i FF.<br>No obstant això, el D term és MOLT sensible a les vibracions de alta freqüència de giroscopi (el soroll | es magnifica de 10x a 100x).<br><br> El soroll d’alta freqüència pot causar calor del motor i cremar motors si els guanys en D són massa alts o el soroll no es filtra bé (consulteu la pestanya Filtres).<br><br> Penseu en el D term com a amortidor del cotxe, però amb la propietat inherent negativa d’augmentar el soroll d’alta freqüència del giro.",
