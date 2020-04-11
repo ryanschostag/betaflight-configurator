@@ -477,8 +477,11 @@
     "reportProblemsDialogFooter": {
         "message": "당신의 <strong>기체를 날리기 전에 이 문제들을 해결하십시오</strong>."
     },
-    "reportProblemsDialogAccCalibrationNeeded": {
-        "message": "<strong>가속도계가 활성화되었지만 교정되지 않았습니다</strong>. 가속도계를 사용하려는 경우 '$t(tabSetup.message)' 탭에서 '$t(initialSetupButtonCalibrateAccel.message)'에 대한 지침을 따르십시오. 가속도계(자동 레벨 모드, GPS 레스큐 등)가 필요한 기능이 활성화된 경우, 가속도계가 교정될 때까지 기체의 아밍이 비활성화됩니다. 가속도계를 사용할 계획이 없는 경우 '$t(tabConfiguration.message)' 탭의 '$t(configurationSystem.message)'에서 가속도계를 사용하지 않도록 설정하는 것이 좋습니다."
+    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
+        "message": "<strong>가속도계는 활성화되었지만 교정되지는 않았습니다</strong>. 가속도계를 사용하려면 '$t(tabSetup.message)' 탭의 '$t(initialSetupButtonCalibrateAccel.message)'지침을 따르십시오. 가속도계가 필요한 기능(자동 레벨 모드, GPS 레스큐, ...)이 활성화되면, 가속도계가 교정될 때까지 기체의 아밍이 비활성화됩니다. 가속도계를 사용할 계획이 없는 경우 '$t(tabConfiguration.message)' 탭의 '$t(configurationSystem.message)'에서 사용하지 않도록 설정하는 것이 좋습니다."
+    },
+    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
+        "message": "<strong>선택된 모터 출력 프로토콜이 없습니다</strong>. '$t(tabConfiguration.message)' 탭의 '$t(configurationEscFeatures.message)'에서 ESC에 적합한 모터 출력 프로토콜을 선택하십시오. $t(escProtocolDisabledMessage.message)"
     },
     "infoVersions": {
         "message": "운영-OS: <strong>{{operatingSystem}}</strong>, 크롬: <strong>{{chromeVersion}}</strong>, 컨피규레이터: <strong>{{configuratorVersion}}</strong>",
@@ -1228,6 +1231,12 @@
     "configurationThrottleMinimumCommandHelp": {
         "message": "이것은 기체가 해제될 때 ESC로 보내지는 값입니다. 모터를 정지시킨 값으로 설정하십시오(대부분의 ESC의 경우 1000)."
     },
+    "configurationEscProtocolDisabled": {
+        "message": "당신의 ESC에 적합한 모터 출력 프로토콜을 선택하세요. $t(escProtocolDisabledMessage.message)"
+    },
+    "escProtocolDisabledMessage": {
+        "message": "<strong>주의:</strong> ESC에서 지원하지 않는 모터 출력 프로토콜을 선택하면 <strong>배터리가 연결되자마자 모터가 회전할 수 있습니다</strong>. 이 때문에, <strong>모터 출력 프로토콜을 변경한 후 배터리를 처음 연결하기 전에 항상 프롭을 분리해야 합니다</strong>."
+    },
     "configurationDshotBeeper": {
         "message": "Dshot 비콘 환경설정"
     },
@@ -1707,6 +1716,9 @@
     },
     "pidTuningDerivative": {
         "message": "D(미분)"
+    },
+    "pidTuningDMax": {
+        "message": "D 최대값"
     },
     "pidTuningDerivativeHelp": {
         "message": "기체의 어떤 움직임에도 감쇠의 강도를 제어합니다. 스틱이 움직일 때, D-텀은 명령을 감쇠시킵니다. 외부 영향(프롭위시 또는 풍력) 의 경우 D-텀은 그러한 영향을 감쇠합니다.<br><br>높은 게인은 더 많은 감쇠를 제공하고 P-텀과 FF에 의한 오버슈트를 감소시킵니다.<br>단, D-텀은 자이로 고주파 진동(노이즈 | 10배에서 100배까지 확대) 에 민감합니다.<br><br>D-게인이 너무 높거나 자이로 노이즈가 잘 필터링되지 않을 경우 고주파 노이즈로 모터 열과 소실 현상이 발생할 수 있습니다(필터 탭 참조).<br><br>D-텀을 당신의 자동차에서 쇼크 업소버로 생각하되, 고주파 자이로 노이즈 확대라는 부정적 고유 속성으로 생각해 보십시오.",
