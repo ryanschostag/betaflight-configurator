@@ -492,9 +492,6 @@
     "reportProblemsDialogFooter": {
         "message": "Porfavor <strong>solucione estes problemas antes de intentar voar a súa aeronave</strong>."
     },
-    "reportProblemsDialogAccCalibrationNeeded": {
-        "message": "<strong>O acelerómetro está activado, pero non está calibrado</strong>. Se pensa empregar o acelerómetro, siga as instrucións para '$t(initialSetupButtonCalibrateAccel.message)' na pestana '$t(tabSetup.message)'. Se se habilita algunha función que requira o acelerómetro (modos de nivel automático, rescate GPS, ...), o armado da aeronave desactivarase ata que se calibre o acelerómetro. Se non está a usar o acelerómetro, recoméndase deshabilitalo en '$t(configurationSystem.message)' na pestana '$t(tabConfiguration.message)'."
-    },
     "infoVersions": {
         "message": "Executando - OS: <strong> {{operatingSystem}} </strong>, Chrome: <strong>{{chromeVersion}} </strong>, Configurador: <strong> {{configuratorVersion}} </strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
