@@ -416,8 +416,11 @@
     "reportProblemsDialogFooter": {
         "message": "Mesedez, <strong> konpondu arazo hauek gailua hegan egiten saiatu aurretik </strong>."
     },
-    "reportProblemsDialogAccCalibrationNeeded": {
+    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
         "message": "<strong> Azelerometroa gaituta dago, baina ez da kalibratu</strong>. Azelerometroa erabiltzeko asmoa baduzu, jarraitu '$t(initialSetupButtonCalibrateAccel.message)' argibideak '$t(tabSetup.message)' fitxan. Azelerometroa eskatzen duen funtzioren bat (maila automatikoko moduak, GPS erreskatea, ...) aktibatuta badago, gailuaren armagintza desaktibatuko da azelerometroa kalibratu arte. Azelerometroa erabiltzeko asmorik ez baduzu, ' $t(tabConfiguration.message)' fitxan inabilitatzea '$t(configurationSystem.message)' gomendagarria da."
+    },
+    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
+        "message": "<strong>Motorren irteera protokoloa ez da hautatu</strong>. Mesedez, zure ESCetarako egokia den irteera protokoloa aukeratu $t(configurationEscFeatures.message) paragrafoan $t(tabConfiguration.message) fitxan. $t(escProtocolDisabledMessage.message)"
     },
     "infoVersions": {
         "message": "Sistema Eragilea: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Konfiguratzailea: <strong>{{configuratorVersion}}</strong>",
@@ -1163,6 +1166,12 @@
     "configurationThrottleMinimumCommandHelp": {
         "message": "ESCri bidaltzen zaion balioa Aireontzia desarmatuta dagoenean. Ezarri motorra geldirik egoteko baliora(1000 ESC gehienentzat)."
     },
+    "configurationEscProtocolDisabled": {
+        "message": "Mesedez, zure ESCetarako egokia den irteera protokoloa aukeratu. $t(escProtocolDisabledMessage.message)"
+    },
+    "escProtocolDisabledMessage": {
+        "message": "<strong>Kontuz:</strong> Zure ESC onartzen ez duten ESC protokoloa aukeratzen baduzu, <strong>bateria konektatu bezain laster ESC eta motorrak piztu daitezke</strong>. Hori dela eta, <strong>ESC protokoloa aldatu ondoren, eta bateria konektatu aurretik, ziurtatu zure helizeak kendu dituzula</strong>."
+    },
     "configurationDshotBeeper": {
         "message": "Dshot balizaren konfigurazioa"
     },
@@ -1642,6 +1651,9 @@
     },
     "pidTuningDerivative": {
         "message": "Deribatiboa (D)"
+    },
+    "pidTuningDMax": {
+        "message": "D Max"
     },
     "pidTuningDerivativeHelp": {
         "message": "Nabarmentzen den indarra kontrolatzen ditu Quad-ak.  Agintearen etenguen mobimenduak, D-term-en aginteak arintzen ditu. Kampoko eraginak (propwash-a edo haize boladak) D-term-ak bere eragina arintzen du.<br><br>Irabazi altuagoak amortizazio handiagoa ematen du eta P-term-a eta FF-a overshoot-iña murrizten dute.<br>Hala ere, D-term-a oso sensiblea da giroetako maiztasun handiko bibrazioekin (zarata haundiagotu egiten du 10-tik 100-ra).<br><br>Frekuentzi handiko zaratak motorraren berotzea edota motorrak erretzea eragin dezake D-gain-s handiegiak badira edo giroaren zarata ez badira iragazten (ikusi Iragazkiñak fitxa).<br><br>Pentsa ezazu D-term-ek zure autoaren kuxina dela, baina frekuentzi handiko girotze-zarata handitzeak duen berezko efektu negatiboarekin.",
