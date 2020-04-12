@@ -149,9 +149,6 @@
     "defaultWelcomeIntro": {
         "message": "Uçuş denetleyicinizi güncellemek, yapılandırmak ve ayarlamayı basitleştirmek için tasarlanmış yardımcı bir program olan <strong> Betaflight - Configurator </strong> 'a hoş geldiniz."
     },
-    "defaultContributingText": {
-        "message": "Betaflight'ı daha da güzel yapmak için bir çok yoldan yardımcı olabilirsiniz. Bunlardan bazıları: <br /><ul> IRC de forumlarda diğer kullanıcıların sorularını yanıtlamak. </li><li> Yapılandırıcı ve donanın yazılımı kodlarına katkıla bulunmak- yeni özellikler, düzeltmeler, geliştirmeler</li><li> <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">Yeni özellikleri </a> test etmek ve geri dönüt vermek. <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\"><li>İstenen özellikler hakkında durumlara ve yorumlara </a> yardım etmek. </li> <li> <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\"> ile işbirliği yaparak yapılandırıcı uygulamasını </a> kendi dilinize çevirmek</li><li></li></ul>"
-    },
     "defaultChangelogHead": {
         "message": "Yapılandırıcı - Değişiklikler"
     },
@@ -170,12 +167,6 @@
     "defaultDocumentation": {
         "message": "Betaflight dökümantasyonu sürüm notlarında ve wikide mevcuttur.<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "Betaflight wiki bilgi için oldukça iyi bir kaynaktır, <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">buradan</a> bulunabilir."
-    },
-    "defaultDocumentation2": {
-        "message": "Donanım yazılımının sürüm notları GitHub sürüm sayfasından okunabilir,<a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">buradan</a>."
-    },
     "defaultSupportHead": {
         "message": "Destek"
     },
@@ -187,18 +178,6 @@
     },
     "defaultSupport": {
         "message": "Destek için ilk olarak forumlarda ve wiki'de arama yapın veya satıcınızla görüşün.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">RC Grupları konusu</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell Betaflight Videoları</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Yedekleme ve geri yükleme fonksiyonları devre dışı bırakıldı.</span> API sürümü <span class=\"message-negative\">$1</span> donanım yazılına sahipsiniz, yedekleme ve geri yükleme <span class=\"message-positive\">$2</span>'yi gerektirir. Lütfen ayarlarınızı CLI ile yedekleyin, prosedür için Betaflight dökümantasyonuna bakın."
@@ -1316,9 +1295,6 @@
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Kurtarma / Kayıp iletişimi</strong>"
     },
-    "firmwareFlasherRecoveryText": {
-        "message": "Eğer panelinizle olan iletişimi kaybettiyseniz, iletişimi kurtarmak için bu adımları takip edin: <ul><li> Gücü kapatın </li><li>yı Aktifleştirin 'Yeniden Başlatma sekansı yok', aktifleştirin 'Tüm çipi sil'.</li><li> BOOT pinlerini bağlayın veya BOOT tuşuna basılı tutun.</li><li>Gücü açın (eğer doğru yapılırsa aktif LED YANMAYACAK)</li><li> Gerekliyse tüm STM32 sürücüleri ve Zadig'i yükleyin (Betaflight kullanma klavuzunun <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB flaşlama</a> kısmına bakın)</li><li>Yapılandırıcıyı kapatın, Çalışan tüm chrome örneklerini kapatın, tüm Chrome uygulamalarını kapatın, Yapılandırıcı baştan başlatın.</li><li>Eğer FC'nizde varsa BOOT düğmesini bırakın.</li><li>Doğru yazılımla flaşlamak(Eğer FC'nizin kullanma klavuzunda belirtilmişse elle yapılandırılmış baud hızı kullanarak).</li>Gücü kapatın.</li><li>BOOT bağlantı kablolarını kaldırın.</li><li>Gücü açın(aktif LED yanıp sönmeli).</li><li>Normal şekilde bağlayın.</li></ul>"
-    },
     "firmwareFlasherButtonLeave": {
         "message": "Yazılım flaşlayıcısından çıkın"
     },
@@ -1749,9 +1725,6 @@
     },
     "powerBatteryCapacity": {
         "message": "Kapasite (mAh)"
-    },
-    "osdSetupUnsupportedNote2": {
-        "message": "Bazı uçuş kumandalarının yerleşik <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a> ile yanıp sönebilen ve yapılandırılabilen <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a>'si bulunduğunu not edin, buna rağmen MinimOSD bu arayüz üzerinden yapılandırılamaz."
     },
     "osdSetupVideoFormatTitle": {
         "message": "Video formatı"
