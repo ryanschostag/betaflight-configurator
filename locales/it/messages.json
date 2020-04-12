@@ -148,9 +148,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Mostra notifiche per versioni beta del configuratore"
     },
-    "configuratorUpdateNotice": {
-        "message": "Stai usando una versione obsoleta di <b>Betaflight Configurator</b>. <br>La versione <b>$1</b> è disponibile online, visita <a href=\"$2\" target=\"_blank\">la pagina delle release</a> per scaricare e installare l'ultima versione.<br> Perfavore chiudi l'applicazione prima di aggiornare."
-    },
     "configuratorUpdateWebsite": {
         "message": "Visita la pagina degli aggiornamenti"
     },
@@ -533,17 +530,8 @@
     "defaultWelcomeHead": {
         "message": "Hardware"
     },
-    "defaultWelcomeText": {
-        "message": "L'applicazione supporta tutto l'hardware che può eseguire Betaflight. Controlla la scheda per il flash per una lista completa dell'hardware.<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">Scarica il Betaflight Blackbox Log Viewer</a><br /><br />Il codice sorgente del firmware può essere scaricato da <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\">qui</a><br /><br />Gli ultimi <b>Driver USB STM VCP</b> possono essere scaricati da <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\">qui</a><br />Per hardware obsoleti che usano un chip USB-seriale CP210x:<br />gli ultimi <b>driver CP210x</b>possono essere scaricati da<a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\">qui</a><br />L'ultima versione di <b>Zadig</b> per l'installazione dei driver Windows USB può essere scaricata da <a href=\"http://zadig.akeo.ie/\" target=\"_blank\">qui</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Contribuisci"
-    },
-    "defaultContributingText": {
-        "message": "Se vuoi contribuire a rendere Betaflight ancora migliore puoi aiutare in molti modi, quali:<br /><ul><li>Rispondere alle domande degli altri utenti sui forum e IRC.</li><li>Contribuire a scrivere codice per il firmware ed il configuratore - nuove funzioni, correzioni, miglioramenti</li><li>Testare le <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">nuove funzioni/correzzioni</a> e fornendo feedback.</li><li>Aiutare a risolvere<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\"> problemi e commentare le funzioni richieste</a></li><li>Collaborare alla <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">traduzione del configuratore</a> nella tua lingua</li></ul>"
-    },
-    "defaultFacebookText": {
-        "message": "Abbiamo anche un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">gruppo Facebook</a>.<br />. Unisciti a noi per discutere di Betaflight, fare domande riguardo la configurazione, o semplicemente ritrovarti con altri piloti."
     },
     "defaultChangelogHead": {
         "message": "Configuratore - Registro Modifiche"
@@ -572,12 +560,6 @@
     "defaultDocumentation": {
         "message": "La documentazione Betaflight è disponibile come note di rilascio e wiki.<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "La wiki di Betaflight è una grande risorsa in cui trovare informazioni, la puoi trovare <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">QUI</a>."
-    },
-    "defaultDocumentation2": {
-        "message": "Le informazioni relative alla release per il firmware possono essere lette sulla pagina GitHub delle nuove versioni, <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">QUI</a>."
-    },
     "defaultSupportHead": {
         "message": "Supporto"
     },
@@ -589,21 +571,6 @@
     },
     "defaultSupport": {
         "message": "Per avere supporto prova a cercare nei forum e pagine wiki prima o contatta il tuo fornitore.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">Thread nel forum RC Groups </a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell Betaflight Video</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Sviluppatori di Betaflight su slack</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Funzione di Backup e ripristino disabilitata.</span>La versione API del tuo firmware è <span class=\"message-negative\">$1</span>, per eseguire backup e ripristino è necessaria la versione<span class=\"message-positive\">$2</span>. Puoi eseguire il backup dei tuoi settaggi via CLI, vedi la documentazione Betaflight per la procedura."
@@ -2108,17 +2075,8 @@
     "transponderDataHelp1": {
         "message": "Solo cifre esadecimali, 0-9, A-F"
     },
-    "transponderHelp1": {
-        "message": "Configura qui il codice del tuo transponder. Nota: solo i codici validi saranno riconosciuti dai sistemi di tracciamento del tempo in gara. Codici transponder validi si possono ottenere da <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>."
-    },
-    "transponderHelp2": {
-        "message": "Per maggiori informazioni visita il <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">sito aRCiTimer</a>"
-    },
     "transponderDataHelp3": {
         "message": "Scegli ID ERLT 0-63"
-    },
-    "transponderHelp3": {
-        "message": "Per maggiori informazioni visita il <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">sito EasyRaceLapTimer</a>"
     },
     "transponderButtonSave": {
         "message": "Salva"
@@ -2744,9 +2702,6 @@
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong> Recupero / comunicazione persa </strong>"
-    },
-    "firmwareFlasherRecoveryText": {
-        "message": "Se hai perso la comunicazione con la tua scheda segui questi passaggi per ripristinare la comunicazione: <ul><li>Spegni</li><li>Abilita 'Nessuna sequenza di riavvio', attiva 'Cancellazione completa del chip'.</li><li>Collega i pin BOOT o tieni premuto il pulsante BOOT.</li><li>Accendere (il LED di attività NON lampeggia se eseguito correttamente).</li><li>Installa tutti i driver STM32 e Zadig se necessario (vedere la sezione <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB Flashing</a> del manuale di Betaflight).</li><li>Chiudi il configuratore, chiudi tutte le istanze di Chrome in esecuzione, chiudi tutte le app di Chrome, riavvia il configuratore.</li><li>Rilascia il pulsante BOOT se il tuo FC ne ha uno.</li><li>Flasha con il firmware corretto (utilizzando il Baud rate manuale se specificato nel manuale del controllore di volo).</li><li>Spegni.</li><li>Rimuovi il collegamento dei pin BOOT.</li><li>Accendi (il LED di attività dovrebbe lampeggiare).</li><li>Connetti normalmente.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Lascia il firmware flasher"
@@ -3503,9 +3458,6 @@
     "pidTuningIdleMinRpm": {
         "message": "Valore idle dinamico [rpm]"
     },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Imposta questo parametro per fornire un valore minimo basato sugli RPM come misura di sicurezza contro la desincronizzazione dei motori.<br>Un racer potrebbe preferire una risposta molto buona e rates bassi - quindi un Idle Dinamico [rpm] basso e un Idle Dshot alto potrebbero essere utili. I freestylers e i piloti LOS apprezzeranno una spinta minore in idle e potrebbero voler utilizzare meno Idle Dshot usando un po' più di Idle Dinamico [rpm] per evitare desincronizzazione a rates alti.<br><br>Visita questa pagina <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">wiki</a> per maggiori informazioni."
-    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Angolo limite per l'Acro Trainer"
     },
@@ -3514,9 +3466,6 @@
     },
     "pidTuningIntegratedYaw": {
         "message": "Yaw integrato"
-    },
-    "pidTuningIntegratedYawCaution": {
-        "message": "<span class=\"message-negative\">ATTENZIONE</span>: se attivi questa opzione, dovrari modificare il PID dello YAW di conseguenza. Più informazioni <a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\">qui</a>"
     },
     "pidTuningIntegratedYawHelp": {
         "message": "L'Integrated Yaw è una funzione che corregge un problema fondamentale del controllo del quad: mentre il rollio e il beccheggio sono controllati dai differenziali di spinta, il timone è controllato diversamente dalle eliche. L'Integrated Yaw risolve integrando l'output PID del timone prima di applicarlo al mixer. Questo normalizza il modo in cui funziona il PID. Puoi quindi regolarlo come qualsiasi altro asse. Richiede l'uso del controllo assoluto poiché nessuna I è richiesta con l'Integrated Yaw."
@@ -3949,9 +3898,6 @@
     },
     "osdSetupUnsupportedNote1": {
         "message": "Il tuo controllore di volo non risponde ai comandi OSD. Questo probabilmente significa che non ha un OSD BetaFlight integrato."
-    },
-    "osdSetupUnsupportedNote2": {
-        "message": "Tieni presente che alcuni controllori di volo hanno un <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a> integrato che può essere flashato e configurato con <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>, tuttavia il MinimOSD non può essere configurato tramite questa interfaccia."
     },
     "osdSetupProfilesTitle": {
         "message": "Numero profilo OSD",
