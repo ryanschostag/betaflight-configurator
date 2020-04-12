@@ -115,9 +115,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Zobrazit oznámení o aktualizacích pro nestabilní verze konfigurátoru"
     },
-    "configuratorUpdateNotice": {
-        "message": "Používáte zastaralou verzi <b>Konfigurátoru Betaflight</b>.<br> Verze <b>$1</b> je k dispozici online, navštivte <a href=\"$2\" target=\"_blank\">stránku vydavatele</a> ke stažení a instalaci nejnovější verze s opravami a vylepšeními.<br>Před aktualizací zavřete okno konfigurátoru."
-    },
     "configuratorUpdateWebsite": {
         "message": "Jít na stránku vydavatele programu"
     },
@@ -449,12 +446,6 @@
     "defaultContributingHead": {
         "message": "Spolupráce"
     },
-    "defaultContributingText": {
-        "message": "Pokud chcete pomoci udělat Betaflight ještě lepším, můžete přispět mnoha způsoby:<br /><ul><li>Odpovídáním na otázky ostatních uživatelů na fórech a IRC.</li><li>Přispěním do kódu pro firmware a konfigurátor - nové funkce, opravy, vylepšení</li><li>Testováním <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">nových funkcí/oprav</a> a zpětnou vazbou.</li><li>Pomáháním s <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">problémy a komentováním požadavků na nové funkce</a>.</li><li>Spoluprací na <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">překladu konfigurátoru</a> do vašeho jazyka.</li><li></li></ul>"
-    },
-    "defaultFacebookText": {
-        "message": "Máme také <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Facebook skupinu</a>.<br />Připojte se a můžete si přečíst novinky o Betaflightu, nechat si poradit s konfigurací, nebo se jen tak připojit do komunity pilotů."
-    },
     "defaultChangelogHead": {
         "message": "Konfigurátor - Seznam změn"
     },
@@ -476,12 +467,6 @@
     "defaultDocumentation": {
         "message": "Dokumentace k Betaflightu je dostupná v poznámkách k verzím a na wiki.<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "Betaflight wiki je skvělým zdrojem informací, můžete ji nalézt <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">zde</a>."
-    },
-    "defaultDocumentation2": {
-        "message": "Poznámky k verzím firmwaru můžete nalézt na GitHubu na stránce <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">Releases</a>."
-    },
     "defaultSupportHead": {
         "message": "Podpora"
     },
@@ -493,21 +478,6 @@
     },
     "defaultSupport": {
         "message": "Pro pomoc a radu si nejprve projděte fóra nebo kontaktujte svého dodavatele.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">vlákno na RC Groups</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Videa o Betaflightu od Joshuy Bardwella</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Vývojáři Betaflight na Slacku</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Funkce zálohování a obnovení zakázána.</span> Používáte firmware s API verzí <span class=\"message-negative\">$1</span>, záloha a obnovení vyžadují <span class=\"message-positive\">$2</span>. Prosím zálohujte Vaší konfiguraci pomocí CLI a přečtěte si dokumentaci Betaflight pro další postup."
@@ -1209,12 +1179,6 @@
     },
     "transponderDataHelp1": {
         "message": "Pouze hexadecimální znaky, 0-9, A-F"
-    },
-    "transponderHelp1": {
-        "message": "Konfigurace kódu odpovídače.  Poznámka: Pouze platné kódy budou rozpoznány závodními časomírami.  Platné kódy odpovídače lze najít na <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>."
-    },
-    "transponderHelp2": {
-        "message": "Více informací naleznete na webu <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">aRCiTimer</a>"
     },
     "transponderDataHelp3": {
         "message": "Vyberte ERLT ID 0-63"
