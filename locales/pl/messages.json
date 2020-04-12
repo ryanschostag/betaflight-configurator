@@ -148,9 +148,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Pokaż powiadomienia o aktualizacji dla niestabilnych wersji konfiguratora."
     },
-    "configuratorUpdateNotice": {
-        "message": "Używasz starszej wersji <b>Betaflight Configurator</b>. <br>Nowa wersja <b>$1</b> jest dostępna. Odwiedź <a href=\"$2\" target=\"_blank\">stronę z aktualizacjami</a> aby pobrać najnowszą wersję.<br>Proszę zamknij konfigurator, zanim zaczniesz aktualizację."
-    },
     "configuratorUpdateWebsite": {
         "message": "Idź do strony z aktualizacjami"
     },
@@ -527,17 +524,8 @@
     "defaultWelcomeHead": {
         "message": "Sprzęt"
     },
-    "defaultWelcomeText": {
-        "message": "Aplikacja obsługuje wszystkie urządzenia, które mogą uruchamiać Betaflight. Sprawdź kartę pamięci, aby uzyskać pełną listę sprzętu.<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">Pobierz przeglądarkę dziennika Betaflight Blackbox</a><br /><br />Kod źródłowy można pobrać z <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\">tutaj</a><br /><br />Najnowszy <b>sterownik USB VCP</b> można pobrać z <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\">tutaj</a><br />Dla odziedziczonego sprzętu używającego CP210x USB do chipa szeregowego:<br />Najnowszy <b>sterownik CP210x</b> można pobrać z <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\">tutaj</a><br />Najnowszy <b>Zadig</b> do instalacji sterownika USB Windows można pobrać z <a href=\"http://zadig.akeo.ie/\" target=\"_blank\">tutaj</a><br />"
-    },
     "defaultContributingHead": {
         "message": "Współtworzenie"
-    },
-    "defaultContributingText": {
-        "message": "Jeżeli chcesz pomóc w rozwoju Betaflight, możesz to zrobić na wiele sposobów np.:<br /><ul><li>Odpowiadając na pytania innych użytkowników na forum IRC,</li><li>Współtworząc kod oprogramowania FC i konfiguratora - nowe funkcjonalności, poprawki, ulepszenia,</li><li>Testując <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">nowe funkcjonalności i poprawki</a>.</li><li>Pomagając w <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">problemach i komentując zgłaszane funkcjonalności </a>.</li><li>Pomagając w <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">tłumaczeniu konfiguratora</a> na Twój język.</li><li></li></ul>"
-    },
-    "defaultFacebookText": {
-        "message": "Mamy również <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Grupe na Facebooku</a>.<br />Dołącz do nas aby porozmawiać o Betaflight, spytać o konfiguracje lub po prostu spędzić czas z innymi pilotami."
     },
     "defaultChangelogHead": {
         "message": "Wykaz zmian w konfiguratorze"
@@ -566,12 +554,6 @@
     "defaultDocumentation": {
         "message": "Dokumentacja Betaflight dostępna jest w formie do wydania oraz w formie elektronicznej.<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "Strona o Betaflight jest świetnym źródłem informacji i możesz ją znaleść <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">tutaj</a>."
-    },
-    "defaultDocumentation2": {
-        "message": "Oprogramowanie kontrolerów lotów może być pobrane ze strony <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">GitHub releases</a>."
-    },
     "defaultSupportHead": {
         "message": "Pomoc"
     },
@@ -583,21 +565,6 @@
     },
     "defaultSupport": {
         "message": "Aby uzyskać pomoc, przeszukaj fora lub odwiedź stronę internetową<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">Wątek na RC Groups</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Filmy o Betaflight autorstwa Joshua Bardwell </a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Deweloperzy Betaflight</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Zapis i odtwarzanie konfiguracji jest wyłączone.</span> Posiadasz oprogramowanieFC z API w wersji <span class=\"message-negative\">$1</span>. Zapis i odtwarzanie konfiguracji wymaga wersji<span class=\"message-positive\">$2</span>. Prosimy, zapisz swoją konfigurację za pomocą CLI. Opis procedury znajdziesz w dokumentacji Betaflight."
@@ -2099,17 +2066,8 @@
     "transponderDataHelp1": {
         "message": "Tylko cyfry szesnastkowe, 0-9, A-F"
     },
-    "transponderHelp1": {
-        "message": "Skonfiguruj swój kod transpondera. Uwaga:  Tylko poprawne kody zostaną rozpoznane przez system mierzenia czasu podczas wyścigu. Poprawne kody można uzyskać na <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>."
-    },
-    "transponderHelp2": {
-        "message": "Aby uzyskać więcej informacji odwiedź stronę <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">aRCiTimer site</a>"
-    },
     "transponderDataHelp3": {
         "message": "Wybierz ERLT ID 0-63"
-    },
-    "transponderHelp3": {
-        "message": "Aby uzyskać więcej informacji odwiedź stronę <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">EasyRaceLapTimer</a>"
     },
     "transponderButtonSave": {
         "message": "Zapisz"
@@ -2723,9 +2681,6 @@
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Odzyskiwanie / Utracono komunikacje</strong>"
-    },
-    "firmwareFlasherRecoveryText": {
-        "message": "Jeśli straciłeś możliwość łączenia się z kontrolerem lotu, zastosuj te kroki:<ul><li>Odłącz zasilanie</li><li>Zaznacz 'Nie restartuj', oraz 'Wyczyść pamięć'.</li><li>Zewrzyj piny BOOT lub trzymaj wciśnięty przycisk BOOT na kontrolerze lotu.</li><li>Podłącz zasilanie(dioda LED nie powinna migać gdy poprawnie wykonasz tą czynność).</li><li>Zainstaluj sterowniki STM32 i Zadig jeśli są potrzebne (zobacz <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB Flashing</a> w dokumentacji Betaflight).</li><li>Zamknij Konfigurator i całą przeglądarkę Chrome, Włącz na nowo konfigurator.</li><li>Załaduj aktualną wersję oprogramowania użyj ręcznej prędkości transmisji - sprawdź w dokumentacji twojego kontrolera.</li><li>Odłącz zasilanie.</li><li>Zdejmij zworkę ze zwartych pinów BOOT (jeśli nie jest to przycisk).</li><li>Włącz zasilanie (LED powinien migać).</li><li>Podłącz się z konfiguratorem w trybie normanym.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Urzyj opcji wgrywania oprogramowania"
@@ -3461,9 +3416,6 @@
     "pidTuningIntegratedYaw": {
         "message": "Zintegrowane odchylenie Yaw"
     },
-    "pidTuningIntegratedYawCaution": {
-        "message": "<span class=\"message-negative\">UWAGA</span>: jeśli włączysz tę funkcję, musisz odpowiednio dostosować PID YAW. Więcej informacji <a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\">tutaj</a>"
-    },
     "pidTuningIntegratedYawHelp": {
         "message": "Zintegrowany Yaw jest funkcją która koryguje podstawowy błąd w sterowaniu maszyny: gdy osie pitch i roll są sterowane przez różnicowy sygnał z przepustnicy(gazu), śmigła także generują różnicę w osi Yaw. Zintegrowany Yaw poprawia to poprzez dodane wyjścia sygnału pid(Yaw) przed przekierowaniem sygnału do miksera sygnału. To działanie normalizuje pracę Pid-a. Teraz możliwe jest dostrajanie tego czynnika tak jak każdej innej osi. Wymaga to bezwzględnego sterowania, ponieważ nie używa zintegrowanego Yaw."
     },
@@ -3895,9 +3847,6 @@
     },
     "osdSetupUnsupportedNote1": {
         "message": "Twój kontroler lotu nie odpowiada na komendy OSD. Prawdopodobnie oznacza to że nie ma zintegrowanego OSD BetaFlight."
-    },
-    "osdSetupUnsupportedNote2": {
-        "message": "Zauważ, że niektóre kontrolery lotu mają na pokładzie <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a>, który można programować i konfigurować w <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>, jednakże przez ten interfejs nie można skonfigurować MinimOSD."
     },
     "osdSetupProfilesTitle": {
         "message": "Numer profilu OSD",
