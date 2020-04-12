@@ -62,9 +62,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Näytä päivitysilmoitukset configuratorin epävakaista versioista"
     },
-    "configuratorUpdateNotice": {
-        "message": "Käytät vanhentunutta versiota <b>Betaflight Configuratorista</b>.<br>Versio <b>$1</b> on ladattavissa <a href=\"$2\" target=\"_blank\">julkaisusivulta</a>. Viimeisin versio sisältää korjauksia ja parannuksia.<br>Sulje ohjelma ennen päivittämistä."
-    },
     "configuratorUpdateWebsite": {
         "message": "Mene julkaisusivulle"
     },
@@ -404,12 +401,6 @@
     "defaultDocumentation": {
         "message": "Betaflightin dokumentaatio on saatavilla julkaisutiedoissa ja wikissä.<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "Betaflight wiki:ssä on paljon hyödyllistä tietoa. Löydät sen <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">täältä</a>."
-    },
-    "defaultDocumentation2": {
-        "message": "Laiteohjelmiston julkaisutiedot voit lukea GitHubin <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">julkaisut-sivulta</a>."
-    },
     "defaultSupportHead": {
         "message": "Tuki"
     },
@@ -421,18 +412,6 @@
     },
     "defaultSupport": {
         "message": "Jos tarvitset tukea, hae ensin tietoa foorumeilta  ja wikistä, tai ota yhteyttä laitevalmistajaan.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">RC Groups keskustelu</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwellin Betaflight Videot</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Varmuuskopiointi ja palautustoiminnallisuus on pois käytöstä.</span> Käytössäsi on laiteohjelmisto, jonka API-versio on <span class=\"message-negative\">$1</span>, varmuuskopiointi ja palautus vaatii toimiakseen version <span class=\"message-positive\">$2</span>.  Ole hyvä ja varmuuskopioi asetuksesi CLI-toiminnon kautta. Katso Betaflightin dokumentaatiosta tarkemmat ohjeet."
@@ -1415,17 +1394,8 @@
     "transponderDataHelp1": {
         "message": "Ainoastaan heksadesimaalisia merkkejä, 0-9, A-F"
     },
-    "transponderHelp1": {
-        "message": "Määritä transponderisi koodi tässä. Huom: Ajanottojärjestelmät tunnistavat ainoastaan pätevät koodit. Pätevät koodit saat osoitteesta <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>."
-    },
-    "transponderHelp2": {
-        "message": "Lisätietoa löydät <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">aRCiTimer sivulta</a>"
-    },
     "transponderDataHelp3": {
         "message": "Valitse ERLT ID 0-63"
-    },
-    "transponderHelp3": {
-        "message": "Lisätietoa löydät <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">EasyRaceLapTimer sivulta</a>"
     },
     "transponderButtonSave": {
         "message": "Tallenna"
@@ -1912,9 +1882,6 @@
     },
     "firmwareFlasherWarningText": {
         "message": "<span class=\"message-negative\">Ethän</span> yritä päivittää <strong>Betaflight-yhteensopimatonta</strong> laitteistoa tällä laiteohjelmiston päivittäjällä.<br /><span class=\"message-negative\">Älä</span> <strong>katkaise yhteyttä</strong> lento-ohjaimeen tai <strong>sammuta</strong> tietokonettasi kun ohjelmointi on kesken.<br /><br /><strong>Huom: </strong>STM32-piirien bootloader on tallennettu ROM-muistiin, sitä ei saa \"brickattua\" epäonnistuneella ohjelmoinnilla.<br /><strong>Huom: </strong><span class=\"message-negative\">Automaattinen yhdistäminen</span> on aina pois käytöstä laiteohjelmiston päivitysikkunan ollessa auki.<br /><strong>Huom: </strong>Teethän varmuukopion ennen päivitystä; jotkin laiteohjelmistoversiot (up-/downgrade) saattavat nollata asetuksesi.<br /><strong>Huom:</strong> Jos kohtaat ongelmia päivityksessä <strong> yritä ottaa lento-ohjaimesta kaikki ylimääräiset johdot irti.</strong> Yritä ensin kuitenkin uudelleenkäynnistää lento-ohjain ja tietokoneesi, päivitä Chrome ja ajurit.<br /><strong>Huom:</strong> Kun ohjelmoit lento-ohjaimia, jotka ovat suoraan USB-yhteydessä, varmistu että olet lukenut \"USB Flashing\" -osion Betaflightin ohjekirjasta ja että käytät oikeaa ohjelmistoa ja ajureita."
-    },
-    "firmwareFlasherRecoveryText": {
-        "message": "Jos menetit yhteyden lento-ohjaimen kanssa, käy läpi nämä vaiheet palauttaaksesi yhteyden: <ul><li> Kytke virrat pois</li><li>Ota seuraavat vaihtoehdot käyttöön: 'Ei uudelleenkäynnistystä', 'Täysi piirin tyhjennys'.</li><li>Yhdistä BOOT-nastat hyppylangalla tai pidä BOOT-nappia pohjassa.</li><li>Kytke virrat päälle (aktiivisuutta ilmaiseva ledi EI vilku jos kaikki meni oikein).</li><li>Asenna kaikki STM32 ajurit ja Zadig, jos tarpeen (katso <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB Flashing</a> -osio Betaflightin ohjekirjasta).</li><li>Sulje configurator. Sulje kaikki aktiiviset Chromen ikkunat ja kaikki Chrome Appsit. Käynnistä Configurator uudelleen.</li><li>Vapauta BOOT-nappi, jos lento-ohjaimessasi on sellainen.</li><li>Ohjelmoi oikea laiteohjelmisto (käyttäen manuaalista baud ratea, jos lento-ohjaimesi ohjekirja näin kertoo).</li><li>Kytke virrat pois.</li><li>Irrota BOOT-nastojen välillä oleva hyppylanka.</li><li>Kytke virrat päälle (aktiivisuutta ilmaiseva ledi pitäisi alkaa vilkkua).</li><li>Yhdistä normaalisti.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Poistu laiteohjelmiston päivittäjästä"
