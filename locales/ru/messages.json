@@ -148,9 +148,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Показывать уведомления о появлении нестабильных версий конфигуратора"
     },
-    "configuratorUpdateNotice": {
-        "message": "Вы используете устаревшую версию <b>Betaflight конфигуратора</b>.<br>Новая версия <b>$1</b> доступна для скачивания, пожалуйста, посетите <a href=\"$2\" target=\"_blank\">страницу с релизами</a> для загрузки и установки самой последней версии с исправлениями и улучшениями.<br>Пожалуйста, закройте окно конфигуратора перед обновлением."
-    },
     "configuratorUpdateWebsite": {
         "message": "Перейти на сайт с релизами"
     },
@@ -530,12 +527,6 @@
     "defaultContributingHead": {
         "message": "Содействие"
     },
-    "defaultContributingText": {
-        "message": "Если вы хотите сделать Betaflight лучше, вы можете помочь нам несколькими способами:<br /><ul><li>Ответами на вопросы других пользователей на форумах и IRC.</li><li>Добавлением кода прошивки и конфигуратора с целью: добавления нового функционала, исправления ошибок, улучшений</li><li>Тестированием <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">нового функционала/исправленных ошибок</a> и сообщая нам результаты.</li><li>Помочь нам <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">обсудить запросы на новый функционал</a>.</li><li>Помочь с <a href=\"http://betaflight.oneskyapp.com\" target=\"_blank\">переводом конфигуратора</a> на свой родной язык.</li><li></li></ul>"
-    },
-    "defaultFacebookText": {
-        "message": "У нас также есть </a><a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">группа Facebook </a>.<br />Присоединяйтесь к нам, чтобы говорить о Betaflight, задавать вопросы о конфигурации или просто пообщаться с другими пилотами."
-    },
     "defaultChangelogHead": {
         "message": "Список изменений конфигуратора"
     },
@@ -563,12 +554,6 @@
     "defaultDocumentation": {
         "message": "Betaflight документация доступна в release notes и на wiki (на сайте Github).<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "Betaflight wiki - это отличный источник информации, который можно найти <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">здесь</a>."
-    },
-    "defaultDocumentation2": {
-        "message": "Информацию о новых прошивках можно почитать на Github в разделе releases <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">здесь</a>."
-    },
     "defaultSupportHead": {
         "message": "Нужна помощь?"
     },
@@ -580,21 +565,6 @@
     },
     "defaultSupport": {
         "message": "Для помощи сперва поищите на форумах и на wiki или свяжитесь с вашим продавцом.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">Обсуждения RC Groups</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Betaflight видео от Джошуа Бардуэлла</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\"> Разработчики Betaflight на slack</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Функционал создания и восстановления из резервной копии не доступен.</span> Ваша прошивка имеет API версию конфигуратора <span class=\"message-negative\">$1</span>, создание и восстановление из резервной копии требует версию <span class=\"message-positive\">$2</span>. Пожалуйста, создайте резервную копию ваших настроек через командную строку; загляните в документацию Betaflight, чтобы узнать как это сделать."
@@ -2032,17 +2002,8 @@
     "transponderDataHelp1": {
         "message": "Только хексдецимальные цифры, 0-9, A-F"
     },
-    "transponderHelp1": {
-        "message": "Настройте ваш транспондер здесь. Внимание: Только правильные коды будут приняты системой регистрации времени гонки. Правильные коды транспондера могут быть получены из <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>."
-    },
-    "transponderHelp2": {
-        "message": "Для получения дополнительной информации посетите <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">сайт aRCiTimer</a>"
-    },
     "transponderDataHelp3": {
         "message": "Выберите ERLT ID 0-63"
-    },
-    "transponderHelp3": {
-        "message": "Для большей информации посетите <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">EasyRaceLapTimer site</a>"
     },
     "transponderButtonSave": {
         "message": "Сохранить"
@@ -2647,9 +2608,6 @@
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Потеря связи / Восстановление связи</strong>"
-    },
-    "firmwareFlasherRecoveryText": {
-        "message": "Если возникла потеря связи с вашим устройством, то следуйте следующим шагам, чтобы восстановить связь:<ul><li>Отключите питание</li><li>Включите \"No reboot sequence\", включите \"Полное стирание чипа\".</li><li>Замкните контакты \"BOOT\" или удерживайте кнопку BOOT.</li><li>Включите питание (светодиод НЕ будет мигать, если всё сделано правильно).</li><li>Установите STM32 драйвера и Zadig, если это необходимо (см. раздел <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB Flashing</a> в инструкции Betaflight).</li><li>Закройте конфигуратор, закройте все Chrome приложения и завершите все chrome процессы, перезапустите конфигуратор.</li><li>Отпустите кнопку \"BOOT\", если она есть.</li><li>Залейте нужную прошивку (укажите ручной битрейт, если он указан в инструкции вашего полётного контроллера).</li><li>Отключите питание</li><li>Разомкните контакты \"BOOT\".</li><li>Включите питание (светодиод должен мигать).</li><li>Пробуйте подключиться.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Покинуть программатор"
@@ -3279,9 +3237,6 @@
     "pidTuningIntegratedYaw": {
         "message": "Интегрированное рыскание"
     },
-    "pidTuningIntegratedYawCaution": {
-        "message": "<span class=\"message-negative\"> Внимание</span>:Если вы включите эту функцию, вы соответственно должны настроить YAW PID соответственно. Более детально <a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\">тут</a>"
-    },
     "configHelp2": {
         "message": "Произвольное вращение платы в градусах, для разрешения установки в другом направлении / вверх ногами / повернутое и т. д. При работе с внешними датчиками используется выравнивание датчиков (Gyro, Acc, Mag), чтобы определить положение датчика независимо от ориентации платы. "
     },
@@ -3683,9 +3638,6 @@
     },
     "osdSetupUnsupportedNote1": {
         "message": "Ваш полётный контроллер не отвечает на команды OSD. Возможно, это означает, что в него не встроен Betaflight OSD."
-    },
-    "osdSetupUnsupportedNote2": {
-        "message": "Обратите внимание, что некоторые полётные контроллеры имеют встроенный <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a>, который можно прошить и сконфигурировать при помощи <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>, однако после этого MinimOSD невозможно будет сконфигурировать в этом интерфейсе."
     },
     "osdSetupProfilesTitle": {
         "message": "Номер профиля OSD",
