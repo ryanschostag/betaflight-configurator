@@ -213,7 +213,7 @@
         "message": "显示测试版本的配置程序更新提示"
     },
     "configuratorUpdateNotice": {
-        "message": "你正在使用旧版本的 <b> Betaflight配置程序 </b>。<br> 版本<b>$1</b>已经在网上发布，请到 <a href=\"$2\" target=\"_blank\">发布页面</a>下载安装最新的配置程序。<br>更新之前请关闭配置程序。"
+        "message": "您正在使用旧版本的 <b>Betaflight配置程序</b>。<br>$t(configuratorUpdateHelp.message)"
     },
     "configuratorUpdateWebsite": {
         "message": "打开版本发布网站"
@@ -600,12 +600,6 @@
     "defaultContributingHead": {
         "message": "参与开发"
     },
-    "defaultContributingText": {
-        "message": "如果你想帮助 Betaflight 变得更好，你可以：<br /><ul><li>在论坛和IRC里帮助回答其他用户的问题。</li><li> 参与固件和配置程序的开发，例如增加新功能，修复漏洞，改善代码。</li><li>测试 <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">新功能/修复</a> 并提供测试反馈。</li><li>帮助 <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">寻找问题并对功能请求提出建议</a>。</li><li>在这里 <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">帮助翻译配置程序</a>。</li><li></li></ul>"
-    },
-    "defaultFacebookText": {
-        "message": "我们还有一个 <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Facebook 小组</a>。<br />加入我们来一起讨论 Betaflight，询问配置问题，或者只是和小伙伴们闲聊。"
-    },
     "defaultChangelogHead": {
         "message": "配置程序 - 更新日志"
     },
@@ -633,12 +627,6 @@
     "defaultDocumentation": {
         "message": "Betaflight 的文档和发布说明可以在 wiki 里面找到。<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "学习 Betaflight 最好的资源是使用 Betaflight wiki，它在 <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">这里</a> 。"
-    },
-    "defaultDocumentation2": {
-        "message": "最新固件的发布信息可以在 <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">这里</a> 找到。"
-    },
     "defaultSupportHead": {
         "message": "支持"
     },
@@ -650,21 +638,6 @@
     },
     "defaultSupport": {
         "message": "需要帮助时请先搜索论坛或者咨询飞控的生产商。<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">RC Groups thread</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell Betaflight 设置教程视频</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Betaflight 开发者 Slack</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">备份和恢复功能被禁用。</span>当前飞控固件的API版本为 <span class=\"message-negative\">$1</span>，而备份和恢复功能需要版本 <span class=\"message-positive\">$2</span>。请通过 CLI 命令行手工备份，具体操作流程请参阅 Betaflight 文档。"
@@ -2159,17 +2132,8 @@
     "transponderDataHelp1": {
         "message": "仅十六进制 数字，0-9， A-F"
     },
-    "transponderHelp1": {
-        "message": "在此配置你的比赛收发器编号。注意：只有有效的编号才会被系统接受。有效的编号可以在这里获得：<a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>。"
-    },
-    "transponderHelp2": {
-        "message": "更多信息请访问 <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">aRCiTimer site</a>"
-    },
     "transponderDataHelp3": {
         "message": "选择 ERLT ID 0-63"
-    },
-    "transponderHelp3": {
-        "message": "更多信息请访问 <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">EasyRaceLapTimer site</a>"
     },
     "transponderButtonSave": {
         "message": "保存"
@@ -2795,9 +2759,6 @@
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong> 恢复/丢失通信 </strong>"
-    },
-    "firmwareFlasherRecoveryText": {
-        "message": "如果飞控板失去通信，你可以按照以下的几个步骤来恢复：<ul><li>关闭电源</li><li>打开'无重启序列'，打开‘擦除整个芯片‘选项。</li><li>短接BOOT引脚，或者按住BOOT 按键。</li><li>上电(如果操作正确，飞控的“活动”灯不会闪烁)。</li><li>如果需要请安装STM32 驱动和Zadig(参阅Betaflight手册<a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB Flashing</a> 部分 ).</li><li>关闭Befaflight软件，关闭所有Chrome应用，然后重新启动Betaflight。</li><li>释放BOOT按键（如有）。</li><li>烧写正确的固件(参照飞控厂商制定的波特率)。</li><li>断电。</li><li>移除BOOT引脚的短接。</li><li>上电(飞控“活动”灯应该会闪烁).</li><li>正常连接。</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "关闭固件烧写"
@@ -3536,6 +3497,9 @@
     "pidTuningIdleMinRpm": {
         "message": "动态怠速值 [rpm]"
     },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "设置该参数以设定基于 RPM 的电机怠速值，用以作为避免电机异步的安全措施。<br>竞速飞手可能倾向于非常好的响应力与较低的 Rate ——因此使用一个较低的动态怠速值[rpm] 与一个较高的 Dshot 怠速值往往非常有效。花式飞行与目视飞手可能会非常偏爱怠速时的较低推力，并且可能会使用较低的 Dshot 怠速值和稍高的动态怠速值[rpm] 以避免高角速率时的电机异步。请注意：动态怠速[rpm] 值应该总是低于 Dshot 怠速值。<br><br>访问此<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki</a>以获取更多信息。"
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "萌新手动模式角度限制"
     },
@@ -3546,7 +3510,7 @@
         "message": "整合式偏航"
     },
     "pidTuningIntegratedYawCaution": {
-        "message": "<span class=\"message-negative\">注意</span>:如果你启用此功能，则必须相应地调整偏航PID。更多信息在<a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\">此处</a>"
+        "message": "<span class=\"message-negative\">注意</span>: 如果你启用此功能，则必须相应地调整偏航PID。更多信息在<a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\" rel=\"noopener noreferrer\">此处</a>"
     },
     "pidTuningIntegratedYawHelp": {
         "message": "整合式偏航是一个用来解决四轴飞行器控制的基本问题的功能: 尽管俯仰和横滚轴是由推力差来控制的，但偏航不同，它是由螺旋桨直接控制的。整合式偏航通过在输出的偏航PID输入到混控器之前对其进行积分来解决这个问题。这将使PID的工作方式正常化。你现在可以像调整其他轴一样调整偏航。因为整合式偏航不需要用到I，所以需要启用绝对控制。"
@@ -3975,7 +3939,7 @@
         "message": "飞控对 OSD 命令无反应，有可能飞控不带 OSD 功能。"
     },
     "osdSetupUnsupportedNote2": {
-        "message": "注意，有的飞控带有 <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a> ，可以通过<a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>来烧录和设置，但是这样的飞控不能通过此页面来设置参数。"
+        "message": "注意，有的飞控带有 <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\" rel=\"noopener noreferrer\">MinimOSD</a> ，可以通过<a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>来烧录和设置，但是这样的飞控不能通过此页面来设置参数。"
     },
     "osdSetupProfilesTitle": {
         "message": "OSD 配置文件编号",
@@ -4962,6 +4926,13 @@
     },
     "osdWarningRssiDbm": {
         "message": "当 RSSI 分贝低于报警设置时发出警告"
+    },
+    "osdWarningTextOverCap": {
+        "message": "过放的电池容量",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningOverCap": {
+        "message": "当已消耗的毫安数超过配置的容量极限时发出警告"
     },
     "osdWarningTextUnknown": {
         "message": "未知$1"
