@@ -144,9 +144,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Értesíts a konfigurátor instabil frissítéseiről"
     },
-    "configuratorUpdateNotice": {
-        "message": "A <b>Betaflight Konfigurátor</b> elavult változatát használja.<br><b>1$</b> verzió elérhető online a <a href=\"$2\" target=\"_blank\"> Betaflight letöltések oldalán</a> a legfrissebb javításokkal és fejlesztésekkel. <br>Kérjük, zárja be a konfigurátor ablakot frissítése előtt."
-    },
     "configuratorUpdateWebsite": {
         "message": "A Legfrissebb Verzió Weboldalára"
     },
@@ -475,9 +472,6 @@
     "defaultContributingHead": {
         "message": "Hozzájárult"
     },
-    "defaultContributingText": {
-        "message": "Ha azt szeretne hozzájárulni, hogy a Betaflight még jobb legyen, több módon is segíthet, például <br/><ul><li>más felhasználók kérdéseinke megválaszolásával a fórumokon és az IRC csatornán.</li><li>Firmware és konfigurátor forráskód írásával - új funkciók, javítások, fejlesztések</li><li><a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">Új funkciók, javítások</a> tesztelésével.</li><li><a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\"> Hibák, vagy kérések</a> kommentálásával.</li><li><a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">A konfigurátor fordításával.</a></li><li></li></ul>"
-    },
     "defaultChangelogHead": {
         "message": "Konfigurátor - Változtatásnapló"
     },
@@ -502,12 +496,6 @@
     "defaultDocumentation": {
         "message": "A Betaflight dokumentáció rendelkezésre áll, a verzióinfirmációk közt és a wiki-n.<br/><br/>"
     },
-    "defaultDocumentation1": {
-        "message": "A <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">Betaflight wiki</a> nagyszerű információforrás."
-    },
-    "defaultDocumentation2": {
-        "message": "A firmware kiadási megjegyzései a <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">Githubon</a> olvashatóak."
-    },
     "defaultSupportHead": {
         "message": "Támogatás"
     },
@@ -519,21 +507,6 @@
     },
     "defaultSupport": {
         "message": "Támogatásért keresse a fórumokat és a wiki-t, vagy vegye fel a kapcsolatot a forgalmazójával.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">RC Groups thread</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell Betaflight Videói</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Betaflight fejlesztők slack csoportja</a>"
     },
     "initialSetupButtonCalibrateAccel": {
         "message": "Gyorsulásmérő kalibrálása"
