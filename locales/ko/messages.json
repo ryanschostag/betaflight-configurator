@@ -216,9 +216,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "컨피규레이터의 불안정 버전의 업데이트 정보 보기"
     },
-    "configuratorUpdateNotice": {
-        "message": "<b>베타플라이트 컨피규레이터</b>의 오래된 버전을 사용중입니다.<br>버전 <b>$1</b>이 온라인상 적용가능합니다. 오류수정과 개선된 최신 버전을 다운로드 및 설치하기 위해서 <a href=\"$2\" target=\"_blank\">릴리즈 페이지</a>를 방문하세요.<br>업데이트 하기 전에 컨피규레이터 창을 닫으십시오."
-    },
     "configuratorUpdateWebsite": {
         "message": "릴리즈 웹사이트로 가기"
     },
@@ -477,12 +474,6 @@
     "reportProblemsDialogFooter": {
         "message": "당신의 <strong>기체를 날리기 전에 이 문제들을 해결하십시오</strong>."
     },
-    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
-        "message": "<strong>가속도계는 활성화되었지만 교정되지는 않았습니다</strong>. 가속도계를 사용하려면 '$t(tabSetup.message)' 탭의 '$t(initialSetupButtonCalibrateAccel.message)'지침을 따르십시오. 가속도계가 필요한 기능(자동 레벨 모드, GPS 레스큐, ...)이 활성화되면, 가속도계가 교정될 때까지 기체의 아밍이 비활성화됩니다. 가속도계를 사용할 계획이 없는 경우 '$t(tabConfiguration.message)' 탭의 '$t(configurationSystem.message)'에서 사용하지 않도록 설정하는 것이 좋습니다."
-    },
-    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
-        "message": "<strong>선택된 모터 출력 프로토콜이 없습니다</strong>. '$t(tabConfiguration.message)' 탭의 '$t(configurationEscFeatures.message)'에서 ESC에 적합한 모터 출력 프로토콜을 선택하십시오. $t(escProtocolDisabledMessage.message)"
-    },
     "infoVersions": {
         "message": "운영-OS: <strong>{{operatingSystem}}</strong>, 크롬: <strong>{{chromeVersion}}</strong>, 컨피규레이터: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -607,17 +598,8 @@
     "defaultWelcomeHead": {
         "message": "하드웨어"
     },
-    "defaultWelcomeText": {
-        "message": "어플리케이션은 베타플라이트를 실행할 수 있는 모든 하드웨어를 지원합니다. 하드웨어 전체 목록의 플래시 탭을 확인하세요.<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">베타플라이트 블랙박스 로그 뷰어 다운로드</a><br /><br />펌웨어 소스 코드는 <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\">여기서</a> 다운받을 수 있습니다.<br /><br />최신 <b>STM USB VCP 드라이버</b>는 <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\">여기서</a> 다운받을 수 있습니다.<br />CP210x USB를 시리얼 칩으로 사용하기 위해:<br />최신 <b>CP210x 드라이버</b>를 <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\">여기서</a> 다운받을 수 있습니다.<br />최신 윈도우 USB 드라이버 설치를 위한 <b>Zadig</b>는 <a href=\"http://zadig.akeo.ie/\" target=\"_blank\">여기서</a> 다운받을 수 있습니다.<br />"
-    },
     "defaultContributingHead": {
         "message": "기여하기"
-    },
-    "defaultContributingText": {
-        "message": "베타플라이트를 더욱 효과적으로 만드는 데 도움이 되고 싶다면, 다음와 같은 다양한 방법으로 도움을 줄 수 있습니다:<br /><ul><li>포럼과 IRC의 다른 사용자의 질문에 답변할 수 있습니다.</li><li>펌웨어와 컨피규레이터에 코드를 제공할 수 있습니다 - 새로운 기능, 오류 고침, 개선 등</li><li><a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">새로운 기능/오류 고침</a>을 테스트하고 피드백을 제공할 수 있습니다.</li><li><a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">이슈와 기능 요청에 대한 제안</a>으로 도움을 줄 수 있습니다.</li><li>당신의 언어로 <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">컨피규레이터 어플리케이션을 번역</a>하여 공동작업을 할 수 있습니다. <br />한글번역(교정) 문의: JJang FPV 류장협(oto4futur@gmail.com)</li><li></li><li><strong>무료 동영상 강의</strong>:<br /><a href=\"https://www.youtube.com/playlist?list=PLp92gAniAd2r2tY1b2xGnIKLQAbPiskQI\" target=\"_blank\">JJang FPV's 베타플라이트 설정 동영상 강의(유튜브) 바로가기 <span class=\"message-negative\">클릭</span></a></li></ul>"
-    },
-    "defaultFacebookText": {
-        "message": "우리는 또한 <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">페이스북 그룹</a>이 있습니다.<br />우리와 함께 베타플라이트에 대해 이야기하고, 환경설정 질문을 하거나, 동료 파일럿과 어울릴 수 있습니다."
     },
     "defaultChangelogHead": {
         "message": "컨피규레이터 - 변경이력"
@@ -634,10 +616,6 @@
     "defaultDonateBottom": {
         "message": "<p>지속적으로 재정적으로 기여 하려는 경우 $t(patreonLink.message)에서 우리의 수호자가 되는 것을 고려하세요.</p>"
     },
-    "patreonLink": {
-        "message": "<a href=\"https://www.patreon.com/betaflight\" target=\"_blank\">Patreon</a>",
-        "description": "Patreon is name, and should not require translation"
-    },
     "defaultDonate": {
         "message": "기부"
     },
@@ -650,12 +628,6 @@
     "defaultDocumentation": {
         "message": "베타플라이트 문서는 릴리즈 노트와 위키에 적용됩니다.<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "베타플라이트 위키는 정보를 얻을 수 있는 훌륭한 자료입니다, 그것은 <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">여기서</a> 찾으실 수 있습니다."
-    },
-    "defaultDocumentation2": {
-        "message": "펌웨어에 대한 릴리즈 노트는 <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">GitHub 릴리즈 페이지</a>에서 구독하실 수 있습니다."
-    },
     "defaultSupportHead": {
         "message": "지원"
     },
@@ -667,21 +639,6 @@
     },
     "defaultSupport": {
         "message": "지원을 받으려면 먼저 포럼과 위키를 검색하거나 공급 업체에 문의하십시오.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">RC 그룹 쓰레드</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">베타플라이트 위키</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell 베타플라이트 동영상</a><br /><a href=\"https://www.youtube.com/playlist?list=PLp92gAniAd2r2tY1b2xGnIKLQAbPiskQI\" target=\"_blank\">JJang FPV's 베타플라이트 설정 동영상 강의(유튜브)</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">베타플라이트 개발 슬랙</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">백업과 복구 기능이 비활성화되었습니다.</span> API 버전  <span class=\"message-negative\">$1</span>에 맞는 펌웨어여야 합니다, 백업과 복구 절차는 <span class=\"message-positive\">$2</span>를 참고하십시오. 당신의 설정을 CLI를 통해 백업하세요, 필요한 경우 절차에 대한 베타플라이트 문서를 확인하세요."
@@ -2195,17 +2152,8 @@
     "transponderDataHelp1": {
         "message": "16 진수 만, 0-9, A-F"
     },
-    "transponderHelp1": {
-        "message": "여기서 트랜스폰더 코드를 환경설정하십시오. 노트: 유효한 코드만 레이스 타이밍 시스템에 의해 인식됩니다. 유효한 트랜스폰더 코드는 <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>에서 얻을 수 있습니다."
-    },
-    "transponderHelp2": {
-        "message": "자세한 내용은 <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\"> aRCiTimer 사이트</a>를 방문하십시오."
-    },
     "transponderDataHelp3": {
         "message": "ERLT ID 0-63 선택"
-    },
-    "transponderHelp3": {
-        "message": "자세한 내용은 <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">EasyRaceLapTimer 사이트</a>를 방문하십시오."
     },
     "transponderButtonSave": {
         "message": "저장"
@@ -2831,9 +2779,6 @@
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>통신 복구 / 손실</strong>"
-    },
-    "firmwareFlasherRecoveryText": {
-        "message": "보드와의 통신이 끊어진 경우 다음 단계에 따라 통신을 복구하십시오: <ul><li>전원을 끄십시오.</li><li>'재부팅 절차 없음', '칩 전부 삭제'를 활성화 하십시오.</li><li>부트 핀을 점프하거나 부트 버튼을 누르고 계십시오.</li><li>전원을 켜십시오.(제대로 완료되면 작동 중인 LED가 깜박거리지 않습니다)</li><li>필요한 경우 STM32 드라이버와 Zadig를 설치하십시오. (베타플라이트 매뉴얼의 <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">>USB 플래싱</a> 섹션을 보십시오.)</li><li>컨피규레이터를 닫고, 모든 실행 중인 크롬 인스턴트, 크롬 앱을 닫으십시오. 컨피규레이터를 다시 시작하십시오.</li><li>FC에 BOOT 버튼이 있으면 해제하십시오.</li><li>올바른 펌웨어로 플래시 하십시오. (당신의 FC 매뉴얼에 명시된 경우 수동 전송 속도를 사용하여).</li><li>전원을 끄십시오.</li><li>BOOT 점퍼를 제거하십시오.</li><li>전원을 켜십시오. (작동 중인 LED가 깜박입니다.).</li><li>정상적으로 연결하십시오.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "펌웨어 플래시 도구 나가기"
@@ -3590,9 +3535,6 @@
     "pidTuningIdleMinRpm": {
         "message": "다이나믹 아이들 값 [rpm]"
     },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "모터 디싱크 방지 안전망으로 rpm 기반의 기저값을 제공하려면 이 매개변수를 설정하십시오.<br>레이셔는 매우 좋은 반응과 낮은 레이트를 선호할 수 있습니다. 따라서 낮은 다이나믹 아이들[rpm]과 높은 디샷 아이들 값이 유용할 수 있습니다. 프리스타일러와 LOS 조종사들은 아이들 상태에서 매우 낮은 추력을 높이 평가하며 높은 레이트에서 디싱크를 피하기 위해 약간 더 많은 다이나믹 아이들[rpm]을 사용하면서 낮은 디샷 아이들 값을 사용하기를 원할 수 있습니다. 다이나믹 아이들[rpm] 값은 항상 디샷 아이들 값보다 낮아야 합니다.<br><br>더 자세한 내용을 보려면 이 <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\">위키</a> 항목을 방문하십시오."
-    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "아크로 트레이너 앵글 제한"
     },
@@ -3601,9 +3543,6 @@
     },
     "pidTuningIntegratedYaw": {
         "message": "통합 요(Yaw)"
-    },
-    "pidTuningIntegratedYawCaution": {
-        "message": "<span class=\"message-negative\">주의</span>:이 기능을 사용하는 경우 그에 따라 요 PID를 조정해야 합니다. 더 자세한 정보는 <a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\">여기</a>에서 확인하세요."
     },
     "pidTuningIntegratedYawHelp": {
         "message": "통합 요는 쿼드 제어의 근본적인 문제를 해결하기 위한 기능입니다: 피치와 롤 축이 프롭이 만들어내는 추력 차이로 제어가 되는 반면에 요는 다릅니다. 통합 요는 요 pid의 출력값을 믹서에 적용하기 전에 통합함으로써 이를 해결합니다. 이것은 pid가 일하는 방식을 정상화합니다. 이제 다른 축과 같이 설정할 수 있습니다. 통합 요와 함께 I가 필요하지 않기 때문에 절대 제어의 사용을 필요로 합니다."
@@ -4036,9 +3975,6 @@
     },
     "osdSetupUnsupportedNote1": {
         "message": "비행 컨트롤러가 OSD 명령에 응답하지 않습니다. 이는 통합된 BetaFlight OSD가 없다는 것을 의미합니다."
-    },
-    "osdSetupUnsupportedNote2": {
-        "message": "일부 비행 컨트롤러는 온보드 <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a>를 가지고 있습니다. 이는 <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>를 통해 플래시하고 설정할 수 있습니다. 그러나 MinimOSD는 이 인터페이스를 통해서 설정할수 없습니다."
     },
     "osdSetupProfilesTitle": {
         "message": "OSD 프로파일 번호",
