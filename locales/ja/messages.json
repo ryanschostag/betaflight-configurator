@@ -148,9 +148,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "未検証バージョンの更新通知を表示"
     },
-    "configuratorUpdateNotice": {
-        "message": "お使いの<b>Betaflight Configurator</b>は旧バージョンです。<br>Version <b>$1</b> が利用可能です。<a href=\"$2\" target=\"_blank\">リリースページ</a>から修正・機能向上した最新版をダウンロードしてインストールしてください。<br>注: 更新する前にConfiguratorを閉じてください。"
-    },
     "configuratorUpdateWebsite": {
         "message": "リリースサイトに移動"
     },
@@ -477,7 +474,7 @@
         "message": "フライトコントローラ情報 ID: <strong>$1</strong> バージョン: <strong>$2</strong>"
     },
     "versionLabelTarget": {
-        "message": "対象"
+        "message": "ターゲット"
     },
     "versionLabelFirmware": {
         "message": "ファーム"
@@ -533,17 +530,8 @@
     "defaultWelcomeHead": {
         "message": "ハードウェア"
     },
-    "defaultWelcomeText": {
-        "message": "このアプリケーションは、Betaflightを実行するすべてのハードウェアをサポートします。対応するハードウェアの完全なリストについては、 [ファームフラッシャー] タブをご確認ください。<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\">Betaflight Blackbox Log Viewerをダウンロード</a><br /><br />ファームウェアのソースコードのダウンロード先は<a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\">こちら</a><br /><br />最新の<b>STM USB VCPドライバ</b>のダウンロード先は<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\">こちら</a><br />CP210X USBシリアルチップを使用するレガシーハードウェアの場合:<br />最新の<b>CP210Xドライバ</b>のダウンロード先は<a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\">こちら</a><br />最新のWindows用 <b>Zadig</b> USBドライバインストーラのダウンロード先は<a href=\"http://zadig.akeo.ie/\" target=\"_blank\">こちら</a><br />"
-    },
     "defaultContributingHead": {
         "message": "開発への協力・貢献"
-    },
-    "defaultContributingText": {
-        "message": "Betaflightを今後より良くするためにご協力いただける場合、以下を含むさまざまな方法でお手伝いしていただけます:<br /><ul><li>\nフォーラムやIRCで他のユーザの質問に答える</li><li>\nファームウェアとConfiguratorへのコードの提供 - 新機能や修正、改良</li><li>\n<a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">新機能のフィックス</a>、テストとフィードバックの提供</li><li>\n<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">問題のヘルプと新機能リクエスト</a>へのコメント協力</li><li>\n<a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">Betaflight Configuratorを母国語へ翻訳すること</a>に協力してみましょう。</li><li></li></ul>"
-    },
-    "defaultFacebookText": {
-        "message": "私たちは<a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">Facebookグループ</a>も運営しています。<br />私たちと一緒にBetaflightについて語り合い、設定に関する質問をしたり、パイロット同士で交流してみましょう。"
     },
     "defaultChangelogHead": {
         "message": "Configurator - 変更履歴"
@@ -572,12 +560,6 @@
     "defaultDocumentation": {
         "message": "Betaflightドキュメントは、リリースノートおよび wiki にてご利用いただけます。<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "Betaflight wiki はすばらしい情報リソースを<a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">こちら</a>で検索・確認することができます。"
-    },
-    "defaultDocumentation2": {
-        "message": "ファームウェア リリースノートは、GitHub リリースページの<a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">こちら</a>で確認いただけます。"
-    },
     "defaultSupportHead": {
         "message": "サポート"
     },
@@ -589,21 +571,6 @@
     },
     "defaultSupport": {
         "message": "サポートに関しては、最初に検索フォーラムやwiki、もしくはベンダーにお問い合わせください。<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">RC Groups スレッド</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell Betaflight Videos</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Betaflight devs on slack</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">バックアップと復元の機能が無効です。</span>ファームウェアのAPIバージョンは<span class=\"message-negative\">$1</span>ですが、バックアップと復元には<span class=\"message-positive\">$2</span>が必要です。バックアップにはCLIをご利用ください。方法についてはBetaflightドキュメントを参照してください。"
@@ -1153,6 +1120,12 @@
     "configurationThrottleMinimumCommandHelp": {
         "message": "これは機体がディスアームされたときにESCに送信される値です。この値をモーターを停止させる値に設定してください。(殆どのESCは1000)"
     },
+    "configurationEscProtocolDisabled": {
+        "message": "ESCに適したモーター出力プロトコルを選択してください。$t(escProtocolDisabledMessage.message)"
+    },
+    "escProtocolDisabledMessage": {
+        "message": "<strong>注意:</strong> ESCでサポートされないモーター出力プロトコルを選択すると、<strong>バッテリー接続後すぐにESCがスピンアップする場合があります</strong>。このため<strong>モーター出力プロトコルを変更後は、初めてバッテリーを接続する前に必ずプロペラを取り外してください</strong>。"
+    },
     "configurationDshotBeeper": {
         "message": "Dshotビーコン設定"
     },
@@ -1271,7 +1244,7 @@
         "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
     },
     "configurationLoopTimeHelp": {
-        "message": "<strong>注意:</strong> FCがこの速度で動作するか確認してください！CPUとサイクル時間の安定度を確認してください。この変更はPIDの再調整を必要とするかもしれません。TIP: パフォーマンスを上げるためには加速度センサや他センサを無効にします。"
+        "message": "<strong>注意:</strong> FCがこの速度で動作するか確認してください！CPUとサイクル時間の安定度を確認してください。この変更はPIDの再調整を必要とするかもしれません。TIP: パフォーマンスを上げるためには加速度センサーや他センサーを無効にします。"
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1632,6 +1605,9 @@
     },
     "pidTuningDerivative": {
         "message": "Derivative"
+    },
+    "pidTuningDMax": {
+        "message": "D値最大"
     },
     "pidTuningDerivativeHelp": {
         "message": "機体のあらゆる動きに対する減衰の強さを制御します。スティックの動きに対し、命令によりD値を減衰させます。外部からの影響 (プロップウォッシュまたは突風) の場合、D値にてその影響を減少させることができます。<br><br>ゲインを高くすると減衰が大きくなり、P値およびFF値によるオーバーシュートが減少します。<br>ただし、D値はジャイロにおける高周波振動に非常に敏感です。(ノイズ | \n10倍から100倍へ拡大)<br><br>D値ゲインが高すぎる場合、またはジャイロノイズが適切にフィルター処理されていない場合、高周波ノイズによりモーターが発熱し、モーターが焼損する可能性があります。(フィルタータブ参照) <br><br>D値は自動車のサスペンションのショックアブソーバーとお考えください。ただし高周波ジャイロノイズを増幅させてしまうという、固有のマイナス特性があります。",
@@ -2108,17 +2084,8 @@
     "transponderDataHelp1": {
         "message": "16進数 0〜9、A〜F"
     },
-    "transponderHelp1": {
-        "message": "ここにトランスポンダーコードを設定します。注: レースタイミングシステムでは有効なコードのみが認識されます。有効なトランスポンダーコードは、 <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a> から入手できます。"
-    },
-    "transponderHelp2": {
-        "message": "詳細については <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">aRCiTimer サイト</a> をご覧ください。"
-    },
     "transponderDataHelp3": {
         "message": "ERLT ID 0～63 を選択します。"
-    },
-    "transponderHelp3": {
-        "message": "詳細については <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">aRCiTimer site</a> をご覧ください。"
     },
     "transponderButtonSave": {
         "message": "保存"
@@ -2568,6 +2535,9 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "リリース情報"
     },
+    "firmwareFlasherReleaseManufacturer": {
+        "message": "製造元 ID:"
+    },
     "firmwareFlasherReleaseVersion": {
         "message": "バージョン:"
     },
@@ -2581,10 +2551,19 @@
         "message": "日付:"
     },
     "firmwareFlasherReleaseTarget": {
-        "message": "対象:"
+        "message": "ターゲット:"
     },
     "firmwareFlasherReleaseFile": {
         "message": "Binary:"
+    },
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "Unified Target:"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "設定表示."
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "日時:"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "手動でダウンロードしてください。"
@@ -2732,9 +2711,6 @@
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>リカバリー / 通信ロスト</strong>"
-    },
-    "firmwareFlasherRecoveryText": {
-        "message": "FCボードとの通信が切断された場合は、次の手順に従って通信を復元してください: <ul><li>電源をオフします。</li><li>[再起動シーケンスなし] を有効にし [チップメモリの完全消去] を有効にします。</li><li>BOOTピンをジャンパするか、またはBOOTボタンを押し続けます。</li><li>電源をオンします。 (正しく行われればアクティビティLEDは点滅しません) </li><li>必要に応じて、全てのSTM32ドライバとZadigをインストールします。 (Betaflightマニュアルの [<a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\">USB Flashing</a>] 章を参照) </li><li>Configuratorを閉じ、全てのChromeアプリケーションを終了し、Configuratorを再起動します。</li><li>FCのBOOTボタン1つだけであれば、BOOTボタンを放してください。</li><li>正常なファームウェアをフラッシュしてください。 (FCのマニュアルで指定されている場合は手動で伝送速度を調整してください) </li><li>電源をオフします。</li><li>BOOTピンのジャンパを取り外します。</li><li>電源をオンします。 (アクティビティLEDが点滅するはずです) </li><li>再度、通常通り接続してください。</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "ファームフラッシャーより退避"
@@ -3473,6 +3449,9 @@
         "message": "カットオフ",
         "description": "Cutoff value of the I Term Relax"
     },
+    "pidTuningItermRelaxCutoffHelp": {
+        "message": "低値は、低性能機体でのフリップ後におけるバウンスバックを抑制し、高値は、レースでの高速ターン精度を高めます。<br>レース用機体では30〜40、レスポンスの良いフリースタイル機体では15、重量のあるフリースタイル機体では10、Xクラスでは3〜5に設定します。"
+    },
     "pidTuningAbsoluteControlGain": {
         "message": "アブソリュート コントロール"
     },
@@ -3496,9 +3475,6 @@
     },
     "pidTuningIntegratedYaw": {
         "message": "統合ヨー制御"
-    },
-    "pidTuningIntegratedYawCaution": {
-        "message": "<span class=\"message-negative\">注意</span>: この機能を有効にした場合は、それに応じてヨーのPIDを調整する必要があります。詳しくは<a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\">こちら</a>"
     },
     "pidTuningIntegratedYawHelp": {
         "message": "統合ヨー制御は、機体コントロールの基本的な問題を修正する機能です。ピッチとロールは、プロペラがを生成する推力差によって制御されます。統合ヨー制御はミキサーにそれらの値を適用する前にヨーのPID出力を積分することによって値を固定します。これらはPID機能を正常化します。これにより他のP値D値と同様に調整ができます。統合ヨー制御には必要ないので絶対制御を使用する必要があります。"
@@ -3931,9 +3907,6 @@
     },
     "osdSetupUnsupportedNote1": {
         "message": "お使いのフライトコントローラはBetaFlight OSDに対応していないようです。"
-    },
-    "osdSetupUnsupportedNote2": {
-        "message": "いくつかのフライトコントローラにはオンボード<a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a>があり、これを<a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>で設定および書き込みができますが、MinimOSDはこのインターフェイスでは設定できません。"
     },
     "osdSetupProfilesTitle": {
         "message": "OSDプロファイル番号",
