@@ -118,9 +118,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Tampilkan pemberitahuan pembaruan untuk versi yang tidak stabil dari konfigurator"
     },
-    "configuratorUpdateNotice": {
-        "message": "Anda sedang menggunakan sebuah versi lama dari <b>Betaflight Configurator</b>.<br>Versi <b>$1</b> tersedia secara online, silahkan kunjungi <a href=\"$2\" target=\"_blank\">halaman rilis</a> untuk mengunduh dan memasang versi terbaru dengan perbaikan dan penyempurnaan.<br>Silahkan tutup jendela Betaflight sebelum memperbarui."
-    },
     "configuratorUpdateWebsite": {
         "message": "Kunjungi situs Rilis"
     },
@@ -464,12 +461,6 @@
     "defaultContributingHead": {
         "message": "Berkontribusi"
     },
-    "defaultContributingText": {
-        "message": "Jika anda ingin menjadikan Betaflight jadi lebih baik, anda bisa membantu dengan bermacam cara, termasuk:<br/><ul> <li>Menjawab pertanyaan pengguna lainnya di forum dan IRC.</li> <li>Menyumbang kode ke firmware dan configurator - fitur baru, perbaikan, peningkatan</li><li>Menguji<a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\">fitur baru/perbaikan</a> dan memberikan umpan balik.</li><li>Membantu dengan <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\">Menerbitkan dan memberikan komentar pada permintaan fitur</a>.</li><li>Berkolaborasi dengan <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\">menerjemahkan aplikasi configurasi</a> ke bahasa anda.</li><li></li></ul>"
-    },
-    "defaultFacebookText": {
-        "message": "Kami juga memiliki <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\">grup Facebook</a>.<br />Bergabunglah bersama kami sebagai wadah untuk membahas Betaflight, cara konfigurasi, atau hanya bergaul dengan sesama pilot."
-    },
     "defaultChangelogHead": {
         "message": "Configurator - Changelog"
     },
@@ -491,12 +482,6 @@
     "defaultDocumentation": {
         "message": "Dokumentasi Betaflight tersedia dalam catatan rilis dan wiki.<br /><br />"
     },
-    "defaultDocumentation1": {
-        "message": "Wiki Betaflight merupakan sumber informasi yang lengkap, bisa ditemukan <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\">di sini</a>."
-    },
-    "defaultDocumentation2": {
-        "message": "Catatan rilis untuk firmware bisa di baca di halaman rilis GitHub, <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">di sini</a>."
-    },
     "defaultSupportHead": {
         "message": "Dukungan"
     },
@@ -508,21 +493,6 @@
     },
     "defaultSupport": {
         "message": "Untuk dukungan silahkan cari di forum dan wiki terlebih dahulu atau hubungi vendor anda.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">Pembahasan di RC Groups</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Wiki Betaflight</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\"> Video Betaflight oleh Joshua Bardwell</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
-    },
-    "defaultSupport5": {
-        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\">Betaflight devs di slack</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">Fungsi Backup dan Restore nonaktif.</span> Anda memiliki firmware dengan versi API <span class=\"message-negative\">$1</span>, backup dan restore membutuhkan versi <span class=\"message-positive\">$2</span>. Backup pengaturan anda melalui CLI, lihat dokumentasi Betaflight untuk mengetahui caranya."
@@ -1699,17 +1669,8 @@
     "transponderDataHelp1": {
         "message": "Digit heksadesimal saja, 0-9, A-F"
     },
-    "transponderHelp1": {
-        "message": "Mengkonfigurasi kode transponder di sini. Catatan: Hanya kode valid yg akan masuk dalam sistem waktu lomba. Kode transponder yb berlaku dapat diperoleh dari <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>."
-    },
-    "transponderHelp2": {
-        "message": "Untuk informasi lebih lanjut silahkan kunjungi <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">situs aRCiTimer</a>"
-    },
     "transponderDataHelp3": {
         "message": "Pilih ID ERLT 0-63"
-    },
-    "transponderHelp3": {
-        "message": "Untuk informasi lebih lanjut silahkan kunjungi <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">EasyRaceLapTimer situs</a>"
     },
     "transponderButtonSave": {
         "message": "Simpan"
@@ -2250,9 +2211,6 @@
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Pemulihan / Komunikasi terputus</strong>"
-    },
-    "firmwareFlasherRecoveryText": {
-        "message": "Jika komunikasi terputus dengan FC anda, ikuti cara ini untuk memulihkan komunikasi: <ul><li>Matikan daya</li><li>Aktifkan 'Tanpa urutan reboot', aktifkan 'Penghapusan chip penuh'.</li><li>Pasang pin jumper BOOT atau tahan tombol BOOT.</li><li> Hidupkan daya (LED aktivitas TIDAK akan menyala jika di lakukan dengan benar).</li><li> Pasang semua driver STM32 dan Zadig jika diperlukan (lihat <a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\" target=\"_blank\">USB Flashing</a> bagian dari manual Betaflight).</li><li>Tutup configurator, Tutup semua proses Crome yang dijalankan, Tutup semua aplikasi Chrome, Restart Configurator.</li><li> Lepas tombol BOOT jika FC anda memilikinya.</li><li>Flash dengan firmware yang cocok (menggunakan nilai baud manual jika ditentukan dalam manual FC anda).</li><li>Matikan daya.</li><li>Lepas jumper BOOT.</li><li>Hidupkan daya (LED aktivitas seharusnya berkedip).</li><li>Hubungkan dengan normal.</li></ul>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Tinggalkan Flasher Firmware"
@@ -3125,9 +3083,6 @@
     },
     "osdSetupUnsupportedNote1": {
         "message": "Flight controller anda tidak menanggapi ke perintah OSD. Mungkin FC anda tidak memiliki OSD Betaflight."
-    },
-    "osdSetupUnsupportedNote2": {
-        "message": "Perhatikan bahwa beberapa flight controller sudah terpasang <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\">MinimOSD</a> yang dapat dinyalakan dan dikonfigurasi dengan <a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target = '_ blank'>scarab-osd</a>, namun MinimOSD tidak dapat di konfigurasi melalui antarmuka ini."
     },
     "osdSetupElementsTitle": {
         "message": "Elemen"
