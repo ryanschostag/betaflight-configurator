@@ -115,9 +115,6 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Vis opdateringsadviseringer for ustabile versioner af konfiguratoren"
     },
-    "configuratorUpdateNotice": {
-        "message": "Du benytter en forældet version af <b>Betaflight Configurator</b>.<br>Version <b>$1</b> er tilgængelig online, så besøg <a href=\"$2\" target=\"_blank\">udgivelsessiden</a> for at downloade og installere den seneste version med fejlrettelser og forbedringer.<br>Luk konfiguratorvinduet inden opdatering."
-    },
     "configuratorUpdateWebsite": {
         "message": "Åbn udgivelseswebsted"
     },
@@ -407,9 +404,6 @@
     "defaultSponsorsHead": {
         "message": "Sponsorer"
     },
-    "defaultDocumentation2": {
-        "message": "Udgivelsesnotaterne til firmwaren kan læses på GitHub-udgivelsessiden <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\">hér</a>."
-    },
     "defaultSupportHead": {
         "message": "Support"
     },
@@ -421,18 +415,6 @@
     },
     "defaultSupport": {
         "message": "For support bedes du først søge i fora og wiki eller kontakte sælgeren.<br /><br />"
-    },
-    "defaultSupport1": {
-        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\">RC-gruppetråde</a>"
-    },
-    "defaultSupport2": {
-        "message": "<a href=\"http://betaflight.info\" target=\"_blank\">Betaflight Wiki</a>"
-    },
-    "defaultSupport3": {
-        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell Betaflight-videoer</a>"
-    },
-    "defaultSupport4": {
-        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\">GitHub</a>"
     },
     "initialSetupCalibrateMagText": {
         "message": "Bevæg indenfor 30 sek. multirotoren mindst <strong>360</strong> grader i alle dens rotationsakser"
@@ -1689,17 +1671,8 @@
     "transponderDataHelp1": {
         "message": "Kun hexadecimale cifre, 0-9, A-F"
     },
-    "transponderHelp1": {
-        "message": "Opsæt din transponderkode hér. Bemærk: Kun gyldige koder bliver genkendt af konkurrencetidtagningssystemer. Gyldige transponderkoder kan fås fra <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\">Seriously Pro</a>."
-    },
-    "transponderHelp2": {
-        "message": "For yderligere information besøg <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\">aRCiTimer-webstedet</a>"
-    },
     "transponderDataHelp3": {
         "message": "Vælg ERLT ID 0-63"
-    },
-    "transponderHelp3": {
-        "message": "For yderligere information besøg <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\">EasyRaceLapTimer-webstedet</a>"
     },
     "transponderButtonSave": {
         "message": "Gem"
