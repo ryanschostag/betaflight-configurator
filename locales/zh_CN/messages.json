@@ -662,7 +662,7 @@
         "message": "支持"
     },
     "defaultSupportSubline1": {
-        "message": "支持来源"
+        "message": "支持资源"
     },
     "defaultSupportSubline2": {
         "message": "开发者"
@@ -1552,7 +1552,7 @@
         "description": "Anti Gravity Threshold Parameter"
     },
     "pidTuningAntiGravityHelp": {
-        "message": "当检测到快速油门变化时反重力功能将增大I term。较高的增益值将在您快速抽动油门时，提供更好稳定性和更强的姿态锁定能力。"
+        "message": "当检测到油门快速变化时反重力功能将增大 I term。较高的增益值将在您快速抖动油门时，提供更好的稳定性和更强的姿态锁定能力。"
     },
     "pidTuningDMin": {
         "message": "D Min",
@@ -1570,11 +1570,11 @@
         "description": "Advance of the D Min feature"
     },
     "pidTuningDMinFeatureHelp": {
-        "message": "D Min 提供了一个方法，使飞机在正常飞行中可以维持一个较低的 D 值，又可以在如翻转等快速动作时提高到一个较高的值来抑制过冲。它也会在发生洗桨时提高D值。调整增益(Gain) 可以调整 D 到达最高值的速度，同时它基于陀螺仪数据来确定快速移动与洗桨事件。超前(Advance) 通过使用设定点而不是陀螺仪来判定快速移动的方法来更早地提高 D 值。",
+        "message": "D Min 提供了一个方法，使飞机在正常飞行中可以维持一个较低的 D 值，又可以在如翻转等快速动作时提高到一个较高的值来抑制过冲。它也会在发生洗桨时提高 D 值。调整增益(Gain) 可以调整 D 到达最高值的速度，同时它基于陀螺仪数据来确定快速移动与洗桨事件。超前(Advance) 通过使用设定点而不是陀螺仪来判定快速移动的方法来更早地提高 D 值。",
         "description": "D Min feature helpicon message"
     },
     "pidTuningDMinHelp": {
-        "message": "控制正常前进飞行中的阻尼(D-term)。<br>当 D_Min 开启后，D 增益的有效值将在飞行中实时变化。在正常前进飞行中，有效值将是下方所设置的 D_min 增益。当发生快速移动或洗桨时，D 增益的有效值将会提高至左侧指定的 D 值。<br><br>当出现非常迅速的摇杆输入时，D 增益将升高至最大值，但在洗桨时仅会升高至一部分。<br>调整 D_Min 增益和超前以控制增益增大的敏感性和时机。",
+        "message": "控制正常前进飞行中的阻尼(D-term)。<br>当 D Min 开启后，D 增益的有效值将在飞行中实时变化。在正常前进飞行中，有效值将是下方所设置的 D_min 增益。当发生快速移动或洗桨时，D 增益的有效值将会提高至左侧指定的 D 值。<br><br>当出现非常迅速的摇杆输入时，D 增益将升高至最大值，但在洗桨时仅会升高至一部分。<br>调整 D Min 增益和超前以控制增益增大的敏感性和时机。",
         "description": "D Min helpicon message on PID table titlebar"
     },
     "pidTuningPidSettings": {
@@ -1594,7 +1594,7 @@
         "description": "Auto Smoothness parameter for RC smoothing"
     },
     "receiverRcSmoothingAutoSmoothnessHelp": {
-        "message": "调整自动平滑计算，10 是默认的平滑/延迟比。增加数字将加大对RC输入信号的平滑度，但同时增加延迟。对于RC链接并不可靠的情况和电影式飞行来说这可能非常有用。<br>当数字接近50时请小心，输入延迟将会变得非常明显。<br>当遥控器与接收机都上电时，可以使用CLI命令 rc_smoothing_info 查看自动计算的 RC平滑的截止频率。 ",
+        "message": "调整自动平滑计算，10 是默认的平滑/延迟比。增加数字将加大对 RC 输入信号的平滑度，但同时会增加延迟。对于 RC 链接并不可靠的情况和电影式飞行来说这可能非常有用。<br>当数字接近 50 时请小心，输入延迟将会变得非常明显。<br>当遥控器与接收机都上电时，可以使用 CLI 命令 rc_smoothing_info 查看自动计算的 RC 平滑的截止频率。 ",
         "description": "Auto Smoothness parameter help message"
     },
     "receiverRcDerivativeTypeSelect": {
@@ -1628,10 +1628,10 @@
         "message": "用于输入信号的滤波方法的类型。大多数用户应该使用默认的 \"BIQUAD\" ，因为它在平滑和延迟之间提供了良好的平衡。\"PT1\" 稍微减少了延迟，但提供的平滑程度也较低。"
     },
     "receiverRcSmoothingInputManual": {
-        "message": "选择输入滤波器截止频率是自动计算的（推荐）还是由用户手动选择。对于可能在飞行中发生变化的接收机协议，比如Crossfire，不建议使用 \"手动\"。"
+        "message": "用于选择输入信号滤波器的截止频率是自动计算的（推荐使用这个）还是由用户手动选择。对于可能在飞行中发生变化的接收机协议，比如 Crossfire，不建议使用 \"手动\"。"
     },
     "receiverRcSmoothingDerivativeManual": {
-        "message": "选择设定点导数滤波器截止频率是自动计算的（推荐）还是由用户手动选择。对于可能在飞行中发生变化的接收机协议，比如Crossfire，不建议使用 \"手动\"。"
+        "message": "用于选择设定点导数滤波器的截止频率是自动计算的（推荐使用这个）还是由用户手动选择。对于可能在飞行中发生变化的接收机协议，比如 Crossfire，不建议使用 \"手动\"。"
     },
     "receiverRcSmoothingInputHz": {
         "message": "输入截止频率"
@@ -1658,10 +1658,10 @@
         "message": "RC 插值"
     },
     "receiverRcInterpolationHelp": {
-        "message": "由于遥控设备运行速度没有飞控PID运行速度快，在PID 更新的时候有可能产生遥控信号空当。 打开遥控信号插值信号会在无遥控信号的空档插入遥控信号输入，会得到更加顺滑的P和D控制。"
+        "message": "RC 系统的运行速率没有飞控 PID 运行速率那么快。这意味着 RC 信号流传入 PID 环路时会存在信号真空期。开启 RC 插值会在无 RC 信号的真空期内对其进行插值处理，这会使 P 和 D 表现得更加顺滑。"
     },
     "receiverRcInterpolationIntervalHelp": {
-        "message": "手工设置遥控信号插值间隔 [毫秒]"
+        "message": "手动设置 RC 插值间隔 [毫秒]"
     },
     "receiverRcInterpolationOff": {
         "message": "关闭"
@@ -1679,7 +1679,7 @@
         "message": "手动"
     },
     "receiverRcInterpolationInterval": {
-        "message": "遥控信号插值间隙[毫秒]"
+        "message": "RC 插值间隙 [毫秒]"
     },
     "pidTuningFeedforwardTransition": {
         "message": "前馈过渡阈值"
@@ -1694,10 +1694,10 @@
         "message": "D 设定点权重"
     },
     "pidTuningDtermSetpointTransitionHelp": {
-        "message": "通过这个参数， D 设定点权重可以被降低到接近摇杆中点，使翻滚动作的结束更平滑一些。<br> 该值表示摇杆偏移量：0代表摇杆居中，1代表摇杆打满。当摇杆实际位置大于该值时，设定点权重保持在用户设定的数字不变。当摇杆实际位置小于该值时，设定点权重会按比例下降，在摇杆居中时降低到0。<br> 设置为1可以获得最平滑的效果，而设置为0将保持设定点权重在全程都保持在用户设定的数字不变。"
+        "message": "通过这个参数， D 设定点权重可以被降低到接近摇杆中点，使翻滚动作结束得更平滑一些。<br> 该值表示摇杆偏移量：0代表摇杆居中，1代表摇杆打满。当摇杆实际位置大于该值时，设定点权重保持在用户设定的数字不变。当摇杆实际位置小于该值时，设定点权重会按比例下降，在摇杆居中时降低到0。<br> 设置为1可以获得最平滑的效果，而设置为0将保持设定点权重在全程都保持在用户设定的数字不变。"
     },
     "pidTuningDtermSetpointHelp": {
-        "message": "该参数在 derivative 范围里影响摇杆的“加速”效果。<br> 0等同于老的D只追踪陀螺仪的“测量”方法，1等同于同等追踪陀螺仪和摇杆的”误差“方法。<br> 较低的值提供较为平滑缓和的摇杆相应，较高的值则使摇杆的反应（加速）更迅猛。<br> 注意使用较高值时，建议同时启用RC插值以避免信号噪声。"
+        "message": "该参数在导数范围里影响摇杆的“加速”效果。<br> 0等同于旧的 D 只追踪陀螺仪的“测量”方法，1等同于同时追踪陀螺仪和摇杆的”误差“方法。<br> 较低的值提供较为平滑缓和的摇杆响应，较高的值则使摇杆的反应（加速）更迅猛。<br> 注意使用较高值时，建议同时启用 RC 插值以避免信号噪声。"
     },
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message):</strong> 强烈不建议将D设定点转换设置为0到0.1之间的值。这样做可能会导致不稳定，以及降低摇杆在穿过中点时的响应速度。</span>"
@@ -1734,7 +1734,7 @@
         "description": "Feedforward Term helpicon message on PID table titlebar"
     },
     "pidTuningMaxRateWarning": {
-        "message": "<span class=\"message-negative\"><b>警告:</b></span> 非常高的 rate 可能会导致突然减速时发生电机丢步。"
+        "message": "<span class=\"message-negative\"><b>警告:</b></span> 非常高的 rate 可能会导致突然减速时发生电机异步。"
     },
     "pidTuningRcRate": {
         "message": "RC Rate"
@@ -1752,7 +1752,7 @@
         "message": "Rates 预览"
     },
     "pidTuningRatesTuningHelp": {
-        "message": "<b>Rate 与 Expo</b>: 根据这些参数来决定你的操控手感。使用图形和实时3D模型来找到您最喜欢的rate设定。"
+        "message": "<b>Rate 与 Expo</b>: 根据这些参数来决定你的操控手感。使用图形和实时3D模型来找到您最喜欢的 rate 设定。"
     },
     "pidTuningRcExpo": {
         "message": "RC Expo"
@@ -1782,7 +1782,7 @@
         "message": "截断"
     },
     "pidTuningThrottleLimitTypeTip": {
-        "message": "选择油门限制的类型。 <b>关闭</b> 将禁用此功能； <b>比例</b>将使用全杆行程来映射从0到指定百分比的油门； <b>截断</b> 将设置一个最大油门百分比，该百分比以上的杆位行程将不再起作用。"
+        "message": "选择油门限制的类型。<b>关闭</b> 将禁用此功能；<b>比例</b> 将使用全杆行程来映射从0到指定百分比的油门；<b>截断</b> 将设置一个最大油门百分比，该百分比以上的杆位行程将不再起作用。"
     },
     "pidTuningThrottleLimitPercentTip": {
         "message": "设置所需的限制百分比。设置为100% 将禁用该功能。"
@@ -4647,7 +4647,7 @@
         "description": "One of the elements of the OSD"
     },
     "osdDescElementRcChannels": {
-        "message": "最多显示4个通道的值。通道须由CLI变量 ‘osd_rcchannels’ 来指定"
+        "message": "最多显示4个通道的值。通道须由 CLI 变量 ‘osd_rcchannels’ 来指定"
     },
     "osdTextElementCameraFrame": {
         "message": "摄像头画面",
@@ -4872,7 +4872,7 @@
         "message": "来源："
     },
     "osdTimerSourceTooltip": {
-        "message": "选择时钟源"
+        "message": "选择时钟源，这控制了计时器测量的持续时间/事件"
     },
     "osdTimerSourceOptionOnTime": {
         "message": "总上电时间",
