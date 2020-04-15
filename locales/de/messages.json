@@ -151,6 +151,12 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Zeige Updateinformationen für experimentelle Versionen des Konfigurators"
     },
+    "configuratorUpdateNotice": {
+        "message": "Sie verwenden eine veraltete Version des <b>Betaflight Configurators</b>.\n<br>$t(configuratorUpdateHelp.message)"
+    },
+    "configuratorUpdateHelp": {
+        "message": "Die Verwendung einer neueren Version der Firmware mit einer veralteten Version des Configurators bedeutet, dass das Ändern einiger Einstellungen zu einer <strong>beschädigten Firmware-Konfiguration und einem nicht funktionierenden Kopter</strong> führen wird. Außerdem sind einige Funktionen der Firmware nur per CLI konfigurierbar.<br><strong>Betaflight Configurator Version <b>$1</b> steht online zum Download bereit</strong>, besuchen Sie bitte <a href=\"$2\" target=\"_blank\" rel=\"noopener noreferrer\">diese Seite</a>, um die neueste Version mit neuen Features herunterzuladen und zu installieren.<br>Bitte schließen Sie den Betaflight Configurator, bevor sie die neue Version installieren."
+    },
     "configuratorUpdateWebsite": {
         "message": "Webseite mit Downloadversionen aufrufen"
     },
@@ -230,10 +236,10 @@
         "message": "OSD"
     },
     "tabVtx": {
-        "message": "Video Sender"
+        "message": "Videosender"
     },
     "tabPower": {
-        "message": "Strom & Batterie"
+        "message": "Strom & Akku"
     },
     "tabGPS": {
         "message": "GPS"
@@ -397,6 +403,21 @@
     "resetToCustomDefaultsAccept": {
         "message": "Benutzerdefinierte Standardwerte anwenden"
     },
+    "reportProblemsDialogHeader": {
+        "message": "Die folgenden <strong>Probleme mit Ihrer Konfiguration</strong> wurden entdeckt:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "Bitte <strong>beheben Sie diese Probleme, bevor Sie versuchen, Ihren Kopter</strong> zu fliegen."
+    },
+    "reportProblemsDialogAPI_VERSION_MAX_SUPPORTED": {
+        "message": "<strong>Die Version des Konfigurators, die Sie verwenden ($3) ist älter als die Firmware, die Sie verwenden ($4)</strong>.<br>$t(configuratorUpdateHelp.message)"
+    },
+    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
+        "message": "<strong>Es ist kein Motorausgabeprotokoll ausgewählt</strong>.<br>Bitte wählen Sie ein für Ihre ESCs geeignetes Motorausgabeprotokoll in '$t(configurationEscFeatures.message)' auf der Registerkarte '$t(tabConfiguration.message)' aus.<br>$t(escProtocolDisabledMessage.message)"
+    },
+    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
+        "message": "<strong>Der Beschleunigungsmesser ist aktiviert, aber nicht kalibriert</strong>.<br>Wenn Sie den Beschleunigungsmesser verwenden wollen, folgen Sie bitte den Anweisungen für '$t(initialSetupButtonCalibrateAccel.message)' auf der Registerkarte '$t(tabSetup.message)' Wenn eine Funktion, die den Beschleunigungsmesser benötigt (Auto-Level-Modi, GPS-Rettung, u. ä.) aktiviert ist, wird das Scharfstellen des Kopters deaktiviert. Solange, bis der Beschleunigungsmesser kalibriert ist.<br>Wenn Sie nicht planen, den Beschleunigungsmesser zu verwenden, wird empfohlen, dass Sie ihn in '$t(configurationSystem.message)' auf der Registerkarte '$t(tabConfiguration.message)' deaktivieren."
+    },
     "infoVersions": {
         "message": "Betriebssystem: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Konfigurator: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -520,6 +541,9 @@
     },
     "defaultWelcomeHead": {
         "message": "Hardware"
+    },
+    "defaultWelcomeText": {
+        "message": "Diese Anwendung unterstützt sämtliche Hardware, auf der Betaflight laufen kann. Klicke auf den Flash-Tab, um auf eine vollständige Liste der unterstützten Hardware zugreifen zu können.<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">Lade dir hier den Betaflight-Blackbox-Viewer runter.</a><br /><br />Den Betaflight Sourcecode finden Sie <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">hier</a>.<br /><br />Die neusten <b>STM USB VCP Treiber</b> können <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">hier</a> heruntergeladen werden.<br />Für Hardware, die einen CP210x USB-zu-Seriell-Chip benutzt:<br />Die neusten <b>CP210x Treiber</b> können von <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">hier</a> heruntergeladen werden.<br />Die neusten <b>Zadig</b> Windows-USB-Treiber-Installationsdatei kann von <a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">dieser</a> Seite heruntergeladen werden.<br />"
     },
     "defaultContributingHead": {
         "message": "Mitmachen"
@@ -1216,6 +1240,14 @@
         "message": "Bei deaktiviertem Gyro erscheint dieser Wert anstelle der Gyro Geschwindigkeit in kHz",
         "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
     },
+    "configurationSpeedPidNoGyro": {
+        "message": "Gyroskop / {{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
     "configurationLoopTimeHelp": {
         "message": "<strong>Hinweis:</strong> Stelle sicher, dass dein FC mit dieser Geschwindigkeit arbeiten kann. Prüfe die CPU Auslastung und die Cycletime Stabilität. Änderungen führen möglicherweise dazu, dass die PID's neu eingestellt werden müssen. Tipp: Deaktiviere unbenutzte Sensoren, um mehr Leistung zu haben."
     },
@@ -1504,6 +1536,9 @@
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Aus"
     },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Automatisch"
+    },
     "receiverRcSmoothingChannel": {
         "message": "Kanäle geglättet"
     },
@@ -1571,6 +1606,9 @@
     },
     "pidTuningDerivative": {
         "message": "Differential"
+    },
+    "pidTuningDMax": {
+        "message": "maximaler D-Wert"
     },
     "pidTuningDerivativeHelp": {
         "message": "Steuert die Stärke der Dämpfung der Drohne auf JEDER Bewegung. Wenn die Sticks bewegt werden, dämpft der D-term den Befehl. Bei äußerem Einfluss (Propwash oder Windböen) dämpft der D-term den Einfluss.<br><br>Höhere Verstärkung bieten mehr Dämpfung und reduzieren die Überschreitung um P-term und FF.<br>Der D-term ist jedoch SEHR empfindlich für hochfrequentes Gyro-Rauschen (Rauschen | Vergrößern um Faktor 10 bis 100).<br><br>Hochfrequenzrauschen kann heiße Motoren verursachen und Motoren zerstören, wenn die D-Verstärkung zu hoch ist oder das Gyro-Rauschen nicht gut gefiltert wird (siehe Filter-Tab).<br><br>Der D-Term ist vergleichbar mit dem Stoßdämpfer im Auto, aber mit der negativen Eigenschaft hochfrequentes Gyro-Rauschen zu verstärken.",
@@ -1784,6 +1822,12 @@
     },
     "receiverButtonRefresh": {
         "message": "Neu laden"
+    },
+    "receiverButtonBind": {
+        "message": "Empfänger koppeln"
+    },
+    "receiverButtonBindMessage": {
+        "message": "Kopplungsanfrage an den Flugcontroller gesendet."
     },
     "receiverButtonSticks": {
         "message": "Kontroll Sticks"
@@ -2488,6 +2532,9 @@
     },
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Update Info"
+    },
+    "firmwareFlasherReleaseManufacturer": {
+        "message": "Herstellerkennung:"
     },
     "firmwareFlasherReleaseVersion": {
         "message": "Version:"
