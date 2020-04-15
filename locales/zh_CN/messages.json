@@ -1860,17 +1860,17 @@
         "message": "EEPROM <span class=\"message-positive\">已保存</span>"
     },
     "receiverHelp": {
-        "message": "请阅读文档的接收机部分。 按需配置好串口、接收机模式（serial/ppm/pwm），接收机协议，对频好接收机，设置好通道映射，配置通道的最小最大值范围让它们可以覆盖1000到2000。设置中位值（默认1500），微调通道到1500，配置摇杆死区，确认当遥控器关闭或超出范围时接收机的行为（失控保护）。<br /><span class=\"message-negative\">重要：</span> 飞行前阅读文档的失控保护章解并且配置好失控保护。"
+        "message": "请阅读文档的接收机部分。 按需配置好串口、接收机模式（serial/ppm/pwm），接收机协议，对频好接收机，设置好通道映射，配置通道的最小最大值范围让它们可以覆盖1000到2000。设置中位值（默认1500），微调通道到1500，配置摇杆死区，确认当遥控器关闭或超出范围时接收机的行为（失控保护）。<br /><span class=\"message-negative\">重要：</span> 飞行前阅读文档的失控保护章节并且配置好失控保护。"
     },
     "tuningHelp": {
-        "message": "<b> 调校技巧</b><br /><span class=\"message-negative\">重要：</span>调校后的初次飞行需注意电机温度。滤波值越高，飞行效果可能越好，但也会导致更多的信号“噪音”进入电机。<br>100Hz 是默认较佳的数值，但对震动较严重的情况，你可以尝试把 Dterm 和 Gyro 滤波器降低到50Hz。"
+        "message": "<b>调校技巧</b><br /><span class=\"message-negative\">重要：</span>调校后的初次飞行需注意电机温度。滤波值越高，飞行效果可能越好，但也会导致更多的信号“噪音”进入电机。<br>100Hz 是默认较佳的数值，但对震动较严重的情况，你可以尝试把 Dterm 和 Gyro 滤波器降低到50Hz。"
     },
     "tuningHelpSliders": {
-        "message": "<span class=\"message-negative\">重要信息：</span> 我们建议使用滑块来更改滤波器设置。请同时移动两个滑块。<br>最好做出相对较小的变更，并在每次做出变更后进行测试飞行。在做出进一步改动之前请仔细检查电机温度。<br>较少的滤波(滑块向右滑，以得到更高的截止频率) 将改善“洗桨”现象，但会让更多的电机噪声通过，从而使电机更烫，温度过高则有可能烧毁电机。 对于大多数的较新飞行器以及在启用 RPM 滤波的情况下，可以采用较少的滤波。<br>异常高或异常低的滤波器设置可能会导致飞行器在解锁时发生\"起飞暴走\" 现象。 默认设置对于常见的5' 穿越机是安全的。<br><strong>注意：</strong> 更改配置文件只会更改 D Term 过滤器设置。陀螺仪滤波器设置对于所有的配置文件来说都是相同的。",
+        "message": "<span class=\"message-negative\">重要信息：</span> 我们建议使用滑块来更改滤波器设置。请同时移动两个滑块。<br>最好做出相对较小的变更，并在每次做出变更后进行测试飞行。在做出进一步改动之前请仔细检查电机温度。<br>较少的滤波(滑块向右滑，以得到更高的截止频率) 将改善“洗桨”现象，但会让更多的电机噪声通过，从而使电机更烫，温度过高则有可能烧毁电机。 对于大多数的较新飞行器以及在启用 RPM 滤波的情况下，可以采用较少的滤波。<br>异常高或异常低的滤波器设置可能会导致飞行器在解锁时发生\"起飞失控\" 现象。 默认设置对于常见的5' 飞机是安全的。<br><strong>注意：</strong> 更改配置文件只会更改 D Term 滤波器设置。陀螺仪滤波器设置对于所有的配置文件来说都是相同的。",
         "description": "Filter tuning subtab note"
     },
     "filterWarning": {
-        "message": "<span class=\"message-negative\"><b>警告：</b></span>你使用的滤波器数量非常少。这可能会导致飞机难以控制，并可能导致起飞暴走。强烈建议您<b>至少启用一个陀螺仪动态低通滤波器或者陀螺仪低通滤波器1和一个Dterm动态低通滤波器或Dterm低通滤波器1</b>"
+        "message": "<span class=\"message-negative\"><b>警告：</b></span>你使用的滤波器数量非常少。这可能会导致飞机难以控制，并可能导致起飞失控。强烈建议您<b>至少启用一个陀螺仪动态低通滤波器或者陀螺仪低通滤波器1和一个 D Term 动态低通滤波器或 D Term 低通滤波器1</b>。"
     },
     "receiverThrottleMid": {
         "message": "油门中点"
@@ -1906,13 +1906,13 @@
         "message": "Yaw 死区区间"
     },
     "receiverHelpYawDeadband": {
-        "message": "遥控方向通道输入多少才被飞控认为是有效值，对于输入有抖动的遥控器，可以增加这个值。<strong>这个数值只对方向摇杆有效</strong>"
+        "message": "遥控输入变化大于多少us飞控才认为是有效输入。对于静止状态下有抖动的遥控器，可以适当增加这个值。<strong>该设置仅对 Yaw 有效</strong>。"
     },
     "recevier3dDeadbandThrottle": {
         "message": "3D 油门死区"
     },
     "receiverHelp3dDeadbandThrottle": {
-        "message": "增加这个值（us）会增加3D 油门中位宽度。<strong>该设置只对 3D 油门有效</strong>"
+        "message": "增加这个值（us）会增加 3D 油门中位宽度。<strong>该设置只对 3D 油门有效</strong>。"
     },
     "receiverChannelMap": {
         "message": "通道映射"
@@ -1942,13 +1942,13 @@
         "message": "接收机对频"
     },
     "receiverButtonBindMessage": {
-        "message": "绑定请求已发送到飞行控制器。"
+        "message": "对频请求已发送到飞行控制器。"
     },
     "receiverButtonSticks": {
         "message": "控制摇杆"
     },
     "receiverDataRefreshed": {
-        "message": "遥控信号 <strong>已刷新</strong>"
+        "message": "RC 调整数据 <strong>已刷新</strong>"
     },
     "receiverEepromSaved": {
         "message": "EEPROM <span class=\"message-positive\">已保存</span>"
@@ -1963,7 +1963,7 @@
         "message": "启用控制"
     },
     "auxiliaryHelp": {
-        "message": "在此处通过使用范围和/或链接到其他模式的组合配置飞行模式(BF4.0及更高版本支持链接) 。使用 <strong>范围</strong> 来定义遥控器上的开关和分配相应的模式。当接收机给出的通道值在最小/最大范围内将激活该模式。当一个模式被激活时，使用<strong>链接</strong>来激活另一个模式。<strong>例外:</strong> 解锁不能链接或者被链接到其他的模式，当一个模式已被链接则无法被再次链接(多重链接) 。多个范围/链接可以用于激活任何模式。如果为一个模式定义了多个范围/链接，则可以将每个范围/连接设置为<strong>和</strong> 或是 <strong>或</strong>。模式将在以下情况下被激活：<br />- 全部的<strong>和</strong> 范围/链接都激活; 或者是<br />-至少有一个 <strong>或</strong> 范围/链接激活.<br /><br />记得使用保存按钮来保存你的设置。"
+        "message": "在此处通过使用范围和/或链接到其他模式的组合配置飞行模式(BF4.0及更高版本支持链接) 。使用 <strong>范围</strong> 来定义遥控器上的开关和分配相应的模式。当接收机给出的通道值在最小/最大范围内将激活该模式。当一个模式被激活时，使用<strong>链接</strong>来激活另一个模式。<strong>例外:</strong> 解锁不能链接或者被链接到其他的模式，当一个模式已被链接则无法被再次链接(多重链接) 。多个范围/链接可以用于激活任何模式。如果为一个模式定义了多个范围/链接，则可以将每个范围/链接设置为<strong>和</strong> 或是 <strong>或</strong>。模式将在以下情况下被激活：<br />- 全部的<strong>和</strong> 范围/链接都激活; 或者是<br />- 至少有一个 <strong>或</strong> 范围/链接激活。<br /><br />记得使用保存按钮来保存你的设置。"
     },
     "auxiliaryToggleUnused": {
         "message": "隐藏未使用的模式"
@@ -2033,16 +2033,16 @@
         "message": "通过通道"
     },
     "adjustmentsSlot0": {
-        "message": "插槽1"
+        "message": "滑槽 1"
     },
     "adjustmentsSlot1": {
-        "message": "插槽2"
+        "message": "滑槽 2"
     },
     "adjustmentsSlot2": {
-        "message": "插槽3"
+        "message": "滑槽 3"
     },
     "adjustmentsSlot3": {
-        "message": "插槽4"
+        "message": "滑槽 4"
     },
     "adjustmentsMin": {
         "message": "最小"
@@ -2063,37 +2063,37 @@
         "message": "油门曲线调整"
     },
     "adjustmentsFunction4": {
-        "message": "俯仰 和 横滚 Rate 调整"
+        "message": "Pitch & Roll Rate 调整"
     },
     "adjustmentsFunction5": {
-        "message": "偏航 Rate 调整"
+        "message": "Yaw Rate 调整"
     },
     "adjustmentsFunction6": {
-        "message": "俯仰 和 横滚 P 调整"
+        "message": "Pitch & Roll P 调整"
     },
     "adjustmentsFunction7": {
-        "message": "俯仰 和 横滚 I 调整"
+        "message": "Pitch & Roll I 调整"
     },
     "adjustmentsFunction8": {
-        "message": "俯仰 和 横滚 D 调整"
+        "message": "Pitch & Roll D 调整"
     },
     "adjustmentsFunction9": {
-        "message": "方向 P 调整"
+        "message": "Yaw P 调整"
     },
     "adjustmentsFunction10": {
-        "message": "方向 I 调整"
+        "message": "Yaw I 调整"
     },
     "adjustmentsFunction11": {
-        "message": "方向 D 调整"
+        "message": "Yaw D 调整"
     },
     "adjustmentsFunction12": {
         "message": "Rate 配置文件选择"
     },
     "adjustmentsFunction13": {
-        "message": "俯仰 Rate"
+        "message": "Pitch Rate"
     },
     "adjustmentsFunction14": {
-        "message": "横滚 Rate"
+        "message": "Roll Rate"
     },
     "adjustmentsFunction15": {
         "message": "俯仰 P 调整"
