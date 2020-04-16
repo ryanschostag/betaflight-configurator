@@ -406,6 +406,12 @@
     "reportProblemsDialogFooter": {
         "message": "<strong>これらの問題を修正してから機体を飛行</strong>させてください。"
     },
+    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
+        "message": "<strong>モーター出力プロトコルが選択されていません。</strong><br>『$t(tabConfiguration.message)』タブの『$t(configurationEscFeatures.message)』で、ESCに適したモーター出力プロトコルを選択してください。<br>$t(escProtocolDisabledMessage.message)"
+    },
+    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
+        "message": "<strong>加速度センサーは有効になっていますがキャリブレーションされていません。</strong><br>加速度センサーを使用する場合は『$t(tabSetup.message)』タブの『$t(initialSetupButtonCalibrateAccel.message)』の指示に従ってください。加速度センサーを必要とする機能 (オートレベルモード、GPSレスキュー等) が有効になっている場合、加速度センサーのキャリブレーションが完了するまで機体のアームは有効になりません。<br>加速度センサーを使用しない場合は『$t(tabConfiguration.message)』タブの『$t(configurationSystem.message)』で無効にすることを推奨します。"
+    },
     "infoVersions": {
         "message": "実行中 - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Configurator: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
@@ -533,6 +539,12 @@
     "defaultContributingHead": {
         "message": "開発への協力・貢献"
     },
+    "defaultContributingText": {
+        "message": "Betaflightを今後より良くするためにご協力いただける場合、以下を含むさまざまな方法でお手伝いしていただけます:<br/>\n<ul><li>フォーラムやIRCで他のユーザの質問の回答</li><li>\nファームウェアとConfiguratorへのコードの提供 - 新機能や修正、改良</li><li>\n<a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">新機能のフィックス</a>、テストとフィードバックの提供</li><li>\n<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">問題のヘルプと新機能リクエスト</a>へのコメント協力</li><li>\n<a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\" rel=\"noopener noreferrer\">Betaflight Configuratorを母国語への翻訳</a>に協力してみましょう。</li></ul>"
+    },
+    "defaultFacebookText": {
+        "message": "私たちは<a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebookグループ</a>も運営しています。<br />私たちと一緒にBetaflightについて語り合い、設定に関する質問をしたり、パイロット同士で交流してみましょう。"
+    },
     "defaultChangelogHead": {
         "message": "Configurator - 変更履歴"
     },
@@ -571,6 +583,9 @@
     },
     "defaultSupport": {
         "message": "サポートに関しては、最初に検索フォーラムやwiki、もしくはベンダーにお問い合わせください。<br /><br />"
+    },
+    "defaultSupport5": {
+        "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\" rel=\"noopener noreferrer\">Betaflight devs on slack</a>"
     },
     "initialSetupBackupAndRestoreApiVersion": {
         "message": "<span class=\"message-negative\">バックアップと復元の機能が無効です。</span>ファームウェアのAPIバージョンは<span class=\"message-negative\">$1</span>ですが、バックアップと復元には<span class=\"message-positive\">$2</span>が必要です。バックアップにはCLIをご利用ください。方法についてはBetaflightドキュメントを参照してください。"
@@ -2084,8 +2099,17 @@
     "transponderDataHelp1": {
         "message": "16進数 0〜9、A〜F"
     },
+    "transponderHelp1": {
+        "message": "ここにトランスポンダーコードを設定します。注: レースタイミングシステムでは有効なコードのみが認識されます。有効なトランスポンダーコードは <a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\" rel=\"noopener noreferrer\">Seriously Pro</a> から入手できます。"
+    },
+    "transponderHelp2": {
+        "message": "詳細については <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\" rel=\"noopener noreferrer\">aRCiTimer サイト</a> をご覧ください。"
+    },
     "transponderDataHelp3": {
         "message": "ERLT ID 0～63 を選択します。"
+    },
+    "transponderHelp3": {
+        "message": "詳細については <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\" rel=\"noopener noreferrer\">EasyRaceLapTimer サイト</a> をご覧ください。"
     },
     "transponderButtonSave": {
         "message": "保存"
@@ -3467,6 +3491,9 @@
     "pidTuningIdleMinRpm": {
         "message": "ダイナミックアイドル値 [rpm]"
     },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "このパラメータを設定し、モーターの非同期に対する安全範囲としてrpmベースのフロア値を提供します。<br>レーサーは、非常に高レスポンスと低レートを好む場合があります。したがって、低めのDynamic Idle[rpm]と高めのDshot Idle値にて効果を示します。フリースタイラーとLOSパイロットは、アイドル時の推力が非常に弱くなることを好み、Dynamic Idle[rpm]を少し増やして、高レートでの非同期を回避しながらDshot Idle値を少なくしたい場合があります。注意事項としてDynamic Idle[rpm]値は常にDshot Idle値よりも小さくなければなりません。<br><br>詳細は<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">Wiki</a>エントリーをご覧ください。"
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "アクロトレーナー 角度制限"
     },
@@ -3907,6 +3934,9 @@
     },
     "osdSetupUnsupportedNote1": {
         "message": "お使いのフライトコントローラはBetaFlight OSDに対応していないようです。"
+    },
+    "osdSetupUnsupportedNote2": {
+        "message": "いくつかのフライトコントローラにはオンボード<a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\" rel=\"noopener noreferrer\">MinimOSD</a>があり、これを<a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>で設定および書込みができますが、MinimOSDはこのインターフェイスでは設定できません。"
     },
     "osdSetupProfilesTitle": {
         "message": "OSDプロファイル番号",
