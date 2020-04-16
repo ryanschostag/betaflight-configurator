@@ -610,7 +610,7 @@
         "message": "硬件"
     },
     "defaultWelcomeText": {
-        "message": "本应用支持所有能运行Betaflight的飞控。在 “固件烧写” 页面查看所有支持的飞控列表。<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">下载 Betaflight Blackbox 日志查看工具</a><br /><br />固件源代码可以点击<a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br /><br />最新的<b>STM USB VCP Drivers</b>可以点击<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />对于旧的使用 CP210x USB 转串口芯片的硬件：<br />最新的<b>CP210x 驱动</b>可以点击<a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />最新的<b>Zadig</b>Windows USB驱动安装程序可以点击<a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />"
+        "message": "本应用支持所有能运行 Betaflight 的飞控。在 “固件烧写” 页面查看所有支持的飞控列表。<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">下载 Betaflight Blackbox 日志查看工具</a><br /><br />固件源代码可以点击<a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br /><br />最新的<b>STM USB VCP 驱动</b>可以点击<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />对于旧的使用 CP210x USB 转串口芯片的硬件：<br />最新的<b>CP210x 驱动</b>可以点击<a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />最新的<b>Zadig</b>Windows USB驱动安装程序可以点击<a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />"
     },
     "defaultContributingHead": {
         "message": "参与开发"
@@ -1237,7 +1237,7 @@
         "message": "请选择适合您的 ESC 的输出协议。 $t(escProtocolDisabledMessage.message)"
     },
     "escProtocolDisabledMessage": {
-        "message": "<strong>注意：</strong> 若选择不被您的电调所支持的电调协议将导致<strong>连接电池后电调会立刻驱动电机旋转</strong>。出于这个原因，<strong>在更改电调协议后，连接电池之前，请确保您的螺旋桨已被卸下！</strong>。"
+        "message": "<strong>注意：</strong> 若选择不被您的电调所支持的电调协议将导致<strong>连接电池后电调会立刻驱动电机旋转</strong>。出于这个原因，<strong>在更改电调协议后，连接电池之前，请确保您的螺旋桨已被卸下</strong>！"
     },
     "configurationDshotBeeper": {
         "message": "Dshot 信标配置"
@@ -2096,58 +2096,58 @@
         "message": "Roll Rate"
     },
     "adjustmentsFunction15": {
-        "message": "俯仰 P 调整"
+        "message": "Pitch P 调整"
     },
     "adjustmentsFunction16": {
-        "message": "俯仰 I 调整"
+        "message": "Pitch I 调整"
     },
     "adjustmentsFunction17": {
-        "message": "俯仰 D 调整"
+        "message": "Pitch D 调整"
     },
     "adjustmentsFunction18": {
-        "message": "横滚 P 调整"
+        "message": "Roll P 调整"
     },
     "adjustmentsFunction19": {
-        "message": "横滚 I 调整"
+        "message": "Roll I 调整"
     },
     "adjustmentsFunction20": {
-        "message": "横滚 D 调整"
+        "message": "Roll D 调整"
     },
     "adjustmentsFunction21": {
-        "message": "遥控偏航 Rate"
+        "message": "遥控Yaw Rate"
     },
     "adjustmentsFunction22": {
         "message": "D 设定点"
     },
     "adjustmentsFunction22_2": {
-        "message": "俯仰 和 横滚 F 调整"
+        "message": "Pitch & Roll F 调整"
     },
     "adjustmentsFunction23": {
         "message": "D 设定点转换阈值"
     },
     "adjustmentsFunction23_2": {
-        "message": "前馈过渡"
+        "message": "前馈过渡阈值"
     },
     "adjustmentsFunction24": {
-        "message": "水平模式强度调整"
+        "message": "半自稳模式强度调整"
     },
     "adjustmentsFunction25": {
         "message": "PID-Audio 选择"
     },
     "adjustmentsFunction26": {
-        "message": "俯仰 F 调整"
+        "message": "Pitch F 调整"
     },
     "adjustmentsFunction27": {
-        "message": "横滚 F 调整"
+        "message": "Pitch F 调整"
     },
     "adjustmentsFunction28": {
-        "message": "方向 F 调整"
+        "message": "Yaw F 调整"
     },
     "adjustmentsFunction29": {
-        "message": "选择 OSD 配置文件"
+        "message": "OSD 配置文件选择"
     },
     "adjustmentsFunction30": {
-        "message": "选择 LED 配置文件"
+        "message": "LED 配置文件选择"
     },
     "adjustmentsSave": {
         "message": "保存"
@@ -2159,7 +2159,7 @@
         "message": "该飞控不支持比赛收发器"
     },
     "transponderInformation": {
-        "message": "比赛收发器供赛事组织者记录你的单圈时间。收发器安装在你的飞机上，当它通过计时门时赛道接收机会记录下你的编号和时间。安装基于红外线的收发器时请确保它指向机体外部的赛道接收机方向，并且光线中间不会被机架，电池扎带，螺旋桨等等遮挡。"
+        "message": "比赛收发器供赛事组织者记录您的单圈时间。收发器安装在您的飞机上，当它通过计时门时赛道接收机会记录下您的编号和时间。安装基于红外线的收发器时请确保它指向机体外部的赛道接收机方向，并且光线中间不会被机架、电池扎带、螺旋桨等遮挡。"
     },
     "transponderConfigurationType": {
         "message": "比赛收发器类别"
@@ -2195,19 +2195,19 @@
         "message": "比赛收发器 编号"
     },
     "transponderDataHelp1": {
-        "message": "仅十六进制 数字，0-9， A-F"
+        "message": "仅十六进制数字，0-9， A-F"
     },
     "transponderHelp1": {
-        "message": "在此配置你的比赛收发器编号。注意：只有有效的编号才会被系统接受。有效的编号可以在这里获得：<a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\" rel=\"noopener noreferrer\">Seriously Pro</a>。"
+        "message": "在此配置您的比赛收发器编号。注意：只有有效的编号才会被系统接受。有效的编号可以在这里获得：<a href=\"http://seriouslypro.com/transponder-codes\" target=\"_blank\" rel=\"noopener noreferrer\">Seriously Pro</a>。"
     },
     "transponderHelp2": {
-        "message": "更多信息请访问 <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\" rel=\"noopener noreferrer\">aRCiTimer site</a>"
+        "message": "更多信息请访问 <a href=\"http://www.arcitimer.com/\" title=\"aRCiTimer\" target=\"_blank\" rel=\"noopener noreferrer\">aRCiTimer 网站</a>"
     },
     "transponderDataHelp3": {
         "message": "选择 ERLT ID 0-63"
     },
     "transponderHelp3": {
-        "message": "更多信息请访问 <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\" rel=\"noopener noreferrer\">EasyRaceLapTimer site</a>"
+        "message": "更多信息请访问 <a href=\"https://github.com/polyvision/EasyRaceLapTimer\" title=\"aRCiTimer\" target=\"_blank\" rel=\"noopener noreferrer\">EasyRaceLapTimer 网站</a>"
     },
     "transponderButtonSave": {
         "message": "保存"
@@ -2222,13 +2222,13 @@
         "message": "EEPROM <span class=\"message-positive\">已保存</span>"
     },
     "servosFirmwareUpgradeRequired": {
-        "message": "舵机支持要求固件版本大于1.10.0. 和飞控支持"
+        "message": "舵机功能支持要求固件版本大于1.10.0 且飞控支持"
     },
     "servosChangeDirection": {
         "message": "设置遥控器通道反向来匹配"
     },
     "servosName": {
-        "message": "名字"
+        "message": "名称"
     },
     "servosMid": {
         "message": "中"
@@ -2267,22 +2267,22 @@
         "message": "GPS"
     },
     "gpsMapHead": {
-        "message": "当前GPS位置"
+        "message": "当前 GPS 位置"
     },
     "gpsMapMessage1": {
         "message": "请检查网络连接"
     },
     "gpsMapMessage2": {
-        "message": "等待GPS 3D锁定……"
+        "message": "等待 GPS 3D 定位…"
     },
     "gps3dFix": {
-        "message": "GPS 3D锁定："
+        "message": "3D 定位："
     },
     "gpsFixTrue": {
-        "message": "<span class=\"fixtrue\">准确</span>"
+        "message": "<span class=\"fixtrue\">定位成功</span>"
     },
     "gpsFixFalse": {
-        "message": "<span class=\"fixfalse\">失败</span>"
+        "message": "<span class=\"fixfalse\">定位失败</span>"
     },
     "gpsAltitude": {
         "message": "高度："
@@ -2300,7 +2300,7 @@
         "message": "卫星数："
     },
     "gpsDistToHome": {
-        "message": "离起飞位置距离"
+        "message": "离起飞位置距离："
     },
     "gpsSignalStrHead": {
         "message": "GPS 信号强度"
@@ -2336,55 +2336,55 @@
         "message": "电机"
     },
     "motorNumber1": {
-        "message": "电机-1"
+        "message": "电机 - 1"
     },
     "motorNumber2": {
-        "message": "电机-2"
+        "message": "电机 - 2"
     },
     "motorNumber3": {
-        "message": "电机-3"
+        "message": "电机 - 3"
     },
     "motorNumber4": {
-        "message": "电机-4"
+        "message": "电机 - 4"
     },
     "motorNumber5": {
-        "message": "电机-5"
+        "message": "电机 - 5"
     },
     "motorNumber6": {
-        "message": "电机-6"
+        "message": "电机 - 6"
     },
     "motorNumber7": {
-        "message": "电机-7"
+        "message": "电机 - 7"
     },
     "motorNumber8": {
-        "message": "电机-8"
+        "message": "电机 - 8"
     },
     "servosText": {
         "message": "舵机"
     },
     "servoNumber1": {
-        "message": "舵机-1"
+        "message": "舵机 - 1"
     },
     "servoNumber2": {
-        "message": "舵机-2"
+        "message": "舵机 - 2"
     },
     "servoNumber3": {
-        "message": "舵机-3"
+        "message": "舵机 - 3"
     },
     "servoNumber4": {
-        "message": "舵机-4"
+        "message": "舵机 - 4"
     },
     "servoNumber5": {
-        "message": "舵机-5"
+        "message": "舵机 - 5"
     },
     "servoNumber6": {
-        "message": "舵机-6"
+        "message": "舵机 - 6"
     },
     "servoNumber7": {
-        "message": "舵机-7"
+        "message": "舵机 - 7"
     },
     "servoNumber8": {
-        "message": "舵机-8"
+        "message": "舵机 - 8"
     },
     "motorsResetMaximumButton": {
         "message": "重置"
@@ -2418,13 +2418,13 @@
         "message": "主控制"
     },
     "motorsNotice": {
-        "message": "<strong> 电机测试模式/解除锁定提示：</strong> <br/> 移动滑块或用遥控器解锁飞机会导致电机 <strong> 旋转 </strong>！ <br/> 为了避免造成伤害，在使用此功能之前<strong class=\"message-negative\">卸下所有螺旋桨</strong>！ <br/> 启用电机测试模式还将暂时禁用[预防起飞失控]，以避免在工作台上无螺旋桨测试时自动锁定电机。 <br/>"
+        "message": "<strong>电机测试模式/解除锁定提示：</strong> <br/>移动滑块或用遥控器解锁飞机会导致电机 <strong> 旋转 </strong>！ <br/> 为了避免造成伤害，在使用此功能之前<strong class=\"message-negative\">卸下所有螺旋桨</strong>！ <br/> 启用电机测试模式还将暂时禁用[预防起飞失控]，以避免在工作台上无螺旋桨测试时自动锁定电机。 <br/>"
     },
     "motorsEnableControl": {
-        "message": "<strong> 我已了解风险 </strong>， 螺旋桨已被拆除 - 启用电机控制和允许解锁，并禁用[预防起飞失控]。"
+        "message": "<strong>我已了解风险 </strong>， 螺旋桨已被拆除 - 启用电机控制和允许解锁，并禁用[预防起飞失控]。"
     },
     "sensorsInfo": {
-        "message": "请注意，设置过高的图形刷新率会更会缩短尤其是笔记本电脑的电池使用时间<br />建议只打开你感兴趣的传感器的图形显示和合理的刷新率"
+        "message": "请注意，设置过高的图形刷新率会缩短尤其是笔记本电脑的电池使用时间。<br />建议只打开你感兴趣的传感器的图形显示并使用合理的刷新率"
     },
     "sensorsRefresh": {
         "message": "刷新："
@@ -2439,7 +2439,7 @@
         "message": "加速度计"
     },
     "sensorsMagSelect": {
-        "message": "磁场计"
+        "message": "磁力计"
     },
     "sensorsAltitudeSelect": {
         "message": "高度"
@@ -2457,7 +2457,7 @@
         "message": "加速度计 - G"
     },
     "sensorsMagTitle": {
-        "message": "磁场计 - Ga"
+        "message": "磁力计 - Ga"
     },
     "sensorsAltitudeTitle": {
         "message": "高度 - 米"
@@ -2472,13 +2472,13 @@
         "message": "调试"
     },
     "cliInfo": {
-        "message": "<strong>注意：</strong>退出CLI菜单或者点击断开连接将自动向飞控<strong></strong>发送“<strong>退出</strong>”指令。在最新的固件中这将使飞控<strong>重启</strong>并且未保存的设置将会<strong>丢失</strong>。<p><strong><span class=\"message-negative\">警告：</span></strong>CLI中的某些命令可能导致电机输出引脚发出随机指令。如果连接电池，这有可能导致电机旋转。因此，强烈建议<strong>在CLI中输入命令之前确保未连接电池</strong>。"
+        "message": "<strong>注意：</strong>退出 CLI 页面或者点击断开连接将<strong>自动</strong>向飞控发送“<strong>退出</strong>”指令。在最新的固件中这将使飞控<strong>重启</strong>并且未保存的设置将会<strong>丢失</strong>。<p><strong><span class=\"message-negative\">警告：</span></strong>CLI中的某些命令可能导致电机输出引脚发出随机指令。如果连接电池，这有可能导致电机旋转。因此，强烈建议<strong>在 CLI 中输入命令之前确保未连接电池</strong>。"
     },
     "cliInputPlaceholder": {
         "message": "在这里输入你的命令。按 Tab 可以进行自动填充。"
     },
     "cliInputPlaceholderBuilding": {
-        "message": "正在构建“自动填充”缓存，请稍候……"
+        "message": "正在构建“自动填充”缓存，请稍候…"
     },
     "cliEnter": {
         "message": "检测到命令行模式"
@@ -2511,7 +2511,7 @@
         "message": "执行"
     },
     "loggingNote": {
-        "message": "数据 <span class=\"message-negative\">仅会</span>在此页面记录，关闭此页面将会 <span class=\"message-negative\">取消</span>数据记录，并且应用将会返回<strong>“普通配置”</strong> 状态。<br /> 你可以选择合适的全局刷新率，飞控出于性能考虑，只会每 <strong>1</strong> 秒写入一次日志。"
+        "message": "数据<span class=\"message-negative\">仅会</span>在此页面记录，关闭此页面将会 <span class=\"message-negative\">取消</span>数据记录，并且应用将会返回<strong>“普通配置”</strong> 状态。<br />你可以选择合适的全局刷新率，飞控出于性能考虑，只会每 <strong>1</strong> 秒写入一次日志。"
     },
     "loggingSamplesSaved": {
         "message": "采样已保存"
