@@ -1222,7 +1222,7 @@
         "message": "最小油门（解锁时飞控输出给电调的最低油门数值）"
     },
     "configurationThrottleMinimumHelp": {
-        "message": "这里的”怠速“值指当飞控解锁并且油门在最低位时，会被发送到电调的数值。增加这个数值可增加怠速时电机的转速。"
+        "message": "这里的”怠速“值指当飞控解锁并且油门在最低位时，会被发送到电调的数值。增加这个数值可增加怠速时电机的转速。如果电机发生失步也要增加这个数值！"
     },
     "configurationThrottleMaximum": {
         "message": "最大油门（飞控发给电调的最大值）"
@@ -1734,7 +1734,7 @@
         "description": "Feedforward Term helpicon message on PID table titlebar"
     },
     "pidTuningMaxRateWarning": {
-        "message": "<span class=\"message-negative\"><b>警告:</b></span> 非常高的 rate 可能会导致突然减速时发生电机异步。"
+        "message": "<span class=\"message-negative\"><b>警告:</b></span> 非常高的 rate 可能会导致突然减速时发生电机失步。"
     },
     "pidTuningRcRate": {
         "message": "RC Rate"
@@ -2538,7 +2538,7 @@
         "message": "请选择记录文件"
     },
     "loggingErrorOneProperty": {
-        "message": "至少需要一个数据集来记录"
+        "message": "至少需要选择一个数据集来记录"
     },
     "loggingAutomaticallyRetained": {
         "message": "已自动加载上一个记录文件: <strong>$1</strong>"
@@ -2568,7 +2568,7 @@
         "message": "串口"
     },
     "serialLoggingSupportedNote": {
-        "message": "你可以用过串口外接记录设备来记录日志（例如 OpenLager）。需要在串口设置页设置相应的串口。"
+        "message": "你可以使用串口外接记录设备来记录日志（例如 OpenLager）。需要在串口设置页设置相应的串口。"
     },
     "sdcardNote": {
         "message": "飞行数据可以保存到板载的SD卡槽。"
@@ -2592,13 +2592,13 @@
         "message": "你的飞控没有可用的闪存芯片。"
     },
     "dataflashFirmwareUpgradeRequired": {
-        "message": "板载闪存需要固件版本大于1.8.0."
+        "message": "板载闪存需要固件版本 &gt;= 1.8.0。"
     },
     "dataflashButtonSaveFile": {
         "message": "保存闪存数据到文件"
     },
     "dataflashButtonSaveFileDeprecated": {
-        "message": "将闪存保存到文件...(已弃用)"
+        "message": "将闪存保存到文件...(不赞成使用)"
     },
     "dataflashSaveFileDepreciationHint": {
         "message": "通过配置程序保存黑盒日志的速度很慢且相对容易出错。建议您改用 '<b>$t(onboardLoggingRebootMscText.message)</b>' (下图) 来激活大容量存储模式, 并将您的飞控作为存储设备访问以下载日志文件。"
@@ -2610,7 +2610,7 @@
         "message": "确认擦除闪存"
     },
     "dataflashConfirmEraseNote": {
-        "message": "将会擦除闪存里面保存的所有数据，耗时20秒左右，确定继续？"
+        "message": "这将会擦除闪存里面保存的所有黑盒日志。它将耗时20秒左右，确定继续？"
     },
     "dataflashSavingTitle": {
         "message": "正在保存闪存数据到文件"
@@ -3593,7 +3593,7 @@
         "message": "动态怠速值 [rpm]"
     },
     "pidTuningIdleMinRpmHelp": {
-        "message": "设置该参数以设定基于 RPM 的电机怠速值，用以作为避免电机异步的安全措施。<br>竞速飞手可能倾向于非常好的响应力与较低的 Rate ——因此使用一个较低的动态怠速值[rpm] 与一个较高的 Dshot 怠速值往往非常有效。花式飞行与目视飞手可能会非常偏爱怠速时的较低推力，并且可能会使用较低的 Dshot 怠速值和稍高的动态怠速值[rpm] 以避免高角速率时的电机异步。请注意：动态怠速[rpm] 值应该总是低于 Dshot 怠速值。<br><br>访问此<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki</a>以获取更多信息。"
+        "message": "设置该参数以设定基于 RPM 的电机怠速值，用以作为避免电机失步的安全措施。<br>竞速飞手可能倾向于非常好的响应力与较低的 Rate ——因此使用一个较低的动态怠速值[rpm] 与一个较高的 Dshot 怠速值往往非常有效。花式飞行与目视飞手可能会非常偏爱怠速时的较低推力，并且可能会使用较低的 Dshot 怠速值和稍高的动态怠速值[rpm] 以避免高角速率时的电机失步。请注意：动态怠速[rpm] 值应该总是低于 Dshot 怠速值。<br><br>访问此<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki</a>以获取更多信息。"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "萌新手动模式角度限制"
