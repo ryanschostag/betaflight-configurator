@@ -635,7 +635,7 @@
         "message": "crwdns5454:0crwdne5454:0"
     },
     "defaultContributingText": {
-        "message": "crwdns10078:0crwdne10078:0"
+        "message": "crwdns10114:0crwdne10114:0"
     },
     "defaultFacebookText": {
         "message": "crwdns10080:0crwdne10080:0"
@@ -650,7 +650,7 @@
         "message": "crwdns5459:0crwdne5459:0"
     },
     "defaultDonateText": {
-        "message": "crwdns9064:0crwdne9064:0"
+        "message": "crwdns10116:0crwdne10116:0"
     },
     "defaultDonateBottom": {
         "message": "crwdns9476:0$t(patreonLink.message)crwdne9476:0"
