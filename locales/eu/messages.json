@@ -558,9 +558,6 @@
     "defaultContributingHead": {
         "message": "Hartu parte"
     },
-    "defaultContributingText": {
-        "message": "Betaflight hobetzen lagundu nahi baduzu, era desberdinetan lagundu dezakezu.<br /><ul><li>Beste erabiltzaile batzuen galdereei erantzuten gure Foruetan eta IRC-an</li><li>Gure Firmware eta konfiguratzailea kodearekin laguntzen - Ezaugarri berriak, konponketak, hobespenak </li><li> Testeatzen <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">Ezaugarri berriak/konponketak </a> eta zure iritzia emoten.</li><li>Arazoak eta ezaugarrien eskakizunak <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">komentatzen</a></li><li>Kolaboratu<a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\" rel=\"noopener noreferrer\"> Itzultzen Konfiguratzailearen aplikazioa</a> zure Hizkuntzara.</li></ul>"
-    },
     "defaultFacebookText": {
         "message": "<a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook Talde</a> bat badaukagu.<br />Egin zaitez jarraitzaile Betafligth-i buruz hitz egiteko leku bat eukitzeko, konfigurazio galderak egiteko edota beste pilotuekin hitz egiteko."
     },
@@ -572,9 +569,6 @@
     },
     "defaultDonateHead": {
         "message": "Kode Irekia / dohaintza abisua"
-    },
-    "defaultDonateText": {
-        "message": "<p><strong>Betafligth</strong><strong> Kode irekiko</strong>, egaldi kontroladore softwarea da eta eskuragarri dago dohainik, <strong>berme barik</strong> erabiltzaile guztientzako.</p><p> Betafligth edo Betafligth configurator, erabilgarri aurkitu baduzu, mesedez kontuan euki <strong>laguntzea</strong> bere garapenera, dohaintza bat emoten.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Era erregular baten ekonomikoki laguntzeko idea baduzu, kontuan euki beharko zenuen \"Patron\" bilakatzea gure Patreon portalean $t(patreonLink.message)</p>"
