@@ -395,9 +395,6 @@
     "defaultButtonFirmwareFlasher": {
         "message": "Firmware-flasher"
     },
-    "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> er en <strong>open source</strong> flight controller-software og er tilgængelig uden beregning og <strong>uden garanty</strong> for alle brugere.</p><p>Hvis du fandt Betaflight eller Betaflight-konfiguratoren nyttig, så overvej venligst at <strong>støtte</strong> udviklingen ved at donere.</p>"
-    },
     "defaultDonate": {
         "message": "Donere"
     },
