@@ -619,9 +619,6 @@
     "defaultContributingHead": {
         "message": "기여하기"
     },
-    "defaultContributingText": {
-        "message": "베타플라이트를 더욱 효과적으로 만드는 데 도움이 되고 싶다면, 다음와 같은 다양한 방법으로 도움을 줄 수 있습니다:<br /><ul><li>포럼과 IRC의 다른 사용자의 질문에 답변할 수 있습니다.</li><li>펌웨어와 컨피규레이터에 코드를 제공할 수 있습니다 - 새로운 기능, 오류 고침, 개선 등</li><li><a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">새로운 기능/오류 고침</a>을 테스트하고 피드백을 제공할 수 있습니다.</li><li><a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">이슈와 기능 요청에 대한 제안</a>으로 도움을 줄 수 있습니다.</li><li>당신의 언어로 <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\" rel=\"noopener noreferrer\">컨피규레이터 어플리케이션을 번역</a>하여 공동작업을 할 수 있습니다. <br />한글번역(교정) 문의: oto4futur@gmail.com</li><li><strong>JJang FPV의 무료 동영상 강의</strong>:<br /><a href=\"https://www.youtube.com/playlist?list=PLp92gAniAd2r2tY1b2xGnIKLQAbPiskQI\" target=\"_blank\" rel=\"noopener noreferrer\">베타플라이트 설정 가이드</a>는 <a href=\"https://www.youtube.com/playlist?list=PLp92gAniAd2r2tY1b2xGnIKLQAbPiskQI\" target=\"_blank\" rel=\"noopener noreferrer\">여기를</a> 참고하세요.<br /><a href=\"https://www.youtube.com/playlist?list=PLp92gAniAd2rUd4uqr6HN6vYolMt69ecl\" target=\"_blank\" rel=\"noopener noreferrer\">OpenTX, BLheli 설정 등</a>은 <a href=\"https://www.youtube.com/playlist?list=PLp92gAniAd2rUd4uqr6HN6vYolMt69ecl\" target=\"_blank\" rel=\"noopener noreferrer\">여기를</a> 참고하세요.</li></ul>"
-    },
     "defaultFacebookText": {
         "message": "우리는 또한 <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">페이스북 그룹</a>이 있습니다.<br />우리와 함께 베타플라이트에 대해 이야기하고, 환경설정 질문을 하거나, 동료 파일럿과 어울릴 수 있습니다."
     },
@@ -633,9 +630,6 @@
     },
     "defaultDonateHead": {
         "message": "오픈 소스 / 기부 알림"
-    },
-    "defaultDonateText": {
-        "message": "<p><strong>베타플라이트</strong>는 비행 컨트롤러 소프트웨어로 <strong>오픈 소스</strong>이며 모든 사용자들이 <strong>보증없이</strong> 무료로 사용할 수 있습니다.</p><p>베타플라이트 또는 베타플라이트 컨피규레이터가 유용하다고 판단되면, 기부하는 방법으로 개발을 <strong>지원하는</strong> 것을 고려하시기 바랍니다.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>지속적으로 재정적으로 기여 하려는 경우 $t(patreonLink.message)에서 우리의 수호자가 되는 것을 고려하세요.</p>"
