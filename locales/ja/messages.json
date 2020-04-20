@@ -539,9 +539,6 @@
     "defaultContributingHead": {
         "message": "開発への協力・貢献"
     },
-    "defaultContributingText": {
-        "message": "Betaflightを今後より良くするためにご協力いただける場合、以下を含むさまざまな方法でお手伝いしていただけます:<br/>\n<ul><li>フォーラムやIRCで他のユーザの質問の回答</li><li>\nファームウェアとConfiguratorへのコードの提供 - 新機能や修正、改良</li><li>\n<a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">新機能のフィックス</a>、テストとフィードバックの提供</li><li>\n<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">問題のヘルプと新機能リクエスト</a>へのコメント協力</li><li>\n<a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\" rel=\"noopener noreferrer\">Betaflight Configuratorを母国語への翻訳</a>に協力してみましょう。</li></ul>"
-    },
     "defaultFacebookText": {
         "message": "私たちは<a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebookグループ</a>も運営しています。<br />私たちと一緒にBetaflightについて語り合い、設定に関する質問をしたり、パイロット同士で交流してみましょう。"
     },
@@ -553,9 +550,6 @@
     },
     "defaultDonateHead": {
         "message": "オープンソース / 寄付について"
-    },
-    "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong>は<strong>オープンソース</strong>であり、すべてのユーザに対し保証なしで<strong>無償</strong>にて提供されるフライトコントローラソフトウェアです。</p><p>もし、あなたがBetaflightやBetaflight Configuratorが役立つと感じたら、寄付による開発の<strong>サポート</strong>をご検討ください。</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>引き続き経済的に貢献したい場合は <a href='https://www.patreon.com/betaflight'>Patreon</a> で私達の支援者になることをご検討ください。</p>"
