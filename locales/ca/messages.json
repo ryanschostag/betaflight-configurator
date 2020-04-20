@@ -555,9 +555,6 @@
     "defaultContributingHead": {
         "message": "Contribuir"
     },
-    "defaultContributingText": {
-        "message": "Si vols contribuir a fer un Betaflight encara millor pots ajudar de diverses maneres, incloent:<br /><ul><li>Responent a altres usuaris les preguntes als forums i IRC.</li><li>Aportant codi al firmware i configurador - noves caracteristiques, solucions, millores</li><li>Proves <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">noves caracteristiques/solucions</a> i facilitant feedback.</li><li>Ajudar amb <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">problemes i comentar sol·licituds de funcions</a>.</li><li></li></ul>Coŀlabora traduint <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\" rel=\"noopener noreferrer\">al teu idioma.</li><li></li></ul>"
-    },
     "defaultFacebookText": {
         "message": "També tenim un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Grup de Facebook</a>. <br />Uneix-te a nosaltres per obtenir un lloc on parlar de Betaflight, fer preguntes de configuració o simplement passar una estona amb altres pilots."
     },
@@ -569,9 +566,6 @@
     },
     "defaultDonateHead": {
         "message": "Codi Lliure / Avís de Donació"
-    },
-    "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> és un programari per controladors de vol que és <strong>de codi obert</strong> i està disponible de forma gratuïta <strong>sense garantia</strong> per a tots els usuaris.</p><p> Si trobeu útil Betaflight o el configurador Betaflight, considereu <strong>donar</strong> suport al seu desenvolupament donant.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Si voleu contribuir econòmicament de forma continuada, haureu de plantejar-vos ser un mecenes per a nosaltres en $t(patreonLink.message).</p>"
