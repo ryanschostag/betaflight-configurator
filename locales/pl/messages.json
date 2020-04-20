@@ -536,9 +536,6 @@
     "defaultDonateHead": {
         "message": "Open Source / Informacja o darowiznach"
     },
-    "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> to oprogramowanie kontrolera lotu jest na licencji <strong>open source</strong> i jest dostępne <strong>za darmo</strong> dla wszystkich użytkowników.</p><p>Jeśli używasz Betaflight lub Konfiguratora Betaflight oraz uważasz je za przydatne, rozważ <strong>wsparcie</strong> i rozwój poprzez darowiznę.</p>"
-    },
     "defaultDonateBottom": {
         "message": "<p>Jeśli chcesz wspierać nas finansowo na bieżąco, powinieneś rozważyć możliwość zostania naszym sponsorem $t(patreonLink.message)</p>"
     },
