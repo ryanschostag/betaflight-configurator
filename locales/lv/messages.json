@@ -509,9 +509,6 @@
     "defaultDonateHead": {
         "message": "Atvērtā koda / ziedojuma paziņojums"
     },
-    "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> ir lidojuma kontroliera programmatūra, kas ir <strong>atvērta koda tipa</strong> un ir pieejama bezmaksas <strong>bez garantijas</strong> visiem lietotājiem.</p><p>Ja tev Betaflight vai Betaflight konfigurators ir noderīgi, lūdzu apsver iespēju <strong>atbalstīt</strong> to izstrādi ziedojot.</p>"
-    },
     "defaultDonateBottom": {
         "message": "<p>Ja vēlies regulāri finansiāli palīdzēt, apsver iespēju kļūt par ziedotāju iekš $t(patreonLink.message).</p>"
     },
