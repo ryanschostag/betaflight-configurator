@@ -634,9 +634,6 @@
     "defaultContributingHead": {
         "message": "Contribuir"
     },
-    "defaultContributingText": {
-        "message": "Se desexa axudar a que Betaflight sexa aínda mellor, pode axudar de moitos xeitos, incluíndo: <br /><ul><li>Respondendo a outros usuarios preguntas nos foros e IRC.</li><li>Aportando código ó firmware e ó configurador: novas funcións, correccións, melloras</li><li>Probando <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\"> novas características/correccións</a> e ofrecendo comentarios.</li><li> Axudando con <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\"> problemas e comentarios sobre solicitudes de funcións</a>.</li><li> Colaborando con <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\" rel=\"noopener noreferrer\">traducindo a aplicación do configurador</a> ao seu idioma.</li></ul>"
-    },
     "defaultFacebookText": {
         "message": "Tamén temos un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Grupo de Facebook</a>.<br />Únase a nós para obter un lugar onde falar sobre Betaflight, facer preguntas sobre a configuración ou simplemente pasar un rato cos compañeiros pilotos."
     },
@@ -648,9 +645,6 @@
     },
     "defaultDonateHead": {
         "message": "Código aberto / Aviso de doazón"
-    },
-    "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> é un software de controlador de voo que é <strong>open source</strong> e está dispoñible gratuitamente <strong>sin garantía</strong> para tódolos usuarios.</p><p>Se atopou o Betaflight ou o configurador Betaflight, porfavor considere<strong>apoiar</strong> o seu desenvolvemento cunha donación.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p> Se quere contribuír financeiramente de xeito continuado, ten que considerar converterse en patrón para nós en $t(patreonLink.message).</p>"
