@@ -518,9 +518,6 @@
     "defaultDonateHead": {
         "message": "Napomena za doniranje"
     },
-    "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> je software za kontrolere leta koji je <strong>open source</strong>, potpuno je besplatan i <strong>bez garancije</strong> za sve korisnike.</p><p>Ako su vam Betaflight ili Betaflight konfigurator poslužili svrsi, <strong>podržite</strong> daljnji razvoj donacijom.</p>"
-    },
     "defaultDonateBottom": {
         "message": "<p>Ako želite doprinjeti financiski na mjesečnoj bazi, razmislite o doniranju putem <a href='https://www.patreon.com/betaflight'>Patreona</a>.</p>"
     },
