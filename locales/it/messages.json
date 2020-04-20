@@ -551,9 +551,6 @@
     "defaultContributingHead": {
         "message": "Contribuisci"
     },
-    "defaultContributingText": {
-        "message": "Se vuoi contribuire a rendere Betaflight ancora migliore puoi aiutare in molti modi, quali:<br /><ul><li>Rispondere alle domande degli altri utenti sui forum e IRC.</li><li>Contribuire a scrivere codice per il firmware ed il configuratore - nuove funzioni, correzioni, miglioramenti</li><li>Testare le <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">nuove funzioni/correzioni</a> e fornendo feedback.</li><li>Aiutare a risolvere<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\"> problemi e commentare le funzioni richieste</a></li><li>Collaborare alla <a href=\"https://crowdin.com/project/betaflight-configurator\" target=\"_blank\" rel=\"noopener noreferrer\">traduzione del configuratore</a> nella tua lingua</li></ul>"
-    },
     "defaultFacebookText": {
         "message": "Abbiamo anche un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">gruppo Facebook</a>.<br /> Unisciti a noi per discutere di Betaflight, fare domande riguardo la configurazione, o semplicemente ritrovarti con altri piloti."
     },
@@ -565,9 +562,6 @@
     },
     "defaultDonateHead": {
         "message": "Open Source / donazione"
-    },
-    "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong> è un software <strong>open source</strong> per controllori di volo ed è disponibile gratuitamente <strong>senza garanzie</strong> a tutti gli utenti.</p><p>Se hai trovato Betaflight o Betaflight configurator utili, ti invitiamo a valutare di <strong>supportare</strong> lo sviluppo con una donazione.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Se vuoi contribuire finanziariamente su base continua, dovresti considerare di diventare un benefattore per noi su $t(patreonLink.message).</p>"
