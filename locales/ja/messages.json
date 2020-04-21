@@ -148,6 +148,9 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "未検証バージョンの更新通知を表示"
     },
+    "configuratorUpdateNotice": {
+        "message": "<b>Betaflight Configurator</b>の古いバージョンを使用しています。<br>$t(configuratorUpdateHelp.message)"
+    },
     "configuratorUpdateWebsite": {
         "message": "リリースサイトに移動"
     },
@@ -406,6 +409,9 @@
     "reportProblemsDialogFooter": {
         "message": "<strong>これらの問題を修正してから機体を飛行</strong>させてください。"
     },
+    "reportProblemsDialogAPI_VERSION_MAX_SUPPORTED": {
+        "message": "<strong>使用しているConfiguratorバージョン ($3) が、使用しているファームウェア ($4) よりも古いです。</strong><br>$t(configuratorUpdateHelp.message)"
+    },
     "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
         "message": "<strong>モーター出力プロトコルが選択されていません。</strong><br>『$t(tabConfiguration.message)』タブの『$t(configurationEscFeatures.message)』で、ESCに適したモーター出力プロトコルを選択してください。<br>$t(escProtocolDisabledMessage.message)"
     },
@@ -536,6 +542,9 @@
     "defaultWelcomeHead": {
         "message": "ハードウェア"
     },
+    "defaultWelcomeText": {
+        "message": "このアプリケーションは、Betaflightを実行するすべてのハードウェアをサポートします。対応するハードウェアの完全なリストについては、 [ファームフラッシャー] タブをご確認ください。<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">Betaflight Blackbox Log Viewerをダウンロード</a><br /><br />ファームウェアのソースコードのダウンロード先は<a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">こちら</a><br /><br />最新の<b>STM USB VCPドライバ</b>のダウンロード先は<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">こちら</a><br />CP210X USBシリアルチップを使用するレガシーハードウェアの場合:<br />最新の<b>CP210Xドライバ</b>のダウンロード先は<a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">こちら</a><br />最新のWindows用 <b>Zadig</b> USBドライバインストーラのダウンロード先は<a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">こちら</a><br />"
+    },
     "defaultContributingHead": {
         "message": "開発への協力・貢献"
     },
@@ -551,8 +560,15 @@
     "defaultDonateHead": {
         "message": "オープンソース / 寄付について"
     },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight</strong>は<strong>オープンソース</strong>であり、すべてのユーザに対し保証なしで<strong>無償</strong>にて提供されるフライトコントローラソフトウェアです。</p><p>もし、あなたがBetaflightやBetaflight Configuratorが役立つと感じたら、寄付による開発の<strong>サポート</strong>をご検討ください。</p>"
+    },
     "defaultDonateBottom": {
         "message": "<p>引き続き経済的に貢献したい場合は <a href='https://www.patreon.com/betaflight'>Patreon</a> で私達の支援者になることをご検討ください。</p>"
+    },
+    "patreonLink": {
+        "message": "<a href=\"https://www.patreon.com/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">Patreon</a>",
+        "description": "Patreon is name, and should not require translation"
     },
     "defaultDonate": {
         "message": "寄付"
@@ -566,6 +582,12 @@
     "defaultDocumentation": {
         "message": "Betaflightドキュメントは、リリースノートおよび wiki にてご利用いただけます。<br /><br />"
     },
+    "defaultDocumentation1": {
+        "message": "Betaflight wiki はすばらしい情報リソースを<a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">こちら</a>で検索・確認することができます。"
+    },
+    "defaultDocumentation2": {
+        "message": "ファームウェア リリースノートは、GitHub リリースページの<a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\" rel=\"noopener noreferrer\">こちら</a>でご確認いただけます。"
+    },
     "defaultSupportHead": {
         "message": "サポート"
     },
@@ -577,6 +599,18 @@
     },
     "defaultSupport": {
         "message": "サポートに関しては、最初に検索フォーラムやwiki、もしくはベンダーにお問い合わせください。<br /><br />"
+    },
+    "defaultSupport1": {
+        "message": "<a href=\"http://www.rcgroups.com/forums/showthread.php?t=2464844&page=1\" target=\"_blank\" rel=\"noopener noreferrer\">RC Groups スレッド</a>"
+    },
+    "defaultSupport2": {
+        "message": "<a href=\"http://betaflight.info\" target=\"_blank\" rel=\"noopener noreferrer\">Betaflight Wiki</a>"
+    },
+    "defaultSupport3": {
+        "message": "<a href=\"https://www.youtube.com/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\" rel=\"noopener noreferrer\">Joshua Bardwell Betaflight ビデオ集</a>"
+    },
+    "defaultSupport4": {
+        "message": "<a href=\"https://github.com/Betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>"
     },
     "defaultSupport5": {
         "message": "<a href=\"https://slack.betaflight.com\" target=\"_blank\" rel=\"noopener noreferrer\">Betaflight devs on slack</a>"
@@ -1100,7 +1134,7 @@
         "message": "モーターアイドルスロットル値 [percent]"
     },
     "configurationDigitalIdlePercentHelp": {
-        "message": "機体がアームし、スロットルスティックが最小位置にあるときにESCに送信される最大スロットルの [アイドル値] です。より安定したアイドリング速度を得るためにパーセント値を増加させてください。"
+        "message": "『DShotアイドル』値は、スロットルがスティック最小位置にあり機体がアームされているときに、ESCに送信される最大スロットルの割合です。アイドル速度を上げて非同期を回避するには、値を大きくします。"
     },
     "configurationMotorPoles": {
         "message": "モーター極数",
@@ -1111,7 +1145,7 @@
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesHelp": {
-        "message": "この設定はRPMフィルターなどの一部の機能に使用されます。<br><br>モーター外装[ベル] にある磁石の数を示します。巻線されている<b>ステーターをカウントしないでください。</b>典型的な5インチモーターには14個の磁石が、3インチ以下のような小さいモーターには通常12個の磁石があります。",
+        "message": "極数はモーター外装[ベル] にある磁石の数を示します。巻線されているステーターをカウントしないでください。典型的な5インチモーターには通常14個の磁石が、3インチ以下のような小さいモーターには通常12個の磁石があります。",
         "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
@@ -2730,6 +2764,9 @@
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>リカバリー / 通信ロスト</strong>"
     },
+    "firmwareFlasherRecoveryText": {
+        "message": "FCボードとの通信が切断された場合は、次の手順に従って通信を復元してください: <ul><li>電源をオフします。</li><li>[再起動シーケンスなし] を有効にし [チップメモリの完全消去] を有効にします。</li><li>BOOTピンをジャンパするか、またはBOOTボタンを押し続けます。</li><li>電源をオンします。(正しく行われればアクティビティLEDは点滅しません) </li><li>必要に応じて、全てのSTM32ドライバとZadigをインストールします。(Betaflightマニュアルの [<a href=\"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\"target=\"_blank\" rel=\"noopener noreferrer\">USB Flashing</a>] 章を参照) </li><li>Configuratorを閉じ、全てのChromeアプリケーションを終了し、Configuratorを再起動します。</li><li>FCのBOOTボタン1つだけであれば、BOOTボタンを放してください。</li><li>正常なファームウェアをフラッシュしてください。(FCのマニュアルで指定されている場合は手動で伝送速度を調整してください) </li><li>電源をオフします。</li><li>BOOTピンのジャンパを取り外します。</li><li>電源をオンします。(アクティビティLEDが点滅するはずです) </li><li>再度、通常通り接続してください。</li></ul>"
+    },
     "firmwareFlasherButtonLeave": {
         "message": "ファームフラッシャーより退避"
     },
@@ -3252,7 +3289,7 @@
         "description": "Master gain tuning slider helpicon message"
     },
     "pidTuningPDRatioSliderHelp": {
-        "message": "PD値バランスが低いと全体的な応答が低下しますが、フリップまたはロール後の素早いバウンスバックの確率も減少します。<br><br>PD値バランスが高いほど、応答が速くなり、プロップウォッシュ時の処理が向上します。ただし、PD値バランスが高すぎるとフリップまたはロール後に振動が発生し、プロップウォッシュ時の振動が長くなります。",
+        "message": "比較的高いD値はスティック応答性を弱め、モーターを高温にしてしまう可能性がありますが、P値における振動制御に役立ち、プロップウォッシュの揺れを改善する場合があります。<br><br>D値が比較的低いとスティック反応は速くなりますが、プロップウォッシュの処理が弱くなる場合があります。",
         "description": "PD balance tuning slider helpicon message"
     },
     "pidTuningPDGainSliderHelp": {
@@ -3260,7 +3297,7 @@
         "description": "P and D gain tuning slider helpicon message"
     },
     "pidTuningResponseSliderHelp": {
-        "message": "値を低くするとスティック応答が悪くなり、フリップまたはロールの終わりでゆっくりとバウンスバックする場合があります。(I値ワインドアップ) <br><br>値を大きくすると、機敏な挙動となりスティック応答が良くなります。ただし値が高すぎると、オーバーシュートが発生し、フリップまたはロールの終わりに高速で跳ね返る可能性があります。",
+        "message": "値を低くするとスティック応答が悪くなり、フリップまたはロールの終わりでゆっくりとバウンスバックする場合があります。(I値ワインドアップ) <br><br>値を大きくすると、機敏な挙動となりスティック応答が良くなります。ただし値が高すぎると、オーバーシュートが発生し、フリップまたはロール後に高速で跳ね返る場合があります。",
         "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
@@ -3496,6 +3533,9 @@
     },
     "pidTuningIntegratedYaw": {
         "message": "統合ヨー制御"
+    },
+    "pidTuningIntegratedYawCaution": {
+        "message": "<span class=\"message-negative\">注意</span>: この機能を有効にした場合は、それに応じてヨーのPIDを調整する必要があります。詳しくは<a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\" rel=\"noopener noreferrer\">こちら</a>"
     },
     "pidTuningIntegratedYawHelp": {
         "message": "統合ヨー制御は、機体コントロールの基本的な問題を修正する機能です。ピッチとロールは、プロペラがを生成する推力差によって制御されます。統合ヨー制御はミキサーにそれらの値を適用する前にヨーのPID出力を積分することによって値を固定します。これらはPID機能を正常化します。これにより他のP値D値と同様に調整ができます。統合ヨー制御には必要ないので絶対制御を使用する必要があります。"
@@ -5260,7 +5300,7 @@
         "description": "Feature for the ESC/Motor"
     },
     "configurationDshotBidirHelp": {
-        "message": "有効にすると、DSHOTプロトコルはRPMフィルターおよびその他の機能に必要な情報をESCから直接受信できます。<br><br>これにはBLHELI_S上のjflight.netのJESCファームウェアまたは最新のBLHELI_32ファームウェアが必要です。",
+        "message": "DShotテレメトリーを介してFCボードにESCデータを送信します。RPMフィルタリングとダイナミックアイドルで必要となります。<br><br>注: JESC、Jazzmac、BLHeli-32などの適切なファームウェアを搭載した互換性のあるESCが必要です。",
         "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
