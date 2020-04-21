@@ -1073,9 +1073,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Минимальное значение газа (в процентах)"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Это минимальное значение, посылаемое регуляторам оборотов моторов, во время арминга при нулевом значении газа. Это значение измеряется в процентах от максимального значения газа. Чем больше это значение, тем быстрее будет минимальная скорость моторов."
-    },
     "configurationMotorPoles": {
         "message": "Полюса мотора",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1083,10 +1080,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (количество магнитов в колоколе мотора)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "Эта настройка используется для некоторых функций, таких как RPM фильтр.<br><br>Представляет количество магнитов, которые находятся на колоколе двигателя. <b>НЕ включает статоры</b>, где расположены обмотки. Обычно 5\" моторы имеют 14 магнитов, меньшие, например, 3\" или менее, имеют 12 магнитов.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Минимальное значение газа (Минимальное значение, посылаемое к ESC при арминге)"
@@ -3067,10 +3060,6 @@
         "message": "В целом, большие квадрокоптеры требуют более высоких коэффициентов PID из-за низкого отношения мощности к весу.<br /><br />Маленькие (микро) квадрокоптеры обычно требует пониженных коэффициентов PID из-за высокого отношения мощности к весу.<br /><br />Высокие значения PID предназначены для менее чувствительных к изменению газа квадрокоптеров и наоборот, низкие значения PID  - для более чувствительных квадрокоптеров.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningResponseSliderHelp": {
-        "message": "Низкие значения ухудшат реакцию на движения стиков и могут привести к медленному отскоку назад в конце флипа или ролла (I-term windup).<br><br>Высокие значения повысят отзывчивость на резкие движения стиков. Однако слишком высокие значения могут вызвать проскакивание квада и быстрый отскок назад в конце флипа или ролла.",
-        "description": "Stick response gain tuning slider helpicon message"
-    },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Гиро низкочастотные фильтры"
     },
@@ -4914,10 +4903,6 @@
     "configurationDshotBidir": {
         "message": "Двухсторонний DShot (требуется поддерживаемая прошивка ESC)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Если выбрано, то протокол DSHOT получает информацию, необходимую фильтру RPM и другим функциям, непосредственно из ESC.<br><br>Это требует JESC микропрограмму с jflight.net на BLHELI_S или последнюю прошивку BLHELI_32.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Частота обновления гироскопа"
