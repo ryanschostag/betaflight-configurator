@@ -1043,9 +1043,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Motora tukšgaitas droseles vērtība [percent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Šī ir 'tukšgaitas' vērtība procentos no maksimālās droseles vērtības, kas tiek sūtīta uz ESC, kad gaisa kuģis ir aktivizēts un droseles svira ir minimālajā pozīcijā. Palieliniet procentu vērtību, lai palielinātu tukšgaitas ātrumu."
-    },
     "configurationThrottleMinimum": {
         "message": "Droseles minimums (Zemākā ESC vērtība, kad aktivizēts)"
     },
