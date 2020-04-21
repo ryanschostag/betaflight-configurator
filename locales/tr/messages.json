@@ -404,9 +404,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Motor Boşta Gaz Kesme Değeri [yüzde]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Bu, zanaat kurulduğunda ve gaz pedalı çubuğu minimum konumda olduğunda, ESC'ye gönderilen azami gazın yüzdesi olarak \"boşta\" değerdir."
-    },
     "configurationThrottleMinimum": {
         "message": "Minimum Boğma (Yüklüyken en düşük ESC değeri)"
     },
