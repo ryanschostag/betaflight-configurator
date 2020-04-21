@@ -1197,9 +1197,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Valeur gaz minimum pour le moteur [pourcent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Valeur du 'mini throttle' des moteurs, exprimée en pour-cent de la valeur gaz maxi, lorsque la machine est armée et la commande des gaz en position minimum. Un nombre plus élevé augmente la vitesse des moteurs au ralenti."
-    },
     "configurationMotorPoles": {
         "message": "Pôles moteur",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1207,10 +1204,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (nombre d'aimants sur la cloche moteur)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "Ce paramètre est utilisé pour certaines fonctionnalités comme le filtre RPM.<br><br>Représente le nombre d'aimants qui sont sur la cloche du moteur. <b>NE PAS compter le stator</b> où les enroulements sont situés. En général, les moteurs de 5\" ont 14 aimants, des plus petits comme les 3\" ou moins ont 12 aimants.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Gaz minimum (Plus petite valeur envoyée à l'ESC une fois armé)"
@@ -3349,17 +3342,9 @@
         "message": "En général les grands quads nécessitent des gains PID plus élevés à cause de leur faible ratio puissance / poids.<br><br> Des petits quads (micros) nécessitent généralement des gains PID plus faibles à cause d'une puissance élevée en rapport du poids.<br><br>Valeurs élevées pour petits quads. Valeurs faibles pour grands quads.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "Une balance PD faible diminue la réactivité mais réduira les rebonds aprés un flip ou un roll.<br><br>Une balance PD élevée donne un temps de réponse plus rapide et meilleur traitement du propwash. Si la balance PD est trop élevée, vous aurez des oscillations aprés un flip ou un roll, et plus d'oscillations aprés un propwash.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "Des gains P et D permettent d'avoir des moteurs froids mais plus d'oscillations propwash. Des valeurs trop basses peuvent rendre le quad instable.<br><br>P et D term travaillent ensemble pour réduire le propwash.<br><br>Des valeurs élevées augmentent les échauffements moteur et peuvent entraîner des oscillations lors de vols smooth (souples) si le D term est trop élevé.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "Des valeurs faibles rendront le quad moins collé aux sticks et peuvent donner des rebonds lents à la fin d'un flip ou d'un roll (résidu I-term).<br><br>Des valeurs élevées rendront le quad plus collé aux sticks lors de mouvements brusques. Cependant, des valeurs trop élevées peuvent produire de l'overshoot et des rebonds rapides à la fin d'un flip ou d'un roll.",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtres gyro passe-bas"
@@ -5359,10 +5344,6 @@
     "configurationDshotBidir": {
         "message": "DShot bi-directionnel (requiert un firmware ESC compatible)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Lorsque activé, laisse le protocole DSHOT recevoir des informations provenant directement des ESC, qui sont nécessaires pour le Filtre RPM et d'autres fonctionnalités.<br><br>Cela requiert le firmware JESC de jflight.net sur BLHELI_S ou le dernier firmware BLHELI_32.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Fréquence de rafraîchissement du Gyro"
