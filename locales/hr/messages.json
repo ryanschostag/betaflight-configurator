@@ -1045,9 +1045,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Vrijednost gasa/throttlea u praznom hodu [percent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Ovo je 'idle' vrijednost u postocima maksimalnog gasa/throttlea koja se šalje ESCovima kada je letjelica armirana i kada je gas na minimalnoj poziciji. Povećajte ovu vrijednost da biste dobili veću brzinu motora u praznom hodu. Povećajte ovu vrijednost u slučaju 'desyncova'."
-    },
     "configurationMotorPoles": {
         "message": "Polovi motora",
         "description": "One of the fields of the ESC/Motor configuration"
