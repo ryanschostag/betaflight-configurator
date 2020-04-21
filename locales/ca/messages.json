@@ -555,6 +555,9 @@
     "defaultContributingHead": {
         "message": "Contribuir"
     },
+    "defaultContributingText": {
+        "message": "Si voleu ajudar a millorar encara més Betaflight, podeu ajudar-nos de moltes maneres, incloent:<br /><ul><li>utilitzar els vostres coneixements sobre Betaflight per crear o actualitzar contingut a <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_ blank\" rel=\"noopener noreferrer\"> el nostre Wiki</a>, o responent a les preguntes d'altres usuaris als fòrums en línia;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_ blank\" rel=\"noopener noreferrer\"> codi que contribueix</a> al firmware i Configurator - novetats, solucions, millores;</li><li>proves <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\"> noves funcions i solucions</a> i proporciona comentaris;</li><li>ajudant a altres usuaris a resoldre els problemes que exposen a <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_ blank\" rel=\"noopener noreferrer\"> el nostre tracker de asumptes</a>, i participant en discussions sobre peticions de funcions;</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_ blank\" rel=\"noopener noreferrer\"> traduïnt</a> el Configurador de Betaflight a un nou idioma o ajudant a mantenir les traduccions existents.</li></ul>"
+    },
     "defaultFacebookText": {
         "message": "També tenim un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Grup de Facebook</a>. <br />Uneix-te a nosaltres per obtenir un lloc on parlar de Betaflight, fer preguntes de configuració o simplement passar una estona amb altres pilots."
     },
@@ -566,6 +569,9 @@
     },
     "defaultDonateHead": {
         "message": "Codi Lliure / Avís de Donació"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight</strong> és un programari de control de vols que és <strong>de codi obert</strong> i està disponible de forma gratuïta <strong>sense garantia</strong> per a tots els usuaris.</p><p>Si heu pensat que Betaflight o Betaflight Configurator són útils, considereu <strong> donar suport</strong> al seu desenvolupament donant.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Si voleu contribuir econòmicament de forma continuada, haureu de plantejar-vos ser un mecenes per a nosaltres en $t(patreonLink.message).</p>"
@@ -1137,9 +1143,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Valor de l'accelerador Motor Inactiu [percentatge]."
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Aquest és el valor \"inactiu\" en percentatge de l'acceleració màxima que s'envia als ESC quan el quad està armat i l'stick de gas es troba en una posició mínima. Augmenteu el valor de percentatge per obtenir més velocitat de ralentí."
-    },
     "configurationMotorPoles": {
         "message": "Pols de motor",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1147,10 +1150,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (nombre d’imants a la campana del motor)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "Aquest paràmetre s’utilitza per a algunes funcions com el Filtre RPM.<br><br>Representa el nombre d’imants que es troben a la campana del motor. <b>NO compteu els estators</b>on es troben els bobinatges. Els motors típics de 5 \"tenen 14 imants, els més petits com els de 3\" o menys solen tenir 12 imants.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Throttle mínim (Valor mínim dels ESC quan està armat)"
@@ -3289,17 +3288,9 @@
         "message": "Generalment, els quads més grans necessiten guanys de PID més elevats per tenir una relació de potència/pes més baixa.<br><br> Els quads més petits (micros o nanos) generalment necessiten guanys PID més baixos a causa d’una relació de potència/pes més alta.<br><br> Valors més alts són per a quads d’autoritat inferior. Valors inferiors són per a quads d’autoritat superior.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "El balanç baix de PD reduirà la resposta general, però també reduirà la possibilitat de rebot ràpid després d'un filp o roll.<br><br> Un valor més elevat de PD proporciona una resposta més ràpida i un millor maneig de propwsash. Tanmateix, si el balanç de PD és massa elevat, obtindreu oscil·lacions desprès d'una filp o roll i oscil·lacions prolongades durant el propwash.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "Valors baixos de P i D donarà lloc a motors més frescos, però també provocará una oscil·lació de propwash. Un valor massa baix pot fer que el quad sigui inestable.<br><br> els terms de P i D treballen junts per reduir el propwash.<br><br>Valors més alts augmentaran la calor del motor i podrien augmentar les oscil·lacions durant un vol cap endavant suau per un major augment del guany de D term.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "Els valors més baixos empitjoraran la resposta del stick i poden provocar un rebot lent al final d’un flip o un roll (en funcionament a I term).<br><br>El valor més alt tindrà una millor resposta del stick per a moviments bruscs. Tanmateix, valors massa alts poden causar deslocalitzacions ràpides i un rebot ràpid al final d'un flip o un roll.",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtres Passabaixos del Giro"
@@ -5278,10 +5269,6 @@
     "configurationDshotBidir": {
         "message": "DSHOT bidireccional (requereix el programari ESC suportat)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Si està activat, el protocol DSHOT rep informació directament del ESC, necessària pel Filtre RPM i altres funcions.<br><br> Això requereix el programari JESC des de jflight.net a BLHELI_S o el més recent programari BLHELI_32.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroUse32kHz": {
         "message": "Habilita el mode de mostreig del gyro de 32kHz"
