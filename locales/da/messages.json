@@ -884,9 +884,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Motortomgangsniveau [percent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Dette er tomgangsniveauet i procent ift. maksimal gas, der sendes til ESC'erne, når fartøjet er indkoblet, og gaspinden er i minimumsposition. Forøg procentværdien for højere tomgangshastighed."
-    },
     "configurationThrottleMinimum": {
         "message": "Minimumsgas (laveste ESC-værdi, når indkoblet)"
     },
