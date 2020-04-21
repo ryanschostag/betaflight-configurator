@@ -1073,9 +1073,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Valor do acelerador quando o motor está ocioso [porcentagem]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Este é o valor 'ocioso' em percentagem do valor máximo do acelerador que é enviado para os ESCs quando a aeronave está armada e o stick do acelerador está no mínimo. Aumente o valor para ganhar mais velocidade quando ocioso."
-    },
     "configurationMotorPoles": {
         "message": "Polaridade dos motores",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1083,10 +1080,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (quantidade de imãs na campana do motor)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "Esta configuração é utilizada para algumas funcionalidades, como o filtro por RPM.<br><br>Representa a quantidade de imãs que existem na campana do motor. <b>NÃO conte os estatores</b>, onde estão os fios enrolados.<b>Um motor típico para 5\" contêm 14 imãs, motores menores para 3\" ou menos geralmente contêm 12 imãs.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Acelerador mínimo (Valor mínimo do ESC quando armado)"
@@ -3133,17 +3126,9 @@
         "message": "De forma geral, aeronaves maiores precisam de ganhos mais elevados no PID devido à baixa razão entre potência e peso.<br><br> Aeronaves menores (micros) geralmente precisam de ganhos menores no PID devido à alta razão entre potência e peso.<br><br>Valores mais elevados são para aeronaves com pouca autoridade. valores menores são para aeronaves com muita autoridade.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "Equilíbrio PD com valor menor irá reduzir a resposta em geral, mas também melhora a estabilidade após um giro (flip ou roll).<br><br>Equilíbrio PD com valor maior melhora a velocidade de resposta e lida melhor com turbulências. Porém, se o valor do Equilíbrio PD estiver muito elevado, será possível perceber oscilações após um giro (flip ou roll) e oscilações continuas durante uma turbulência.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "Ganhos P e D menores diminuem a temperatura dos motores, mas causam mais oscilações durante turbulências. Valores muito baixos podem fazer com que a aeronave fique instável.<br><br> Os Termos P e D trabalham juntos para reduzir of efeitos da turbulência.<br><br>Valores maiores aumentam a temperatura dos motores e, devido ao alto ganho do Termo D, podem aumentar as oscilações durante voos tranquilos.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "Valores menores pioram a resposta dos sticks e podem causar oscilações lentas no final de um giro (flip ou roll) devido à sobrecarga do Termo I.<br><br> Valores maiores melhoram a resposta dos sticks para movimentos rápidos. Contudo, valores muito altos podem fazer com que a aeronave ultrapasse o setpoint desejado e também oscilações rápidas no final de um giro (flip ou roll).",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtros Lowpass (Passa Baixa) do GIROSCÓPIO"
@@ -5077,10 +5062,6 @@
     "configurationDshotBidir": {
         "message": "DShot Bidirecional (requer ESC com firmware compatível)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Quando ativo, permite que o protocolo DSHOT receba dados diretamente do ESC. É utilizado no filtro RPM e em outras funcionalidades.<br><br>Para ESCs BLHELI32 é necessário utilizar o firmware mais recente, para ESCs BLHeli_S, utilizar o firmware JESC disponível em jflight.net",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Frequência de atualização do Giroscópio"
