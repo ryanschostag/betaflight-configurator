@@ -1140,9 +1140,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Motorraren Throttle Inaktiboaren balioa [percent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Aireontzia armatuta dagoenean eta azeleragailua gutxieneko egoeran dagoen ESCetara bidaltzen den gehienezko azeleragailuaren ehuneko gisa da. Abiadura handiagoa lortzeko ehunekoa handitu dezakezu aktibo dagoenean."
-    },
     "configurationMotorPoles": {
         "message": "Motorren zutoinak",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1150,10 +1147,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (motorren kanpaiako iman kopurua)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "Ezarpen hau ezaugarri batzuetarako erabiltzen da, adibidez, RPM iragazkiarako. <br> <br>Motorraren kanpaian dauden iman kopurua adierazten du.<b>Ez zenbatu Statoreak</b> 5 \"motor tipikoek 14 iman dituzte, 3\" edo gutxiago bezalako txikiek 12 iman izaten dituzte normalean.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Throttle minimoa (ESCren balio txikiena armatuta dagoenean)"
@@ -3295,17 +3288,9 @@
         "message": "Oro har, Quad handiagoek PID irabazi handiagoak behar dituzte, potentzia eta pisu erlazio txikiagoa izateagatik.<br><br>Quad txikiagoek (microak) normalean PID irabazi txikiagoak behar dituzte, potentzia eta pisu erlazio handiagoa direla eta.<br><br>Balio handiek aginte txikiagoko quadak dira. Balio baxuagoak aginte altuen quadetarako dira.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "PD balantze baxuagoa erantzun orokorra txikiagotuko du, baina errebote azkarren aukera ere murriztuko du flip edo roll baten ondoren.<br><br>PD balantze altuagoak erantzun azkarragoa eta propwash-a hobetuko dute. Dena den, zure PD balantzea oso altua bada, dardarrak jasoko dituzu flip edo roll baten ondoren etapropwash-aren bitartean oszilazioak izando dituzu.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "P eta D balio baxuak motor freskoagoak sortzen dituzte, baina turbulentzia oszilazio gehiago ere bai. Balio oso baxuak quad ezegonkorra izan dezake.<br><br>P eta D elkarrekin lan egiten dute turbulentzia murrizteko.<br><br>Balio altuek motorren tenperatura igoko dute eta hegaldi zuzen leunetan oszilazioak sor ditzakete. D epearen balioak oso altuak direla eta.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "Balio baxuek kontrolaren erantzuna okertzen dute eta itzulketa motelak sor ditzakete iraulketa edo iraulketa amaieran (I Epearen amaiera).<br><br>Balio altuek erantzun hobea ematen dute mugimendu erasokorrei. Balio handiegiak buelta eta errebote azkarrak sor ditzakete irauli edo jaurti baten amaieran.",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Giro Behe-paseko Iragazkiak"
@@ -5305,10 +5290,6 @@
     "configurationDshotBidir": {
         "message": "Dshot Bidirekzionala (ESC Firmware onartuta behar du)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Aktibatuta dagoenean, DSHOT protokoloari ESCko informazioa zuzenean jasotzeko aukera ematen dio, RPM iragazkiarentzako eta bestelako funtzionaltasunetarako beharrezkoa dena.<br><br>JESC firmware-a jflight.net-etik BLHELI_S-rako edo BLHELI_32-ren azken firmwarerako beharrezkoa da.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Giroa eguneratzeko frekuentzia"
