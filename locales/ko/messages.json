@@ -1201,9 +1201,6 @@
     "configurationDigitalIdlePercent": {
         "message": "모터 공회전 스로틀 값 [퍼센트]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "이것은 기체가 아밍되고 스로틀 스틱이 최소 위치에 있을 때 ESC로 보내지는 최대 스로틀의 '공회전'값 입니다. 더 많은 공회전 속도를 얻으려면 퍼센트 값을 늘리십시오."
-    },
     "configurationMotorPoles": {
         "message": "모터 폴수",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1211,10 +1208,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (모터 벨의 자석 수)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "이 설정은 RPM 필터와 같은 일부 기능에 사용됩니다.<br><br>모터의 벨에 있는 자석의 수를 나타냅니다. 권선이 있는 곳에 위치한 <b>스테이터의 수를 카운트하지 마세요</b>. 일반적인 5\" 모터는 14개의 자석을 가지고 있으며, 3\"와 같은 작은 모터는 보통 12개의 자석을 가지고 있습니다.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "최소 스로틀 (아밍시 가장 낮은 ESC 값)"
@@ -3356,17 +3349,9 @@
         "message": "일반적으로 큰 쿼드는 낮은 전력 대 중량비로 인해 더 높은 PID 게인을 필요로 합니다.<br><br>소형 쿼드(마이크로) 는 일반적으로 높은 전력 대 중량비로 인해 더 낮은 PID 게인을 필요로 합니다.<br><br>더 높은 값은 낮은 권한의 쿼드에 대한 값입니다. 더 낮은 값은 높은 권한의 쿼드에 대한 값입니다.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "낮은 PD 밸런스는 전반적인 반응이 낮아지지만 플립 또는 롤 후 빠른 바운스백의 가능성도 감소합니다.<br><br>높은 PD 밸런스는 빠른 반응과 더 나은 프롭워시 핸들링을 제공합니다. 그러나, PD 밸런스가 너무 높으면 플립 또는 롤 후에 진동이 발생하고 프롭워시 중에 진동이 확장됩니다.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "낮은 P와 D 게인은 모터를 차갑게하는 결과를 가져오지만 프롭워시 진동이 더 커지는 결과를 가져옵니다. 너무 낮은 값은 쿼드를 불안정하게 할 수 있습니다.<br><br>P와 D 텀은 프롭워시를 줄이기 위해 함께 작동합니다.<br><br>값이 높을수록 모터 열이 증가하며 높은 D 텀 게인으로 인해 부드러운 전진 비행 중에 진동이 증가할 수 있습니다.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "값이 낮으면 스틱 반응이 나빠지고 플립 또는 롤 끝에 느린 바운스백을 가져올 수 있습니다 (I-텀 윈드업).<br><br>값이 높으면 날카로운 움직임에 더 나은 스틱 반응을 보일 것입니다. 그러나, 너무 높은 값은 플립 또는 롤 끝에 오버슈트와 빠른 바운스백을 일으킬 수 있습니다.",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "자이로 저역통과 필터"
@@ -5366,10 +5351,6 @@
     "configurationDshotBidir": {
         "message": "양방향 DShot (ESC 펌웨어 지원을 필요로 함)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "활성화된 경우 DSHOT 프로토콜은 RPM 필터 및 기타 기능에 필요한 정보를 ESC로부터 직접 수신할 수 있습니다.<br><br>이를 위해서는 jflight.net의 BLHELI_S 또는 최신 BLHELI_32 펌웨어가 필요합니다.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "자이로 업데이트 주파수"
