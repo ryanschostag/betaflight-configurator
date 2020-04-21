@@ -1119,9 +1119,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Motorns tomgångstrottelvärde [percent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Detta är det 'tomgångsvärde' i procent av maximal trottel som skickas till ESC:erna när farkosten är aktiverad och trottelspaken är i lägsta positionen. Öka procentvärdet för att få högre tomgång."
-    },
     "configurationThrottleMinimum": {
         "message": "Minimitrottel (Lägsta ESC-värde när motorerna är aktiverade)"
     },
