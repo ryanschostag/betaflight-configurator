@@ -1081,9 +1081,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Wartość przepustnicy dla bezczynnego silnika [percent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Jest to wartość 'bezczynności\" wyrażana jako procent maksymalnej wartości przepustnicy wysyłanej do ESC kiedy dron jest uzbrojony i drążek przepustnicy jest w najniższym położeniu. Zwiększ liczbę procentów aby uzyskać większą prędkość podczas 'bezczynności'."
-    },
     "configurationMotorPoles": {
         "message": "Bieguny silnika",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1091,10 +1088,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (liczba magnesów na dzwonku silnika)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "To ustawienie jest używane dla niektórych funkcji, takich jak filtr RPM.<br><br>Przedstawia liczbę magnesów na dzwonku silnika. <b>nie bierze pod uwage statorów</b>, gdzie znajdują się uzwojenia. Typowe silniki 5\" mają 14 magnesów, mniejsze takie jak 3\" lub mniej mają zazwyczaj 12 magnesów.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Minimum przepustnicy (Najniższa wartość ESC gdy uzbrojony)"
@@ -3176,17 +3169,9 @@
         "message": "Zasadniczo większe modele wymagają wyższych wartości PID ze względu na niższy stosunek mocy do masy. <br> <br> Mniejsze modele (mikro) wymagają mniejszych wartości PID ze względu na wyższy stosunek mocy do masy. <br> <br> Wyższe wartości są dla większych modeli. Niższe wartości dotyczą mniejszych modeli.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "Niski poziom czynników PD zmniejszy ogólną dynamikę maszyny, ale za to pozwoli zmniejszyć odbicia(bounceback) po manewrach flip i roll.<br><br>Natomiast wysoki poziom PD daje dużą dynamikę i większą kontrolę maszyny nad wibracjami \"śmigieł\"(propwash). Jednak zbyt wysoki poziom PD może doprowadzić do wibracji w osi roll i wzmocnić wibracje (propwash) zamiast je niwelować.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "Niskie wzmocnienie członów P i D może powodować większe oscylacje typu \"propwash\" w silnikach. Zbyt niska wartość wzmocnień tych parametrów może powodować niestabilność maszyny. <br><br> Parametry P i D działają w parze w w celu minimalizacji oscylacji \"propwash\".<br><br> Wysokie wartości tych parametrów mogą powodować grzanie się silników poprzez duże oscylacje wysterowania silnika które mogą wystąpić podczas płynnego lotu na wprost. Co jest powodowane wysokim parametrem D.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "Niższe wartości pogorszą reakcję na wychylenia drążków i mogą powodować powolne odbicie pod koniec przewrotów \"flip\" lub przekręcania się \"roll\" (I- term windup).<br><br>Wyższa wartość będzie miała lepszą odpowiedź na ostre ruchy drążków. Zbyt wysokie wartości mogą jednak spowodować przekroczenie i szybkie odbicie pod koniec przewrotów lub przekręceń.",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Żyroskopowe filtry dolnoprzepustowe"
@@ -5164,10 +5149,6 @@
     "configurationDshotBidir": {
         "message": "Dwukierunkowy DShot (wymaga aby oprogramowanieESC wspierało tą funkcje)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Po włączeniu pozwala protokołowi DSHOT odbierać informacje bezpośrednio z ESC. Informacje te wymagane są przez filtr RPM i inne funkcje. <br> <br> Wymaga to oprogramowania JESC z jflight.net na BLHELI_S lub najnowszego oprogramowania BLHELI_32.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Częstotliwość aktualizacji z żyroskopu"
