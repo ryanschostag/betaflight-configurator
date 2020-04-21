@@ -1216,9 +1216,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Valor Aceledaror Motor Inactivo [porcentaxe]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Este é o valor 'a ralentí' en porcentaxe do acelerador máximo que se envía aos ESCs cando a aeronave está armada e o stick está en posición mínima. Aumente o porcentaxe de valor para gañar máis velocidade do ralentí."
-    },
     "configurationMotorPoles": {
         "message": "Postes do motor",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1226,10 +1223,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (número de imáns na campana do motor)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "Esta configuración úsase para algunhas funcións como o Filtro RPM.<br><br> Representa o número de imáns que están na campana do motor. <b>Non conte os estators</b> onde están os enrolamentos. Os motores típicos de 5\" teñen 14 imáns, os máis pequenos como os de 3\" ou menos adoitan ter 12 imáns.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Minimun Throttle (Valor minimo do ESC ó armar)"
@@ -3371,17 +3364,9 @@
         "message": "Xeralmente, os quads máis grandes necesitan ganancias PID maiores por ter unha relación potencia / peso menor.<br><br>Os quads máis pequenos (micros) normalmente necesitan ganancias PID máis baixas debido á maior relación potencia / peso.<br><br>Valores máis altos. son para quads de autoridade inferior. Valores inferiores son para quads de maior autoridade.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "Baixo balance PD reducirá a resposta global, pero tamén reducirá a posibilidade de rebote rápido despois dun flip ou un roll.<br><br>Non obstante, se o balance de PD é demasiado elevado, obterás oscilacións despois dun flip ou roll e oscilacións prolongadas durante o prop wash.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "Unha ganancia baixa de P e D producirá motores máis fríos, pero dará lugar a unha maior oscilación de propwash. Un valor demasiado baixo pode facer que o quad sexa inestable.<br><br>Os termos P e D traballan xuntos para reducir o propwash.<br><br>Valores máis altos aumentarán a calor do motor e poderán aumentar as oscilacións durante un voo cara a diante debido a unha ganancia maior D-term.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "Os valores máis baixos empeorarán a resposta da barra e poden provocar un retroceso lento ao final dunflip ou roll (rematar termo I).<br><br>O maior valor terá unha mellor resposta de stick para os movementos máis pronunciados. Non obstante, os valores demasiado elevados poden causar superación e retroceso rápido ao final dun flip ou roll.",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtros Paso Baixo do Xiro"
@@ -5381,10 +5366,6 @@
     "configurationDshotBidir": {
         "message": "DShot bidireccional (require o firmware ESC soportado)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Cando está activado, o protocolo DSHOT recibe información directamente do ESC, necesaria polo filtro RPM e outras funcións.<br><br>Isto require o firmware JESC de jflight.net no BLHELI_S ou o último firmware BLHELI_32.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Frecuencia do xiroscopo actualizada"
