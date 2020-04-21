@@ -1133,9 +1133,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Valore Gas Idle Motore [percento]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Questo è il minimo valore in percentuale rispetto al massimo gas inviato agli ESC quando il velivolo è armato e lo stick del gas è al minimo. Aumenta il valore della percentuale per avere maggiore spinta."
-    },
     "configurationMotorPoles": {
         "message": "Poli motore",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1143,10 +1140,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (numero di magneti sulla campana del motore)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "Questa impostazione è utilizzata per alcune funzioni come il filtro RPM.<br><br>Rappresenta il numero di magneti che si trovano sulla campana del motore. <b>NON contare gli statori</b> dove si trovano gli avvolgimenti. I tipici motori di un 5\" hanno 14 magneti, quelli più piccoli, come un 3\" o meno, hanno 12 magneti.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Gas Minimo (Il più basso valore degli ESC quando armato)"
@@ -3288,17 +3281,9 @@
         "message": "Generalmente i quad più grandi necessitano di guadagni PID più elevati a causa di un rapporto potenza/peso minore.<br><br>Piccoli quad (micro) generalmente necessitano di guadagni PID più bassi per il rapporto potenza/peso maggiore.<br><br>Valori maggiori sono per quad con meno potenza. Valori minori sono per quad con più potenza.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "Un minor bilanciamento PD abbasserà la risposta complessiva ma ridurrà anche la possibilità di rimbalzi rapidi dopo un flip o un roll.<br><br>Un maggiore bilanciamento PD fornisce risposte più veloci e una migliore gestione del propwash. Tuttavia, se il bilanciamento PD è troppo alto, otterrai oscillazioni dopo un flip o un roll e oscillazioni estese durante il propwash.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "Un minor guadagno di P e D si tradurrà in motori più freddi, ma aumenterà l'oscillazione del propwash. Un valore troppo basso potrebbe rendere il quad instabile.<br><br>I term P e D lavorano insieme per ridurre il propwash.<br><br>Valori più alti aumenteranno la temperatura dei motori e potrebbero aumentare le oscillazioni durante il volo in avanti a causa di guadagni D-term superiori.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "Valori più bassi peggioreranno la risposta degli stick e potrebbero portare ad un rimbalzo lento alla fine di un flip o un roll (I-term windup).<br><br>Un valore più alto permetterà una migliore risposta degli stick per le manovre brusche. Tuttavia, valori troppo elevati possono causare overshoot e rimbalzi veloci alla fine di un flip o un roll.",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtri passabasso del giroscopio"
@@ -5298,10 +5283,6 @@
     "configurationDshotBidir": {
         "message": "DShot bidirezionale (richiede un firmware ESC supportato)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Quando abilitato consente di ricevere informazioni necessarie per il filtro RPM e altre funzionalità direttamente dall'ESC tramite il protocollo DSHOT.<br><br>Questo richiede il firmware JESC (da jflight.net) su BLHELI_S o l'ultimo firmware BLHELI_32.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Frequenza aggiornamento gyro"
