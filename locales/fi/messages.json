@@ -785,9 +785,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Moottoreiden tyhjäkäyntikaasun määrä [prosenttia]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Tämä on prosentuaalinen moottoreiden \"tyhjäkäyntinopeuden\" arvo joka lähetetään nopeudensäätimille(ESC), kun moottorit on aktivoitu ja kaasutikku on minimissä. Prosenttiluvun suurentaminen nostaa moottorien tyhjäkäntinopeutta."
-    },
     "configurationThrottleMinimum": {
         "message": "Kaasun vähimmäisarvo (Pienin arvo joka lähetetään nopeudensäätimille(ESC), kun moottorit on aktivoitu)"
     },
