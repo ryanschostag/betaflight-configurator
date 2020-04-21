@@ -1223,7 +1223,7 @@
         "message": "crwdns5603:0[percent]crwdne5603:0"
     },
     "configurationDigitalIdlePercentHelp": {
-        "message": "crwdns5604:0crwdne5604:0"
+        "message": "crwdns10118:0crwdne10118:0"
     },
     "configurationMotorPoles": {
         "message": "crwdns9808:0crwdne9808:0",
@@ -1234,7 +1234,7 @@
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesHelp": {
-        "message": "crwdns9812:0crwdne9812:0",
+        "message": "crwdns10120:0crwdne10120:0",
         "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
@@ -3381,7 +3381,7 @@
         "description": "Master gain tuning slider helpicon message"
     },
     "pidTuningPDRatioSliderHelp": {
-        "message": "crwdns9802:0crwdne9802:0",
+        "message": "crwdns10124:0crwdne10124:0",
         "description": "PD balance tuning slider helpicon message"
     },
     "pidTuningPDGainSliderHelp": {
@@ -3389,7 +3389,7 @@
         "description": "P and D gain tuning slider helpicon message"
     },
     "pidTuningResponseSliderHelp": {
-        "message": "crwdns9806:0crwdne9806:0",
+        "message": "crwdns10126:0crwdne10126:0",
         "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
@@ -5392,7 +5392,7 @@
         "description": "Feature for the ESC/Motor"
     },
     "configurationDshotBidirHelp": {
-        "message": "crwdns9828:0crwdne9828:0",
+        "message": "crwdns10122:0crwdne10122:0",
         "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
