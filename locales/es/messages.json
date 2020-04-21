@@ -551,6 +551,9 @@
     "defaultContributingHead": {
         "message": "Contribuir"
     },
+    "defaultContributingText": {
+        "message": "Si quieres ayudar a hacer Betaflight incluso mejor puedes hacerlo de diferentes maneras, incluyendo:<br /><ul><li>usando tu conocimiento de Betaflight para crear o actualizar contenido en <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">nuestra wiki</a>, o respondiendo preguntas de otros usuarios en foros online;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">contribuyendo con código</a> al firmware y al configurador - nuevas funcionalidades, correcciones, mejoras;</li><li>probando <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">nuevas funcionalidades y correcciones</a> y comentando resultados;</li><li>ayudando a otros usuario con los problemas que reportan en <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">nuestro registro de incidencias</a>, y participando en las discusiones sobre peticiones de nuevas funcionalidades;</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">traduciendo</a> Betaflight Configurator a un nuevo idioma, o ayudando a mantener las traducciones existentes.</li></ul>"
+    },
     "defaultFacebookText": {
         "message": "También tenemos un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Grupo de Facebook</a>.<br />Únete a nosotros para tener un lugar donde hablar sobre Betaflight, preguntar sobre configuraciones, o simplemente charlar con otros pilotos."
     },
@@ -562,6 +565,9 @@
     },
     "defaultDonateHead": {
         "message": "Código Abierto / Aviso de Donación"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight</strong> es un software controlador de vuelo que es <strong>software libre</strong> y está disponible gratuitamente <strong>sin garantía</strong> para todos los usuarios.</p><p>Si encuentras Betaflight o Betaflight Configurator útil, por favor considera <strong>ayudar</strong> al desarrollo donando.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Si deseas contribuir financieramente de manera regular, deberías considerar convertirte en patrocinador nuestro en $t(patreonLink.message). </p >"
@@ -1134,7 +1140,7 @@
         "message": "Valor Acelerador Motor Ralentí [porcentaje]"
     },
     "configurationDigitalIdlePercentHelp": {
-        "message": "Este es el valor 'inactivo' en porcentaje del máximo acelerador que se envía a los ESCs cuando la aeronave está armada y el acelerador está en la posición de mínimo. Puedes incrementar el porcentaje para obtener más velocidad cuando está inactivo."
+        "message": "El valor de 'Dshot ralentí' es el porcentaje del valor máximo del acelerador que es enviado a los ESCs cuando el mando del acelerador está al mínimo y la aeronave está armada. Incrementa este valor para obtener más velocidad al ralentí y evitar desincronizaciones. Un valor demasiado alto y la aeronave se notará muy flotante."
     },
     "configurationMotorPoles": {
         "message": "Polos del motor",
@@ -1145,7 +1151,7 @@
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesHelp": {
-        "message": "Este valor se utiliza en algunas funcionalidades como el Filtro RPM.<br><br>Representa el número de imanes que contiene la campana del motor. <b>NO cuentes los estátor</b> situados en los bobinados. Habitualmente los motores de 5\" tienen 14 imanes, los más pequeños como 3\" o menos suelen tener 12 imanes.",
+        "message": "El número de polos es el número de imanes que contiene la campana del motor. NO cuentes los estátor que están situados donde los bobinados. Habitualmente los motores de 5\" tienen 15 imanes, los más pequeños como 3\" o menos suelen tener 12 imanes.",
         "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
@@ -3289,7 +3295,7 @@
         "description": "Master gain tuning slider helpicon message"
     },
     "pidTuningPDRatioSliderHelp": {
-        "message": "Un balance PD bajo disminuirá la respuesta general pero también reducirá la posibilidad de un rebote rápido después de un flip o un roll.<br><br>Un balance PD más alto proporciona una respuesta más rápida y un mejor control de las turbulencias. Sin embargo, si tu balance PD es muy alto, obtendrás oscilaciones después de un flip o roll y se alargarán las oscilaciones durante las turbulencias.",
+        "message": "Un valor relativamente alto de D amortiguará la respuesta del mando y puede hacer que los motores se calienten, pero debería ayudar a controlar oscilaciones de P y puede mejorar los bamboleos por turbulencias.<br><br>Un valor relativamente bajo de D produce una respuesta más rápida a los mandos pero debilitará la respuesta a las turbulencias.",
         "description": "PD balance tuning slider helpicon message"
     },
     "pidTuningPDGainSliderHelp": {
@@ -3297,7 +3303,7 @@
         "description": "P and D gain tuning slider helpicon message"
     },
     "pidTuningResponseSliderHelp": {
-        "message": "Valores bajos empeoran la respuesta del mando y pueden producir rebotes lentos al final de un flip o un roll (por acumulación de Término I).<br><br>Valores altos dan mejor respuesta a movimientos agresivos. Valores demasiado altos pueden producir sobre giros y rebotes rápidos al final de un flip o roll.",
+        "message": "Valores bajos de FF empeoran la respuesta del mando y pueden producir rebotes lentos al final de un flip o un roll (por acumulación de Término I).<br><br>Valores altos responden mejor a movimientos agresivos. Valores demasiado altos de FF pueden producir sobre giros y rebotes rápidos al final de un flip o roll.",
         "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
@@ -5300,7 +5306,7 @@
         "description": "Feature for the ESC/Motor"
     },
     "configurationDshotBidirHelp": {
-        "message": "Cuando se activa permite al protocolo DSHOT recibir información directamente desde los ESC, necesario para el Filtro RPM y otras funcionalidades.<br><br>Se necesita firmware JESC de jflight.net para BLHELI_S or el último firmware para BLHELI_32.",
+        "message": "Envía datos del ESC al FC a través de la telemetría DShot. Es necesario para el Filtro RPM y el Ralentí Dinámico.<br> <br>Nota: Requiere un ESC compatible con el firmware apropiado, por ejemplo, JESC, Jazzmac, BLHeli-32.",
         "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
