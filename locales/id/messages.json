@@ -878,9 +878,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Nilai Throttle Motor Idle [percent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Ini adalah nilai 'idle' dalam persen throttle maksimum yang dikirim ke ESC ketika model di arm dan stik throttle berada pada posisi minimum. Tingkatkan nilai persen untuk mendapatkan kecepatan idle."
-    },
     "configurationThrottleMinimum": {
         "message": "Minimum Throttle (nilai ESC terendah saat diarm)"
     },
