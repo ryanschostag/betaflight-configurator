@@ -1098,9 +1098,6 @@
     "configurationDigitalIdlePercent": {
         "message": "Motor Leerlauf Gas Wert [Prozent]"
     },
-    "configurationDigitalIdlePercentHelp": {
-        "message": "Das ist der \"Leerlaufwert\" der an die Regler geschickt wird wenn der Quad gearmt ist und das Gas auf minimal Position ist. Wert erhöhen um einen schnelleren Leerlauf zu bekommen"
-    },
     "configurationMotorPoles": {
         "message": "Motor Pole",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1108,10 +1105,6 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (Anzahl Magnete an der Motorglocke)",
         "description": "One of the fields of the ESC/Motor configuration"
-    },
-    "configurationMotorPolesHelp": {
-        "message": "Diese Einstellung wird für einige Funktionen wie den RPM-Filter verwendet.<br><br>repräsentiert die Anzahl der Magnete auf der Glocke des Motors. <b>Zähle NICHT die Statoren</b> wo die Windungen sind. Typische 5\" Motoren haben 14 Magnete, kleinere wie 3\" oder weniger haben normalerweise 12 Magnete.",
-        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Minimum Gas (kleinster Wert für die Regler falls gearmt)"
@@ -3192,17 +3185,9 @@
         "message": "Generell brauchen größere Quads höhere PID Werte aufgrund eines niedrigeren Power zu Gewicht Verhältnisses.<br><br>Kleinere Quads (Micros) brauchen generell niedrigere PID Werte aufgrund eines höheren Power zu Gewicht Verhältnisses. <br><br>Höhere Werte sind für leistungsschwächere Quads. Kleinere Werte sind für leistungsstärkere Quads.",
         "description": "Master gain tuning slider helpicon message"
     },
-    "pidTuningPDRatioSliderHelp": {
-        "message": "Eine geringere PD-Balance führt zu einer geringeren Gesamtreaktion, reduziert aber auch die Möglichkeit eines schnellen Bounceback nach einem Flip oder Roll. <br><br> Eine höhere PD-Balance bietet eine schnellere Reaktion und ein besseres Propwash-Handling. Eine zu hohe PD-Balance führt jedoch zu Schwingungen nach einem Flip oder Roll und erhöhte Schwingungen während des Propwashes.",
-        "description": "PD balance tuning slider helpicon message"
-    },
     "pidTuningPDGainSliderHelp": {
         "message": "Niedrige P- und D Verstärkung sorgt für kühlere Motoren, kann aber zu mehr Propwash-Schwingungen führen. Ein zu niedriger Wert kann dazu führen, dass der Quad instabil wird.<br><br>P- und D-Werte arbeiten zusammen, um Propwash zu reduzieren.<br><br>Höhere Werte erhöhen die Motorwärme und könnten, aufgrund der höheren D-Wert-Verstärkung, die Schwingungen während des sanften Vorwärts-Fluges erhöhen.",
         "description": "P and D gain tuning slider helpicon message"
-    },
-    "pidTuningResponseSliderHelp": {
-        "message": "Niedrigere Werte verschlechtern die Knüppel-Reaktion und können zu einem langsamen Abprall am Ende eines Überschlages oder Rolle (I-Wert-Windup) führen.<br><br> Höherer Wert haben eine bessere Knüppel-Reaktion für scharfe Bewegungen. Zu hohe Werte können jedoch zu Überschwingen und schnellem Abprall am Ende eines Überschlages oder Rolle führen.",
-        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Gyro Lowpass Filter"
@@ -5157,10 +5142,6 @@
     "configurationDshotBidir": {
         "message": "Bidirektionales DShot (benötigt unterstützte ESC Firmware)",
         "description": "Feature for the ESC/Motor"
-    },
-    "configurationDshotBidirHelp": {
-        "message": "Wenn aktiviert, kann das DSHOT-Protokoll direkt Daten vom ESC empfangen, die von dem RPM-Filter und anderen Funktionen benötigt werden.<br><br>Dies erfordert die JESC-Firmware von jflight.net für BLHELI_S oder die neueste BLHELI_32 Firmware.",
-        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Gyro Update Frequenz"
