@@ -472,7 +472,7 @@
         "message": "Gailuaren ID bakarra: <strong>=x$1</strong>"
     },
     "craftNameReceived": {
-        "message": "Aireontziaren izena:<strong>$1</strong>"
+        "message": "Gailuaren izena:<strong>$1</strong>"
     },
     "armingDisabled": {
         "message": "<strong>Armatua desgaitua</strong>"
