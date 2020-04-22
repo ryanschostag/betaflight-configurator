@@ -619,6 +619,9 @@
     "defaultContributingHead": {
         "message": "기여하기"
     },
+    "defaultContributingText": {
+        "message": "베타플라이트를 훨씬 더 좋게 만들고 싶다면, 다음과 같은 여러 가지 방법으로 도울 수 있습니다:<br /><ul><li>베타플라이트에 대한 지식을 활용하여 <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">위키</a>에 대한 내용을 만들거나, 온라인 포럼에서 다른 사용자의 질문에 답변할 수 있습니다;</li><li>펌웨어와 컨피규레이터에 대한 코드 - 새로운 기능, 수정, 개선 사항에 <a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">코드를 공헌</a>할 수 있습니다;</li><li><a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">새로운 기능과 수정</a>을 테스트하고, 피드백을 제공할 수 있습니다;</li><li>다른 사용자들이 <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">이슈 트랙커</a>에 보고한 문제를 해결하여 도움을 줄 수 있으며, 기능 요청에 대한 논의에 참여할 수 있습니다;</li><li>베타플라이트 컨피규레이터를 새로운 언어로 <a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">번역</a>하거나, 기존 번역을 유지하도록 도울 수 있습니다.<br />한글번역(교정) 문의: JJang FPV 류장협(oto4futur@gmail.com)</li></ul><br /><ul>처음이거나 새로운 기능에 대하여 배우고 싶다면, <a href=\"https://www.youtube.com/playlist?list=PLp92gAniAd2r2tY1b2xGnIKLQAbPiskQI\" target=\"_blank\" rel=\"noopener noreferrer\">무료 동영상 강의(한글판)</a>를 시청할 수 있습니다.<br />OpenTX, BLheli 설정 등 <a href=\"https://www.youtube.com/c/JJangFPV\" target=\"_blank\" rel=\"noopener noreferrer\">짱JJang FPV 유튜브 채널</a>에서 더 많은 정보를 얻으십시오.</ul>"
+    },
     "defaultFacebookText": {
         "message": "우리는 또한 <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">페이스북 그룹</a>이 있습니다.<br />우리와 함께 베타플라이트에 대해 이야기하고, 환경설정 질문을 하거나, 동료 파일럿과 어울릴 수 있습니다."
     },
@@ -630,6 +633,9 @@
     },
     "defaultDonateHead": {
         "message": "오픈 소스 / 기부 알림"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>베타플라이트</strong>는 비행 컨트롤러 소프트웨어로 <strong>오픈 소스</strong>이며 모든 사용자들이 <strong>보증없이</strong> 무료로 사용할 수 있습니다.</p><p>베타플라이트 또는 베타플라이트 컨피규레이터가 유용하다고 판단되면, 기부하는 방법으로 개발을 <strong>지원하는</strong> 것을 고려하시기 바랍니다.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>지속적으로 재정적으로 기여 하려는 경우 $t(patreonLink.message)에서 우리의 수호자가 되는 것을 고려하세요.</p>"
@@ -1201,6 +1207,9 @@
     "configurationDigitalIdlePercent": {
         "message": "모터 공회전 스로틀 값 [퍼센트]"
     },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "'DSHOT 아이들' 값은 스로틀이 최소 스틱 위치에 있을 때 ESC로 전송되는 최대 스로틀의 백분율입니다. 아이들(공회전) 속도를 높이고 디싱크를 방지하려면 이 값을 증가시키십시오. 너무 높으면 기체가 떠다니게 느껴집니다."
+    },
     "configurationMotorPoles": {
         "message": "모터 폴수",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1208,6 +1217,10 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (모터 벨의 자석 수)",
         "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationMotorPolesHelp": {
+        "message": "극 카운트는 모터의 벨에 있는 자석의 수입니다. 권선이 위치한 스테이터를 세지 마십시오. 5\" 모터는 보통 14개의 자석을 가지며, 3\" 이하의 모터는 주로 12개의 자석을 가지고 있습니다.\n\n컨텍스트편집",
+        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "최소 스로틀 (아밍시 가장 낮은 ESC 값)"
@@ -3349,9 +3362,17 @@
         "message": "일반적으로 큰 쿼드는 낮은 전력 대 중량비로 인해 더 높은 PID 게인을 필요로 합니다.<br><br>소형 쿼드(마이크로) 는 일반적으로 높은 전력 대 중량비로 인해 더 낮은 PID 게인을 필요로 합니다.<br><br>더 높은 값은 낮은 권한의 쿼드에 대한 값입니다. 더 낮은 값은 높은 권한의 쿼드에 대한 값입니다.",
         "description": "Master gain tuning slider helpicon message"
     },
+    "pidTuningPDRatioSliderHelp": {
+        "message": "상대적으로 높은 D는 스틱 반응성을 저해하고 모터를 뜨겁게 만들 수 있지만 P 진동을 제어하는 데 도움이 되며 프롭워시 워블을 개선할 수 있습니다.<br><br>상대적으로 낮은 D는 더 빠른 스틱 응답성을 제공하지만 프롭워시 취급이 약해질 수 있습니다.",
+        "description": "PD balance tuning slider helpicon message"
+    },
     "pidTuningPDGainSliderHelp": {
         "message": "낮은 P와 D 게인은 모터를 차갑게하는 결과를 가져오지만 프롭워시 진동이 더 커지는 결과를 가져옵니다. 너무 낮은 값은 쿼드를 불안정하게 할 수 있습니다.<br><br>P와 D 텀은 프롭워시를 줄이기 위해 함께 작동합니다.<br><br>값이 높을수록 모터 열이 증가하며 높은 D 텀 게인으로 인해 부드러운 전진 비행 중에 진동이 증가할 수 있습니다.",
         "description": "P and D gain tuning slider helpicon message"
+    },
+    "pidTuningResponseSliderHelp": {
+        "message": "FF 값이 낮으면 스틱 반응이 나빠지고 플립 또는 롤 끝에 느린 바운스백을 가져올 수 있습니다 (I-텀 윈드업).<br><br>FF 값이 높을수록 예리한 동작에서 더 멋진 스틱 반응을 얻을 수 있습니다. 지나치게 높은 FF 값은 플립 또는 롤의 끝에서 오버슈트와 빠른 바운스백을 유발할 수 있습니다.",
+        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "자이로 저역통과 필터"
@@ -5351,6 +5372,10 @@
     "configurationDshotBidir": {
         "message": "양방향 DShot (ESC 펌웨어 지원을 필요로 함)",
         "description": "Feature for the ESC/Motor"
+    },
+    "configurationDshotBidirHelp": {
+        "message": "DShot 텔레메트리를 통해 FC에 ESC 데이터 전송하세요. RPM 필터링 및 다이나믹 아이들에 필요합니다. <br> <br>노트: JESC, Jazzmac, BLHeli-32와 같은 적절한 펌웨어와 호환되는 ESC가 필요합니다.\n\n컨텍스트편집",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "자이로 업데이트 주파수"
