@@ -1,1 +1,474 @@
-{}
+{
+    "yes": {
+        "message": "Ja",
+        "description": "General Yes message to be used across the application"
+    },
+    "no": {
+        "message": "Nee",
+        "description": "General No message to be used across the application"
+    },
+    "on": {
+        "message": "Aan"
+    },
+    "off": {
+        "message": "Uit"
+    },
+    "auto": {
+        "message": "Automatisch"
+    },
+    "error": {
+        "message": "Fout: {{errorMessage}}"
+    },
+    "errorTitle": {
+        "message": "Fout"
+    },
+    "warningTitle": {
+        "message": "Waarschuwing"
+    },
+    "noticeTitle": {
+        "message": "Opmerking"
+    },
+    "operationNotSupported": {
+        "message": "Deze bewerking wordt niet ondersteund door de hardware."
+    },
+    "storageDeviceNotReady": {
+        "message": "Het opslagapparaat is niet gereed. Als je een microSD kaart gebruikt, zorg dat je flight controller hem herkent."
+    },
+    "options_title": {
+        "message": "Applicatie-instellingen"
+    },
+    "connect": {
+        "message": "Verbind"
+    },
+    "connecting": {
+        "message": "Bezig met verbinden"
+    },
+    "disconnect": {
+        "message": "Verbreek verbinding"
+    },
+    "portsSelectManual": {
+        "message": "Handmatige selectie"
+    },
+    "portOverrideText": {
+        "message": "Poort:"
+    },
+    "autoConnect": {
+        "message": "Automatisch verbinden"
+    },
+    "close": {
+        "message": "Sluiten"
+    },
+    "cancel": {
+        "message": "Annuleren"
+    },
+    "language_choice_message": {
+        "message": "Verander taal:",
+        "description": "Try and be brief"
+    },
+    "language_default": {
+        "message": "Systeem standaard"
+    },
+    "language_default_pretty": {
+        "message": "Systeem standaard ($t(detectedLanguage))"
+    },
+    "sensorDataFlashNotFound": {
+        "message": "Geen dataflash <br>chip gevonden",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorDataFlashFreeSpace": {
+        "message": "DataFlash: vrije ruimte",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorStatusGyro": {
+        "message": "Gyroscoop"
+    },
+    "sensorStatusGyroShort": {
+        "message": "Gyro",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusAccel": {
+        "message": "Versnellingsmeter"
+    },
+    "sensorStatusAccelShort": {
+        "message": "Versnel",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusMag": {
+        "message": "Magnetometer"
+    },
+    "sensorStatusMagShort": {
+        "message": "Kompas",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusBaro": {
+        "message": "Barometer"
+    },
+    "sensorStatusBaroShort": {
+        "message": "Baro",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusGPS": {
+        "message": "GPS"
+    },
+    "sensorStatusGPSShort": {
+        "message": "GPS",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusSonar": {
+        "message": "Sonar / afstandsmeter"
+    },
+    "sensorStatusSonarShort": {
+        "message": "Sonar",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "checkForConfiguratorUnstableVersions": {
+        "message": "Update meldingen voor onstabiele versies van de configurator weergeven"
+    },
+    "configuratorUpdateNotice": {
+        "message": "U gebruikt een verouderde versie van de <b>Betaflight Configurator</b>.<br>$t(configuratorUpdateHelp.message)"
+    },
+    "tabFirmwareFlasher": {
+        "message": "Besturingssysteem Flasher"
+    },
+    "tabLanding": {
+        "message": "Welkom"
+    },
+    "tabChangelog": {
+        "message": "Logboekwijzigingen"
+    },
+    "tabPrivacyPolicy": {
+        "message": "Privacy Beleid"
+    },
+    "tabHelp": {
+        "message": "Documentatie & ondersteuning"
+    },
+    "tabSetup": {
+        "message": "Setup"
+    },
+    "tabSetupOSD": {
+        "message": "OSD-instellingen"
+    },
+    "tabConfiguration": {
+        "message": "Instellingen"
+    },
+    "tabPorts": {
+        "message": "Poorten"
+    },
+    "tabPidTuning": {
+        "message": "PID afstemmen"
+    },
+    "tabReceiver": {
+        "message": "Ontvanger"
+    },
+    "tabModeSelection": {
+        "message": "Modusselectie"
+    },
+    "tabServos": {
+        "message": "Servo's"
+    },
+    "tabFailsafe": {
+        "message": "Uitval beveiliging"
+    },
+    "tabTransponder": {
+        "message": "Race Transponder"
+    },
+    "tabOsd": {
+        "message": "OSD"
+    },
+    "tabVtx": {
+        "message": "Video Zender"
+    },
+    "tabPower": {
+        "message": "Energie & Batterij"
+    },
+    "tabGPS": {
+        "message": "GPS"
+    },
+    "tabMotorTesting": {
+        "message": "Motoren"
+    },
+    "tabLedStrip": {
+        "message": "LED-Strip"
+    },
+    "tabRawSensorData": {
+        "message": "Sensoren"
+    },
+    "tabCLI": {
+        "message": "CLI"
+    },
+    "tabOnboardLogging": {
+        "message": "Blackbox"
+    },
+    "tabAdjustments": {
+        "message": "Aanpassingen"
+    },
+    "tabAuxiliary": {
+        "message": "Modussen"
+    },
+    "logActionHide": {
+        "message": "Verberg Logboek"
+    },
+    "logActionShow": {
+        "message": "Toon Log"
+    },
+    "stm32Erase": {
+        "message": "Verwijderen ..."
+    },
+    "stm32Flashing": {
+        "message": "Flashen ..."
+    },
+    "stm32Verifying": {
+        "message": "Verifiëren ..."
+    },
+    "stm32ProgrammingSuccessful": {
+        "message": "Programmeren: SUCCESVOL"
+    },
+    "stm32ProgrammingFailed": {
+        "message": "Programmeren: MISLUKT"
+    },
+    "stm32UnprotectSuccessful": {
+        "message": "Beveiliging opheffen gelukt."
+    },
+    "stm32UnprotectFailed": {
+        "message": "Het is mislukt om de leesbescherming te verwijderen van de board"
+    },
+    "stm32UnprotectInitFailed": {
+        "message": "Mislukt om te beginnen met leesbescherming te verwijderen"
+    },
+    "resetToCustomDefaultsAccept": {
+        "message": "Aangepaste standaardwaarden toepassen"
+    },
+    "versionLabelTarget": {
+        "message": "Doelwit"
+    },
+    "versionLabelFirmware": {
+        "message": "Besturingssysteem"
+    },
+    "versionLabelConfigurator": {
+        "message": "Configurator"
+    },
+    "statusbar_usage_download": {
+        "message": "D: $1%"
+    },
+    "statusbar_usage_upload": {
+        "message": "U: $1%"
+    },
+    "statusbar_packet_error": {
+        "message": "Packet error:"
+    },
+    "statusbar_i2c_error": {
+        "message": "I2C error:"
+    },
+    "statusbar_cycle_time": {
+        "message": "Cycle Tijd:"
+    },
+    "statusbar_cpu_load": {
+        "message": "CPU Gebruik: $1%"
+    },
+    "dfu_connect_message": {
+        "message": "Gebruik alstublieft de Besturingssysteem flasher om toegang te krijgen tot DFU apparaten"
+    },
+    "defaultWelcomeHead": {
+        "message": "Hardware"
+    },
+    "defaultContributingHead": {
+        "message": "Bijdragen"
+    },
+    "defaultChangelogHead": {
+        "message": "Configurator - Wijzigingen"
+    },
+    "defaultDonate": {
+        "message": "Doneer"
+    },
+    "defaultSponsorsHead": {
+        "message": "Sponsoren"
+    },
+    "defaultDocumentationHead": {
+        "message": "Documentatie / Handleiding"
+    },
+    "defaultSupportSubline2": {
+        "message": "Ontwikkelaar"
+    },
+    "initialSetupButtonCalibratingText": {
+        "message": "Kalibreren..."
+    },
+    "initialSetupButtonReset": {
+        "message": "Instellingen Resetten"
+    },
+    "initialSetupResetText": {
+        "message": "Instellingen teruggezet naar <strong>standaard</strong>"
+    },
+    "initialSetupButtonBackup": {
+        "message": "Backup"
+    },
+    "initialSetupButtonRestore": {
+        "message": "Herstel"
+    },
+    "initialSetupButtonRebootBootloader": {
+        "message": "Zet Boot Loader / DFU aan"
+    },
+    "initialSetupMixerHead": {
+        "message": "Mixer Type"
+    },
+    "initialSetupThrottleHead": {
+        "message": "Gas Instellingen"
+    },
+    "initialSetupMinimum": {
+        "message": "Minimum:"
+    },
+    "initialSetupMaximum": {
+        "message": "Maximum:"
+    },
+    "initialSetupFailsafe": {
+        "message": "Uitval beveiliging:"
+    },
+    "initialSetupMinCommand": {
+        "message": "MinCommand:"
+    },
+    "initialSetupBatteryHead": {
+        "message": "Batterij"
+    },
+    "initialSetupMinCellV": {
+        "message": "Min Cell voltage:"
+    },
+    "initialSetupMaxCellV": {
+        "message": "Max Cell Voltage:"
+    },
+    "initialSetupVoltageScale": {
+        "message": "Voltage Schaal:"
+    },
+    "initialSetupAccelTrimsHead": {
+        "message": "Versnellingsmeter trims"
+    },
+    "initialSetupPitch": {
+        "message": "Pitch:"
+    },
+    "initialSetupRoll": {
+        "message": "Roll:"
+    },
+    "initialSetupMagHead": {
+        "message": "Magnetometer"
+    },
+    "initialSetupInfoHead": {
+        "message": "Info"
+    },
+    "initialSetupBattery": {
+        "message": "Accuspanning:"
+    },
+    "initialSetupBatteryValue": {
+        "message": "$1 V"
+    },
+    "initialSetupDrawn": {
+        "message": "Capaciteit verbruikt:"
+    },
+    "initialSetupDrawing": {
+        "message": "Spanning getrokken:"
+    },
+    "initialSetupBatteryMahValue": {
+        "message": "$1 mAh"
+    },
+    "initialSetupBatteryAValue": {
+        "message": "$1 A"
+    },
+    "initialSetupRSSI": {
+        "message": "RSSI:"
+    },
+    "initialSetupRSSIValue": {
+        "message": "$1 %"
+    },
+    "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
+        "message": "Nood Redding is actief",
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCLI": {
+        "message": "CLI is actief",
+        "description": "Message that pops up to describe the CLI arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRESC": {
+        "message": "De 'GPS Rescue' schakelaar is geactiveerd",
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
+        "message": "Een configuratie wijziging vereist een herstart",
+        "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
+    },
+    "featureNone": {
+        "message": "&lt;Selecteer er Een&gt;"
+    },
+    "featureRX_PPM": {
+        "message": "PPM RX invoer"
+    },
+    "featureSERVO_TILT": {
+        "message": "Servo gimbal"
+    },
+    "featureSONAR": {
+        "message": "Sonar"
+    },
+    "featureRSSI_ADC": {
+        "message": "Analoge RSSI invoer"
+    },
+    "featureLED_STRIP": {
+        "message": "Meerdere kleuren RGB LED strip ondersteuning"
+    },
+    "featureDISPLAY": {
+        "message": "OLED Scherm"
+    },
+    "featureONESHOT125": {
+        "message": "ONESHOT ESC ondersteuning"
+    },
+    "configurationFeatureEnabled": {
+        "message": "Ingeschakeld"
+    },
+    "configurationFeatureName": {
+        "message": "Feature"
+    },
+    "configurationFeatureDescription": {
+        "message": "Beschrijving"
+    },
+    "configurationMixer": {
+        "message": "Mixer"
+    },
+    "configurationFeatures": {
+        "message": "Overige Features"
+    },
+    "configurationReceiver": {
+        "message": "Ontvanger"
+    },
+    "configurationSensorGyroToUseNotFound": {
+        "message": "Waarschuwing: Geen Gyro/Acc gevonden"
+    },
+    "configurationSensorGyroToUseFirst": {
+        "message": "Eerste"
+    },
+    "configurationSensorGyroToUseSecond": {
+        "message": "Tweede"
+    },
+    "configurationSensorGyroToUseBoth": {
+        "message": "Beide"
+    },
+    "configurationSensorAlignmentGyro1": {
+        "message": "Eerste GYRO"
+    },
+    "configurationSensorAlignmentGyro2": {
+        "message": "Tweede GYRO"
+    },
+    "configurationSensorAlignmentDefaultOption": {
+        "message": "Standaard"
+    },
+    "configurationReverseMotorSwitch": {
+        "message": "Richting van de motor is omgedraaid"
+    },
+    "configurationMotorPoles": {
+        "message": "Motorpolen",
+        "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationDshotBeeper": {
+        "message": "Dshot Beacon Configuratie"
+    },
+    "configurationBeeper": {
+        "message": "Bieper Configuratie"
+    },
+    "beeperGYRO_CALIBRATED": {
+        "message": "Geeft een pieptoon als de gyro is gekalibreerd"
+    }
+}
