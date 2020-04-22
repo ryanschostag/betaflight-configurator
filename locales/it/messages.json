@@ -551,6 +551,9 @@
     "defaultContributingHead": {
         "message": "Contribuisci"
     },
+    "defaultContributingText": {
+        "message": "Se vuoi aiutare a migliorare Betaflight puoi aiutare in diversi modi, tra cui:<br /><ul><li>Utilizzare la tua conoscenza di Betaflight per creare o aggiornare contenuti sulla <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">nostra Wiki</a>, o rispondere alle domande degli altri utenti nei forum online;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">Contribuire al codice</a> del firmware e del Configuratore - nuove funzionalità, correzioni, miglioramenti;</li><li>Testare <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">nuove funzionalità e correzioni</a> e fornire feedback;</li><li>Aiutando altri utenti a risolvere i problemi segnalati nei <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">nostri issue tracker</a>, e partecipare alle discussioni sulle richieste di features;</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">Tradurre</a> il Betaflight Configurator in una nuova lingua, o aiutando a mantenere le traduzioni esistenti.</li></ul>"
+    },
     "defaultFacebookText": {
         "message": "Abbiamo anche un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">gruppo Facebook</a>.<br /> Unisciti a noi per discutere di Betaflight, fare domande riguardo la configurazione, o semplicemente ritrovarti con altri piloti."
     },
@@ -562,6 +565,9 @@
     },
     "defaultDonateHead": {
         "message": "Open Source / donazione"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight</strong> è un software <strong>open source</strong> per controllori di volo ed è disponibile gratuitamente <strong>senza garanzie</strong> a tutti gli utenti.</p><p>Se hai trovato Betaflight o Betaflight configurator utili, ti invitiamo a valutare di <strong>supportare</strong> lo sviluppo con una donazione.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Se vuoi contribuire finanziariamente su base continua, dovresti considerare di diventare un benefattore per noi su $t(patreonLink.message).</p>"
@@ -1133,6 +1139,9 @@
     "configurationDigitalIdlePercent": {
         "message": "Valore Gas Idle Motore [percento]"
     },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "Il valore \"Idle DShot\" è la percentuale del gas massimo che viene inviato agli ESC quando il gas è al minimo e il modello è armato. Aumentalo per ottenere più velocità in idle ed evitare desincronizzazioni. Un valore troppo alto renderà il modello fluttuante."
+    },
     "configurationMotorPoles": {
         "message": "Poli motore",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1140,6 +1149,10 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (numero di magneti sulla campana del motore)",
         "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationMotorPolesHelp": {
+        "message": "Il numero di poli è il numero di magneti che si trovano sulla campana del motore. NON contare gli statori dove si trovano gli avvolgimenti. I tipici motori di un 5\" hanno 14 magneti, quelli più piccoli, come un 3\" o più piccoli, hanno 12 magneti.",
+        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Gas Minimo (Il più basso valore degli ESC quando armato)"
@@ -3281,9 +3294,17 @@
         "message": "Generalmente i quad più grandi necessitano di guadagni PID più elevati a causa di un rapporto potenza/peso minore.<br><br>Piccoli quad (micro) generalmente necessitano di guadagni PID più bassi per il rapporto potenza/peso maggiore.<br><br>Valori maggiori sono per quad con meno potenza. Valori minori sono per quad con più potenza.",
         "description": "Master gain tuning slider helpicon message"
     },
+    "pidTuningPDRatioSliderHelp": {
+        "message": "Una D relativamente alta smorzerà la risposta agli stick e potrebbe far riscaldare i motori, ma dovrebbe aiutare a controllare le oscillazioni della P e potrebbe migliorare la gestione del propwash.<br><br>Una D relativamente bassa dà una risposta agli stick più veloce ma potrebbe peggiorare la gestione del propwash.",
+        "description": "PD balance tuning slider helpicon message"
+    },
     "pidTuningPDGainSliderHelp": {
         "message": "Un minor guadagno di P e D si tradurrà in motori più freddi, ma aumenterà l'oscillazione del propwash. Un valore troppo basso potrebbe rendere il quad instabile.<br><br>I term P e D lavorano insieme per ridurre il propwash.<br><br>Valori più alti aumenteranno la temperatura dei motori e potrebbero aumentare le oscillazioni durante il volo in avanti a causa di guadagni D-term superiori.",
         "description": "P and D gain tuning slider helpicon message"
+    },
+    "pidTuningResponseSliderHelp": {
+        "message": "Valori più bassi di FF peggioreranno la risposta agli stick e potrebbero portare ad un rimbalzo lento alla fine di un flip o un roll (I-term windup).<br><br>Valori più alti di FF permettono una migliore risposta agli stick nelle manovre brusche. Valori troppo elevati possono causare overshoot e rimbalzi veloci alla fine di un flip o un roll.",
+        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtri passabasso del giroscopio"
@@ -5283,6 +5304,10 @@
     "configurationDshotBidir": {
         "message": "DShot bidirezionale (richiede un firmware ESC supportato)",
         "description": "Feature for the ESC/Motor"
+    },
+    "configurationDshotBidirHelp": {
+        "message": "Invia dati dall'ESC alla FC tramite la Telemetria Dshot. Richiesto dal Filtro RPM e dall'idle dinamico.<br><br>Nota: Richiede un ESC compatibile con un firmware appropriato, es. JESC, Jazzmac, BLHeli-32.",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Frequenza aggiornamento gyro"
