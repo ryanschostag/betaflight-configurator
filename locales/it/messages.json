@@ -3199,7 +3199,7 @@
         "message": "% attenuazione"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "Attenua i comandi dei motori in base alla percentuale impostata. Riduce la corrente degli ESC e il surriscaldamento dei motori quando si utilizzano batterie con più celle, es. per prestazioni simili con una 6S su una build 4S provare il 66%; per una batteria 4S su una build 3S provare il 75%."
+        "message": "Scala i comandi dei motori della percentuale impostata. Riduce la corrente degli ESC e il calore dei motori quando si utilizzano batterie con più celle, es. quando si utilizza una batteria 6S su un modello che ha motori, pale e tuning progettati per 4S, prova a impostare il valore al 66%; quando si utilizza una batteria 4S su un modello costruito per 3S, prova il 75%.<br>Assicurati sempre che tutti i componenti supportino il voltaggio della batteria in uso."
     },
     "pidTuningCellCount": {
         "message": "Numero di celle"
@@ -3527,9 +3527,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valore idle dinamico [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Imposta questo parametro per fornire un valore minimo basato sugli RPM come misura di sicurezza contro la desincronizzazione dei motori.<br>Un racer potrebbe preferire una risposta molto buona e rates bassi - quindi un Idle Dinamico [rpm] basso e un Idle Dshot alto potrebbero essere utili. I piloti freestyle e i piloti LOS apprezzeranno una spinta minore in idle e potrebbero voler utilizzare meno Idle Dshot usando un po' più di Idle Dinamico [rpm] per evitare desincronizzazione a rates alti.<br><br>Visita questa pagina <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki</a> per maggiori informazioni."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Angolo limite per l'Acro Trainer"
