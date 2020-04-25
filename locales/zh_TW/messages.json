@@ -2,5 +2,8 @@
     "yes": {
         "message": "是",
         "description": "General Yes message to be used across the application"
+    },
+    "pidTuningDynamicNotchMinHz": {
+        "message": "動態陷波濾波器最低頻率"
     }
 }
