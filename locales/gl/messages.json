@@ -3268,9 +3268,6 @@
     "pidTuningMotorLimit": {
         "message": "Atenuación %"
     },
-    "pidTuningMotorLimitHelp": {
-        "message": "Atenúa a sinal de saída cara o motor pola porcentaxe establecida. Reduce o consumo de corrente nos ESC´S e a temperatura dos motores cando se usa unha batería con maior número de celdas. Exemplos: Para un rendemento similar dunha batería 6S nunha versión 4S, probe o 66%; Para unha batería 4S nunha versión 3S, probe o 75%."
-    },
     "pidTuningCellCount": {
         "message": "Contador de celdas"
     },
@@ -3589,9 +3586,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valor Idle dinámico [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Estableza este parámetro para proporcionar un valor mínimo baseado en rpm como rede de seguridade fronte aos desincronismos do motor.<br>Un piloto de carreiras soe preferir unha resposta moi boa e tasas baixas, polo que pode ser útil un ralentí dinámico baixo [rpm] e un alto valor Dshot Idle.. Os pilotos de freestyle e LOS apreciarán un empuxe moi baixo en ralentí e poderían querer usar menos valor de Dshot Idle mentres usan un pouco máis o Dynamic Idle [rpm] para evitar desíns a altas tasas. Teña en conta que o valor [rpm] de Dynamic Idle sempre debe ser inferior ao valor de Dshot Idle.<br><br>Visite <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki</a> para obter máis información."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Ángulo límite para Entrenador Acro"
