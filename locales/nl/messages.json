@@ -127,6 +127,9 @@
     "configuratorUpdateNotice": {
         "message": "U gebruikt een verouderde versie van de <b>Betaflight Configurator</b>.<br>$t(configuratorUpdateHelp.message)"
     },
+    "configuratorUpdateWebsite": {
+        "message": "Ga naar de Release Pagina"
+    },
     "tabFirmwareFlasher": {
         "message": "Besturingssysteem Flasher"
     },
@@ -211,6 +214,24 @@
     "logActionShow": {
         "message": "Toon Log"
     },
+    "serialErrorFrameError": {
+        "message": "Seriële verbindingsfout: slechte framing"
+    },
+    "serialErrorParityError": {
+        "message": "Seriële verbindingsfout: verkeerde pariteit"
+    },
+    "stm32UsbDfuNotFound": {
+        "message": "USB DFU niet gevonden"
+    },
+    "stm32ContactingBootloader": {
+        "message": "Contact maken met de bootloader..."
+    },
+    "stm32LocalErase": {
+        "message": "Lokale verwijdering aan het uitvoeren ..."
+    },
+    "stm32InvalidHex": {
+        "message": "Ongeldige hex"
+    },
     "stm32Erase": {
         "message": "Verwijderen ..."
     },
@@ -225,6 +246,12 @@
     },
     "stm32ProgrammingFailed": {
         "message": "Programmeren: MISLUKT"
+    },
+    "stm32AddressLoadFailed": {
+        "message": "Adres laden voor opties bytes sector gefaald. Heel waarschijnlijk door lees bescherming."
+    },
+    "stm32NotReadProtected": {
+        "message": "Lees bescherming niet actief"
     },
     "stm32UnprotectSuccessful": {
         "message": "Beveiliging opheffen gelukt."
@@ -277,6 +304,12 @@
     "defaultChangelogHead": {
         "message": "Configurator - Wijzigingen"
     },
+    "defaultButtonFirmwareFlasher": {
+        "message": "Besturingssysteem Flasher"
+    },
+    "defaultDonateHead": {
+        "message": "Open Source / Donatie Mededeling"
+    },
     "defaultDonate": {
         "message": "Doneer"
     },
@@ -285,6 +318,9 @@
     },
     "defaultDocumentationHead": {
         "message": "Documentatie / Handleiding"
+    },
+    "defaultSupportHead": {
+        "message": "Ondersteuning"
     },
     "defaultSupportSubline2": {
         "message": "Ontwikkelaar"
