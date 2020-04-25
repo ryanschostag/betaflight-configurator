@@ -39,7 +39,7 @@
         "message": "Zure hardware ez du lan hau onartzen."
     },
     "storageDeviceNotReady": {
-        "message": "Biltegiratzeko gailua ez dago prest. MikroSD txartelaren kasuan, ziurtatu hegaldi kontrolatzaileak behar bezala aitortzen duela."
+        "message": "Biltegiratzeko gailua ez dago prest. MikroSD txartelaren kasuan, ziurtatu hegaldi kontroladorea behar bezala aitortzen duela."
     },
     "options_title": {
         "message": "Aplikazioaren ezarpenak"
@@ -72,7 +72,7 @@
         "message": "Konexio-Automatikoa: Gaituta - Konfiguratzaileak ataka berria hautematen denean automatikoki konektatzen saiatzen da"
     },
     "autoConnectDisabled": {
-        "message": "Konexio automatikoa: desgaituta - Erabiltzaileak serieko portu egokia hautatu behar du eta \"Konektatu\" botoia sakatu behar du"
+        "message": "Konexio-Automatikoa: desgaituta - Erabiltzaileak serieko portu egokia hautatu behar du eta \"Konektatu\" botoia sakatu behar du"
     },
     "expertMode": {
         "message": "Adituen modua"
@@ -97,10 +97,10 @@
         "description": "Try and be brief"
     },
     "language_default": {
-        "message": "Sistema lehenetsia"
+        "message": "Sistema Lehenetsia"
     },
     "language_default_pretty": {
-        "message": "Sistema lehenetsia ($t(detectedLanguage))"
+        "message": "Sistema Lehenetsia ($t(detectedLanguage))"
     },
     "sensorDataFlashNotFound": {
         "message": "Flash memoria <br> ez dago erabilgarri",
@@ -156,7 +156,7 @@
         "message": "Erakutsi konfiguratzailearen bertsio ezegonkorretarako eguneratze jakinarazpenak"
     },
     "configuratorUpdateNotice": {
-        "message": "<b>Betaflight Konfiguratzaile</b> bertsio zaharkitua erabiltzen ari zara.<br>$t(configuratorUpdateHelp.message)"
+        "message": "<b>Betaflight Konfiguratzailearen</b> bertsio zaharkitua erabiltzen ari zara.<br>$t(configuratorUpdateHelp.message)"
     },
     "configuratorUpdateHelp": {
         "message": "Firmwarearen bertsio berriak konfiguratzailearen bertsio zaharkituekin erabiltzen baduzu, ezarpen batzuk aldatzerakoan, <strong> firmware konfigurazio eta gailu hondatuak</strong> ekar daitezke. Gainera, firmwarearen zenbait ezaugarri CLI erabiltzen bakarrik konfiguratu daitezke.<br><strong> Betaflight Konfiguratzaile bertsioa <b>$1</b> sarean deskargatzeko erabilgarri dago </strong>. Mesedez bisitatu<a href=\"$2\" target=\"_blank\" rel=\"noopener noreferrer\">orri hau</a> azken bertsioa deskargatzeko, konponketak eta hobekuntzak jasotzen.<br>Mesedez, itxi konfiguratzaile leiho hau eguneratu aurretik."
@@ -183,7 +183,7 @@
         "message": "Barkatu, baina, BACKUPa aurreko bertsioak egina dago eta ezin da bertsio honetan erabili."
     },
     "configMigrationFrom": {
-        "message": "$1 -kin egindako configurazioa eguneratzen"
+        "message": "Eguneratzen konfigurazio fitxategia sortuta konfiguratzaile honekin: $1"
     },
     "configMigratedTo": {
         "message": "$1 -kin egindako configurazioa eguneratua"
@@ -558,6 +558,9 @@
     "defaultContributingHead": {
         "message": "Hartu parte"
     },
+    "defaultContributingText": {
+        "message": "Betaflight hobetzen lagundu nahi baduzu, modu askotan lagundu dezakezu, besteak beste:<br /><ul><li> Betaflight buruzko zure ezagutza erabiliz github-en edukia sortzeko edo eguneratzeko <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">gure wiki-an</a>, edo beste erabiltzaile batzuen galderei web foroetan erantzuten;</li><li>firmware eta konfiguratzaile <a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">kodearekin laguntzen</a> -ezaugarri berriekin, konponketak, hobekuntzak;</li><li>probatzen<a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">funtzio eta konponbide berriak</a>eta berrikuspena eskainiz;</li><li>Beste erabiltzaileei <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\"> arazoak konpontzen laguntzen.</a> eta funtzio eskaerei buruzko eztabaidetan parte hartu;</li><li>Betaflight Konfiguratzailearen hizkuntza berri batera<a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">itzultzen</a> edo dagoeneko itzulpenak mantentzen laguntzen.</li></ul>"
+    },
     "defaultFacebookText": {
         "message": "<a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook Talde</a> bat badaukagu.<br />Egin zaitez jarraitzaile Betafligth-i buruz hitz egiteko leku bat eukitzeko, konfigurazio galderak egiteko edota beste pilotuekin hitz egiteko."
     },
@@ -569,6 +572,9 @@
     },
     "defaultDonateHead": {
         "message": "Kode Irekia / dohaintza abisua"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>Betafligth</strong><strong> kode irekiko</strong>, egaldi kontroladore softwarea da eta dohainik eskuragarri dago, <strong>berme barik</strong> erabiltzaile guztientzako.</p><p> Betaflight edo Betaflight Konfiguratzailea, erabilgarri aurkitu baduzu, mesedez kontuan euki <strong>laguntzea</strong> bere garapenera, dohaintza bat emoten.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>Era erregular baten ekonomikoki laguntzeko idea baduzu, kontuan euki beharko zenuen \"Patron\" bilakatzea gure Patreon portalean $t(patreonLink.message)</p>"
@@ -1140,6 +1146,9 @@
     "configurationDigitalIdlePercent": {
         "message": "Motorraren Throttle Inaktiboaren balioa [percent]"
     },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "'Dshot idle' balioa ESCra igortzen den gehienezko throttle balioaren ehunekoa da, stick posizio baxua denean eta gailua armatuta dagoenean. Balio hau handitu abiadura inaktibo handiagoa lortzeko eta desinkronizazioak ekiditeko. Balio handiekin gailua oso erabilgarria sentituko da."
+    },
     "configurationMotorPoles": {
         "message": "Motorren zutoinak",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1147,6 +1156,10 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (motorren kanpaiako iman kopurua)",
         "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationMotorPolesHelp": {
+        "message": "Zutoin kopurua, motorren kanpaiak dituen iman kopurua da. EZ ZENBATU estator tokian daudenak. Normalean 5 \" motorrek 15 iman dituzte, txikienak 3\" edo gutxiago bezala, normalean 12 iman izaten dituzte.",
+        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Throttle minimoa (ESCren balio txikiena armatuta dagoenean)"
@@ -3193,7 +3206,7 @@
         "message": "Atenuazioa %"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "Motorren aginduak ezarritako ehunekoaren arabera murrizten ditu. ESC korrontea murrizten du eta motor beroak lortzen dira zelda kopuru altuagoko bateriak erabiltzen direnean, adibidez, 4S konfiguratzio batean 6S bateria bat antzeko errendimendua lortzeko, 66% proba dezakezu; 3S konfiuratzio baterako 4S bateriak erabiliz, 75% proba dezakezu."
+        "message": "Motorren aginduak ezarritako ehunekoaren arabera murrizten ditu. ESC korrontea murrizten du eta motor beroak lortzen dira zelda kopuru altuagoko bateriak erabiltzen direnean, adibidez, 6S bateria erabili nahi baduzu 4S-rako diseinatuta gailu batean, 66% saiatu; 4S bateria erabiltzeko 3S diseinatutako gailu batean, 75% saiatu. <br>Egiaztatu osagai guztiak bateriaren tentsioa onartzen dutela."
     },
     "pidTuningCellCount": {
         "message": "Zelda Kopurua"
@@ -3288,9 +3301,17 @@
         "message": "Oro har, Quad handiagoek PID irabazi handiagoak behar dituzte, potentzia eta pisu erlazio txikiagoa izateagatik.<br><br>Quad txikiagoek (microak) normalean PID irabazi txikiagoak behar dituzte, potentzia eta pisu erlazio handiagoa direla eta.<br><br>Balio handiek aginte txikiagoko quadak dira. Balio baxuagoak aginte altuen quadetarako dira.",
         "description": "Master gain tuning slider helpicon message"
     },
+    "pidTuningPDRatioSliderHelp": {
+        "message": "D balio nahiko altuak kontrol-erantzuna leuntzen du eta motorrak berotzea eragin dezake, baina P oszilazioak kontrolatzen lagundu beharko luke eta turbulentzia gurdiak hobetu ditzake.<br><br>D balio nahiko baxua kontrolen erantzun azkarragoa sortzen du baina turbulentzia erantzunetan ahulduko du.",
+        "description": "PD balance tuning slider helpicon message"
+    },
     "pidTuningPDGainSliderHelp": {
         "message": "P eta D balio baxuak motor freskoagoak sortzen dituzte, baina turbulentzia oszilazio gehiago ere bai. Balio oso baxuak quad ezegonkorra izan dezake.<br><br>P eta D elkarrekin lan egiten dute turbulentzia murrizteko.<br><br>Balio altuek motorren tenperatura igoko dute eta hegaldi zuzen leunetan oszilazioak sor ditzakete. D epearen balioak oso altuak direla eta.",
         "description": "P and D gain tuning slider helpicon message"
+    },
+    "pidTuningResponseSliderHelp": {
+        "message": "FF balio baxuek kontrolaren erantzuna okertzen dute eta itzulketa motelak sor ditzakete iraulketa edo iraulketa amaieran (I Epearen amaiera).<br><br>FF balio altuek makila erantzun hobea ematen dute mugimendu erasokorrei. FF balio handiegiak buelta eta errebote azkarrak sor ditzakete irauli edo jaurti baten amaieran.",
+        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Giro Behe-paseko Iragazkiak"
@@ -3513,9 +3534,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Idle Dinamiko Balioa [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Egokitu parametro hau rpm oinarritutako solairu balioa emateko, motoreak desinkronizatzearen segurtasun-sare gisa. <br>Lasterketarako erantzun ona eta tasa baxuak nahiago dira. Beraz, Idle Dinamiko[rpm] balio baxua eta Dshot Idle balio altua erabilgarria izan daitezke. Freestyle eta LOS pilotuek erresistentzia oso baxua estimatuko dute eta baliteke Dshot Idle balio gutxiago erabili nahi izatea Idle Dinamiko[rpm] balio apur bat gehiago erabiltzen duten bitartean tasa altuekin ez desinkronizatzeko. Kontuan izan Idle Dinamiko[rpm] balioa, Dshot Idle balioa baino txikiagoa beti izan behar dela.<br><br>Bisita ezazu <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki</a> sarrera hau informazio gehiago lortzeko."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Akro Trainerren Angle Muga"
@@ -5276,7 +5294,7 @@
         "message": "ESC/Motor protokoloa"
     },
     "configurationEscProtocolHelp": {
-        "message": "Aukeratu motorraren protokoloa. <br>Ziurtatu zure ESCren zein protokolo onartzen dituen ezaugarriak egiaztatzen.<br><b>Kontuz DSHOT900 edo DSHOT1200 hautatzen baduzu, ESC gehienek ez dutelako onartzen!</b>"
+        "message": "Aukeratu motorraren protokoloa. <br>Ziurtatu zure ESC protokoloa onartzen dutela, informazio hau fabrikatzailearen web-orrian hautatu ahal duzu. <br><b>Kontuz DSHOT900 edo DSHOT1200 hautatzen baduzu, ESC gehienek ez dute onartzen!</b>"
     },
     "configurationEscProtocolHelpNoDSHOT1200": {
         "message": "Aukeratu zure motor protokoloa. <br>Egiaztatu zure protokoloa zure ESCrekin bateragarria dela, informazio hori fabrikatzailearen webgunean aurki daiteke."
@@ -5290,6 +5308,10 @@
     "configurationDshotBidir": {
         "message": "Dshot Bidirekzionala (ESC Firmware onartuta behar du)",
         "description": "Feature for the ESC/Motor"
+    },
+    "configurationDshotBidirHelp": {
+        "message": "ESC datuak hegaldi-kontroladoreari bidali DShot telemetriaren bidez. Funtzio hau RPM iragazkia eta Idle Dinamikoa erabiltzeko beharrezkoa da. <br> <br>Oharra: ESC firmware egokia behar duzu, adibidez JESC, JazzMac, BLHeli_32.",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Giroa eguneratzeko frekuentzia"
