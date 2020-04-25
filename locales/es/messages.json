@@ -3199,7 +3199,7 @@
         "message": "Atenuación %"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "Atenúa la señal de salida del motor por el porcentaje establecido. Reduce la corriente en los ESC y la temperatura de los motores cuando se usan baterías con mayor número de celdas, por ejemplo, para simular el rendimiento de una batería 4S usando una batería 6S, prueba un 66%; para simular una batería 3S usando una 4S, prueba un 75%."
+        "message": "Reduce los comandos a los motores por el porcentaje establecido. Reduce la corriente en los ESC y la temperatura de los motores cuando se usan baterías con mayor número de celdas. Por ejemplo, al usar una batería 6S en una aeronave que tiene motores, hélices y un ajuste diseñado para 4S, prueba a poner este valor en el 66%; al usar una batería 4S en una aeronave diseñada para 3S, prueba un 75%.<br>Asegúrate siempre de que todos tus componentes pueden soportar el voltaje de la batería que estés usando."
     },
     "pidTuningCellCount": {
         "message": "Número de celdas"
@@ -3527,9 +3527,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valor Ralentí Dinámico [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Ajusta este parámetro para proporcionar un valor mínimo basado en rpm como red de seguridad ante la desincronización de los motores.<br>Un corredor suele preferir una buena respuesta y tasas bajas - por lo tanto suele ser útil un valor de Ralentí Dinámico[rpm] bajo y un valor de Ralentí Dshot alto. Freestylers y pilotos LOS suelen preferir un empuje muy bajo al ralentí por lo que tal vez prefieran un valor menor en Ralentí Dshot mientras usan un poco más Ralentí Dinámico[rpm] para evitar desincronizaciones a altas tasas. Ten en cuenta que el valor de Ralentí Dinámico[rpm] siempre tiene que ser menor que el valor de Ralentí Dshot<br><br>Visita esta entrada en la <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki</a> para más información."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Ángulo Límite para Entrenador Acro"
