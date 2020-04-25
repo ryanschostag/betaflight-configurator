@@ -3199,7 +3199,7 @@
         "message": "Atenuação %"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "Reduz o sinal para o motor pela porcentagem definida. Reduz o consumo de energia dos ESCs e reduz a temperatura dos motores ao usar uma bateria de maior quantidade de células. Exemplos: Para ter o desempenho semelhante de uma bateria 4S em uma bateria 6S, tente 66%; Para uma performance de 3S em uma bateria 4S, tente 75%."
+        "message": "Reduz o sinal para o motor pela porcentagem definida. Reduz o consumo de energia dos ESCs e reduz a temperatura dos motores ao usar uma bateria de maior quantidade de células. Exemplos: Quando usar uma bateria 6S em uma aeronave com motores, hélices e regulagem projetados para uma bateria 4S, tente o valor 66%; Para usar uma bateria 4S em uma aeronave projetada para baterias 3S, tente 75%.<br>Sempre tenha certeza de que todos os seus componentes suportam a voltagem da bateria que está utilizando."
     },
     "pidTuningCellCount": {
         "message": "Quantidade de células"
@@ -3527,9 +3527,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valor Ocioso Dinâmico [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Defina este parâmetro para fornecer uma valor baseado no rpm que seja seguro contra dessincronização de motores.<br>Um piloto de corrida pode preferir uma boa resposta com o acelerador baixo, portanto um valor Ocioso Dinâmico [rpm] mais baixo e um valor DShot Ocioso mais alto será util. Pilotos Freestyle e LOS podem preferir não ter empuxo algum enquanto o acelerador estiver no minimo, portando será melhor utilizar um valor Ocioso Dinâmico [rpm] maior e um valor DShot Ocioso menor. Nota: O valor Ocioso Dinâmico [rpm] sempre deverá ser menor do que o valor DShot Ocioso.<br><br>Visite <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">esta página do Wiki</a> para mais informações."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Angulo máximo do Treinador Acro"
@@ -4002,7 +3999,7 @@
         "description": "Title of the box to select the current active OSD profile"
     },
     "osdSetupSelectedProfileLabel": {
-        "message": "Atual:",
+        "message": "Perfil Selecionado:",
         "description": "Label for the selection of the curren active OSD profile"
     },
     "osdSetupPreviewSelectProfileElement": {
@@ -4074,7 +4071,7 @@
         "message": "Abrir Arquivo de Fonte"
     },
     "osdSetupCustomLogoTitle": {
-        "message": "Logo do Boot:"
+        "message": "Logo de Inicialização:"
     },
     "osdSetupCustomLogoOpenImageButton": {
         "message": "Selecionar imagem&hellip;"
