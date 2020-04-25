@@ -68,7 +68,7 @@
         "message": "Automatikus kapcsolódás: Letiltva - A felhasználónak kell kiválasztania a megfelelő soros portot és a \"Kapcsolódj\" gombra kattintania"
     },
     "expertMode": {
-        "message": "Szakértő mód engedélyezése"
+        "message": "Szakértői mód engedélyezése"
     },
     "expertModeDescription": {
         "message": "Mutasd a kiadatlan és az esetlegesen instabil build-eket"
@@ -96,7 +96,7 @@
         "message": "Rendszer alapértelmezett ($t(detectedLanguage))"
     },
     "sensorDataFlashNotFound": {
-        "message": "Nincs dataflash<br>csip találat",
+        "message": "Nincs blackbox <br>rögzitőchip ",
         "description": "Text of the dataflash image in the header of the page."
     },
     "sensorDataFlashFreeSpace": {
@@ -112,6 +112,10 @@
     },
     "sensorStatusAccel": {
         "message": "Gyorsulásmérő"
+    },
+    "sensorStatusAccelShort": {
+        "message": "Gyorsulásmérő",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
     },
     "sensorStatusMag": {
         "message": "Magnetométer"
@@ -144,14 +148,32 @@
     "checkForConfiguratorUnstableVersions": {
         "message": "Értesíts a konfigurátor instabil frissítéseiről"
     },
+    "configuratorUpdateNotice": {
+        "message": "Elavult verziót használ a <b>Betaflight Konfigurátorból</b>.<br>$t(configuratorUpdateHelp.message)"
+    },
+    "configuratorUpdateHelp": {
+        "message": "Egy újabb firmware verziónak és a konfigurátor elavult verziójának használata esetén lehet, hogy egyes beállítások megváltoztatásakor <strong> megsérül a firmware konfiguráció és nem fog rendesen működni </strong>. Ezenkívül a firmware bizonyos funkciói csak a CLI-ben konfigurálhatók. <br> <strong> A Betaflight Konfigurátor <b> $1 </b> verziója letölthető online </strong>, látogasson el a <a href = \"$2\" webhelyre. target = \"_ blank\" rel = \"noopener noreferrer\"> ezen az oldalon </a> hogy a legújabb javított és fejlesztett verziót le tudja tölteni és telepíteni. <br> Kérjük, frissítés előtt zárja be a konfigurátor ablakot."
+    },
     "configuratorUpdateWebsite": {
         "message": "A Legfrissebb Verzió Weboldalára"
     },
     "deviceRebooting": {
         "message": "Eszköz - <span class=\"message-negative\">Újraindítás</span>"
     },
+    "deviceRebooting_flashBootloader": {
+        "message": "Eszköz - <span class=\"message-negative\">Újraindítása a rendszertöltő égetéséhez</span>"
+    },
+    "deviceRebooting_romBootloader": {
+        "message": "Eszköz - <span class=\"message-negative\"> újraindítása a ROM rendszertöltő égetéséhez </span>"
+    },
     "deviceReady": {
         "message": "Eszköz - <span class=\"message-positive\">Kész</span>"
+    },
+    "backupFileIncompatible": {
+        "message": "A kiválasztott fájl egy régebbi verzióval került generálásra így nem kompatibilis az aktuális konfigurátor verzióval. Sajnáljuk"
+    },
+    "backupFileUnmigratable": {
+        "message": "A kiválasztott fájl egy régebbi konfigurátor verzióval került generálásra így nem migrálható. Sajnáljuk."
     },
     "configMigrationFrom": {
         "message": "Generált konfigurációs fájl migrálása: $1"
@@ -167,6 +189,9 @@
     },
     "tabLanding": {
         "message": "Üdvözöljük"
+    },
+    "tabChangelog": {
+        "message": "Változtatásnapló"
     },
     "tabPrivacyPolicy": {
         "message": "Adatvédelmi irányelvek"
@@ -211,7 +236,7 @@
         "message": "Video Transzmitter"
     },
     "tabPower": {
-        "message": "Töltés és Akkumulátor"
+        "message": "Áram és Akkumulátor"
     },
     "tabGPS": {
         "message": "GPS"
@@ -336,6 +361,15 @@
     "stm32ProgrammingFailed": {
         "message": "Programozás nem sikerült."
     },
+    "stm32AddressLoadFailed": {
+        "message": "A választható bájt-szektor cím betöltése nem sikerült. Nagyon valószínű, hogy az olvasásvédelem miatt."
+    },
+    "stm32AddressLoadSuccess": {
+        "message": "A választható bájt-szektor címbetöltése sikeres volt."
+    },
+    "stm32AddressLoadUnknown": {
+        "message": "A választható bájt-szektor címbetöltése ismeretlen hiba miatt meghiúsult. Megszakítva."
+    },
     "stm32NotReadProtected": {
         "message": "Olvasás védelem nem aktív"
     },
@@ -366,15 +400,42 @@
     "firmwareUpgradeRequired": {
         "message": "Az eszközön található firmware-t frissíteni kell. Használja a CLI-t biztonsági mentés készítésére égetés előtt. A CLI biztonsági mentés/visszatöltés leírását a dokumentációban találja.<br />Ha nem akar frissíteni, használja a konfigurátor egy régebbi verzióját."
     },
+    "resetToCustomDefaultsDialog": {
+        "message": "A táblához vannak egyéni alapértelmezések. Általában a tábla nem fog megfelelően működni, ha az egyéni alapértelmezett értékeket nem alkalmazza. <br /> A testreszabott alapértelmezett beállításokat szeretné alkalmazni erre a táblára?"
+    },
+    "resetToCustomDefaultsAccept": {
+        "message": "Saját alapértelmezések használata"
+    },
+    "reportProblemsDialogHeader": {
+        "message": "A következő <strong> konfigurációs problémákat </strong> észlelte a rendszer:"
+    },
+    "reportProblemsDialogFooter": {
+        "message": "Kérjük <strong> javítsa ki ezeket a problémákat, mielőtt megpróbálna repülni</strong>."
+    },
+    "reportProblemsDialogAPI_VERSION_MAX_SUPPORTED": {
+        "message": "<strong> a konfiguráló program verziója, amelyet használ ($3), régebbi, mint a használt firmware ($4) </strong>.<br>$t(configuratorUpdateHelp.message)"
+    },
+    "reportProblemsDialogMOTOR_PROTOCOL_DISABLED": {
+        "message": "<strong>nincs kiválasztva motorkimeneti protokoll</strong>.<br>Válassza ki az ESC-knek megfelelő motorkimeneti protokollt a '$t(tabConfiguration.message)' fül '$t(configurationEscFeatures.message)' részében.<br>$t(escProtocolDisabledMessage.message)"
+    },
+    "reportProblemsDialogACC_NEEDS_CALIBRATION": {
+        "message": "<strong> a gyorsulásmérő engedélyezve van, de nincs kalibrálva </strong>. <br> Ha a gyorsulásmérő használatát tervezi, kérjük, kövesse az '$t(initialSetupButtonCalibrateAccel.message)' útmutatásait a '$t(tabSetup.message)'fülre. Ha engedélyezve van egy olyan funkció, amely megköveteli a gyorsulásmérő használatát (automatikus szintű módok, GPS mentés, ...), akkor az eszköz élesítését addig ki kell kapcsolni, amíg a gyorsulásmérőt nem kalibrálják. <br> Ha nem tervezi a gyorsulásmérő használatát, akkor azt javasolt kikapcsolni, a '$t(configurationSystem.message)' menüben a '$t(tabConfiguration.message)' lapon."
+    },
     "infoVersions": {
-        "message": "Futatt - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Konfigurátor: <strong>{{configuratorVersion}}</strong>",
+        "message": "Futtatás - OS: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, Konfigurátor: <strong>{{configuratorVersion}}</strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
+    },
+    "buildServerLoaded": {
+        "message": "Build infromáció betölve $1 -nak/-nek a build szerverről."
     },
     "buildServerUsingCached": {
         "message": "Cache build információ használata $1 -nak/-nek."
     },
     "releaseCheckLoaded": {
         "message": "$1 Verzióinformáció betöltése GitHub-ról."
+    },
+    "releaseCheckFailed": {
+        "message": "<b>GitHub lekérdezés $1 -nak/-nek nem sikerült, cache információ használata. Indok: <code>$2</code></b>"
     },
     "releaseCheckCached": {
         "message": "Kesselt verzióinformáció a $1 kiadáshoz."
@@ -408,6 +469,12 @@
     },
     "armingEnabled": {
         "message": "<strong>Élesítés Bekapcsolva</strong>"
+    },
+    "runawayTakeoffPreventionDisabled": {
+        "message": "<strong>Felszállás védelem ideiglenesen kikapcsolva</strong>"
+    },
+    "runawayTakeoffPreventionEnabled": {
+        "message": "<strong>Felszállás védelem engedélyezve</strong>"
     },
     "boardInfoReceived": {
         "message": "Csipp: <strong>$1</strong>, verzió: <strong>$2</strong>"
@@ -457,8 +524,14 @@
     "dfu_connect_message": {
         "message": "Kérjük használja a Firmware Égetőt, hogy hozzáférjen a DFU eszközökhöz"
     },
+    "dfu_erased_kilobytes": {
+        "message": "$1 kB flash kitörölve <span class=\"message-positive\">sikeresen</span>"
+    },
     "dfu_device_flash_info": {
         "message": "Eszköz felismerve $1 kiB flash mérettel"
+    },
+    "dfu_error_image_size": {
+        "message": "<span class=\"message-negative\">Hiba</span>: A megadott kép nagyobb, mint a chipen elérhető flash! Kép: $1 KiB, limit = $2 KiB"
     },
     "eeprom_saved_ok": {
         "message": "EEPROM <span class=\"message-positive\">elmentve</span>"
@@ -469,8 +542,14 @@
     "defaultWelcomeHead": {
         "message": "Hardver"
     },
+    "defaultWelcomeText": {
+        "message": "Az alkalmazás támogatja az összes hardvert, amely képes futtatni a Betaflight-ot. Ellenőrizze a flash fület a hardver teljes listáján.<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">Töltse le a Betaflight Blackbox Log Viewer alkalmazást</a><br /><br />A firmware forráskódja letölthető <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">innen</a><br /><br />A legújabb <b>STM USB VCP Drivers</b> letölthető <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">innen</a><br />Régi hardverekhez, CP210x USB-t és soros chipet használva:<br />a legújabb <b>CP210x Drivers</b> letölthető <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">innen</a><br /> A legújabb <b>Zadig</b> Windowshoz az USB illesztőprogram telepítése letölthető <a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">innen</a><br />"
+    },
     "defaultContributingHead": {
         "message": "Hozzájárult"
+    },
+    "defaultContributingText": {
+        "message": "Ha még jobbá szeretné tenni a Betaflight-ot, akkor sokféle módon segíthet, többek között:<br /><ul><li>a Betaflight ismereteinek felhasználásával tartalom létrehozására vagy frissítésére<a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">our Wiki</a>, vagy válaszolhat más felhasználók kérdéseire online fórumokon;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">contributing code</a> a firmware-re és a Konfigurátota - új szolgáltatások, javítások, fejlesztések;</li><li>tesztelésben <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">új funkciók és javítások</a> és ezek visszajelzésében;</li><li>segíteni más felhasználóknak a bejelentett problémák megoldásában<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">our issue tracker</a>, és részt venni a funkciókérésekről szóló vitákban;</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">fordításban</a> Betaflight Konfigurátort új nyelvekre, vagy segít a meglévő fordítások fejlesztésében.</li></ul>"
     },
     "defaultChangelogHead": {
         "message": "Konfigurátor - Változtatásnapló"
@@ -508,14 +587,20 @@
     "defaultSupport": {
         "message": "Támogatásért keresse a fórumokat és a wiki-t, vagy vegye fel a kapcsolatot a forgalmazójával.<br /><br />"
     },
+    "initialSetupBackupAndRestoreApiVersion": {
+        "message": "<span class=\"message-negative\">A biztonsági mentés és a visszaállítás funkció letiltva.</span> Van firmware-je API verzióval <span class=\"message-negative\">$1</span>, A biztonsági másolat készítéséhez és visszaállításához <span class=\"message-positive\">$2</span>.  Kérjük, készítsen biztonsági másolatot a beállításokról a CLI-n keresztül, az eljárás folyamatát lásd a Betaflight dokumentációjában."
+    },
     "initialSetupButtonCalibrateAccel": {
         "message": "Gyorsulásmérő kalibrálása"
     },
     "initialSetupCalibrateAccelText": {
-        "message": "Helyezze a csippet, vagy vázat <strong>vízszintes</strong> felületre, folytassa a kalibrációt, biztosítsa, hogy az egység a kalibráció ideje alatt nem mozdul el"
+        "message": "Helyezze a vezérlőt, vagy vázat <strong>vízszintes</strong> felületre, folytassa a kalibrációt, biztosítsa, hogy az egység a kalibráció ideje alatt nem mozdul el"
     },
     "initialSetupButtonCalibrateMag": {
         "message": "Magnetométer kalibrálása"
+    },
+    "initialSetupCalibrateMagText": {
+        "message": "Mozgasa a multirotort legalább <strong>360</strong> fokban minden forgatási tengelyen, erre 30 másodperce van"
     },
     "initialSetupButtonCalibratingText": {
         "message": "Kalibrálás..."
@@ -534,6 +619,9 @@
     },
     "initialSetupButtonRebootBootloader": {
         "message": "Bootloader aktiválása / firmware frissítés"
+    },
+    "initialSetupBackupRestoreText": {
+        "message": "<strong>Csiniáljon biztonsági mentést</strong> a konfigurációjáról baleset esetére, a <strong>CLI</strong> beállítások <span class=\"message-negative\">nincsenek</span> benne - használd a 'diff all' parancsot a CLI-ben ehez."
     },
     "initialSetupBackupSuccess": {
         "message": "Biztonsági másolat <span class=\"message-positive\">sikeresen</span> elmentve"
@@ -734,6 +822,9 @@
     "featureRX_SPI": {
         "message": "SPI RX támogatás"
     },
+    "featureESC_SENSOR": {
+        "message": "Használjon KISS/BLHeli_32 ESC telemetriát <b>külön szálon </b>"
+    },
     "featureCHANNEL_FORWARDING": {
         "message": "AUX csatornák továbbítása a szervó kimenetre"
     },
@@ -755,6 +846,9 @@
     "featureVTX": {
         "message": "Videó Adó"
     },
+    "featureDYNAMIC_FILTER": {
+        "message": "Dinamikus giroszkóp-szűrés"
+    },
     "featureFAILSAFE": {
         "message": "2. Failsafe Stádium Engedélyezése"
     },
@@ -762,7 +856,7 @@
         "message": "Failsafe Engedélyezése"
     },
     "featureFAILSAFETip": {
-        "message": "<strong>Megjegyzés:</strong> Ha a 2. Failsafe Stádium LE VAN TILTVA, az alapértelmezett <strong>Auto</strong> beállítás kerül használatba a felhasználó által definiált chatornabeállítások (Roll, Pitch, Yaw and Throttle) helyett."
+        "message": "<strong>Megjegyzés:</strong> Ha a 2. Failsafe stádium LE VAN TILTVA, az alapértelmezett <strong>Auto</strong> beállítás kerül használatba a felhasználó által definiált csatornabeállítások (Roll, Pitch, Yaw and Throttle) helyett."
     },
     "featureFAILSAFEOldTip": {
         "message": "Failsafe beállítás alkalmazása szignálvesztés esetén"
@@ -791,8 +885,17 @@
     "configurationRSSI": {
         "message": "RSSI (Jel Erősség)"
     },
+    "configurationRSSIHelp": {
+        "message": "Az RSSI a jelerősség mérésének eszköze, ez nagyon praktikus, mivel így tudhatja, mikor repül ki a a drón a hatótávolságán, vagy mikor szenved RF interferenciát."
+    },
     "configurationEscFeatures": {
         "message": "ESC/Motor Funkciók"
+    },
+    "configurationFeaturesHelp": {
+        "message": "<strong> Megjegyzés: </strong> Nem minden funkció kombinációja érvényes. Ha a repülésvezérlő firmware-je érvénytelen funkciók kombinációit észleli, az ütköző funkciók le lesznek tiltva. <br /><strong>Megjegyzés:</strong> Konfigurálja a portokat <span class=\"message-negative\">mielőtt</span> engedélyez olyan funkciókat amik portokat használnak."
+    },
+    "configurationSerialRXHelp": {
+        "message": "<strong> Megjegyzés: </strong> Ne felejtse el beállítani a soros portot (a Portok fülön), és válassza ki a soros port szolgáltatót, amikor az RX_SERIAL funkciót használja."
     },
     "configurationSpiRxHelp": {
         "message": "<strong>Megjegyzés:</strong> Az SPI RX szolgáltató csak akkor működik, ha a szükséges hardver be van építve, vagy SPI buszon csatlakoztatva."
@@ -804,16 +907,31 @@
         "message": "Csipp és Szenzor Hangolás"
     },
     "configurationBoardAlignmentRoll": {
-        "message": "Dőlési Szög"
+        "message": "Roll Szög"
     },
     "configurationBoardAlignmentPitch": {
-        "message": "Hosszdőlés Fokok"
+        "message": "Pitch szög"
+    },
+    "configurationBoardAlignmentYaw": {
+        "message": "Yaw szög"
     },
     "configurationSensorAlignmentGyro": {
         "message": "GYRO igazítás"
     },
     "configurationSensorGyroToUse": {
         "message": "Giroszkóp / Gyorsulásmérő"
+    },
+    "configurationSensorGyroToUseNotFound": {
+        "message": "Vigyázat: Nem található Giroszkóp/Gyorsulásmérő"
+    },
+    "configurationSensorGyroToUseFirst": {
+        "message": "Első"
+    },
+    "configurationSensorGyroToUseSecond": {
+        "message": "Második"
+    },
+    "configurationSensorGyroToUseBoth": {
+        "message": "Mindkettő"
     },
     "configurationSensorAlignmentGyro1": {
         "message": "Első giroszkóp"
@@ -851,17 +969,45 @@
     "configurationReverseMotorSwitch": {
         "message": "Fordított a motor iránya"
     },
+    "configurationReverseMotorSwitchHelp": {
+        "message": "Ez az opció a keverőt úgy állítja be, hogy elvárja a motor irányának megfordítását és a légcsavarok ennek megfelelő beállítását.<strong>Vigyázat:</strong>Ez nem fordítja meg a motor irányát. Ennek eléréséhez használja az ESC-k konfigurációs eszközét, vagy forrasza át az ESC - motor huzalozását. A élesítés megkezdése előtt győződjön meg arról is, hogy a propellerek le vannak szedve, és csakis így tesztelje a forgásirányt."
+    },
+    "configurationAutoDisarmDelay": {
+        "message": "Hatástalanítsa a motorokat a beállított késleltetés után [seconds] (MOTOR_STOP funkció szükséges)"
+    },
+    "configurationDisarmKillSwitch": {
+        "message": "Hatástalanítsa a motorokat a gáz értékétől függetlenül (Ha az ARM a Modes fülön AUX csatornán van konfigurálva)"
+    },
     "configurationDisarmKillSwitchHelp": {
         "message": "Ha a gázkar nincs alacsony állásban az élesítés mindig le van tiltva. Legyen óvatos, mivel emellett a beállítás mellett egy kapcsoló átállításával akár repülés közben is visszabiztosíthatja a repülésirányítót."
     },
     "configurationDigitalIdlePercent": {
-        "message": "Gázállás [százalékban], ha a Motorok Nyugalmi Állapotban Vannak"
+        "message": "Gázállás [százalékban], ha a motorok nyugalmi állapotban vannak"
+    },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "A „DShot alapjárati” érték a maximális gázkar százaléka, amelyet az ESC-knek küldnek, amikor a gázkar minimális állásban van, és a drón élesedik. Növelje azt, hogy nagyobb alapjárati sebességet kapjon, és elkerülje a deszinkronizálásokat. Vigyázzon ha túl magas problémák merülhetnek fel."
+    },
+    "configurationMotorPolesLong": {
+        "message": "$t(configurationMotorPoles.message) (A motor harangjába lévő mágnesek száma)",
+        "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Minimális Gázállás (Legalacsonyabb ESC érték, ahol élesítés engedélyezett)"
     },
     "configurationThrottleMaximum": {
         "message": "Maximális Gázállás (Legmagasabb ESC érték, ahol élesítés engedélyezett)"
+    },
+    "configurationDshotBeeper": {
+        "message": "Dshot jelző (ESC csipogás) konfiguráció"
+    },
+    "configurationUseDshotBeeper": {
+        "message": "Használjon Dshot jelzőt (használjon motorokat sípoláshoz amikor hatástalanítva van)"
+    },
+    "configurationDshotBeaconTone": {
+        "message": "Jelző tónus"
+    },
+    "configurationDshotBeaconHelp": {
+        "message": "A Dshot jelző az ESC-ket és a motorokat használja hang előállítására . Ez azt jelenti, hogy a Dshot jeladó nem használható, amikor a motorok forognak. A Betaflight 3.4-es és újabb verzióiban, amikor az élesítést megkísérlik, miközben a Dshot jelző aktív, az utolsó Dshot jelzőhangjelzése után 2 másodperc késleltetés van, mielőtt a drón élesedik. Ennek célja, hogy megakadályozzuk a Dshot jelző funkcionalitását az élesítéskor küldött Dshot parancsok beavatkozásában.<br/><strong>Figyelem:</strong> Mivel a Dshot jelző aktív motorjain keresztül áram folyik át, ez túlzott forrósodást okozhat. A motorok és az ESC-k erősen károsodhatnak, ha a jelző erőssége túl magas. A BLHeli Configurator vagy a BLHeli Suite használatával állítsa be és ellenőrizze a jelző erősségét."
     },
     "configurationBeeper": {
         "message": "Csipogó konfiguráció"
@@ -876,7 +1022,7 @@
         "message": "SOS jelet Csipog, ha élesítve van, és az adó kikapcsolt, vagy a elvesztette a kapcsolatot  (automatikus landolás/biztosítás)"
     },
     "beeperDISARMING": {
-        "message": "Csipog a repülésirányító biztosításánál"
+        "message": "Csipog a repülésirányító hatástalanításnál"
     },
     "beeperARMING": {
         "message": "Csipog a repülésirányító élesítésénél"
@@ -890,6 +1036,12 @@
     "beeperBAT_LOW": {
         "message": "Ismétlődő figyelmeztetőcsipogások, ha az akkumulátorfeszültség alacsony"
     },
+    "beeperGPS_STATUS": {
+        "message": "A csipogások számával jelöli, hány GPS-műhold található éppen"
+    },
+    "beeperRX_SET": {
+        "message": "Csipog, ha az aux csatorna be van állítva"
+    },
     "beeperACC_CALIBRATION": {
         "message": "Gyorsulásmérő repülés közbeni kalibrációja sikeresen befejeződött jelzés"
     },
@@ -902,11 +1054,29 @@
     "beeperDISARM_REPEAT": {
         "message": "Csipog, ha a gázkar biztosító pozícióban áll"
     },
+    "beeperARMED": {
+        "message": "Figyelmeztető csipogó hangok, amikor a vezérlőt élesített motorral kikapcsolták alapjáraton (addig ismételjük, amíg a vezérlőt hatástalanítjuk vagy a gázkar állása megnő)"
+    },
     "beeperSYSTEM_INIT": {
-        "message": "Bejelentkező csipogás, mikor a csipp áram alá kerül"
+        "message": "Bejelentkező csipogás, mikor a Chip áram alá kerül"
+    },
+    "beeperUSB": {
+        "message": "Csipogás, ha a repülési irányító tápfeszültségét USB-n keresztül kapja. Kapcsolja ki ezt, ha nem akarja, hogy a hangjelző bekapcsoljon, amikor a munkapadon van"
     },
     "beeperBLACKBOX_ERASE": {
         "message": "Csipog, ha a feketedoboz törlése befejeződött"
+    },
+    "beeperCRASH_FLIP": {
+        "message": "Csipogás, ha az ütközés utáni mód aktív"
+    },
+    "beeperCAM_CONNECTION_OPEN": {
+        "message": "Csipogó hangjelzés, amikor az 5 gombos kameravezérlőt csatlakoztatja"
+    },
+    "beeperCAM_CONNECTION_CLOSE": {
+        "message": "Csipogó hangjelzés, amikor az 5 gombos kameravezérlőt lecsatlakoztatja"
+    },
+    "beeperRC_SMOOTHING_INIT_FAIL": {
+        "message": "Csipogás, ha élesített és az rc simítás nem inicializálta a szűrőket"
     },
     "configuration3d": {
         "message": "3D ESC/Motor Funkciók"
@@ -932,6 +1102,21 @@
     "configurationCalculatedCyclesSec": {
         "message": "Ciklus/Sec [Hz]"
     },
+    "configurationSpeedGyroNoGyro": {
+        "message": "Nincs giroszkóp",
+        "description": "When no gyro is configured this appears in place of the speed of the gyro in kHz"
+    },
+    "configurationSpeedPidNoGyro": {
+        "message": "Giroszkóp /{{value}}",
+        "description": "When no gyro is configured this appears in place of the speed of the PID in kHz. Try to keep it short."
+    },
+    "configurationKHzUnitLabel": {
+        "message": "{{value}} kHz",
+        "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
+    "configurationLoopTimeHelp": {
+        "message": "<strong>Megjegyzés:</strong>Győződjön meg róla, hogy az FC képes ezen a sebességen működni! Ellenőrizze a CPU és a ciklusidő stabilitását. Ennek megváltoztatásához szükség lehet a PID újrahangolására. TIPP: A jobb teljesítmény elérése érdekében tiltsa le a gyorsulásmérőt és más érzékelőket."
+    },
     "configurationGPS": {
         "message": "GPS"
     },
@@ -949,6 +1134,25 @@
     },
     "configurationGPSAutoConfig": {
         "message": "Auto Konfig"
+    },
+    "configurationGPSGalileo": {
+        "message": "Használd a Galileót",
+        "description": "Option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSGalileoHelp": {
+        "message": "Ha engedélyezi, ez eltávolítja a (japán) QZSS rendszert, és helyettesíti a Galileo rendszerrel (európai).",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
+    "configurationGPSHomeOnce": {
+        "message": "Állítsa be az Otthon pontot egyszer",
+        "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHomeOnceHelp": {
+        "message": "Ha engedélyezve van, csak az akkumulátor csatlakoztatását követõ elsõ kar használható otthoni pontként. Ha nem engedélyezi, akkor a quad minden élesítésekor a kezdőpont frissül.",
+        "description": "Help text for the option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHelp": {
+        "message": "<strong>Megjegyzés:</strong> Ne felejtse el beállítani a Soros portot (Portok fülön), amikor a GPS funkciót használja."
     },
     "configurationSerialRX": {
         "message": "Soros Port Szolgáltató"
@@ -981,7 +1185,10 @@
         "message": "Perifériák"
     },
     "portsHelp": {
-        "message": "<strong>Megjegyzés:</strong> nem minden kombináció érvényes. Ha a repulésirányító firmware ilyen helyzetet érzékel, a soros port beállításai visszaállítódnak."
+        "message": "<strong>Megjegyzés:</strong> Nem minden kombináció érvényes. Ha a repülésirányító firmware ilyen helyzetet érzékel, a soros port beállításai visszaállítódnak."
+    },
+    "portsVtxTableNotSet": {
+        "message": "<span class=\"message-negative\">FIGYELMEZTETÉS:</span> A VTX tábla nincs megfelelően beállítva, és anélkül a VTX vezérlése nem lehetséges. Kérjük, állítsa be a VTX táblát a $t(tabVtx.message) lapon."
     },
     "portsMSPHelp": {
         "message": "<strong>Megjegyzés:</strong> <span class=\"message-negative\">NE</span> kapcsolja ki az MSP-t az első soros porton, kivéve, ha pontosan tudja mit csinál. A konfigurációk újraírására, vagy törlésére kényszerülhet, ha megteszi."
@@ -1058,6 +1265,15 @@
     "portsFunction_LIDAR_TF": {
         "message": "Benewake LIDAR"
     },
+    "pidTuningUpgradeFirmwareToChangePidController": {
+        "message": "<span class=\"message-negative\">A PID-vezérlő megváltoztatása letiltva - megváltoztathatja azt a CLI-n keresztül.</span> Önnek API veriós firmware-je van <span class=\"message-negative\">$1</span> de ehhez a funkcióhoz <span class=\"message-positive\">$2</span>."
+    },
+    "pidTuningSubTabPid": {
+        "message": "PID profil beállitása"
+    },
+    "pidTuningSubTabRates": {
+        "message": "Rate profil beállitása"
+    },
     "pidTuningSubTabFilter": {
         "message": "Filter Beállítások"
     },
@@ -1070,8 +1286,48 @@
     "pidTuningNonProfilePidSettings": {
         "message": "Profil független PID Kontroller Beállítások"
     },
+    "pidTuningAntiGravity": {
+        "message": "Anti gravitáció"
+    },
+    "pidTuningAntiGravityMode": {
+        "message": "Mód",
+        "description": "Anti Gravity mode selection parameter"
+    },
+    "pidTuningAntiGravityModeOptionSmooth": {
+        "message": "Simaság",
+        "description": "One of the modes of anti gravity"
+    },
+    "pidTuningAntiGravityModeOptionStep": {
+        "message": "Lépés",
+        "description": "One of the modes of anti gravity"
+    },
+    "pidTuningAntiGravityThres": {
+        "message": "Küszöb",
+        "description": "Anti Gravity Threshold Parameter"
+    },
+    "pidTuningAntiGravityHelp": {
+        "message": "Az antigravitáció növeli az I értéket, ha a gázkar gyors változása észlelhető. A magasabb erősítési értékek stabilitást és jobb hozzáállást biztosítanak a gázkar pumpálásakor."
+    },
+    "pidTuningDMin": {
+        "message": "D minimum",
+        "description": "Table header of the D Min feature in the PIDs tab"
+    },
+    "pidTuningDMinDisabledNote": {
+        "message": "<strong>Megjegyzés:</strong> A D Min funkció le van tiltva, és paraméterei rejtve vannak. A D Min használatához engedélyezze itt $t(pidTuningPidSettings.message)."
+    },
+    "pidTuningDMinFeatureHelp": {
+        "message": "A D Min lehetőséget nyújt alacsonyabb D szint elérésére normál repülésnél és magasabb szintű gyors manőverekhez, amelyek túllépést okozhatnak, mint például a flipeknél. Emellett felveszi a D-t a propwash során. A Gaint beállítja, hogy a D mennyire gyorsan érje el a maximális értéket, és a giroszkóp alapján meghatározza az éles mozdulatokat és az előmosás eseményeit. Az előrehaladás elősegíti, hogy D korábban feljebb lépjen azáltal, hogy giroszkóp helyett alapjelet használ az éles mozgások meghatározására.",
+        "description": "D Min feature helpicon message"
+    },
+    "pidTuningDMinHelp": {
+        "message": "Szabályozza a tompítás (D-term) erősségét normál előremenő repülés esetén. <br>Ha a D_min engedélyezve van, az aktív D-erősítés megváltozik repülés közben. Normál előremeneti repülésnél az alábbi D_min nyereségnél van. Éles mozgatás vagy a mosás közben az aktív D-nyereség a bal oldalon megadott derivált nyereséghez nő.<br><br>A teljes derivált nyereséget éles bemenetekkel érik el, de csak részlegesen érhetők el a mosáskor. <br>Állítsa be a D_Min erősítést és előrehaladást az erősítés növelésének érzékenységének és időzítésének szabályozásához.",
+        "description": "D Min helpicon message on PID table titlebar"
+    },
     "pidTuningPidSettings": {
         "message": "PID Kontroller Beállítások"
+    },
+    "receiverRcSmoothing": {
+        "message": "Rc simítás"
     },
     "receiverRcSmoothingAuto": {
         "message": "Auto"
@@ -1079,17 +1335,79 @@
     "receiverRcSmoothingManual": {
         "message": "Manuális"
     },
+    "receiverRcSmoothingAutoSmoothness": {
+        "message": "Automatikus simaság",
+        "description": "Auto Smoothness parameter for RC smoothing"
+    },
+    "receiverRcSmoothingAutoSmoothnessHelp": {
+        "message": "Beállítja az automatikus simítás számítását, a 10 az alapértelmezett simítási és késleltetési arány. A szám növelésével az RC bemenetek jobban simulnak, miközben késleltetés nő. Ez hasznos lehet megbízhatatlan RC-kapcsolatoknál vagy mozgó repüléseknél. <br>Vigyázzon, ha a számok megközelítik az 50-et, a bemeneti késleltetés észrevehető lesz.<br> Használja az rc_smoothing_info CLI parancsot, miközben a TX és az RX áram alá van helyezve, látható lesz az automatikusan kiszámított RC simítás levágása. ",
+        "description": "Auto Smoothness parameter help message"
+    },
+    "receiverRcDerivativeTypeSelect": {
+        "message": "Származékos levágás típusa"
+    },
+    "receiverRcInputTypeSelect": {
+        "message": "Bemeneti elvágás típusa"
+    },
+    "receiverRcSmoothingInterpolation": {
+        "message": "Interpoláció"
+    },
     "receiverRcSmoothingFilter": {
         "message": "Filter"
     },
+    "receiverRcSmoothingTypeHelp": {
+        "message": "RC simítás típusa"
+    },
+    "rcSmoothingInputCutoffHelp": {
+        "message": "A bemeneti szűrő által használt határfrekvencia Hz-ben. Az alacsonyabb értékek használata simább bemeneteket eredményez, és megfelelőbb a lassabb vevői protokollokhoz. A legtöbb felhasználónak ezt 0-nál kell hagynia, amely megfelel az \"Auto\" -nak."
+    },
+    "rcSmoothingDerivativeCutoffHelp": {
+        "message": "Az alapjel-származékos szűrő által használt Hz-ben megadott küszöbérték. Az alacsonyabb értékek használata simább bemeneteket eredményez, és megfelelőbb a lassabb vevői protokollokhoz. A legtöbb felhasználónak ezt 0-nál kell hagynia, amely megfelel az \"Auto\" -nak."
+    },
+    "rcSmoothingChannelsSmoothedHelp": {
+        "message": "A csatornák simítása vonatkozik"
+    },
+    "rcSmoothingDerivativeTypeHelp": {
+        "message": "Az alapjel-származékhoz használt szűrési módszer típusa. A 4.2-től kezdődően az \"Auto\" alapértelmezett értéke ajánlott. A 4.1-es és korábbi verziók esetén a legtöbb felhasználónak az alapértelmezett \"BIQUAD\" értéket kell használnia, mivel ez jó egyensúlyt biztosít a simaság és a késés között. A \"PT1\" kissé csökkenti a késleltetést, de kevesebb simítást biztosít."
+    },
+    "rcSmoothingInputTypeHelp": {
+        "message": "A bemenethez használt szűrési módszer típusa. A legtöbb felhasználónak az alapértelmezett \"BIQUAD\" értéket kell használnia, mivel ez jó egyensúlyt biztosít a simaság és a késés között. A \"PT1\" kissé csökkenti a késleltetést, de kevesebb simítást biztosít."
+    },
+    "receiverRcSmoothingInputManual": {
+        "message": "Kiválaszthatja, hogy a bemeneti szűrő levágási frekvenciáját automatikusan kiszámolja (ajánlott) vagy manuálisan válassza-e a felhasználó. A \"Kézi\" használata nem javasolt olyan vevő-protokollokhoz, mint a Crossfire, amelyek repülés közben megváltozhatnak."
+    },
+    "receiverRcSmoothingDerivativeManual": {
+        "message": "Annak kiválasztása, hogy az alapérték-származékos szűrő levágási frekvenciáját automatikusan kiszámolja (ajánlja), vagy a felhasználó manuálisan válassza ki. A \"Kézi\" használata nem javasolt olyan vevő-protokollokhoz, mint a Crossfire, amelyek repülés közben megváltozhatnak."
+    },
+    "receiverRcSmoothingInputHz": {
+        "message": "Bemeneti levágás frekvenciája"
+    },
+    "receiverRcSmoothingDerivativeCutoff": {
+        "message": "Származékos levágás frekvenciája"
+    },
+    "receiverRcInputType": {
+        "message": "Bemeneti Fliter típusa"
+    },
+    "receiverRcDerivativeType": {
+        "message": "Származékos szűrő típusa"
+    },
     "receiverRcSmoothingDerivativeTypeOff": {
         "message": "Ki"
+    },
+    "receiverRcSmoothingDerivativeTypeAuto": {
+        "message": "Automatikus"
     },
     "receiverRcSmoothingChannel": {
         "message": "Csatornák simítva"
     },
     "receiverRcInterpolation": {
         "message": "RC Interpoláció"
+    },
+    "receiverRcInterpolationHelp": {
+        "message": "Az RC TX / RX rendszerek nem olyan gyorsak, mint a PID hurkok. Ez azt jelenti, hogy a PID hurokban és az RC rendszerek információáramában lyukak vannak. Ez az opció lehetővé teszi az RC bemenet interpolációját azokban az időkben, amikor nem vesznek RC képkockákat. Az opció tisztább P és D viselkedést is kínál, mivel a vezérlőbemeneten nincsenek rámpák."
+    },
+    "receiverRcInterpolationIntervalHelp": {
+        "message": "Interpolációs intervallum a kézi RC-interpoláció módjának milliszekundumban"
     },
     "receiverRcInterpolationOff": {
         "message": "Kikapcs"
@@ -1109,8 +1427,33 @@
     "receiverRcInterpolationInterval": {
         "message": "RC Interpollációs Tartomány [ms]"
     },
+    "pidTuningFeedforwardTransition": {
+        "message": "Előremenő átmenet"
+    },
+    "pidTuningFeedforwardTransitionHelp": {
+        "message": "Ezzel a paraméterrel az előtolás időtartama csökkenthető a karok középpontja közelében, aminek eredményeként a fordulások simábbak lesznek.<br> Az érték a kar eltérítési pontját jelzi: 0 - a kar középpontjában, 1 - a teljes elhajlás. Amikor a kar e pont fölött van, az Előretolás folyamatosan állandó marad a konfigurált értékén. Ha a kart e pont alá helyezik, a előretolás arányosan csökken, és a kar középhelyzetében eléri a 0.<br> 1 érték biztosítja a maximális simítási hatást, míg a 0 érték tartja az előretolást a konfigurált értékén rögzítve a teljes tartományban."
+    },
+    "pidTuningDtermSetpointTransition": {
+        "message": "D Alapjel átmenet"
+    },
+    "pidTuningDtermSetpoint": {
+        "message": "D Alapjel súlya"
+    },
+    "pidTuningDtermSetpointTransitionHelp": {
+        "message": "Ezzel a paraméterrel a D alapjel-tömeg csökkenthető a karok középpontja közelében, aminek következtében a fordulások simábbak lesznek.<br> Amikor a kar e pont fölött van, az alapjel súlyát állandóan tartja a konfigurált értékén. Ha a kart e pont alá helyezik, az alapjel-súly arányosan csökken, és a kar középhelyzetében eléri a 0.<br>1 érték maximális simítási hatást biztosít, míg a 0 érték megtartja az alapjel súlyát a konfigurált értékén az egész tartományban."
+    },
+    "pidTuningDtermSetpointHelp": {
+        "message": "Ez a paraméter határozza meg a gyorsító hatást a derivált komponensben.<br> 0 értéke megegyezik a régi mérési módszerrel, ahol D csak a giroszkópot követi, míg az 1 érték megegyezik a régi módszerrel, egyenlő giroszkóp és kar követési arány mellett.<br> Alsó érték megegyezik a lassabb / simább kar reakcióval, míg a magasabb érték annál nagyobb gyorsulási választ ad.<br> Vegye figyelembe, hogy az RC interpolációt nagyobb értékekkel engedélyezni kell, hogy megakadályozzák a vezérlő zajkeltését."
+    },
+    "pidTuningDtermSetpointTransitionWarning": {
+        "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message)</strong> A 0-nál nagyobb és 0,1-nél kisebb D alapjel-átmenetet erősen visszaszorítja. Ellenkező esetben instabilitást és csökkent karkészlet-reakciót okozhat, mivel a karok áthaladnak a középponton.</span>"
+    },
     "pidTuningProportional": {
         "message": "Arányos"
+    },
+    "pidTuningProportionalHelp": {
+        "message": "Szabályozza annak erősségét, hogy a gép szorosan nyomon kövesse a karokat (az alapjel). <br><br> A magasabb érték (nyereség) szigorúbb nyomkövetést biztosít, de túllövéstt okozhat, ha túl magas a deriválthoz képest (D-terminus). Gondolj úgy a P-kifejezésre, mint egy autó rugójára.",
+        "description": "Proportional Term helpicon message on PID table titlebar"
     },
     "pidTuningIntegral": {
         "message": "Integrált"
@@ -1139,6 +1482,15 @@
     "pidTuningTPABreakPoint": {
         "message": "TPA töréspont"
     },
+    "pidTuningThrottleCurvePreview": {
+        "message": "Gáz függvény előnézete"
+    },
+    "pidTuningThrottleLimitType": {
+        "message": "Gáz limit"
+    },
+    "pidTuningThrottleLimitPercent": {
+        "message": "Gáz limit %"
+    },
     "pidTuningFilter": {
         "message": "Filter"
     },
@@ -1162,6 +1514,9 @@
     },
     "pidTuningCopyProfile": {
         "message": "Profil értékek másolása"
+    },
+    "pidTuningCopyRateProfile": {
+        "message": "Másolja a rateprofile értékeket"
     },
     "dialogCopyProfileText": {
         "message": "Értékek másolása az aktuális profilból"
@@ -1193,23 +1548,50 @@
     "pidTuningEepromSaved": {
         "message": "EEPROM <span class=\"message-positive\">elmentve</span>"
     },
+    "receiverHelp": {
+        "message": "Kérjük, olvassa el a dokumentáció vevő fejezetét. Konfigurálja a soros portot (ha szükséges), a vevő módot (soros / ppm / pwm), a szolgáltatót (a soros vevőkhöz), a vevő bekötését, a csatorna térkép beállítását, a csatorna végpontjainak / tartományának konfigurálását a TX-n úgy, hogy minden csatorna ~ 1000 és ~ 2000 között mozogjon. . Állítsa be a középpontot (alapérezett 1500), ha szükséges állítsa be hogy 1500-nál legyen, állítsa be a holtpontokat, és ellenőrizze a viselkedést, ha a TX ki  vagy be van kapcsolva . <br /><span class=\"message-negative\">FONTOS:</span>Repülés előtt olvassa el A dokumentáció hibabiztonsági fejezetét és a biztonságos konfigurálását."
+    },
     "receiverThrottleMid": {
         "message": "Gázkar MID"
     },
     "receiverThrottleExpo": {
         "message": "Gázkar EXPO"
     },
+    "receiverStickMin": {
+        "message": "Minimum karállás"
+    },
+    "receiverHelpStickMin": {
+        "message": "A bot maximális értéke (bennünk), amelyet alacsonyan kell hagyni / balra kell hagyni a parancsbevitelhez (MIN_CHECK)."
+    },
     "receiverStickCenter": {
         "message": "Kar Középpont"
+    },
+    "receiverHelpStickCenter": {
+        "message": "Az az érték (bennünk), amelyet annak meghatározására használunk, hogy a kar középpontjában van-e (MID_RC)."
+    },
+    "receiverStickMax": {
+        "message": "Maximum karállás"
+    },
+    "receiverHelpStickMax": {
+        "message": "A bot minimális értéke (bennünk), amelyet magasan /jobbra kell hagyni a parancsbevitelhez (MIN_CHECK)."
     },
     "receiverDeadband": {
         "message": "RC Holtsáv"
     },
+    "receiverHelpDeadband": {
+        "message": "Ezek az értékek (bennünk), amelyek szerint az RC bemenet mennyiben különbözhet, mielőtt érvényesnek tekintjük. Azoknál a távadóknál, amelyek kimenetén jitter van, ez az érték növelhető, ha az rc bemenetek tétlen állapotban nem rángatnak."
+    },
     "receiverYawDeadband": {
         "message": "Yaw Holtsáv"
     },
+    "receiverHelpYawDeadband": {
+        "message": "Ezek az értékek (bennünk), amelyek szerint az RC bemenet mennyiben különbözhet, mielőtt érvényesnek tekintjük. Azoknál a távadóknál, amelyek kimenetén jitter van, ez az érték növelhető, ha az rc bemenetek tétlen állapotban nem rángatnak. <strong> Ez a beállítás csak a Yaw tengelyre vonatkozik.</strong>"
+    },
     "recevier3dDeadbandThrottle": {
         "message": "3D Gázkar Holtsáv"
+    },
+    "receiverHelp3dDeadbandThrottle": {
+        "message": "Ezek értékek (bennünk). A semleges zóna kiszélesítése növelheti az értéket. <strong> Ez a beállítás csak 3D módra vonatkozik. </strong>"
     },
     "receiverChannelMap": {
         "message": "Csatornakiosztás"
@@ -1235,6 +1617,9 @@
     "receiverButtonRefresh": {
         "message": "Frissítés"
     },
+    "receiverButtonBind": {
+        "message": "Párosítsa a vevőt"
+    },
     "receiverButtonSticks": {
         "message": "Vezérlő karok"
     },
@@ -1251,7 +1636,7 @@
         "message": "Vezérlés engedélyezése"
     },
     "auxiliaryToggleUnused": {
-        "message": "Nem használt módok rejtése"
+        "message": "Nem használt módok elrejtése"
     },
     "auxiliaryMin": {
         "message": "Min"
@@ -1262,6 +1647,9 @@
     "auxiliaryDisabled": {
         "message": "(LETILTOTT)",
         "descripton": "Text to add to the ARM mode (maybe others in the future) in the MODES TAB when it has been disabled for some external reason"
+    },
+    "auxiliaryAddRange": {
+        "message": "Tartormány hozzáadása"
     },
     "auxiliaryAddLink": {
         "message": "Link hozzáadása"
@@ -1456,7 +1844,7 @@
         "message": "Sebesség:"
     },
     "gpsSats": {
-        "message": "Szatel:"
+        "message": "Műholdak:"
     },
     "gpsDistToHome": {
         "message": "Távolság az Otthontól:"
@@ -1611,6 +1999,15 @@
     "sensorsDebugTitle": {
         "message": "Debug"
     },
+    "cliInfo": {
+        "message": "<strong>Megjegyés:</strong> Ha elhagyja a CLI fület, vagy megnyomja a Lekapcsolódás gombot, akkor az <strong>automatikusan</strong>  \"<strong>kilépés parancsot</strong>\" fog küldeni a vezérlőcsnek. A legújabb firmware-rel <strong>újraindítja</strong> és a nem mentett folyamatok <strong>elvesznek</strong>.<p><strong><span class=\"message-negative\">Vigyázat:</span></strong> Néhány parancs a CLI-ben tetszőleges jelet küldhet a motornak, ez okozhatja a motorok felpörgését is akár, ha egy akkumlátor csatlakoztatva van.<strong> Ezért erősen ajánlott ennek ellenőrzése<strong>."
+    },
+    "cliInputPlaceholder": {
+        "message": "Írja ide a parancsot. Az automatikus kiegészítéshez nyomja meg a Tab gombot."
+    },
+    "cliInputPlaceholderBuilding": {
+        "message": "Kérjük, várjon, míg az AutoComplete gyorsítótárat készíti ..."
+    },
     "cliEnter": {
         "message": "CLI mód felismerve"
     },
@@ -1631,6 +2028,9 @@
     },
     "cliLoadFromFileBtn": {
         "message": "Betöltés fájlból"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong> Megjegyzés</strong>: áttekintheti és szerkesztheti a parancsokat a végrehajtás előtt."
     },
     "cliConfirmSnippetBtn": {
         "message": "Futtatás"
@@ -1689,6 +2089,12 @@
     "blackboxLoggingSerial": {
         "message": "Soros Port"
     },
+    "serialLoggingSupportedNote": {
+        "message": "Külső naplózási eszközre (például OpenLager) jelentkezhet soros port segítségével. Konfigurálja a portot a Portok lapon."
+    },
+    "sdcardNote": {
+        "message": "A repülési naplók rögzíthetők a repülési vezérlő fedélzeti SD kártyájára."
+    },
     "dataflashUsedSpace": {
         "message": "Fehasznált tárhely"
     },
@@ -1701,17 +2107,29 @@
     "dataflashLogsSpace": {
         "message": "Szabad tárhely naplózáshoz"
     },
+    "dataflashNote": {
+        "message": "A repülési naplók rögzíthetők a repülési vezérlő fedélzeti chipjére."
+    },
+    "dataflashNotPresentNote": {
+        "message": "A repülési vezérlőnek nem áll rendelkezésre kompatibilis adatrögzítő chip."
+    },
     "dataflashButtonSaveFile": {
         "message": "Flash adatainak mentése fájlba..."
     },
     "dataflashButtonSaveFileDeprecated": {
         "message": "Flash adatainak mentése fájlba... (Öreg)"
     },
+    "dataflashSaveFileDepreciationHint": {
+        "message": "A blackbox naplók mentése a konfigurátoron lassú és viszonylag hajlamos a hibákra. Javasoljuk, hogy ehelyett használja a '<b>$t(onboardLoggingRebootMscText.message)</b>'(lent) a Mass Storage Mode aktiválásához, és tárolási eszközként használja a repülési irányítót a naplófájlok letöltéséhez."
+    },
     "dataflashButtonErase": {
         "message": "Flash törlése"
     },
     "dataflashConfirmEraseTitle": {
         "message": "Flash törlésének megerősítése"
+    },
+    "dataflashConfirmEraseNote": {
+        "message": "Ezzel törli a Blackbox naplóit vagy a tárolón szereplő egyéb adatokat. Kb. 20 másodpercig tarthat, biztos vagy benne?"
     },
     "dataflashSavingTitle": {
         "message": "Flash adatainak mentése fájlba"
@@ -1755,6 +2173,9 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Verzióinformáció"
     },
+    "firmwareFlasherReleaseVersion": {
+        "message": "Verzió:"
+    },
     "firmwareFlasherReleaseVersionUrl": {
         "message": "A kiadott verziókhoz"
     },
@@ -1773,6 +2194,9 @@
     "firmwareFlasherReleaseFileUrl": {
         "message": "Manuális letöltés."
     },
+    "firmwareFlasherTargetWarning": {
+        "message": "<span class=\"message-negative\">FONTOS</span>: Győződjön meg arról, hogy a célnak megfelelő fájlt választotta ki. Rossz verzió égetése esetén  <span class=\"message-negative\">rossz</span> dolgok történhetnek."
+    },
     "firmwareFlasherPath": {
         "message": "Elérés:"
     },
@@ -1788,17 +2212,32 @@
     "firmwareFlasherLoadFirmwareFile": {
         "message": "Töltse be a firmware fájlt"
     },
+    "firmwareFlasherNoReboot": {
+        "message": "Nincs újraindítási sorozat"
+    },
+    "firmwareFlasherOnlineSelectBuildType": {
+        "message": "Válassza ki az vezérlő típust az elérhető vezérlők megtekintéséhez."
+    },
     "firmwareFlasherOnlineSelectBoardDescription": {
         "message": "Válassza ki a repülésirányítóját a rendelkezésre álló online firmware verziók megtekintéséhez - Válssza ki a megfelelő firmware-t a repülésirányítójához."
+    },
+    "firmwareFlasherOnlineSelectBoardHint": {
+        "message": "A Betaflight 4.1-től kezdve a Betaflight bevezeti a <strong> Egységes verziók </strong> támogatását. Az egységes verziók koncepciója azt jelenti, hogy ugyanaz a firmware .hex fájl használható minden vezérlőre ami ugyanazt az MCU-t (F4, F7) használja. Annak érdekében, hogy a különféle vezérlők ugyanazon firmware-rel működjenek, egy egyesített konfigurációs fájl kerül telepítésre a firmware-rel együtt, amikor az egységes verzió égetése történik.<br>A Betaflight konfigurátor ezen verziója támogatja az egységes verziókat a megfelelő vezérlő-specifikus konfigurációkkal egy lépésben. Az egyes vezérlőkhöz rendelkezésre álló különféle firmware típusok a legördülő menüben jelennek meg:<br><br><strong>&lt;board name&gt;</strong>vagy<br><strong>&lt;board name&gt; (örökölt)</strong><br>nem egyesített verzió vagy az egyesített verziók firmware 4.1 előtti verziója.<br><br><strong>&lt;board name&gt; (&lt;manufacturer id&gt;)</strong>:<br>(4 karakteres gyártói azonosító)<br>Unified Target.<br><br><strong>Kérjük, használja az egyesített verziókat, ahol elérhető.</strong>Ha problémák merülnek fel az egységes verziók használatával, kérjük, nyissa meg a<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">oldalt</a>majd használja a nem egyesített verziót, amíg a probléma megoldódik."
     },
     "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
         "message": "Válasszon firmware verziót a chipjéhez."
     },
+    "firmwareFlasherNoRebootDescription": {
+        "message": "Engedélyezd, ha az FC-d boot módban van pl.: Ha az FC-det a bootloader pinek összekötésével kapcsoltad be, vagy ha nyomva tartottad az FC BOOT gombját."
+    },
     "firmwareFlasherFlashOnConnect": {
         "message": "Égetés kapcsolódáskor"
     },
+    "firmwareFlasherFlashOnConnectDescription": {
+        "message": "Próbálja meg a vezérlőt automatikusan égetni (az újonnan észlelt soros porton fogja elindítani)."
+    },
     "firmwareFlasherFullChipErase": {
-        "message": "Teljes csip törlés"
+        "message": "Teljes chip törlése"
     },
     "firmwareFlasherFullChipEraseDescription": {
         "message": "Minden konfigurációs adatot kitöröl a csipről."
@@ -1815,17 +2254,32 @@
     "firmwareFlasherManualBaud": {
         "message": "Manuális atviteli sebesség"
     },
+    "firmwareFlasherManualBaudDescription": {
+        "message": "Manuális átviteli sebesség kiválasztás azoknak a lapoknak, melyek nem támogatják az alapértelmezett sebességet vagy a Bluetoothon keresztüli égetést<br /><span class=\"message-negative\">Megjegyzés: </span> Nincs használatban USB DFU esetén"
+    },
     "firmwareFlasherBaudRate": {
         "message": "Átviteli Sebesség"
     },
+    "firmwareFlasherShowDevelopmentReleases": {
+        "message": "Instabil kiadások megjelenítése"
+    },
+    "firmwareFlasherShowDevelopmentReleasesDescription": {
+        "message": "Mutatja a kiadatlan verziókat a kiadott verziók mellet"
+    },
     "firmwareFlasherOptionLoading": {
         "message": "Betöltés ..."
+    },
+    "firmwareFlasherOptionLabelBuildTypeRelease": {
+        "message": "Kiadás"
+    },
+    "firmwareFlasherOptionLabelBuildTypeReleaseCandidate": {
+        "message": "Kiadások és lehetséges kiadások"
     },
     "firmwareFlasherOptionLabelSelectFirmware": {
         "message": "Válasszon Firmware-t / Csippet"
     },
     "firmwareFlasherOptionLabelSelectBoard": {
-        "message": "Válasszon Csippet"
+        "message": "Válasszon vezérlőt"
     },
     "firmwareFlasherOptionLabelSelectFirmwareVersion": {
         "message": "Válasszon firmware verziót"
@@ -1839,11 +2293,17 @@
     "firmwareFlasherButtonDownloading": {
         "message": "Letöltés..."
     },
+    "firmwareFlasherExitDfu": {
+        "message": "Kilépés a DFU módból"
+    },
     "firmwareFlasherFlashFirmware": {
         "message": "Firmware Felégetve"
     },
     "firmwareFlasherGithubInfoHead": {
         "message": "GitHub Firmware Információ"
+    },
+    "firmwareFlasherCommiter": {
+        "message": "Közzétevők:"
     },
     "firmwareFlasherDate": {
         "message": "Dátum:"
@@ -1856,6 +2316,12 @@
     },
     "firmwareFlasherMessage": {
         "message": "Üzenet:"
+    },
+    "firmwareFlasherWarningText": {
+        "message": "Kérjük <span class=\"message-negative\">ne</span> próbáljon <strong>nem Betaflight</strong> hardware-t égetni ezzel a konfigurátorral.<br /><span class=\"message-negative\">Ne</span> <strong>csatlakakoztassa le</strong> a vezérlőt és <strong>ne kapcsolja ki a számitógépét</strong> mialatt az dolgozik.<br /><br /><strong>Megjegyzés: </strong>STM32 eszközindító a ROM-ban tárolódik, nem lehet tönkre tenni.<br /><strong>Megjegyzés: </strong>Az <span class=\"message-negative\">automatikus csatlakozás</span> mindig ki van kapcsolva amikor a Firmware frissítőben van.<br /><strong>Megjegyzés: </strong>Győződjön meg mindig arról, hogy van biztonsági másolata; néhány frissítés / visszafrissítés törli a beállításait.<br /><strong>Megjegyzés:</strong> Ha problémája van az égetéssel elsőnek <strong>próbálja meg kihúzni az USB kábelt a vezérlőjéből majd vissza </strong> ha nem müködik probálja frissíteni a  chrome-ot, vagy frissíteni a drivereket.<br /><strong>Megjegyzés:</strong> A közvetlenül USB-aljzattal csatlakoztatott vezérlők esetén győződjön meg arról, hogy elolvasta a Betaflight kézikönyv, USB ledekre való részét, és telepítette-e a megfelelő szoftvert és illesztőprogramokat."
+    },
+    "firmwareFlasherRecoveryHead": {
+        "message": "<strong>Visszaállítás / Elvesztett kapcsolat</strong>"
     },
     "firmwareFlasherButtonLeave": {
         "message": "Firmware feltölltő elhagyása"
@@ -2100,10 +2566,13 @@
         "message": "sötétrózsaszin"
     },
     "controlAxisRoll": {
-        "message": "Dőlés [A]"
+        "message": "Roll [A]"
     },
     "controlAxisPitch": {
-        "message": "Hosszdőlés [E]"
+        "message": "Pitch [E]"
+    },
+    "controlAxisYaw": {
+        "message": "Yaw [R]"
     },
     "controlAxisThrottle": {
         "message": "Gázkar [T]"
@@ -2176,6 +2645,18 @@
     },
     "pidTuningLevelSensitivity": {
         "message": "Érzékenyskég"
+    },
+    "pidTuningSliderLow": {
+        "message": "Alacsony",
+        "description": "Tuning Slider Low header"
+    },
+    "pidTuningSliderDefault": {
+        "message": "Alapértelmezett",
+        "description": "Tuning Slider Default header"
+    },
+    "pidTuningSliderHigh": {
+        "message": "Magas",
+        "description": "Tuning Slider High header"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Giroszkóp aluláteresztő filter"
@@ -2265,6 +2746,9 @@
     "powerBatteryVoltageMeterTypeEsc": {
         "message": "ESC Szenzor"
     },
+    "powerBatteryCurrentMeterSource": {
+        "message": "Aktuális mérőforrás"
+    },
     "powerBatteryCurrentMeterTypeNone": {
         "message": "Nincs"
     },
@@ -2276,6 +2760,9 @@
     },
     "powerBatteryCurrentMeterTypeEsc": {
         "message": "ESC Szenzor"
+    },
+    "powerBatteryCurrentMeterTypeMsp": {
+        "message": "MSP Szenzor/OSD Slave"
     },
     "powerBatteryMinimum": {
         "message": "Minimális Cellafeszültség"
@@ -2306,6 +2793,9 @@
     },
     "powerVoltageId40": {
         "message": "12V"
+    },
+    "powerVoltageId50": {
+        "message": "Összes ESC"
     },
     "powerVoltageId60": {
         "message": "ESC Motor 1"
@@ -2364,11 +2854,20 @@
     "powerVoltageScale": {
         "message": "Skála"
     },
+    "powerVoltageDivider": {
+        "message": "Osztóérték"
+    },
     "powerVoltageMultiplier": {
         "message": "Szorzó Érték"
     },
+    "powerAmperageHead": {
+        "message": "Árammérő"
+    },
     "powerAmperageId10": {
         "message": "Akkumulátor"
+    },
+    "powerAmperageId50": {
+        "message": "Összes ESC"
     },
     "powerAmperageId60": {
         "message": "ESC Motor 1"
@@ -2421,6 +2920,9 @@
     "powerBatteryHead": {
         "message": "Akkumulátor"
     },
+    "powerStateHead": {
+        "message": "Teljesítményállapot"
+    },
     "powerBatteryConnected": {
         "message": "Kapcsolódva"
     },
@@ -2434,7 +2936,7 @@
         "message": "Feszültség"
     },
     "powerBatteryCurrentDrawn": {
-        "message": "használt mAh"
+        "message": "Elhasznált mAh"
     },
     "powerBatteryAmperage": {
         "message": "Áramerősség"
@@ -2667,17 +3169,42 @@
     "mainHelpFailsafe": {
         "message": "Failsafe Mód"
     },
+    "mainHelpLink": {
+        "message": "Soros kapcsolat állapota"
+    },
     "configurationEscProtocol": {
         "message": "ESC/Motor protokol"
     },
+    "configurationEscProtocolHelp": {
+        "message": "Válassza ki a motor protokollt. <br>Győződjön meg arról, hogy az ESC támogatja-e a protokollt, ezt az információt a gyártó webhelyén taláhatja meg. <br><b> Vigyázzon a DSHOT900 és a DSHOT1200 használatával, mivel sok ESC nem támogatja! </b>"
+    },
+    "configurationEscProtocolHelpNoDSHOT1200": {
+        "message": "Válassza ki a motor protokollt.<br>Győződjön meg arról, hogy az ESC támogatja-e a protokollt, ennek az információnak a gyártó webhelyén kell lennie."
+    },
+    "configurationunsyndePwm": {
+        "message": "Motor PWM sebessége elkülönítve a PID sebességétől"
+    },
     "configurationUnsyncedPWMFreq": {
         "message": "Motor PWM frekvnecia"
+    },
+    "configurationDshotBidir": {
+        "message": "Bidirectional DShot (Támogatott ESC firmware szükséges)",
+        "description": "Feature for the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Giro frissítési frekvencia"
     },
     "configurationPidProcessDenom": {
         "message": "PID ciklus frekvencia"
+    },
+    "configurationPidProcessDenomHelp": {
+        "message": "A PID hurok maximális frekvenciáját korlátozza az a maximális frekvencia, amellyel a választott ESC / motor protokoll frissítéseket küldhet."
+    },
+    "configurationGyroUse32kHz": {
+        "message": "A 32 kHz-es giroszkópos mintavételi mód engedélyezése"
+    },
+    "configurationGyroUse32kHzHelp": {
+        "message": "A 32 kHz-es giroszkóp-frissítési frekvencia csak akkor lehetséges, ha a giroszkóp támogatja (jelenleg MPU6500, MPU9250 és ICM20xxx, ha SPI-n keresztül csatlakoztatva vannak). Ha kétségei vannak, keresse meg a vezérlő specifikációját."
     },
     "configurationAccHardware": {
         "message": "Gyorsulásmérő"
@@ -2715,6 +3242,9 @@
     "pidTuningProfile": {
         "message": "Profil"
     },
+    "pidTuningRateProfile": {
+        "message": "Rate profil"
+    },
     "pidTuningDeltaError": {
         "message": "Hiba"
     },
@@ -2739,6 +3269,9 @@
     "onboardLoggingRateOfLogging": {
         "message": "Feketedoboz (Blackbox) naplózási gyakoriság"
     },
+    "onboardLoggingDebugMode": {
+        "message": "Blackbox hibakeresési mód"
+    },
     "onboardLoggingSerialLogger": {
         "message": "Fedélzeti soros porton csatlakozó naplózó eszköz"
     },
@@ -2750,6 +3283,18 @@
     },
     "onboardLoggingOnboardSDCard": {
         "message": "Fedélzeti SD kártya"
+    },
+    "onboardLoggingMsc": {
+        "message": "Tároló mód"
+    },
+    "onboardLoggingMscNote": {
+        "message": "Indítsa újra a <strong>háttértár eszköz (MSC)</strong> módot. Aktiválás után a fedélzeti flash vagy SD kártyát a repülésvezérlőn a számítógép felismeri tárolóeszközként, és lehetővé teszi a naplófájlok letöltését. Vegye ki és kapcsolja be a repülési vezérlőt, hogy kilépjen a tárolóeszköz üzemmódból."
+    },
+    "onboardLoggingRebootMscText": {
+        "message": "Aktiválja a tárolóeszköz üzemmódot"
+    },
+    "onboardLoggingMscNotReady": {
+        "message": "A háttértár mód nem aktiválható, mert a tároló eszköz még nem áll készen."
     },
     "dialogConfirmResetTitle": {
         "message": "Megerősítés"
@@ -2768,5 +3313,8 @@
     },
     "modeCameraChangeMode": {
         "message": "KAMERAMÓD VÁLTÁS"
+    },
+    "flashTab": {
+        "message": "Firmware-frissítés"
     }
 }
