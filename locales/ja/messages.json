@@ -149,7 +149,10 @@
         "message": "未検証バージョンの更新通知を表示"
     },
     "configuratorUpdateNotice": {
-        "message": "<b>Betaflight Configurator</b>の古いバージョンを使用しています。<br>$t(configuratorUpdateHelp.message)"
+        "message": "<b>Betaflight Configurator</b>の旧バージョンを使用しています。<br>$t(configuratorUpdateHelp.message)"
+    },
+    "configuratorUpdateHelp": {
+        "message": "旧バージョンのBetaflight Configuratorで新バージョンのファームウェアを使用した場合、一部の設定を変更すると<strong>ファームウェア設定が破損し機体が動作しない状態となります。</strong>さらに、ファームウェアの一部の機能はCLIでのみ設定が可能です。<br><strong>Betaflight Configurator <b>$1</b>バージョンはオンラインでダウンロードできます。</strong><a href=\"$2\" target=\"_blank\" rel=\"noopener noreferrer\">このページ</a>にアクセスし、修正および改善された最新バージョンをダウンロードしてインストールしてください。<br>更新する前にBetaflight Configuratorウィンドウを閉じてください。"
     },
     "configuratorUpdateWebsite": {
         "message": "リリースサイトに移動"
@@ -547,6 +550,9 @@
     },
     "defaultContributingHead": {
         "message": "開発への協力・貢献"
+    },
+    "defaultContributingText": {
+        "message": "Betaflightを今後より良く改善したい場合は、以下を含むさまざまな方法で支援できます:<br /><ul><li>貴方が持つBetaflightナレッジを用いて<a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Wiki</a>コンテンツの作成または更新、オンラインフォーラムで他のユーザの質問に回答する;</li><li>新機能や修正、改善されたファームウェアとConfiguratorへの<a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">コード提供</a>;</li><li><a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">新機能と修正</a>、テスト、フィードバックの提供;</li><li><a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">Issue tracker</a>で他ユーザから報告された問題を解決支援し、新機能リクエストに関する議論に協力;</li>\n<li>またBetaflight Configuratorを未対応な言語に<a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">翻訳</a>、または既存翻訳の維持を行いましょう。</li></ul>"
     },
     "defaultFacebookText": {
         "message": "私たちは<a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebookグループ</a>も運営しています。<br />私たちと一緒にBetaflightについて語り合い、設定に関する質問をしたり、パイロット同士で交流してみましょう。"
@@ -3193,7 +3199,7 @@
         "message": "減衰 %"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "設定した割合にてモーターへの命令を減衰させます。セル数の多いバッテリーを使用する場合、ESC電流とモーターの熱を減少させます。4S機に対し6Sバッテリーを用いて同様のパフォーマンスを得るには、66％としてお試しください。3S機に対する4Sバッテリー使用の場合、75％をお試しください。"
+        "message": "設定したパーセンテージでモーターコマンドを減衰させます。例えばセル数の多いバッテリーを使用すると、ESC電流とモーターの熱が減少します。4S用に設計されたモーター、プロペラ、チューニングを備えた機体で6Sバッテリーを使用する場合は、値を66%に設定してください。3S向け機体で4Sバッテリーを使用する場合は75%を試してください。<br>すべてのコンポーネントが使用しているバッテリー電圧をサポート可能なことを常に確認してください。"
     },
     "pidTuningCellCount": {
         "message": "セル数"
@@ -3521,9 +3527,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "ダイナミックアイドル値 [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "このパラメータを設定し、モーターの非同期に対する安全範囲としてrpmベースのフロア値を提供します。<br>レーサーは、非常に高レスポンスと低レートを好む場合があります。したがって、低めのDynamic Idle[rpm]と高めのDshot Idle値にて効果を示します。フリースタイラーとLOSパイロットは、アイドル時の推力が非常に弱くなることを好み、Dynamic Idle[rpm]を少し増やして、高レートでの非同期を回避しながらDshot Idle値を少なくしたい場合があります。注意事項としてDynamic Idle[rpm]値は常にDshot Idle値よりも小さくなければなりません。<br><br>詳細は<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">Wiki</a>エントリーをご覧ください。"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "アクロトレーナー 角度制限"
