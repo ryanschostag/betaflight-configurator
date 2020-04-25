@@ -3285,7 +3285,7 @@
         "message": "crwdns9970:0crwdne9970:0"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "crwdns9972:0crwdne9972:0"
+        "message": "crwdns10128:0crwdne10128:0"
     },
     "pidTuningCellCount": {
         "message": "crwdns9974:0crwdne9974:0"
@@ -3615,7 +3615,7 @@
         "message": "crwdns9984:0[rpm]crwdne9984:0"
     },
     "pidTuningIdleMinRpmHelp": {
-        "message": "crwdns10106:0[rpm]crwdnd10106:0[rpm]crwdnd10106:0[rpm]crwdne10106:0"
+        "message": "crwdns10130:0$t(tabMotorTesting.message)crwdne10130:0"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "crwdns8805:0crwdne8805:0"
