@@ -3193,7 +3193,7 @@
         "message": "Atenuació %"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "Atenua les ordres del motor pel percentatge establert. Redueix la calor actual i del motor ESC quan s'utilitzen Bateries de cèl·lules més elevades, per exemple. Per obtenir prestacions similars d'una bateria 6S en una versió 4S, proveu el 66%; Per a una bateria 4S en una versió 3S, proveu el 75%."
+        "message": "Atenua les ordres del motor pel percentatge establert. Redueix la calor de ESC i del motor quan s'utilitzen bateries de mès cèl·lules, p.ex. Quan utilitzeu una bateria 6S en una aeronau que tingui motors, puntals i ajustaments dissenyats per a 4S, proveu de fixar el valor en el 66%; si utilitzeu una bateria 4S en una embarcació destinada a 3S, proveu el 75%.<br> Assegureu-vos que tots els components poden suportar el voltatge de la bateria que feu servir."
     },
     "pidTuningCellCount": {
         "message": "Recompte de cel·les"
@@ -3513,9 +3513,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valor Dinàmic Idle [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "Estableix aquest paràmetre per proporcionar un valor de sòl basat en rpm com a xarxa de seguretat contra les desicronitzacions dels motors.<br> Un Racer pot preferir una resposta molt bona i taxes baixes - per tant, pot ser útil un Dynamic Idlle [rpm] baix i un valor de Dshot Idlle alt. Els pilots Freestyle i LOS apreciaran una empenta molt baixa amb aquest iddle i potser voldrien utilitzar menys valor de Dshot Idle mentre s’utilitzen una mica més Dynamic Idle [rpm] per evitar desincronitzacions a taxes elevades. Tingueu en compte que el valor del Iddle Dinàmic [rpm] sempre ha de ser inferior al valor de Dshot Idle.<br><br>Visiteu aquest <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_ blank\" rel=\"noopener noreferrer\"> wiki</a> entrada per obtenir més informació."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Límit d’angle del Acro Trainer"
