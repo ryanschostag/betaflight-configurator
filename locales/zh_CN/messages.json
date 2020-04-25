@@ -3254,7 +3254,7 @@
         "message": "敏感度"
     },
     "pidTuningLevelHelp": {
-        "message": "以下值会改变 ANGLE 模式和 HORIZON 模式下的行为表现。不同的PID控制器对该值的要求数值会不一样。具体请参阅文档。"
+        "message": "以下值会改变自稳模式和半自稳模式下的行为表现。不同的 PID 控制器对该值的要求数值会不一样。具体请参阅文档。"
     },
     "pidTuningMotorOutputLimit": {
         "message": "电机输出限制"
@@ -3263,7 +3263,7 @@
         "message": "衰减 %"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "按设置的百分比降低电机动力。用于在使用高芯数电池时降低电调电流和电机发热，例如在4S的机器上使用6S电池，请尝试设为66%；在3S的机器上用4S电池，请尝试设为75%。"
+        "message": "按设置的百分比降低电机动力。用于在使用高芯数电池时降低电调电流和电机发热，例如，在一台电机、桨和参数均已针对4S动力优化过的机器上使用6S电池，请尝试将此值设为66%；在一台动力设计为3S的机器上使用4S电池，请尝试设为75%。<br>请确保您的所有配件都支持您正在使用的电池电压。"
     },
     "pidTuningCellCount": {
         "message": "电芯数"
@@ -3275,7 +3275,7 @@
         "message": "独立于 PID 配置文件的滤波器设置"
     },
     "pidTuningFilterSlidersHelp": {
-        "message": "调整飞机陀螺仪和 D 值滤波的滑块。<br><br>更多的滤波提供更平滑的飞行，但同时也增加陀螺仪信号到达 PID 循环的延迟（相位延迟），降低洗桨处理能力和摇杆的响应手感，甚至导致飞机抖动。<br><br>更少的滤波降低陀螺仪信号延迟，但会因为 D 值响应更高频的电机震动而增加电机发热。<br>另外，如果滤波太少，会损害飞行性能表现（更差的信噪比）。",
+        "message": "调整飞机陀螺仪和 D Term 滤波的滑块。<br><br>更多的滤波提供更平滑的飞行，但同时也增加陀螺仪信号到达 PID 循环的延迟（相位延迟），降低洗桨处理能力和摇杆的响应手感，甚至导致飞机抖动。<br><br>更少的滤波降低陀螺仪信号延迟，但会因为 D 值响应更高频的电机震动（噪声）而增加电机温度。<br>另外，如果滤波太少，会损害飞行性能表现（更差的信噪比）。",
         "description": "Overall helpicon message for filter tuning sliders"
     },
     "pidTuningSliderLowFiltering": {
@@ -3295,7 +3295,7 @@
         "description": "Gyro filter tuning slider label"
     },
     "pidTuningGyroFilterSliderHelp": {
-        "message": "按比例互相调整默认的陀螺仪低通滤波器。陀螺仪滤波发生在 PID 循环之前。<br>不同级别飞机通常的电机噪音范围：<br><br>6寸及以上飞机通常在100hz 到330hz 之间<br>5寸机通常在220hz 到500hz<br>3寸及以下飞机通常在300hz 到850hz<br><br>通常建议移动滑块使得陀螺仪动态低通滤波器1的最小/最大范围囊括上述范围。<br>如果追求更平滑的飞行风格，可以加强滤波。而要更暴力的飞行风格则减轻滤波。<br><br>减少滤波时，务必注意不要太过激进导致飞机暴走或烧毁电机。<br>注意：机架的共振，坏的轴承和受损的螺旋桨都会导致你需要更多的滤波。",
+        "message": "按比例互相调整默认的陀螺仪低通滤波器。陀螺仪滤波发生在 PID 循环之前。<br>常见的不同级别飞机的电机噪音范围：<br><br>6寸及以上飞机通常在100hz 到330hz 之间<br>5寸机通常在220hz 到500hz<br>3寸及以下飞机通常在300hz 到850hz<br><br>通常建议，移动滑块使得陀螺仪动态低通滤波器1的最小/最大截止频率的范围能够囊括上述范围。<br>如果追求更平滑的飞行风格，可以加强滤波。而要使用更激进的铝箔策略，则可以使用滑块减少滤波。<br><br>减少滤波时，务必注意不要太过激进，否则可能导致飞机失控或烧毁电机。<br>注意：机架共振、轴承损坏和螺旋桨受损都会导致你需要更多的滤波。",
         "description": "Gyro filtering tuning slider helpicon message"
     },
     "pidTuningDTermFilterSlider": {
@@ -3303,11 +3303,11 @@
         "description": "D Term filter tuning slider label"
     },
     "pidTuningDTermFilterSliderHelp": {
-        "message": "按比例互相调整默认的陀螺仪低通滤波器。因为对噪音最为敏感，且可以成指数级放大高频噪声， D 值且只有 D 值滤波是发生在 PID 循环之后。<br><br>通常会需要配合陀螺仪滤波器一起移动 D 值滤波器滑块，来使D 值滤波器的截止频率明确低于电机噪音频率。<br>这也是默认设置的滑块比例。",
+        "message": "按比例互相调整默认的 D Term 低通滤波器。<br>因为 D Term 对噪音最为敏感，且可以以指数级放大高频噪声， 故 D Term 滤波仅作用于 D 值，且发生在 PID 循环之后。<br><br>通常来说，你需要一起移动陀螺仪滤波器滑块和 D Term 滤波器滑块。您需要将 D Term 滤波器截止频率设置得远低于电机噪音带，以获得高强度 D Term 滤波，然后对整个陀螺仪信号应用陀螺仪滤波器。<br>这也是默认的滑块比例。",
         "description": "D Term filtering tuning slider helpicon message"
     },
     "pidTuningPidSlidersHelp": {
-        "message": "滑块来调整飞行器飞行特性(PID增益)<br><br>主乘数: 保持各参数增益比例差别的同时升高或降低(以上) 所有 PID 增益。<br><br>PD平衡: 调整 P和D( \"弹簧\" [p-term] 和 \"缓冲\" [d-term]) 之间的平衡(比率\\比例差别)。<br><br>PD增益: 同时增加或降低 P&D 的增益——保持两者间的比率(平衡)——以适配高(或低) PID 权重。<br><br>摇杆响应增益: 提高或降低前馈增益，以控制对飞行器的摇杆响应感。",
+        "message": "来调整飞行器飞行特性（PID增益）的滑块<br><br>主乘数: 保持各参数增益比例差别的同时升高或降低（以上）所有 PID 增益。<br><br>PD 平衡: 调整 P 和 D（\"弹簧\" [p-term] 和 \"缓冲\" [d-term]） 之间的平衡（比率\\比例差别）。<br><br>PD增益: 同时增加或降低 P&D 的增益——保持两者间的比率（平衡）——以适配高（或低）PID 权重。<br><br>摇杆响应增益: 提高或降低前馈增益，以控制对飞行器的摇杆响应感。",
         "description": "Overall helpicon message for PID tuning sliders"
     },
     "pidTuningSliderWarning": {
@@ -3347,7 +3347,7 @@
         "description": "PD balance tuning slider label"
     },
     "pidTuningPDGainSlider": {
-        "message": "P和D增益:",
+        "message": "P 和 D 增益:",
         "description": "P and D gain tuning slider label"
     },
     "pidTuningResponseSlider": {
@@ -3355,19 +3355,19 @@
         "description": "Response tuning slider label"
     },
     "pidTuningMasterSliderHelp": {
-        "message": "通常来讲因为较低的动力/重量比，较大的飞机会需要较高的 PID 值。<br><br>而较小的飞机（微型机）因为较高的动力/重量比通常需要较低的 PID 值。<br><br>动力比约低的飞机需要越高的值，动力比越高的飞机需要的值越低。",
+        "message": "通常来讲因为推重比较低，较大的飞机会需要较高的 PID 值。<br><br>而较小的飞机（微型机）因为推重比较高，通常需要较低的 PID 值。<br><br>动力比越低的飞机需要的值越高，动力比越高的飞机需要的值越低。",
         "description": "Master gain tuning slider helpicon message"
     },
     "pidTuningPDRatioSliderHelp": {
-        "message": "相对较高的 D 将削弱摇杆响应力，并且可能会使电机变热，但有助于抑制由 P 造成的晃动，并且会改善洗桨。<br><br>相对较低的 D 将会提供较快的摇杆响应力，但可能会削弱抑制洗桨的能力。",
+        "message": "相对较高的 D 值将削弱摇杆响应力，并且可能会使电机变热，但有助于抑制由 P 造成的晃动，并且会改善洗桨。<br><br>相对较低的 D 值将会提供较快的摇杆响应力，但可能会削弱抑制洗桨的能力。",
         "description": "PD balance tuning slider helpicon message"
     },
     "pidTuningPDGainSliderHelp": {
-        "message": "较低的P和D值有助于电机保持凉爽，但会遭遇更多的洗桨震动。太低值可能导致飞机不稳定。<br><br>P和D 值配合减少洗桨。<br><br>更高的值会增加电机发热，并可能会因较高的 D 值而增加平稳往前飞时的抖动。",
+        "message": "较低的 P 和 D 值有助于电机保持凉爽，但会遭遇更多的洗桨震动。太低值可能导致飞机不稳定。<br><br>P 和 D 值配合减少洗桨。<br><br>更高的值会增加电机温度，并较高的 D 值可能会增加平飞时的抖动。",
         "description": "P and D gain tuning slider helpicon message"
     },
     "pidTuningResponseSliderHelp": {
-        "message": "较低的 FF 值会恶化摇杆响应，且可能在翻转的尾声产生慢速回弹（I-term 饱和）。<br><br>较高的 FF 值在快速移动时会有更好的摇杆响应。然而，过高的 FF 值会导致过冲和翻转尾声的快速回弹。",
+        "message": "较低的 FF 值会恶化摇杆响应，且可能在翻转的尾声产生慢速回弹（I-term 饱和）。<br><br>较高的 FF 值在快速移动时会有更好的摇杆响应。然而，过高的 FF 值会导致过冲和在翻转尾声产生快速回弹。",
         "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
@@ -3380,10 +3380,10 @@
         "message": "陀螺仪低通滤波器1类型"
     },
     "pidTuningGyroLowpassDynMinFrequency": {
-        "message": "陀螺仪低通滤波器1动态最低截止频率[Hz]"
+        "message": "陀螺仪低通滤波器1动态最低截止频率 [Hz]"
     },
     "pidTuningGyroLowpassDynMaxFrequency": {
-        "message": "陀螺仪低通滤波器1动态最高截止频率[Hz]"
+        "message": "陀螺仪低通滤波器1动态最高截止频率 [Hz]"
     },
     "pidTuningGyroLowpassDynType": {
         "message": "陀螺仪低通滤波器1动态滤波器类型"
@@ -3395,7 +3395,7 @@
         "message": "陀螺仪低通滤波器2类型"
     },
     "pidTuningLowpassFilterHelp": {
-        "message": "低通滤波器有两个类型：静态和动态。设定低通滤波器时同一时刻只能启用一个类型（静态或动态）。静态滤波器需要预先定义一个滤波器开始工作的截止频率。动态滤波器则通过设置最低和最高值来定义一个截止范围。截止频率跟随油门摇杆在最低和最高范围内移动。"
+        "message": "低通滤波器有两个类型：静态和动态。某一给定低通滤波器，同一时刻只能启用一个类型（静态或动态）。静态滤波器需要预先定义一个截止频率，它是一个以滤波器某种初始化过程而定义的值。动态滤波器则通过设置最低和最高值，来定义一个截止频率的移动范围。截止频率跟随油门摇杆在最低和最高范围内移动。"
     },
     "pidTuningGyroNotchFiltersGroup": {
         "message": "陀螺仪陷波滤波器"
@@ -3413,7 +3413,7 @@
         "message": "陀螺仪陷波滤波器2截止频率 [Hz]"
     },
     "pidTuningNotchFilterHelp": {
-        "message": "陷波滤波器有一个中心频率和一个截止频率。过滤器频率设置是中心对称的。中心频率是过滤器的中心，截止频率是陷波滤波器开始的位置。例如：当设置截止频率为160和中心频率为260时，它意味着滤波范围是160-360Hz，并且中心频率附近获得最多的抑制。"
+        "message": "陷波滤波器有一个中心频率和一个截止频率。滤波器的频谱图形是对称的。中心频率是滤波器的中心，截止频率是阻带的起始频率。例如：当设置截止频率为160、中心频率为260时，它意味着滤波范围是160-360Hz，并且信号在中心频率附近衰减幅度最大。"
     },
     "pidTuningDynamicNotchFilterGroup": {
         "message": "动态陷波滤波器"
@@ -3422,7 +3422,7 @@
         "message": "动态陷波滤波器将跟踪电机噪音频率，并并根据其频率在中间放置一个或两个陷波滤波器过滤器，"
     },
     "pidTuningDynamicNotchFilterDisabledWarning": {
-        "message": "<strong>注意:</strong> 动态陷波滤波器已关闭。为了配置和使用它，请在$t(configurationFeatures.message)选择$t(tabConfiguration.message)以开启“动态陷波滤波器”功能"
+        "message": "<strong>注意:</strong> 动态陷波滤波器已关闭。为了配置和使用它，请在 ‘$t(configurationFeatures.message)’ 选择 ‘$t(tabConfiguration.message)’ 以开启“动态陷波滤波器”功能。"
     },
     "pidTuningDynamicNotchRange": {
         "message": "动态陷波滤波器范围"
@@ -3471,7 +3471,7 @@
         "description": "Help text for one of the parameters of the RPM Filter"
     },
     "pidTuningRpmMinHz": {
-        "message": "陀螺仪 RPM 滤波器最小频率[Hz]",
+        "message": "陀螺仪 RPM 滤波器最低频率 [Hz]",
         "description": "Text for one of the parameters of the RPM Filter"
     },
     "pidTuningRpmMinHzHelp": {
@@ -3497,10 +3497,10 @@
         "message": "D Term 低通滤波器2类型"
     },
     "pidTuningDTermLowpassDynMinFrequency": {
-        "message": "D Term 低通滤波器1动态最低截止频率[Hz]"
+        "message": "D Term 低通滤波器1动态最低截止频率 [Hz]"
     },
     "pidTuningDTermLowpassDynMaxFrequency": {
-        "message": "D Term 低通滤波器1动态最高截止频率[Hz]"
+        "message": "D Term 低通滤波器1动态最高截止频率 [Hz]"
     },
     "pidTuningDTermLowpassDynType": {
         "message": "D Term 低通滤波器1动态滤波器类型"
@@ -3518,13 +3518,13 @@
         "message": "偏航低通滤波器"
     },
     "pidTuningYawLowpassFrequency": {
-        "message": "偏航低通截止频率 [Hz]"
+        "message": "偏航低通滤波器截止频率 [Hz]"
     },
     "pidTuningVbatPidCompensation": {
-        "message": "电池电压PID 补偿"
+        "message": "电池电压 PID 补偿"
     },
     "pidTuningVbatPidCompensationHelp": {
-        "message": "当电池电压变低时， 飞控自动增加PID数值来补偿动力的损失。这会在整个飞行过程中提供一个更一致的飞行特性。该补偿数值通过在 $t(tabPower.message) 的 $t(powerBatteryMaximum.message) 计算而得，所以请确保正确设置了该数值。"
+        "message": "当电池电压变低时， 飞控自动增加PID数值来补偿动力的损失。这会在整个飞行过程中提供一个更一致的飞行特性。该补偿数值通过在 ‘$t(tabPower.message)‘的 ‘$t(powerBatteryMaximum.message)’ 计算而得，所以请确保正确设置了该数值。"
     },
     "pidTuningItermRotation": {
         "message": "I 值旋转"
@@ -3542,7 +3542,7 @@
         "message": "I 值释放"
     },
     "pidTuningItermRelaxHelp": {
-        "message": "在快速移动时限制 I 值的积累。这特别有助于降低翻滚等快速移动的末期的反弹。你可以选择该功能生效的轴向，以及快速移动的判断依据是陀螺仪还是设定点（摇杆）。"
+        "message": "在快速移动时限制 I 值的积累。这特别有助于降低翻滚等快速移动结尾时的反弹。你可以选择该功能生效的轴向，以及快速移动的判断依据是陀螺仪还是设定点（摇杆）。"
     },
     "pidTuningItermRelaxAxes": {
         "message": "轴",
@@ -3575,13 +3575,13 @@
         "description": "Cutoff value of the I Term Relax"
     },
     "pidTuningItermRelaxCutoffHelp": {
-        "message": "较低的值可抑制弱动力飞机在翻滚后发生的回弹；较高的值可提高以较高角速率进行转弯时的精度。用以竞速。<br>竞速建议 30-40，高响应性花飞穿越机建议设置为 15，较重的花飞穿越机建议设置为 10，X-class建议设置为 3-5。"
+        "message": "较低的值可抑制弱动力飞机在翻滚后发生的回弹；较高的值可提高以较高角速率进行转弯时的精度，用于竞速。<br>竞速建议 30-40，高响应性花飞飞机建议设置为 15，较重的花飞飞机建议设置为 10，X-class 建议设置为 3-5。"
     },
     "pidTuningAbsoluteControlGain": {
         "message": "绝对控制"
     },
     "pidTuningAbsoluteControlGainHelp": {
-        "message": "此功能解决了$t(pidTuningItermRotation.message)存在的一些潜在问题，并从某种角度上来说取代了它。此功能累积陀螺仪在四轴飞行器坐标系每个轴上的绝对误差，并按比例将其校正值混合到设定值中。要使它工作，您需要启用$t(pidTuningItermRelax.message)(轴设置为$t(pidTuningItermRelaxAxesOptionRP.message))。如果此功能与$t(pidTuningIntegratedYaw.message)一起使用，则可以将$t(pidTuningItermRelax.message)的轴设置为$t(pidTuningItermRelaxAxesOptionRPY.message)。"
+        "message": "此功能解决了 $t(pidTuningItermRotation.message) 存在的一些潜在问题，并从某种角度上来说取代了它。此功能累积陀螺仪在四轴飞行器坐标系每个轴上的绝对误差，并按比例将其校正值混合到设定值中。要使它工作，您需要启用 $t(pidTuningItermRelax.message) (轴设置为 $t(pidTuningItermRelaxAxesOptionRP.message) )。如果此功能与 $t(pidTuningIntegratedYaw.message) 一起使用，则可以将 $t(pidTuningItermRelax.message) 的轴设置为 $t(pidTuningItermRelaxAxesOptionRPY.message) 。"
     },
     "pidTuningThrottleBoost": {
         "message": "油门增压"
@@ -3591,9 +3591,6 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "动态怠速值 [rpm]"
-    },
-    "pidTuningIdleMinRpmHelp": {
-        "message": "设置该参数以设定基于 RPM 的电机怠速值，用以作为避免电机失步的安全措施。<br>竞速飞手可能倾向于非常好的响应力与较低的 Rate ——因此使用一个较低的动态怠速值[rpm] 与一个较高的 Dshot 怠速值往往非常有效。花式飞行与目视飞手可能会非常偏爱怠速时的较低推力，并且可能会使用较低的 Dshot 怠速值和稍高的动态怠速值[rpm] 以避免高角速率时的电机失步。请注意：动态怠速[rpm] 值应该总是低于 Dshot 怠速值。<br><br>访问此<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki</a>以获取更多信息。"
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "萌新手动模式角度限制"
