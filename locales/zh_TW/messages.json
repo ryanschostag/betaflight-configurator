@@ -3,7 +3,97 @@
         "message": "是",
         "description": "General Yes message to be used across the application"
     },
+    "connect": {
+        "message": "連接"
+    },
+    "portOverrideText": {
+        "message": "埠號："
+    },
+    "autoConnect": {
+        "message": "自動連接"
+    },
+    "language_choice_message": {
+        "message": "更改語言:",
+        "description": "Try and be brief"
+    },
+    "language_default_pretty": {
+        "message": "系統默認($t(detectedLanguage))"
+    },
+    "tabFirmwareFlasher": {
+        "message": "固件燒寫工具"
+    },
+    "tabLanding": {
+        "message": "歡迎"
+    },
+    "tabChangelog": {
+        "message": "更新日誌"
+    },
+    "tabPrivacyPolicy": {
+        "message": "隱私政策"
+    },
+    "tabHelp": {
+        "message": "設置文檔 & 支援"
+    },
+    "logActionHide": {
+        "message": "隱藏日誌"
+    },
+    "logActionShow": {
+        "message": "顯示日誌"
+    },
+    "infoVersions": {
+        "message": "操作系統: <strong>{{operatingSystem}}</strong>, Chorme: <strong>{{chromeVersion}}</strong>, 配置程式: <strong>{{configuratorVersion}}</strong>",
+        "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
+    },
+    "buildServerUsingCached": {
+        "message": "使用已緩存的 $1 生成訊息。"
+    },
+    "releaseCheckCached": {
+        "message": "使用已緩存的 $1 版本訊息"
+    },
+    "versionLabelConfigurator": {
+        "message": "配置程式"
+    },
+    "defaultWelcomeIntro": {
+        "message": "歡迎使用<strong>Betaflight - 配置程式</strong>，為簡化固件升級，設置和調校飛控而生的工具。"
+    },
+    "defaultWelcomeHead": {
+        "message": "硬體"
+    },
+    "defaultWelcomeText": {
+        "message": "本應用支持所有能運行 Betaflight 的飛控。在 “固件燒寫” 頁面查看所有支援的飛控列表。<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">下載 Betaflight Blackbox 日誌查看工具</a><br /><br />固件源代碼可以點擊<a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">這裡</a>下載<br /><br />最新的<b>STM USB VCP 驅動</b>可以点击<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />对于舊的使用 CP210x USB 轉串口芯片的硬體：<br />最新的<b>CP210x 驅動</b>可以點擊<a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">這裡</a>下載<br />最新的<b>Zadig</b> Windows USB驅動安裝程式可以點擊<a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">這裡</a>下載<br />"
+    },
+    "defaultContributingHead": {
+        "message": "參與開發"
+    },
+    "defaultContributingText": {
+        "message": "如果你想幫助Betaflight 變得更好，你可以：<br /><ul><li>用您的 Betaflight 知識來為 <a href=\"https://github.com/betaflight/betaflight/wiki\" target =\"_blank\" rel=\"noopener noreferrer\">我們的wiki</a> 創建或更新內容，或者是在論壇裡回答其他用戶的問題；</li><li>為固件和配置程序 <a href= \"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">貢獻代碼</a> - 增加新功能，解決漏洞，改善代碼；</li><li>測試 <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">新功能和修改</a > 並提供測試反饋；</li><li>幫助在 <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">問題追踪器</a> 上報告問題的用戶解決問題，並參與功能請求的討論；</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md# Translators\" target=\"_blank\" rel=\"noopener noreferrer\">為 Betaflight 配置程序添加新語言的翻譯</a>，或者幫助維護既有的翻譯。 </li></ul>"
+    },
+    "defaultFacebookText": {
+        "message": "我們還有一個<a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook 小組</a>。<br />加入我們來一起討論 Betaflight，咨詢配置問題，或者只是和小夥伴們閒聊。"
+    },
+    "defaultChangelogHead": {
+        "message": "配置程式 - 更新日誌"
+    },
+    "defaultDonateHead": {
+        "message": "開源/捐贈說明"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight</strong>是一個<strong>開放源碼</strong>的飛行控制軟體，它可供所有用戶免費使用，但 <strong>不提供擔保</strong>。 </p><p>如果你覺得 Betaflight 或 Betaflight 配置程式對你有用，請考慮捐贈以 <strong>支援</strong> 它的開發工作</p>"
+    },
+    "defaultDonateBottom": {
+        "message": "<p>如果你想持續捐助資金，請考慮在$t(patreonLink.message)上贊助我們。</p>"
+    },
+    "patreonLink": {
+        "message": "<a href=\"https://www.patreon.com/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">Patreon</a>",
+        "description": "Patreon is name, and should not require translation"
+    },
+    "defaultDonate": {
+        "message": "捐贈"
+    },
     "pidTuningDynamicNotchMinHz": {
         "message": "動態陷波濾波器最低頻率"
+    },
+    "flashTab": {
+        "message": "更新固件"
     }
 }
