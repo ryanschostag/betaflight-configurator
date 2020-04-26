@@ -634,6 +634,9 @@
     "defaultContributingHead": {
         "message": "Contribuir"
     },
+    "defaultContributingText": {
+        "message": "Se desexa axudar a que Betaflight sexa aínda mellor, pode axudar de moitos xeitos, incluíndo:<br /><ul> <li>usando os seus coñecementos sobre Betaflight para crear ou actualizar contido <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">na nosa Wiki</a>, ou respondendo ás preguntas doutros usuarios nos foros en liña;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">aportando código</a> ó firmware e ó Configurator - novas características, correccións, melloras;</li><li>probando <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">novas funcións e correccións </a> e proporcionando comentarios;</li><li>axudando a outros usuarios a resolver os problemas que denuncian en <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">o noso rastreador de números</a>, e participando en debates sobre solicitudes de características;</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">traducindo</a> Configurador Betaflight a un novo idioma, ou axudando a manter as traducións existentes.</li></ul>"
+    },
     "defaultFacebookText": {
         "message": "Tamén temos un <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Grupo de Facebook</a>.<br />Únase a nós para obter un lugar onde falar sobre Betaflight, facer preguntas sobre a configuración ou simplemente pasar un rato cos compañeiros pilotos."
     },
@@ -645,6 +648,9 @@
     },
     "defaultDonateHead": {
         "message": "Código aberto / Aviso de doazón"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight</strong> é un software de control de voo que é de <strong>código aberto</strong> e está dispoñible de xeito gratuíto <strong>sen garantía</strong> para tódolos usuarios.</p><p>Se atopa Betaflight ou o Configurador Betaflight útiles, considere <strong>apoiar</strong> ó seu desenvolvemento cunha doazón.</p>"
     },
     "defaultDonateBottom": {
         "message": "<p> Se quere contribuír financeiramente de xeito continuado, ten que considerar converterse en patrón para nós en $t(patreonLink.message).</p>"
@@ -1216,6 +1222,9 @@
     "configurationDigitalIdlePercent": {
         "message": "Valor Aceledaror Motor Inactivo [porcentaxe]"
     },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "O valor \"DShot idle\" é o porcentaxe de aceleración máxima que se envía aos ESCs cando o acelerador está en posición mínima e a aeronave está armada. Aumentea para obter máis velocidade de ralentí e evitar desyncs. Un valor demasiado alto, proboca sensación de flotar."
+    },
     "configurationMotorPoles": {
         "message": "Postes do motor",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1223,6 +1232,10 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (número de imáns na campana do motor)",
         "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationMotorPolesHelp": {
+        "message": "O número de polos é o número de imáns na campá do motor. Non conte os estatores onde están enrolados os fíos de cobre. Os motores de 5\" normalmente teñen 14 imáns, 3\" ou máis pequenos adoitan ter 12 imáns.",
+        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Minimun Throttle (Valor minimo do ESC ó armar)"
@@ -3268,6 +3281,9 @@
     "pidTuningMotorLimit": {
         "message": "Atenuación %"
     },
+    "pidTuningMotorLimitHelp": {
+        "message": "Atenua os comandos do motor pola porcentaxe establecida. Reduce a corrente do ESC e o calor do motor cando se usan baterías con maior número de celas, por exemplo: Cando use unha batería 6S nunha aeronave que ten motores, hélices e axustes deseñados para 4S, intente establecer o valor no 66%; cando use unha batería 4S nunha aeronave destinada a 3S, probe o 75%.<br>Asegúrese de que tódolos seus compoñentes soporten a tensión da batería que está a usar."
+    },
     "pidTuningCellCount": {
         "message": "Contador de celdas"
     },
@@ -3361,9 +3377,17 @@
         "message": "Xeralmente, os quads máis grandes necesitan ganancias PID maiores por ter unha relación potencia / peso menor.<br><br>Os quads máis pequenos (micros) normalmente necesitan ganancias PID máis baixas debido á maior relación potencia / peso.<br><br>Valores máis altos. son para quads de autoridade inferior. Valores inferiores son para quads de maior autoridade.",
         "description": "Master gain tuning slider helpicon message"
     },
+    "pidTuningPDRatioSliderHelp": {
+        "message": "Unha D relativamente alta produce unha resposta máis lenta e pode facer que os motores estean quentes, pero debería axudar a controlar as oscilacións P e pode mellorar o propwash.<br><br>Unha D relativamente baixa proporciona respostas máis rápidas, pero pode xerar propwash.",
+        "description": "PD balance tuning slider helpicon message"
+    },
     "pidTuningPDGainSliderHelp": {
         "message": "Unha ganancia baixa de P e D producirá motores máis fríos, pero dará lugar a unha maior oscilación de propwash. Un valor demasiado baixo pode facer que o quad sexa inestable.<br><br>Os termos P e D traballan xuntos para reducir o propwash.<br><br>Valores máis altos aumentarán a calor do motor e poderán aumentar as oscilacións durante un voo cara a diante debido a unha ganancia maior D-term.",
         "description": "P and D gain tuning slider helpicon message"
+    },
+    "pidTuningResponseSliderHelp": {
+        "message": "Os valores máis baixos de FF empeorarán a resposta do stick e poden provocar un retroceso lento ao final dun flip ou dun roll (arranque I-term).<br><br>Os valores máis altos de FF darán respostas rápidas do stick nos movementos bruscos. Valores excesivamente altos de FF poden causar superacións e rebotes rápidos ao final dun flip ou dun roll.",
+        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtros Paso Baixo do Xiro"
@@ -3586,6 +3610,9 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valor Idle dinámico [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "Dynamic Idle mellora o control a baixa rpm e reduce o risco de desyncs do motor. Corrixe os problemas provocados polo fluxo de aire o acelerar ou decelerar as hélices, mellorando a autoridade PID, a estabilidade, a freada do motor e a resposta. O Dynamic Idle rpm debe estar axustado a un 20% por debaixo da rpm do seu valor de ralentí (ver a ficha $t(tabMotorTesting.message)). Normalmente non hai necesidade de cambiar o valor predeterminado. Para un tempo de espera invertido máis longo, o valor inactivo DShot e a rpm mínima deberían reducirse xuntos.<br><br>Visite <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">a wiki</a> para máis información."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Ángulo límite para Entrenador Acro"
@@ -5360,6 +5387,10 @@
     "configurationDshotBidir": {
         "message": "DShot bidireccional (require o firmware ESC soportado)",
         "description": "Feature for the ESC/Motor"
+    },
+    "configurationDshotBidirHelp": {
+        "message": "Envía datos da ESC á FC mediante telemetría DShot. Obrigatorio por filtrado RPM e ralentí dinámico. <br> <br>Nota: Require un ESC compatible cun firmware apropiado, por exemplo JESC, Jazzmac, BLHeli-32.",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroSyncDenom": {
         "message": "Frecuencia do xiroscopo actualizada"
