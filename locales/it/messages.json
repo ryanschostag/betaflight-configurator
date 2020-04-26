@@ -3528,6 +3528,9 @@
     "pidTuningIdleMinRpm": {
         "message": "Valore idle dinamico [rpm]"
     },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "L'Idle Dinamico migliora il controllo a rpm bassi e riduce il rischio di desincronizzazione dei motori. Corregge i problemi causati dall'aria che rallenta o accelera le eliche, migliorando il controllo dei PID, stabilità, freno e reattività dei motori. Gli rpm dell'Idle Dinamico dovrebbero essere impostati circa il 20% sotto gli rpm del valore dell'Idle Dshot (vedi la scheda $t(tabMotorTesting.message)). Normalmente non c'è bisogno di cambiare il valore di default dell'Idle Dshot. Per maggior tempo a volo invertito il valore Idle Dshot e gli rpm minimi dovrebbero essere abbassati insieme.<br><br>Visita <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">questa pagina wiki</a> per maggiori informazioni."
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Angolo limite per l'Acro Trainer"
     },
