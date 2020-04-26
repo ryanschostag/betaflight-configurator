@@ -483,7 +483,7 @@
         "message": "<strong>尚未选择任何电调协议</strong>。<br>请在 ‘$t(tabConfiguration.message)’ 页面内 ‘$t(configurationEscFeatures.message)’ 中选择适合您电调的输出协议。<br>$t(escProtocolDisabledMessage.message)"
     },
     "reportProblemsDialogACC_NEEDS_CALIBRATION": {
-        "message": "<strong>加速度计已启用，但未进行校准</strong>。<br>如果您计划使用加速度计，请遵循 \"$t(tabSetup.message)\" 页面中的 \"$t(initialSetupButtonCalibrateAccel.message)\" 操作指南。如果开启了任何需要调用加速度计的功能 (例如自稳模式, GPS 救援, …)，在加速度计完成校准之间将无法解锁。<br>如果您并不计划使用加速度计，建议您在 \"$t(tabConfiguration.message)\" 页面中通过 \"$t(configurationSystem.message)\" 禁用加速度计。"
+        "message": "<strong>加速度计已启用，但未进行校准</strong>。<br>如果您打算使用加速度计，请遵循 \"$t(tabSetup.message)\" 页面中的 \"$t(initialSetupButtonCalibrateAccel.message)\" 操作指南。如果开启了任何需要调用加速度计的功能 (例如自稳模式, GPS 救援, …)，在加速度计完成校准之间将无法解锁。<br>如果您并不想使用加速度计，建议您在 \"$t(tabConfiguration.message)\" 页面中通过 \"$t(configurationSystem.message)\" 禁用加速度计。"
     },
     "infoVersions": {
         "message": "操作系统: <strong>{{operatingSystem}}</strong>, Chrome: <strong>{{chromeVersion}}</strong>, 配置程序: <strong>{{configuratorVersion}}</strong>",
@@ -496,7 +496,7 @@
         "message": "<b>从生成服务器获取 $1 发布版本失败，使用已缓存的信息。 失败原因：<code>$2</code></b>"
     },
     "buildServerUsingCached": {
-        "message": "为 $1 使用已缓存的生成信息。"
+        "message": "使用已缓存的 $1 生成信息。"
     },
     "releaseCheckLoaded": {
         "message": "从 Github 载入 $1 发布信息"
@@ -505,7 +505,7 @@
         "message": "<b>从 GitHub 获取 $1 发布版本失败，载入原版本信息。 失败原因：<code>$2</code></b>"
     },
     "releaseCheckCached": {
-        "message": "使用缓存的 $1 版本信息"
+        "message": "使用已缓存的 $1 版本信息"
     },
     "releaseCheckNoInfo": {
         "message": "找不到 $1 发布信息"
@@ -604,7 +604,7 @@
         "message": "EEPROM <span class=\"message-positive\">已保存</span>"
     },
     "defaultWelcomeIntro": {
-        "message": "欢迎使用<strong>Betaflight - 配置程序</strong>，为简化固件升级，设置和调校飞控而生的工具。"
+        "message": "欢迎使用 <strong>Betaflight - 配置程序</strong>，为简化固件升级，设置和调校飞控而生的工具。"
     },
     "defaultWelcomeHead": {
         "message": "硬件"
@@ -616,7 +616,7 @@
         "message": "参与开发"
     },
     "defaultContributingText": {
-        "message": "如果你想帮助 Betaflight 变得更好，你可以：<br /><ul><li>用您的 Betaflight 知识来为 <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">我们的wiki</a> 创建或更新内容，或者是在论坛里回答其他用户的问题；</li><li>为固件和配置程序 <a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">贡献代码</a> - 增加新功能，解决漏洞，改善代码；</li><li>测试 <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">新功能和修改</a> 并提供测试反馈；</li><li>帮助在 <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">问题追踪器</a> 上报告问题的用户解决问题，并参与功能请求的讨论；</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">为 Betaflight 配置程序添加新的语言的翻译</a>，或者帮助维护既有的翻译。</li></ul>"
+        "message": "如果你想帮助 Betaflight 变得更好，你可以：<br /><ul><li>用您的 Betaflight 知识来为 <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">我们的wiki</a> 创建或更新内容，或者是在论坛里回答其他用户的问题；</li><li>为固件和配置程序 <a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">贡献代码</a> - 增加新功能，解决漏洞，改善代码；</li><li>测试 <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">新功能和修改</a> 并提供测试反馈；</li><li>帮助在 <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">问题追踪器</a> 上报告问题的用户解决问题，并参与功能请求的讨论；</li><li><a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">为 Betaflight 配置程序添加新语言的翻译</a>，或者帮助维护既有的翻译。</li></ul>"
     },
     "defaultFacebookText": {
         "message": "我们还有一个 <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook 小组</a>。<br />加入我们来一起讨论 Betaflight，询问配置问题，或者只是和小伙伴们闲聊。"
@@ -631,7 +631,7 @@
         "message": "开源/捐赠说明"
     },
     "defaultDonateText": {
-        "message": "<p><strong>Betaflight</strong>是一个<strong>开放源码</strong>的飞行控制软件，所有用户都可以在<strong>没有保修</strong>的前提下免费使用。</p><p>如果你觉得 Betaflight 或 Betaflight 配置程序对你有用，请考虑捐赠以<strong>支持</strong>它的开发工作</p>"
+        "message": "<p><strong>Betaflight</strong>是一个<strong>开放源码</strong>的飞行控制软件，它可供所有用户免费使用，但 <strong>不提供担保</strong>。</p><p>如果你觉得 Betaflight 或 Betaflight 配置程序对你有用，请考虑捐赠以 <strong>支持</strong> 它的开发工作</p>"
     },
     "defaultDonateBottom": {
         "message": "<p>如果你想持续捐助资金，请考虑在$t(patreonLink.message)上赞助我们。</p>"
@@ -1183,7 +1183,7 @@
         "message": "某些解锁选项可能需要启用加速度计"
     },
     "configurationMagDeclination": {
-        "message": "磁力计衰落 [deg]"
+        "message": "磁偏角 [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "反转电机转向"
@@ -1211,7 +1211,7 @@
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesLong": {
-        "message": "$t(configurationMotorPoles.message)(电机转子上的磁铁数量)",
+        "message": "$t(configurationMotorPoles.message)（电机转子上的磁铁数量）",
         "description": "One of the fields of the ESC/Motor configuration"
     },
     "configurationMotorPolesHelp": {
@@ -2598,7 +2598,7 @@
         "message": "保存闪存数据到文件"
     },
     "dataflashButtonSaveFileDeprecated": {
-        "message": "将闪存保存到文件...(不赞成使用)"
+        "message": "将闪存保存到文件...(不推荐使用)"
     },
     "dataflashSaveFileDepreciationHint": {
         "message": "通过配置程序保存黑盒日志的速度很慢且相对容易出错。建议您改用 '<b>$t(onboardLoggingRebootMscText.message)</b>' (下图) 来激活大容量存储模式, 并将您的飞控作为存储设备访问以下载日志文件。"
@@ -2721,7 +2721,7 @@
         "message": "选择你的飞控型号"
     },
     "firmwareFlasherOnlineSelectBoardHint": {
-        "message": "从 Betaflight 4.1 开始，Betaflight 引入了对<strong>统一目标</strong>的支持。统一目标的概念意味着使用相同MCU (F4、F7) 的飞控板可以使用相同的 .hex 固件文件。为了使不同的飞控板使用相同的固件，在刷写统一目标时，将在固件旁边部署一个特定的配置文件。<br>此版本的 Betaflight 配置程序支持一步刷写带有各自飞控板特定配置的统一目标。下拉列表中显示了每个飞控板可用的不同固件类型，如下所示: <br><br><strong>&lt;board name&gt;</strong>或<br><strong>&lt;board name&gt;(旧格式)</strong>:<br>非统一目标，或4.1版本之前的统一目标。<br><br><strong>&lt;board name&gt;(&lt;manufacturer id&gt;)</strong>:<br>(4字母制造商ID)<br>统一目标。<br><br><strong>若统一目标可用请使用统一目标。</strong>如果您在使用统一目标时遇到问题，请打开一个<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">issue</a>然后使用非统一目标，直至问题解决。"
+        "message": "从 Betaflight 4.1 开始，Betaflight 引入了对<strong>统一目标</strong>的支持。统一目标的概念意味着使用相同MCU (F4、F7) 的飞控板可以使用相同的 .hex 固件文件。为了使不同的飞控板使用相同的固件，在刷写统一目标后，将在固件内部署一个特定的配置文件。<br>此版本的 Betaflight 配置程序支持一步刷写带有各自飞控板特定配置的统一目标。下拉列表中显示了每个飞控板可用的不同固件类型，如下所示: <br><br><strong>&lt;board name&gt;</strong>或<br><strong>&lt;board name&gt;(旧格式)</strong>:<br>非统一目标，或4.1版本之前的统一目标。<br><br><strong>&lt;board name&gt;(&lt;manufacturer id&gt;)</strong>:<br>(4字母制造商ID)<br>统一目标。<br><br><strong>若统一目标可用请使用统一目标。</strong>如果您在使用统一目标时遇到问题，请打开一个<a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">issue</a>然后使用非统一目标，直至问题解决。"
     },
     "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
         "message": "选择对应你飞控型号的固件版本"
@@ -2829,7 +2829,7 @@
         "message": "信息："
     },
     "firmwareFlasherWarningText": {
-        "message": "请<span class=\"message-negative\">不要</span>尝试烧写<strong> Betaflight 不支持的飞控板</strong>。烧写固件过程中千万<br /><span class=\"message-negative\">不要</span> <strong>断开飞控连接</strong> <strong>或关闭电脑</strong><br /><br /><strong>注意：</strong>STM32 的 bootloader 储存在ROM中，所以不会有变砖可能。<br /><strong>注意：在固件烧写页面</strong><span class=\"message-negative\">自动连接</span>会被自动禁用。<br /><strong>注意：</strong>烧写固件可能会清空设置，请务必先备份好你的数据。<br /><strong>注意：</strong>如果烧写遇到问题，<strong>尝试拔掉连接到飞控的所有连线</strong> 然后尝试重启，更新配置程序，升级驱动。<br /><strong>注意：</strong>当使用虚拟USB（VCP）的飞控（大多数新的飞控都是），请仔细阅读 Betaflight 手册 USB flashing 部分章节，并确保驱动和软件已正确安装。"
+        "message": "请<span class=\"message-negative\">不要</span>尝试烧写<strong> Betaflight 不支持的飞控板</strong>。<br />烧写固件过程中千万<span class=\"message-negative\">不要</span> <strong>断开飞控连接</strong> 或 <strong>关闭电脑</strong><br /><br /><strong>注意：</strong>STM32 的 bootloader 储存在ROM中，所以不会有变砖可能。<br /><strong>注意：在固件烧写页面</strong><span class=\"message-negative\">自动连接</span>会被自动禁用。<br /><strong>注意：</strong>烧写固件可能会清空设置，请务必先备份好你的数据。<br /><strong>注意：</strong>如果烧写遇到问题，<strong>尝试拔掉连接到飞控的所有连线</strong> 然后尝试重启，更新配置程序，升级驱动。<br /><strong>注意：</strong>当使用虚拟USB（VCP）的飞控（大多数新的飞控都是），请仔细阅读 Betaflight 手册 USB flashing 部分章节，并确保驱动和软件已正确安装。"
     },
     "firmwareFlasherRecoveryHead": {
         "message": "<strong> 恢复/丢失通信 </strong>"
@@ -2941,7 +2941,7 @@
         "message": "LED 功能"
     },
     "ledStripFunctionTitle": {
-        "message": "功能"
+        "message": "基本功能"
     },
     "ledStripFunctionNoneOption": {
         "message": "无",
@@ -3098,7 +3098,7 @@
         "message": "着陆时闪烁"
     },
     "ledStripOverlayTitle": {
-        "message": "叠加"
+        "message": "叠加功能"
     },
     "ledStripWarningsOverlay": {
         "message": "警告"
@@ -3239,7 +3239,7 @@
         "message": "强度"
     },
     "pidTuningTransition": {
-        "message": "过渡"
+        "message": "转换值"
     },
     "pidTuningHorizon": {
         "message": "半自稳模式"
@@ -3592,8 +3592,11 @@
     "pidTuningIdleMinRpm": {
         "message": "动态怠速值 [rpm]"
     },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "动态怠速可以提升低转速下的控制力，并减少电机失步的风险。它纠正了由于气流使得螺旋桨加速或减速而引起的问题，提高了PID的权重、稳定性、电机制动和响应能力。动态怠速的 RPM 值应设置得比您的 Dshot 怠速值（请查看 $t(tabMotorTesting.message) 选项卡）对应的 RPM 值低20%。通常不需要修改默认的 Dshot 怠速值。为了延长倒挂动作的滞空时间，应该同时降低 Dshot 怠速值和动态怠速值。<br><br>访问<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">这个wiki</a>以获取更多信息。"
+    },
     "pidTuningAcroTrainerAngleLimit": {
-        "message": "萌新手动模式角度限制"
+        "message": "训练模式角度限制"
     },
     "pidTuningAcroTrainerAngleLimitHelp": {
         "message": "为正在学习飞行的飞行员增加一个新的角度限制模式。有效范围为 10-80，需要使用 $t(tabAuxiliary.message) 选项卡中的一个开关激活。"
@@ -3617,7 +3620,7 @@
         "message": "接收机失控保护"
     },
     "failsafeFeaturesHelpNew": {
-        "message": "失控保护有两个阶段。当飞控在任一接收通道收到无效的脉冲长度，或者接收机汇报已失控，或者彻底没有收到接收机信号，飞控将进入<strong>一阶失控保护</strong>状态。飞控将会在<span class=\"message-negative\">所有通道</span>使用预置通道设置，如果短时间内信号恢复将可退出失控保护状态。在飞机处于<span class=\"message-negative\">解锁</span>状态，并且一阶失控保护模式持续时间超过了预设的时间，飞控将进入<strong>二价失控保护</strong>状态，所有通道将会保持当前输出。<br /><strong>注意：</strong> 在飞控进入一阶失控保护之前，如果AUX 通道出现无效的脉冲，该通道一样会使用预置通道设置。"
+        "message": "失控保护有两个阶段。若飞控在任一接收通道收到无效的脉冲长度，或者接收机汇报已失控，或者彻底没有收到接收机信号，飞控将进入<strong>一阶失控保护</strong>状态。飞控将会在<span class=\"message-negative\">所有通道</span>使用预置通道设置，如果短时间内信号恢复将可退出失控保护状态。若飞机处于<span class=\"message-negative\">解锁</span>状态，并且一阶失控保护模式持续时间超过了预设的时间，飞控将进入<strong>二价失控保护</strong>状态，所有通道将会保持当前输出。<br /><strong>注意：</strong> 在飞控进入一阶失控保护之前，如果AUX 通道出现无效的脉冲，该通道一样会使用预置通道设置。"
     },
     "failsafePulsrangeTitle": {
         "message": "有效脉冲范围设置"
@@ -3647,7 +3650,7 @@
         "message": "二阶失控保护 - 设置"
     },
     "failsafeDelayItem": {
-        "message": "触发二阶失控保护的信号丢失保护时间[1 = 0.1 秒.]"
+        "message": "触发二阶失控保护的信号丢失保护时间[1 = 0.1 秒]"
     },
     "failsafeDelayHelp": {
         "message": "一阶失控保护等待信号恢复时间"
@@ -3701,10 +3704,10 @@
         "message": "悬停油门"
     },
     "failsafeGpsRescueItemAscendRate": {
-        "message": "上升速率(米/秒)"
+        "message": "上升速率（米/秒）"
     },
     "failsafeGpsRescueItemDescendRate": {
-        "message": "下降速率 (米/秒)"
+        "message": "下降速率（米/秒）"
     },
     "failsafeGpsRescueItemMinSats": {
         "message": "最小卫星数"
@@ -3905,22 +3908,22 @@
         "message": "电调 电机 12"
     },
     "powerVoltageId80": {
-        "message": "第一块"
+        "message": "第一节"
     },
     "powerVoltageId81": {
-        "message": "第二块"
+        "message": "第二节"
     },
     "powerVoltageId82": {
-        "message": "第三块"
+        "message": "第三节"
     },
     "powerVoltageId83": {
-        "message": "第四块"
+        "message": "第四节"
     },
     "powerVoltageId84": {
-        "message": "第五块"
+        "message": "第五节"
     },
     "powerVoltageId85": {
-        "message": "第六块"
+        "message": "第六节"
     },
     "powerVoltageScale": {
         "message": "比例"
@@ -3938,7 +3941,7 @@
         "message": "电池"
     },
     "powerAmperageId50": {
-        "message": "电调回传电压"
+        "message": "电调组合"
     },
     "powerAmperageId60": {
         "message": "电调 电机 1"
@@ -4059,7 +4062,7 @@
         "description": "Help content for the OSD profile and font PREVIEW"
     },
     "osdSetupSelectedProfileTitle": {
-        "message": "激活OSD 配置文件",
+        "message": "激活 OSD 配置文件",
         "description": "Title of the box to select the current active OSD profile"
     },
     "osdSetupSelectedProfileLabel": {
@@ -4113,7 +4116,7 @@
         "message": "图传设置"
     },
     "osdSetupCraftNameTitle": {
-        "message": "飞行器名字"
+        "message": "飞行器名称"
     },
     "osdSetupWarningsTitle": {
         "message": "警告"
@@ -4174,13 +4177,13 @@
         "message": "字体管理器"
     },
     "osdSetupUncheckAll": {
-        "message": "全不选"
+        "message": "取消全选"
     },
     "osdSetupHead": {
         "message": "信息"
     },
     "osdSetupVideoMode": {
-        "message": "视频格式"
+        "message": "视频模式"
     },
     "osdSetupCameraConnected": {
         "message": "摄像头已连接"
@@ -4189,7 +4192,7 @@
         "message": "恢复 OSD 默认设置"
     },
     "osdSetupButtonReset": {
-        "message": "重设配置"
+        "message": "恢复默认设置"
     },
     "osdTextElementMainBattVoltage": {
         "message": "电池电压",
@@ -4199,7 +4202,7 @@
         "message": "实时电压 (低于警告电压时会闪烁)"
     },
     "osdTextElementRssiValue": {
-        "message": "RSSI值",
+        "message": "RSSI 值",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementRssiValue": {
@@ -4220,11 +4223,11 @@
         "message": "当前油门位置"
     },
     "osdTextElementCpuLoad": {
-        "message": "CPU负载",
+        "message": "CPU 负载",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementCpuLoad": {
-        "message": "当前CPU负载"
+        "message": "当前 CPU 负载"
     },
     "osdTextElementVtxChannel": {
         "message": "图传频道",
@@ -4647,7 +4650,7 @@
         "message": "最多显示4个通道的值。通道须由 CLI 变量 ‘osd_rcchannels’ 来指定"
     },
     "osdTextElementCameraFrame": {
-        "message": "摄像头画面",
+        "message": "相机取景框",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementCameraFrame": {
