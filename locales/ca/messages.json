@@ -1143,6 +1143,9 @@
     "configurationDigitalIdlePercent": {
         "message": "Valor de l'accelerador Motor Inactiu [percentatge]."
     },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "El valor \"DShot Idle\" és el percentatge de la màxima acceleració que s'envia als ESC quan l'acceleració està a la posició mínima del stick i la aeronau està armada. Augmenteu-la per obtenir més velocitat al ralentí i evitar les desincronitzacions. Massa alt farà que l’arenau se senti flotant."
+    },
     "configurationMotorPoles": {
         "message": "Pols de motor",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1150,6 +1153,10 @@
     "configurationMotorPolesLong": {
         "message": "$t(configurationMotorPoles.message) (nombre d’imants a la campana del motor)",
         "description": "One of the fields of the ESC/Motor configuration"
+    },
+    "configurationMotorPolesHelp": {
+        "message": "El nombre de pols és el nombre d’imants de la campana del motor. NO compteu els estators on es troben els bobinatges. Els motors de 5 \"solen tenir 14 imants, 3\" o més petits solen tenir 12 imants.",
+        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
     },
     "configurationThrottleMinimum": {
         "message": "Throttle mínim (Valor mínim dels ESC quan està armat)"
@@ -3288,9 +3295,17 @@
         "message": "Generalment, els quads més grans necessiten guanys de PID més elevats per tenir una relació de potència/pes més baixa.<br><br> Els quads més petits (micros o nanos) generalment necessiten guanys PID més baixos a causa d’una relació de potència/pes més alta.<br><br> Valors més alts són per a quads d’autoritat inferior. Valors inferiors són per a quads d’autoritat superior.",
         "description": "Master gain tuning slider helpicon message"
     },
+    "pidTuningPDRatioSliderHelp": {
+        "message": "Una D relativament alta amortirà la resposta del stick i pot fer que els motors estiguin calents, però haurien d’ajudar a controlar les oscil·lacions P i poden millorar el propwash.<br><br>Relativament una D baixa proporciona una resposta més ràpida al stick, però pot debilitar la gestió del propwash.",
+        "description": "PD balance tuning slider helpicon message"
+    },
     "pidTuningPDGainSliderHelp": {
         "message": "Valors baixos de P i D donarà lloc a motors més frescos, però també provocará una oscil·lació de propwash. Un valor massa baix pot fer que el quad sigui inestable.<br><br> els terms de P i D treballen junts per reduir el propwash.<br><br>Valors més alts augmentaran la calor del motor i podrien augmentar les oscil·lacions durant un vol cap endavant suau per un major augment del guany de D term.",
         "description": "P and D gain tuning slider helpicon message"
+    },
+    "pidTuningResponseSliderHelp": {
+        "message": "Valors baixos de FF empitjoraran la resposta del stick i poden provocar un rebot lent al final d’un flip o un roll (en funcionament a termini I).<br><br> Els valors FF més alts proporcionaran respostes mès agils en moviments bruscos. Valors FF excessivament elevats poden provocar desviacions ràpides i un rebot ràpid al final d'un flip o roll.",
+        "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
         "message": "Filtres Passabaixos del Giro"
@@ -3513,6 +3528,9 @@
     },
     "pidTuningIdleMinRpm": {
         "message": "Valor Dinàmic Idle [rpm]"
+    },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "Dynamic Idle millora el control a baixa rpm i redueix el risc de desíncs del motor. Corregeix problemes causats per l’acceleració del flux d’aire o alentiment de hèlix, millorant l’autoritat PID, l’estabilitat, la frenada del motor i la resposta. La rpm dinàmica de ralentí hauria d'estar aproximadament un 20% inferior a la rpm del vostre valor inactiu Dshot (vegeu la pestanya $t(tabMotorTesting.message) tab). Normalment no cal canviar el valor del idle DShot per defecte. Per a un temps d’inversió invertit més llarg, s’haurien de reduir el valor idle DShot i el Mínim rpm junts.<br><br>Visita <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">aquesta entrada de la wiki</a> per obtenir més informació."
     },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Límit d’angle del Acro Trainer"
@@ -5266,6 +5284,10 @@
     "configurationDshotBidir": {
         "message": "DSHOT bidireccional (requereix el programari ESC suportat)",
         "description": "Feature for the ESC/Motor"
+    },
+    "configurationDshotBidirHelp": {
+        "message": "Envia dades de l’ESC a la FC mitjançant telemetria DShot. Necessari per RPM Filtering i Idle dinàmic.<br> <br>: Nota: requereix un ESC compatible amb el firmware adequat, per exemple, JESC, Jazzmac, BLHeli-32.",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
     "configurationGyroUse32kHz": {
         "message": "Habilita el mode de mostreig del gyro de 32kHz"
