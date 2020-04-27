@@ -4332,7 +4332,7 @@
         "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSSpeed": {
-        "message": "GPS 速度"
+        "message": "GPS 提供的速度信息"
     },
     "osdTextElementGPSSats": {
         "message": "GPS 卫星数",
@@ -4367,7 +4367,7 @@
         "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDRoll": {
-        "message": "横滚 PID 数值"
+        "message": "横滚 PID 增益"
     },
     "osdTextElementPIDPitch": {
         "message": "PID pitch",
@@ -4377,11 +4377,11 @@
         "message": "俯仰 PID 数值"
     },
     "osdTextElementPIDYaw": {
-        "message": "PID yaw",
+        "message": "偏航 PID",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDYaw": {
-        "message": "方向 PID 数值"
+        "message": "偏航 PID 增益"
     },
     "osdTextElementPower": {
         "message": "功率",
@@ -4402,7 +4402,7 @@
         "description": "One of the elements of the OSD"
     },
     "osdDescElementBatteryWarning": {
-        "message": "当电池电压低于设定阈值时的警告文字提示"
+        "message": "当电池电压低于设定值时的警告文字提示"
     },
     "osdTextElementAvgCellVoltage": {
         "message": "电池平均单芯电压",
@@ -4465,14 +4465,14 @@
         "description": "One of the elements of the OSD"
     },
     "osdDescElementNumericalVario": {
-        "message": "爬升速度数字"
+        "message": "爬升速度数字 (单位为英尺或米，取决于系统设置)"
     },
     "osdTextElementCompassBar": {
         "message": "罗盘标尺",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementCompassBar": {
-        "message": "当前行进方向的图形箭头"
+        "message": "用以显示当前飞行方向的罗盘标尺"
     },
     "osdTextElementWarnings": {
         "message": "警告",
@@ -4517,18 +4517,18 @@
         "message": "当前激活的调整范围和数值"
     },
     "osdTextElementTimer1": {
-        "message": "计时器1",
+        "message": "计时器 1",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementTimer1": {
-        "message": "显示计时器1"
+        "message": "显示计时器 1"
     },
     "osdTextElementTimer2": {
-        "message": "计时器2",
+        "message": "计时器 2",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementTimer2": {
-        "message": "显示计时器2"
+        "message": "显示计时器 2"
     },
     "osdTextElementCoreTemperature": {
         "message": "核心温度",
@@ -4545,7 +4545,7 @@
         "message": "当反重力功能激活时显示指示器"
     },
     "osdTextGForce": {
-        "message": "重力加速度",
+        "message": "G力",
         "description": "One of the elements of the OSD"
     },
     "osdDescGForce": {
@@ -4563,14 +4563,14 @@
         "description": "One of the elements of the OSD"
     },
     "osdDescElementLogStatus": {
-        "message": "黑匣子编号和警告"
+        "message": "黑盒日志编号和警告"
     },
     "osdTextElementFlipArrow": {
         "message": "反乌龟箭头",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementFlipArrow": {
-        "message": "在乌龟模式中，箭头指示哪边的电机朝上"
+        "message": "在反乌龟模式中，箭头指示哪边的电机朝上"
     },
     "osdTextElementLinkQuality": {
         "message": "连接质量",
@@ -4615,25 +4615,25 @@
         "message": "电调回传电机转速频率"
     },
     "osdTextElementRateProfileName": {
-        "message": "配置文件: Rate 配置名称",
+        "message": "配置文件: Rate 配置文件名称",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementRateProfileName": {
-        "message": "显示当前 Rate 配置名称"
+        "message": "显示当前 Rate 配置文件名称"
     },
     "osdTextElementPidProfileName": {
-        "message": "配置文件：PID 配置名称",
+        "message": "配置文件：PID 配置文件名称",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementPidProfileName": {
         "message": "显示当前 PID 配置文件名称"
     },
     "osdTextElementOsdProfileName": {
-        "message": "配置文件: OSD 配置名称",
+        "message": "配置文件: OSD 配置文件名称",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementOsdProfileName": {
-        "message": "在 CLI 中设置的 \"osd_profile_1_name\", \"osd_profile_2_name\" 和 \"osd_profile_3_name\" 所对应的OSD配置文件名称"
+        "message": "在 CLI 中设置的 \"osd_profile_1_name\", \"osd_profile_2_name\" 和 \"osd_profile_3_name\" 所对应的 OSD 配置文件名称"
     },
     "osdTextElementRssiDbmValue": {
         "message": "RSSI dBm 值",
@@ -4664,11 +4664,11 @@
         "message": "以 毫安时/距离 为单位的瞬时电池消耗量 (需要有效的 GPS 定位)"
     },
     "osdTextElementUnknown": {
-        "message": "未知$1",
+        "message": "未知 $1",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementUnknown": {
-        "message": "未知参数"
+        "message": "未知元素 (会在将来的版本中添加详细信息)"
     },
     "osdTextStatMaxSpeed": {
         "message": "速度最大值",
@@ -4682,17 +4682,17 @@
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinBattery": {
-        "message": "记录到的最低主电池电压"
+        "message": "记录到的最低电池电压"
     },
     "osdTextStatMinRssi": {
         "message": "RSSI 最小值",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinRssi": {
-        "message": "记录到的最小RSSI值"
+        "message": "记录到的最小 RSSI 值"
     },
     "osdTextStatMaxCurrent": {
-        "message": "电池电流最高值",
+        "message": "电池电流最大值",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxCurrent": {
@@ -4717,7 +4717,7 @@
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBlackbox": {
-        "message": "黑匣子空间使用百分比"
+        "message": "黑盒空间使用百分比"
     },
     "osdTextStatEndBattery": {
         "message": "电池电压截止值",
@@ -4738,35 +4738,35 @@
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatArmedTime": {
-        "message": "距离上一次解锁时间"
+        "message": "距离上次解锁时间"
     },
     "osdTextStatMaxDistance": {
         "message": "距起飞点最大距离",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxDistance": {
-        "message": "距离起飞位置最大距离"
+        "message": "距离起飞位置最远距离"
     },
     "osdTextStatBlackboxLogNumber": {
         "message": "黑盒日志编号",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBlackboxLogNumber": {
-        "message": "黑匣子记录文件编号"
+        "message": "黑盒日志文件编号"
     },
     "osdTextStatTimer1": {
-        "message": "计时器1",
+        "message": "计时器 1",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatTimer1": {
-        "message": "上锁时计时器1数值"
+        "message": "上锁时计时器 1的数值"
     },
     "osdTextStatTimer2": {
-        "message": "计时器2",
+        "message": "计时器 2",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatTimer2": {
-        "message": "上锁时计时器2数值"
+        "message": "上锁时计时器 2的数值"
     },
     "osdTextStatRtcDateTime": {
         "message": "RTC日期和时间",
@@ -4822,7 +4822,7 @@
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxFFT": {
-        "message": "FFT峰值频率"
+        "message": "FFT 峰值频率"
     },
     "osdTextStatTotalFlights": {
         "message": "总飞行次数",
@@ -4846,7 +4846,7 @@
         "message": "总航行距离"
     },
     "osdTextStatMinRssiDbm": {
-        "message": "RSSI dBm最小值",
+        "message": "RSSI dBm 最小值",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinRssiDbm": {
@@ -4875,7 +4875,7 @@
         "message": "选择时钟源，这控制了计时器测量的持续时间/事件"
     },
     "osdTimerSourceOptionOnTime": {
-        "message": "总上电时间",
+        "message": "总启动时间",
         "description": "One of the options for the source timer. This options shows the amount of time has passed since the battery was plugged"
     },
     "osdTimerSourceOptionTotalArmedTime": {
@@ -4966,14 +4966,14 @@
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningCrashFlipMode": {
-        "message": "当激活坠机模式又发生翻转时发出警告"
+        "message": "当激活反乌龟模式时发出警告"
     },
     "osdWarningTextEscFail": {
-        "message": "ESC 通信失败",
+        "message": "电调通信失败",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningEscFail": {
-        "message": "列举一个出现故障的ESCs/电机的列表 (RPM 或温度超出配置的阈值)"
+        "message": "列举一个出现故障的电调/电机的列表 (RPM 或温度超出配置的阈值)"
     },
     "osdWarningTextCoreTemperature": {
         "message": "核心温度",
@@ -5001,7 +5001,7 @@
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningLaunchControl": {
-        "message": "起飞控制（Launch Control）模式被激活时发出警告"
+        "message": "起飞控制模式被激活时发出警告"
     },
     "osdWarningTextGpsRescueUnavailable": {
         "message": "GPS 救援不可用",
@@ -5029,7 +5029,7 @@
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningLinkQuality": {
-        "message": "当连接质量（Link Quality）低于报警设置时发出警告"
+        "message": "当连接质量低于报警设置时发出警告"
     },
     "osdWarningTextRssiDbm": {
         "message": "RSSI 分贝",
@@ -5046,13 +5046,13 @@
         "message": "当已消耗的毫安数超过配置的容量极限时发出警告"
     },
     "osdWarningTextUnknown": {
-        "message": "未知$1"
+        "message": "未知 $1"
     },
     "osdWarningUnknown": {
         "message": "未知警告 (会在将来的版本中添加详细信息)"
     },
     "osdSectionHelpElements": {
-        "message": "显示或者隐藏 OSD 显示信息"
+        "message": "显示或者隐藏 OSD 元素"
     },
     "osdSectionHelpVideoMode": {
         "message": "设置期望的摄像头视频格式。（通常可以使用 AUTO 自动检测，如果遇到问题再手动指定）。"
@@ -5076,7 +5076,7 @@
         "message": "OSD 设置已保存"
     },
     "osdWritePermissions": {
-        "message": "该文件没有 <span class=\"message-negative\">写权限</span>"
+        "message": "您没有此文件的 <span class=\"message-negative\">写入权限</span>"
     },
     "osdButtonSaved": {
         "message": "已保存"
@@ -5154,7 +5154,7 @@
         "description": "Text of one of the options for the band field of the VTX tab"
     },
     "vtxBand_X": {
-        "message": "频段{{bandName}}",
+        "message": "频段 {{bandName}}",
         "description": "Text of one of the options for the band field of the VTX tab"
     },
     "vtxChannel_0": {
@@ -5162,7 +5162,7 @@
         "description": "Text of one of the options for the channel field of the VTX tab"
     },
     "vtxChannel_X": {
-        "message": "频道{{channelName}}",
+        "message": "频道 {{channelName}}",
         "description": "Text of one of the options for the channel field of the VTX tab"
     },
     "vtxPower_0": {
@@ -5170,7 +5170,7 @@
         "description": "Text of one of the options for the power field of the VTX tab"
     },
     "vtxPower_X": {
-        "message": "级别{{powerLevel}}",
+        "message": "级别 {{powerLevel}}",
         "description": "Text of one of the options for the power field of the VTX tab"
     },
     "vtxChannel": {
@@ -5198,7 +5198,7 @@
         "description": "Text of one of the fields of the VTX tab"
     },
     "vtxPowerHelp": {
-        "message": "在此选择图传的功率。如果启用$t(vtxPitMode.message)或$t(vtxLowPowerDisarm.message)则可使用它来更改。",
+        "message": "在此选择图传的功率。如果启用 $t(vtxPitMode.message) 或 $t(vtxLowPowerDisarm.message) 则可使用它来更改。",
         "description": "Help text for the power field of the VTX tab"
     },
     "vtxPitMode": {
@@ -5218,7 +5218,7 @@
         "description": "Help text for the pit mode field of the VTX tab"
     },
     "vtxLowPowerDisarm": {
-        "message": "低功率解锁",
+        "message": "低功率上锁",
         "description": "Text of one of the fields of the VTX tab"
     },
     "vtxLowPowerDisarmHelp": {
@@ -5246,7 +5246,7 @@
         "description": "Text of one of the fields of the VTX Table element in the VTX tab"
     },
     "vtxTablePowerLevelsHelp": {
-        "message": "它定义了您的VTX所支持的功率的数量",
+        "message": "它定义了您的图传所支持的功率的数量",
         "description": "Help for the number of power levels field of the VTX Table element in the VTX tab"
     },
     "vtxTablePowerLevelsTableHelp": {
@@ -5270,7 +5270,7 @@
         "description": "Text of one of the fields of the VTX Table element in the VTX tab"
     },
     "vtxTableBandsChannelsHelp": {
-        "message": "这里定义你希望图传用到的 band 数量和 channel 数量。",
+        "message": "这里定义你希望图传用到的频段数量和频道数量。",
         "description": "Help for the number of bands and channels field of the VTX Table element in the VTX tab"
     },
     "vtxTableBandTitleName": {
@@ -5363,10 +5363,10 @@
         "message": "电机PWM速度独立于PID速度"
     },
     "configurationUnsyncedPWMFreq": {
-        "message": "电机PWM 频率"
+        "message": "电机 PWM 频率"
     },
     "configurationDshotBidir": {
-        "message": "双向 DSHOT (需要支持的电调固件)",
+        "message": "双向 DSHOT (需要电调固件支持)",
         "description": "Feature for the ESC/Motor"
     },
     "configurationDshotBidirHelp": {
@@ -5395,7 +5395,7 @@
         "message": "气压计 （如有）"
     },
     "configurationMagHardware": {
-        "message": "磁场计 （如有）"
+        "message": "磁力计 （如有）"
     },
     "configurationSmallAngle": {
         "message": "最大允许解锁角度 [degrees]"
@@ -5410,7 +5410,7 @@
         "message": "电池电流"
     },
     "configurationBatteryMeterType": {
-        "message": "电池计类型"
+        "message": "电池计量类型"
     },
     "configurationBatteryMinimum": {
         "message": "最低单芯电压"
@@ -5440,10 +5440,10 @@
         "message": "启用对传统 Multiwii MSP 电流计输出的支持"
     },
     "pidTuningProfile": {
-        "message": "配置文件"
+        "message": "PID 配置文件"
     },
     "pidTuningProfileTip": {
-        "message": "飞控可以保存最多3个（有的只能2个）PID配置文件。PID 配置文件包括：PID值， D 设置点，angle/horizon 模式选择设置。配置文件可以通过遥控摇杆命令来回切换(具体操作参阅网上教程)。"
+        "message": "飞控可以保存最多3个（有的只能2个）PID 配置文件。PID 配置文件包括：PID值， D 设置点，angle/horizon 模式选择设置。配置文件可以通过遥控摇杆命令来回切换(具体操作参阅网上教程)。"
     },
     "pidTuningRateProfile": {
         "message": "Rate 配置文件"
@@ -5465,16 +5465,16 @@
         "message": "错误"
     },
     "pidTuningDeltaMeasurement": {
-        "message": "测量模式"
+        "message": "测量方式"
     },
     "pidTuningDeltaTip": {
         "message": "<b>误差导数模式</b>提供更加直接的摇杆反应，适合竞速比赛。<br><br><b>测量导数模式</b> 提供更平滑摇杆的反应，适合花式飞行。"
     },
     "pidTuningPidControllerTip": {
-        "message": "<b>传统 vs Betaflight (浮点数):</b> PID 比例和PID逻辑完全一样的.两者之间更换理论不需要重新调参. 传统的也是betaflight开发者参与重新改写，但是用的是整数来计算. Betaflight PID 用的是浮点数来计算，并且是专门为多轴飞行器设置<br> <b>浮点 vs 整数:</b> PID 比例和PID逻辑完全一样的. N两者之间更换理论不需要重新调参. 使用F1芯片的飞控缺乏板载的FPU，打开浮点计算将会增加CPU负荷，使用整数会得到更加好的运行效果。但是浮点计算会提供稍微更加准确的计算"
+        "message": "<b>传统 vs Betaflight (浮点数):</b> PID 比例和 PID 逻辑是完全一样的。理论上，在两者之间进行切换不需要重新调参。传统的也是betaflight参与的重写算法，使用整数进行计算。Betaflight PID 控制器使用浮点数进行计算，并专门为多轴飞行器设计了许多新功能<br> <b>浮点 vs 整数:</b> PID 比例和PID逻辑完全一样的. 理论上，在两者之间进行切换不需要重新调参。F1芯片缺乏FPU，使用浮点运算将会增加CPU负荷，使用整数运算会得到更加好的运行效果。但是浮点运算会获得稍高的精准度。"
     },
     "pidTuningFilterTip": {
-        "message": "<b>陀螺仪软件滤波器：</b> 陀螺仪的低通滤波。更低的数字会提供更多的过滤效果。<br><b>D Term 滤波器：</b>Dterm 低通滤波器。会影响D值的调参，更低的数字会提供更多的过滤效果。 <br><b>方向滤波器：</b> 对方向输出进行滤波。对方向轴震动或者噪声很严重的情况会有帮助。"
+        "message": "<b>陀螺仪软件滤波器：</b> 陀螺仪的低通滤波。更低的数字会提供更多的过滤效果。<br><b>D Term 滤波器：</b>Dterm 低通滤波器。会影响D值的调参，更低的数字会提供更多的过滤效果。 <br><b>方向滤波器：</b> 对偏航输出进行滤波。对偏航轴震动或者噪声很严重的情况会有帮助。"
     },
     "pidTuningRatesTip": {
         "message": "尝试不同的 Rates 并观察它如何影响摇杆曲线"
@@ -5486,16 +5486,16 @@
         "message": "个性化"
     },
     "craftName": {
-        "message": "飞行器名字"
+        "message": "飞行器名称"
     },
     "configurationFpvCamAngleDegrees": {
         "message": "FPV摄像头角度 [degrees]"
     },
     "onboardLoggingBlackbox": {
-        "message": "黑匣子记录设备"
+        "message": "黑盒日志记录设备"
     },
     "onboardLoggingRateOfLogging": {
-        "message": "黑匣子记录速率"
+        "message": "黑盒日志记录速率"
     },
     "onboardLoggingDebugMode": {
         "message": "黑盒调试模式"
@@ -5510,7 +5510,7 @@
         "message": "板载闪存"
     },
     "onboardLoggingEraseInProgress": {
-        "message": "正在擦除，请稍等……"
+        "message": "正在擦除，请稍等…"
     },
     "onboardLoggingOnboardSDCard": {
         "message": "板载SD卡"
@@ -5519,7 +5519,7 @@
         "message": "大容量存储模式"
     },
     "onboardLoggingMscNote": {
-        "message": "重新启动到 <strong>大容量存储设备 (MSC)</strong> 模式。一旦激活, 您的飞行控制器上的板载闪存或 SD 卡将被计算机识别为存储设备, 并允许您下载日志文件。要退出此模式，请在电脑上执行弹出操作，并给飞控重新上电。"
+        "message": "重新启动进入 <strong>大容量存储设备 (MSC)</strong> 模式。一旦激活, 您的飞行控制器上的板载闪存或 SD 卡将被计算机识别为存储设备, 并允许您下载日志文件。要退出此模式，请在电脑上执行弹出操作，并给飞控重新上电。"
     },
     "onboardLoggingRebootMscText": {
         "message": "激活大容量存储设备模式"
@@ -5531,7 +5531,7 @@
         "message": "确认"
     },
     "dialogConfirmResetNote": {
-        "message": "警告：确定要重置所有设置到默认设置？"
+        "message": "警告：确定要将所有设置重置到默认设置？"
     },
     "dialogConfirmResetConfirm": {
         "message": "重置"
@@ -5540,7 +5540,7 @@
         "message": "取消"
     },
     "modeCameraWifi": {
-        "message": "摄像头WI-FI按键"
+        "message": "摄像头 WI-FI 按键"
     },
     "modeCameraPower": {
         "message": "摄像头电源按键"
@@ -5552,7 +5552,7 @@
         "message": "更新固件"
     },
     "cliAutoComplete": {
-        "message": "高级CLI自动填充"
+        "message": "高级 CLI 自动填充"
     },
     "darkTheme": {
         "message": "使用暗色主题"
