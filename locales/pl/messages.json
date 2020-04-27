@@ -1292,7 +1292,7 @@
         "message": "Urządzenia peryferyjne"
     },
     "portsHelp": {
-        "message": "<strong> Uwaga: </strong> Jeśli nie wszystkie kombinacje są poprawne. Po wykryciu tego przez oprogramowanie kontrolera lotu konfiguracja portu szeregowego zostanie zresetowana."
+        "message": "<strong> Uwaga: </strong> Nie wszystkie kombinacje ustawień są akceptowalne. Po wykryciu ustawień kolizyjnych przez oprogramowanie kontrolera lotu, konfiguracja portu szeregowego zostanie zresetowana."
     },
     "portsVtxTableNotSet": {
         "message": "<span class=\"message-negative\"> OSTRZEŻENIE:</span> Tabela VTX nie została poprawnie skonfigurowana i bez niej sterowanie VTX nie będzie możliwe. Proszę ustawić tabelę VTX w zakładce $t(tabVtx.message)."
