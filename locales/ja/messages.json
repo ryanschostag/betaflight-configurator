@@ -3528,6 +3528,9 @@
     "pidTuningIdleMinRpm": {
         "message": "ダイナミックアイドル値 [rpm]"
     },
+    "pidTuningIdleMinRpmHelp": {
+        "message": "ダイナミックアイドル値は、低回転数での制御を改善しモーターの非同期リスクを軽減します。プロペラのスピードアップまたはスローダウンによって引き起こされる問題を修正し、PID制御権限、安定性、モーター減速性および応答性を改善します。ダイナミックアイドル回転数は、Dshotアイドル値の回転数の約20%に設定する必要があります。($t(tabMotorTesting.message)タブを参照) 通常DShotアイドル値をデフォルトから変更する必要はありません。反転ハングタイムを長くするには、DShotアイドル値と最小回転数を一緒に下げる必要があります。<br><br>詳細は<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">このWikiエントリ</a>をご覧ください。"
+    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "アクロトレーナー 角度制限"
     },
