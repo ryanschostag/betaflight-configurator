@@ -1453,7 +1453,7 @@
         "message": "Rate profil beállitása"
     },
     "pidTuningSubTabFilter": {
-        "message": "Filter Beállítások"
+        "message": "Szűrő Beállítások"
     },
     "pidTuningShowAllPids": {
         "message": "Mutass minden PID-t"
@@ -1539,7 +1539,7 @@
         "message": "Interpoláció"
     },
     "receiverRcSmoothingFilter": {
-        "message": "Filter"
+        "message": "Szűrő"
     },
     "receiverRcSmoothingTypeHelp": {
         "message": "RC simítás típusa"
@@ -1572,7 +1572,7 @@
         "message": "Származékos levágás frekvenciája"
     },
     "receiverRcInputType": {
-        "message": "Bemeneti Fliter típusa"
+        "message": "Bemeneti Szűrő típusa"
     },
     "receiverRcDerivativeType": {
         "message": "Származékos szűrő típusa"
@@ -1720,7 +1720,7 @@
         "message": "Állítsa be a kívánt kar-határértéket. A 100% -ra állítva letiltja a funkciót."
     },
     "pidTuningFilter": {
-        "message": "Filter"
+        "message": "Szűrő"
     },
     "pidTuningFilterFrequency": {
         "message": "Frekvencia"
@@ -3128,19 +3128,19 @@
         "description": "Stick response gain tuning slider helpicon message"
     },
     "pidTuningGyroLowpassFiltersGroup": {
-        "message": "Giroszkóp aluláteresztő filter"
+        "message": "Giroszkóp aluláteresztő Szűrő"
     },
     "pidTuningGyroLowpassFrequency": {
         "message": "Giroszkóp aluláteresztő 1 levágási frekvencia [Hz]"
     },
     "pidTuningGyroLowpassType": {
-        "message": "Giroszkóp aluláteresztő 1 filter típusa"
+        "message": "Giroszkóp aluláteresztő 1 Szűrő típusa"
     },
     "pidTuningGyroLowpass2Type": {
-        "message": "Giroszkóp aluláteresztő 2 filter típusa"
+        "message": "Giroszkóp aluláteresztő 2 Szűrő típusa"
     },
     "pidTuningRpmFilterGroup": {
-        "message": "Giroszkóp RPM Filter",
+        "message": "Giroszkóp RPM Szűrő",
         "description": "Header text for the RPM Filter group"
     },
     "pidTuningVbatPidCompensation": {
