@@ -3533,7 +3533,7 @@
         "message": "Funtzionalitate honek aldi baterako bultzadari azeleragailua ematen dio komandoaren aldaketa bizkorretan eta horrek motorraren azelerazioan momentua handitzen du eta bizkortze-erantzun askoz azkarragoa ematen du."
     },
     "pidTuningIdleMinRpm": {
-        "message": "Idle Dinamiko Balioa [rpm]"
+        "message": "Idle Dinamiko Balioa [* 100 RPM]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "Idle Dinamikoa rpm txikietan kontrola hobetzen du eta motorearen desyncs arriskua murrizten du. Aire-korronteak azkartzean edo atzera helizeak moteltzean eragindako arazoak zuzentzen ditu, PID autoritatea, egonkortasuna, motorra balaztatzea eta erantzuna hobetuz. Idle Dinamiko rpm-ak zure Dshot Idle balioaren (begiratu $t(tabMotorTesting.message) fitxan)baino 20% ingurukoa izan behar da. Normalean ez da zure DShot Idle balio lehenetsia aldatu beharrik. Alderantziz denbora gehiago mugitzeko, DShot Idle balioa eta Gutxieneko rpm alde berean murriztu behar lirateke. <br><br>Informazio gehiago<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">wiki sare honetan</a>."
