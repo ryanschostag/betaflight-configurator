@@ -99,6 +99,10 @@
         "message": "Polski",
         "description": "Don't translate!!!"
     },
+    "language_zh_TW": {
+        "message": "繁體中文",
+        "description": "Don't translate!!!"
+    },
     "sensorDataFlashNotFound": {
         "message": "Cap dataflash <br>xip trobat",
         "description": "Text of the dataflash image in the header of the page."
@@ -3527,7 +3531,7 @@
         "message": "Aquesta característica permet augmentar temporalment l’acceleració en moviments ràpids del stick, fet que augmenta el parell d’acceleració als motors, proporcionant una resposta de l’acceleració molt més ràpida."
     },
     "pidTuningIdleMinRpm": {
-        "message": "Valor Dinàmic Idle [rpm]"
+        "message": "Valor Dinàmic Idle [* 100 RPM]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "Dynamic Idle millora el control a baixa rpm i redueix el risc de desíncs del motor. Corregeix problemes causats per l’acceleració del flux d’aire o alentiment de hèlix, millorant l’autoritat PID, l’estabilitat, la frenada del motor i la resposta. La rpm dinàmica de ralentí hauria d'estar aproximadament un 20% inferior a la rpm del vostre valor inactiu Dshot (vegeu la pestanya $t(tabMotorTesting.message) tab). Normalment no cal canviar el valor del idle DShot per defecte. Per a un temps d’inversió invertit més llarg, s’haurien de reduir el valor idle DShot i el Mínim rpm junts.<br><br>Visita <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">aquesta entrada de la wiki</a> per obtenir més informació."
