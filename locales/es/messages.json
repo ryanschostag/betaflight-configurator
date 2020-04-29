@@ -3526,7 +3526,7 @@
         "message": "Esta funcionalidad permite dar un impulso temporal al acelerador en cambios rápidos del mando, lo cual incrementa el par de torsión en la aceleración de los motores, proporcionando una respuesta de aceleración mucho más rápida."
     },
     "pidTuningIdleMinRpm": {
-        "message": "Valor Ralentí Dinámico [rpm]"
+        "message": "Valor de Ralentí Dinámico [* 100 RPM]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "Ralentí Dinámico mejora el control a bajas rpm y reduce el riesgo de desincronizaciones de motor. Corrige problemas causados por el flujo de aire acelerando o frenando las hélices, mejorando la autoridad del PID, la estabilidad, el frenado del motor y la respuesta. Las rpm del Ralentí Dinámico debe configurarse para ser aproximadamente un 20% por debajo de las rpm de tu valor de ralentí de Dshot (ver la pestaña $t(tabMotorTesting.message)). Normalmente no hay necesidad de cambiar el ralentí de Dshot de los valores por defecto. Para obtener más tiempo flotando invertido, el valor de ralentí Dshot y las rpm mínimas deben reducirse a la vez.<br><br>Visita <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">esta entrada en la wiki</a> para más información."
