@@ -3562,9 +3562,6 @@
     "pidTuningThrottleBoostHelp": {
         "message": "Cette fonctionnalité booste temporairement les gaz sur les mouvement rapides de sticks, accélére la montée de couple, réduit le temps de réponse des gaz."
     },
-    "pidTuningIdleMinRpm": {
-        "message": "Valeur Idle dynamique [rpm]"
-    },
     "pidTuningAcroTrainerAngleLimit": {
         "message": "Limite d'angle Acro Trainer"
     },
