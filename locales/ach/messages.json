@@ -182,6 +182,10 @@
         "message": "crwdns9520:0crwdne9520:0",
         "description": "Don't translate!!!"
     },
+    "language_zh_TW": {
+        "message": "crwdns10134:0crwdne10134:0",
+        "description": "Don't translate!!!"
+    },
     "sensorDataFlashNotFound": {
         "message": "crwdns6394:0crwdne6394:0",
         "description": "Text of the dataflash image in the header of the page."
@@ -3616,7 +3620,7 @@
         "message": "crwdns8861:0crwdne8861:0"
     },
     "pidTuningIdleMinRpm": {
-        "message": "crwdns9984:0[rpm]crwdne9984:0"
+        "message": "crwdns10136:0crwdne10136:0"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "crwdns10130:0$t(tabMotorTesting.message)crwdne10130:0"
