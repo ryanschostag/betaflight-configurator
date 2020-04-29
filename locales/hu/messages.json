@@ -185,7 +185,7 @@
         "message": "Konfigurációk betöltése befejezve, elvégzett betöltések : $1"
     },
     "tabFirmwareFlasher": {
-        "message": "Firmware Égető"
+        "message": "Firmware Frissítő"
     },
     "tabLanding": {
         "message": "Üdvözöljük"
@@ -380,7 +380,7 @@
         "message": "Védelem sikeresen eltávolítva."
     },
     "stm32UnprotectUnplug": {
-        "message": "BEAVATKOZÁS SZÜKSÉGES: Húzza ki, és csatlakoztassa újra a repülésirányítót DFU módban az újraégetéshez!"
+        "message": "BEAVATKOZÁS SZÜKSÉGES: Húzza ki, és csatlakoztassa újra a repülésirányítót DFU módban az újra frissítéshez!"
     },
     "stm32UnprotectFailed": {
         "message": "A védelmet nem sikerült eltávolítani"
@@ -525,7 +525,7 @@
         "message": "CPU Terhelés: $1%"
     },
     "dfu_connect_message": {
-        "message": "Kérjük használja a Firmware Égetőt, hogy hozzáférjen a DFU eszközökhöz"
+        "message": "Kérjük használja a Firmware Frissítőt, hogy hozzáférjen a DFU eszközökhöz"
     },
     "dfu_erased_kilobytes": {
         "message": "$1 kB flash kitörölve <span class=\"message-positive\">sikeresen</span>"
@@ -561,7 +561,7 @@
         "message": "Konfigurátor - Változtatásnapló"
     },
     "defaultButtonFirmwareFlasher": {
-        "message": "Firmware Égető"
+        "message": "Firmware Frissítő"
     },
     "defaultDonateHead": {
         "message": "Nyílt Forráskód / Adomány Értesítés"
@@ -1480,7 +1480,7 @@
         "description": "One of the modes of anti gravity"
     },
     "pidTuningAntiGravityGain": {
-        "message": "Nyereség",
+        "message": "Érzékenység",
         "description": "Anti Gravity Gain Parameter"
     },
     "pidTuningAntiGravityThres": {
@@ -1498,11 +1498,11 @@
         "message": "<strong>Megjegyzés:</strong> A D Min funkció le van tiltva, és paraméterei rejtve vannak. A D Min használatához engedélyezze itt $t(pidTuningPidSettings.message)."
     },
     "pidTuningDMinGain": {
-        "message": "Nyereség",
+        "message": "Érzékenység",
         "description": "Gain of the D Min feature"
     },
     "pidTuningDMinFeatureHelp": {
-        "message": "A D Min lehetőséget nyújt alacsonyabb D szint elérésére normál repülésnél és magasabb szintű gyors manőverekhez, amelyek túllépést okozhatnak, mint például a flipeknél. Emellett felveszi a D-t a propwash során. A Gaint beállítja, hogy a D mennyire gyorsan érje el a maximális értéket, és a giroszkóp alapján meghatározza az éles mozdulatokat és az előmosás eseményeit. Az előrehaladás elősegíti, hogy D korábban feljebb lépjen azáltal, hogy giroszkóp helyett alapjelet használ az éles mozgások meghatározására.",
+        "message": "A D Min lehetőséget nyújt alacsonyabb D szint elérésére normál repülésnél és magasabb szintű gyors manőverekhez, amelyek túllépést okozhatnak, mint például a flipeknél. Emellett felveszi a D-t a propwash során. A érzékenység beállítja, hogy a D mennyire gyorsan érje el a maximális értéket, és a giroszkóp alapján meghatározza az éles mozdulatokat és az előmosás eseményeit. Az előrehaladás elősegíti, hogy D korábban feljebb lépjen azáltal, hogy giroszkóp helyett alapjelet használ az éles mozgások meghatározására.",
         "description": "D Min feature helpicon message"
     },
     "pidTuningDMinHelp": {
@@ -2204,6 +2204,9 @@
     "gpsMapMessage1": {
         "message": "Kérjük, ellenőrizze az internet kapcsolatát"
     },
+    "gpsMapMessage2": {
+        "message": "Várakozás a GPS 3D javítására ..."
+    },
     "gps3dFix": {
         "message": "3D Fix:"
     },
@@ -2318,11 +2321,18 @@
     "motorsResetMaximumButton": {
         "message": "Visszaállítás"
     },
+    "motorsResetMaximum": {
+        "message": "Állítsa vissza a túlórát"
+    },
     "motorsSensorGyroSelect": {
         "message": "giro"
     },
     "motorsSensorAccelSelect": {
         "message": "gyors"
+    },
+    "motorsTelemetryHelp": {
+        "message": "Ez a szám mutatja az ESC-től kapott telemetriai információt, ha rendelkezésre áll. Megmutathatja a motorok tényleges sebességét (RPM-ben), a telemetrikus kapcsolat hibaarányát és az ESC hőmérsékletét.",
+        "description": "Help text for the telemetry values in the motors tab."
     },
     "motorsRPM": {
         "message": "R: {{motorsRpmValue}}",
@@ -2338,6 +2348,15 @@
     },
     "motorsMaster": {
         "message": "Mester"
+    },
+    "motorsNotice": {
+        "message": "<strong> Motor teszt üzemmód / élesítésre vonatkozó megjegyzés: </strong><br/> A csúszkák mozgatása vagy a drón élesítéskor az adóval a motorok <strong> fel fognak forogni</strong>.<br/> Annak érdekében, hogy ne történjen sérülés <strong class=\"message-negative\">Távolítson el MINDEN propellert </strong> e funkció használata előtt. <br /> A motoros teszt üzemmód engedélyezése átmenetileg letiltja a Runaway felszállás megelőzését is, hogy megakadályozzák a drón hatáskörének lefejtését padon történő teszteléskor légcsavarok nélkül. <br />"
+    },
+    "motorsEnableControl": {
+        "message": "<strong>Megértem a kockázatokat </strong>, a légcsavarokat eltávolítottam - lehetővé teszik a motor vezérlését és élesítését, és letiltják a Runaway Felszállás megakadályozását."
+    },
+    "sensorsInfo": {
+        "message": "Ne feledje, hogy a gyors frissítési periódusok használata és a grafikonok egyszerre rendezése sok erőforrást igényel, és laptop használata esetén gyorsabban meríti le az akkumulátort. <br /> Javasoljuk, hogy grafikonokat csak az érdeklődésre számot tartó érzékelők számára készítsen, ésszerű használat mellett frissítési periódusokkal."
     },
     "sensorsRefresh": {
         "message": "Frissítés:"
@@ -2375,6 +2394,9 @@
     "sensorsAltitudeTitle": {
         "message": "Magasság - méter"
     },
+    "sensorsAltitudeHint": {
+        "message": "A magasság kiszámításához kell a barométer kimenetet (ha rendelkezésre áll) és a GPS magasság (ha rendelkezésre áll). Ha a GPS-hez csatlakozik, és a GPS-nek javítása van, akkor a hatástalanításkor a tengerszint feletti abszolút magasság jelenik meg. Élesítve, az élesítés pozíciójához viszonyított magasság jelenik meg."
+    },
     "sensorsSonarTitle": {
         "message": "Szonár - cm"
     },
@@ -2411,11 +2433,17 @@
     "cliLoadFromFileBtn": {
         "message": "Betöltés fájlból"
     },
+    "cliConfirmSnippetDialogTitle": {
+        "message": "Betöltött fájl: <strong>{{fileName}}</strong>. Tekintse át a betöltött parancsokat"
+    },
     "cliConfirmSnippetNote": {
         "message": "<strong> Megjegyzés</strong>: áttekintheti és szerkesztheti a parancsokat a végrehajtás előtt."
     },
     "cliConfirmSnippetBtn": {
         "message": "Futtatás"
+    },
+    "loggingNote": {
+        "message": "Az adatokat <span class=\"message-negative\">csak</span> ezen a lapon naplózza, ha a fül elhagyásakor <span class=\"message-negative\"> törli </span> a naplózást, és az alkalmazás visszatér a normál <strong> \"Konfigurátor\" </strong> állapotba. <br /> Ön szabadon választhatja meg a globális frissítési periódust, teljesítményadatok miatt az adatokat minden <strong> 1 </strong> másodpercenként beírja a naplófájlba."
     },
     "loggingSamplesSaved": {
         "message": "Minták elmentve:"
@@ -2495,6 +2523,9 @@
     "dataflashNotPresentNote": {
         "message": "A repülési vezérlőnek nem áll rendelkezésre kompatibilis adatrögzítő chip."
     },
+    "dataflashFirmwareUpgradeRequired": {
+        "message": "Az adatfrissitéshez szükséges firmware &gt;= 1.8.0."
+    },
     "dataflashButtonSaveFile": {
         "message": "Flash adatainak mentése fájlba..."
     },
@@ -2534,6 +2565,9 @@
     "dataflashButtonEraseCancel": {
         "message": "Visszavonás"
     },
+    "dataflashFileWriteFailed": {
+        "message": "A kiválasztott fájlba való írás nem sikerült, a mappa engedélyei rendben vannak?"
+    },
     "sdcardStatusNoCard": {
         "message": "Nincs kártya behelyezve"
     },
@@ -2555,6 +2589,9 @@
     "firmwareFlasherReleaseSummaryHead": {
         "message": "Verzióinformáció"
     },
+    "firmwareFlasherReleaseManufacturer": {
+        "message": "Gyártói azonosító:"
+    },
     "firmwareFlasherReleaseVersion": {
         "message": "Verzió:"
     },
@@ -2572,6 +2609,15 @@
     },
     "firmwareFlasherReleaseFile": {
         "message": "Bináris:"
+    },
+    "firmwareFlasherUnifiedTargetName": {
+        "message": "Egységes cél:"
+    },
+    "firmwareFlasherUnifiedTargetFileUrl": {
+        "message": "Megjeleníti a konfigurációt."
+    },
+    "firmwareFlasherUnifiedTargetDate": {
+        "message": "Dátum:"
     },
     "firmwareFlasherReleaseFileUrl": {
         "message": "Manuális letöltés."
@@ -2593,6 +2639,9 @@
     },
     "firmwareFlasherLoadFirmwareFile": {
         "message": "Töltse be a firmware fájlt"
+    },
+    "firmwareFlasherLoadedConfig": {
+        "message": "Betöltött cél, kérjük, töltse be a firmware fájlt"
     },
     "firmwareFlasherNoReboot": {
         "message": "Nincs újraindítási sorozat"
@@ -2657,6 +2706,15 @@
     "firmwareFlasherOptionLabelBuildTypeReleaseCandidate": {
         "message": "Kiadások és lehetséges kiadások"
     },
+    "firmwareFlasherOptionLabelBuildTypeDevelopment": {
+        "message": "Fejlesztés"
+    },
+    "firmwareFlasherOptionLabelBuildTypeAKK3_3": {
+        "message": "3.3 AKK & RDQ VTX Patch"
+    },
+    "firmwareFlasherOptionLabelBuildTypeAKK3_4": {
+        "message": "3.4 AKK & RDQ VTX Patch"
+    },
     "firmwareFlasherOptionLabelSelectFirmware": {
         "message": "Válasszon Firmware-t / Csippet"
     },
@@ -2664,6 +2722,9 @@
         "message": "Válasszon vezérlőt"
     },
     "firmwareFlasherOptionLabelSelectFirmwareVersion": {
+        "message": "Válasszon firmware verziót"
+    },
+    "firmwareFlasherOptionLabelSelectFirmwareVersionFor": {
         "message": "Válasszon firmware verziót"
     },
     "firmwareFlasherButtonLoadLocal": {
@@ -2705,8 +2766,11 @@
     "firmwareFlasherRecoveryHead": {
         "message": "<strong>Visszaállítás / Elvesztett kapcsolat</strong>"
     },
+    "firmwareFlasherRecoveryText": {
+        "message": "Ha elmulasztotta a kommunikációt a fórummal, kövesse az alábbi lépéseket a kommunikáció visszaállításához: <ul><li> Kikapcsolás </li><li> Engedélyezze a „Nincs újraindítási sorrend” lehetőséget, engedélyezze a „Teljes chip törlés” lehetőséget. </li> <li > Kösse át a BOOT érintkezőket vagy tartsa lenyomva a BOOT gombot. </li><li> Bekapcsolás (az aktivitás LED-je nem villog, ha helyesen hajtják végre.) = \"https://github.com/betaflight/betaflight/wiki/Installing-Betaflight\" target = \"_blank\" rel = \"noopener noreferrer\"> USB égetés </a> szakasz a Betaflight kézikönyvében). </li> <li > Zárja be a konfigurátort, zárja be az összes futó Chrome példányt, zárja be az összes Chrome-alkalmazást, indítsa újra a konfigurátort. </li><li> Engedje el a BOOT gombot, ha FC-jén van. </li><li> Villog helyes firmware-rel (kézi adatátviteli sebességgel) ha az FC kézikönyve meghatározza). </li> <li> Kapcsolja ki. </li><li> Távolítsa el a BOOT jumpert. </li> <li> Bekapcsolva (az aktivitás LED-nek villognia kell.) </li><li> Normál módon csatlakoztassa. </li></ul>"
+    },
     "firmwareFlasherButtonLeave": {
-        "message": "Firmware feltölltő elhagyása"
+        "message": "Firmware Frissítő elhagyása"
     },
     "firmwareFlasherFirmwareNotLoaded": {
         "message": "Firmware nincs betöltve"
@@ -2747,8 +2811,33 @@
     "firmwareFlasherNoValidPort": {
         "message": "<span class=\"message-negative\">Válasszon érvényes soros portot</span>"
     },
+    "firmwareFlasherWritePermissions": {
+        "message": "Nincs <span class=\"message-negative\"> írási engedély</span> ehhez a fájlhoz"
+    },
+    "firmwareFlasherFlashTrigger": {
+        "message": "Észlelt: <strong>$1</strong> - villogás kiváltása a csatlakozáskor"
+    },
+    "unstableFirmwareAcknoledgementDialog": {
+        "message": "Arra készül, hogy égesse a <strong> firmwaret </strong>. Ezek az eszközök folyamatban lévő munkák, és a következők bármelyike lehet a helyzet:<strong><ul><li> a firmware egyáltalán nem működik; </li><li> a firmware nem repülhető; </li><li> biztonsági problémák vannak a firmware-rel, például a átrepüléssel </li><li> a firmware miatt a repülési irányító nem reagál vagy megsérülhet </li></ul></strong> Ha folytassa a firmware égetéssel, <strong> teljes felelősséget vállal a fentiek bármelyikének kockázatáért </strong>. Ezenkívül tudomásul veszi, hogy a firmware repülésének megkísérlése előtt el kell végeznie <strong> alapos pad teszteket leszedett propellerekkel </strong>."
+    },
+    "unstableFirmwareAcknoledgementAcknowledge": {
+        "message": "Elolvastam a fentieket, és <strong>teljes felelősséget vállalok<strong> az instabil firmware égetése miatt"
+    },
+    "unstableFirmwareAcknoledgementFlash": {
+        "message": "Égetés"
+    },
+    "firmwareFlasherPreviousDevice": {
+        "message": "Észlelt: <strong>$1</strong> - az előző eszköz továbbra is frissítés alatt ál, kérjük, csatlakoztassa újra, és próbálkozzon újra"
+    },
+    "ledStripHelp": {
+        "message": "A repülésvezérlő vezérelheti az egyes LED-ek színeit és hatásait egy csíkon. <br/> Konfigurálja a LED-eket a rácson, konfigurálja a huzalozási sorrendet, majd rögzítse a LED-eket a repülőgépen a rácspozíciónak megfelelően. A vezetékes megrendelési szám nélküli LED-ek nem kerülnek mentésre. <br/> Kattintson duplán a színre a HSV értékek szerkesztéséhez."
+    },
     "ledStripButtonSave": {
         "message": "Mentés"
+    },
+    "ledStripColorSetupTitle": {
+        "message": "Szín beállítás",
+        "description": "Color setup title of the led strip"
     },
     "ledStripH": {
         "message": "H",
@@ -2776,6 +2865,9 @@
     },
     "ledStripEepromSaved": {
         "message": "EEPROM <span class=\"message-positive\">elmentve</span>"
+    },
+    "ledStripVtxOverlay": {
+        "message": "VTX (vtx frekvenciát használ a szín hozzárendeléséhez)"
     },
     "ledStripFunctionSection": {
         "message": "LEF Funkciók"
@@ -2869,6 +2961,10 @@
         "message": "Le",
         "description": "Down direction in Color Mode in Led Strip"
     },
+    "ledStripModesOrientationTitle": {
+        "message": "LED-orientáció ('Modes &amp; Orientation') és színek",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
     "ledStripModesSpecialColorsTitle": {
         "message": "Speciális színek",
         "description": "One of the modes in Color Mode in Led Strip"
@@ -2893,8 +2989,39 @@
         "message": "GPS: nincs satellite",
         "description": "One of the modes in Color Mode in Led Strip"
     },
+    "ledStripModeColorsModeGPSNoLock": {
+        "message": "GPS: nincs fixálva",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeGPSLocked": {
+        "message": "GPS: fixálva van",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripWiring": {
+        "message": "LED szalag kábelezés",
+        "description": "One of the modes in Led Strip"
+    },
+    "ledStripWiringMode": {
+        "message": "Kábel hozzárendelési mód",
+        "description": "One of the wiring modes in Led Strip"
+    },
+    "ledStripWiringClearControl": {
+        "message": "Kiválasztott törlése",
+        "description": "Control button in the wiring modes in Led Strip"
+    },
+    "ledStripWiringClearAllControl": {
+        "message": "Összes kábelezés törlése",
+        "description": "Control button in the wiring modes in Led Strip"
+    },
+    "ledStripWiringMessage": {
+        "message": "A vezetékes megrendelési szám nélküli LED-ek nem kerülnek mentésre.",
+        "description": "Message in the wiring modes in Led Strip"
+    },
     "ledStripVtxFunction": {
         "message": "Larson szkenner"
+    },
+    "ledStripBlinkTitle": {
+        "message": "Villogás"
     },
     "ledStripBlinkAlwaysOverlay": {
         "message": "Folyamatos villogás"
@@ -2902,8 +3029,14 @@
     "ledStripBlinkLandingOverlay": {
         "message": "Villogás landoláskor"
     },
+    "ledStripOverlayTitle": {
+        "message": "Átfedés"
+    },
     "ledStripWarningsOverlay": {
         "message": "Figyelmeztetések"
+    },
+    "ledStripIndecatorOverlay": {
+        "message": "Indikátor (pozíciót használ a mátrixon)"
     },
     "colorBlack": {
         "message": "fekete"
@@ -3007,6 +3140,21 @@
     "controlAxisAux16": {
         "message": "AUX 16"
     },
+    "pidTuningBasic": {
+        "message": "Basic/Acro"
+    },
+    "pidTuningYawJumpPrevention": {
+        "message": "Yaw ugrás megelőzése"
+    },
+    "pidTuningYawJumpPreventionHelp": {
+        "message": "Megakadályozza, hogy a drón felugrjon a Yaw végén. A nagyobb szám nagyobb csillapítást ad a mozgáskorlátozások végén (úgy működik, mint a régi D vonal, amely nem volt igazi D, mint a másik tengelyen)"
+    },
+    "pidTuningRcExpoPower": {
+        "message": "RX Expo erő"
+    },
+    "pidTuningRcExpoPowerHelp": {
+        "message": "Az az exponens, amelyet az RC Expo kiszámításához használnak. A 3.0 előtti Betaflight verziókban az érték 3-ra van rögzítve."
+    },
     "pidTuningLevel": {
         "message": "Angle/Horizon"
     },
@@ -3055,6 +3203,13 @@
     "pidTuningCellCountHelp": {
         "message": "Automatikusan aktiválja az első profilt, amelynek cella számlálása megegyezik a csatlakoztatott akkumulátorral."
     },
+    "pidTuningNonProfileFilterSettings": {
+        "message": "Profil független Szűrő Beállítások"
+    },
+    "pidTuningFilterSlidersHelp": {
+        "message": "Csúszkák a négyes giroszkóp beállításához és a D-term szűréshez. <br><br> További szűrés simább repülést biztosít, ugyanakkor növeli a giroszkóp jel késleltetését (fázis késleltetés) a PID hurokhoz, ami rosszabb agresszív repülési teljesítményt eredményez, prop mosás kezelhetőség, karkorrekció és ha túlzottan nagy, akkor rezgéseket okozhat. <br><br> Kevesebb szűrés csökkenti a giroszkóp-jel késleltetését, de növelheti a motor hőmérsékletét, mivel a D-term reagál a nagyfrekvenciás motor rezgésekre (zaj). <br> Ezenkívül, ha a szűrés túl alacsony, ez csökkenti a repülési teljesítményt (magasabb a zaj / jel arány).",
+        "description": "Overall helpicon message for filter tuning sliders"
+    },
     "pidTuningSliderLowFiltering": {
         "message": "Kevesebb szűrő",
         "description": "Filter tuning slider low header"
@@ -3078,6 +3233,26 @@
     "pidTuningDTermFilterSlider": {
         "message": "D term szűrő szorzó:",
         "description": "D Term filter tuning slider label"
+    },
+    "pidTuningDTermFilterSliderHelp": {
+        "message": "Emeli vagy csökkenti az alapértelmezett D-term aluleresztő szűrőket egymással arányosan. <br> A D-term szűrést a PID hurok után kell végrehajtani, CSAK a D-időtartamra, mivel ez a leginkább érzékeny a zajra, és képes erősítsen minden magas frekvenciájú zajt 10x-ről 100x-ra. <br><br> Általában a D-term szűrőt csúsztatja felfelé a Gyro Filter csúszkával. Azt szeretné, ha a D-term szűrők jóval a motor-zajtartomány alatt maradnak a keményebb D-term szűréshez, mint amit a teljes giroszkópjelre alkalmaznak a giroszkóp szorzóval.<br>Ez az ajánlott különbség beépül az alapértelmezett és a csúszkás méretezésbe is.",
+        "description": "D Term filtering tuning slider helpicon message"
+    },
+    "pidTuningPidSlidersHelp": {
+        "message": "Csúszkák a drón repülési jellemzők beállításához (PID érzékenység) <br><br> Mester szorzó: Az összes PID érzékenységet megemeli vagy csökkenti (fent), amely megtartja a nyereség arányos különbségét. <br><br> PD egyensúly: Beállítja az egyensúlyt (arány \\ arányos különbség) a P és a D kifejezések ('rugó' [p-term] és 'lengéscsillapító' [d-term]) között. <br> <br> PD érzékenység: Növeli vagy csökkenti a P & D érzékenységet - a kettő közötti arány (egyensúly) tartása - több (vagy kevesebb) PID-szabályozással. <br><br> Kar visszajelzési érzékenység: Növeli vagy csökkenti az előrementei érzékenységet a drón irányítás válaszérzetének szabályozására.",
+        "description": "Overall helpicon message for PID tuning sliders"
+    },
+    "pidTuningSliderWarning": {
+        "message": "<span class=\"message-negative\">VIGYÁZAT</span>: A csúszka jelenlegi helyzete repülhetetlenséget, motorkárosodást vagy a drón nem biztonságos viselkedését okozhatja. Kérjük, óvatosan folytassa.",
+        "description": "Warning shown when tuning slider are above safe limits"
+    },
+    "pidTuningSlidersDisabled": {
+        "message": "<strong> Megjegyzés: </strong> A csúszkák le vannak tiltva, mert az értékeket kézzel módosították. A $t(pidTuningSliderEnableButton.message) gombra kattintással újra aktiválhatók. Ez visszaállítja az értékeket, és a nem mentett módosítások elvesznek.",
+        "description": "Tuning sliders disabled note when manual changes are detected"
+    },
+    "pidTuningSliderEnableButton": {
+        "message": "Csúszkák bekapcsolása",
+        "description": "Button label for enabling sliders"
     },
     "pidTuningSlidersNonExpertMode": {
         "message": "<strong> Megjegyzés: </strong> A csúszkák tartománya korlátozott, mert nem szakértői módban van. Ennek a tartománynak a legtöbb építõ és kezdõ pilóta számára alkalmasnak kell lennie.",
@@ -3104,15 +3279,15 @@
         "description": "PD balance tuning slider label"
     },
     "pidTuningPDGainSlider": {
-        "message": "P és D nyereség:",
+        "message": "P és D érzékenység:",
         "description": "P and D gain tuning slider label"
     },
     "pidTuningResponseSlider": {
-        "message": "Kar válasz nyereség:",
+        "message": "Kar válasz érzékenység:",
         "description": "Response tuning slider label"
     },
     "pidTuningMasterSliderHelp": {
-        "message": "Általában a nagyobb quadoknak nagyobb PID-nyereségre van szükségük, mivel alacsonyabb a teljesítmény / tömeg arányuk. <br><br> A kisebb quadoknak (microk) általában alacsonyabb PID-nyereségre van szükségük a nagyobb teljesítmény / tömeg arány miatt. <br><br>Általában magasabb értékek kisebb drónoknak vannak. Alacsonyabb értékek nagyobb drónoknak valóak.",
+        "message": "Általában a nagyobb quadoknak nagyobb PID-érzékenységre van szükségük, mivel alacsonyabb a teljesítmény / tömeg arányuk. <br><br> A kisebb quadoknak (microk) általában alacsonyabb PID-érzékenységre van szükségük a nagyobb teljesítmény / tömeg arány miatt. <br><br>Általában magasabb értékek kisebb drónoknak vannak. Alacsonyabb értékek nagyobb drónoknak valóak.",
         "description": "Master gain tuning slider helpicon message"
     },
     "pidTuningPDRatioSliderHelp": {
@@ -3120,7 +3295,7 @@
         "description": "PD balance tuning slider helpicon message"
     },
     "pidTuningPDGainSliderHelp": {
-        "message": "Az alacsonyabb P és D nyereség hűvösebb motorokat eredményez, de több rázást eredményez a propellereknél. A túl alacsony érték miatt a drón instabillá válhat. <br><br> A P és a D kifejezések együtt működnek a rezgés csökkentésében. <br><br> A magasabb értékek növelik a motor hőjét, és fokozhatják az oszcillációkat a sima előremenő repülés során.",
+        "message": "Az alacsonyabb P és D érzékenység hűvösebb motorokat eredményez, de több rázást eredményez a propellereknél. A túl alacsony érték miatt a drón instabillá válhat. <br><br> A P és a D kifejezések együtt működnek a rezgés csökkentésében. <br><br> A magasabb értékek növelik a motor hőjét, és fokozhatják az oszcillációkat a sima előremenő repülés során.",
         "description": "P and D gain tuning slider helpicon message"
     },
     "pidTuningResponseSliderHelp": {
@@ -3136,12 +3311,146 @@
     "pidTuningGyroLowpassType": {
         "message": "Giroszkóp aluláteresztő 1 Szűrő típusa"
     },
+    "pidTuningGyroLowpassDynMinFrequency": {
+        "message": "Giroszkóp aluláteresztő 1 dinamikus minimum levágási frekvencia [Hz]"
+    },
+    "pidTuningGyroLowpassDynMaxFrequency": {
+        "message": "Giroszkóp aluláteresztő 1 dinamikus maximum levágási frekvencia [Hz]"
+    },
+    "pidTuningGyroLowpassDynType": {
+        "message": "Giroszkóp aluláteresztő 1 dinamikus Szűrő típusa"
+    },
+    "pidTuningGyroLowpass2Frequency": {
+        "message": "Giroszkóp aluláteresztő 2 levágási frekvencia [Hz]"
+    },
     "pidTuningGyroLowpass2Type": {
         "message": "Giroszkóp aluláteresztő 2 Szűrő típusa"
+    },
+    "pidTuningLowpassFilterHelp": {
+        "message": "Az aluláteresztő szűrőknek két változata lehet: statikus és dinamikus. Egy meghatározott alsó áteresztő szűrőnél csak egy (statikus vagy dinamikus) engedélyezhető egyszerre. A statikusnak csak olyan kivágása van, amely olyan érték, amely valamilyen módon meghatározza a szűrő indulásának helyét. A dinamika meghatározza a min és a max értékeket, azaz azt a tartományt, amelybe a levágás kerül. Ez a levágás min-ről max-ra mozog ugyanabban az időben, mint a gázkar mozgatása."
+    },
+    "pidTuningGyroNotchFiltersGroup": {
+        "message": "Giroszkóp Notch szűrők"
+    },
+    "pidTuningGyroNotch1Frequency": {
+        "message": "Giroszkóp Notch 1. szűrő középfrekvenciája [Hz]"
+    },
+    "pidTuningGyroNotch2Frequency": {
+        "message": "Giroszkóp Notch 2. szűrő középfrekvenciája [Hz]"
+    },
+    "pidTuningGyroNotch1Cutoff": {
+        "message": "Giroszkóp Notch 1. levágás szűrő frekvenciája [Hz]"
+    },
+    "pidTuningGyroNotch2Cutoff": {
+        "message": "Giroszkóp Notch 2. levágás szűrő frekvenciája [Hz]"
+    },
+    "pidTuningNotchFilterHelp": {
+        "message": "A Notch Szűrőnek van egy központja és egy levágása. A szűrő szimmetrikus. A középfrekvencia a szűrő középpontja, a levágási frekvencia pedig a Notch szűrő indítása. Például a 160-as Notch Levágás és a 260-as Notch Center esetén ez azt jelenti, hogy a tartomány 160-360Hz, a középső rész körül lesz a legtöbb csillapítás"
+    },
+    "pidTuningDynamicNotchFilterGroup": {
+        "message": "Dinamikus Notch Szűrő"
+    },
+    "pidTuningDynamicNotchFilterHelp": {
+        "message": "A dinamius Notch Szűrő nyomon követi a motorok csúcsfrekvenciáját, és egy vagy két Notch szűrőt helyez a középpontjába ezen a frekvencián."
+    },
+    "pidTuningDynamicNotchFilterDisabledWarning": {
+        "message": "<strong> Megjegyzés: </strong> a dinamikus Notch szűrő le van tiltva. A konfigurálás és a használat érdekében engedélyezze a 'DYNAMIC_FILTER' funkciót a $t(configurationFeatures.message) részének a $t(tabConfiguration.message) lapon."
+    },
+    "pidTuningDynamicNotchRange": {
+        "message": "Dinamikus Notch Szűrő tartomány"
+    },
+    "pidTuningDynamicNotchWidthPercent": {
+        "message": "Dinamikus Notch szélesség százalékban"
+    },
+    "pidTuningDynamicNotchQ": {
+        "message": "Dinamikus Notch Q"
+    },
+    "pidTuningDynamicNotchMinHz": {
+        "message": "Dinamikus Notch minimum Hz"
+    },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "Dinamikus Notch maximum Hz"
+    },
+    "pidTuningDynamicNotchRangeHelp": {
+        "message": "A dinamikus Notch-nak három frekvenciatartománya van, amelyeken képes működni: LOW (80-330hz) alacsonyabb fordulatszámú drónokhoz, mint 6 colosok, MEDIUM (140-550hz) normál 5 colos quadok, HIGH (230-800hz) nagyon magas fordulatú 2,5-3 colos quadok. Az AUTO opció választja ki a tartományt a giroszkópikus aluljáró 1 szűrő maximális kikapcsolási frekvenciájának értékétől függően."
+    },
+    "pidTuningDynamicNotchWidthPercentHelp": {
+        "message": "Ez beállítja a szélességet két dinamikus notch szűrő között. Ha 0-ra állítja, akkor letiltja a második dinamikus bevágási szűrőt, és csökkenti a szűrő késleltetését, azonban a motor hőmérséklete magasabb lehet."
+    },
+    "pidTuningDynamicNotchQHelp": {
+        "message": "A Q tényező beállítja, hogy a dinamikus notch szűrők milyen szűk vagy szélesek legyenek. A magasabb érték szűkíti és pontosítja, az alacsonyabb pedig szélesebbé teszi. Egy igazán alacsony érték jelentősen megnöveli a szűrő késleltetését."
+    },
+    "pidTuningDynamicNotchMinHzHelp": {
+        "message": "Állítsa ezt a legalacsonyabb bejövő zaj frekvenciára, amely a dinamikus Notch vezérléséhez szükséges."
+    },
+    "pidTuningDynamicNotchMaxHzHelp": {
+        "message": "Állítsa ezt a legmagasabb bejövő zaj frekvenciára, amely a dinamikus Notch vezérléséhez szükséges."
     },
     "pidTuningRpmFilterGroup": {
         "message": "Giroszkóp RPM Szűrő",
         "description": "Header text for the RPM Filter group"
+    },
+    "pidTuningRpmFilterHelp": {
+        "message": "Az RPM szűrés egy olyan soros szűrő, amely a giroszkópban használja az RPM telemetria adatait a motor zajának sebészeti pontossággal történő eltávolítására.<br><br><b><span class=\"message-positive\">FONTOS</span>: A Az ESC-nek támogatnia kell a kétirányú DShot protokollt, és a $t(configurationMotorPoles.message) lapon a $t(tabConfiguration.message) lapon feltüntetett értéknek helyesnek kell lennie a szűrő működéséhez.</b>",
+        "description": "Header text for the RPM Filter group"
+    },
+    "pidTuningRpmHarmonics": {
+        "message": "Gyro RPM szűrő harmonikus száma",
+        "description": "Text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningRpmHarmonicsHelp": {
+        "message": "Harmonikusok száma motoronként. A 3 érték (a legtöbb quad számára ajánlott) 3 Notch szűrőt hoz létre motoronként, tengelyenként, összesen 36 bevágással. Az egyik az alapmotor frekvenciáján és két harmonikus az alapfrekvencia többszöröseként.",
+        "description": "Help text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningRpmMinHz": {
+        "message": "Giroszkóp RPM szűrő minimum frekvenciája [Hz]",
+        "description": "Text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningRpmMinHzHelp": {
+        "message": "Az RPM szűrő által használt minimális frekvencia.",
+        "description": "Help text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningFilterSettings": {
+        "message": "Profilfüggő szűrőbeállítások"
+    },
+    "pidTuningDTermLowpassFiltersGroup": {
+        "message": "D term aluláteresztő szűrő"
+    },
+    "pidTuningDTermLowpassType": {
+        "message": "D term aluláteresztő 1 szűrő típusa"
+    },
+    "pidTuningDTermLowpassFrequency": {
+        "message": "D term aluláteresztő 1 levágási frekvencia [Hz]"
+    },
+    "pidTuningDTermLowpass2Frequency": {
+        "message": "D term aluláteresztő 2 levágási frekvencia [Hz]"
+    },
+    "pidTuningDTermLowpass2Type": {
+        "message": "D term aluláteresztő 2 szűrő típusa"
+    },
+    "pidTuningDTermLowpassDynMinFrequency": {
+        "message": "D term aluláteresztő 1 dinamikus minimum levágási frekvencia [Hz]"
+    },
+    "pidTuningDTermLowpassDynMaxFrequency": {
+        "message": "D term aluláteresztő 1 dinamikus maximum levágási frekvencia [Hz]"
+    },
+    "pidTuningDTermLowpassDynType": {
+        "message": "D term aluláteresztő 1 dinamikus szűrő típusa"
+    },
+    "pidTuningDTermNotchFiltersGroup": {
+        "message": "D term Notch szűrő"
+    },
+    "pidTuningDTermNotchFrequency": {
+        "message": "D term Notch szűrő középfrekvenciája [Hz]"
+    },
+    "pidTuningDTermNotchCutoff": {
+        "message": "D term Notch szűrő levágási frekvenciája [Hz]"
+    },
+    "pidTuningYawLospassFiltersGroup": {
+        "message": "Yaw aluláteresztő szűrő"
+    },
+    "pidTuningYawLowpassFrequency": {
+        "message": "Yaw aluláteresztő levágási frekvencia [Hz]"
     },
     "pidTuningVbatPidCompensation": {
         "message": "Vbat PID kompenzáció"
@@ -3151,6 +3460,9 @@
     },
     "pidTuningItermRotation": {
         "message": "I Term rotáció"
+    },
+    "pidTuningItermRotationHelp": {
+        "message": "Megfelelően elforgatja az aktuális I Term vektort más tengelyekhez, mivel a quad forog, amikor Rollt vagy egyéb trükköt hajt végre. Nagyon szeretok a LOS pilóták."
     },
     "pidTuningSmartFeedforward": {
         "message": "Okos előremenet"
@@ -3200,14 +3512,14 @@
     "pidTuningAbsoluteControlGain": {
         "message": "Abszolút vezérlés"
     },
+    "pidTuningAbsoluteControlGainHelp": {
+        "message": "Ez a szolgáltatás megoldja a$t(pidTuningItermRotation.message)néhány alapvető problémáját és remélhetőleg egy bizonyos ponton felváltja azt. Ez a szolgáltatás felhalmozza az abszolút giroszkóp hibát koordinátákban, és kever egy arányos korrekciót az alapértékbe. A működéshez engedélyeznie kell az AirMode és a$t(pidTuningItermRelax.message) szolgáltatást $t(pidTuningItermRelaxAxesOptionRP.message)). Ha ezt a funkciót kombinálja a $t(pidTuningIntegratedYaw.message)-vel, beállíthatja a $t(pidTuningItermRelax.message)engedélyezését a $t(pidTuningItermRelaxAxesOptionRPY.message)-ra."
+    },
     "pidTuningThrottleBoost": {
         "message": "Gáz növelés"
     },
     "pidTuningThrottleBoostHelp": {
         "message": "Ez a szolgáltatás lehetővé teszi a gáz ideiglenes növelését a gyors karmozgásoknál, ami növeli a motorok gyorsulási nyomatékát, és sokkal gyorsabb gáz választ ad."
-    },
-    "pidTuningIdleMinRpm": {
-        "message": "Dinamikus alapjárati érték [rpm]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "A dinamikus alapjárat javítja az irányítást alacsony fordulatszámon és csökkenti a motor desyncjeinek kockázatát. Javítja a propellerek felgyorsításának vagy lelassításának a légáramlása által okozott problémákat, javítja a PID hatékonyságát, a stabilitást, a motor fékezését és a reakcióképességet. A dinamikus tétlen fordulatszámot körülbelül 20% -kal kell beállítani a Dshot tétlenségi fordulatszáma alatt (lásd a $t(tabMotorTesting.message) fület). Általában nincs szükség a DShot alapjárati értékének változtatására. A hosszabb invertált hangidő érdekében a DShot alapjárati és a minimális fordulatszámot együtt kell csökkenteni. <br><br>Látogassa meg a <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\"> ezt a wiki bejegyzés </a> a további információkért."
@@ -3227,11 +3539,23 @@
     "pidTuningIntegratedYawHelp": {
         "message": "Az integrált Yaw egy olyan funkció, amely korrigálja az alapvető kérdést a drón vezérléssel: míg a Pitch és a Roll tengelyét a tolóerő-különbségek szabályozzák, addig a propellerek generálják a Yaw-t. Az integrált Yaw ezt javítja azáltal, hogy a Yaw pid kimenetet integrálja, mielőtt a keverőbe helyezi őket. Ez normalizálja a PID-ek működését. Most beállíthatja, mint bármely más tengelyen. Abszolút vezérlés használatát igényli."
     },
+    "configHelp2": {
+        "message": "A vezérlő önkényes forgása fokokban, annak lehetővé tétele érdekében, hogy oldalra / fejjel lefelé / elforgatva stb. Lehessen felszerelni. Külső érzékelők futtatásakor használja az érzékelő igazítását (Gyro, Acc, Mag) az érzékelő pozíciójának meghatározásához, az alaplap tájolásától függetlenül. "
+    },
     "failsafeFeaturesHelpOld": {
         "message": "A Failsafe beállítások jelentősen megváltoztak. Használjon Betaflight <strong>v1.12.0+</strong> verziót az irányítópanel aktiválásához."
     },
     "failsafePaneTitleOld": {
         "message": "Vevőegység failsafe"
+    },
+    "failsafeFeaturesHelpNew": {
+        "message": "A Failsafe két szakaszból áll. A <strong> 1. szakasz </strong> akkor lép be, ha a repülési csatorna érvénytelen impulzushosszú, ha a vevő hibás biztonságos üzemmódot jelent vagy ha a vevőegységből egyáltalán nincs jel, a csatorna visszaállítási beállításait a <span class=\"message-negative\">minden csatorna </span> és rövid idő áll rendelkezésre a helyreállítás lehetővé tétele érdekében. A <strong> 2. szakasz </strong> akkor lép be, ha a hibaállapot hosszabb ideig tart, mint a konfigurált védőidő, miközben a jármű<span class=\"message-negative\"> élesített </span>, az összes csatorna az alkalmazott csatornán marad tartalékbeállítás, kivéve, ha a kiválasztott eljárás felülbírálja. <br/> <strong> Megjegyzés: </strong> Az 1. szakaszba lépés előtt a csatorna tartalék beállításait érvénytelen impulzusú AUX csatornákra is alkalmazni kell."
+    },
+    "failsafePulsrangeTitle": {
+        "message": "Érvényes impulzustartomány-beállítások"
+    },
+    "failsafePulsrangeHelp": {
+        "message": "A minimálisnál rövidebb vagy a maximálisnál hosszabb impulzusok érvénytelenek, és az AUX csatornák esetében az egyedi csatorna-tartalék beállítások alkalmazását indítják el, vagy a repülési csatornákhoz az 1. szakaszba lépését teszik lehetővé"
     },
     "failsafeRxMinUsecItem": {
         "message": "Minimum hossz"
@@ -3242,11 +3566,29 @@
     "failsafeChannelFallbackSettingsTitle": {
         "message": "Failsafe Csatornabeálláitások"
     },
+    "failsafeChannelFallbackSettingsHelp": {
+        "message": "Ezek a beállítások érvénytelenek egyes AUX csatornákra, vagy minden csatornára alkalmazzák az 1. szakaszba lépéskor. <strong> Megjegyzés: </strong> az értékeket 25usec lépésekben menti el, így a kis változások eltűnnek"
+    },
+    "failsafeChannelFallbackSettingsAuto": {
+        "message": "Az<strong>automatikus </strong> azt jelenti, hogy a görgetés, a magasság és a tengely felé fordul, és a gáz alacsony lesz. A <strong> tartás </strong> azt jelenti, hogy fenn kell tartani az utoljára kapott jó értéket (Mato megjegyzése: abszolút nem ajánlott, úgy Autora állitsd be a failsafet, hogy azonnal mindent vegyen el, és essen le)"
+    },
+    "failsafeChannelFallbackSettingsHold": {
+        "message": "A <strong>tartás</strong> azt jelenti, hogy fenn kell tartani az utoljára kapott jó értéket. A <strong>Beállítás</strong> azt jelenti, hogy az itt megadott értéket fogjuk használni"
+    },
     "failsafeStageTwoSettingsTitle": {
         "message": "2. Stádium - Beállítások"
     },
+    "failsafeDelayItem": {
+        "message": "A 2. szakasz aktiválásának védőideje a jel elvesztése után [1 = 0,1 mp.]"
+    },
     "failsafeDelayHelp": {
         "message": "1. stádium türelmi ideje szignálvisszaállításra"
+    },
+    "failsafeThrottleLowItem": {
+        "message": "Failsafe gáz alacsony késleltetése [1 = 0,1 mp.]"
+    },
+    "failsafeThrottleLowHelp": {
+        "message": "Csak hatástalanítsa a drónt a kiválasztott hibabiztos eljárás végrehajtása helyett, ha a gázkar ilyen hosszú ideig alacsony volt"
     },
     "failsafeThrottleItem": {
         "message": "Gázkar értéke landolás közben"
@@ -3254,14 +3596,107 @@
     "failsafeOffDelayItem": {
         "message": "Várakozás a motorok kikapcsolásáig Failsafe aktiválása esetén [1 = 0.1 sec.]"
     },
+    "failsafeOffDelayHelp": {
+        "message": "Ideje maradni leszállási módban, amíg a motorokat nem kapcsolják ki és a drón hatástalanításra nem kerül"
+    },
+    "failsafeSubTitle1": {
+        "message": "2. szakasz -Failsafe eljárás"
+    },
     "failsafeProcedureItemSelect1": {
         "message": "Landolás"
     },
     "failsafeProcedureItemSelect2": {
         "message": "Zuhanás"
     },
+    "failsafeProcedureItemSelect4": {
+        "message": "GPS mentés"
+    },
+    "failsafeGpsRescueItemAngle": {
+        "message": "Angle"
+    },
+    "failsafeGpsRescueItemInitialAltitude": {
+        "message": "Kezdeti magasság (méter)"
+    },
+    "failsafeGpsRescueItemDescentDistance": {
+        "message": "Süllyedési távolság (méter)"
+    },
+    "failsafeGpsRescueItemGroundSpeed": {
+        "message": "Talajsebesség (méter / másodperc)"
+    },
+    "failsafeGpsRescueItemThrottleMin": {
+        "message": "Gáz minimum"
+    },
+    "failsafeGpsRescueItemThrottleMax": {
+        "message": "Gáz maximum"
+    },
+    "failsafeGpsRescueItemThrottleHover": {
+        "message": "Gáz lebegés"
+    },
+    "failsafeGpsRescueItemAscendRate": {
+        "message": "Növekedési ütem (méter / másodperc)"
+    },
+    "failsafeGpsRescueItemDescendRate": {
+        "message": "Csökkenési sebesség (méter / másodperc)"
+    },
+    "failsafeGpsRescueItemMinSats": {
+        "message": "Minimum műholdak"
+    },
+    "failsafeGpsRescueItemAllowArmingWithoutFix": {
+        "message": "Élesítés javítás nélkül engedélyezése - <span class=\"message-negative\"> VIGYÁZAT: a GPS mentés nem lesz elérhető </span>"
+    },
+    "failsafeGpsRescueItemAltitudeMode": {
+        "message": "Magasság mód"
+    },
+    "failsafeGpsRescueItemAltitudeModeMaxAlt": {
+        "message": "Maximális magasság"
+    },
+    "failsafeGpsRescueItemAltitudeModeFixedAlt": {
+        "message": "Rögzített magasság"
+    },
+    "failsafeGpsRescueItemAltitudeModeCurrentAlt": {
+        "message": "Jelenlegi magasság"
+    },
+    "failsafeGpsRescueItemSanityChecks": {
+        "message": "Egészségügyi ? ellenőrzések"
+    },
+    "failsafeGpsRescueItemSanityChecksOff": {
+        "message": "Ki"
+    },
+    "failsafeGpsRescueItemSanityChecksOn": {
+        "message": "Be"
+    },
+    "failsafeGpsRescueItemSanityChecksFSOnly": {
+        "message": "Csak Failsafe"
+    },
+    "failsafeKillSwitchItem": {
+        "message": "Failsafe gyilkos kapcsoló (Failsafe beállítása az Üzemmód lapon)"
+    },
+    "failsafeKillSwitchHelp": {
+        "message": "Adja meg ezt az opciót, ha a failsafe kapcsolót (Üzemmód fül) közvetlen megszakítóként kell működtetnie, megkerülve a kiválasztott hibabiztos eljárást. <strong> Megjegyzés: </strong> Az élesítés blokkolva van a nem biztonságos kill kapcsoló BE helyzetében"
+    },
+    "failsafeSwitchTitle": {
+        "message": "Failsafe kapcsoló"
+    },
+    "failsafeSwitchModeItem": {
+        "message": "Failsafe kapcsoló reakció"
+    },
+    "failsafeSwitchModeHelp": {
+        "message": "Ez az opció határozza meg, hogy mi történik, ha a Failsafe funkciót az AUX kapcsolón keresztül aktiválják: <br/><strong> 1. szakasz </strong> aktiválja az 1. szakasz hibabiztonságát. Ez akkor hasznos, ha a jelvesztés pontos biztonságos viselkedését szeretné szimulálni. <br/><strong> 2. szakasz </strong> átugorja az 1. lépést, és azonnal aktiválja a 2. szakasz eljárást. <br/> <strong> Öld </strong> azonnal hatástalanít (a drón leesik)"
+    },
+    "failsafeSwitchOptionStage1": {
+        "message": "1 Szakasz"
+    },
+    "failsafeSwitchOptionStage2": {
+        "message": "2 Szakasz"
+    },
+    "failsafeSwitchOptionKill": {
+        "message": "Blokkolás"
+    },
     "powerButtonSave": {
         "message": "Mentés"
+    },
+    "powerFirmwareUpgradeRequired": {
+        "message": "Firmware frissítés <span class=\"message-negative\">szükséges</span> Akkumulátor / amper / feszültség konfigurációkhoz API-val &lt; 1.33.0 (Betaflight release &lt;= 3.17) nem támogatottak."
     },
     "powerBatteryVoltageMeterSource": {
         "message": "Feszültségmérő Forrása"
@@ -3301,6 +3736,33 @@
     },
     "powerBatteryWarning": {
         "message": "Figyelmeztető Cellafeszültség"
+    },
+    "powerCalibrationManagerButton": {
+        "message": "Kalibrálás"
+    },
+    "powerCalibrationManagerTitle": {
+        "message": "Kalibrációs menedzser"
+    },
+    "powerCalibrationManagerHelp": {
+        "message": "A kalibráláshoz multiméterrel mérje meg a drón tényleges feszültség / áramfelvételét (csatlakoztatott akkumulátorral), és írja be az alábbi értékeket. Ezután, még mindig csatlakoztatva az akkumulátort, kattintson a [Calibrate] gombra."
+    },
+    "powerCalibrationManagerNote": {
+        "message": "<strong> Megjegyzés: </strong> Mielőtt a skálát kalibrálná, ellenőrizze, hogy az osztó és szorzó a feszültséghez és az amplitúdó eltolásához megfelelően van-e beállítva. <br> Ha az értékeket 0-ra hagyja, a kalibrálás nem érvényesül. </br><strong> Ne feledje az akkumulátor csatlakoztatása előtt távolítsa el a légcsavarokat! </strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class=\"message-negative\">Figyelem:</span> Az akkumulátor <span class=\"message-negative\"> nincs bedugva </span> vagy a feszültség és az ampermérő forrásai<span class=\"message-negative\"> nincs megfelelően beállítva. </span> Győződjön meg arról, hogy a feszültség és / vagy áramerősség 0-nál nagyobb értéket mutat. Ellenkező esetben nem lesz képes kalibrálni ezzel az eszközzel."
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class=\"message-negative\">Figyelem:</span> A feszültség- és / vagy áramerősség-mérő források <strong> megváltoztak, de nem kerültek mentésre. </strong> Kérjük, állítsa be a helyes mérőforrásokat, és mentse el őket a kalibrálás megkezdése előtt."
+    },
+    "powerCalibrationManagerConfirmationTitle": {
+        "message": "Kalibrációs menedzser megerősítése"
+    },
+    "powerCalibrationSave": {
+        "message": "Kalibrálás"
+    },
+    "powerCalibrationApply": {
+        "message": "Alkalmazza a kalibrálást"
     },
     "powerVoltageHead": {
         "message": "Feszültségmérő"
@@ -3594,10 +4056,10 @@
         "message": "Debug változók"
     },
     "osdDescElementPIDRoll": {
-        "message": "Hossztengely PID hozzáadás"
+        "message": "Roll tengelyi PID érzékenység"
     },
     "osdDescElementPIDPitch": {
-        "message": "Hosszdőléstengely PID hozzáadás"
+        "message": "Pitch tengelyi PID érzékenység"
     },
     "osdDescElementPower": {
         "message": "Pillanatnyi áramfelvétel"
