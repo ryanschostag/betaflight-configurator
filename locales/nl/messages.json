@@ -374,6 +374,12 @@
     "stm32AddressLoadFailed": {
         "message": "Adres laden voor opties bytes sector gefaald. Heel waarschijnlijk door lees bescherming."
     },
+    "stm32AddressLoadSuccess": {
+        "message": "Adres laden for optie byte sector gelukt."
+    },
+    "stm32AddressLoadUnknown": {
+        "message": "Adres laden for opties byte sector gefaald met onbekende fout. Actie gestopt."
+    },
     "stm32NotReadProtected": {
         "message": "Lees bescherming niet actief"
     },
@@ -464,6 +470,18 @@
     },
     "craftNameReceived": {
         "message": "Naam model: <strong>$1</strong>"
+    },
+    "armingDisabled": {
+        "message": "<strong>Arming Uitgezet</strong>"
+    },
+    "armingEnabled": {
+        "message": "<strong>Arming Aangezet</strong>"
+    },
+    "runawayTakeoffPreventionDisabled": {
+        "message": "<strong>Runway Takeoff Beveiliging is tijdelijk Uitgezet</strong>"
+    },
+    "runawayTakeoffPreventionEnabled": {
+        "message": "<strong>Runway Takeoff Beveiliging Aangezet</strong>"
     },
     "boardInfoReceived": {
         "message": "Bord: <strong>$1</strong>, versie: <strong>$2</strong>"
@@ -715,6 +733,12 @@
     "initialSetupRSSIValue": {
         "message": "$1 %"
     },
+    "initialSetupArmingAllowed": {
+        "message": "Arming Toegestaan"
+    },
+    "initialSetupArmingDisableFlagsTooltip": {
+        "message": "Lijst met vlaggen die aangeven waarom arming momenteel niet is toegestaan. Beweeg je muis over de vlag voor meer informatie of raadpleeg de Wiki ('Arming Sequence & Safety' pagina)."
+    },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "Geen gyroscoop sensor gevonden",
         "description": "Message that pops up to describe the NO_GYRO arming disable flag"
@@ -727,9 +751,21 @@
         "message": "Geen geldig ontvanger signaal gevonden",
         "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
+        "message": "De 'FAILSAFE' schakelaar is geactiveerd",
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
+        "message": "Runway Takeoff preventie is geactiveerd",
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipCRASH": {
         "message": "Uitgeschakeld via crash detectie",
         "description": "Message that pops up to describe the CRASH arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
+        "message": "Throttle kanaal is te hoog",
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "Model niet vlak genoeg",
@@ -754,6 +790,10 @@
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "OSD menu is actief",
         "description": "Message that pops up to describe the OSD_MENU arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBST": {
+        "message": "Een Black Sheep Telemetry apparaat (TBS Core Pro bijvoorbeeld) is uigeschakeld en verhindert arming",
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "MSP-verbinding is actief, waarschijnlijk met deze Betaflight Configurator",
@@ -829,8 +869,14 @@
     "featureVBAT": {
         "message": "Accuspanning monitoren"
     },
+    "featureINFLIGHT_ACC_CAL": {
+        "message": "In-flight level kalibratie"
+    },
     "featureRX_SERIAL": {
         "message": "Seriële ontvanger (SPEKSAT, SBUS, SUMD)"
+    },
+    "featureMOTOR_STOP": {
+        "message": "Draai de motoren niet bij armen"
     },
     "featureSERVO_TILT": {
         "message": "Servo gimbal"
@@ -973,6 +1019,9 @@
     "configurationSpiRxHelp": {
         "message": "<strong>Opmerking:</strong> De SPI RX provider werkt alleen als de vereiste hardware aan boord is of verbonden is met een SPI bus."
     },
+    "configurationOtherFeaturesHelp": {
+        "message": "<strong>Opmerking:</strong> Niet alle functies worden ondersteund door alle vluchtcontrollers. Als u een specifieke functie inschakelt en deze is uitgeschakeld nadat u op 'Sla op en herstart' klikt, betekent dit dat deze functie niet ondersteund wordt door uw vluchtcontroller."
+    },
     "configurationBoardAlignment": {
         "message": "Richting van FC en Sensor"
     },
@@ -1027,11 +1076,23 @@
     "configurationAccelTrimPitch": {
         "message": "Versnellingsmeter Pitch Trim"
     },
+    "configurationArming": {
+        "message": "Arming"
+    },
+    "configurationArmingHelp": {
+        "message": "Voor sommige Arm-opties moet de versnellingsmeter zijn ingeschakeld"
+    },
     "configurationMagDeclination": {
         "message": "Magnetometer Afwijking [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Richting van de motor is omgedraaid"
+    },
+    "configurationDisarmKillSwitchHelp": {
+        "message": "Arming wordt altijd uitgeschakeld wanneer het gas niet laag is. Wees voorzichtig omdat je per ongeluk kan disarmen met een schakelaar tijdens het vliegen met deze optie actief."
+    },
+    "configurationDigitalIdlePercent": {
+        "message": "Motor Gas Waarde Stationair [percent]"
     },
     "configurationMotorPoles": {
         "message": "Motorpolen",
@@ -1041,14 +1102,101 @@
         "message": "$t(configurationMotorPoles.message) (Aantal magneten op de motor)",
         "description": "One of the fields of the ESC/Motor configuration"
     },
+    "configurationThrottleMinimum": {
+        "message": "Minimale Throttle (Laagste ESC waarde wanneer gearmt)"
+    },
+    "configurationThrottleMaximum": {
+        "message": "Maximale Throttle (Hoogste ESC waarde wanneer gearmt)"
+    },
+    "configurationThrottleMinimumCommand": {
+        "message": "Minimale Instructie (ESC waarde wanneer niet gearmt)"
+    },
+    "configurationThrottleMinimumCommandHelp": {
+        "message": "Dit is de waarde die wordt verzonden naar de ESC's wanneer de drone niet is gearmt. Stel deze in op een waarde die er voor zorgt dat de motoren zijn gestopt (voor bijna alle ESC's geldt een waarde van 1000)."
+    },
+    "configurationEscProtocolDisabled": {
+        "message": "Selecteer een motor uitvoer protocol geschikt voor jou ESC's. $t(escProtocolDisabledMessage.message)"
+    },
     "configurationDshotBeeper": {
         "message": "Dshot Beacon Configuratie"
+    },
+    "configurationUseDshotBeeper": {
+        "message": "Gebruik Dshot beacon (gebruik de motoren om te piepen wanneer niet gearmt)"
+    },
+    "configurationDshotBeaconTone": {
+        "message": "Beacon Toon"
+    },
+    "configurationDshotBeaconHelp": {
+        "message": "De Dshot beacon gebruikt de ESC's en motoren om geluid te maken. Dit betekent dat de Dshot beacon niet gebruikt kan worden wanneer de motoren draaien. In betaflight 3.4 en later, wanneer er wordt geprobeerd te armen terwijl de Dshot beacon actief is, is er een 2 seconden vertraging na de laatste Dshot beacon toon voor de done is gearmt. Dit om te voorkomen dat de Dshot beacon functionaliteit de Dshot commands stoort bij armen.<br/><strong>Waarschuwing:</strong> Dshot beacon laat stroom door je motoren lopen als het actief is. Dit kan overmatige hitte en mogelijk schade aan je motoren en of ESC's toedoen als de beacon sterkte te hoog is ingesteld. Gebruik de BLHeli Configurator of de BLHeli Suite om de beacon sterkte te testen en aan te passen."
     },
     "configurationBeeper": {
         "message": "Bieper Configuratie"
     },
     "beeperGYRO_CALIBRATED": {
         "message": "Geeft een pieptoon als de gyro is gekalibreerd"
+    },
+    "beeperRX_LOST": {
+        "message": "Geeft een pieptoon wanneer TX is uitgeschakeld of het signaal verloren is (herhaal totdat TX in orde is)"
+    },
+    "beeperRX_LOST_LANDING": {
+        "message": "Geeft SOS pieptonen wanneer gearmt en de TX uitstaat of het signaal verloren is (autoland/autodisarm)"
+    },
+    "beeperDISARMING": {
+        "message": "Piept wanneer de vluchtcontroller wordt gedisarmt"
+    },
+    "beeperARMING": {
+        "message": "Piept wanneer de vluchtcontroller wordt gearmt"
+    },
+    "beeperARMING_GPS_FIX": {
+        "message": "Piep een speciale toon wanneer de drone wordt gearmd en hij een GPS fix heeft"
+    },
+    "beeperBAT_CRIT_LOW": {
+        "message": "Langere waarschuwings-pieptoon wanneer de batterij kritisch laag is (herhaald)"
+    },
+    "beeperBAT_LOW": {
+        "message": "Waarschuwings-pieptoon wanneer de batterij laag is (herhaald)"
+    },
+    "beeperGPS_STATUS": {
+        "message": "Gebruik het aantal piepjes om aan te geven hoeveel GPS satellieten er zijn gevonden"
+    },
+    "beeperRX_SET": {
+        "message": "Piept wanner aux kanaal is ingesteld om te piepen"
+    },
+    "beeperACC_CALIBRATION": {
+        "message": "Versnellingsmeter kalibratie in-flight informatie compleet"
+    },
+    "beeperACC_CALIBRATION_FAIL": {
+        "message": "Versnellingsmeter kalibratie in-flight mislukt"
+    },
+    "beeperREADY_BEEP": {
+        "message": "Speel een toon af wanneer GPS gereed is voor gebruik"
+    },
+    "beeperDISARM_REPEAT": {
+        "message": "Piept terwijl de stick in de disarm positie wordt gehouden"
+    },
+    "beeperARMED": {
+        "message": "Waarschuwing piep wanneer de vluchtcontroller is gearmd met de motoren inactief (herhaald totdat de vluchtcontroller is gedisarmd of het gas omhoog gaat)"
+    },
+    "beeperSYSTEM_INIT": {
+        "message": "Initialisatie piep wanneer bord aan is gezet"
+    },
+    "beeperUSB": {
+        "message": "Piep wanneer de vluchtcontroller is aangezet door USB. Zet dit uit als je niet wilt dat de bieper aan staat tijdens onderhoud"
+    },
+    "beeperBLACKBOX_ERASE": {
+        "message": "Piep wanneer het verwijderen van de blackbox logs gereed is"
+    },
+    "beeperCRASH_FLIP": {
+        "message": "Piep wanneer crash flip modus actief is"
+    },
+    "beeperCAM_CONNECTION_OPEN": {
+        "message": "Piep wanneer de 5 key camera besturing is geactiveerd"
+    },
+    "beeperCAM_CONNECTION_CLOSE": {
+        "message": "Piep wanneer de 5 key camera besturing is verlaten"
+    },
+    "beeperRC_SMOOTHING_INIT_FAIL": {
+        "message": "Piep bij armen en als rc smoothing nog niet de filters heeft geïnitialiseerd"
     },
     "configuration3d": {
         "message": "3D ESC/Motor Features"
@@ -1092,6 +1240,9 @@
     "configurationGPSBaudrate": {
         "message": "Baudrate"
     },
+    "configurationGPSubxSbas": {
+        "message": "Grond Assistentie Type"
+    },
     "configurationGPSAutoBaud": {
         "message": "Auto Baud"
     },
@@ -1102,9 +1253,16 @@
         "message": "Gebruik Galileo",
         "description": "Option to use Galileo in the GPS configuration"
     },
+    "configurationGPSGalileoHelp": {
+        "message": "Wanneer ingeschakeld verwijdert dit het QZSS-systeem (Japans) en vervangt het door het Galileo-systeem (Europees).",
+        "description": "Help text for the option to use Galileo in the GPS configuration"
+    },
     "configurationGPSHomeOnce": {
         "message": "Thuispunt eenmaal instellen",
         "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHelp": {
+        "message": "<strong>Opmerking:</strong> Vergeet niet om een Serial Port (via het tabblad poorten) te configureren wanneer je de GPS functie gebruikt."
     },
     "configurationSerialRX": {
         "message": "Seriële Ontvanger Provider"
@@ -1138,6 +1296,12 @@
     },
     "portsVtxTableNotSet": {
         "message": "<span class=\"message-negative\">WAARSCHUWING:</span> De VTX tabel is niet correct ingesteld en hierdoor zal de VTX besturing niet mogelijk zijn. Stel de VTX tabel in op het tabblad $t(tabVtx.message)."
+    },
+    "portsMSPHelp": {
+        "message": "<strong>Opmerking:</strong> Schakel <span class=\"message-negative\">NIET</span> de MSP op de eerste serial port uit, tenzij je weet wat je doet.  Wellicht moet je reflashen en uw configuratie verwijderen als je dit wel doet."
+    },
+    "portsFirmwareUpgradeRequired": {
+        "message": "Besturingssysteem upgrade <span class=\"message-negative\">vereist</span>. Serial port configuraties van firmware &lt; 1.8.0 is niet ondersteund."
     },
     "portsButtonSave": {
         "message": "Sla op en Herstart"
@@ -1208,6 +1372,9 @@
     "portsFunction_LIDAR_TF": {
         "message": "Benewake LIDAR"
     },
+    "pidTuningUpgradeFirmwareToChangePidController": {
+        "message": "<span class=\"message-negative\">Het wijzigen van PID-regelaar is uitgeschakeld - u kunt wijzigen aanbrengen via de CLI.</span>  U heeft firmware met API versie <span class=\"message-negative\">$1</span>, deze functionaliteit vereist echter<span class=\"message-positive\">$2</span>."
+    },
     "pidTuningSubTabPid": {
         "message": "PID Profiel Instellingen"
     },
@@ -1222,6 +1389,9 @@
     },
     "pidTuningHideUnusedPids": {
         "message": "Verberg ongebruikte PIDs"
+    },
+    "pidTuningNonProfilePidSettings": {
+        "message": "Profiel onafhankelijke PID-controllerinstellingen"
     },
     "pidTuningAntiGravity": {
         "message": "Anti Zwaartekracht"
@@ -1242,9 +1412,22 @@
         "message": "Drempel",
         "description": "Anti Gravity Threshold Parameter"
     },
+    "pidTuningAntiGravityHelp": {
+        "message": "Anti Zwaartekracht verhoogt de I term wanneer snelle gas veranderingen worden gedetecteerd. Hogere waarden zorgen voor stabiliteit en een betere houding wanneer je hard gas geeft."
+    },
     "pidTuningDMin": {
         "message": "D Min",
         "description": "Table header of the D Min feature in the PIDs tab"
+    },
+    "pidTuningDMinDisabledNote": {
+        "message": "<strong>Opmerking:</strong> D Min functie is uitgeschakeld en de bijhorende parameters zijn verborgen. Om D Min te gebruiken, schakel het in $t(pidTuningPidSettings.message)."
+    },
+    "pidTuningDMinGain": {
+        "message": "Toename",
+        "description": "Gain of the D Min feature"
+    },
+    "pidTuningPidSettings": {
+        "message": "PID Controller instellingen"
     },
     "receiverRcSmoothingAuto": {
         "message": "Auto"
@@ -1252,8 +1435,14 @@
     "receiverRcSmoothingManual": {
         "message": "Manueel"
     },
+    "receiverRcSmoothingInterpolation": {
+        "message": "Interpolatie"
+    },
     "receiverRcSmoothingFilter": {
         "message": "Filter"
+    },
+    "receiverRcSmoothingTypeHelp": {
+        "message": "Type RC smoothing gebruikt"
     },
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "De kanalen waarop de afvlakking invloed op heeft"
@@ -1267,11 +1456,23 @@
     "receiverRcSmoothingDerivativeTypeAuto": {
         "message": "Automatisch"
     },
+    "receiverRcInterpolation": {
+        "message": "RC interpolatie"
+    },
     "receiverRcInterpolationHelp": {
         "message": "RC TX/RX systemen zijn niet zo snel als de PID loops. Dat betekent dat de PID loop gaten heeft in de informatie stroom van de RC systemen. Deze optie zet interpolatie van de RC aan wanneer er geen RC frames worden ontvangen. Deze optie zorgt voor een beter P en D gedrag omdat er geen schokkende invoer is."
     },
+    "receiverRcInterpolationIntervalHelp": {
+        "message": "Interpolatie interval voor handmatige RC interpolatie modus in milliseconden"
+    },
     "receiverRcInterpolationOff": {
         "message": "Uit"
+    },
+    "receiverRcSmoothingType": {
+        "message": "Smoothing Type"
+    },
+    "receiverRcInterpolationDefault": {
+        "message": "Voorinstelling"
     },
     "receiverRcInterpolationAuto": {
         "message": "Auto"
@@ -1336,6 +1537,9 @@
     "pidTuningCopyProfile": {
         "message": "Profielwaarden kopiëren"
     },
+    "pidTuningCopyRateProfile": {
+        "message": "Kopieer rate profiel waarden"
+    },
     "dialogCopyProfileText": {
         "message": "Kopieer waarden van huidig profiel naar"
     },
@@ -1372,14 +1576,29 @@
     "receiverStickMin": {
         "message": "'Stick Laag' drempel"
     },
+    "receiverHelpStickMin": {
+        "message": "De maximale waarde (in us) voor een stick om herkend te worden als laag / links voor commando-input (MIN_CHECK)."
+    },
     "receiverStickCenter": {
         "message": "Stick centrum"
+    },
+    "receiverHelpStickCenter": {
+        "message": "De waarde (in us) gebruikt om te bepalen of een stick gecentreerd is (MID_RC)."
     },
     "receiverStickMax": {
         "message": "'Stick hoog' drempel"
     },
+    "receiverHelpStickMax": {
+        "message": "De minimale waarde (in us) voor een stick om herkend te worden als hoog / rechts voor commando-input (MAX_CHECK)."
+    },
+    "receiverHelp3dDeadbandThrottle": {
+        "message": "Deze waarden zijn in us. Om de neutrale zone te verbreden dien je deze waarde te vergroten. <strong>Deze instelling is alleen voor 3D-throttle modus.</strong>"
+    },
     "receiverChannelDefaultOption": {
         "message": "Standaard"
+    },
+    "receiverChannelMapTitle": {
+        "message": "U kunt uw eigen kanaalkaart definiëren door in het vakje te klikken"
     },
     "receiverRssiChannel": {
         "message": "RSSI kanaal"
@@ -1401,6 +1620,9 @@
     },
     "receiverButtonBindMessage": {
         "message": "Koppel verzoek verzonden naar de vlucht controller."
+    },
+    "receiverButtonSticks": {
+        "message": "Controle sticks"
     },
     "receiverDataRefreshed": {
         "message": "RC Tuning data <strong>vernieuwd</strong>"
@@ -1742,6 +1964,9 @@
     "motorsResetMaximumButton": {
         "message": "Resetten"
     },
+    "motorsResetMaximum": {
+        "message": "Reset maximale overschrijding"
+    },
     "motorsSensorGyroSelect": {
         "message": "gyro"
     },
@@ -1889,6 +2114,9 @@
     "blackboxLoggingSerial": {
         "message": "Seriële poort"
     },
+    "serialLoggingSupportedNote": {
+        "message": "U kunt loggen naar een extern log apparaat (zoals een OpenLager) door een seriële poort te gebruiken. Configureer de poort op het tabblad Ports."
+    },
     "sdcardNote": {
         "message": "Vluchtlogboek kan worden opgenomen op de SD-kaart van uw vlucht controller."
     },
@@ -2015,6 +2243,9 @@
     "firmwareFlasherLoadFirmwareFile": {
         "message": "Gelieve het firmware-bestand te laden"
     },
+    "firmwareFlasherLoadedConfig": {
+        "message": "Doel geladen, gelieve firmware bestand te laden"
+    },
     "firmwareFlasherNoReboot": {
         "message": "Geen herstart volgorde"
     },
@@ -2029,6 +2260,9 @@
     },
     "firmwareFlasherFlashOnConnect": {
         "message": "Flash bij het maken van verbinding"
+    },
+    "firmwareFlasherFlashOnConnectDescription": {
+        "message": "Probeer het bord automatisch te flashen (wordt uitgevoerd zodra een nieuwe seriële poort is gedetecteerd)."
     },
     "firmwareFlasherFullChipErase": {
         "message": "Volledige chip wissen"
@@ -2524,9 +2758,6 @@
     "pidTuningItermRelaxTypeOptionGyro": {
         "message": "Gyro"
     },
-    "pidTuningIdleMinRpm": {
-        "message": "Dynamische Idle Waarde [rpm]"
-    },
     "failsafeRxMinUsecItem": {
         "message": "Minimale lengte"
     },
@@ -2781,6 +3012,9 @@
     },
     "powerBatteryHead": {
         "message": "Batterij"
+    },
+    "powerStateHead": {
+        "message": "Energie status"
     },
     "powerBatteryConnected": {
         "message": "Verbonden"
