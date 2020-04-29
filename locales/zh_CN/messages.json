@@ -216,7 +216,7 @@
         "message": "您正在使用旧版本的 <b>Betaflight配置程序</b>。<br>$t(configuratorUpdateHelp.message)"
     },
     "configuratorUpdateHelp": {
-        "message": "在旧版本的配置程序上使用新版本固件可能会使修改某些设置时导致 <strong>固件配置损坏且飞行器无法工作</strong>。此外，固件的某些功能将仅能在 CLI 中配置。<br><strong>Betaflight 配置程序版本<b>$1</b> 可下载</strong>，请访问<a href=\"$2\" target=\"_blank\" rel=\"noopener noreferrer\">这个页面</a>下载并安装最新的配置器，以获取全部的修复与改进。<br>更新前请关闭配置程序窗口。"
+        "message": "在旧版本的配置程序上使用新版本固件可能会使修改某些设置时导致 <strong>固件配置损坏且飞行器无法工作</strong>。此外，固件的某些功能将仅能在 CLI 中配置。<br><strong>Betaflight 配置程序版本<b>$1</b> 可下载</strong>，请访问<a href=\"$2\" target=\"_blank\" rel=\"noopener noreferrer\">这个页面</a>下载并安装最新的配置程序，以获取全部的修复与改进。<br>更新前请关闭配置程序窗口。"
     },
     "configuratorUpdateWebsite": {
         "message": "打开版本发布网站"
@@ -321,7 +321,7 @@
         "message": "日志"
     },
     "tabOnboardLogging": {
-        "message": "黑匣子"
+        "message": "黑盒子"
     },
     "tabAdjustments": {
         "message": "调整"
@@ -610,7 +610,7 @@
         "message": "硬件"
     },
     "defaultWelcomeText": {
-        "message": "本应用支持所有能运行 Betaflight 的飞控。在 “固件烧写” 页面查看所有支持的飞控列表。<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">下载 Betaflight Blackbox 日志查看工具</a><br /><br />固件源代码可以点击<a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br /><br />最新的<b>STM USB VCP 驱动</b>可以点击<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />对于旧的使用 CP210x USB 转串口芯片的硬件：<br />最新的<b>CP210x 驱动</b>可以点击<a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />最新的<b>Zadig</b>Windows USB驱动安装程序可以点击<a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />"
+        "message": "本应用支持所有能运行 Betaflight 的飞控。在 “固件烧写” 页面查看所有支持的飞控列表。<br /><br /><a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">下载 Betaflight Blackbox 日志查看工具</a><br /><br />固件源代码可以点击<a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br /><br />最新的<b>STM USB VCP 驱动</b>可以点击<a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />对于旧的使用 CP210x USB 转串口芯片的硬件：<br />最新的<b>CP210x 驱动</b>可以点击<a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />最新的<b>Zadig</b> Windows USB驱动安装程序可以点击<a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a>下载<br />"
     },
     "defaultContributingHead": {
         "message": "参与开发"
@@ -653,7 +653,7 @@
         "message": "Betaflight 的文档和发布说明可以在 wiki 里面找到。<br /><br />"
     },
     "defaultDocumentation1": {
-        "message": "学习 Betaflight 最好的资源是使用 Betaflight wiki，它在 <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a> 。"
+        "message": "学习 Betaflight 最好的资源是使用 Betaflight wiki，而不是听信各种“老师”，它在 <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a> 。"
     },
     "defaultDocumentation2": {
         "message": "最新发布版本的信息可以在 <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\" rel=\"noopener noreferrer\">这里</a> 找到。"
@@ -1027,10 +1027,10 @@
         "message": "开启前请务必拔掉电池，卸下螺旋桨。"
     },
     "featureBLACKBOX": {
-        "message": "黑匣子记录器"
+        "message": "黑盒日志记录器"
     },
     "featureBLACKBOXTip": {
-        "message": "打开后，请在黑匣子页面完成设置。"
+        "message": "打开后，请在黑盒日志页面完成设置。"
     },
     "featureRX_SPI": {
         "message": "SPI 接收机支持"
@@ -1306,7 +1306,7 @@
         "message": "通过 USB 连接飞控时启用蜂鸣器。不想在调试时听到鸣叫可禁用这个选项。"
     },
     "beeperBLACKBOX_ERASE": {
-        "message": "黑匣子擦除完成时鸣叫"
+        "message": "黑盒擦除完成时鸣叫"
     },
     "beeperCRASH_FLIP": {
         "message": "当处于反乌龟模式时发出蜂鸣音"
@@ -1487,7 +1487,7 @@
         "message": "串行接收机"
     },
     "portsFunction_BLACKBOX": {
-        "message": "黑匣子记录"
+        "message": "黑盒日志记录"
     },
     "portsFunction_TBS_SMARTAUDIO": {
         "message": "图传(TBS SmartAudio)"
@@ -2544,13 +2544,13 @@
         "message": "已自动加载上一个记录文件: <strong>$1</strong>"
     },
     "blackboxNotSupported": {
-        "message": "该飞控固件不支持黑匣子记录"
+        "message": "该飞控固件不支持黑盒日志记录"
     },
     "blackboxMaybeSupported": {
-        "message": "飞控固件版本太低，无法打开该页面，或者黑匣子功能没有在设置页面打开。"
+        "message": "飞控固件版本太低，无法打开该页面，或者黑盒功能没有在设置页面打开。"
     },
     "blackboxConfiguration": {
-        "message": "黑匣子设置"
+        "message": "黑盒设置"
     },
     "blackboxButtonSave": {
         "message": "保存并重启"
@@ -2682,7 +2682,7 @@
         "message": "统一目标："
     },
     "firmwareFlasherUnifiedTargetFileUrl": {
-        "message": "显示配置。"
+        "message": "显示配置"
     },
     "firmwareFlasherUnifiedTargetDate": {
         "message": "日期："
@@ -3588,9 +3588,6 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "此功能通过根据摇杆快速移动量来短暂提高油门变化值以增加电机的加速扭矩，使得油门响应更为迅速。"
-    },
-    "pidTuningIdleMinRpm": {
-        "message": "动态怠速值 [rpm]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "动态怠速可以提升低转速下的控制力，并减少电机失步的风险。它纠正了由于气流使得螺旋桨加速或减速而引起的问题，提高了PID的权重、稳定性、电机制动和响应能力。动态怠速的 RPM 值应设置得比您的 Dshot 怠速值（请查看 $t(tabMotorTesting.message) 选项卡）对应的 RPM 值低20%。通常不需要修改默认的 Dshot 怠速值。为了延长倒挂动作的滞空时间，应该同时降低 Dshot 怠速值和动态怠速值。<br><br>访问<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">这个wiki</a>以获取更多信息。"
@@ -4713,7 +4710,7 @@
         "message": "记录到的最大高度"
     },
     "osdTextStatBlackbox": {
-        "message": "黑盒日志使用情况",
+        "message": "黑盒使用情况",
         "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBlackbox": {
