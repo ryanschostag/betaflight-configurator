@@ -95,6 +95,10 @@
     "language_default_pretty": {
         "message": "Predeterminat del sistema ($t(detectedLanguage))"
     },
+    "language_hu": {
+        "message": "Hongarès",
+        "description": "Don't translate!!!"
+    },
     "language_pl": {
         "message": "Polski",
         "description": "Don't translate!!!"
@@ -1299,6 +1303,9 @@
     "configurationKHzUnitLabel": {
         "message": "{{value}} kHz",
         "description": "Value for some options that show the speed of gyro, pid, etc. in kHz"
+    },
+    "configurationLoopTimeHelp": {
+        "message": "<strong>Nota:</strong> Assegureu-vos que la vostra controladora pot funcionar a aquestes velocitats. Comproveu l'estabilitat de la CPU i del cicle de temps. Si canvieu això, podreu requerir nous ajustos dels PID. CONSELL: Desactiveu l’acceleròmetre i altres sensors per obtenir més rendiment."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -4871,9 +4878,15 @@
         "message": "Armant des-habilitat",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
+    "osdWarningArmingDisabled": {
+        "message": "Reporta la raó mes important per no armar"
+    },
     "osdWarningTextBatteryNotFull": {
         "message": "Bateria no plena",
         "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningBatteryNotFull": {
+        "message": "Avisa quan es connecta una bateria que no està totalment carregada"
     },
     "osdWarningTextBatteryWarning": {
         "message": "Avís de bateria",
@@ -4885,6 +4898,9 @@
     "osdWarningTextBatteryCritical": {
         "message": "Bateria critica",
         "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningBatteryCritical": {
+        "message": "Alerta quan la tensió de la bateria caigui per sota del voltatge mínim de cel·la"
     },
     "osdWarningTextVisualBeeper": {
         "message": "Beeper visual",
@@ -4983,8 +4999,14 @@
     "osdWarningUnknown": {
         "message": "Avis desconegut (Els detalls s'afegiran a publicacions futures)"
     },
+    "osdSectionHelpElements": {
+        "message": "Activa o desactiva els elements de OSD."
+    },
     "osdSectionHelpVideoMode": {
         "message": "Configura el mode de video esperat (hauria de funcionar en AUTO, d'altra forma configura-ho manualment)"
+    },
+    "osdSectionHelpUnits": {
+        "message": "Configura el sistema d’unitat utilitzat per a les lectures numèriques."
     },
     "osdSectionHelpTimers": {
         "message": "Configureu els temporitzadors de vol."
@@ -5276,6 +5298,12 @@
     "mainHelpLink": {
         "message": "Serial Link Status"
     },
+    "configurationEscProtocol": {
+        "message": "Protocol ESC/Motor"
+    },
+    "configurationEscProtocolHelp": {
+        "message": "Seleccioneu el vostre protocol de motor.<br>Assegureu-vos de verificar que el protocol és compatible amb el vostre ESC, aquesta informació ha de trobar-se al lloc web del fabricant. <br><b> Tingueu cura de fer servir DSHOT900 i DSHOT1200, ja que no són molts els ESC que ho admeten!</b>"
+    },
     "configurationEscProtocolHelpNoDSHOT1200": {
         "message": "Seleccioneu el vostre protocol de motor.<br>Assegureu-vos de verificar que el protocol és compatible amb el vostre ESC, aquesta informació ha de trobar-se al lloc web dels fabricants."
     },
@@ -5293,6 +5321,15 @@
         "message": "Envia dades de l’ESC a la FC mitjançant telemetria DShot. Necessari per RPM Filtering i Idle dinàmic.<br> <br>: Nota: requereix un ESC compatible amb el firmware adequat, per exemple, JESC, Jazzmac, BLHeli-32.",
         "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
     },
+    "configurationGyroSyncDenom": {
+        "message": "Freqüència d'actualització del Giroscopi"
+    },
+    "configurationPidProcessDenom": {
+        "message": "Freqüencia de llaç del PID"
+    },
+    "configurationPidProcessDenomHelp": {
+        "message": "La freqüència màxima del bucle PID està limitada per la freqüència màxima que les actualitzacions poden ser enviades pel protocol ESC/motor escollit."
+    },
     "configurationGyroUse32kHz": {
         "message": "Habilita el mode de mostreig del gyro de 32kHz"
     },
@@ -5302,8 +5339,14 @@
     "configurationAccHardware": {
         "message": "Acceleròmetre"
     },
+    "configurationBaroHardware": {
+        "message": "Baròmetre (si existeix)"
+    },
     "configurationMagHardware": {
         "message": "Magnetòmetre (si és compatible)"
+    },
+    "configurationSmallAngle": {
+        "message": "Angle máxim d'armat [graus]"
     },
     "configurationSmallAngleHelp": {
         "message": "L'aeronau no armarà si està inclinada certs graus. Només aplica si l'acceleròmetre està habilitat. Posar-ho a 180º deshabilitarà la comprovació."
