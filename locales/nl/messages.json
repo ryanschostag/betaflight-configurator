@@ -552,6 +552,9 @@
     "defaultContributingHead": {
         "message": "Bijdragen"
     },
+    "defaultContributingText": {
+        "message": "Als u wilt helpen met Betaflight nog beter te maken, kunt u op vele manieren helpen. Bijvoorbeeld:<br /><ul><li>Gebruikt uw kennis van Betaflight om onze wiki aan te vullen <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Wiki</a>, of beantwoord vragen van andere gebruikers op onze forums;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">Draag bij aan de code</a> van zowel de firmware als de Configurator;</li><li>Test <a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">nieuwe functies en oplossingen</a> en geef feedback;</li><li>Help andere gebruikers met hun problemen op te lossen die gemeld worden in <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">onze issuetracker</a>. Neem deel aan discussies over functieverzoeken;</li><li>Help mee met het <a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">vertalen</a> van de Betaflight Configurator, of helpt bij het onderhouden van de bestaande vertalingen.</li></ul>"
+    },
     "defaultChangelogHead": {
         "message": "Configurator - Wijzigingen"
     },
@@ -582,6 +585,9 @@
     },
     "defaultDocumentation1": {
         "message": "De Betaflight wiki is een goede bron voor informatie, deze kan <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\">hier worden gevonden</a>."
+    },
+    "defaultDocumentation2": {
+        "message": "De release opmerkingen voor het besturingssysteem kunnen gelezen worden op de pagina van GitHub, <a href=\"https://github.com/Betaflight/Betaflight/releases\" target=\"_blank\" rel=\"noopener noreferrer\">Link</a>."
     },
     "defaultSupportHead": {
         "message": "Ondersteuning"
