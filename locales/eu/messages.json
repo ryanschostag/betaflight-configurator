@@ -721,9 +721,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometroa"
     },
-    "initialSetupDeclination": {
-        "message": "Deklinazioa:"
-    },
     "initialSetupInfoHead": {
         "message": "Informazioa"
     },
@@ -859,6 +856,10 @@
     "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
         "message": "Azelerometroa ez da kalibratu eta hori behar duten ezaugarriak dituzu. Azelerometroa kalibratu.",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "Ez da motorra irteeraren protokoloa hautatu",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Desarmatzeko beste banderietako bat gaituta zegoen armatzerakoan",
@@ -1124,9 +1125,6 @@
     },
     "configurationArmingHelp": {
         "message": "Armatze-aukera batzuek azelerometroa gaituta izatea eskatzen dute"
-    },
-    "configurationMagDeclination": {
-        "message": "Magnetometroaren deklinabidea [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Motorren norabidea alderantzizkoa"
