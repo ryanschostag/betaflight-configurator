@@ -772,9 +772,6 @@
     "initialSetupMagHead": {
         "message": "Magnetomètre"
     },
-    "initialSetupDeclination": {
-        "message": "Variation:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -1175,9 +1172,6 @@
     },
     "configurationArmingHelp": {
         "message": "Certaines options nécessitent l'accéléromètre pour autoriser l'armement"
-    },
-    "configurationMagDeclination": {
-        "message": "Inclinaison du magnétomètre [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Sens de rotation inversé"
