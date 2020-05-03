@@ -656,9 +656,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometr"
     },
-    "initialSetupDeclination": {
-        "message": "Deklinacja:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -1059,9 +1056,6 @@
     },
     "configurationArmingHelp": {
         "message": "Niektóre opcje uzbrajania mogą wymagać uruchomionego akcelerometru"
-    },
-    "configurationMagDeclination": {
-        "message": "Deklinacja magnetometru [stopnie]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Kierunek silników jest odwrócony"
@@ -1883,7 +1877,7 @@
         "message": "kiedy kanał"
     },
     "adjustmentsColumnIsInRange": {
-        "message": "w zasięgu"
+        "message": "jest w zakresie"
     },
     "adjustmentsColumnThenApplyFunction": {
         "message": "następnie zastosuj"
@@ -2171,7 +2165,7 @@
         "message": "Natężenie:"
     },
     "motorsmAhDrawn": {
-        "message": "Pobór prądu:"
+        "message": "Zużyta pojemność:"
     },
     "motorsVoltageValue": {
         "message": "$1 V"
@@ -2325,7 +2319,7 @@
         "message": "<strong>Uwaga:</strong> opuszczenie karty wiersza poleceń lub naciśnięcie przycisku Rozłącz spowoduje <strong>automatyczne</strong>  \"<strong>wyjście</strong>\" a następnie <strong>restart</strong> kontrolera lotu. A niezapisane dane zostaną <strong>utracone</strong>.<p><strong><span class=\"message-negative\"> Ostrzeżenie: </span></strong> Niektóre polecenia w interfejsie wiersza CLI mogą powodować wysyłanie sygnałów do silników. Może to spowodować uruchchomienie silników, jeśli podłączony jest akumulator. Dlatego zalecane jest upewnienie się, że <strong>bateria nie jest podłączona przed wprowadzeniem poleceń w CLI </strong>."
     },
     "cliInputPlaceholder": {
-        "message": "Napisz tutaj swoje polecenie. Naciśnij zakładkę, aby Autouzupełnić."
+        "message": "Napisz tutaj swoje polecenie. Naciśnij TAB aby Autouzupełnić."
     },
     "cliInputPlaceholderBuilding": {
         "message": "Proszę czekać podczas tworzenia pamięci podręcznej autouzupełniania..."
@@ -2896,7 +2890,7 @@
         "description": "One of the modes in Led Strip"
     },
     "ledStripWiringMode": {
-        "message": "Typ Okablowania",
+        "message": "Tryb ustalania kolejności połączenia",
         "description": "One of the wiring modes in Led Strip"
     },
     "ledStripWiringClearControl": {
@@ -2904,7 +2898,7 @@
         "description": "Control button in the wiring modes in Led Strip"
     },
     "ledStripWiringClearAllControl": {
-        "message": "Wyczyść WSZYSTKIE okablowania",
+        "message": "Wyczyść WSZYSTKIE połączenia",
         "description": "Control button in the wiring modes in Led Strip"
     },
     "ledStripWiringMessage": {
@@ -3411,7 +3405,7 @@
         "message": "Odbiornik Failsafe"
     },
     "failsafeFeaturesHelpNew": {
-        "message": "Failsafe ma dwa etapy. <strong> Etap 1 </strong> jest wprowadzany, gdy kanał lotniczy ma nieprawidłową długość impulsu, odbiornik zgłasza tryb awaryjny lub w ogóle nie ma sygnału z odbiornika, ustawienia cofania kanału są stosowane do <span class = \"message- negatywne \"> wszystkie kanały </span> oraz krótki czas na odzyskanie danych. <strong> Etap 2 </strong> jest wprowadzany, gdy warunek błędu trwa dłużej niż skonfigurowany czas ochronny, gdy jednostka jest <span class = \"message-negative\"> uzbrojona </span>, wszystkie kanały pozostaną na stosowanym kanale ustawienie rezerwowe, chyba że zostanie anulowane przez wybraną procedurę. <br /> <strong> Uwaga: </strong> Przed wejściem do etapu 1 ustawienia zastępowania kanałów są również stosowane do poszczególnych kanałów AUX, które mają nieprawidłowe impulsy."
+        "message": "Failsafe ma dwa etapy. <br><strong> Etap 1 </strong> jest aktywowany, gdy kanał radiowy ma nieprawidłową długość impulsu, odbiornik zgłasza tryb awaryjny lub w ogóle nie ma sygnału z odbiornika, ustawienia zastępcze kanału są stosowane do <span class = \"message-negative\"> WSZYSTKICH kanałów </span> oraz jest zarezerwowany krótki czas ochrony  na powrót trasmisji danych w kanale radiowym. <br><strong> Etap 2 </strong> jest aktywowany, gdy warunek błędu trwa dłużej niż skonfigurowany czas ochronny, gdy jednostka jest <span class = \"message-negative\"> uzbrojona </span>, wszystkie kanały zostaną ustawione na podstawie ustawień zastępczych, chyba że wybrano inną procedurę. <br /> <span class = \"message-negative\"><strong> Uwaga: </strong></span> Przed wejściem do etapu 1 ustawienia zastępcze kanałów są również stosowane do poszczególnych kanałów AUX, które mają nieprawidłowe impulsy."
     },
     "failsafePulsrangeTitle": {
         "message": "Ustawienia akceptowalnego zakresu impulsu"
@@ -3450,7 +3444,7 @@
         "message": "Failsafe niskie opóźnienie przepustnicy [1 = 0.1 sec.]"
     },
     "failsafeThrottleLowHelp": {
-        "message": "Wystarczy rozbroić model zamiast wykonać wybraną procedurę awaryjną, aby przepustnica była nieaktywna"
+        "message": "Doprowadza do rozbrojenia maszyny zamiast wykonywać wybraną procedurę awaryjną, gdy gaz był na minimum przez dany okres czasu"
     },
     "failsafeThrottleItem": {
         "message": "Wartość przepustnicy użyta podczas lądowania"
@@ -4074,11 +4068,11 @@
         "message": "Natychmiastowy pobór prądu z baterii"
     },
     "osdTextElementMahDrawn": {
-        "message": "Pobór prądu mAh",
+        "message": "Zużyta pojemność baterii mAh",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementMahDrawn": {
-        "message": "Całkowita pojemność baterii"
+        "message": "Całkowita zużyta pojemność baterii"
     },
     "osdTextElementCraftName": {
         "message": "Nazwa modelu",
@@ -4137,7 +4131,7 @@
         "message": "Długość geograficzna GPS"
     },
     "osdTextElementGPSLat": {
-        "message": "Długość geograficzna GPS",
+        "message": "Szerokość geograficzna GPS",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSLat": {
@@ -4148,7 +4142,7 @@
         "description": "One of the elements of the OSD"
     },
     "osdDescElementDebug": {
-        "message": "Debuguj zmienne"
+        "message": "Zmienne debugowania"
     },
     "osdTextElementPIDRoll": {
         "message": "PID roll",
@@ -4172,11 +4166,11 @@
         "message": "Wzmocnienie PID osi odchylenia (yaw)"
     },
     "osdTextElementPower": {
-        "message": "Włącz",
+        "message": "Pobierana Moc z baterii",
         "description": "One of the elements of the OSD"
     },
     "osdDescElementPower": {
-        "message": "Natychmiastowe zużycie energii elektrycznej"
+        "message": "Chwilowa wartość zużywanej mocy elektrycznej"
     },
     "osdTextElementPIDRateProfile": {
         "message": "Profil: PID i współczynników (rate)",
@@ -4700,7 +4694,7 @@
         "description": "Text of the RSSI alarm"
     },
     "osdTimerAlarmOptionCapacity": {
-        "message": "Pojemność",
+        "message": "Pojemność Baterii mAh",
         "description": "Text of the capacity alarm"
     },
     "osdTimerAlarmOptionAltitude": {
@@ -4871,7 +4865,7 @@
         "description": "Message to show when the VTX is not supported in the VTX tab"
     },
     "vtxMessageTableNotConfigured": {
-        "message": "<span class=\"message-negative\">Uwaga:</span> Musisz skonfigurować i zapisać PIERWSZĄ tabelę VTX na dole zanim będziesz mógł korzystać z $t(vtxSelectedMode.message) pól.",
+        "message": "<span class=\"message-negative\">Uwaga:</span> Musisz skonfigurować i zapisać PIERWSZĄ tabelę VTX (na dole) zanim będziesz mógł korzystać z ustawień z kategorii $t(vtxSelectedMode.message).",
         "description": "Message to show when the VTX is not supported in the VTX tab"
     },
     "vtxMessageFactoryBandsNotSupported": {
@@ -5269,7 +5263,7 @@
         "message": "Kąt nachylenia kamery FPV [degrees]"
     },
     "onboardLoggingBlackbox": {
-        "message": "Urządzenie rejestrujące loty"
+        "message": "Urządzenie zapisu logów"
     },
     "onboardLoggingRateOfLogging": {
         "message": "Częstotliwość rejestrowania"
