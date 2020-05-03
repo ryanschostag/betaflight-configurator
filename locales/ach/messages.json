@@ -805,9 +805,6 @@
     "initialSetupMagHead": {
         "message": "crwdns5504:0crwdne5504:0"
     },
-    "initialSetupDeclination": {
-        "message": "crwdns5505:0crwdne5505:0"
-    },
     "initialSetupInfoHead": {
         "message": "crwdns5506:0crwdne5506:0"
     },
@@ -943,6 +940,10 @@
     "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
         "message": "crwdns9947:0crwdne9947:0",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "crwdns10138:0crwdne10138:0",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "crwdns8986:0crwdne8986:0",
@@ -1208,9 +1209,6 @@
     },
     "configurationArmingHelp": {
         "message": "crwdns5596:0crwdne5596:0"
-    },
-    "configurationMagDeclination": {
-        "message": "crwdns5597:0[deg]crwdne5597:0"
     },
     "configurationReverseMotorSwitch": {
         "message": "crwdns5598:0crwdne5598:0"
