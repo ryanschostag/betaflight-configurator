@@ -638,9 +638,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometar"
     },
-    "initialSetupDeclination": {
-        "message": "Deklinacija:"
-    },
     "initialSetupInfoHead": {
         "message": "Informacije"
     },
@@ -1023,9 +1020,6 @@
     },
     "configurationArmingHelp": {
         "message": "Neke opcije Arminga možda će zahtijevati akcelerometar"
-    },
-    "configurationMagDeclination": {
-        "message": "Magnetometarska deklinacija [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Rotacija motora je obrnuta"
