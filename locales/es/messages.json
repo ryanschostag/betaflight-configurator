@@ -714,9 +714,6 @@
     "initialSetupMagHead": {
         "message": "Magnetómetro"
     },
-    "initialSetupDeclination": {
-        "message": "Declinación:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -852,6 +849,10 @@
     "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
         "message": "El acelerómetro no ha sido calibrado y hay funcionalidades que lo necesitan. Calibra el acelerómetro.",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "No hay ningún protocolo de salida del motor seleccionado",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Una de las otras banderas de desarmado estaba activa al armar",
@@ -1117,9 +1118,6 @@
     },
     "configurationArmingHelp": {
         "message": "Algunas opciones de Armado pueden requerir que el acelerómetro esté activado"
-    },
-    "configurationMagDeclination": {
-        "message": "Declinación Magnetómetro [grad]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Dirección de los motores invertida"
@@ -3379,7 +3377,7 @@
         "message": "El Filtro Notch Dinámico tiene tres rangos de frecuencias en las que puede operar: LOW (80-300Hz) para quads con pocas revoluciones como 6\" o más, MEDIUM (140-550Hz) para un quad normal de 5\", HIGH (230-800Hz) para quads de altas revoluciones como por ejemplo 2,5\"-3\". La opción AUTO selecciona el rango dependiendo del valor de la frecuencia de corte máxima del filtro Giro Paso Bajo 1 Dinámico."
     },
     "pidTuningDynamicNotchWidthPercentHelp": {
-        "message": "Este valor selecciona el ancho entre dos Filtros Notch Dinámicos. Un valor de 0 desactiva el segundo Filtro Notch Dinámico y reduce el retraso producido por el filtro, sin embargo puede producir que la temperatura de los motores sean más altas."
+        "message": "Este valor establece el ancho entre dos Filtros Notch Dinámicos. Un valor de 0 desactiva el segundo Filtro Notch Dinámico y reduce el retardo producido por el filtro, sin embargo puede producir que la temperatura de los motores sea más alta."
     },
     "pidTuningDynamicNotchQHelp": {
         "message": "El factor Q ajusta como de estrechos o anchos son los Filtros Notch Dinámicos. Valores más altos lo hacen estrecho y más preciso y valores más bajos lo hacen más ancho y extenso. Un valor muy bajo aumenta considerablemente el retraso producido por el filtro."
