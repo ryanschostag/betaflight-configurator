@@ -778,9 +778,6 @@
     "initialSetupMagHead": {
         "message": "磁力计"
     },
-    "initialSetupDeclination": {
-        "message": "偏差:"
-    },
     "initialSetupInfoHead": {
         "message": "信息"
     },
@@ -1181,9 +1178,6 @@
     },
     "configurationArmingHelp": {
         "message": "某些解锁选项可能需要启用加速度计"
-    },
-    "configurationMagDeclination": {
-        "message": "磁偏角 [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "反转电机转向"
