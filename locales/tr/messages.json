@@ -236,9 +236,6 @@
     "initialSetupMagHead": {
         "message": "Manyetometre"
     },
-    "initialSetupDeclination": {
-        "message": "Sapma:"
-    },
     "initialSetupInfoHead": {
         "message": "Bilgi"
     },
@@ -385,9 +382,6 @@
     },
     "configurationArmingHelp": {
         "message": "Bazı silahlandırma seçenekleri için ivme ölçerin aktif olması gerekebilir"
-    },
-    "configurationMagDeclination": {
-        "message": "Manyetometre sapması [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Motor yönü tersine çevrildi"
