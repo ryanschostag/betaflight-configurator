@@ -714,9 +714,6 @@
     "initialSetupMagHead": {
         "message": "磁力計"
     },
-    "initialSetupDeclination": {
-        "message": "偏差:"
-    },
     "initialSetupInfoHead": {
         "message": "訊息"
     },
@@ -852,6 +849,10 @@
     "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
         "message": "已啟用了使用加速度計的功能，但加速度計未校準。請校準加速度計。",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "未選擇電機輸出協議",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "解鎖時有一個阻止解鎖的標誌處於活躍狀態",
@@ -1117,9 +1118,6 @@
     },
     "configurationArmingHelp": {
         "message": "某些解鎖選項可能需要啟用加速度計"
-    },
-    "configurationMagDeclination": {
-        "message": "磁偏角 [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "反轉電機轉向"
@@ -3524,6 +3522,9 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "此功能通過根據搖桿快速移動量來短暫提高油門變化值以增加電機的加速扭矩，使得油門響應更為迅速。"
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "動態怠速值 [* 100 RPM]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "動態怠速可以提升低轉速下的控制力，並減少電機失步的風險。它糾正了由於氣流使得螺旋槳加速或減速而引起的問題，提高了PID的權重、穩定性、電機制動和響應能力。動態怠速的 RPM 值應設置得比您的 Dshot 怠速值（請查看 $t(tabMotorTesting.message) 選項卡）對應的 RPM 值低20%。通常不需要修改默認的 Dshot 怠速值。為了延長倒掛動作的滯空時間，應該同時降低 Dshot 怠速值和動態怠速值。 <br><br>訪問<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">這個wiki</a>以獲取更多訊息。"
