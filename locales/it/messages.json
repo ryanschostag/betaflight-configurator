@@ -714,9 +714,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometro"
     },
-    "initialSetupDeclination": {
-        "message": "Declinazione:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -1117,9 +1114,6 @@
     },
     "configurationArmingHelp": {
         "message": "Alcune opzioni di armamento motori possono richiedere l'abilitazione dell'accelerometro"
-    },
-    "configurationMagDeclination": {
-        "message": "Declinazione Magnetometro [gradi]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Direzione motori invertita"
