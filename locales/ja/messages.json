@@ -714,9 +714,6 @@
     "initialSetupMagHead": {
         "message": "コンパス"
     },
-    "initialSetupDeclination": {
-        "message": "偏角"
-    },
     "initialSetupInfoHead": {
         "message": "情報"
     },
@@ -852,6 +849,10 @@
     "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
         "message": "加速度センサーはキャリブレーションされていませんが、依存する機能が有効になっています。加速度センサーをキャリブレーションしてください。",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "モーター出力プロトコルが選択されていません",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "他のフラグの1つはアーム時にフラグを解除します",
@@ -1117,9 +1118,6 @@
     },
     "configurationArmingHelp": {
         "message": "アーミングオプションによっては、加速度センサーを有効にする必要があります"
-    },
-    "configurationMagDeclination": {
-        "message": "コンパス偏位 [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "モーター回転方向を逆転"
@@ -3524,6 +3522,9 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "この機能は素早いスティックの動きで一時的にスロットルをブーストすることができます。これにより、モーターの加速トルクを増加させ、より速いスロットル応答を提供します。"
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "ダイナミックアイドル値 [* 100 RPM]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "ダイナミックアイドル値は、低回転数での制御を改善しモーターの非同期リスクを軽減します。プロペラのスピードアップまたはスローダウンによって引き起こされる問題を修正し、PID制御権限、安定性、モーター減速性および応答性を改善します。ダイナミックアイドル回転数は、Dshotアイドル値の回転数の約20%に設定する必要があります。($t(tabMotorTesting.message)タブを参照) 通常DShotアイドル値をデフォルトから変更する必要はありません。反転ハングタイムを長くするには、DShotアイドル値と最小回転数を一緒に下げる必要があります。<br><br>詳細は<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">このWikiエントリ</a>をご覧ください。"
