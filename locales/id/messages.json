@@ -587,9 +587,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometer"
     },
-    "initialSetupDeclination": {
-        "message": "Deklinasi:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -856,9 +853,6 @@
     },
     "configurationArmingHelp": {
         "message": "Beberapa pilihan Arming memerlukan accelerometer diaktifkan"
-    },
-    "configurationMagDeclination": {
-        "message": "Deklinasi Magnetometer [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Arah motor dibalik"
