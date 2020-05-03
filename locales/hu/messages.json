@@ -714,9 +714,6 @@
     "initialSetupMagHead": {
         "message": "Magnetométer"
     },
-    "initialSetupDeclination": {
-        "message": "Elhajlás:"
-    },
     "initialSetupInfoHead": {
         "message": "Infó"
     },
@@ -1117,9 +1114,6 @@
     },
     "configurationArmingHelp": {
         "message": "Egyes élesítési módoknál szükség lehet a gyorsulásmérő engedélyezésére"
-    },
-    "configurationMagDeclination": {
-        "message": "Magnetométer Elhajlás [fok]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Fordított a motor iránya"
