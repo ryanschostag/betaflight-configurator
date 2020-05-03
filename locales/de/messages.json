@@ -677,9 +677,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometer"
     },
-    "initialSetupDeclination": {
-        "message": "Deklination:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -1076,9 +1073,6 @@
     },
     "configurationArmingHelp": {
         "message": "Manche Arming Optionen könnten einen aktivierten Beschleunigungssensor benötigen"
-    },
-    "configurationMagDeclination": {
-        "message": "Magnetkompass-Abweichung [Grad]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Drehrichtung der Motoren umkehren"
