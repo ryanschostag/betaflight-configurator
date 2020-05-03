@@ -782,9 +782,6 @@
     "initialSetupMagHead": {
         "message": "자력계"
     },
-    "initialSetupDeclination": {
-        "message": "경사:"
-    },
     "initialSetupInfoHead": {
         "message": "정보"
     },
@@ -920,6 +917,10 @@
     "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
         "message": "가속도계가 교정되지 않았으며 그에 의존하는 기능들이 활성화되어 있습니다. 가속도계를 교정하십시오.",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "선택된 모터 출력 프로토콜이 없습니다",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "다른 디스암 플래그 중 하나가 아밍시 활성화 중입니다",
@@ -1185,9 +1186,6 @@
     },
     "configurationArmingHelp": {
         "message": "몇몇 아밍 옵션은 가속도계 사용이 필요할 수도 있습니다."
-    },
-    "configurationMagDeclination": {
-        "message": "자력계 경사 [도]"
     },
     "configurationReverseMotorSwitch": {
         "message": "모터 방향이 반대로 됩니다."
