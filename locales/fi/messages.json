@@ -497,9 +497,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometri"
     },
-    "initialSetupDeclination": {
-        "message": "Eranto:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -766,9 +763,6 @@
     },
     "configurationArmingHelp": {
         "message": "Jotkin viritysvaihtoehdot voivat vaatia kiihtyvyysanturin päälle kytkemistä"
-    },
-    "configurationMagDeclination": {
-        "message": "Magnetometrin eranto [astetta]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Moottorin pyörimissuunta on päinvastainen"
