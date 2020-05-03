@@ -494,9 +494,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometer"
     },
-    "initialSetupDeclination": {
-        "message": "Deklination:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -862,9 +859,6 @@
     },
     "configurationArmingHelp": {
         "message": "Visse Tilkoblingsfunktioner kan kræve aktivt accelerometer"
-    },
-    "configurationMagDeclination": {
-        "message": "Magnetometerdeclination [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Motorretning er vendt om"
