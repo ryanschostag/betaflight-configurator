@@ -629,9 +629,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometrs"
     },
-    "initialSetupDeclination": {
-        "message": "Declination:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -1021,9 +1018,6 @@
     },
     "configurationArmingHelp": {
         "message": "Dažām aktivizācijas iespējām ir nepieciešams akselerometrs"
-    },
-    "configurationMagDeclination": {
-        "message": "Magnetometra deklinācija [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Motoru griešanās virziens ir reversā"
