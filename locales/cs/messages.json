@@ -566,9 +566,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometr"
     },
-    "initialSetupDeclination": {
-        "message": "Deklinace:"
-    },
     "initialSetupInfoHead": {
         "message": "Informace"
     },
@@ -787,9 +784,6 @@
     },
     "configurationArming": {
         "message": "Odjištění"
-    },
-    "configurationMagDeclination": {
-        "message": "Deklinace kompasu [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Směr motorů je opačný"
