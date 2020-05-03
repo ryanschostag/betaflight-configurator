@@ -709,9 +709,6 @@
     "initialSetupMagHead": {
         "message": "Magnetometer"
     },
-    "initialSetupDeclination": {
-        "message": "Afwijking:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -1087,9 +1084,6 @@
     },
     "configurationArmingHelp": {
         "message": "Voor sommige Arm-opties moet de versnellingsmeter zijn ingeschakeld"
-    },
-    "configurationMagDeclination": {
-        "message": "Magnetometer Afwijking [deg]"
     },
     "configurationReverseMotorSwitch": {
         "message": "Richting van de motor is omgedraaid"
