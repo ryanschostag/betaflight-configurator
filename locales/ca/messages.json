@@ -726,9 +726,6 @@
     "initialSetupMagHead": {
         "message": "Magnetòmetre"
     },
-    "initialSetupDeclination": {
-        "message": "Declinació:"
-    },
     "initialSetupInfoHead": {
         "message": "Info"
     },
@@ -864,6 +861,10 @@
     "initialSetupArmingDisableFlagsTooltipNO_ACC_CAL": {
         "message": "L'acceleròmetre no s'ha calibrat i estan habilitades funcions que es basen en ell. Calibrar l’acceleròmetre.",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "No s'ha seleccionat cap protocol de sortida del motor",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Un dels altres desarmar banderes està actiu quan es fa armament",
@@ -1129,9 +1130,6 @@
     },
     "configurationArmingHelp": {
         "message": "Algunes opcions d'armat requereixen l'acceleròmetre habilitat"
-    },
-    "configurationMagDeclination": {
-        "message": "Declinació del magnetòmetre [graus]"
     },
     "configurationReverseMotorSwitch": {
         "message": "La direcció dels motors és inversa"
