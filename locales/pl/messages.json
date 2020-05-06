@@ -986,7 +986,7 @@
         "message": "Ustawienia ESC/Silników"
     },
     "configurationFeaturesHelp": {
-        "message": "<strong>Uwaga:</strong> Jeśli nie wszystkie ustawienia  są poprawne to oprogramowanie kontrolera lotu wykryje błąd konfiguracji  następnie   wyłączy funkcje  która tworzy błędną konfiguracje.<br /><strong>Uwaga:</strong> Skonfiguruj port <span class=\"message-negative\">poprzez</span> włączenie funkcji która będzie go wykorzystywać."
+        "message": "<strong>Uwaga:</strong> Nie wszystkie ustawienia są akceptowalne. Jeśli oprogramowanie kontrolera lotu wykryje błąd konfiguracji wtedy kontroler lotu wyłączy funkcje która tworzy kolizję.<br /><strong>Uwaga:</strong> Skonfiguruj port <span class=\"message-negative\">zanim</span> włączysz funkcję która będzie go potrzebować."
     },
     "configurationSerialRXHelp": {
         "message": "<strong>Uwaga:</strong> Gdy używasz odbiornika typu RX_SERIAL, pamiętaj o skonfigurowaniu portu (w zakładce Porty) i wybraniu rodzaju sygnału odbiornika."
@@ -1611,10 +1611,10 @@
         "message": "RC Expo"
     },
     "pidTuningTPA": {
-        "message": "TPA"
+        "message": "TPA(wsp. tłumienia PID w zleżności od gazu)"
     },
     "pidTuningTPABreakPoint": {
-        "message": "Punkt przerwania TPA"
+        "message": "TPA(wartość gazu aktywująca TPA) "
     },
     "pidTuningThrottleCurvePreview": {
         "message": "Podgląd krzywej przepustnicy"
@@ -1762,7 +1762,7 @@
         "message": "Są to wartości maksymalnego odchyłu sygnału wejściowego RC podawane w mikro sekundach(us), które są akceptowane jako sygnał poprawny. W przypadku nadajników posiadających duży jitter w sygnale, wartość tą można zwiększyć (aby kontroler uznał go za poprawny). <strong>Nastawa ta dotyczy tylko ustawień dla odchylenia \"Yaw\"</strong>"
     },
     "recevier3dDeadbandThrottle": {
-        "message": "Strefa Nieczułości Przepustnicy"
+        "message": "Strefa Nieczułości Przepustnicy (tylko tryb 3D)"
     },
     "receiverHelp3dDeadbandThrottle": {
         "message": "Są to wartości podawane w mikro sekundach(us). Aby zwiększyć zakres martwy drążka gazu, zwiększ tą wartość.<strong>Ustawienia tylko dla Gazu w trybie 3D.</strong>"
@@ -3627,7 +3627,7 @@
         "message": "Tutaj pokazane są nowo skalibrowane skale <br>Zastosowanie ich spowoduje ustawienie skal, ale <strong>nie zapisze ich.</strong></br> <br>Po zapisaniu upewnij się, że nowe napięcie i prąd są poprawne.</br>"
     },
     "powerVoltageHead": {
-        "message": "Miernik napięcia"
+        "message": "Woltomierz"
     },
     "powerVoltageValue": {
         "message": "$1 V"
@@ -3795,7 +3795,7 @@
         "message": "Połączony"
     },
     "powerBatteryConnectedValueYes": {
-        "message": "Tak (Cel: $1)"
+        "message": "Tak (Ogniw: $1S)"
     },
     "powerBatteryConnectedValueNo": {
         "message": "Nie"
@@ -5126,7 +5126,7 @@
         "message": "Status łącza"
     },
     "configurationEscProtocol": {
-        "message": "Protokół ESC /Silnik"
+        "message": "Protokół sterowania ESC/Silnika"
     },
     "configurationEscProtocolHelp": {
         "message": "Wybierz protokół dla silników<br>Upewnij się że dany protokół jest wspierany przez twoje ESC, informacja o tym powinna być dostępna na stronie twórcy.<br><b>Bądź ostrożny używając DSHOT900 i DSHOT1200 ponieważ nie jest wspierany przez wszystkie ESC</b>"
