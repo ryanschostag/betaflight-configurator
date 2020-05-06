@@ -830,6 +830,10 @@
         "message": "De versnellingsmeter is niet gekalibreerd. Er zijn functies ingeschakeld die hierop vertrouwen. Kalibreer de versnellingsmeter.",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "Er is geen motor output protocol geselecteerd",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
+    },
     "initialSetupGPSHead": {
         "message": "GPS"
     },
@@ -1492,8 +1496,20 @@
     "pidTuningIntegral": {
         "message": "Integraal"
     },
+    "pidTuningDMax": {
+        "message": "D max"
+    },
     "pidTuningMaxRateWarning": {
         "message": "<span class=\"message-negative\"><b>Let op:</b></span> zeer hoge waardes kunnen leiden tot desyncs tijdens snelle vertragingen."
+    },
+    "pidTuningRcRate": {
+        "message": "RC Rate"
+    },
+    "pidTuningRcExpo": {
+        "message": "RC Expo"
+    },
+    "pidTuningTPA": {
+        "message": "TPA"
     },
     "pidTuningTPABreakPoint": {
         "message": "TPA Breekpunt"
