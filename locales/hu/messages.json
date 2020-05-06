@@ -380,7 +380,7 @@
         "message": "Védelem sikeresen eltávolítva."
     },
     "stm32UnprotectUnplug": {
-        "message": "BEAVATKOZÁS SZÜKSÉGES: Húzza ki, és csatlakoztassa újra a repülésirányítót DFU módban az újra frissítéshez!"
+        "message": "BEAVATKOZÁS SZÜKSÉGES: Húzza ki, és csatlakoztassa újra a repülésvezérlőt DFU módban az újra frissítéshez!"
     },
     "stm32UnprotectFailed": {
         "message": "A védelmet nem sikerült eltávolítani"
@@ -486,7 +486,7 @@
         "message": "Használt firmware kiadási dátuma: <strong>$1</strong>"
     },
     "fcInfoReceived": {
-        "message": "Repülésirányító információ, identifikátor: <strong>$1</strong>, verzió: <strong>$2</strong>"
+        "message": "Repülésvezérlő információ, identifikátor: <strong>$1</strong>, verzió: <strong>$2</strong>"
     },
     "versionLabelTarget": {
         "message": "Célhardwer"
@@ -540,7 +540,7 @@
         "message": "EEPROM <span class=\"message-positive\">elmentve</span>"
     },
     "defaultWelcomeIntro": {
-        "message": "Üdvözöljük a <strong>Betaflight konfigurátor</strong>-ban, ami leegyszerűsíti a repülésirányító frissítését, beállítását és finomhangolását."
+        "message": "Üdvözöljük a <strong>Betaflight konfigurátor</strong>-ban, ami leegyszerűsíti a repülésvezérlő frissítését, beállítását és finomhangolását."
     },
     "defaultWelcomeHead": {
         "message": "Hardver"
@@ -549,10 +549,10 @@
         "message": "Az alkalmazás támogatja az összes hardvert, amely képes futtatni a Betaflight-ot. Ellenőrizze a flash fület a hardver teljes listáján.<br /><br /> <a href=\"https://github.com/betaflight/blackbox-log-viewer/releases\" target=\"_blank\" rel=\"noopener noreferrer\">Töltse le a Betaflight Blackbox Log Viewer alkalmazást</a><br /><br />A firmware forráskódja letölthető <a href=\"https://github.com/betaflight/betaflight\" target=\"_blank\" rel=\"noopener noreferrer\">innen</a><br /><br />A legújabb <b>STM USB VCP Drivers</b> letölthető <a href=\"http://www.st.com/web/en/catalog/tools/PF257938\" target=\"_blank\" rel=\"noopener noreferrer\">innen</a><br />Régi hardverekhez, CP210x USB-t és soros chipet használva:<br />a legújabb <b>CP210x Drivers</b> letölthető <a href=\"https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers\" target=\"_blank\" rel=\"noopener noreferrer\">innen</a><br /> A legújabb <b>Zadig</b> Windowshoz az USB illesztőprogram telepítése letölthető <a href=\"http://zadig.akeo.ie/\" target=\"_blank\" rel=\"noopener noreferrer\">innen</a><br />"
     },
     "defaultContributingHead": {
-        "message": "Hozzájárult"
+        "message": "Hozzájárulásod fontos számunkra"
     },
     "defaultContributingText": {
-        "message": "Ha még jobbá szeretnéd tenni a Betaflight-ot, akkor sokféle módon segíthetsz, többek között:<br /><ul><li>a Betaflight ismereteinek felhasználásával tartalom létrehozásában vagy frissítésére a <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\"> Wiki</a> oldalon, vagy válaszolhat más felhasználók kérdéseire online fórumokon;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">Fejlesztői kódok</a> a firmwarehez és a Konfigurátorhoz - új szolgáltatások, javítások, fejlesztések;</li><li><a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">Új funkciók és javítások</a> tesztelésben  és ezek visszajelzésében;</li><li>Más felhasználóknak segíteni  a <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">bejelentett problémák megoldásában </a>, és részt venni a funkciókérésekről szóló vitákban;</li><li>a Betaflight Konfigurátor új nyelvekre való <a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">fordításban</a>  , vagy segíteni a meglévő fordítások fejlesztésében.</li></ul>"
+        "message": "Ha még jobbá szeretnéd tenni a Betaflight-ot, akkor sokféle módon segíthetsz, többek között:<br /><ul><li>a Betaflight ismereteid felhasználásával tartalom létrehozásában vagy frissítésére a <a href=\"https://github.com/betaflight/betaflight/wiki\" target=\"_blank\" rel=\"noopener noreferrer\"> Wiki</a> oldalon, vagy válaszolhatsz más felhasználók kérdéseire online fórumokon;</li><li><a href=\"https://github.com/betaflight/betaflight/blob/master/docs/development/Development.md\" target=\"_blank\" rel=\"noopener noreferrer\">Fejlesztői kódok</a> a firmwarehez és a Konfigurátorhoz - új szolgáltatások, javítások, fejlesztések;</li><li><a href=\"https://github.com/Betaflight/betaflight/pulls\" target=\"_blank\" rel=\"noopener noreferrer\">Új funkciók és javítások</a> tesztelésben  és ezek visszajelzésében;</li><li>Más felhasználóknak segíteni  a <a href=\"https://github.com/betaflight/betaflight/issues\" target=\"_blank\" rel=\"noopener noreferrer\">bejelentett problémák megoldásában </a>, és részt venni a funkciókérésekről szóló vitákban;</li><li>a Betaflight Konfigurátor új nyelvekre való <a href=\"https://github.com/betaflight/betaflight/tree/master/README.md#Translators\" target=\"_blank\" rel=\"noopener noreferrer\">fordításban</a>  , vagy segíteni a meglévő fordítások fejlesztésében.</li></ul>"
     },
     "defaultFacebookText": {
         "message": "Nekünk szintén van egy <a href=\"https://www.facebook.com/groups/betaflightgroup/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook Csoportunk</a>.<br />Csatlakozz hozzánk hogy beszéljünk a Betaflightról, vagy kérdezz szakmai kérdéseket, vagy csak spontán társalogj néhány másik pilótával."
@@ -1053,7 +1053,7 @@
         "message": "<strong>Megjegyzés:</strong> Az SPI RX szolgáltató csak akkor működik, ha a szükséges hardver be van építve, vagy SPI buszon csatlakoztatva."
     },
     "configurationOtherFeaturesHelp": {
-        "message": "<strong>Megjegyzés:</strong> Nem minden repülésirányító támogat minden funkcionalitást. Ha egy bekapcsolt funkció inaktív marad a 'Mentés és Újraindítás' gomb megnyomása után, akkor azt nem támogatja az irányító."
+        "message": "<strong>Megjegyzés:</strong> Nem minden repülésvezérlő támogat minden funkcionalitást. Ha egy bekapcsolt funkció inaktív marad a 'Mentés és Újraindítás' gomb megnyomása után, akkor azt nem támogatja az irányító."
     },
     "configurationBoardAlignment": {
         "message": "Chip és Szenzor Hangolás"
@@ -1194,10 +1194,10 @@
         "message": "SOS jelet Csipog, ha élesítve van, és az adó kikapcsolt, vagy a elvesztette a kapcsolatot  (automatikus landolás/biztosítás)"
     },
     "beeperDISARMING": {
-        "message": "Csipog a repülésirányító hatástalanításnál"
+        "message": "Csipog a repülésvezérlő hatástalanításnál"
     },
     "beeperARMING": {
-        "message": "Csipog a repülésirányító élesítésénél"
+        "message": "Csipog a repülésvezérlő élesítésénél"
     },
     "beeperARMING_GPS_FIX": {
         "message": "Más hangon csipog a repülésirányító élesítésénél, ha a GPS pozíció be van mérve"
@@ -1269,7 +1269,7 @@
         "message": "Rendszerkonfiguráció"
     },
     "configurationLoopTime": {
-        "message": "Repülésirányító Ciklushossz"
+        "message": "Repülésvezérlő Ciklushossz"
     },
     "configurationCalculatedCyclesSec": {
         "message": "Ciklus/Sec [Hz]"
@@ -1357,7 +1357,7 @@
         "message": "Perifériák"
     },
     "portsHelp": {
-        "message": "<strong>Megjegyzés:</strong> Nem minden kombináció érvényes. Ha a repülésirányító firmware ilyen helyzetet érzékel, a soros port beállításai visszaállítódnak."
+        "message": "<strong>Megjegyzés:</strong> Nem minden kombináció érvényes. Ha a repülésvezérlő firmware ilyen helyzetet érzékel, a soros port beállításai visszaállítódnak."
     },
     "portsVtxTableNotSet": {
         "message": "<span class=\"message-negative\">FIGYELMEZTETÉS:</span> A VTX tábla nincs megfelelően beállítva, és anélkül a VTX vezérlése nem lehetséges. Kérjük, állítsa be a VTX táblát a $t(tabVtx.message) lapon."
@@ -1768,7 +1768,7 @@
         "message": "Alapértelmezett profilértékek beolvasása"
     },
     "pidTuningReceivedProfile": {
-        "message": "Repülésirányító Profil: <strong class=\"message-positive\">$1</strong>"
+        "message": "Repülésvezérlő Profil: <strong class=\"message-positive\">$1</strong>"
     },
     "pidTuningReceivedRateProfile": {
         "message": "A repülésvezérlő beállította a Rate profile-t : <strong class=\"message-positive\">$1</strong>"
@@ -2082,7 +2082,7 @@
         "message": "EEPROM <span class=\"message-positive\">elmentve</span>"
     },
     "transponderNotSupported": {
-        "message": "A repülésirányító  firmware-je nem támogatja a Feketedoboz (Blackbox) naplózást."
+        "message": "A repülésvezérlő  firmware-je nem támogatja a Feketedoboz (Blackbox) naplózást."
     },
     "transponderInformation": {
         "message": "A transzponder rendszerek lehetővé teszik a verseny szervezőinek, hogy mérjék a köröket. A transzponder a repülőgépére van felszerelve, és amikor a repülőgép áthalad az időmérő kapun, a pálya menti vevő regisztrálja a kódot, és rögzíti az Ön köridőjét. IR alapú transzponder felszerelésekor ügyeljen arra, hogy az a drónról kifelé nézzen a pálya menti vevők felé, és hogy az akkumulátor hevederek, kábelek, propellerek stb. Ne akadályozzák a fénynyalábot."
@@ -2470,10 +2470,10 @@
         "message": "Előző naplófájl automatikusan betöltve: <strong>$1</strong>"
     },
     "blackboxNotSupported": {
-        "message": "A repülésirányító  (flight controller) firmware nem támogatja a Feketedoboz (Blackbox) naplózást."
+        "message": "A repülésvezérlő firmware nem támogatja a Feketedoboz (Blackbox) naplózást."
     },
     "blackboxMaybeSupported": {
-        "message": "Vagy a repülésirányító  (flight controller) firmware túl öreg, vagy a Feketedoboz (Blackbox) funkció van kikapcsolva a Konfiguráció fülön."
+        "message": "Vagy a repülésvezérlő  firmware túl öreg, vagy a Feketedoboz (Blackbox) funkció van kikapcsolva a Konfiguráció fülön."
     },
     "blackboxConfiguration": {
         "message": "Feketedoboz (Blackbox) konfiguráció"
@@ -2497,7 +2497,7 @@
         "message": "Külső naplózási eszközre (például OpenLager) jelentkezhet soros port segítségével. Konfigurálja a portot a Portok lapon."
     },
     "sdcardNote": {
-        "message": "A repülési naplók rögzíthetők a repülési vezérlő fedélzeti SD kártyájára."
+        "message": "A repülési naplók rögzíthetők a repülésvezérlő fedélzeti SD kártyájára."
     },
     "dataflashUsedSpace": {
         "message": "Fehasznált tárhely"
@@ -2512,10 +2512,10 @@
         "message": "Szabad tárhely naplózáshoz"
     },
     "dataflashNote": {
-        "message": "A repülési naplók rögzíthetők a repülési vezérlő fedélzeti chipjére."
+        "message": "A repülési naplók rögzíthetők a repülésvezérlő fedélzeti chipjére."
     },
     "dataflashNotPresentNote": {
-        "message": "A repülési vezérlőnek nem áll rendelkezésre kompatibilis adatrögzítő chip."
+        "message": "A repülésvezérlőnek nem áll rendelkezésre kompatibilis adatrögzítő chip."
     },
     "dataflashFirmwareUpgradeRequired": {
         "message": "Az adatfrissitéshez szükséges firmware &gt;= 1.8.0."
@@ -2527,7 +2527,7 @@
         "message": "Flash adatainak mentése fájlba... (Öreg)"
     },
     "dataflashSaveFileDepreciationHint": {
-        "message": "A blackbox naplók mentése a konfigurátoron lassú és viszonylag hajlamos a hibákra. Javasoljuk, hogy ehelyett használja a '<b>$t(onboardLoggingRebootMscText.message)</b>'(lent) a Mass Storage Mode aktiválásához, és tárolási eszközként használja a repülési irányítót a naplófájlok letöltéséhez."
+        "message": "A blackbox naplók mentése a konfigurátoron lassú és viszonylag hajlamos a hibákra. Javasoljuk, hogy ehelyett használja a '<b>$t(onboardLoggingRebootMscText.message)</b>'(lent) a Mass Storage Mode aktiválásához, és tárolási eszközként használja a repülésvezérlőt a naplófájlok letöltéséhez."
     },
     "dataflashButtonErase": {
         "message": "Flash törlése"
@@ -2812,7 +2812,7 @@
         "message": "Észlelt: <strong>$1</strong> - villogás kiváltása a csatlakozáskor"
     },
     "unstableFirmwareAcknoledgementDialog": {
-        "message": "Arra készül, hogy égesse a <strong> firmwaret </strong>. Ezek az eszközök folyamatban lévő munkák, és a következők bármelyike lehet a helyzet:<strong><ul><li> a firmware egyáltalán nem működik; </li><li> a firmware nem repülhető; </li><li> biztonsági problémák vannak a firmware-rel, például a átrepüléssel </li><li> a firmware miatt a repülési irányító nem reagál vagy megsérülhet </li></ul></strong> Ha folytassa a firmware égetéssel, <strong> teljes felelősséget vállal a fentiek bármelyikének kockázatáért </strong>. Ezenkívül tudomásul veszi, hogy a firmware repülésének megkísérlése előtt el kell végeznie <strong> alapos pad teszteket leszedett propellerekkel </strong>."
+        "message": "Arra készül, hogy égesse a <strong> firmwaret </strong>. Ezek az eszközök folyamatban lévő munkák, és a következők bármelyike lehet a helyzet:<strong><ul><li> a firmware egyáltalán nem működik; </li><li> a firmware nem repülhető; </li><li> biztonsági problémák vannak a firmware-rel, például a átrepüléssel </li><li> a firmware miatt a repülésvezérlő nem reagál vagy megsérülhet </li></ul></strong> Ha folytassa a firmware égetéssel, <strong> teljes felelősséget vállal a fentiek bármelyikének kockázatáért </strong>. Ezenkívül tudomásul veszi, hogy a firmware repülésének megkísérlése előtt el kell végeznie <strong> alapos pad teszteket leszedett propellerekkel </strong>."
     },
     "unstableFirmwareAcknoledgementAcknowledge": {
         "message": "Elolvastam a fentieket, és <strong>teljes felelősséget vállalok<strong> az instabil firmware égetése miatt"
@@ -3933,7 +3933,7 @@
         "message": "OSD"
     },
     "osdSetupUnsupportedNote1": {
-        "message": "A repülésirányító nem reagál az OSD parancsaira. Ezt valószínűleg az okozza, hogy nem rendelkezik beépített BetaFlight OSD-vel."
+        "message": "A repülésvezérlő nem reagál az OSD parancsaira. Ezt valószínűleg az okozza, hogy nem rendelkezik beépített BetaFlight OSD-vel."
     },
     "osdSetupElementsTitle": {
         "message": "Elemek"
