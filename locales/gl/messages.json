@@ -1594,10 +1594,6 @@
         "message": "D Min proporciona un xeito de ter un nivel máis baixo de D no voo normal e un nivel máis alto para as manobras rápidas que poden causar unha sobrecarga, como os flips e os rolls. Tamén mantén a D alta durante o prop wash. A ganancia axusta o rápido que D aumenta ao seu máximo valor e baséase no xiro para determinar os movementos máis fortes e os acontecementos. O avance fai que D aumentase antes empregando punto de referencia en vez de xiro para determinar os movementos máis pronunciados.",
         "description": "D Min feature helpicon message"
     },
-    "pidTuningDMinHelp": {
-        "message": "Controla a forza de amortecemento (D-term) nun voo normal cara adiante.<br>Con D_min activado, a ganancia D activa cambia durante o voo. Nun voo normal cara adiante, a D_min ten ganancia baixa. Durante un movemento pronunciado ou durante o prop wash, a ganancia D activa aumenta as ganancias derivadas especificadas á esquerda.<br><br>As ganancias de derivados completos alcánzanse con entradas de stick afiadas, pero só se conseguen parciais durante o prop wash.<br>Axusta o D_Min Gain e Advance para controlar a sensibilidade e a sincronización de aumento.",
-        "description": "D Min helpicon message on PID table titlebar"
-    },
     "pidTuningPidSettings": {
         "message": "Configuración do controlador PID"
     },
