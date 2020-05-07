@@ -1567,10 +1567,6 @@
         "message": "D Min 提供了一个方法，使飞机在正常飞行中可以维持一个较低的 D 值，又可以在如翻转等快速动作时提高到一个较高的值来抑制过冲。它也会在发生洗桨时提高 D 值。调整增益(Gain) 可以调整 D 到达最高值的速度，同时它基于陀螺仪数据来确定快速移动与洗桨事件。超前(Advance) 通过使用设定点而不是陀螺仪来判定快速移动的方法来更早地提高 D 值。",
         "description": "D Min feature helpicon message"
     },
-    "pidTuningDMinHelp": {
-        "message": "控制正常前进飞行中的阻尼(D-term)。<br>当 D Min 开启后，D 增益的有效值将在飞行中实时变化。在正常前进飞行中，有效值将是下方所设置的 D_min 增益。当发生快速移动或洗桨时，D 增益的有效值将会提高至左侧指定的 D 值。<br><br>当出现非常迅速的摇杆输入时，D 增益将升高至最大值，但在洗桨时仅会升高至一部分。<br>调整 D Min 增益和超前以控制增益增大的敏感性和时机。",
-        "description": "D Min helpicon message on PID table titlebar"
-    },
     "pidTuningPidSettings": {
         "message": "PID 控制器设置"
     },
