@@ -1514,10 +1514,6 @@
         "message": "Gutxieneko D-ak hegaldi normaletan D maila baxuagoa ezkeintzen du eta maila handiagoa, Flip eta Roll-ak bezelako gainbiraketak sor ditzaketen maniobra azkarrak egiteko. Bita ere D-a igotzen du Propwhash-a egiten duenean. D-aren irabaziak ezkeintzen du zeinen azkar heldu daiteken D-k bere gehienezkora gyro-an eta Propwash-ak gertatzen direnean hoinarriturik. Advance-k D-a lehenago igotzen du abiapuntuak erabiliz gyro mugimenduak zorrotzagoak zehazteko.",
         "description": "D Min feature helpicon message"
     },
-    "pidTuningDMinHelp": {
-        "message": "Aurrerako hegaldi normaletan moteltze-indarra (D-term) kontrolatzen du.<br>D_min piztuta, D-gain hegaldian aldatzen da. Aurrerako hegaldi normaletan lehengo D_min irabazian dago. Mugimendu zorrotz edo propwhash-ean, D-gain Actiboak eratorritako irabaziak zortzen ditu, batez ere ezkerreruntz.<br><br>Alde guztietatik eratorritako irabaziak Sharp etengailuarekin berdintzen dira, baina aldezka bakarrik gertatzen dira propwhash-ean.<br>Egokitu D_Min irabazia eta Advance-k, bultzadaren sentsibilitatea eta erritmoa kontrolatzeko.",
-        "description": "D Min helpicon message on PID table titlebar"
-    },
     "pidTuningPidSettings": {
         "message": "PID kontroladorearen ezarpenak"
     },
