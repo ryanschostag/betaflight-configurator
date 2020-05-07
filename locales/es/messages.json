@@ -1508,7 +1508,7 @@
         "description": "D Min feature helpicon message"
     },
     "pidTuningDMinHelp": {
-        "message": "Controla la fuerza del amortiguado (Término D) en vuelo normal recto.<br>Con D Min activado, el valor de D cambia durante el vuelo. En vuelo normal recto usa el valor de D Min. Durante movimientos bruscos o durante turbulencias, la D crece hasta el valor de D especificado a la izquierda.<br><br>El valor máximo se obtiene con movimientos bruscos de los mandos, pero con turbulencias sólo se obtienen incrementos parciales.<br>Ajusta el valor de Ganancia y Avance de D Min para controlar la cantidad y temporización del incremento.",
+        "message": "Controla la fuerza del amortiguado (Término D) en vuelo normal recto.<br>Con D Min activado, el valor de D cambia durante el vuelo. En vuelo normal recto usa el valor de D Min. Durante movimientos bruscos o durante turbulencias, la D crece hasta el valor de D Max especificado a la izquierda.<br><br>El valor máximo se obtiene con movimientos bruscos de los mandos, pero con turbulencias sólo se obtienen incrementos parciales.<br>Ajusta el valor de Ganancia y Avance de D Min para controlar la cantidad y temporización del incremento.",
         "description": "D Min helpicon message on PID table titlebar"
     },
     "pidTuningPidSettings": {
