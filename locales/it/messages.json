@@ -1507,10 +1507,6 @@
         "message": "D Min fornisce un modo per avere un livello inferiore di D in volo normale e un livello più alto per manovre rapide che potrebbero causare una risposta eccesiva, come flip e roll. Inoltre aumenta la D in caso di propwash. Il guadagno regola quanto velocemente D raggiunge il suo valore massimo e si basa sul giroscopio per determinare le manovre brusche e il propwash. Advance fa salire prima D usando il setpoint invece del giroscopio per determinare le manovre brusche.",
         "description": "D Min feature helpicon message"
     },
-    "pidTuningDMinHelp": {
-        "message": "Controlla la forza dello smorzamento (D-term) nel normale volo in avanti.<br>Con D_min abilitato, il D-gain attivo varierà durante il volo. Nel volo in avanti è ai guadagni D_min seguenti. Durante un cambio brusco di direzione o durante un propwash, il D-gain attivo aumenta ai Guadagni della derivata specificati a sinistra.<br><br>I guadagni della derivata sono raggiunti completamente con movimenti rapidi degli stick, ma si ottengono solo parzialmente durante un propwash.<br>Regola il Guadagno D_Min e Advance per controllare la sensibilità e il timing dell'aumento del guadagno.",
-        "description": "D Min helpicon message on PID table titlebar"
-    },
     "pidTuningPidSettings": {
         "message": "Impostazioni del controller PID"
     },
