@@ -1602,7 +1602,7 @@
         "description": "D Min feature helpicon message"
     },
     "pidTuningDMinHelp": {
-        "message": "crwdns9752:0crwdne9752:0",
+        "message": "crwdns10140:0crwdne10140:0",
         "description": "D Min helpicon message on PID table titlebar"
     },
     "pidTuningPidSettings": {
