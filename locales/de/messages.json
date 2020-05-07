@@ -1445,10 +1445,6 @@
         "message": "D Min bietet eine Möglichkeit ein niedrigeres Niveau von D im normalen Flug und ein Höheres für schnelle Manöver (welche zu Überschwingen bei Flips und Rolls führen kann) zu haben. Es erhöht D auch während Propwash. Gain stellt ein, wie schnell D auf seinen Maximalwert kommt und basiert auf den Gyro, um scharfe Bewegungen und Propwash-Ereignisse zu bestimmen. Advance lässt D früher nach oben gehen, indem es den Sollwert anstelle des Gyros verwendet, um scharfe Bewegungen zu bestimmen.",
         "description": "D Min feature helpicon message"
     },
-    "pidTuningDMinHelp": {
-        "message": "Steuert die Stärke der Dämpfung (D-term) in normalen Vorwärtsflug.<br>Mit D_min aktiviert, ändert sich die aktive D-Verstärkung während des Fluges. Bei normalem Vorwärtsflug ist dieser bei D_min. Während einer scharfen Bewegung oder bei Propwash (Flug in der durch die Drohne selbst aufgewirbelte Luft) erhöht sich der aktive D-Verstärkung auf die Derivative Verstärkung, die links angegeben werden.<br><br>Die volle Derivative Verstärkung wird bei scharfen Steuerknüppeleingängen erreicht, aber nur teilweise bei Propwash.<br>Passen Sie die D_Min Verstärkung und die Vorhaltezeit an, um die Verstärkung und den Zeitpunkt zu steuern.",
-        "description": "D Min helpicon message on PID table titlebar"
-    },
     "pidTuningPidSettings": {
         "message": "PID Kontroller EInstellungen"
     },
