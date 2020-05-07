@@ -1499,10 +1499,6 @@
         "message": "A D Min lehetőséget nyújt alacsonyabb D szint elérésére normál repülésnél és magasabb szintű gyors manőverekhez, amelyek túllépést okozhatnak, mint például a flipeknél. Emellett felveszi a D-t a propwash során. A érzékenység beállítja, hogy a D mennyire gyorsan érje el a maximális értéket, és a giroszkóp alapján meghatározza az éles mozdulatokat és az előmosás eseményeit. Az előrehaladás elősegíti, hogy D korábban feljebb lépjen azáltal, hogy giroszkóp helyett alapjelet használ az éles mozgások meghatározására.",
         "description": "D Min feature helpicon message"
     },
-    "pidTuningDMinHelp": {
-        "message": "Szabályozza a tompítás (D-term) erősségét normál előremenő repülés esetén. <br>Ha a D_min engedélyezve van, az aktív D-erősítés megváltozik repülés közben. Normál előremeneti repülésnél az alábbi D_min nyereségnél van. Éles mozgatás vagy a mosás közben az aktív D-nyereség a bal oldalon megadott derivált nyereséghez nő.<br><br>A teljes derivált nyereséget éles bemenetekkel érik el, de csak részlegesen érhetők el a mosáskor. <br>Állítsa be a D_Min erősítést és előrehaladást az erősítés növelésének érzékenységének és időzítésének szabályozásához.",
-        "description": "D Min helpicon message on PID table titlebar"
-    },
     "pidTuningPidSettings": {
         "message": "PID Kontroller Beállítások"
     },
