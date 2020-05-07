@@ -1554,10 +1554,6 @@
         "message": "D Min permet d'avoir un niveau inférieur de D en vol normal et un niveau plus élevé pour les manœuvres rapides qui pourraient causer des overshoots, notamment sur les flips et les rolls. Il augmente également D pendant le propwash. Gain ajuste la vitesse à laquelle D atteint sa valeur maximale et est basé sur le gyro pour déceler les manoeuvres violentes et les propwash. Avance déclenche le D plus tôt en utilisant le setpoint au lieu du gyro pour déterminer les manoeuvres violentes.",
         "description": "D Min feature helpicon message"
     },
-    "pidTuningDMinHelp": {
-        "message": "Contrôle la force de l'amortissement (D-term) en vol normal.<br>Avec D_min activé, le gain D varie pendant le vol. En vol de croisière, il est à la valeur D_min ci-dessous. Lors d'une manoeuvre violente ou lors prop wash, le gain D augmente jusqu'à la valeur Derivative gain spécifiée à gauche.<br><br>Le maximum du gain Derivative est atteint lors de mouvement brusques sur les sticks, des valeurs partielles sont atteintes en cas de propwash.<br>Ajustez le Gain et l'Avance pour contrôler la sensibilité et le timing de D_Min.",
-        "description": "D Min helpicon message on PID table titlebar"
-    },
     "pidTuningPidSettings": {
         "message": "Réglages du Contrôleur PID"
     },
