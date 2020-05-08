@@ -1519,6 +1519,10 @@
         "message": "D Min proporciona una manera de tenir un nivell de D més baix en el vol normal i un nivell més alt per a les maniobres ràpides que puguin causar sobrepassos, com voltes i rotllos. També aporta D durant el propwash. El guany ajusta la velocitat que D augmenta al seu valor màxim i es basa en el giroscopi per determinar moviments intensos i esdeveniments de propwash. L'avanç fa que D augmenti abans utilitzant el punt de referència en lloc del giroscopi per determinar moviments bruscos.",
         "description": "D Min feature helpicon message"
     },
+    "pidTuningDMinHelp": {
+        "message": "Controla la força d’amortiment (D-term) en un vol endavant normal.<br>Amb D_min activat, el guany D actiu canvia durant el vol. En el vol endavant normal, es troba als guanys de D_min per sota. Durant un moviment fort o durant el propwash, el guany D actiu augmenta els guanys de D_max a  l'esquerra.<br><br>El guany complet de D_Max s’obtenen amb moviments ràpids del stick, però només s’obtenen parcialment durant el propwash.<br>Ajustar el guany de D_min i avançament per controlar la sensibilitat del guany adicional, i el temps.",
+        "description": "D Min helpicon message on PID table titlebar"
+    },
     "pidTuningPidSettings": {
         "message": "Ajustament del Controlador de PIDs"
     },
