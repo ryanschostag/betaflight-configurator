@@ -1306,10 +1306,10 @@
         "message": "Tipo de Asistencia en Tierra"
     },
     "configurationGPSAutoBaud": {
-        "message": "Velocidad Auto"
+        "message": "Velocidad automática"
     },
     "configurationGPSAutoConfig": {
-        "message": "Configuración Auto"
+        "message": "Configuración automática"
     },
     "configurationGPSGalileo": {
         "message": "Usar Galileo",
