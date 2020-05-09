@@ -3200,12 +3200,6 @@
     "pidTuningMotorOutputLimit": {
         "message": "Motor Irteeraren Muga"
     },
-    "pidTuningMotorLimit": {
-        "message": "Atenuazioa %"
-    },
-    "pidTuningMotorLimitHelp": {
-        "message": "Motorren aginduak ezarritako ehunekoaren arabera murrizten ditu. ESC korrontea murrizten du eta motor beroak lortzen dira zelda kopuru altuagoko bateriak erabiltzen direnean, adibidez, 6S bateria erabili nahi baduzu 4S-rako diseinatuta gailu batean, 66% saiatu; 4S bateria erabiltzeko 3S diseinatutako gailu batean, 75% saiatu. <br>Egiaztatu osagai guztiak bateriaren tentsioa onartzen dutela."
-    },
     "pidTuningCellCount": {
         "message": "Zelda Kopurua"
     },
