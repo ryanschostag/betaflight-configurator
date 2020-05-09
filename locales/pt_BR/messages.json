@@ -3185,12 +3185,6 @@
     "pidTuningMotorOutputLimit": {
         "message": "Limite de saída para o motor"
     },
-    "pidTuningMotorLimit": {
-        "message": "Atenuação %"
-    },
-    "pidTuningMotorLimitHelp": {
-        "message": "Reduz o sinal para o motor pela porcentagem definida. Reduz o consumo de energia dos ESCs e reduz a temperatura dos motores ao usar uma bateria de maior quantidade de células. Exemplos: Quando usar uma bateria 6S em uma aeronave com motores, hélices e regulagem projetados para uma bateria 4S, tente o valor 66%; Para usar uma bateria 4S em uma aeronave projetada para baterias 3S, tente 75%.<br>Sempre tenha certeza de que todos os seus componentes suportam a voltagem da bateria que está utilizando."
-    },
     "pidTuningCellCount": {
         "message": "Quantidade de células"
     },
