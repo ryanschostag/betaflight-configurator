@@ -3249,12 +3249,6 @@
     "pidTuningMotorOutputLimit": {
         "message": "电机输出限制"
     },
-    "pidTuningMotorLimit": {
-        "message": "衰减 %"
-    },
-    "pidTuningMotorLimitHelp": {
-        "message": "按设置的百分比降低电机动力。用于在使用高芯数电池时降低电调电流和电机发热，例如，在一台电机、桨和参数均已针对4S动力优化过的机器上使用6S电池，请尝试将此值设为66%；在一台动力设计为3S的机器上使用4S电池，请尝试设为75%。<br>请确保您的所有配件都支持您正在使用的电池电压。"
-    },
     "pidTuningCellCount": {
         "message": "电芯数"
     },
