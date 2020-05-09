@@ -3233,9 +3233,6 @@
     "pidTuningMotorOutputLimit": {
         "message": "Limite de sortie du moteur"
     },
-    "pidTuningMotorLimit": {
-        "message": "Atténuation %"
-    },
     "pidTuningCellCount": {
         "message": "Nombre de cellules"
     },
