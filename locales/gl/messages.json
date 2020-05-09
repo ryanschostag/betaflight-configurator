@@ -3276,12 +3276,6 @@
     "pidTuningMotorOutputLimit": {
         "message": "Límite saída do motor"
     },
-    "pidTuningMotorLimit": {
-        "message": "Atenuación %"
-    },
-    "pidTuningMotorLimitHelp": {
-        "message": "Atenua os comandos do motor pola porcentaxe establecida. Reduce a corrente do ESC e o calor do motor cando se usan baterías con maior número de celas, por exemplo: Cando use unha batería 6S nunha aeronave que ten motores, hélices e axustes deseñados para 4S, intente establecer o valor no 66%; cando use unha batería 4S nunha aeronave destinada a 3S, probe o 75%.<br>Asegúrese de que tódolos seus compoñentes soporten a tensión da batería que está a usar."
-    },
     "pidTuningCellCount": {
         "message": "Contador de celdas"
     },
