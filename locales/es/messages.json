@@ -3194,10 +3194,10 @@
         "message": "Límite de salida del motor"
     },
     "pidTuningMotorLimit": {
-        "message": "Atenuación %"
+        "message": "Factor de Escala [%]"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "Reduce los comandos a los motores por el porcentaje establecido. Reduce la corriente en los ESC y la temperatura de los motores cuando se usan baterías con mayor número de celdas. Por ejemplo, al usar una batería 6S en una aeronave que tiene motores, hélices y un ajuste diseñado para 4S, prueba a poner este valor en el 66%; al usar una batería 4S en una aeronave diseñada para 3S, prueba un 75%.<br>Asegúrate siempre de que todos tus componentes pueden soportar el voltaje de la batería que estés usando."
+        "message": "Factor de escala de salida lineal del motor (como porcentaje). Reduce la corriente en los ESC y la temperatura de los motores cuando se usan baterías con mayor número de celdas. Por ejemplo, al usar una batería 6S en una aeronave que tiene motores, hélices y un ajuste diseñado para 4S, prueba a poner este valor en el 66%; al usar una batería 4S en una aeronave diseñada para 3S, prueba un 75%.<br>Asegúrate siempre de que todos tus componentes pueden soportar el voltaje de la batería que estés usando."
     },
     "pidTuningCellCount": {
         "message": "Número de celdas"
