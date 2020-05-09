@@ -3288,10 +3288,10 @@
         "message": "crwdns9968:0crwdne9968:0"
     },
     "pidTuningMotorLimit": {
-        "message": "crwdns9970:0crwdne9970:0"
+        "message": "crwdns10142:0[%]crwdne10142:0"
     },
     "pidTuningMotorLimitHelp": {
-        "message": "crwdns10128:0crwdne10128:0"
+        "message": "crwdns10144:0crwdne10144:0"
     },
     "pidTuningCellCount": {
         "message": "crwdns9974:0crwdne9974:0"
