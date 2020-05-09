@@ -3205,12 +3205,6 @@
     "pidTuningMotorOutputLimit": {
         "message": "Límit de sortida del motor"
     },
-    "pidTuningMotorLimit": {
-        "message": "Atenuació %"
-    },
-    "pidTuningMotorLimitHelp": {
-        "message": "Atenua les ordres del motor pel percentatge establert. Redueix la calor de ESC i del motor quan s'utilitzen bateries de mès cèl·lules, p.ex. Quan utilitzeu una bateria 6S en una aeronau que tingui motors, puntals i ajustaments dissenyats per a 4S, proveu de fixar el valor en el 66%; si utilitzeu una bateria 4S en una embarcació destinada a 3S, proveu el 75%.<br> Assegureu-vos que tots els components poden suportar el voltatge de la bateria que feu servir."
-    },
     "pidTuningCellCount": {
         "message": "Recompte de cel·les"
     },
