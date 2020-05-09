@@ -3189,12 +3189,6 @@
     "pidTuningMotorOutputLimit": {
         "message": "電機輸出限制"
     },
-    "pidTuningMotorLimit": {
-        "message": "衰減 %"
-    },
-    "pidTuningMotorLimitHelp": {
-        "message": "按設置的百分比降低電機動力。用於在使用高芯數電池時降低電調電流和電機發熱，例如，在一台電機、槳和參數均已針對4S動力優化過的機器上使用6S電池，請嘗試將此值設為66% ；在一台動力設計為3S的機器上使用4S電池，請嘗試設為75%。 <br>請確保您的所有配件都支援您正在使用的電池電壓。"
-    },
     "pidTuningCellCount": {
         "message": "電芯數"
     },
