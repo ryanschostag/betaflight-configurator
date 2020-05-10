@@ -830,10 +830,6 @@
         "message": "De versnellingsmeter is niet gekalibreerd. Er zijn functies ingeschakeld die hierop vertrouwen. Kalibreer de versnellingsmeter.",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
-    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
-        "message": "Er is geen motor output protocol geselecteerd",
-        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
-    },
     "initialSetupGPSHead": {
         "message": "GPS"
     },
@@ -1106,6 +1102,10 @@
         "message": "$t(configurationMotorPoles.message) (Aantal magneten op de motor)",
         "description": "One of the fields of the ESC/Motor configuration"
     },
+    "configurationMotorPolesHelp": {
+        "message": "Met deze instelling geef je aan hoeveel magneten er op de bel van de motor zitten. Tel NIET de stators. De stator is waar de stroomdraden om heen zijn gebonden. 5\" motoren hebben meestal 14 magneten, 3\" of kleiner hebben meestal 12 magneten.",
+        "description": "Help text for the Motor poles field of the ESC/Motor configuration"
+    },
     "configurationThrottleMinimum": {
         "message": "Minimale Throttle (Laagste ESC waarde wanneer gearmt)"
     },
@@ -1120,6 +1120,9 @@
     },
     "configurationEscProtocolDisabled": {
         "message": "Selecteer een motor uitvoer protocol geschikt voor jou ESC's. $t(escProtocolDisabledMessage.message)"
+    },
+    "escProtocolDisabledMessage": {
+        "message": "<strong>Waarschuwing:</strong> Het selecteren van een motor-uitgang protocol dat niet wordt ondersteund door uw ESC's kan leiden tot <strong>ESC's die beginnen te draaien zodra een batterij is aangesloten</strong>. Zorg er om die reden <strong>altijd voor dat je alle propellors verwijdert als je de eerste keer een accu verbindt na het wijzigen van het motor output protocol</strong>."
     },
     "configurationDshotBeeper": {
         "message": "Dshot Beacon Configuratie"
@@ -1264,6 +1267,10 @@
     "configurationGPSHomeOnce": {
         "message": "Thuispunt eenmaal instellen",
         "description": "Option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
+    },
+    "configurationGPSHomeOnceHelp": {
+        "message": "Wanneer ingeschakeld wordt je startpunt (Home point) bepaald bij de eerste keer \"Armen\" na het inpluggen van je batterij. Als dit niet is ingeschakeld wordt je startpunt bij elke keer dat je \"Armt\" opnieuw bepaald.",
+        "description": "Help text for the option to set the Home Point with the first arm only, not with each arm in the GPS Configuration"
     },
     "configurationGPSHelp": {
         "message": "<strong>Opmerking:</strong> Vergeet niet om een Serial Port (via het tabblad poorten) te configureren wanneer je de GPS functie gebruikt."
@@ -1451,6 +1458,9 @@
     "rcSmoothingChannelsSmoothedHelp": {
         "message": "De kanalen waarop de afvlakking invloed op heeft"
     },
+    "rcSmoothingInputTypeHelp": {
+        "message": "Het type filtermethode gebruikt voor de invoer. De meeste gebruikers dienen de standaardwaarde \"BIQUAD\" te gebruiken. Deze waarde biedt een goede balans tussen een vloeiende invoer en een daardoor geïntroduceerde vertraging. \"PT1\" vermindert de vertraging enigszins, maar geeft een mindere vloeiende invoer."
+    },
     "receiverRcInputType": {
         "message": "Invoer Filter Type"
     },
@@ -1490,6 +1500,9 @@
     "pidTuningFeedforwardTransition": {
         "message": "Feedforward transitie"
     },
+    "pidTuningDtermSetpointTransitionWarning": {
+        "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message):</strong> Het gebruik van een D Setpoint transitie tussen de 0 en 0.1 wordt afgeraden. Mocht je dit wel doen dan kan dit leiden tot instabiliteit en verminderde reactievermogen als je sticks het centrum van hun bereik passeren.</span>"
+    },
     "pidTuningProportional": {
         "message": "Proportioneel"
     },
@@ -1498,6 +1511,10 @@
     },
     "pidTuningDMax": {
         "message": "D max"
+    },
+    "pidTuningDerivativeHelp": {
+        "message": "Bepaalt de sterkte van het dempend effect op alle bewegingen van je quad. Bij bewegingen die geïntroduceerd worden door jou sticks zorgt de D-term er voor dat de invoer wordt gedempt. De D-term dempt ook externe invloeden zoals propwash of een windvlaag.<br><br>Hogere waardes zorgen voor meer demping en voorkomt het overschieten van de P-term en FeedForward.<br>Echter, de D-term is ZEER gevoelig voor vibraties op hoge frequenties. De ruis wordt tussen de 10 en de 100 keer versterkt.<br><br> Hoge frequentie ruis in combinatie met een hoge D-waarde kan er voor zorgen dat motoren warm worden of zelfs uitbranden als de gyro niet correct gefilterd is. (Zie tabblad Filters)<br><br>De D-term kan worden gezien als een schokbreker van een auto. Echter met als extra eigenschap dat deze ruis van de gyro zeer sterk vergroot.",
+        "description": "Derivative Term helpicon message on PID table titlebar"
     },
     "pidTuningMaxRateWarning": {
         "message": "<span class=\"message-negative\"><b>Let op:</b></span> zeer hoge waardes kunnen leiden tot desyncs tijdens snelle vertragingen."
@@ -1588,6 +1605,9 @@
     },
     "pidTuningEepromSaved": {
         "message": "EEPROM <span class=\"message-positive\">opgeslagen</span>"
+    },
+    "tuningHelp": {
+        "message": "<b>Tuning tips</b><br /><span class=\"message-negative\">BELANGRIJK:</span> Het is belangrijk om de motortemperatuur te verifiëren tijdens de eerste vluchten. Hoe hoger de filterwaarde des te beter je quad kan gaat vliegen. Echter krijgen je motoren ook meer ruis te voorduren.<br>De standaardwaarde van 100Hz is optimaal. Maar voor quads die meer ruis hebben kan je proberen om de D-Term filter te verlagen naar 50Hz en dit mogelijk ook toe te passen op de gyro-filter."
     },
     "receiverStickMin": {
         "message": "'Stick Laag' drempel"
@@ -1686,6 +1706,9 @@
     "adjustmentsExamples": {
         "message": "Voorbeelden:"
     },
+    "adjustmentsExample1": {
+        "message": "Gebruik een 3 positie schakelaar op AUX1 om te schakelen tussen de P, I en D waarde van Pitch en Roll. En gebruik nog een drie positieschakelaar op AUX2 om de waarde van de geselecteerde instelling te verhogen of te verlagen wanneer deze in de omhoog of omlaag positie wordt geplaatst."
+    },
     "adjustmentsColumnEnable": {
         "message": "Indien ingeschakeld"
     },
@@ -1755,6 +1778,9 @@
     "transponderNotSupported": {
         "message": "De firmware van uw vlucht-controller ondersteunt geen transponder functionaliteit."
     },
+    "transponderInformation": {
+        "message": "Transponders systemen zorgen ervoor dat raceorganisatoren je rondetijden bij kunnen houden. De transponder is op je drone gemonteerd en wanneer je drone een timing gate passeert wordt jouw code en rondetijd geregistreerd. Wanneer je een Infrarood transponder gebruikt dien je ervoor te zorgen dat deze niet geblokkeerd wordt door je frame, batterij, kabels, propellers of andere zaken."
+    },
     "transponderConfigurationType": {
         "message": "Transponder type"
     },
@@ -1817,6 +1843,9 @@
     },
     "servosFirmwareUpgradeRequired": {
         "message": "Servos vereisen firmware &gt;= 1.10.0. en doel ondersteuning."
+    },
+    "servosChangeDirection": {
+        "message": "Wijzig de richting in TX om overeen te komen"
     },
     "servosName": {
         "message": "Naam"
@@ -1989,6 +2018,10 @@
     "motorsSensorAccelSelect": {
         "message": "accel"
     },
+    "motorsTelemetryHelp": {
+        "message": "Deze nummers tonen de telemetrie informatie die ontvangen is van de ESC's. Het kan de werkelijke snelheid van motoren weergeven (in RPM), de foutsnelheid van de telemetrielink maar ook de temperatuur van de ESC's.",
+        "description": "Help text for the telemetry values in the motors tab."
+    },
     "motorsRPM": {
         "message": "R: {{motorsRpmValue}}",
         "description": "To put under the motors in the motors tab. KEEP IT SHORT or not translate. Keep the letters as prefix. Shows the RPM of the motor if telemetry is available."
@@ -2000,6 +2033,9 @@
     "motorsESCTemperature": {
         "message": "T: {{motorsESCTempValue}}&deg;C",
         "description": "To put under the motors in the motors tab. KEEP IT SHORT or not translate. Shows the ESC temperature if available."
+    },
+    "motorsNotice": {
+        "message": "<strong>Motor Test Modus / Arming Waarschuwing:</strong><br />Het verplaatsen van de schuifregelaren of het armen middels je zender zorgt ervoor dat de motoren <strong>gaan draaien</strong>.<br />Om letsel te voorkomen <strong class=\"message-negative\">dien je ALLE propellers te verwijderen</strong> alvorens je deze functie gaat gebruiken.<br />Het inschakelen van deze motor-test modus zal er voor zorgen dat Runaway Takeoff Preventie tijdelijk wordt uitgeschakeld.<br />"
     },
     "motorsEnableControl": {
         "message": "<strong>Ik begrijp de risico's</strong>, de propellers zijn verwijderd - schakel motorbesturing in en schakel Runaway Takeoff Preventie uit."
@@ -2714,6 +2750,9 @@
     "pidTuningMotorOutputLimit": {
         "message": "Motor Uitvoer Limiet"
     },
+    "pidTuningMotorLimit": {
+        "message": "Schaalfactor [%]"
+    },
     "pidTuningCellCount": {
         "message": "Aantal cellen"
     },
@@ -2773,6 +2812,9 @@
     },
     "pidTuningItermRelaxTypeOptionGyro": {
         "message": "Gyro"
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "Dynamische Stationaire Waarde [* 100 RPM]"
     },
     "failsafeRxMinUsecItem": {
         "message": "Minimale lengte"
@@ -3814,6 +3856,14 @@
         "message": "Letter",
         "description": "Text of one of the titles of the VTX Table element in the VTX tab"
     },
+    "vtxLoadFileOk": {
+        "message": "VTX configuratiebestand <span class=\"message-positive\">geladen</span>",
+        "description": "Message in the GUI log when the VTX Config file is loaded"
+    },
+    "vtxLoadFileKo": {
+        "message": "<span class=\"message-negative\">Fout</span> tijdens het laden van het VTX configuratiebestand",
+        "description": "Message in the GUI log when the VTX Config file is loaded"
+    },
     "vtxLoadClipboardOk": {
         "message": "VTX configuratie is <span class=\"message-positive\">ingeladen</span> vanaf het klembord",
         "description": "Message in the GUI log when the VTX Config file is pasted from clipboard"
@@ -3830,6 +3880,10 @@
         "message": "Lua script opslaan",
         "description": "Save Lua script button in the VTX tab"
     },
+    "vtxLuaFileHelp": {
+        "message": "Met de knop '$t(vtxButtonSaveLua.message)' kunt u een <i>crafname</i>.lua bestand opslaan die de vtx configuratie bevat welke gebruikt kan worden met de betaflight lua scripts. (Voor meer informatie klik <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">hier</a>.)",
+        "description": "Tooltip message for the Save Lua script button in the VTX tab"
+    },
     "vtxButtonLoadFile": {
         "message": "Laden uit bestand",
         "description": "Load to file button in the VTX tab"
@@ -3845,6 +3899,12 @@
     "vtxButtonSaved": {
         "message": "Opgeslagen",
         "description": "Saved action button in the VTX tab"
+    },
+    "mainHelpFailsafe": {
+        "message": "Failsafe modus"
+    },
+    "mainHelpLink": {
+        "message": "Seriële Link Status"
     },
     "configurationEscProtocol": {
         "message": "ESC/Motor protocol"
