@@ -3205,6 +3205,12 @@
     "pidTuningMotorOutputLimit": {
         "message": "Límit de sortida del motor"
     },
+    "pidTuningMotorLimit": {
+        "message": "Factor d'escala [%]"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "Factor d'escala lineal de la sortida del motor (percentual). Redueix la calor actual i del motor de l’ESC quan s’utilitzen piles de mès cèl·lules, p.ex. Quan utilitzeu una bateria 6S en una aeronau que tingui motors, puntals i ajustaments dissenyats per a 4S, proveu de fixar el valor en el 66%; si utilitzeu una bateria 4S en una aeronau destinada a 3S, proveu el 75%.<br>Assegureu-vos que tots els vostres components poden suportar el voltatge de la bateria que feu servir."
+    },
     "pidTuningCellCount": {
         "message": "Recompte de cel·les"
     },
