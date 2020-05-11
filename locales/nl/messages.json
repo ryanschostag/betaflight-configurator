@@ -1094,6 +1094,9 @@
     "configurationDigitalIdlePercent": {
         "message": "Motor Gas Waarde Stationair [percent]"
     },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "De 'DShot stationair' waarde is het percentage van het maximale gas bereik die naar de ESC's wordt gestuurd wanneer je gas stick op de laatste positie staat en je quad gearmd is. Verhoog deze waarde om je motoren sneller stationair te laten draaien en desync's te voorkomen. Een te hoge waarde kan er voor zorgen dat je quad zweverig aanvoelt."
+    },
     "configurationMotorPoles": {
         "message": "Motorpolen",
         "description": "One of the fields of the ESC/Motor configuration"
@@ -1461,6 +1464,9 @@
     "rcSmoothingInputTypeHelp": {
         "message": "Het type filtermethode gebruikt voor de invoer. De meeste gebruikers dienen de standaardwaarde \"BIQUAD\" te gebruiken. Deze waarde biedt een goede balans tussen een vloeiende invoer en een daardoor geïntroduceerde vertraging. \"PT1\" vermindert de vertraging enigszins, maar geeft een mindere vloeiende invoer."
     },
+    "receiverRcSmoothingInputManual": {
+        "message": "Selecteert of de invoer filter cutoff frequentie automatisch wordt berekend of handmatig wordt geselecteerd door de gebruiker. Automatisch is aanbevolen. Het gebruik van \"Handmatig\" wordt niet aanbevolen voor protocollen zoals Crossfire. Deze kunnen namelijk gedurende de vlucht veranderen."
+    },
     "receiverRcInputType": {
         "message": "Invoer Filter Type"
     },
@@ -1744,6 +1750,15 @@
     },
     "adjustmentsFunction0": {
         "message": "Geen wijzigingen"
+    },
+    "adjustmentsFunction6": {
+        "message": "Pitch & Roll P aanpassing"
+    },
+    "adjustmentsFunction7": {
+        "message": "Pitch & Roll I aanpassing"
+    },
+    "adjustmentsFunction8": {
+        "message": "Pitch & Roll D aanpassing"
     },
     "adjustmentsFunction9": {
         "message": "Yaw P aanpassing"
@@ -2463,6 +2478,9 @@
     "unstableFirmwareAcknoledgementFlash": {
         "message": "Flash"
     },
+    "firmwareFlasherPreviousDevice": {
+        "message": "Gedetecteerd: <strong>$1</strong> - vorig apparaat is nog aan het flashen, gelieve opnieuw te koppelen en het opnieuw te proberen"
+    },
     "ledStripButtonSave": {
         "message": "Opslaan"
     },
@@ -2512,6 +2530,14 @@
     },
     "ledStripFunctionColorOption": {
         "message": "Kleur",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionModesOption": {
+        "message": "Modus &amp; Oriëntatie",
+        "description": "One of the modes of the Led Strip"
+    },
+    "ledStripFunctionArmOption": {
+        "message": "Arm Status",
         "description": "One of the modes of the Led Strip"
     },
     "ledStripFunctionBatteryOption": {
@@ -2927,11 +2953,17 @@
     "powerCalibrationDiscard": {
         "message": "Kalibratie weggooien"
     },
+    "powerVoltageHead": {
+        "message": "Voltage Meter"
+    },
     "powerVoltageValue": {
         "message": "$1 V"
     },
     "powerVoltageCalibration": {
         "message": "Gemeten Voltage"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Gekalibreerde Voltage Schaal:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -3011,6 +3043,9 @@
     "powerVoltageDivider": {
         "message": "Waarde Verdeler"
     },
+    "powerAmperageHead": {
+        "message": "Amperage Meter"
+    },
     "powerAmperageId10": {
         "message": "Batterij"
     },
@@ -3056,6 +3091,9 @@
     "powerAmperageId80": {
         "message": "Virtueel"
     },
+    "powerAmperageId90": {
+        "message": "MSP"
+    },
     "powerMahValue": {
         "message": "$1 mAh"
     },
@@ -3097,6 +3135,9 @@
     },
     "osdSetupTitle": {
         "message": "OSD"
+    },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>WAARSCHUWING:</b></span> Er is geen OSD chip gedetecteerd. Sommige vluchtcontrollers zullen de OSD chip niet correct van energie voorzien tenzij deze is aangesloten op een batterij. Sluit de batterij aan voordat via USB aansluit. (VERWIJDER WEL EERST JE PROPELLORS!)"
     },
     "osdSetupElementsTitle": {
         "message": "Elementen"
@@ -3354,6 +3395,9 @@
         "message": "Afstand terug",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementCompassBar": {
+        "message": "Grafische kompasbalk die huidige koers toont"
+    },
     "osdTextElementWarnings": {
         "message": "Waarschuwingen",
         "description": "One of the elements of the OSD"
@@ -3371,6 +3415,10 @@
     },
     "osdDescElementEscRpm": {
         "message": "RPM gerapporteerd door ESC telemetry"
+    },
+    "osdTextElementRemaningTimeEstimate": {
+        "message": "Timer: geschatte resterende tijd",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRemaningTimeEstimate": {
         "message": "Geschate resterende vluchttijd"
@@ -3415,6 +3463,9 @@
         "message": "G-Kracht",
         "description": "One of the elements of the OSD"
     },
+    "osdDescGForce": {
+        "message": "Laat zien hoeveel G-Kracht de drone ervaart"
+    },
     "osdTextElementMotorDiag": {
         "message": "Motor diagnostiek",
         "description": "One of the elements of the OSD"
@@ -3422,9 +3473,22 @@
     "osdDescElementMotorDiag": {
         "message": "Toont een grafiek van de uitvoer van elke motor"
     },
+    "osdTextElementLogStatus": {
+        "message": "Blackbox log status",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLogStatus": {
+        "message": "Blackbox nummer en waarschuwingen"
+    },
+    "osdDescElementFlipArrow": {
+        "message": "Pijl die laat zien welke kant de motoren hoger liggen in turtle modus"
+    },
     "osdTextElementLinkQuality": {
         "message": "Kwaliteit van de verbinding",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLinkQuality": {
+        "message": "Alternatieve indicator voor 'link kwaliteit' welke is gebaseerd op het aantal frames die verloren zijn - gebruik dit voorzichtig"
     },
     "osdTextElementFlightDist": {
         "message": "Vlucht afstand",
@@ -3444,9 +3508,15 @@
         "message": "RSSI dBm waarde",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementRssiDbmValue": {
+        "message": "Waarde in dBm van het RSSI-signaal indien beschikbaar"
+    },
     "osdTextElementRcChannels": {
         "message": "RC kanalen",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRcChannels": {
+        "message": "Toon maximaal de waardes van 4 kanalen. De kanalen moeten worden opgegeven met de CLI variabele 'osd_rcchannels'"
     },
     "osdTextElementCameraFrame": {
         "message": "Camera frame",
@@ -3456,9 +3526,15 @@
         "message": "Batterij efficiëntie",
         "description": "One of the elements of the OSD"
     },
+    "osdDescElementEfficiency": {
+        "message": "Direct batterijverbruik in mAh/afstand. (vereist een geldige GPS-fix)"
+    },
     "osdTextElementUnknown": {
         "message": "Onbekend $1",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementUnknown": {
+        "message": "Onbekend element (details worden toegevoegd in een toekomstige release)"
     },
     "osdTextStatMaxSpeed": {
         "message": "Maximale snelheid",
@@ -3466,6 +3542,13 @@
     },
     "osdDescStatMaxSpeed": {
         "message": "Maximum waargenomen snelheid"
+    },
+    "osdTextStatMinBattery": {
+        "message": "Batterij minimum voltage",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinBattery": {
+        "message": "Minimale waargenome batterij voltage"
     },
     "osdTextStatMinRssi": {
         "message": "RSSI minimum",
@@ -3666,8 +3749,18 @@
         "message": "ESC faalt",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
+    "osdWarningEscFail": {
+        "message": "Toon een lijst met ESCs/motoren die niet werken (RPM of temperatuur buiten de geconfigureerde drempelwaarde)"
+    },
     "osdWarningTextCoreTemperature": {
         "message": "Kern temperatuur",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningCoreTemperature": {
+        "message": "Waarschuwt wanneer de MCU kerntemperatuur de ingestelde drempelwaarde overschrijdt"
+    },
+    "osdWarningTextFailsafe": {
+        "message": "Uitval beveiliging",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningFailsafe": {
@@ -3676,6 +3769,9 @@
     "osdWarningTextGpsRescueUnavailable": {
         "message": "Redding via GPS is niet beschikbaar",
         "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningGpsRescueUnavailable": {
+        "message": "Waarschuwt wanneer GPS Redding niet beschikbaar is en niet kan worden geactiveerd"
     },
     "osdWarningTextGpsRescueDisabled": {
         "message": "GPS-redding uitgeschakeld",
@@ -3688,22 +3784,49 @@
         "message": "RSSI",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
+    "osdWarningRSSI": {
+        "message": "Waarschuwt wanneer RSSI onder de ingestelde drempelwaarde komt"
+    },
     "osdWarningTextLinkQuality": {
         "message": "Kwaliteit van de verbinding",
         "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLinkQuality": {
+        "message": "Waarschuwt wanneer de link kwaliteit onder de ingestelde drempelwaarde komt"
     },
     "osdWarningTextRssiDbm": {
         "message": "RSSI dBm",
         "description": "One of the warnings that can be selected to be shown in the OSD"
     },
+    "osdWarningRssiDbm": {
+        "message": "Waarschuwt wanneer de RSSI dBm waarde onder de ingestelde drempelwaarde komt"
+    },
+    "osdWarningOverCap": {
+        "message": "Waarschuwt wanneer de verbruikte mAh de ingestelde capaciteitslimiet overschrijdt"
+    },
     "osdWarningTextUnknown": {
         "message": "Onbekend $1"
+    },
+    "osdWarningUnknown": {
+        "message": "Onbekende waarschuwing (details worden toegevoegd in een toekomstige release)"
+    },
+    "osdSectionHelpElements": {
+        "message": "OSD elementen in- of uitschakelen."
+    },
+    "osdSectionHelpVideoMode": {
+        "message": "Stel de verwachte videomodus van de camera in (meestal kan deze instelling op de AUTO blijven staan. Als u problemen heeft, stel dan deze waarde correct in)."
     },
     "osdSectionHelpTimers": {
         "message": "Configureer vlucht timers."
     },
+    "osdSectionHelpStats": {
+        "message": "Stel de waarden in die zichtbaar zijn op het post-flight statistieken scherm."
+    },
     "osdSettingsSaved": {
         "message": "OSD instellingen opgeslagen"
+    },
+    "osdWritePermissions": {
+        "message": "Je hebt geen <span class=\"message-negative\">schrijfrechten</span> op dit bestand"
     },
     "osdButtonSaved": {
         "message": "Opgeslagen"
@@ -3827,6 +3950,10 @@
     "vtxTable": {
         "message": "VTX tabel",
         "description": "Text of the header of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsHelp": {
+        "message": "Dit definieert het aantal stroomniveaus die uw VTX ondersteund",
+        "description": "Help for the number of power levels field of the VTX Table element in the VTX tab"
     },
     "vtxTablePowerLevelsValue": {
         "message": "Waarde",
@@ -3954,6 +4081,13 @@
     },
     "pidTuningProfile": {
         "message": "Profiel"
+    },
+    "pidTuningRateProfileTip": {
+        "message": "Tot 3 verschillende rateprofielen per profiel kunnen worden opgeslagen op uw vluchtcontroller. De rateprofielen bevatten de instellingen voor 'RC Rate', 'Rate', 'RC Expo', 'Throttle' en 'TPA'. Het schakelen tussen deze profielen is mogelijk tijdens het vliegen. Gebruik hiervoor een 3 positieschakelaar. Configureer deze op het tabblad 'Aanpassingen'. Zoek op dit tabblad naar \"Rate Profiel Selectie\"."
+    },
+    "pidTuningRateSetupHelp": {
+        "message": "Pas deze waarden aan om uw Rates in te stellen. Gebruik RC Rate om de maximale uiteindelijke rotatie te verhogen. Gebruik Super Rate om de rotatie aan het einde van de stick te beinvloeden. Gebruik RC Expo om het middelste bereid van de stick te beinvloeden.",
+        "description": "Rate table helpicon message"
     },
     "pidTuningDeltaError": {
         "message": "Fout"
