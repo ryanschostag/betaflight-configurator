@@ -914,6 +914,10 @@
         "message": "已启用了使用加速度计的功能，但加速度计未校准。请校准加速度计。",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "尚未选择电机输出协议",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "解锁时有一个阻止解锁的标志处于活跃状态",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
@@ -1566,6 +1570,10 @@
     "pidTuningDMinFeatureHelp": {
         "message": "D Min 提供了一个方法，使飞机在正常飞行中可以维持一个较低的 D 值，又可以在如翻转等快速动作时提高到一个较高的值来抑制过冲。它也会在发生洗桨时提高 D 值。调整增益(Gain) 可以调整 D 到达最高值的速度，同时它基于陀螺仪数据来确定快速移动与洗桨事件。超前(Advance) 通过使用设定点而不是陀螺仪来判定快速移动的方法来更早地提高 D 值。",
         "description": "D Min feature helpicon message"
+    },
+    "pidTuningDMinHelp": {
+        "message": "控制正常前进飞行中的阻尼(D-term)。<br>当 D Min 开启后，D 增益的有效值将在飞行中实时变化。在正常前进飞行中，有效值将是下方所设置的 D_min 增益。当发生快速移动或洗桨时，D 增益的有效值将会提高至左侧指定的 D_max 值。<br><br>当出现非常迅速的摇杆输入时，D 增益将升高至 D_max，但在洗桨时仅会升高至一部分。<br>调整 D Min 增益和超前以控制增益增大的敏感性和时机。",
+        "description": "D Min helpicon message on PID table titlebar"
     },
     "pidTuningPidSettings": {
         "message": "PID 控制器设置"
@@ -3249,6 +3257,12 @@
     "pidTuningMotorOutputLimit": {
         "message": "电机输出限制"
     },
+    "pidTuningMotorLimit": {
+        "message": "缩放因子 [%]"
+    },
+    "pidTuningMotorLimitHelp": {
+        "message": "电机输出线性缩放因子（百分比）。用于在使用高芯数电池时降低电调电流和电机发热，例如，在一台电机、桨和参数均已针对4S动力优化过的机器上使用6S电池，请尝试将此值设为66%；在一台动力设计为3S的机器上使用4S电池，请尝试设为75%。<br>请确保您的所有配件都支持您正在使用的电池电压。"
+    },
     "pidTuningCellCount": {
         "message": "电芯数"
     },
@@ -3572,6 +3586,9 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "此功能通过根据摇杆快速移动量来短暂提高油门变化值以增加电机的加速扭矩，使得油门响应更为迅速。"
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "动态怠速值 [* 100 RPM]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "动态怠速可以提升低转速下的控制力，并减少电机失步的风险。它纠正了由于气流使得螺旋桨加速或减速而引起的问题，提高了PID的权重、稳定性、电机制动和响应能力。动态怠速的 RPM 值应设置得比您的 Dshot 怠速值（请查看 $t(tabMotorTesting.message) 选项卡）对应的 RPM 值低20%。通常不需要修改默认的 Dshot 怠速值。为了延长倒挂动作的滞空时间，应该同时降低 Dshot 怠速值和动态怠速值。<br><br>访问<a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\">这个wiki</a>以获取更多信息。"
