@@ -706,10 +706,10 @@
         "message": "Gyorsulásmérő igazítások"
     },
     "initialSetupPitch": {
-        "message": "Hosszdőlés"
+        "message": "Pitch:"
     },
     "initialSetupRoll": {
-        "message": "Dőlés:"
+        "message": "Roll:"
     },
     "initialSetupMagHead": {
         "message": "Magnetométer"
@@ -850,6 +850,10 @@
         "message": "A gyorsulásmérőt még nem kalibrálták, és engedélyezve vannak a rajta támaszkodó funkciók. Kalibrálja a gyorsulásmérőt.",
         "description": "Message that pops up to describe the NO_ACC_CAL arming disable flag"
     },
+    "initialSetupArmingDisableFlagsTooltipMOTOR_PROTO": {
+        "message": "Nincs motor kimeneti protokol kiválasztva",
+        "description": "Message that pops up to describe the MOTOR_PROTO arming disable flag"
+    },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Az egyik hatástalanító zászló élesítéskor aktív",
         "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
@@ -897,7 +901,7 @@
         "message": "Akkumulátor feszültség figyelése"
     },
     "featureINFLIGHT_ACC_CAL": {
-        "message": "Kalibráciió repülés közben"
+        "message": "Kalibráció repülés közben"
     },
     "featureRX_SERIAL": {
         "message": "Soros vevő (SPEKSAT, SBUS, SUMD)"
@@ -1104,10 +1108,10 @@
         "message": "Gyorsulásmérő Igazítás"
     },
     "configurationAccelTrimRoll": {
-        "message": "Gyorsulásmérő Dőlés Igazítás"
+        "message": "Gyorsulásmérő Roll Igazítás"
     },
     "configurationAccelTrimPitch": {
-        "message": "Gyorsulásmérő Hosszdőlés Igazítás"
+        "message": "Gyorsulásmérő Pitch Igazítás"
     },
     "configurationArming": {
         "message": "Élesítés"
@@ -1604,10 +1608,10 @@
         "message": "RC Interpollációs Tartomány [ms]"
     },
     "pidTuningFeedforwardTransition": {
-        "message": "Előremenő átmenet"
+        "message": "Feedforward átmenet"
     },
     "pidTuningFeedforwardTransitionHelp": {
-        "message": "Ezzel a paraméterrel az előtolás időtartama csökkenthető a karok középpontja közelében, aminek eredményeként a fordulások simábbak lesznek.<br> Az érték a kar eltérítési pontját jelzi: 0 - a kar középpontjában, 1 - a teljes elhajlás. Amikor a kar e pont fölött van, az Előretolás folyamatosan állandó marad a konfigurált értékén. Ha a kart e pont alá helyezik, a előretolás arányosan csökken, és a kar középhelyzetében eléri a 0.<br> 1 érték biztosítja a maximális simítási hatást, míg a 0 érték tartja az előretolást a konfigurált értékén rögzítve a teljes tartományban."
+        "message": "Ezzel a paraméterrel a Feedforward időtartama csökkenthető a karok középpontja közelében, aminek eredményeként a fordulások simábbak lesznek.<br> Az érték a kar eltérítési pontját jelzi: 0 - a kar középpontjában, 1 - a teljes elhajlás. Amikor a kar e pont fölött van, a Feedforward folyamatosan állandó marad a konfigurált értékén. Ha a kart e pont alá helyezik, a Feedforward arányosan csökken, és a kar középhelyzetében eléri a 0.<br> 1 érték biztosítja a maximális simítási hatást, míg a 0 érték tartja a Feedforward konfigurált értékén rögzítve a teljes tartományban."
     },
     "pidTuningDtermSetpointTransition": {
         "message": "D Alapjel átmenet"
@@ -1649,7 +1653,7 @@
         "description": "Derivative Term helpicon message on PID table titlebar"
     },
     "pidTuningFeedforward": {
-        "message": "Előremenet"
+        "message": "Feedforward"
     },
     "pidTuningFeedforwardHelp": {
         "message": "Egy kiegészítő tolóerő (rugó), ami a kar bevitelén alapszik. Az FF segíti a drón P-term-jét a parancsolt karmozgatásokhoz. <br><br>A P-term a parancsolt alapérték (fok / másodperc) és a pillanatnyi forgási sebesség. giroszkóp-leolvasása közötti különbség alapján tolódik (fok / másodperc). Az FF tolódások csak a karok parancsolt változása alapján készültek. <br><br>A magasabb értékek (nyereségek) élesebb gépi reakciót eredményeznek a karok bevitelére. <br>A túl magas értékek túllépést, megnövekedett motorhőt eredményezhetnek (ahol a motorok nem tudnak lépést tartani a kívánt változási sebességgel). <br>Az alacsony vagy nulla (0) értékek lassabb és simább választ eredményeznek a pálcika bemeneteire.",
@@ -1991,13 +1995,13 @@
         "message": "Yaw Rate beállítás"
     },
     "adjustmentsFunction6": {
-        "message": "Hosszdőlés és Dőlés P Igazítás"
+        "message": "Pitch és Roll P Igazítás"
     },
     "adjustmentsFunction7": {
-        "message": "Hosszdőlés és Dőlés I Igazítás"
+        "message": "Pitch és Roll I Igazítás"
     },
     "adjustmentsFunction8": {
-        "message": "Hosszdőlés és Dőlés D Igazítás"
+        "message": "Pitch és Roll D Igazítás"
     },
     "adjustmentsFunction9": {
         "message": "Yaw P Igazítás"
@@ -2015,25 +2019,25 @@
         "message": "Pitch Rate"
     },
     "adjustmentsFunction14": {
-        "message": "Dőlési Sebesség"
+        "message": "Roll Rate"
     },
     "adjustmentsFunction15": {
-        "message": "Hosszdőlés P Igazítás"
+        "message": "Pitch P Igazítás"
     },
     "adjustmentsFunction16": {
-        "message": "Hosszdőlés I Igazítás"
+        "message": "Pitch I Igazítás"
     },
     "adjustmentsFunction17": {
-        "message": "Hosszdőlés D Igazítás"
+        "message": "Pitch D Igazítás"
     },
     "adjustmentsFunction18": {
-        "message": "Dőlés P Igazítás"
+        "message": "Roll P Igazítás"
     },
     "adjustmentsFunction19": {
-        "message": "Dőlés I Igazítás"
+        "message": "Roll I Igazítás"
     },
     "adjustmentsFunction20": {
-        "message": "Dőlés D Igazítás"
+        "message": "Roll D Igazítás"
     },
     "adjustmentsFunction21": {
         "message": "RC Rate Yaw"
@@ -2048,7 +2052,7 @@
         "message": "D Alapjel átmenet"
     },
     "adjustmentsFunction23_2": {
-        "message": "Előremenő átmenet"
+        "message": "Feedforward átmenet"
     },
     "adjustmentsFunction24": {
         "message": "Horizon erősség beállítása"
@@ -3137,7 +3141,7 @@
         "message": "Yaw ugrás megelőzése"
     },
     "pidTuningYawJumpPreventionHelp": {
-        "message": "Megakadályozza, hogy a drón felugrjon a Yaw végén. A nagyobb szám nagyobb csillapítást ad a mozgáskorlátozások végén (úgy működik, mint a régi D vonal, amely nem volt igazi D, mint a másik tengelyen)"
+        "message": "Megakadályozza, hogy a drón felugorjon a Yaw végén. A nagyobb szám nagyobb csillapítást ad a mozgások végén (úgy működik, mint a régi D vonal, amely nem volt igazi D, mint a másik tengelyen)"
     },
     "pidTuningRcExpoPower": {
         "message": "RX Expo erő"
@@ -3223,7 +3227,7 @@
         "description": "D Term filtering tuning slider helpicon message"
     },
     "pidTuningPidSlidersHelp": {
-        "message": "Csúszkák a drón repülési jellemzők beállításához (PID érzékenység) <br><br> Mester szorzó: Az összes PID érzékenységet megemeli vagy csökkenti (fent), amely megtartja a nyereség arányos különbségét. <br><br> PD egyensúly: Beállítja az egyensúlyt (arány \\ arányos különbség) a P és a D kifejezések ('rugó' [p-term] és 'lengéscsillapító' [d-term]) között. <br> <br> PD érzékenység: Növeli vagy csökkenti a P & D érzékenységet - a kettő közötti arány (egyensúly) tartása - több (vagy kevesebb) PID-szabályozással. <br><br> Kar visszajelzési érzékenység: Növeli vagy csökkenti az előrementei érzékenységet a drón irányítás válaszérzetének szabályozására.",
+        "message": "Csúszkák a drón repülési jellemzők beállításához (PID érzékenység) <br><br> Mester szorzó: Az összes PID érzékenységet megemeli vagy csökkenti (fent), amely megtartja a nyereség arányos különbségét. <br><br> PD egyensúly: Beállítja az egyensúlyt (arány \\ arányos különbség) a P és a D kifejezések ('rugó' [p-term] és 'lengéscsillapító' [d-term]) között. <br> <br> PD érzékenység: Növeli vagy csökkenti a P & D érzékenységet - a kettő közötti arány (egyensúly) tartása - több (vagy kevesebb) PID-szabályozással. <br><br> Kar visszajelzési érzékenység: Növeli vagy csökkenti a Feedforward érzékenységet a drón irányításának.",
         "description": "Overall helpicon message for PID tuning sliders"
     },
     "pidTuningSliderWarning": {
@@ -3449,7 +3453,7 @@
         "message": "Megfelelően elforgatja az aktuális I Term vektort más tengelyekhez, mivel a quad forog, amikor Rollt vagy egyéb trükköt hajt végre. Nagyon szeretok a LOS pilóták."
     },
     "pidTuningSmartFeedforward": {
-        "message": "Okos előremenet"
+        "message": "Smart Feedforward"
     },
     "pidTuningSmartFeedforwardHelp": {
         "message": "Csökkenti az F kifejezés hatását a PID-ben. Ha mind a P, mind az F kifejezés egyidejűleg aktív, akkor csak a kettő közül a nagyobbat használja, elkerülve a túllépést anélkül, hogy D-et emelni kellene, de csökkenti az F-kifejezés által a P-hez hozzáadott válaszreakciós hatást is."
@@ -3471,10 +3475,10 @@
         "message": "RPY"
     },
     "pidTuningItermRelaxAxesOptionRPInc": {
-        "message": "RP (csak növekmény)"
+        "message": "RP (csak növekedés)"
     },
     "pidTuningItermRelaxAxesOptionRPYInc": {
-        "message": "RPY (csak növekmény)"
+        "message": "RPY (csak növekedés)"
     },
     "pidTuningItermRelaxType": {
         "message": "Típus",
@@ -3504,6 +3508,9 @@
     },
     "pidTuningThrottleBoostHelp": {
         "message": "Ez a szolgáltatás lehetővé teszi a gáz ideiglenes növelését a gyors karmozgásoknál, ami növeli a motorok gyorsulási nyomatékát, és sokkal gyorsabb gáz választ ad."
+    },
+    "pidTuningIdleMinRpm": {
+        "message": "Dinamikus alapjárati érték [* 100 rpm]"
     },
     "pidTuningIdleMinRpmHelp": {
         "message": "A dinamikus alapjárat javítja az irányítást alacsony fordulatszámon és csökkenti a motor desyncjeinek kockázatát. Javítja a propellerek felgyorsításának vagy lelassításának a légáramlása által okozott problémákat, javítja a PID hatékonyságát, a stabilitást, a motor fékezését és a reakcióképességet. A dinamikus tétlen fordulatszámot körülbelül 20% -kal kell beállítani a Dshot tétlenségi fordulatszáma alatt (lásd a $t(tabMotorTesting.message) fület). Általában nincs szükség a DShot alapjárati értékének változtatására. A hosszabb invertált hangidő érdekében a DShot alapjárati és a minimális fordulatszámot együtt kell csökkenteni. <br><br>Látogassa meg a <a href=\"https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle\"target=\"_blank\" rel=\"noopener noreferrer\"> ezt a wiki bejegyzés </a> a további információkért."
@@ -3748,11 +3755,23 @@
     "powerCalibrationApply": {
         "message": "Alkalmazza a kalibrálást"
     },
+    "powerCalibrationDiscard": {
+        "message": "Kalibrálás elvetése"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "Új kalibrált skálák jelennek meg itt. <br> Ha alkalmazza őket, akkor beállítja a skálakat, de <strong> nem menti őket.</strong></br><br> A mentés után ellenőrizze, hogy az új feszültség és áram megfelelő-e. </br>"
+    },
     "powerVoltageHead": {
         "message": "Feszültségmérő"
     },
     "powerVoltageValue": {
         "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "Mért feszültség"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Kalibrált feszültség skála:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -3892,6 +3911,15 @@
     "powerAmperageScale": {
         "message": "Skála [1/10th mV/A]"
     },
+    "powerAmperageOffset": {
+        "message": "Eltolás [mA]"
+    },
+    "powerAmperageCalibration": {
+        "message": "Mért áramerősség"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "Kalibrált áram skála:"
+    },
     "powerBatteryHead": {
         "message": "Akkumulátor"
     },
@@ -3922,17 +3950,78 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
+    "osdSetupNoOsdChipDetectWarning": {
+        "message": "<span class=\"message-negative\"><b>VIGYÁZAT:</b></span>Nem észlelt OSD-chipet. Egyes repülésvezérlők nem fogják megfelelően táplálni az OSD chipet, ha nem csatlakoztatják az akkumulátorhoz. Az USB csatlakoztatása előtt csatlakoztassa az akkumulátort (Eltávolított propellerekkel!)."
+    },
+    "osdSetupPreviewHelp": {
+        "message": "<strong>Megjegyzés:</strong>Lehet, hogy az OSD előnézete nem jeleníti meg a tényleges betűkészletet, amelyet a repülésvezérlőre telepített. Az egyes elemek elrendezése eltérhet a firmware régebbi verzióinak használatakor - repülés előtt kérjük, ellenőrizze a szemüvegében a képet."
+    },
     "osdSetupUnsupportedNote1": {
         "message": "A repülésvezérlő nem reagál az OSD parancsaira. Ezt valószínűleg az okozza, hogy nem rendelkezik beépített BetaFlight OSD-vel."
+    },
+    "osdSetupUnsupportedNote2": {
+        "message": "Vegye figyelembe, hogy néhány repülési irányítónak van fedélzete <a href=\"https://www.youtube.com/watch?v=ikKH_6SQ-Tk\" target=\"_blank\" rel=\"noopener noreferrer\">MinimOSD</a>amelyekket frissíthet és konfigurálhat<a href=\"https://github.com/ShikOfTheRa/scarab-osd/releases/latest\" target='_blank'>scarab-osd</a>,azonban a MinimOSD nem konfigurálható ezen a felületen keresztül."
+    },
+    "osdSetupProfilesTitle": {
+        "message": "OSD profil szám",
+        "description": "Description of the header of the OSD elements column associated to each profile"
     },
     "osdSetupElementsTitle": {
         "message": "Elemek"
     },
+    "osdSetupPreviewTitle": {
+        "message": "Húzza az elemeket a helyzetük megváltoztatásához",
+        "description": "Indicates in the preview window of the OSD that the user can drag the elements to reorder them"
+    },
+    "osdSetupPreviewSelectProfileTitle": {
+        "message": "Előnézet a",
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
+    },
+    "osdSetupPreviewForTitle": {
+        "message": "A profil vagy a betűkészlet megváltoztatása NEM változtatja meg a profilt vagy betűtípust a repülési vezérlőben, csak az előnézeti ablakot érinti. Ha meg akarja változtatni, akkor használja a '$t(osdSetupSelectedProfileTitle.message)' opciót vagy '$t(osdSetupFontManager.message)' gombot.",
+        "description": "Help content for the OSD profile and font PREVIEW"
+    },
+    "osdSetupSelectedProfileTitle": {
+        "message": "Aktív OSD profil",
+        "description": "Title of the box to select the current active OSD profile"
+    },
+    "osdSetupSelectedProfileLabel": {
+        "message": "Jelenlegi:",
+        "description": "Label for the selection of the curren active OSD profile"
+    },
+    "osdSetupPreviewSelectProfileElement": {
+        "message": "OSD profil {{profileNumber}}",
+        "description": "Content of the selector for the OSD Profile in the preview"
+    },
+    "osdSetupPreviewSelectFontElement": {
+        "message": "Betűtípus {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
+    },
     "osdSetupVideoFormatTitle": {
         "message": "Videó Formátum"
     },
+    "osdSetupVideoFormatOptionAuto": {
+        "message": "Auto",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionPal": {
+        "message": "PAL",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionNtsc": {
+        "message": "NTSC",
+        "description": "Option for the video format in the OSD"
+    },
     "osdSetupUnitsTitle": {
         "message": "Egységek"
+    },
+    "osdSetupUnitsOptionImperial": {
+        "message": "Imperial",
+        "description": "Option for the units system used in the OSD"
+    },
+    "osdSetupUnitsOptionMetric": {
+        "message": "Metrikus",
+        "description": "Option for the units system used in the OSD"
     },
     "osdSetupTimersTitle": {
         "message": "Időzítő"
@@ -3955,8 +4044,30 @@
     "osdSetupFontPresets": {
         "message": "Alapértelmezett betűtípusok:"
     },
+    "osdSetupFontPresetsSelector": {
+        "message": "Válassz Betűkészlet lehetőséget:"
+    },
+    "osdSetupFontPresetsSelectorCustomOption": {
+        "message": "A felhasználó által megadott betűtípus",
+        "description": "Option to show as selected when the user selects a custom local font"
+    },
+    "osdSetupFontPresetsSelectorOr": {
+        "message": "vagy"
+    },
     "osdSetupOpenFont": {
         "message": "Betűtípus Fájl Megnyitása"
+    },
+    "osdSetupCustomLogoTitle": {
+        "message": "Boot logo:"
+    },
+    "osdSetupCustomLogoOpenImageButton": {
+        "message": "Egyéni kép kiválasztása&hellip;"
+    },
+    "osdSetupCustomLogoInfoTitle": {
+        "message": "Egyéni kép:"
+    },
+    "osdSetupCustomLogoInfoColorMap": {
+        "message": "Zöld, fekete és fehér pixeleket kell tartalmaznia"
     },
     "osdSetupUploadFont": {
         "message": "Betűtípus Feltöltése"
@@ -3993,6 +4104,10 @@
     },
     "osdDescElementThrottlePosition": {
         "message": "Aktuális gázkar csatorna érték"
+    },
+    "osdTextElementCpuLoad": {
+        "message": "CPU kihasználtság",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementArmed": {
         "message": "Szöveges élesített üzenet"
@@ -4052,10 +4167,10 @@
         "message": "Átlag cellafeszültség (akkumulátor feszültség / cellaszám)"
     },
     "osdDescElementPitchAngle": {
-        "message": "Hosszdőlésszög fokokban"
+        "message": "Pitch fokokban"
     },
     "osdDescElementRollAngle": {
-        "message": "Oldaldőlési szög fokokban"
+        "message": "Roll szög fokokban"
     },
     "osdDescElementMainBattUsage": {
         "message": "Fogyasztott ektromos töltés grafikus reprezentációja"
@@ -4137,6 +4252,69 @@
     },
     "osdSettingsSaved": {
         "message": "OSD beállítások elmenve"
+    },
+    "osdButtonSaved": {
+        "message": "Mentve"
+    },
+    "vtxTable": {
+        "message": "VTX-videóadó Tábla",
+        "description": "Text of the header of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsHelp": {
+        "message": "Ez határozza meg milyen jelsugárzási erő szinteket támogat a videóadód",
+        "description": "Help for the number of power levels field of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsValue": {
+        "message": "Érték",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsLabel": {
+        "message": "Címke",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBands": {
+        "message": "Band-ek száma",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableChannels": {
+        "message": "Band-enkénti channel-ek száma",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandsChannelsHelp": {
+        "message": "Ez határozza meg a band-ek és a band-enkénti channel-ek számát, amiket a videóadódhoz használnál.",
+        "description": "Help for the number of bands and channels field of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleName": {
+        "message": "Név",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleLetter": {
+        "message": "Szám",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleFactory": {
+        "message": "Gyártó",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxButtonSaveFile": {
+        "message": "Lementés fájlként",
+        "description": "Save to file button in the VTX tab"
+    },
+    "vtxButtonLoadFile": {
+        "message": "Betöltés fájlból",
+        "description": "Load to file button in the VTX tab"
+    },
+    "vtxButtonLoadClipboard": {
+        "message": "Betöltés vágólapról",
+        "description": "Paste from clipboard button in the VTX tab"
+    },
+    "vtxButtonSave": {
+        "message": "Mentés",
+        "description": "Save button in the VTX tab"
+    },
+    "vtxButtonSaved": {
+        "message": "Elmentve",
+        "description": "Saved action button in the VTX tab"
     },
     "mainHelpArmed": {
         "message": "Motor Élesítés"
@@ -4259,6 +4437,9 @@
     "onboardLoggingDebugMode": {
         "message": "Blackbox hibakeresési mód"
     },
+    "onboardLoggingDebugModeUnknown": {
+        "message": "ISMERETLEN"
+    },
     "onboardLoggingSerialLogger": {
         "message": "Fedélzeti soros porton csatlakozó naplózó eszköz"
     },
@@ -4286,6 +4467,9 @@
     "dialogConfirmResetTitle": {
         "message": "Megerősítés"
     },
+    "dialogConfirmResetNote": {
+        "message": "FIGYELEM: Biztos, hogy MINDEN beállítást vissza akarsz állítani alapértelmezettre?"
+    },
     "dialogConfirmResetConfirm": {
         "message": "Visszaállítás"
     },
@@ -4303,6 +4487,12 @@
     },
     "flashTab": {
         "message": "Firmware-frissítés"
+    },
+    "cliAutoComplete": {
+        "message": "Fejlett CLI AutoKiegészítés"
+    },
+    "darkTheme": {
+        "message": "Sötét mód bekapcsolása"
     },
     "pidTuningRatesType": {
         "message": "Rate típusok"
