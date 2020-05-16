@@ -411,7 +411,7 @@
         "message": "Perkrauti į <strong>boot loader / DFU</strong> režimą."
     },
     "initialSetupButtonResetZaxisValue": {
-        "message": "Išvalyti Z ašį, ofsetas: $1 deg"
+        "message": "Numesti Z ašį, ofsetas: $1 deg"
     },
     "initialSetupInfoHead": {
         "message": "Informacija"
