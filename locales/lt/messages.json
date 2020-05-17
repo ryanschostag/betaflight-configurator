@@ -87,11 +87,11 @@
         "message": "Sistemos numatytoji ($t(detectedLanguage))"
     },
     "sensorDataFlashNotFound": {
-        "message": "Duomenų saugojimo <br>mikroschema nerasta",
+        "message": "Duomenų saugojimo <br>įrenginys nerastas",
         "description": "Text of the dataflash image in the header of the page."
     },
     "sensorDataFlashFreeSpace": {
-        "message": "Duomenų saugojimo mikroschema: laisva vieta",
+        "message": "Duomenų saugojimo įrenginys: laisva vieta",
         "description": "Text of the dataflash image in the header of the page."
     },
     "sensorStatusGyro": {
@@ -1009,6 +1009,167 @@
     "portsFunction_LIDAR_TF": {
         "message": "Benewake LIDAR"
     },
+    "receiverRcSmoothing": {
+        "message": "RC glodinimas"
+    },
+    "receiverRcSmoothingAuto": {
+        "message": "Auto"
+    },
+    "receiverRcSmoothingManual": {
+        "message": "Rankinis"
+    },
+    "receiverRcSmoothingAutoSmoothness": {
+        "message": "Automatinis glotninimas",
+        "description": "Auto Smoothness parameter for RC smoothing"
+    },
+    "receiverRcSmoothingAutoSmoothnessHelp": {
+        "message": "Reguliuoja Automatinio glotninimo skaičiavimus, 10 - numatytasis glotninimo-uždelsimo santykis. Skaičiaus didinimas suteiks daugiau filtravimo, tačiau pridės daugiau uždėlsimo. Tai gali būti naudojama blogąjį ryšį turinčioms/filmavimui skirtoms skraidyklėms.<br>Būkite atsargus su reikšmėmis, siekiančiomis 50, uždelsimas bus labai juntamas.<br>Norint pamatyti automatiškai apskaičiuotą glotninimo ribojimą naudokite CLI komandą rs_smoothing_info, tuo metų kai TX ir RX yra įjungti. ",
+        "description": "Auto Smoothness parameter help message"
+    },
+    "receiverRcDerivativeTypeSelect": {
+        "message": "Išvestiniės ribos tipas"
+    },
+    "receiverRcInputTypeSelect": {
+        "message": "Įejimo ribojimo tipas"
+    },
+    "receiverRcSmoothingInterpolation": {
+        "message": "Interpoliacija"
+    },
+    "receiverRcSmoothingFilter": {
+        "message": "Filtras"
+    },
+    "rcSmoothingInputCutoffHelp": {
+        "message": "Ribojimo dažnis (hercais), naudojamas įėjimo filtrui. Naudojant žemesnę reikšmę, glotinimas bus stipresnis, kas patartina letesnėms įmtuvų protokolams. Dauguma vartotojų turi palikti reikšmę 0, kas reiškia \"Auto\"."
+    },
+    "rcSmoothingDerivativeCutoffHelp": {
+        "message": "Ribojimo dažnis (hercais), naudojamas išvestiniam setpoint filtrui. Naudojant žemesnę reikšmę, glotinimas bus stipresnis, kas patartina letesnėms įmtuvų protokolams. Dauguma vartotojų turi palikti reikšmę 0, kas reiškia \"Auto\"."
+    },
+    "rcSmoothingDerivativeTypeHelp": {
+        "message": "Filtravimo tipas. Pradedant versija 4.2 numatytoji reikšmė yra \"Auto\". Versijai 4.1 arba žemesnei dauguma vartotojų turi naudoti numatytąjį \"BIQUAD\", nes tai leidžia išlaikyt balansą tarp glotninimo ir uždelsimų. \"PT1\" šiek tiek sumažina uždelsimą, tačiau mažiau glotnina."
+    },
+    "rcSmoothingInputTypeHelp": {
+        "message": "Filtravimo tipas. Dauguma vartotojų turėtu naudoti \"BIQUAD\", nes tai leidžia išlaikyt balansą tarp glotninimo ir uždelsimų. \"PT1\" šiek tiek sumažina uždelsimą, tačiau mažiau glotnina."
+    },
+    "receiverRcSmoothingInputManual": {
+        "message": "Pasirinkite, ar įėjimo filtro ribojimo dažnis bus skaičiuojamas automatiškai (rekomenduojama), ar bus fiksuotas vartotojo pasirinktu. Varianto \"Rankinis\" naudojimas nėra rekomenduojamas imtuvų protokolams kaip Crossfire, kurie gali keistis beskraidant."
+    },
+    "receiverRcSmoothingDerivativeManual": {
+        "message": "Pasirenka, ar setpoint išvestinio filtro ribojimo dažnis bus skaičiuojamas automatiškai (rekomenduojama), ar bus fiksuotas vartotojo pasirinktu. Varianto \"Rankinis\" naudojimas nėra rekomenduojamas imtuvų protokolams kaip Crossfire, kurie gali keistis beskraidant."
+    },
+    "receiverRcSmoothingInputHz": {
+        "message": "Įėjimo ribojimo dažnis"
+    },
+    "receiverRcSmoothingDerivativeCutoff": {
+        "message": "Išvestiniės ribos dažnis"
+    },
+    "receiverRcInputType": {
+        "message": "Įėjimo filtro tipas"
+    },
+    "receiverRcDerivativeType": {
+        "message": "Išvestinės filtro tipas"
+    },
+    "receiverRcSmoothingDerivativeTypeOff": {
+        "message": "Išj."
+    },
+    "receiverRcSmoothingChannel": {
+        "message": "Glotninami kanalai"
+    },
+    "receiverRcInterpolation": {
+        "message": "RC Interpoliacija"
+    },
+    "receiverRcInterpolationHelp": {
+        "message": "RC TX/RX sistemos nėra tokios pat greitos kaip PID kontroleriai. Tai reiškia, kad PID kontroleris turės \"skyles\" informacijoje, ateinančioje iš RC (valdymo) sistemos. Ši opcija įjungia RC duomenų interpoliaciją tuo metų, kai duomenų iš RC sistemos nėra. Nustatymas taip pat suteikia švaresnį P ir D veikimą nes jie nebesiremia valdymo signalais."
+    },
+    "receiverRcInterpolationIntervalHelp": {
+        "message": "Interpoliacijos intervalas rankiniam RC interpoliacijos režimui milisekundemis"
+    },
+    "receiverRcInterpolationOff": {
+        "message": "Išj."
+    },
+    "receiverRcSmoothingType": {
+        "message": "Glotninimo tipas"
+    },
+    "receiverRcInterpolationDefault": {
+        "message": "Ruošinys"
+    },
+    "receiverRcInterpolationAuto": {
+        "message": "Auto"
+    },
+    "receiverRcInterpolationManual": {
+        "message": "Rankinis"
+    },
+    "receiverRcInterpolationInterval": {
+        "message": "RC interpoliacijos intervalas [ms]"
+    },
+    "receiverHelp": {
+        "message": "Perskaitykite įmtuvo dalį dokumetacijoje. Nustatykite nuoseklųjį prievadą (jeigu reikia), imtuvo režimą (serial/ppm/pwm), tipą (nuosekliesiems imtuvams), atlikite bind procedūrą, nustatykite kanalų išdėstymą, kraštinius režius siustuve, kad visi kanalai turėtu reikšmes nuo ~1000 iki ~2000. Nustatykite centro reikšmę (paprastai 1500), atlikite kanalų 'trim', kad reikšmė būtu 1500, nustatykite svirčių nejautrumo zonas, patikrinkite siustuvo elgsiena jam esant išjungtam arba nebunant ryšiui.<br /><span class=\"message-negative\">SVARBU:</span> Prieš skrydį perskaitykite failsafe dokumentacijos dalį ir nustatykite failsafe."
+    },
+    "receiverStickMin": {
+        "message": "'Apatinė Svirties' riba"
+    },
+    "receiverHelpStickMin": {
+        "message": "Maksimali reikšmė (mikrosekundėmis) svirties atpažinimui kaip žema/kairė komanda (MIN_CHECK)."
+    },
+    "receiverStickCenter": {
+        "message": "Svirties centras"
+    },
+    "receiverHelpStickCenter": {
+        "message": "Reikšmė (mikrosekundėmis) svirties centro nustatymui (MID_RC)."
+    },
+    "receiverStickMax": {
+        "message": "'Viršutinė Svirties' riba"
+    },
+    "receiverHelpStickMax": {
+        "message": "Minimali reikšmė (mikrosekundėmis) svirties atpažinimui kaip aukštas/dešinė komanda (MAX_CHECK)."
+    },
+    "receiverDeadband": {
+        "message": "RC nejautrumo zona"
+    },
+    "receiverHelpDeadband": {
+        "message": "Tai reikšmė (mikrosekundėmis), kiek daug signalas RC įėjime gali skirtis, kad būtų pripažintas validžiu. Valdymo pultams, turintiems virpėjimus (jitter) išėjimuose, tuo metu kai svirtys yra nejudinamos, ši reikšmė gali buti padidinta."
+    },
+    "receiverYawDeadband": {
+        "message": "Yaw nejautrumo zona"
+    },
+    "receiverHelpYawDeadband": {
+        "message": "Tai reikšmė (mikrosekundėmis), kiek daug signalas RC įėjime gali skirtis, kad būtų pripažintas validžiu. Valdymo pultams, turintiems virpėjimus (jitter) išėjimuose, tuo metu kai svirtys yra nejudinamos, ši reikšmė gali buti padidinta. <strong>Šis nustatymas galioja tik Yaw ašiai.</strong>"
+    },
+    "recevier3dDeadbandThrottle": {
+        "message": "3D Throttle nejautrumo zona"
+    },
+    "receiverHelp3dDeadbandThrottle": {
+        "message": "Tai reikšmė (mikrosekundėmis). Norint praplatinti neutralės zoną padidinkite reikšmę. <strong>Šis nustatymas tik 3D throttle komandai.</strong>"
+    },
+    "receiverChannelMap": {
+        "message": "Kanalų išdėstymas"
+    },
+    "receiverChannelDefaultOption": {
+        "message": "Numatytasis"
+    },
+    "receiverChannelMapTitle": {
+        "message": "Jus galite nustatyti nuosavą kanalų išdėstymą, paspaudus šiame laukelyje"
+    },
+    "receiverRssiChannel": {
+        "message": "RSSI kanalas"
+    },
+    "receiverRssiChannelDisabledOption": {
+        "message": "Išjungta"
+    },
+    "receiverButtonSave": {
+        "message": "Išsaugoti"
+    },
+    "receiverButtonRefresh": {
+        "message": "Atnaujinti"
+    },
+    "receiverButtonBind": {
+        "message": "Pririšti (bind) imtuvą"
+    },
+    "receiverButtonSticks": {
+        "message": "Valdymo svirtys"
+    },
+    "receiverModelPreview": {
+        "message": "Peržiūra"
+    },
     "gps3dFix": {
         "message": "3D Fix:"
     },
@@ -1021,8 +1182,146 @@
     "gpsSats": {
         "message": "Palydovų:"
     },
+    "motorsVoltage": {
+        "message": "Įtampa:"
+    },
+    "motorsADrawing": {
+        "message": "Srovė:"
+    },
+    "motorsmAhDrawn": {
+        "message": "Suvartota:"
+    },
+    "motorsVoltageValue": {
+        "message": "$1 V"
+    },
+    "motorsADrawingValue": {
+        "message": "$1 A"
+    },
+    "motorsmAhDrawnValue": {
+        "message": "$1 mAh"
+    },
+    "motorsText": {
+        "message": "Varikliai"
+    },
+    "motorNumber1": {
+        "message": "Variklis - 1"
+    },
+    "motorNumber2": {
+        "message": "Variklis - 2"
+    },
+    "motorNumber3": {
+        "message": "Variklis - 3"
+    },
+    "motorNumber4": {
+        "message": "Variklis - 4"
+    },
+    "motorNumber5": {
+        "message": "Variklis - 5"
+    },
+    "motorNumber6": {
+        "message": "Variklis - 6"
+    },
+    "motorNumber7": {
+        "message": "Variklis - 7"
+    },
+    "motorNumber8": {
+        "message": "Variklis - 8"
+    },
+    "servosText": {
+        "message": "Servos"
+    },
+    "servoNumber1": {
+        "message": "Servo - 1"
+    },
+    "servoNumber2": {
+        "message": "Servo - 2"
+    },
+    "servoNumber3": {
+        "message": "Servo - 3"
+    },
+    "servoNumber4": {
+        "message": "Servo - 4"
+    },
+    "servoNumber5": {
+        "message": "Servo - 5"
+    },
+    "servoNumber6": {
+        "message": "Servo - 6"
+    },
+    "servoNumber7": {
+        "message": "Servo - 7"
+    },
+    "servoNumber8": {
+        "message": "Servo - 8"
+    },
+    "motorsResetMaximumButton": {
+        "message": "Atstatyti"
+    },
+    "motorsResetMaximum": {
+        "message": "Atstatyti maksimalią reikšmę per laiką"
+    },
+    "motorsSensorGyroSelect": {
+        "message": "gyro"
+    },
+    "motorsSensorAccelSelect": {
+        "message": "akcel"
+    },
+    "motorsTelemetryHelp": {
+        "message": "Šie skaičiai rodo telemetrojos gavimą iš ESC (jeigu yra). Jie gali rodyti variklų sukimosi greitį (RPM), klaidų kiekį telemetrijoje ir ESC temperatūras.",
+        "description": "Help text for the telemetry values in the motors tab."
+    },
+    "motorsRPM": {
+        "message": "R: {{motorsRpmValue}}",
+        "description": "To put under the motors in the motors tab. KEEP IT SHORT or not translate. Keep the letters as prefix. Shows the RPM of the motor if telemetry is available."
+    },
+    "motorsRPMError": {
+        "message": "E: {{motorsErrorValue}}%",
+        "description": "To put under the motors in the motors tab. KEEP IT SHORT or not translate. Shows the error of motor telemetry if available."
+    },
+    "motorsMaster": {
+        "message": "Pagrindinis"
+    },
+    "motorsNotice": {
+        "message": "<strong>Variklių testavimo režimas / Arming perspėjimas:</strong><br />Slankiklių judinimas arba skraidyklės įjungimas (arming) iš valdymo pulto <strong>įjungs variklius</strong>.<br />Siekiant išvengt sužalojimų, prieš naudojantis šią funkciją <strong class=\"message-negative\">nuimkite VISUS propelerius</strong>.<br />Testavimo režimo įjungimas taip pat laikinai atjungia Nekontroliuojamo skrydžio prevenciją (Runaway Takeoff Prevention), kad skraidyklė neišsijunginėtu (disarming), kai vykdomi testavimai ant stalo be propelerių.<br />"
+    },
+    "motorsEnableControl": {
+        "message": "<strong>Aš suprantu riziką</strong>, propeleriai nuimti - įjungti variklių valdymą ir įjungimą (arming), bei išjungti Runaway Takeoff Prevention."
+    },
+    "sensorsRefresh": {
+        "message": "Atnaujinti:"
+    },
+    "sensorsScale": {
+        "message": "Mastelis:"
+    },
+    "cliInfo": {
+        "message": "<strong>Pastaba:</strong> Paliekant CLI langą arba nuspaudus 'Atsijungti', į skrydžio valdiklį bus <strong>automatiškai</strong> išsiusta komana \"<strong>exit</strong>\". Naudojant paskutinė mikroprogramos versiją tai <strong>perkraus</strong> mikrovaldiklį ir visi neišsaugoti nustatymai bus <strong>prarasti</strong>.<p><strong><span class=\"message-negative\">Dėmesio:</span></strong> Kai kurios CLI komandos gali nusiust komandas į variklių valdymo išėjimus. Jeigu baterija yra prijungta, tai gali įjungt variklius. Todėl labai rekomenduojama įsitikinti, kad <strong>baterija nėra prijungta prieš įvedant komandas CLI režime</strong>."
+    },
+    "cliInputPlaceholder": {
+        "message": "Įrašykite jūsų komana čia. Spauskite Tab norint pasinaudot AutoComplete."
+    },
+    "cliInputPlaceholderBuilding": {
+        "message": "Palaukite kol konstruojamas AutoComplete ..."
+    },
     "cliEnter": {
         "message": "Režimas CLI aktyvuotas"
+    },
+    "cliSaveToFileBtn": {
+        "message": "Įrašyti į failą"
+    },
+    "cliClearOutputHistoryBtn": {
+        "message": "Išvalyti istoriją"
+    },
+    "cliCopyToClipboardBtn": {
+        "message": "Kopijuoti į iškarpinę"
+    },
+    "cliLoadFromFileBtn": {
+        "message": "Įkrauti iš failo"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong>Pastaba</strong>: Jus galite peržiūrėti ir pataisyti komandas, prieš jų įvykdymą."
+    },
+    "cliConfirmSnippetBtn": {
+        "message": "Vykdyti"
     },
     "blackboxConfiguration": {
         "message": "Blackbox konfigūracija"
@@ -1046,13 +1345,13 @@
         "message": "Skrydžio duomenys gali būti įrašomi į jūsų valdiklio SD kortelę."
     },
     "dataflashNote": {
-        "message": "Skrydžio duomenys gali būti įrašomi į jųsų valdiklio vidinę duomenų saugojimo mikroschemą."
+        "message": "Skrydžio duomenys gali būti įrašomi į jųsų valdiklio vidinę duomenų saugojimo įrenginį."
     },
     "dataflashNotPresentNote": {
-        "message": "Skrydžio valdiklis neturi tinkamos duomenų saugokimo mikroschemos."
+        "message": "Skrydžio valdiklis neturi tinkamo duomenų saugojimo įrenginio."
     },
     "dataflashFirmwareUpgradeRequired": {
-        "message": "Duomenų saugojimo mikroschemos funkcijai reikalinga mokroprograma &gt;= 1.8.0."
+        "message": "Duomenų saugojimo įrenginio funkcijai reikalinga mikroprograma &gt;= 1.8.0."
     },
     "dataflashButtonSaveFile": {
         "message": "Išsaugoti atminties turinį į failą..."
@@ -1067,13 +1366,13 @@
         "message": "Ištrinti atmintį"
     },
     "dataflashConfirmEraseTitle": {
-        "message": "Patvirtinti duomenų saugojimo mikroschemos išvalymą"
+        "message": "Patvirtinti duomenų saugojimo įrenginio išvalymą"
     },
     "dataflashConfirmEraseNote": {
-        "message": "Tai ištrins bet kokią Blackbox informaciją arba kitus duomenys, esančius vidinėje duomenų saugojimo mikroschemoje. Tai užtruks apie 20 sekundžių, ar jus tvirtinate?"
+        "message": "Tai ištrins bet kokią Blackbox informaciją arba kitus duomenys, esančius vidiniame duomenų saugojimo įrenginyje. Tai užtruks apie 20 sekundžių, ar jus tvirtinate?"
     },
     "dataflashSavingTitle": {
-        "message": "Duomenų saugojimo mikroschemos turinio išsaugojimas į failą"
+        "message": "Duomenų saugojimo įrenginio turinio išsaugojimas į failą"
     },
     "dataflashSavingNote": {
         "message": "Saugojimas gali testis kelias minutes, palaukite."
@@ -1088,7 +1387,7 @@
         "message": "Ok"
     },
     "dataflashButtonEraseConfirm": {
-        "message": "Taip, ištrinti duomenų saugojimo mikroschemą"
+        "message": "Taip, išvalyti duomenų saugojimo įrenginį"
     },
     "dataflashButtonEraseCancel": {
         "message": "Atšaukti"
@@ -1240,8 +1539,445 @@
     "unstableFirmwareAcknoledgementFlash": {
         "message": "Programuoti"
     },
+    "controlAxisRoll": {
+        "message": "Roll [A]"
+    },
+    "controlAxisPitch": {
+        "message": "Pitch [E]"
+    },
+    "controlAxisYaw": {
+        "message": "Yaw [R]"
+    },
+    "controlAxisThrottle": {
+        "message": "Throttle [T]"
+    },
+    "controlAxisAux1": {
+        "message": "AUX 1"
+    },
+    "controlAxisAux2": {
+        "message": "AUX 2"
+    },
+    "controlAxisAux3": {
+        "message": "AUX 3"
+    },
+    "controlAxisAux4": {
+        "message": "AUX 4"
+    },
+    "controlAxisAux5": {
+        "message": "AUX 5"
+    },
+    "controlAxisAux6": {
+        "message": "AUX 6"
+    },
+    "controlAxisAux7": {
+        "message": "AUX 7"
+    },
+    "controlAxisAux8": {
+        "message": "AUX 8"
+    },
+    "controlAxisAux9": {
+        "message": "AUX 9"
+    },
+    "controlAxisAux10": {
+        "message": "AUX 10"
+    },
+    "controlAxisAux11": {
+        "message": "AUX 11"
+    },
+    "controlAxisAux12": {
+        "message": "AUX 12"
+    },
     "configHelp2": {
         "message": "Vartotojo pasirinktas plokštės pasukimo kampas laipsniais, reikalingas esant poreikiui pritvirtinti plokštę šonu / apversta / pasukta ir pan. Naudojant išorinius jutiklius, jų padėčių nustatymui (atskirai nuo plokštės padeties), naudokite jutiklių suderinimus (Gyro, Acc, Mag). "
+    },
+    "powerButtonSave": {
+        "message": "Išsaugoti"
+    },
+    "powerFirmwareUpgradeRequired": {
+        "message": "<span class=\"message-negative\">Reikalingas</span> mikroprogramos atnaujinimas. Baterijos/Srovės/Įtampos nustatymai, naudojant API &lt; 1.33.0 (Betaflight release &lt;= 3.17) nepalaikomi."
+    },
+    "powerBatteryVoltageMeterSource": {
+        "message": "Įtampos jutiklio tipas"
+    },
+    "powerBatteryVoltageMeterTypeNone": {
+        "message": "Jokio"
+    },
+    "powerBatteryVoltageMeterTypeAdc": {
+        "message": "ASK prokštėje"
+    },
+    "powerBatteryVoltageMeterTypeEsc": {
+        "message": "ESC sensorius"
+    },
+    "powerBatteryCurrentMeterSource": {
+        "message": "Srovės jutiklio tipas"
+    },
+    "powerBatteryCurrentMeterTypeNone": {
+        "message": "Jokio"
+    },
+    "powerBatteryCurrentMeterTypeAdc": {
+        "message": "ASK prokštėje"
+    },
+    "powerBatteryCurrentMeterTypeVirtual": {
+        "message": "Virtualus"
+    },
+    "powerBatteryCurrentMeterTypeEsc": {
+        "message": "ESC sensorius"
+    },
+    "powerBatteryCurrentMeterTypeMsp": {
+        "message": "MSP sensorius/OSD Slave"
+    },
+    "powerBatteryMinimum": {
+        "message": "Minimali celės įtampa"
+    },
+    "powerBatteryMaximum": {
+        "message": "Maksimali celės įtampa"
+    },
+    "powerBatteryWarning": {
+        "message": "Perspėjimo celės įtampa"
+    },
+    "powerCalibrationManagerButton": {
+        "message": "Kalibravimas"
+    },
+    "powerCalibrationManagerHelp": {
+        "message": "Kalibravimui naudokite multimetrą, matuojant aktualią jūsų sraidyklės vartojamą įtampą/srovę (su prijungta baterija) ir įveskite reikšmės. Po to, prijungus tą pačią bateriją, nuspauskite [Calibrate]."
+    },
+    "powerCalibrationManagerNote": {
+        "message": "<strong>Pastaba:</strong> Prieš mastelio kalibravimą įsitikinkite, kad įtampos daliklis ir daugiklis, o taip pat srovės ofsetas yra nustatyti teisingai.<br>Palikus reikšmė 0 kalibracija nebus pradėta.</br><strong>Nepamirškite, kad bateriją galima jungti tik nuėmus propelerius!</strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class=\"message-negative\">Dėmesio:</span> Baterija <span class=\"message-negative\">nėra prijungta</span> arba įtampos ir srovės jutiklių tipai <span class=\"message-negative\">neteisingai parinkti.</span> Įsitikinkite, kad matuojamos įtampos ir/arba srovės reikšmės yra didesnės nei 0. Priešingu atvėju kalibracija neįmanoma."
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class=\"message-negative\">Dėmesio:</span> Įtampos ir/arba srovės jutiklio tipas <strong>buvo pakeistas, bet nebuvo išsaugotas.</strong> Pasirinkite teisingus jutiklių tipus ir išsaugokite nustatymus prieš pradedant kalibravimą."
+    },
+    "powerCalibrationSave": {
+        "message": "Kalibruoti"
+    },
+    "powerCalibrationApply": {
+        "message": "Pritaikyti kalibraciją"
+    },
+    "powerCalibrationDiscard": {
+        "message": "Atmesti kalibraciją"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "Čia rodomos naujos kalibravimo skalės. <br>Jų patvirtinimas pritaikys skales, <strong>bet jų neišsaugos.</strong></br> <br>Išsaugojus įsitikinkite, kad naujos įtampos ir srovės reikšmės yra teisingos.</br>"
+    },
+    "powerVoltageHead": {
+        "message": "Įtampos jutiklis"
+    },
+    "powerVoltageValue": {
+        "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "Išmatuota įtampa"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Kalibruota įtampos skalė:"
+    },
+    "powerAmperageValue": {
+        "message": "$1 A"
+    },
+    "powerVoltageId10": {
+        "message": "Baterija"
+    },
+    "powerVoltageId50": {
+        "message": "Kombinuotas ESC"
+    },
+    "powerVoltageId60": {
+        "message": "ESC variklis 1"
+    },
+    "powerVoltageId61": {
+        "message": "ESC variklis 2"
+    },
+    "powerVoltageId62": {
+        "message": "ESC variklis 3"
+    },
+    "powerVoltageId63": {
+        "message": "ESC variklis 4"
+    },
+    "powerVoltageScale": {
+        "message": "Mastelis"
+    },
+    "powerVoltageDivider": {
+        "message": "Daliklis"
+    },
+    "powerVoltageMultiplier": {
+        "message": "Daugiklis"
+    },
+    "powerAmperageHead": {
+        "message": "Srovės jutiklis"
+    },
+    "powerAmperageId10": {
+        "message": "Baterija"
+    },
+    "powerAmperageId50": {
+        "message": "Kombinuotas ESC"
+    },
+    "powerAmperageId60": {
+        "message": "ESC variklis 1"
+    },
+    "powerAmperageId61": {
+        "message": "ESC variklis 2"
+    },
+    "powerAmperageId62": {
+        "message": "ESC variklis 3"
+    },
+    "powerAmperageId63": {
+        "message": "ESC variklis 4"
+    },
+    "powerAmperageId80": {
+        "message": "Virtualus"
+    },
+    "powerMahValue": {
+        "message": "$1 mAh"
+    },
+    "powerAmperageScale": {
+        "message": "Mastelis [1/10 mV/A]"
+    },
+    "powerAmperageOffset": {
+        "message": "Ofsetas [mA]"
+    },
+    "powerAmperageCalibration": {
+        "message": "Išmatuota srovė"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "Kalibruota srovės skalė:"
+    },
+    "powerBatteryHead": {
+        "message": "Baterija"
+    },
+    "powerStateHead": {
+        "message": "Maitinimo buklė"
+    },
+    "powerBatteryConnected": {
+        "message": "Prisijungta"
+    },
+    "powerBatteryConnectedValueNo": {
+        "message": "Ne"
+    },
+    "powerBatteryVoltage": {
+        "message": "Įtampa"
+    },
+    "powerBatteryCurrentDrawn": {
+        "message": "Išnaudota mAh"
+    },
+    "powerBatteryAmperage": {
+        "message": "Srovė"
+    },
+    "powerBatteryCapacity": {
+        "message": "Talpa (mAh)"
+    },
+    "vtxHelp": {
+        "message": "Čia jus galite nustatyti reikšmes jūsų Vaizdo siustuvui (VTX). Jus galite matyti ir keisti perdavimo reikšmes, įskaitant VTX lentelės, jeigu skrydžio valdiklis ir VTX jas palaiko.<br>Norint nustatyti jūsų VTX sekite šiais žingsniais:<br>1. Nueikite į <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight/wiki/VTX-tables\">šį</a> puslapį;<br>2. Raskite jūsų VTX modelį ir šalį atitinkantį nustatymų failą ir jį atsisiuskite;<br>3. Paspauskite '$t(vtxButtonLoadFile.message)' žemiaus, pasirinkite VTX nustatymų failą, įkraukite jį;<br>4. Patikrinkite, ar nustatymai yra teisingi;<br>5. Paspauskite '$t(vtxButtonSave.message)' tam kad išsaugoti VTX nustatymus skrydžio valdiklyje.<br>6. Esant poreikiui, paspauskite '$t(vtxButtonSaveLua.message)' tam kad išsaugoti lua nustatymo failą, kurį galėsite naudoti valdymo pulte su betaflight lua scripts (Žr. daugiau <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">čia</a>.)",
+        "description": "Introduction message in the VTX tab"
+    },
+    "vtxMessageNotSupported": {
+        "message": "<span class=\"message-negative\">Dėmesio:</span> Jūsų VTX nėra nustatytas arba nėra palaikomas. Todėl reikšmių keitimas iš čia nėra įmanomas. Tai yra įmanoma tik jeigu skrydžio valdiklis yra sujungtas su VTX tokiais protokolais kaip Tramp arba SmartAudio ir, jei reikia, tinkamai nustatytas $t(tabPorts.message) skirtuke,.",
+        "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageTableNotConfigured": {
+        "message": "<span class=\"message-negative\">Dėmesio:</span> PRADŽIAI jus turite nustatyti ir išsaugoti VTX lentelė apačioje ir tik tuomet naudotis $t(vtxSelectedMode.message) laukais.",
+        "description": "Message to show when the VTX is not supported in the VTX tab"
+    },
+    "vtxMessageFactoryBandsNotSupported": {
+        "message": "<span class=\"message-negative\">Dėmesio:</span> Parinktas VTX tipas nepalaiko 'gamiklinių' nustatymų diapazonams, bet kai kurie jūsų diapazonai turi šią opciją. Paspauskite '$t(vtxButtonSave.message)' tam, kad ištaisyti.",
+        "description": "Message to show when the configured VTX type does not support factory bands, but one or more of the configured bands are of this type"
+    },
+    "vtxMessageVerifyTable": {
+        "message": "<span class=\"message-negative\">Įspėjimas:</span> VTX lentelių duomenys yra užkrauti, bet nėra išsaugoti skrydžio valdiklyje. Jus turite peržiūrėti ir pataisyti reikšmes atitinkaimai, kad jie būtu teisingi ir leistini jūsų šalyje, tuomet papspauskite mygtuką $t(vtxButtonSave.message) tam, kad jie būtu išsaugoti skrydžio valdiklyje.",
+        "description": "Message to show when the VTX Table has been loaded from a external source"
+    },
+    "vtxFrequencyChannel": {
+        "message": "Tiesioginis dažnio įvedimas",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxFrequencyChannelHelp": {
+        "message": "Įjungus, Konfigūratorius leist jums pasirinkti dažnį, vietoje įprasto diapazono/kanalo. Tam kad tai veiktu jūsų VTX turi tai palaikyti.",
+        "description": "Help text for the frequency or channel select field of the VTX tab"
+    },
+    "vtxSelectedMode": {
+        "message": "Parinktas režimas",
+        "description": "Title for the actual mode header of the VTX"
+    },
+    "vtxActualState": {
+        "message": "Dabartinės vertės",
+        "description": "Title for the actual values header of the VTX"
+    },
+    "vtxType": {
+        "message": "VTX tipas",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxType_3": {
+        "message": "SmartAudio",
+        "description": "Text for one of the types of the VTX type in VTX tab"
+    },
+    "vtxBand": {
+        "message": "Diapazonas",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxBandHelp": {
+        "message": "Pasirinkite VTX diapazoną",
+        "description": "Help text for the band field of the VTX tab"
+    },
+    "vtxBand_0": {
+        "message": "Jokio",
+        "description": "Text of one of the options for the band field of the VTX tab"
+    },
+    "vtxBand_X": {
+        "message": "Diapazonas {{bandName}}",
+        "description": "Text of one of the options for the band field of the VTX tab"
+    },
+    "vtxChannel_0": {
+        "message": "Jokio",
+        "description": "Text of one of the options for the channel field of the VTX tab"
+    },
+    "vtxChannel_X": {
+        "message": "Kanalas {{channelName}}",
+        "description": "Text of one of the options for the channel field of the VTX tab"
+    },
+    "vtxPower_0": {
+        "message": "Jokio",
+        "description": "Text of one of the options for the power field of the VTX tab"
+    },
+    "vtxChannel": {
+        "message": "Kanalas",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxChannelHelp": {
+        "message": "Pasirinkite VTX kanalą",
+        "description": "Help text for the channel field of the VTX tab"
+    },
+    "vtxFrequency": {
+        "message": "Dažnis",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxFrequencyHelp": {
+        "message": "Pasirinkite VTX dažnį, jei palaikoma",
+        "description": "Help text for the frequency field of the VTX tab"
+    },
+    "vtxDeviceReady": {
+        "message": "Įrenginys paruoštas",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPower": {
+        "message": "Galia",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPowerHelp": {
+        "message": "Tai VTX siustuvo galia. Šis parametras gali būti keičiamas jeigu $t(vtxPitMode.message) arba $t(vtxLowPowerDisarm.message) yra įjungti",
+        "description": "Help text for the power field of the VTX tab"
+    },
+    "vtxPitMode": {
+        "message": "Pit Mode",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPitModeHelp": {
+        "message": "Įjungus, VTX pereis į labai mažos galios režimą leidžiant jūsų skraidykei būti įjungtai 'on bench', netrukdant kitų pilotų. Įprastai šio režimo nuotolis yra ne didesnis nei 5 metrai.<br><br>Pastaba: Kai kurie protokolai, tokie kaip SmartAudio, neleidžia įjungti Pit Mode programiškai, po skraidyklės įjungimo.",
+        "description": "Help text for the pit mode field of the VTX tab"
+    },
+    "vtxPitModeFrequency": {
+        "message": "Pit Mode dažnis",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxPitModeFrequencyHelp": {
+        "message": "Dažnis, į kurį pereinama, įjungus Pit Mode.",
+        "description": "Help text for the pit mode field of the VTX tab"
+    },
+    "vtxLowPowerDisarm": {
+        "message": "Maža galia išjungus skraidyklę",
+        "description": "Text of one of the fields of the VTX tab"
+    },
+    "vtxLowPowerDisarmHelp": {
+        "message": "Ijungus, VTX naudos mažiausią įmanomą galią, kai skraidyklė yra išjungta (disarmed), išskyrus kai suveikė 'failsafe'.",
+        "description": "Help text for the low power disarm field of the VTX tab"
+    },
+    "vtxLowPowerDisarmOption_0": {
+        "message": "Išj.",
+        "description": "One of the options for the Low Power Disarm mode of the VTX"
+    },
+    "vtxLowPowerDisarmOption_1": {
+        "message": "Įj.",
+        "description": "One of the options for the Low Power Disarm mode of the VTX"
+    },
+    "vtxLowPowerDisarmOption_2": {
+        "message": "Įjungta iki pirmo 'arm'",
+        "description": "One of the options for the Low Power Disarm mode of the VTX"
+    },
+    "vtxTable": {
+        "message": "VTX lentelė",
+        "description": "Text of the header of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevels": {
+        "message": "Galių lygių skaičius",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsHelp": {
+        "message": "Nustato galių lygių skaičių, palaikomu jūsų VTX",
+        "description": "Help for the number of power levels field of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsTableHelp": {
+        "message": "Ši lentelė atvaizduoja skirtingas galių lygių reikšmes, kurie gali būti naudojami VTX. Jie yra padalinti į: <br><b>- $t(vtxTablePowerLevelsValue.message):</b> kiekvienam galios lygiui yra reikalinga atitinkama reikšmė, nustatyta VTX gamintojo. Tinkamų reikšmių teiraukites savo VTX gamintojo arba ieškokite pavyzdžių Betaflight wiki, VTX Tables skyriuje. <br><b>- $t(vtxTablePowerLevelsLabel.message):</b> jus galite įrašyti norimas žymes kiekvienam galios lygiui. Jie gali būti skaičiais (25, 200, 600, 1.2), raidėmis (OFF, MIN, MAX) arba jų junginiais. <br><br>Jus galite nustatyti <b>tik</b> jūsų šalyje leidžiamas galių lygius.",
+        "description": "Help for the table of power levels (value-label) that appears in the VTX tab"
+    },
+    "vtxTablePowerLevelsValue": {
+        "message": "Reikšmė",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTablePowerLevelsLabel": {
+        "message": "Žyma",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBands": {
+        "message": "Diapazonų skaičius",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableChannels": {
+        "message": "Kanalų skaičius diapazone",
+        "description": "Text of one of the fields of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandsChannelsHelp": {
+        "message": "Nustato diapazonų ir kanalų skaičių.",
+        "description": "Help for the number of bands and channels field of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleName": {
+        "message": "Pavadinimas",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleLetter": {
+        "message": "Raidė",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandTitleFactory": {
+        "message": "Gamyklinis",
+        "description": "Text of one of the titles of the VTX Table element in the VTX tab"
+    },
+    "vtxTableBandsChannelsTableHelp": {
+        "message": "Šioje lentelėje atvaizduojami visi dažniai, kurie gali būti naudojami su jūsų VTX. Jus galite turėti kelis diapazonus ir kiekvienam diapazonui jus turite nustatyti:<br><b>- $t(vtxTableBandTitleName.message):</b> Pavadinimas, kuri norite priskirti diapazonui, pvz BOSCAM_A, FATSHARK arba RACEBAND.<br><b>- $t(vtxTableBandTitleLetter.message):</b> Raidė, trumpai apibūdinanti diapazoną.<br><b>- $t(vtxTableBandTitleFactory.message):</b> Tai nustato ar tai yra gamyklinis diapazonas. Įjungus, Betaflight sius į VTX diapazoną ir kanalo numerius. Tuomet VTX naudos savo vidinę dažnių lentelę, o nustatyti dažniai bus naudojami tik informacijos atvaizdavimui OSD, bei kitose vietose. Jeigu išjungta - Betaflight sius į VTX tikrą dažnį, nustatyta čia.<br><b>- Dažniai:</b> Šio diapazono dažniai.<br><br>Atsiminkite, kad nevisi dažniai yra legalūs jūsų šalyje. Jus privalote įrašyti <b>nulį</b> į kiekvieną dažnio langelį, kuris nėra leistinas, tam kad jį išjungti.",
+        "description": "Help for the table of bands-channels that appears in the VTX tab"
+    },
+    "vtxButtonSaveFile": {
+        "message": "Įrašyti į failą",
+        "description": "Save to file button in the VTX tab"
+    },
+    "vtxButtonSaveLua": {
+        "message": "Išsaugoti Lua Script",
+        "description": "Save Lua script button in the VTX tab"
+    },
+    "vtxLuaFileHelp": {
+        "message": "'$t(vtxButtonSaveLua.message)' mygtukas leidžia išsaugoti <i>craftname</i>.lua bylą, turinčia savyje vtx lentelę, kuri gali būti panaudota su betaflight lua scripts. (Žr. daugiau <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/betaflight/betaflight-tx-lua-scripts/\">čia</a>.)",
+        "description": "Tooltip message for the Save Lua script button in the VTX tab"
+    },
+    "vtxButtonLoadFile": {
+        "message": "Įkrauti iš failo",
+        "description": "Load to file button in the VTX tab"
+    },
+    "vtxButtonLoadClipboard": {
+        "message": "Įkrauti iš iškarpynės",
+        "description": "Paste from clipboard button in the VTX tab"
+    },
+    "vtxButtonSave": {
+        "message": "Išsaugoti",
+        "description": "Save button in the VTX tab"
     },
     "configurationEscProtocol": {
         "message": "ESC/Variklių valdymo protokolas"
@@ -1357,7 +2093,7 @@
         "message": "Išorinis nuoseklus registravimo įrenginys"
     },
     "onboardLoggingFlashLogger": {
-        "message": "Vidinė duomenų saugojimo mikroschema"
+        "message": "Vidinis duomenų saugojimo mikroschema"
     },
     "onboardLoggingEraseInProgress": {
         "message": "Vyksta ištrynimas, palaukite..."
