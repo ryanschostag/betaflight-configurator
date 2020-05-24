@@ -6,6 +6,7 @@ import os
 import sys
 import re
 import logging
+import json
 
 
 logger = logging.getLogger(__name__)
@@ -13,6 +14,15 @@ logger = logging.getLogger(__name__)
 
 PRODUCT_VENDER_REGEX = re.compile(r'[0-9a-z]{4}:[0-9a-z]{4}')
 BETAFLIGHT_RESPONSE_CONNECT_SECONDS = 10
+CONTROL_FILE = '/opt/betaflight/betaflight-configurator/mountmydrone.json'
+CONF = json.loads(CONTROL_FILE) if os.path.isfile(CONTROL_FILE) else {}
+
+
+class Config(object):
+    def __init__(self, *args, **kwargs):
+        [setattr(self, k, v) for k, v in CONF.items()]
+        [setattr(self, k, v) for k, v in kwargs.items()]
+        [setattr(self, i, None) for i in args]
 
 
 def lsusb():
